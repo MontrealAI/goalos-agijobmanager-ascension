@@ -10,5 +10,7 @@ miss=[x for x in need if x not in text]
 if miss: print('Missing required text:',miss); sys.exit(1)
 for bad in ['eth_sendTransaction','wallet_requestPermissions','ethereum.request({ method: "eth_requestAccounts"','approve(','PRIVATE_KEY_VALUE_SHOULD_NOT_EXIST']:
     if bad in text: print('Forbidden primitive:',bad); sys.exit(1)
-print('AGIJobManager Ascension QA PASS')
+if 'd.y-=d.v' not in text:
+    print('Particle field must ascend upward: d.y-=d.v not found'); sys.exit(1)
+print('AGIJobManager Ascension QA PASS · ascendant particle field verified')
 

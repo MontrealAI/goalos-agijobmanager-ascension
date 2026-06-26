@@ -1,6 +1,6 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "builtAt": "2026-06-26T15:37:53.273467Z",
+  "builtAt": "2026-06-26T16:13:13.175903Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -19,8 +19,8 @@
     },
     {
       "path": "assets/atelier.js",
-      "sha256": "afd248f51d411a9f0b287078b8a5733a24f3ea9fd66f086325add04280c1e822",
-      "bytes": 6254
+      "sha256": "3683f4c204d2cb64692f65bcef47e41b1f06714864b095e1c632a6fc21b804bb",
+      "bytes": 7086
     },
     {
       "path": "evidence/index.html",
