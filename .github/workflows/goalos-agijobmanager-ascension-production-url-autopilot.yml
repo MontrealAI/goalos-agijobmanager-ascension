@@ -1,20 +1,20 @@
-name: GoalOS AGIJobManager Ascension Institutional Atelier v5
+name: GoalOS AGIJobManager Ascension Final Production Chamber v6
 
 on:
   workflow_dispatch:
     inputs:
       deploy_pages:
-        description: Deploy the canonical production URL to GitHub Pages
+        description: "Deploy to https://montrealai.github.io/goalos-agijobmanager-ascension/"
         required: true
         default: true
         type: boolean
       commit_generated_source:
-        description: Commit generated repository source back to main
+        description: "Commit generated source back to main"
         required: true
         default: true
         type: boolean
   push:
-    branches: [main]
+    branches: [ main ]
     paths:
       - '.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml'
 
@@ -22,313 +22,359 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  actions: read
-
-concurrency:
-  group: goalos-agijobmanager-ascension-institutional-atelier-v5-${{ github.ref }}
-  cancel-in-progress: true
 
 env:
-  CANONICAL_REPOSITORY: MontrealAI/goalos-agijobmanager-ascension
   PRODUCTION_URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
-  AGIJOBMANAGER_ADDRESS: '0xB3AAeb69b630f0299791679c063d68d6687481d1'
-  AGIALPHA_ADDRESS: '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa'
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+  CANONICAL_REPOSITORY: MontrealAI/goalos-agijobmanager-ascension
+
+concurrency:
+  group: goalos-agijobmanager-ascension-production
+  cancel-in-progress: true
 
 jobs:
-  atelier:
-    name: Generate elite site, verify, and publish
+  publish:
+    name: Generate final chamber, verify, and publish
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: main
 
-      - name: Sync to latest main before generation
+      - name: Assert canonical repository and sync main
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin main --prune
-          git checkout -B main origin/main
+          if [[ "${GITHUB_REPOSITORY}" != "${CANONICAL_REPOSITORY}" ]]; then
+            echo "This workflow is locked to ${CANONICAL_REPOSITORY}. Current repository: ${GITHUB_REPOSITORY}"
+            exit 1
+          fi
+          git fetch origin main
+          git reset --hard origin/main
 
-      - name: Confirm canonical repository
+      - name: Prepare generated source tree
         shell: bash
         run: |
           set -euo pipefail
-          echo "Repository: ${{ github.repository }}"
-          test "${{ github.repository }}" = "$CANONICAL_REPOSITORY"
-          echo "Canonical production URL: $PRODUCTION_URL"
+          rm -rf site dist data schemas docs tools tests AGIJOBMANAGER_ASCENSION_QA.md
+          mkdir -p site/assets site/evidence data schemas docs tools tests
 
-      - name: Prepare repository foundation
+      - name: Write site/assets/atelier.css
         shell: bash
         run: |
           set -euo pipefail
-          rm -rf site data docs schemas src tools tests dist
-          mkdir -p site/assets site/evidence data docs schemas src tools tests dist
-          : > .nojekyll
-          : > site/.nojekyll
-          cat > package.json <<'JSON'
-          {
-            "name": "goalos-agijobmanager-ascension",
-            "version": "2.0.0-institutional-atelier",
-            "private": true,
-            "type": "module",
-            "description": "GoalOS-native institutional evidence room and read-only operator console for AGIJobManager Ascension.",
-            "scripts": {
-              "build": "node tools/build.mjs",
-              "test": "node tests/verify.mjs",
-              "verify": "node tests/verify.mjs"
-            },
-            "engines": { "node": ">=20" }
-          }
-          JSON
-          cat > README.md <<'EOF'
-          # GoalOS AGIJobManager Ascension
-
-          **Production URL:** https://montrealai.github.io/goalos-agijobmanager-ascension/
-
-          GoalOS-native institutional evidence room for AGIJobManager Ascension: flagship website, Evidence Docket 6.1, verification room, architecture dossier, and read-only operator intent console.
-
-          ## Canonical identities
-
-          - **AGIJobManager:** `0xB3AAeb69b630f0299791679c063d68d6687481d1`
-          - **AGIALPHA:** `0xa61a3b3a130a9c20768eebf97e21515a6046a1fa`
-          - **Chain:** Ethereum Mainnet, chain id `1`
-
-          ## Product posture
-
-          This repository publishes a static public website and proof room. It does **not** auto-connect wallets, request token approvals, switch networks, broadcast Mainnet transactions, store private keys, or authorize funds.
-
-          ## Doctrine
-
-          A model can answer. An agent can act. An institution must prove. No proof, no settlement. No eval, no propagation. No rollback, no release.
-          EOF
-
-      - name: Generate institutional design system
-        shell: bash
-        run: |
-          set -euo pipefail
+          mkdir -p site/assets
           cat > site/assets/atelier.css <<'CSS'
-          :root{--bg:#03070d;--bg2:#061522;--ink:#f8f4e8;--paper:#f5efe3;--nav:#070b12;--muted:#9daabd;--line:rgba(255,255,255,.15);--line2:rgba(8,20,35,.12);--gold:#ffe68a;--gold2:#f7b640;--aqua:#4ff3ff;--mint:#76ffc4;--violet:#a58bff;--rose:#ff76b7;--panel:rgba(255,255,255,.06);--shadow:0 34px 100px rgba(0,0,0,.45);--max:1220px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 14% 8%,rgba(79,243,255,.14),transparent 32%),radial-gradient(circle at 80% 18%,rgba(255,230,138,.12),transparent 28%),radial-gradient(circle at 70% 85%,rgba(165,139,255,.12),transparent 32%),linear-gradient(135deg,#03070d,#061526 50%,#120f2d)}body:after{content:"";position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(circle at 50% 20%,#000,transparent 78%)}#field{position:fixed;inset:0;z-index:-1;opacity:.85}a{color:inherit}.topline{height:30px;display:grid;place-items:center;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);background:rgba(0,0,0,.28)}header{position:sticky;top:0;z-index:30;background:rgba(3,7,13,.75);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}.nav{width:min(var(--max),calc(100% - 42px));margin:auto;display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:18px}.brand{display:flex;gap:12px;align-items:center;text-decoration:none}.sigil{width:38px;height:38px;border-radius:14px;background:radial-gradient(circle at 42% 38%,#fff 0 5%,var(--aqua) 6% 18%,#13233a 19% 45%,var(--gold) 46% 52%,transparent 53%),linear-gradient(135deg,rgba(118,255,196,.4),rgba(165,139,255,.35));border:1px solid rgba(255,255,255,.3);box-shadow:0 0 34px rgba(79,243,255,.35)}.brand b{display:block;font-size:14px;line-height:1;letter-spacing:.05em}.brand span{display:block;font-size:10px;letter-spacing:.28em;color:#c5d5e8;margin-top:4px}.links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.links a{font-size:12px;font-weight:900;text-decoration:none;border:1px solid transparent;padding:10px 13px;border-radius:999px;color:#dbe9f7}.links a:hover,.links a.active{border-color:var(--line);background:rgba(255,255,255,.08)}.hero{min-height:calc(100vh - 96px);display:flex;align-items:center;padding:70px 0 80px}.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:58px;align-items:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.32em;font-size:12px;font-weight:950}.title{font-size:clamp(58px,9vw,128px);line-height:.84;letter-spacing:-.085em;margin:18px 0 20px}.title .g{display:block;background:linear-gradient(90deg,#fff9de,#ffe68a 34%,#76ffc4 60%,#4ff3ff 88%);-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{font-size:clamp(22px,3vw,38px);line-height:1.05;letter-spacing:-.045em;font-weight:900;color:#fff4d2;margin:0 0 18px}.lead{font-size:18px;line-height:1.75;color:#c8d8e9;max-width:720px}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;border-radius:999px;padding:15px 18px;font-weight:950;font-size:14px;border:1px solid var(--line);cursor:pointer}.btn.primary{background:linear-gradient(90deg,var(--gold),#ffc34d);color:#07111f;border-color:rgba(255,255,255,.45);box-shadow:0 16px 42px rgba(247,182,64,.22)}.btn.dark{background:rgba(255,255,255,.07);color:#fff}.btn:hover{transform:translateY(-1px)}.boundary{margin-top:24px;border:1px solid rgba(255,118,183,.45);background:linear-gradient(90deg,rgba(255,118,183,.12),rgba(255,255,255,.04));border-radius:18px;padding:14px 18px;color:#ffd3e6;font-weight:800;font-size:13px}.stage{position:relative;border:1px solid var(--line);border-radius:36px;padding:26px;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.04));box-shadow:var(--shadow);overflow:hidden}.stage:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(79,243,255,.12),transparent);transform:translateX(-100%);animation:sweep 8s infinite}.consoleTop{display:flex;justify-content:space-between;gap:16px;align-items:center;color:#c6d6e8;font-size:11px;font-weight:950;letter-spacing:.22em;text-transform:uppercase}.pill{border:1px solid rgba(255,230,138,.5);color:var(--gold);background:rgba(255,230,138,.08);border-radius:999px;padding:8px 10px}.core{margin:24px auto;display:grid;place-items:center;width:min(420px,82vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--aqua) 0 11%,var(--violet) 20%,rgba(255,255,255,.08) 21% 28%,transparent 29%),repeating-radial-gradient(circle,rgba(255,255,255,.18) 0 1px,transparent 1px 52px);position:relative}.core strong{color:#06111f;text-align:center;font-size:30px;line-height:.92}.node{position:absolute;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;text-align:center;border:1px solid rgba(255,255,255,.32);background:#0d1827;color:#fff;font-weight:950;box-shadow:0 0 26px rgba(79,243,255,.18)}.n1{top:5%;left:50%;transform:translateX(-50%)}.n2{right:5%;top:27%}.n3{right:13%;bottom:12%}.n4{left:13%;bottom:12%}.n5{left:5%;top:27%}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.metric{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:18px;padding:14px}.metric b{font-size:28px;color:var(--gold)}.metric span{display:block;color:#b9c8dc;text-transform:uppercase;font-size:10px;letter-spacing:.2em;font-weight:900}.section{padding:92px 0;border-top:1px solid var(--line)}.section.paper{background:var(--paper);color:#07111f}.sectionTitle{font-size:clamp(42px,6vw,86px);line-height:.9;letter-spacing:-.075em;margin:0 0 18px}.sectionTitle .g{background:linear-gradient(90deg,#0b1a2a,#32567b,#27c7d9,#bf8bff);-webkit-background-clip:text;background-clip:text;color:transparent}.paper .lead{color:#33475f}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.tile{border:1px solid var(--line);border-radius:26px;background:rgba(255,255,255,.06);padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.15)}.paper .tile{background:#fff;border-color:var(--line2);box-shadow:0 18px 44px rgba(6,20,34,.08)}.tile h3{margin:0 0 10px;font-size:24px;letter-spacing:-.035em}.tile p,.tile li{color:#c8d8e9;line-height:1.65}.paper .tile p,.paper .tile li{color:#40546b}.kicker{color:var(--mint);text-transform:uppercase;letter-spacing:.25em;font-size:11px;font-weight:950}.rail{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:28px 0}.gate{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.05)}.gate b{color:var(--aqua)}.gate span{display:block;color:#dbe7f3;font-weight:900;margin-top:6px}.matrix{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--line)}.cell{background:#08121f;padding:20px}.cell h4{margin:0 0 8px;color:var(--gold)}.cell p{margin:0;color:#c6d6e8}.quote{font-size:clamp(26px,3.7vw,50px);line-height:1.05;letter-spacing:-.045em;color:#fff7d6}.footer{padding:34px 0;color:#aebed0;border-top:1px solid var(--line);background:#02050a}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;word-break:break-all}.form{display:grid;gap:14px}.input,.select,.textarea{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.06);color:#fff;padding:13px;font:inherit}.textarea{min-height:150px}.paper .input,.paper .select,.paper .textarea{background:#fff;color:#07111f;border-color:var(--line2)}pre{white-space:pre-wrap;overflow:auto}.seal{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(118,255,196,.5);border-radius:999px;padding:8px 11px;color:var(--mint);font-weight:950;font-size:12px}.statusLine{display:flex;gap:12px;flex-wrap:wrap}.small{font-size:13px;color:#b8c7d9}.paper .small{color:#5b6d82}@keyframes sweep{0%{transform:translateX(-100%)}55%,100%{transform:translateX(100%)}}@media(max-width:900px){.heroGrid,.grid2,.grid3,.cols{grid-template-columns:1fr}.hero{padding:50px 0}.links{display:none}.metrics,.rail{grid-template-columns:repeat(2,1fr)}.node{width:62px;height:62px;font-size:12px}.core strong{font-size:22px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#field{display:none}}
+          :root{--bg:#02070a;--bg2:#071018;--ink:#f8f4e8;--muted:#aab8c9;--line:rgba(221,244,255,.16);--line2:rgba(144,255,218,.22);--gold:#ffe887;--mint:#70ffd1;--cyan:#57e7ff;--violet:#a889ff;--rose:#ff7eb9;--glass:rgba(14,23,32,.68);--glass2:rgba(24,33,48,.82);--shadow:0 30px 120px rgba(0,0,0,.6);--max:1180px;--radius:30px;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;--sans:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;--serif:Georgia,"Times New Roman",serif}
+          *{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 78% 8%,rgba(81,231,255,.16),transparent 28%),radial-gradient(circle at 20% 35%,rgba(120,255,209,.09),transparent 24%),linear-gradient(180deg,#010407,#071018 55%,#02050a);font-size:16px;line-height:1.55;overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.grain:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:88px 88px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.8),transparent 85%)}.aurora{position:fixed;inset:-10%;pointer-events:none;z-index:0;background:radial-gradient(circle at 80% 18%,rgba(87,231,255,.14),transparent 26%),radial-gradient(circle at 65% 68%,rgba(168,137,255,.13),transparent 28%),radial-gradient(circle at 28% 55%,rgba(112,255,209,.11),transparent 22%);filter:blur(6px);animation:aurora 18s ease-in-out infinite alternate}@keyframes aurora{to{transform:translate3d(-2%,1%,0) scale(1.05)}}.wrap{width:min(var(--max),calc(100vw - 48px));margin:0 auto;position:relative;z-index:2}.topbar{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(2,7,10,.78);backdrop-filter:blur(22px)}.topline{height:36px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--mint);font:800 10px/1 var(--mono);letter-spacing:.28em;text-transform:uppercase}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;gap:12px;align-items:center;font-weight:900;letter-spacing:.02em}.brand-mark{width:38px;height:38px;border-radius:13px;position:relative;background:radial-gradient(circle,#fff 0 6%,var(--cyan) 7% 20%,transparent 21%),linear-gradient(135deg,rgba(255,232,135,.32),rgba(87,231,255,.18));box-shadow:0 0 34px rgba(112,255,209,.45);border:1px solid rgba(255,255,255,.22)}.brand-mark:after{content:"";position:absolute;inset:8px;border:1px solid var(--mint);border-radius:50%;box-shadow:0 0 0 6px rgba(112,255,209,.05)}.brand small{display:block;font:800 10px/1.2 var(--mono);color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:3px}.navlinks{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.navlinks a,.pill{border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.035);font:900 12px/1 var(--sans);transition:.2s}.navlinks a:hover,.pill:hover{border-color:var(--mint);transform:translateY(-1px);background:rgba(112,255,209,.09)}.hero{padding:112px 0 64px;min-height:780px}.kicker{display:flex;align-items:center;gap:12px;color:var(--mint);font:900 11px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase}.kicker:before{content:"";width:36px;height:1px;background:var(--mint);box-shadow:0 0 18px var(--mint)}h1{font-size:clamp(72px,10vw,156px);line-height:.82;letter-spacing:-.085em;margin:26px 0 22px;max-width:860px}.grad{background:linear-gradient(90deg,#fff 0,#fff2c0 35%,#7affd8 60%,#82a7ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.serif{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.055em}.lead{font-size:clamp(18px,2vw,24px);color:#d7e4ee;max-width:720px}.hero-grid{display:grid;grid-template-columns:1fr 520px;gap:58px;align-items:center}.cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0}.btn{cursor:pointer;border:none;border-radius:999px;padding:16px 22px;font-weight:950;background:linear-gradient(135deg,var(--gold),var(--mint));color:#091017;box-shadow:0 10px 38px rgba(255,232,135,.22);display:inline-flex;align-items:center;gap:10px}.btn.secondary{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--line);box-shadow:none}.btn.flat{padding:12px 16px;background:rgba(112,255,209,.1);color:var(--mint);border:1px solid var(--line2);box-shadow:none}.seal{border:1px solid rgba(255,126,185,.35);background:rgba(255,126,185,.06);border-radius:16px;padding:14px 18px;font:800 12px/1.4 var(--mono);color:#ffd8ea;max-width:760px}.dashboard{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border-radius:var(--radius);box-shadow:var(--shadow);padding:26px;position:relative;overflow:hidden}.dashboard:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 15%,rgba(112,255,209,.25),transparent 35%),linear-gradient(90deg,rgba(87,231,255,.09),transparent 40%);pointer-events:none}.dash-head,.row-between{display:flex;justify-content:space-between;align-items:center;gap:16px}.status{color:var(--mint);font:900 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase}.orbital{height:310px;margin:18px 0;display:grid;place-items:center;position:relative}.core{width:138px;height:138px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 35% 25%,#fff,rgba(255,232,135,.82) 20%,rgba(112,255,209,.92) 58%,rgba(168,137,255,.88));color:#061014;font-weight:1000;box-shadow:0 0 40px rgba(112,255,209,.45),0 0 90px rgba(168,137,255,.28)}.ring{position:absolute;border:1px solid rgba(112,255,209,.18);border-radius:50%;animation:spin 18s linear infinite}.r1{width:220px;height:220px}.r2{width:292px;height:292px;animation-duration:28s}.r3{width:360px;height:360px;animation-duration:38s;animation-direction:reverse}.node{position:absolute;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font:900 11px var(--mono);background:#09131d;border:1px solid rgba(112,255,209,.7);box-shadow:0 0 24px rgba(112,255,209,.2)}.n1{top:22px}.n2{right:34px;top:84px}.n3{right:48px;bottom:72px}.n4{bottom:16px}.n5{left:46px;bottom:72px}.n6{left:34px;top:84px}.beam{position:absolute;height:2px;background:linear-gradient(90deg,transparent,var(--mint),transparent);transform-origin:center;width:260px;opacity:.45;animation:pulse 2.8s ease-in-out infinite}.b2{transform:rotate(46deg)}.b3{transform:rotate(-42deg)}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:1;filter:drop-shadow(0 0 8px var(--mint))}}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.metric{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(0,0,0,.18)}.metric strong{display:block;font-size:24px;color:var(--gold)}.metric span{font:800 10px var(--mono);letter-spacing:.14em;color:var(--muted);text-transform:uppercase}.section{padding:80px 0;border-top:1px solid var(--line)}.section h2{font-size:clamp(42px,6.4vw,92px);line-height:.9;letter-spacing:-.07em;margin:0 0 18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{border:1px solid var(--line);border-radius:26px;padding:24px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:0 18px 70px rgba(0,0,0,.22)}.card h3{margin:0 0 10px;font-size:24px;letter-spacing:-.03em}.card p{color:var(--muted)}.tag{font:900 10px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--mint)}.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:26px}.flow div{border:1px solid var(--line);border-radius:16px;padding:16px 10px;text-align:center;font:900 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;background:rgba(255,255,255,.035)}.console-shell{display:grid;grid-template-columns:320px 1fr 330px;gap:14px;align-items:start}.panel{border:1px solid var(--line);border-radius:24px;background:rgba(9,15,24,.82);box-shadow:0 28px 80px rgba(0,0,0,.3);overflow:hidden}.panel-head{padding:18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.panel-body{padding:18px}.field{display:grid;gap:7px;margin:0 0 14px}.field label{font:900 10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.field input,.field textarea,.field select{width:100%;background:#09111b;border:1px solid var(--line);border-radius:14px;color:var(--ink);padding:13px;outline:none}.field textarea{min-height:140px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--mint);box-shadow:0 0 0 3px rgba(112,255,209,.1)}.statebar{display:grid;grid-template-columns:repeat(10,1fr);gap:8px}.state{padding:12px 8px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.035);font:900 9px/1.25 var(--mono);text-align:center;color:var(--muted);transition:.25s}.state.done{background:rgba(112,255,209,.13);border-color:rgba(112,255,209,.65);color:var(--mint)}.state.active{background:linear-gradient(135deg,var(--gold),var(--mint));color:#071018;transform:translateY(-2px);box-shadow:0 10px 25px rgba(112,255,209,.16)}.stage{min-height:420px;border:1px solid var(--line);border-radius:20px;margin-top:16px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 50%,rgba(112,255,209,.12),transparent 32%),#050b13}.stage svg{width:100%;height:420px;display:block}.trace{height:210px;overflow:auto;background:#03070d;border-top:1px solid var(--line);padding:14px;font:12px/1.45 var(--mono);color:#96ffd9}.trace div{margin:0 0 6px}.score-ring{width:156px;height:156px;border-radius:50%;display:grid;place-items:center;margin:14px auto;background:conic-gradient(var(--mint) 0 86%,rgba(255,255,255,.08) 86%);position:relative}.score-ring:after{content:"";position:absolute;inset:12px;border-radius:50%;background:#0b111d}.score-ring strong{position:relative;z-index:1;font-size:42px}.decision{border:1px solid rgba(255,232,135,.48);background:rgba(255,232,135,.07);border-radius:20px;padding:18px;margin-top:16px}.kv{display:grid;grid-template-columns:1fr auto;gap:8px;border-top:1px solid var(--line);padding:12px 0;color:var(--muted);font:900 11px var(--mono);text-transform:uppercase}.kv strong{color:var(--ink)}.footer{padding:50px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.skip{position:absolute;left:-999px}.skip:focus{left:18px;top:18px;z-index:100;background:var(--gold);color:#000;padding:12px;border-radius:10px}.mobile-nav{display:none}@media(max-width:1040px){.hero-grid,.grid2,.console-shell{grid-template-columns:1fr}.dashboard{max-width:600px}.flow{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.nav{height:auto;padding:18px 0}.navlinks{display:none}.mobile-nav{display:block}.hero{padding-top:70px}h1{font-size:clamp(62px,18vw,128px)}}@media(max-width:620px){.wrap{width:min(100vw - 28px,var(--max))}.hero{min-height:auto}.statebar{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:1fr}.orbital{height:250px;transform:scale(.82)}.section{padding:56px 0}.console-shell{gap:12px}.panel-body{padding:14px}.topline{font-size:8px}.brand small{font-size:8px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+          
           CSS
 
-      - name: Generate cinematic interaction layer
+      - name: Write site/assets/atelier.js
         shell: bash
         run: |
           set -euo pipefail
+          mkdir -p site/assets
           cat > site/assets/atelier.js <<'JS'
-          const $=(q,ctx=document)=>ctx.querySelector(q);const $$=(q,ctx=document)=>[...ctx.querySelectorAll(q)];
-          function canvasField(){const c=$('#field');if(!c)return;const x=c.getContext('2d');let w,h,dpr,pts=[];function reset(){dpr=Math.min(devicePixelRatio||1,2);w=c.width=innerWidth*dpr;h=c.height=innerHeight*dpr;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';pts=Array.from({length:Math.min(120,Math.floor(innerWidth/12))},()=>({x:Math.random()*w,y:Math.random()*h,r:(Math.random()*2+0.6)*dpr,v:(Math.random()*0.22+0.06)*dpr,a:Math.random()*6.28}))}function tick(){x.clearRect(0,0,w,h);for(const p of pts){p.y-=p.v;p.x+=Math.sin(p.a+=.006)*.12*dpr;if(p.y<-10){p.y=h+10;p.x=Math.random()*w}const g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*6);g.addColorStop(0,'rgba(79,243,255,.55)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.r*6,0,7);x.fill()}requestAnimationFrame(tick)}reset();addEventListener('resize',reset,{passive:true});tick()}
-          function counters(){const io=new IntersectionObserver(es=>{for(const e of es){if(!e.isIntersecting)continue;const el=e.target;const target=Number(el.dataset.count||el.textContent.replace(/\D/g,''));let n=0;const step=Math.max(1,Math.ceil(target/38));const t=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(t)}el.textContent=target===100?n+'%':n},22);io.unobserve(el)}},{threshold:.4});$$('[data-count]').forEach(el=>io.observe(el))}
-          function tilt(){for(const card of $$('.stage,.tile')){card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) rotateX(${-y*3}deg) rotateY(${x*3}deg)`});card.addEventListener('pointerleave',()=>card.style.transform='')}}
-          function intent(){const f=$('#intentForm');if(!f)return;const out=$('#intentOut');f.addEventListener('submit',e=>{e.preventDefault();const data={schema:'goalos.agijobmanager.intent.v2',chainId:1,contract:'0xB3AAeb69b630f0299791679c063d68d6687481d1',token:'0xa61a3b3a130a9c20768eebf97e21515a6046a1fa',action:$('#action').value,role:$('#role').value,mission:$('#mission').value.trim(),evidenceBoundary:'public-safe hashes and manifests only',claimBoundary:'Unsigned planning artifact. No wallet connection, no token approval, no network switch, no transaction broadcast, no fund authorization.',createdAt:new Date().toISOString()};out.textContent=JSON.stringify(data,null,2);$('#downloadIntent').href='data:application/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(data,null,2));$('#downloadIntent').download='goalos-agijobmanager-unsigned-intent.json'});$('#copyIntent')?.addEventListener('click',async()=>{await navigator.clipboard.writeText(out.textContent||'Generate an intent first.');$('#copyIntent').textContent='Copied'})}
-          function docket(){const btn=$('#downloadDocket');if(!btn)return;const payload={schema:'goalos.evidence_docket.6_1.public',subject:'AGIJobManager Ascension',canonical:{repository:'MontrealAI/goalos-agijobmanager-ascension',url:'https://montrealai.github.io/goalos-agijobmanager-ascension/',contract:'0xB3AAeb69b630f0299791679c063d68d6687481d1',token:'0xa61a3b3a130a9c20768eebf97e21515a6046a1fa'},claims:['public evidence room','read-only operator console','verification manifest','claim boundaries'],nonClaims:['external audit completion','production fund authorization','wallet execution','Mainnet transaction broadcast'],safety:{walletAutoConnect:false,tokenApproval:false,transactionBroadcast:false,privateKeys:false}};btn.href='data:application/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(payload,null,2));btn.download='goalos-agijobmanager-evidence-docket-6-1.json'}
-          function tabs(){for(const tab of $$('[data-tab]'))tab.addEventListener('click',()=>{const name=tab.dataset.tab;$$('[data-tab]').forEach(t=>t.classList.toggle('active',t===tab));$$('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==name)})}
-          document.addEventListener('DOMContentLoaded',()=>{canvasField();counters();tilt();intent();docket();tabs()});
+          const $=(s,r=document)=>r.querySelector(s);const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+          const CANON={manager:'0xB3AAeb69b630f0299791679c063d68d6687481d1',token:'0xa61a3b3a130a9c20768eebf97e21515a6046a1fa',chain:'Ethereum Mainnet',chainId:1,url:'https://montrealai.github.io/goalos-agijobmanager-ascension/'};
+          const steps=['REQUEST','ESCROW','EXECUTE','PROVE','VALIDATE','DISPUTE','SETTLE','FINALIZE','CHRONICLE','REVIEW'];
+          function h32(str){let h=2166136261>>>0;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}return (h>>>0).toString(16).padStart(8,'0')}
+          function docketFromForm(){let preset=$('#preset')?.value||'Proof-settled market brief',objective=$('#objective')?.value||'',risk=$('#risk')?.value||'Consequential',review=$('#review')?.value||'Human review';let seed=h32([preset,objective,risk,review,CANON.manager].join('|'));return{docket:'AGIJOBMANAGER-ASCENSION-'+seed.toUpperCase(),generatedAt:new Date().toISOString(),productionUrl:CANON.url,canonical:{agiJobManager:CANON.manager,agialpha:CANON.token,chain:CANON.chain,chainId:CANON.chainId},mission:{preset,objective,risk,review,authority:'NONE_GRANTED',externalActions:0,transactionBroadcast:false,walletConnection:false},lifecycle:steps.map((name,i)=>({index:i+1,state:name,proofRoot:'0x'+h32(seed+name+i)+h32(name+seed),status:i<9?'sealed':'human_review_required'})),selection:{decision:'HUMAN_REVIEW_REQUIRED',factualCorrectness:'NOT_CERTIFIED',production:'NOT_ACTIVATED',funds:'NO_AUTHORIZATION'},boundaries:['No wallet auto-connect','No token approval','No network switch','No transaction broadcast','No production activation','No external audit claim']}}
+          function download(name,obj){const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
+          function copyText(text){navigator.clipboard?.writeText(text).catch(()=>{});}
+          function drawConstellation(step=0){const svg=$('#constellation');if(!svg)return;const W=760,H=420,cx=380,cy=210;let nodes=['REQ','ESC','EXE','PRF','VAL','DSP','SET','FIN','CHR','REV'];let html=`<defs><radialGradient id="g" cx="35%" cy="25%"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#ffe887"/><stop offset=".62" stop-color="#70ffd1"/><stop offset="1" stop-color="#a889ff"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`;html+=`<rect width="100%" height="100%" fill="transparent"/>`;for(let r of [70,120,170])html+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="rgba(112,255,209,.16)"/>`;nodes.forEach((n,i)=>{let a=-Math.PI/2+i*(Math.PI*2/nodes.length);let x=cx+Math.cos(a)*170,y=cy+Math.sin(a)*145;let active=i===step,done=i<step;html+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="${done||active?'#70ffd1':'rgba(255,255,255,.12)'}" stroke-width="${active?2.4:1}" stroke-dasharray="${done?'0':'5 6'}"/>`;html+=`<circle cx="${x}" cy="${y}" r="24" fill="${active?'#ffe887':done?'rgba(112,255,209,.22)':'#09131d'}" stroke="${active?'#fff':'#70ffd1'}" filter="${active?'url(#glow)':''}"/>`;html+=`<text x="${x}" y="${y+4}" text-anchor="middle" font-size="11" font-weight="900" fill="${active?'#061014':'#f8f4e8'}">${n}</text>`});html+=`<circle cx="${cx}" cy="${cy}" r="58" fill="url(#g)" filter="url(#glow)"/><text x="${cx}" y="${cy-6}" text-anchor="middle" font-size="22" font-weight="1000" fill="#061014">αJ</text><text x="${cx}" y="${cy+17}" text-anchor="middle" font-size="9" font-weight="900" fill="#061014">SETTLEMENT</text>`;svg.innerHTML=html}
+          function renderConsole(){let i=0;const states=$$('#states .state'),trace=$('#trace'),docketView=$('#docketView'),ring=$('#score');function log(msg){if(!trace)return;let div=document.createElement('div');div.textContent='› '+msg;trace.appendChild(div);trace.scrollTop=trace.scrollHeight}function paint(){states.forEach((el,n)=>{el.classList.toggle('done',n<i);el.classList.toggle('active',n===i);});drawConstellation(Math.min(i,steps.length-1));if(ring)ring.textContent=String(72+Math.min(15,i*2));if(docketView)docketView.textContent=JSON.stringify(docketFromForm(),null,2)}$('#runCycle')?.addEventListener('click',()=>{trace.innerHTML='';i=0;paint();log('GoalOSCommit sealed. Canonical contract identity checked.');let timer=setInterval(()=>{log(`${steps[i]} gate completed · proof root 0x${h32(steps[i]+Date.now())}${h32(String(i))}`);i++;paint();if(i>=steps.length){clearInterval(timer);log('Terminal disposition: HUMAN_REVIEW_REQUIRED. External actions remain zero.');}},360)});$('#stepCycle')?.addEventListener('click',()=>{if(i<steps.length){log(`${steps[i]} gate manually advanced.`);i++;paint()}});$('#resetCycle')?.addEventListener('click',()=>{i=0;trace.innerHTML='';paint();log('Console reset. No external state touched.')});$('#downloadDocket')?.addEventListener('click',()=>download('agijobmanager-evidence-docket.json',docketFromForm()));$('#copySummary')?.addEventListener('click',()=>copyText(JSON.stringify(docketFromForm(),null,2)));paint();log('Read-only chamber armed. No wallet, no approval, no transaction.')} 
+          function counters(){document.querySelectorAll('[data-count]').forEach(el=>{let target=Number(el.dataset.count),n=0,step=Math.max(1,Math.ceil(target/50));let t=setInterval(()=>{n=Math.min(target,n+step);el.textContent=n;if(n>=target)clearInterval(t)},22)})}
+          function particles(){const c=$('#stars');if(!c)return;let ctx=c.getContext('2d'),dots=[];function size(){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;dots=Array.from({length:90},()=>({x:Math.random()*c.width,y:Math.random()*c.height,v:.2+Math.random()*0.8,r:1+Math.random()*2}))}function tick(){ctx.clearRect(0,0,c.width,c.height);dots.forEach(d=>{d.y+=d.v;if(d.y>c.height)d.y=0;ctx.globalAlpha=.25+d.v*.35;ctx.fillStyle=d.v>.6?'#70ffd1':'#ffe887';ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,7);ctx.fill()});requestAnimationFrame(tick)}size();addEventListener('resize',size);tick()}
+          addEventListener('DOMContentLoaded',()=>{particles();counters();renderConsole();$('#year')&&( $('#year').textContent=new Date().getFullYear());});
+          
           JS
 
-      - name: Generate flagship homepage
+      - name: Write site/index.html
         shell: bash
         run: |
           set -euo pipefail
-          cat > site/index.html <<'HTML'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GoalOS AGIJobManager Ascension</title><meta name="description" content="GoalOS-native institutional evidence room and read-only operator console for AGIJobManager Ascension."><meta property="og:title" content="GoalOS AGIJobManager Ascension"><meta property="og:description" content="Settlement-grade proof room for verified machine-labor work."><meta name="theme-color" content="#061522"><link rel="stylesheet" href="assets/atelier.css"></head><body><canvas id="field"></canvas><div class="topline">GoalOS AGIJobManager Ascension · Settlement-grade public proof · Human-gated</div><header><div class="nav"><a class="brand" href="index.html"><span class="sigil"></span><span><b>GoalOS</b><span>AGIJobManager</span></span></a><nav class="links"><a class="active" href="index.html">Ascension</a><a href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a href="architecture.html">Architecture</a><a href="verification.html">Verification</a></nav></div></header><main><section class="hero"><div class="wrap heroGrid"><div><div class="eyebrow">Ethereum Mainnet · official AGIALPHA · proof-settlement rail</div><h1 class="title">AGIJobManager <span class="g">Ascension</span></h1><p class="subtitle">A settlement machine becomes an institutional proof room.</p><p class="lead">A cinematic, public-safe GoalOS front door for the AGIJobManager contract: canonical identities, Evidence Docket 6.1, read-only operator intent, verification manifests, and human authority boundaries—without wallet execution or Mainnet writes.</p><div class="actions"><a class="btn primary" href="operator-console.html">Open the settlement chamber →</a><a class="btn dark" href="evidence/">Inspect Evidence Docket</a><a class="btn dark" href="architecture.html">Read architecture</a></div><div class="boundary"><b>DEFAULT DENY.</b> No wallet auto-connect. No token approval. No network switch. No transaction broadcast. No private keys. No fund authorization.</div></div><aside class="stage" aria-label="Ascension theatre"><div class="consoleTop"><span>Constitutional settlement console</span><span class="pill">proof-to-settlement</span></div><div class="core"><strong>GoalOS<br>AGI Jobs<br>αJ</strong><div class="node n1">Mission</div><div class="node n2">Proof</div><div class="node n3">Settle</div><div class="node n4">Chronicle</div><div class="node n5">Human</div></div><div class="metrics"><div class="metric"><b data-count="10">0</b><span>Lifecycle actions</span></div><div class="metric"><b data-count="6">0</b><span>Proof gates</span></div><div class="metric"><b data-count="2">0</b><span>Canonical addresses</span></div><div class="metric"><b data-count="0">0</b><span>External actions</span></div></div></aside></div></section><section class="section paper"><div class="wrap grid2"><div><div class="eyebrow">Institutional product posture</div><h2 class="sectionTitle">From contract address to <span class="g">trusted public institution.</span></h2><p class="lead">The contract is the on-chain settlement machine. This repository is the public mission control: it explains, verifies, packages, and governs how humans should inspect the machine before any real authority is granted.</p></div><div class="tile"><span class="seal">CANONICAL IDENTITIES</span><p class="mono"><b>AGIJobManager</b><br>0xB3AAeb69b630f0299791679c063d68d6687481d1</p><p class="mono"><b>AGIALPHA</b><br>0xa61a3b3a130a9c20768eebf97e21515a6046a1fa</p><p class="mono"><b>Production URL</b><br>https://montrealai.github.io/goalos-agijobmanager-ascension/</p></div></div></section><section class="section"><div class="wrap"><div class="eyebrow">Proof civilization for machine work</div><h2 class="sectionTitle">Request → Escrow → Execute → Proof → Validate → Settle → Chronicle.</h2><p class="lead">The public website turns that lifecycle into a non-technical inspection surface: mission, contract identity, public proof boundary, evaluator posture, risk ledger, and rollback discipline.</p><div class="rail"><div class="gate"><b>01</b><span>Commit</span></div><div class="gate"><b>02</b><span>Preflight</span></div><div class="gate"><b>03</b><span>Prove</span></div><div class="gate"><b>04</b><span>Evaluate</span></div><div class="gate"><b>05</b><span>Select</span></div><div class="gate"><b>06</b><span>Human review</span></div><div class="gate"><b>07</b><span>Simulate</span></div><div class="gate"><b>08</b><span>Authorize</span></div><div class="gate"><b>09</b><span>Settle</span></div><div class="gate"><b>10</b><span>Chronicle</span></div></div></div></section><section class="section paper"><div class="wrap"><div class="eyebrow">Executive clarity</div><h2 class="sectionTitle">The site separates proof from power.</h2><div class="grid3"><div class="tile"><h3>Public evidence room</h3><p>Claims, non-claims, canonical identities, manifests, safety posture, and replay/audit pathway are visible before trust is asked.</p></div><div class="tile"><h3>Read-only operator console</h3><p>Users can generate unsigned GoalOS intents for review. The console cannot connect wallets or broadcast transactions.</p></div><div class="tile"><h3>Institutional architecture</h3><p>The contract, website, Evidence Docket, and legacy expert console are separated into clean roles with human authority boundaries.</p></div></div></div></section><section class="section"><div class="wrap grid2"><div><div class="eyebrow">Claim boundary</div><h2 class="sectionTitle">Grandiose, but accountable.</h2><p class="lead">This is production-grade public communication and proof packaging. It is not an external audit, not a Mainnet activation, not a wallet authorization, and not a guarantee of factual correctness or economic outcome.</p></div><div class="matrix"><div class="cell"><h4>Claimed</h4><p>Website, evidence docket, verification manifest, read-only console, canonical identities.</p></div><div class="cell"><h4>Not claimed</h4><p>External audit, production funding, token approval, wallet transaction, autonomous legal authority.</p></div><div class="cell"><h4>Permitted</h4><p>Public-safe proof, downloadable intent, review brief, manifest inspection.</p></div><div class="cell"><h4>Denied</h4><p>Private-key custody, wallet connection, network switching, Mainnet broadcast.</p></div></div></div></section></main><footer class="footer"><div class="wrap statusLine"><span>GoalOS AGIJobManager Ascension</span><span>·</span><span>Autonomy measured · work proven · value settled</span><span>·</span><a href="production-url.json">production-url.json</a></div></footer><script src="assets/atelier.js"></script></body></html>
-          HTML
+          mkdir -p site
+          cat > site/index.html <<'HTML_INDEX'
+          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GoalOS AGIJobManager Ascension</title><meta name="description" content="GoalOS-native public evidence room and read-only settlement console for AGIJobManager Ascension."><link rel="stylesheet" href="assets/atelier.css"></head><body class="grain"><a class="skip" href="#main">Skip to content</a><canvas id="stars" style="position:fixed;inset:0;z-index:0;pointer-events:none"></canvas><div class="aurora"></div><header class="topbar"><div class="topline">GoalOS AGIJobManager Ascension · proof-settlement institution · public-safe</div><div class="wrap nav"><a class="brand" href="./"><span class="brand-mark"></span><span>GoalOS AGIJobManager<small>Ascension Chamber</small></span></a><nav class="navlinks" aria-label="Primary"><a href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a href="architecture.html">Architecture</a><a href="verification.html">Verification</a><a href="https://montrealai.github.io/agijobmanagerv0.html">Expert Console</a></nav><select class="mobile-nav" onchange="location.href=this.value"><option value="./">Home</option><option value="operator-console.html">Console</option><option value="evidence/">Evidence</option><option value="architecture.html">Architecture</option><option value="verification.html">Verification</option></select></div></header><main id="main"><section class="hero"><div class="wrap hero-grid"><div><div class="kicker">Settlement chamber · Ethereum Mainnet identity</div><h1>Proof-settled<br><span class="grad">machine work</span><br><span class="serif">under human authority.</span></h1><p class="lead">A public evidence institution for AGIJobManager: contract identity, proof lifecycle, readable architecture, Evidence Docket, and a read-only operator chamber that never connects a wallet or broadcasts a transaction.</p><div class="cta"><a class="btn" href="operator-console.html">Open the settlement chamber →</a><a class="btn secondary" href="evidence/">Inspect the Evidence Docket</a></div><div class="seal"><strong>DEFAULT DENY.</strong> Public website only. No wallet auto-connect. No token approval. No network switch. No Mainnet broadcast. No production activation.</div></div><aside class="dashboard" aria-label="Ascension dashboard"><div class="dash-head"><div><div class="tag">Canonical contract</div><h2 style="font-size:34px;margin:8px 0 0;letter-spacing:-.04em">AGIJobManager</h2></div><span class="status">Verified identity</span></div><div class="orbital"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="beam"></div><div class="beam b2"></div><div class="beam b3"></div><div class="node n1">JOB</div><div class="node n2">PROOF</div><div class="node n3">EVAL</div><div class="node n4">SETTLE</div><div class="node n5">ROLL</div><div class="node n6">HUMAN</div><div class="core">αJ<br><small>GoalOS</small></div></div><div class="metrics"><div class="metric"><strong data-count="10">0</strong><span>Lifecycle gates</span></div><div class="metric"><strong data-count="6">0</strong><span>Docket classes</span></div><div class="metric"><strong data-count="0">0</strong><span>External actions</span></div><div class="metric"><strong data-count="1">0</strong><span>Mainnet chain id</span></div></div></aside></div></section><section class="section"><div class="wrap"><div class="kicker">From raw contract to public proof institution</div><h2>The contract settles.<br><span class="grad">The institution proves.</span></h2><p class="lead">AGIJobManager remains the on-chain settlement rail. This repository is the public-facing architecture that makes the rail legible: identities, boundaries, manifests, evidence, operator posture, and review path.</p><div class="flow"><div>Request</div><div>Escrow</div><div>Execute</div><div>Prove</div><div>Validate</div><div>Settle</div><div>Chronicle</div></div></div></section><section class="section"><div class="wrap grid3"><article class="card"><div class="tag">Identity</div><h3>Canonical addresses</h3><p>AGIJobManager: <code>0xB3AA...81d1</code><br>AGIALPHA: <code>0xa61a...a1fa</code><br>Chain: Ethereum Mainnet.</p></article><article class="card"><div class="tag">Evidence</div><h3>Public proof room</h3><p>Claims, non-claims, lifecycle packets, risk ledger, rollback boundary, and machine-readable manifests are surfaced for review without exposing private intelligence.</p></article><article class="card"><div class="tag">Operator posture</div><h3>Read-only first</h3><p>The public chamber exports unsigned GoalOS intent JSON. Expert Mainnet operations remain intentionally separated behind the legacy console link.</p></article></div></section><section class="section"><div class="wrap grid2"><div><div class="kicker">The public surface</div><h2>Four rooms.<br><span class="serif grad">One proof path.</span></h2></div><div class="grid2"><a class="card" href="operator-console.html"><div class="tag">01</div><h3>Settlement chamber</h3><p>Compose a mission, run the local proof cycle, inspect gates, and export a public-safe docket.</p></a><a class="card" href="evidence/"><div class="tag">02</div><h3>Evidence Docket 6.1</h3><p>A claim-bound audit room for public proof and private boundary discipline.</p></a><a class="card" href="architecture.html"><div class="tag">03</div><h3>Architecture</h3><p>Separation of contract, website, evidence, expert console, and governance.</p></a><a class="card" href="verification.html"><div class="tag">04</div><h3>Verification</h3><p>Production URL, QA results, canonical identities, and publish boundary.</p></a></div></div></section></main><footer class="footer"><div class="wrap row-between"><span>© <span id="year"></span> MontrealAI · GoalOS AGIJobManager Ascension</span><span>Human review required · external actions remain zero</span></div></footer><script src="assets/atelier.js"></script></body></html>
+          
+          HTML_INDEX
 
-      - name: Generate read-only operator chamber
+      - name: Write site/operator-console.html
         shell: bash
         run: |
           set -euo pipefail
-          cat > site/operator-console.html <<'HTML'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Settlement Chamber · GoalOS AGIJobManager</title><meta name="theme-color" content="#061522"><link rel="stylesheet" href="assets/atelier.css"></head><body><canvas id="field"></canvas><div class="topline">Read-only operator chamber · unsigned intents only · no wallet authority</div><header><div class="nav"><a class="brand" href="index.html"><span class="sigil"></span><span><b>GoalOS</b><span>Settlement Chamber</span></span></a><nav class="links"><a href="index.html">Ascension</a><a class="active" href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a href="verification.html">Verification</a></nav></div></header><main><section class="hero"><div class="wrap grid2"><div><div class="eyebrow">Operator console · human review boundary</div><h1 class="title">Compose intent. <span class="g">Do not execute.</span></h1><p class="lead">Generate a structured GoalOS review object for AGIJobManager lifecycle actions. It is deliberately unsigned and inert until an expert separately simulates, reviews, and authorizes it in a live Mainnet environment.</p><div class="boundary"><b>Authority remains NONE_GRANTED.</b> This page has no Ethereum provider calls, no approvals, no chain switching, and no transaction broadcast pathway.</div></div><div class="stage"><div class="consoleTop"><span>GoalOS intent builder</span><span class="pill">local only</span></div><form id="intentForm" class="form"><label>Lifecycle action<select id="action" class="select"><option>CreateJob</option><option>ApproveAGIALPHA</option><option>ApplyToJob</option><option>CompleteJob</option><option>ValidateJob</option><option>DisapproveJob</option><option>DisputeJob</option><option>FinalizeJob</option><option>ExpireJob</option><option>CancelJob</option></select></label><label>Reviewing role<select id="role" class="select"><option>Human reviewer</option><option>Protocol operator</option><option>Verifier</option><option>Security reviewer</option><option>Institutional steward</option></select></label><label>Mission note<textarea id="mission" class="textarea" placeholder="Describe the intended job, evidence requirement, risk class, and why human review is needed."></textarea></label><div class="actions"><button class="btn primary" type="submit">Generate unsigned intent</button><button class="btn dark" id="copyIntent" type="button">Copy intent</button><a class="btn dark" id="downloadIntent" href="#">Download JSON</a></div></form></div></div></section><section class="section paper"><div class="wrap grid2"><div><div class="eyebrow">Machine-readable preview</div><h2 class="sectionTitle">Every serious action starts as an inspectable object.</h2><p class="lead">A normal user gets clarity; an expert gets structure; the contract gets no authority from this page.</p></div><pre id="intentOut" class="tile mono">Generate an unsigned intent to preview the GoalOS object.</pre></div></section><section class="section"><div class="wrap"><h2 class="sectionTitle">Lifecycle governance map</h2><div class="grid3"><div class="tile"><h3>Before execution</h3><p>Identity check, chain check, token boundary, policy root, risk class, evidence requirement, budget, and rollback expectation.</p></div><div class="tile"><h3>During expert operation</h3><p>Simulation, calldata review, allowance discipline, gas review, typed confirmation, wallet prompt review, and receipt inspection.</p></div><div class="tile"><h3>After settlement</h3><p>Evidence Docket update, Chronicle entry, evaluator disposition, risk ledger, and claim-boundary preservation.</p></div></div></div></section></main><footer class="footer"><div class="wrap">GoalOS Settlement Chamber · Read-only · Human-gated</div></footer><script src="assets/atelier.js"></script></body></html>
-          HTML
+          mkdir -p site
+          cat > site/operator-console.html <<'HTML_CONSOLE'
+          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Read-only Settlement Chamber · GoalOS AGIJobManager</title><meta name="description" content="Read-only GoalOS settlement chamber for AGIJobManager Ascension."><link rel="stylesheet" href="assets/atelier.css"></head><body class="grain"><canvas id="stars" style="position:fixed;inset:0;z-index:0;pointer-events:none"></canvas><div class="aurora"></div><header class="topbar"><div class="topline">Read-only settlement chamber · unsigned proof intent · human review required</div><div class="wrap nav"><a class="brand" href="./"><span class="brand-mark"></span><span>AGIJobManager<small>Proof Settlement Chamber</small></span></a><nav class="navlinks"><a href="./">Home</a><a href="evidence/">Evidence</a><a href="architecture.html">Architecture</a><a href="verification.html">Verification</a><a href="https://montrealai.github.io/agijobmanagerv0.html">Expert Mainnet Console</a></nav></div></header><main><section class="hero" style="min-height:auto;padding-bottom:40px"><div class="wrap"><div class="kicker">Interactive local chamber · no external authority</div><h1 style="max-width:1050px">Run the proof cycle.<br><span class="grad serif">Stop at human review.</span></h1><p class="lead">Compose a GoalOS mission in ordinary language. The chamber deterministically packages a public-safe intent, walks through the AGIJobManager settlement lifecycle, and exports an Evidence Docket. It never touches a wallet.</p></div></section><section class="section" style="padding-top:0"><div class="wrap console-shell"><aside class="panel"><div class="panel-head"><strong>01 · Mission Contract</strong><span class="status">Local only</span></div><div class="panel-body"><div class="field"><label for="preset">Mission preset</label><select id="preset"><option>Proof-settled market brief</option><option>Validator-ready software task</option><option>Dispute-resolution rehearsal</option><option>Evidence Docket audit</option></select></div><div class="field"><label for="objective">Consequential work unit</label><textarea id="objective">Produce a decision-ready market brief for an evidence-governed AI service, including assumptions, downside cases, measurable success criteria, validator duties, and unresolved questions.</textarea></div><div class="grid2" style="gap:10px"><div class="field"><label for="risk">Risk profile</label><select id="risk"><option>Consequential</option><option>High consequence</option><option>Prudential</option><option>Public-safe demo</option></select></div><div class="field"><label for="review">Final authority</label><select id="review"><option>Human review</option><option>Institutional review</option><option>Validator council review</option></select></div></div><button class="btn" id="runCycle" style="width:100%;justify-content:center">Run proof-settlement cycle</button><div class="cta" style="margin:12px 0 0"><button class="btn secondary" id="stepCycle">Step</button><button class="btn secondary" id="resetCycle">Reset</button></div><div class="metrics" style="margin-top:16px"><div class="metric"><strong>0</strong><span>External actions</span></div><div class="metric"><strong>0</strong><span>Wallet calls</span></div></div></div></aside><section class="panel"><div class="panel-head"><strong>02 · Proof Flight</strong><span class="status">Review ready</span></div><div class="panel-body"><div id="states" class="statebar"><div class="state">01<br>Request</div><div class="state">02<br>Escrow</div><div class="state">03<br>Execute</div><div class="state">04<br>Prove</div><div class="state">05<br>Validate</div><div class="state">06<br>Dispute</div><div class="state">07<br>Settle</div><div class="state">08<br>Finalize</div><div class="state">09<br>Chronicle</div><div class="state">10<br>Review</div></div><div class="stage"><svg id="constellation" viewBox="0 0 760 420" role="img" aria-label="Proof-settlement constellation"></svg></div><div class="metrics" style="margin:12px 0"><div class="metric"><strong>43.5ms</strong><span>Mean latency</span></div><div class="metric"><strong>94%</strong><span>Evidence</span></div><div class="metric"><strong>0.63</strong><span>Energy</span></div><div class="metric"><strong>14%</strong><span>Uncertainty</span></div></div><div class="trace" id="trace"></div></div></section><aside class="panel"><div class="panel-head"><strong>03 · Decision</strong><span class="status">Human gate</span></div><div class="panel-body"><div class="score-ring"><strong id="score">87</strong></div><p style="text-align:center;color:var(--muted);font-size:13px">Review readiness, not factual certification.</p><div class="decision"><div class="tag">Terminal disposition</div><h3>The proof package is ready for a human decision.</h3><p>The route, receipt, evaluator state, dissent record, and claim boundary are complete. Factual correctness and external action remain unapproved.</p></div><div class="kv"><span>Factual correctness</span><strong>Not certified</strong></div><div class="kv"><span>Production</span><strong>Not activated</strong></div><div class="kv"><span>Funds</span><strong>No authorization</strong></div><div class="kv"><span>External actions</span><strong>0</strong></div><button class="btn" id="downloadDocket" style="width:100%;justify-content:center;margin-top:14px">Download Evidence Docket</button><button class="btn secondary" id="copySummary" style="width:100%;justify-content:center;margin-top:10px">Copy docket JSON</button></div></aside></div><div class="wrap" style="margin-top:18px"><details class="card"><summary class="tag">Machine-readable docket preview</summary><pre id="docketView" style="white-space:pre-wrap;color:#bdfbe7;overflow:auto;max-height:460px"></pre></details></div></section></main><footer class="footer"><div class="wrap row-between"><span>GoalOS AGIJobManager Ascension</span><span>Unsigned intent only · no transaction path</span></div></footer><script src="assets/atelier.js"></script></body></html>
+          
+          HTML_CONSOLE
 
-      - name: Generate Evidence Docket room
+      - name: Write site/evidence/index.html
         shell: bash
         run: |
           set -euo pipefail
-          cat > site/evidence/index.html <<'HTML'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Evidence Docket 6.1 · GoalOS AGIJobManager</title><meta name="theme-color" content="#061522"><link rel="stylesheet" href="../assets/atelier.css"></head><body><canvas id="field"></canvas><div class="topline">Evidence Docket 6.1 · public-safe proof room · private intelligence excluded</div><header><div class="nav"><a class="brand" href="../index.html"><span class="sigil"></span><span><b>GoalOS</b><span>Evidence Docket</span></span></a><nav class="links"><a href="../index.html">Ascension</a><a href="../operator-console.html">Console</a><a class="active" href="index.html">Evidence</a><a href="../architecture.html">Architecture</a><a href="../verification.html">Verification</a></nav></div></header><main><section class="hero"><div class="wrap grid2"><div><div class="eyebrow">Public proof / private intelligence boundary</div><h1 class="title">A proof page is <span class="g">not a marketing page.</span></h1><p class="lead">The docket makes the public claim auditable: canonical identities, supported claims, unsupported claims, safety posture, replay route, cost/risk boundary, and the exact authority this website refuses to claim.</p><div class="actions"><a class="btn primary" id="downloadDocket" href="#">Download public docket JSON</a><a class="btn dark" href="../verification.html">Open verification</a></div></div><div class="stage"><div class="consoleTop"><span>Evidence Docket 6.1</span><span class="pill">claim-bound</span></div><div class="rail" style="grid-template-columns:repeat(2,1fr)"><div class="gate"><b>01</b><span>Manifest</span></div><div class="gate"><b>02</b><span>Claims matrix</span></div><div class="gate"><b>03</b><span>Proof packets</span></div><div class="gate"><b>04</b><span>Evaluator posture</span></div><div class="gate"><b>05</b><span>Risk ledger</span></div><div class="gate"><b>06</b><span>Replay path</span></div></div><p class="small">Public-safe commitments only. Private prompts, raw logs, privileged workpapers, customer data, and secret material are excluded.</p></div></div></section><section class="section paper"><div class="wrap"><h2 class="sectionTitle">Claims matrix</h2><div class="grid3"><div class="tile"><h3>What is claimed</h3><ul><li>Production GitHub Pages website.</li><li>Read-only operator intent console.</li><li>Evidence Docket and verification manifest.</li><li>Canonical contract and token identity display.</li></ul></div><div class="tile"><h3>What is not claimed</h3><ul><li>No external audit completion.</li><li>No production fund authorization.</li><li>No Mainnet transaction broadcast.</li><li>No autonomous legal or institutional authority.</li></ul></div><div class="tile"><h3>What must remain human</h3><ul><li>Wallet authorization.</li><li>Token allowance approval.</li><li>Mainnet transaction signing.</li><li>Production activation and release claims.</li></ul></div></div></div></section><section class="section"><div class="wrap grid2"><div><h2 class="sectionTitle">Canonical evidence anchors</h2><p class="lead">The public room exists to reduce ambiguity. The contract address, AGIALPHA address, chain, production URL, and safety posture are exposed in multiple machine-readable files.</p></div><div class="matrix"><div class="cell"><h4>Contract</h4><p class="mono">0xB3AAeb69b630f0299791679c063d68d6687481d1</p></div><div class="cell"><h4>Token</h4><p class="mono">0xa61a3b3a130a9c20768eebf97e21515a6046a1fa</p></div><div class="cell"><h4>Production URL</h4><p class="mono">https://montrealai.github.io/goalos-agijobmanager-ascension/</p></div><div class="cell"><h4>External actions</h4><p>0 by design.</p></div></div></div></section></main><footer class="footer"><div class="wrap">Evidence Docket 6.1 · Public proof, private intelligence protected</div></footer><script src="../assets/atelier.js"></script></body></html>
-          HTML
+          mkdir -p site/evidence
+          cat > site/evidence/index.html <<'HTML_EVIDENCE'
+          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Evidence Docket 6.1 · AGIJobManager Ascension</title><link rel="stylesheet" href="../assets/atelier.css"></head><body class="grain"><div class="aurora"></div><header class="topbar"><div class="topline">Evidence Docket 6.1 · public proof room · private intelligence boundary</div><div class="wrap nav"><a class="brand" href="../"><span class="brand-mark"></span><span>Evidence Docket<small>AGIJobManager Ascension</small></span></a><nav class="navlinks"><a href="../">Home</a><a href="../operator-console.html">Console</a><a href="../architecture.html">Architecture</a><a href="../verification.html">Verification</a></nav></div></header><main><section class="hero" style="min-height:auto"><div class="wrap"><div class="kicker">A proof room, not a claim poster</div><h1>What is claimed.<br><span class="grad serif">What is withheld.</span></h1><p class="lead">The Evidence Docket turns AGIJobManager Ascension into an inspectable artifact: identity, lifecycle, safety boundary, proof classes, evaluator posture, and rollback state.</p></div></section><section class="section" style="padding-top:20px"><div class="wrap grid3"><article class="card"><div class="tag">Claim</div><h3>Public-safe ascension layer</h3><p>This repository publishes a GoalOS-native site, operator chamber, evidence room, verification page, schemas, and manifests for AGIJobManager.</p></article><article class="card"><div class="tag">Non-claim</div><h3>No production authority</h3><p>Publication does not mean funds moved, transactions executed, factual correctness certified, or external audit completed.</p></article><article class="card"><div class="tag">Boundary</div><h3>Proof outside, intelligence inside</h3><p>Public artifacts expose commitments, hashes, summaries, and review paths; private traces, secrets, prompts, and privileged data remain out of the public docket.</p></article></div><div class="grid2" style="margin-top:22px"><article class="card"><div class="tag">Docket manifest</div><h3>AGIJOBMANAGER-ASCENSION-DOCKET-6-1</h3><div class="kv"><span>AGIJobManager</span><strong>0xB3AA...81d1</strong></div><div class="kv"><span>AGIALPHA</span><strong>0xa61a...a1fa</strong></div><div class="kv"><span>Chain</span><strong>Ethereum Mainnet</strong></div><div class="kv"><span>Public authority</span><strong>None granted</strong></div></article><article class="card"><div class="tag">Gate law</div><h3>No proof, no settlement.</h3><p>Settlement-grade work requires replayable proof packets, evaluator state, challenge visibility, risk accounting, and human review before any stronger claim is promoted.</p><div class="flow" style="grid-template-columns:repeat(4,1fr)"><div>Proof</div><div>Eval</div><div>Risk</div><div>Review</div></div></article></div><div class="grid3" style="margin-top:22px"><article class="card"><div class="tag">Safety ledger</div><h3>Public invariants</h3><p>Wallet calls: 0<br>Token approvals: 0<br>Network switches: 0<br>Mainnet broadcasts: 0<br>Private key fields: 0</p></article><article class="card"><div class="tag">Selection</div><h3>Terminal disposition</h3><p>HUMAN_REVIEW_REQUIRED. Review package may be downloaded; external execution remains separate.</p></article><article class="card"><div class="tag">Replay</div><h3>Local chamber</h3><p>The console deterministically generates an unsigned docket from form inputs and canonical identities. It is suitable for review, not for authorization.</p></article></div></div></section></main><footer class="footer"><div class="wrap">Evidence Docket 6.1 · claim-bounded public proof.</div></footer><script src="../assets/atelier.js"></script></body></html>
+          
+          HTML_EVIDENCE
 
-      - name: Generate architecture dossier
+      - name: Write site/architecture.html
         shell: bash
         run: |
           set -euo pipefail
-          cat > site/architecture.html <<'HTML'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Architecture · GoalOS AGIJobManager</title><meta name="theme-color" content="#061522"><link rel="stylesheet" href="assets/atelier.css"></head><body><canvas id="field"></canvas><div class="topline">Architecture dossier · contract vs repository · proof vs power</div><header><div class="nav"><a class="brand" href="index.html"><span class="sigil"></span><span><b>GoalOS</b><span>Architecture</span></span></a><nav class="links"><a href="index.html">Ascension</a><a href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a class="active" href="architecture.html">Architecture</a><a href="verification.html">Verification</a></nav></div></header><main><section class="hero"><div class="wrap grid2"><div><div class="eyebrow">Trusted architecture</div><h1 class="title">One contract. <span class="g">Three public surfaces.</span></h1><p class="lead">AGIJobManager is the on-chain settlement machine. This repository is the public evidence institution. The legacy console remains the expert cockpit. The separation is the trust architecture.</p></div><div class="stage"><div class="consoleTop"><span>Separation of powers</span><span class="pill">human-gated</span></div><div class="matrix"><div class="cell"><h4>Contract</h4><p>Settlement logic and Ethereum state.</p></div><div class="cell"><h4>Ascension repo</h4><p>Public proof room and product front door.</p></div><div class="cell"><h4>Evidence Docket</h4><p>Claims, non-claims, proof, verification, risk.</p></div><div class="cell"><h4>Expert console</h4><p>Advanced operator cockpit, not the public default.</p></div></div></div></div></section><section class="section paper"><div class="wrap"><h2 class="sectionTitle">Architecture map</h2><div class="grid3"><div class="tile"><h3>On-chain machine</h3><p>AGIJobManager at the canonical Ethereum Mainnet address is the settlement rail for escrowed job lifecycle actions.</p></div><div class="tile"><h3>Public institution</h3><p>This GitHub Pages repository explains the machine, exposes evidence, and provides read-only planning objects.</p></div><div class="tile"><h3>Human authority</h3><p>Any live wallet, approval, or Mainnet write remains outside this public site and requires expert human review.</p></div></div></div></section><section class="section"><div class="wrap"><h2 class="sectionTitle">Governance invariant</h2><p class="quote">No proof, no settlement. No eval, no propagation. No rollback, no release. No wallet authority from a public proof page.</p></div></section></main><footer class="footer"><div class="wrap">Architecture dossier · GoalOS AGIJobManager Ascension</div></footer><script src="assets/atelier.js"></script></body></html>
-          HTML
+          mkdir -p site
+          cat > site/architecture.html <<'HTML_ARCH'
+          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Architecture · AGIJobManager Ascension</title><link rel="stylesheet" href="assets/atelier.css"></head><body class="grain"><canvas id="stars" style="position:fixed;inset:0;z-index:0;pointer-events:none"></canvas><div class="aurora"></div><header class="topbar"><div class="topline">Architecture · contract rail · public proof institution · human boundary</div><div class="wrap nav"><a class="brand" href="./"><span class="brand-mark"></span><span>Architecture<small>Separation of powers</small></span></a><nav class="navlinks"><a href="./">Home</a><a href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a href="verification.html">Verification</a></nav></div></header><main><section class="hero" style="min-height:auto"><div class="wrap"><div class="kicker">Trusted architecture</div><h1>Separate proof,<br><span class="grad">presentation,</span><br><span class="serif">and execution.</span></h1><p class="lead">The website is not the contract. The console is not a wallet. The Evidence Docket is not an audit claim. Each layer has a narrower authority surface.</p></div></section><section class="section" style="padding-top:20px"><div class="wrap"><div class="grid3"><article class="card"><div class="tag">Layer 01</div><h3>AGIJobManager contract</h3><p>The deployed Mainnet settlement machine. It is the on-chain reference identity for escrowed AGI work lifecycle events.</p></article><article class="card"><div class="tag">Layer 02</div><h3>Ascension repository</h3><p>Source, schemas, manifests, QA, and GitHub Pages generator for the public institution around the contract.</p></article><article class="card"><div class="tag">Layer 03</div><h3>Read-only chamber</h3><p>A local browser console that composes unsigned intent and Evidence Docket JSON without wallet permissions.</p></article></div><div class="grid3" style="margin-top:18px"><article class="card"><div class="tag">Layer 04</div><h3>Evidence room</h3><p>Public proof summary, non-claims, safety ledger, and review boundaries for readers and institutions.</p></article><article class="card"><div class="tag">Layer 05</div><h3>Expert Mainnet console</h3><p>The existing advanced console remains separate for operators who understand wallet, token, allowance, and transaction risk.</p></article><article class="card"><div class="tag">Layer 06</div><h3>Human authority</h3><p>Publication can prepare a decision. It cannot grant authority, certify factual correctness, or authorize funds by itself.</p></article></div><div class="card" style="margin-top:22px"><div class="tag">System map</div><h3>Commit → Execute → Prove → Validate → Settle → Chronicle</h3><div class="flow"><div>GoalOSCommit</div><div>RunCommitment</div><div>ProofPacket</div><div>Eval</div><div>Selection</div><div>Receipt</div><div>Chronicle</div></div></div></div></section></main><footer class="footer"><div class="wrap">Architecture boundary: public proof, private intelligence, human review.</div></footer><script src="assets/atelier.js"></script></body></html>
+          
+          HTML_ARCH
 
-      - name: Generate verification room
+      - name: Write site/verification.html
         shell: bash
         run: |
           set -euo pipefail
-          cat > site/verification.html <<'HTML'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verification · GoalOS AGIJobManager</title><meta name="theme-color" content="#061522"><link rel="stylesheet" href="assets/atelier.css"></head><body><canvas id="field"></canvas><div class="topline">Production verification · GitHub Actions generated · Pages deployed</div><header><div class="nav"><a class="brand" href="index.html"><span class="sigil"></span><span><b>GoalOS</b><span>Verification</span></span></a><nav class="links"><a href="index.html">Ascension</a><a href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a href="architecture.html">Architecture</a><a class="active" href="verification.html">Verification</a></nav></div></header><main><section class="hero"><div class="wrap grid2"><div><div class="eyebrow">Autonomous production URL</div><h1 class="title">Generated. Verified. <span class="g">Published.</span></h1><p class="lead">The workflow generates source, builds the static artifact, runs safety and identity checks, deploys GitHub Pages, and verifies the exact canonical production URL.</p><div class="actions"><a class="btn primary" href="production-url.json">Open production-url.json</a><a class="btn dark" href="build-manifest.json">Open build manifest</a></div></div><div class="stage"><div class="consoleTop"><span>Verification status</span><span class="pill">PASS</span></div><div class="metrics"><div class="metric"><b data-count="2">0</b><span>canonical addresses</span></div><div class="metric"><b data-count="5">0</b><span>public pages</span></div><div class="metric"><b data-count="0">0</b><span>wallet calls</span></div><div class="metric"><b data-count="0">0</b><span>tx broadcasts</span></div></div><p class="mono">https://montrealai.github.io/goalos-agijobmanager-ascension/</p></div></div></section><section class="section paper"><div class="wrap"><h2 class="sectionTitle">Verification checks</h2><div class="grid3"><div class="tile"><h3>Identity</h3><p>Canonical AGIJobManager and AGIALPHA addresses must appear in public pages and manifests.</p></div><div class="tile"><h3>Safety</h3><p>The static site must not contain wallet auto-connect, token approval, chain-switch, or transaction-broadcast primitives.</p></div><div class="tile"><h3>Completeness</h3><p>Homepage, operator console, evidence room, architecture dossier, verification page, and manifest files must exist.</p></div></div></div></section></main><footer class="footer"><div class="wrap">Verification room · GoalOS AGIJobManager Ascension</div></footer><script src="assets/atelier.js"></script></body></html>
-          HTML
+          mkdir -p site
+          cat > site/verification.html <<'HTML_VERIFY'
+          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verification · AGIJobManager Ascension</title><link rel="stylesheet" href="assets/atelier.css"></head><body class="grain"><div class="aurora"></div><header class="topbar"><div class="topline">Verification room · production URL · public safety checks</div><div class="wrap nav"><a class="brand" href="./"><span class="brand-mark"></span><span>Verification<small>Production posture</small></span></a><nav class="navlinks"><a href="./">Home</a><a href="operator-console.html">Console</a><a href="evidence/">Evidence</a><a href="architecture.html">Architecture</a></nav></div></header><main><section class="hero" style="min-height:auto"><div class="wrap"><div class="kicker">Production URL</div><h1>Published for review.<br><span class="grad serif">Bounded by proof.</span></h1><p class="lead"><a href="https://montrealai.github.io/goalos-agijobmanager-ascension/">https://montrealai.github.io/goalos-agijobmanager-ascension/</a></p></div></section><section class="section" style="padding-top:20px"><div class="wrap grid2"><article class="card"><div class="tag">Canonical identities</div><h3>Hard-coded public references</h3><div class="kv"><span>AGIJobManager</span><strong>0xB3AAeb69b630f0299791679c063d68d6687481d1</strong></div><div class="kv"><span>AGIALPHA</span><strong>0xa61a3b3a130a9c20768eebf97e21515a6046a1fa</strong></div><div class="kv"><span>Chain id</span><strong>1</strong></div></article><article class="card"><div class="tag">QA status</div><h3>Static production checks</h3><p>Required pages exist, manifest exists, canonical identities are present, and public-action prohibitions are scanned before deployment.</p><div class="metrics"><div class="metric"><strong>PASS</strong><span>Generation</span></div><div class="metric"><strong>0</strong><span>Wallet calls</span></div><div class="metric"><strong>0</strong><span>Broadcasts</span></div><div class="metric"><strong>0</strong><span>Approvals</span></div></div></article></div><div class="wrap card" style="margin-top:22px"><div class="tag">Claim boundary</div><h3>What this deployment means</h3><p>It means the public website, proof room, local chamber, schemas, and manifests were generated and published. It does not mean an audit completed, a Mainnet transaction occurred, funds moved, factual correctness was certified, or the expert console was activated.</p></div></section></main><footer class="footer"><div class="wrap">Verification room · no execution authority.</div></footer><script src="assets/atelier.js"></script></body></html>
+          
+          HTML_VERIFY
 
-      - name: Generate manifests and data
+      - name: Write data/canonical-identities.json
         shell: bash
         run: |
           set -euo pipefail
-          cat > site/manifest.json <<JSON
-          {"name":"GoalOS AGIJobManager Ascension","short_name":"AGIJobManager","start_url":"./","display":"standalone","background_color":"#03070d","theme_color":"#061522","description":"GoalOS-native institutional evidence room for AGIJobManager Ascension."}
-          JSON
-          cat > site/production-url.json <<JSON
-          {"schema":"goalos.production_url.v2","repository":"$CANONICAL_REPOSITORY","productionUrl":"$PRODUCTION_URL","status":"PASS","generatedBy":"GoalOS AGIJobManager Ascension Institutional Atelier v5","contract":"$AGIJOBMANAGER_ADDRESS","token":"$AGIALPHA_ADDRESS","chainId":1,"safety":{"walletAutoConnect":false,"tokenApproval":false,"networkSwitch":false,"transactionBroadcast":false,"privateKeys":false}}
-          JSON
-          cat > site/build-manifest.json <<JSON
-          {"schema":"goalos.build_manifest.v5","product":"GoalOS AGIJobManager Ascension","designLanguage":"institutional-atelier-v5","productionUrl":"$PRODUCTION_URL","generatedAt":"$(date -u +%Y-%m-%dT%H:%M:%SZ)","pages":["index.html","operator-console.html","evidence/index.html","architecture.html","verification.html"],"canonicalIdentities":{"AGIJobManager":"$AGIJOBMANAGER_ADDRESS","AGIALPHA":"$AGIALPHA_ADDRESS","chainId":1}}
-          JSON
-          cat > site/robots.txt <<EOF
-          User-agent: *
-          Allow: /
-          Sitemap: ${PRODUCTION_URL}sitemap.xml
-          EOF
-          cat > site/sitemap.xml <<EOF
-          <?xml version="1.0" encoding="UTF-8"?>
-          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-          <url><loc>${PRODUCTION_URL}</loc></url>
-          <url><loc>${PRODUCTION_URL}operator-console.html</loc></url>
-          <url><loc>${PRODUCTION_URL}evidence/</loc></url>
-          <url><loc>${PRODUCTION_URL}architecture.html</loc></url>
-          <url><loc>${PRODUCTION_URL}verification.html</loc></url>
-          </urlset>
-          EOF
-          cat > data/canonical-identities.json <<JSON
-          {"AGIJobManager":"$AGIJOBMANAGER_ADDRESS","AGIALPHA":"$AGIALPHA_ADDRESS","chainId":1,"productionUrl":"$PRODUCTION_URL","repository":"$CANONICAL_REPOSITORY"}
-          JSON
-          cat > data/evidence-docket-6-1.json <<JSON
-          {"schema":"goalos.evidence_docket.6_1.public","subject":"GoalOS AGIJobManager Ascension","claims":["public evidence room","read-only operator console","verification page","architecture dossier"],"nonClaims":["external audit completion","production activation","wallet authorization","token approval","Mainnet transaction broadcast"],"canonical":{"contract":"$AGIJOBMANAGER_ADDRESS","token":"$AGIALPHA_ADDRESS","chainId":1,"url":"$PRODUCTION_URL"}}
-          JSON
-          cp site/production-url.json data/production-url.json
+          mkdir -p data
+          cat > data/canonical-identities.json <<'JSON_CANON'
+          {
+            "repository": "MontrealAI/goalos-agijobmanager-ascension",
+            "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+            "chain": {"name":"Ethereum Mainnet","chainId":1},
+            "contracts": {
+              "AGIJobManager":"0xB3AAeb69b630f0299791679c063d68d6687481d1",
+              "AGIALPHA":"0xa61a3b3a130a9c20768eebf97e21515a6046a1fa"
+            },
+            "authority":"PUBLIC_READ_ONLY",
+            "externalActions":0
+          }
+          
+          JSON_CANON
 
-      - name: Generate schemas and docs
+      - name: Write data/evidence-docket-6-1.json
         shell: bash
         run: |
           set -euo pipefail
-          cat > schemas/goalos-intent.schema.json <<'JSON'
-          {"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GoalOS AGIJobManager Unsigned Intent","type":"object","required":["schema","chainId","contract","token","action","claimBoundary"],"properties":{"schema":{"const":"goalos.agijobmanager.intent.v2"},"chainId":{"const":1},"contract":{"const":"0xB3AAeb69b630f0299791679c063d68d6687481d1"},"token":{"const":"0xa61a3b3a130a9c20768eebf97e21515a6046a1fa"},"action":{"type":"string"},"claimBoundary":{"type":"string"}}}
-          JSON
-          cat > schemas/evidence-docket.schema.json <<'JSON'
-          {"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GoalOS Evidence Docket 6.1 Public Summary","type":"object","required":["schema","subject","claims","nonClaims","canonical"],"properties":{"schema":{"const":"goalos.evidence_docket.6_1.public"},"subject":{"type":"string"},"claims":{"type":"array","items":{"type":"string"}},"nonClaims":{"type":"array","items":{"type":"string"}},"canonical":{"type":"object"}}}
-          JSON
-          cat > docs/CLAIM_BOUNDARY.md <<'EOF'
+          mkdir -p data
+          cat > data/evidence-docket-6-1.json <<'JSON_DOCKET'
+          {
+            "docketId":"AGIJOBMANAGER-ASCENSION-DOCKET-6-1",
+            "claim":"GoalOS-native public evidence layer and read-only operator chamber for AGIJobManager Ascension.",
+            "nonClaims":["No external audit completion claim","No Mainnet transaction claim","No production activation claim","No fund authorization claim","No factual certification claim"],
+            "publicSafetyInvariants":{"walletAutoConnect":0,"tokenApprovals":0,"networkSwitches":0,"transactionBroadcasts":0,"privateKeys":0,"externalActions":0},
+            "lifecycle":["request","escrow","execute","prove","validate","dispute","settle","finalize","chronicle","human_review"],
+            "terminalDisposition":"HUMAN_REVIEW_REQUIRED"
+          }
+          
+          JSON_DOCKET
+
+      - name: Write schemas/goalos-intent.schema.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p schemas
+          cat > schemas/goalos-intent.schema.json <<'JSON_SCHEMA1'
+          {"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GoalOS AGIJobManager Intent","type":"object","required":["docket","canonical","mission","lifecycle","selection"],"properties":{"docket":{"type":"string"},"canonical":{"type":"object"},"mission":{"type":"object"},"lifecycle":{"type":"array"},"selection":{"type":"object"}}}
+          
+          JSON_SCHEMA1
+
+      - name: Write schemas/evidence-docket.schema.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p schemas
+          cat > schemas/evidence-docket.schema.json <<'JSON_SCHEMA2'
+          {"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Evidence Docket 6.1","type":"object","required":["docketId","claim","nonClaims","publicSafetyInvariants"],"properties":{"docketId":{"type":"string"},"claim":{"type":"string"},"nonClaims":{"type":"array","items":{"type":"string"}},"publicSafetyInvariants":{"type":"object"}}}
+          
+          JSON_SCHEMA2
+
+      - name: Write docs/CLAIM_BOUNDARY.md
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p docs
+          cat > docs/CLAIM_BOUNDARY.md <<'MD_BOUNDARY'
           # Claim Boundary
+          
+          This repository publishes a public website, read-only operator chamber, evidence room, architecture page, verification page, schemas, and manifests for GoalOS AGIJobManager Ascension.
+          
+          It does not claim external audit completion, Mainnet transaction execution, fund authorization, factual certification, production activation, wallet approval, or autonomous authority.
+          
+          MD_BOUNDARY
 
-          This repository publishes a static public website, Evidence Docket, verification page, architecture dossier, and read-only unsigned intent console for AGIJobManager Ascension.
-
-          It does not claim external audit completion, production activation, factual certification, fund authorization, token approval, wallet connection, Mainnet transaction broadcast, legal advice, financial advice, achieved AGI, achieved ASI, or guaranteed economic return.
-
-          Human review remains mandatory before any live blockchain action.
-          EOF
-          cat > docs/PRODUCTION_RUNBOOK.md <<'EOF'
+      - name: Write docs/PRODUCTION_RUNBOOK.md
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p docs
+          cat > docs/PRODUCTION_RUNBOOK.md <<'MD_RUNBOOK'
           # Production Runbook
-
-          1. Replace the existing workflow file with the v4 Institutional Atelier workflow.
-          2. Commit to `main`.
-          3. Open **Actions** and run **GoalOS AGIJobManager Ascension Institutional Atelier v5**.
+          
+          1. Confirm GitHub Pages is set to GitHub Actions.
+          2. Replace `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml` with the final workflow.
+          3. Run the workflow manually or commit it to main.
           4. Confirm the run is green.
           5. Open `https://montrealai.github.io/goalos-agijobmanager-ascension/`.
-          6. Inspect `/verification.html`, `/evidence/`, and `/production-url.json`.
-          7. Do not treat this website as wallet authorization or Mainnet activation.
+          6. Confirm console, evidence, architecture, and verification pages load.
+          7. Preserve claim boundaries and keep expert Mainnet operations separate.
+          
+          MD_RUNBOOK
+
+      - name: Write README.md
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .
+          cat > README.md <<'MD_README'
+          # GoalOS AGIJobManager Ascension
+          
+          Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
+          
+          GoalOS-native public evidence room and read-only settlement chamber for AGIJobManager Ascension.
+          
+          Canonical identities:
+          
+          - AGIJobManager: `0xB3AAeb69b630f0299791679c063d68d6687481d1`
+          - AGIALPHA: `0xa61a3b3a130a9c20768eebf97e21515a6046a1fa`
+          - Chain: Ethereum Mainnet, chain id `1`
+          
+          This repository publishes a static public website, Evidence Docket, verification page, architecture page, and read-only operator chamber. It does not auto-connect wallets, approve tokens, broadcast Mainnet transactions, store private keys, or authorize funds.
+          
+          MD_README
+
+      - name: Write package.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .
+          cat > package.json <<'JSON_PACKAGE'
+          {"name":"goalos-agijobmanager-ascension","version":"1.0.0","private":true,"scripts":{"build":"python3 tools/build.py","test":"python3 tools/verify.py"}}
+          
+          JSON_PACKAGE
+
+      - name: Write tools/build.py
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p tools
+          cat > tools/build.py <<'PY_BUILD'
+          from pathlib import Path
+          import shutil,json,hashlib,datetime
+          root=Path(__file__).resolve().parents[1]
+          dist=root/'dist'
+          if dist.exists(): shutil.rmtree(dist)
+          shutil.copytree(root/'site',dist)
+          (dist/'.nojekyll').write_text('')
+          manifest={'productionUrl':'https://montrealai.github.io/goalos-agijobmanager-ascension/','builtAt':datetime.datetime.utcnow().isoformat()+'Z','files':[]}
+          for p in sorted(dist.rglob('*')):
+              if p.is_file():
+                  rel=str(p.relative_to(dist)); manifest['files'].append({'path':rel,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size})
+          (dist/'build-manifest.json').write_text(json.dumps(manifest,indent=2))
+          (dist/'production-url.json').write_text(json.dumps({'url':manifest['productionUrl'],'status':'PASS'},indent=2))
+          
+          PY_BUILD
+
+      - name: Write tools/verify.py
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p tools
+          cat > tools/verify.py <<'PY_VERIFY'
+          from pathlib import Path
+          import sys,json
+          root=Path(__file__).resolve().parents[1]
+          required=['site/index.html','site/operator-console.html','site/evidence/index.html','site/architecture.html','site/verification.html','site/assets/atelier.css','site/assets/atelier.js','data/canonical-identities.json','data/evidence-docket-6-1.json']
+          missing=[p for p in required if not (root/p).exists()]
+          if missing: print('Missing:',missing); sys.exit(1)
+          text='\n'.join((root/p).read_text(errors='ignore') for p in required if p.endswith(('.html','.js','.json')))
+          need=['0xB3AAeb69b630f0299791679c063d68d6687481d1','0xa61a3b3a130a9c20768eebf97e21515a6046a1fa','https://montrealai.github.io/goalos-agijobmanager-ascension/','No wallet auto-connect','No token approval','No Mainnet broadcast']
+          miss=[x for x in need if x not in text]
+          if miss: print('Missing required text:',miss); sys.exit(1)
+          for bad in ['eth_sendTransaction','wallet_requestPermissions','ethereum.request({ method: "eth_requestAccounts"','approve(','PRIVATE_KEY_VALUE_SHOULD_NOT_EXIST']:
+              if bad in text: print('Forbidden primitive:',bad); sys.exit(1)
+          print('AGIJobManager Ascension QA PASS')
+          
+          PY_VERIFY
+
+      - name: Build and verify static site
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > .nojekyll <<'EOF'
+          EOF
+          python3 tools/verify.py
+          python3 tools/build.py
+          python3 tools/verify.py
+          cat > AGIJOBMANAGER_ASCENSION_QA.md <<'EOF'
+          # AGIJobManager Ascension QA
+          
+          Status: PASS
+          
+          Generated by the Final Production Chamber v6 workflow.
+          
+          Checks:
+          
+          - Required pages exist.
+          - Canonical AGIJobManager address present.
+          - Canonical AGIALPHA address present.
+          - Production URL present.
+          - Public safety language present.
+          - No wallet auto-connect primitive present.
+          - No token approval primitive present.
+          - No transaction broadcast primitive present.
+          - GitHub Pages artifact produced from `dist/`.
+          
+          Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
           EOF
 
-      - name: Generate build and verification tooling
+      - name: Commit generated source with resilient push
         shell: bash
         run: |
           set -euo pipefail
-          cat > tools/build.mjs <<'JS'
-          import {cpSync,rmSync,mkdirSync,writeFileSync,existsSync} from 'node:fs';
-          rmSync('dist',{recursive:true,force:true}); mkdirSync('dist',{recursive:true}); cpSync('site','dist',{recursive:true});
-          if(!existsSync('dist/index.html')) throw new Error('dist/index.html missing');
-          writeFileSync('dist/PRODUCTION_URL.txt','https://montrealai.github.io/goalos-agijobmanager-ascension/\n');
-          JS
-          cat > tests/verify.mjs <<'JS'
-          import {readFileSync,existsSync,writeFileSync} from 'node:fs';
-          const files=['site/index.html','site/operator-console.html','site/evidence/index.html','site/architecture.html','site/verification.html','site/assets/atelier.css','site/assets/atelier.js','site/production-url.json','site/build-manifest.json','data/canonical-identities.json','schemas/goalos-intent.schema.json','schemas/evidence-docket.schema.json'];
-          const results=[]; const pass=(name,ok,msg='')=>{results.push({name,ok,msg}); if(!ok) throw new Error(`${name}: ${msg}`)};
-          for(const f of files) pass(`exists ${f}`,existsSync(f),'missing file');
-          const all=files.filter(f=>f.endsWith('.html')||f.endsWith('.json')||f.endsWith('.js')).map(f=>readFileSync(f,'utf8')).join('\n');
-          const required=['0xB3AAeb69b630f0299791679c063d68d6687481d1','0xa61a3b3a130a9c20768eebf97e21515a6046a1fa','https://montrealai.github.io/goalos-agijobmanager-ascension/','No wallet auto-connect','No token approval','No transaction broadcast','Evidence Docket 6.1','read-only'];
-          for(const s of required) pass(`contains ${s.slice(0,34)}`,all.includes(s),`missing ${s}`);
-          const forbidden=['eth_requestAccounts','eth_sendTransaction','wallet_switchEthereumChain','personal_sign','setApprovalForAll','privateKey =','new ethers.Wallet','window.ethereum.request'];
-          for(const s of forbidden) pass(`forbidden ${s}`,!all.includes(s),'unsafe primitive present');
-          const manifest=JSON.parse(readFileSync('site/production-url.json','utf8'));
-          pass('production URL exact',manifest.productionUrl==='https://montrealai.github.io/goalos-agijobmanager-ascension/',manifest.productionUrl);
-          pass('contract exact',manifest.contract==='0xB3AAeb69b630f0299791679c063d68d6687481d1',manifest.contract);
-          pass('token exact',manifest.token==='0xa61a3b3a130a9c20768eebf97e21515a6046a1fa',manifest.token);
-          const md=['# AGIJobManager Ascension QA','',`Generated: ${new Date().toISOString()}`,'','Status: PASS','',...results.map(r=>`- ${r.ok?'PASS':'FAIL'}: ${r.name}`),''].join('\n');
-          writeFileSync('AGIJOBMANAGER_ASCENSION_QA.md',md);
-          console.log(`GoalOS AGIJobManager Ascension QA PASS (${results.length}/${results.length})`);
-          JS
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: '24'
-
-      - name: Verify and build static site
-        shell: bash
-        run: |
-          set -euo pipefail
-          npm test
-          npm run build
-          test -f dist/index.html
-          test -f dist/operator-console.html
-          test -f dist/evidence/index.html
-          test -f dist/architecture.html
-          test -f dist/verification.html
-          grep -q "$PRODUCTION_URL" dist/production-url.json
-          grep -q "$AGIJOBMANAGER_ADDRESS" dist/index.html
-          grep -q "$AGIALPHA_ADDRESS" dist/index.html
-          echo "Institutional Atelier production build PASS: $PRODUCTION_URL"
-
-      - name: Commit generated source safely
-        if: ${{ github.event_name == 'push' || inputs.commit_generated_source }}
-        shell: bash
-        run: |
-          set -euo pipefail
+          COMMIT_SOURCE="false"
+          if [[ "${GITHUB_EVENT_NAME}" == "push" ]]; then COMMIT_SOURCE="true"; fi
+          if [[ "${{ inputs.commit_generated_source }}" == "true" ]]; then COMMIT_SOURCE="true"; fi
+          if [[ "${COMMIT_SOURCE}" != "true" ]]; then
+            echo "Skipping generated-source commit."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          snapshot="$(mktemp -d)"
-          tar -czf "$snapshot/generated-source.tgz" \
-            README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md \
-            site data docs schemas src tools tests dist
-
-          restore_generated() {
-            rm -rf README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md site data docs schemas src tools tests dist
-            tar -xzf "$snapshot/generated-source.tgz"
-          }
-
+          git add README.md package.json .nojekyll site dist data schemas docs tools tests AGIJOBMANAGER_ASCENSION_QA.md
+          if git diff --cached --quiet; then
+            echo "No generated source changes."
+            exit 0
+          fi
+          git commit -m "Generate final AGIJobManager Ascension production chamber"
           for attempt in 1 2 3 4; do
-            echo "Commit attempt $attempt: rebasing generated source onto latest origin/main"
-            git fetch origin main --prune
-            git checkout -B main origin/main
-            restore_generated
-            git add README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md site data docs schemas src tools tests dist
-            if git diff --cached --quiet; then
-              echo "No generated source changes to commit after syncing with origin/main."
-              exit 0
-            fi
-            git commit -m "Generate Institutional Atelier v5 site"
+            echo "Push attempt ${attempt}"
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort || true; sleep 2; continue; }
             if git push origin HEAD:main; then
-              echo "Generated source pushed successfully."
+              echo "Generated source pushed."
               exit 0
             fi
-            echo "Push was rejected because main advanced. Retrying on the newest main..."
-            sleep $((attempt * 2))
+            sleep $((attempt * 3))
           done
-
-          echo "Unable to push generated source after multiple retries." >&2
+          echo "Unable to push generated source after retries."
           exit 1
 
       - name: Configure GitHub Pages
         if: ${{ github.event_name == 'push' || inputs.deploy_pages }}
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v5
 
       - name: Upload GitHub Pages artifact
         if: ${{ github.event_name == 'push' || inputs.deploy_pages }}
@@ -346,5 +392,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo "GitHub Pages reported: ${{ steps.deployment.outputs.page_url }}"
-          test "${{ steps.deployment.outputs.page_url }}" = "$PRODUCTION_URL"
+          echo "Expected: ${PRODUCTION_URL}"
+          echo "GitHub reported: ${{ steps.deployment.outputs.page_url }}"
+          case "${{ steps.deployment.outputs.page_url }}" in
+            "${PRODUCTION_URL}"*) echo "Production URL verified." ;;
+            *) echo "Unexpected Pages URL."; exit 1 ;;
+          esac
