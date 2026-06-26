@@ -1,1 +1,46 @@
-{"schema":"goalos.build_manifest.v5","product":"GoalOS AGIJobManager Ascension","designLanguage":"institutional-atelier-v5","productionUrl":"https://montrealai.github.io/goalos-agijobmanager-ascension/","generatedAt":"2026-06-26T15:06:00Z","pages":["index.html","operator-console.html","evidence/index.html","architecture.html","verification.html"],"canonicalIdentities":{"AGIJobManager":"0xB3AAeb69b630f0299791679c063d68d6687481d1","AGIALPHA":"0xa61a3b3a130a9c20768eebf97e21515a6046a1fa","chainId":1}}
+{
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "builtAt": "2026-06-26T15:37:36.729195Z",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "architecture.html",
+      "sha256": "57266e04e9032879dbeff30071de1f4667edd2ecf729c3522e06f3665318bb26",
+      "bytes": 3166
+    },
+    {
+      "path": "assets/atelier.css",
+      "sha256": "ee4dbae677f87b1611dd0e64cef02c1e917120ae08750e616732089f67ccf154",
+      "bytes": 11661
+    },
+    {
+      "path": "assets/atelier.js",
+      "sha256": "afd248f51d411a9f0b287078b8a5733a24f3ea9fd66f086325add04280c1e822",
+      "bytes": 6254
+    },
+    {
+      "path": "evidence/index.html",
+      "sha256": "a1bad4549ad519798f9915bcc2f29fecb8500da257e1bcd4c16945fe2298f75f",
+      "bytes": 3757
+    },
+    {
+      "path": "index.html",
+      "sha256": "555131aaabb3b8a8255d29e4688b963e6cdf3b0ce037991fa0fadf9f5dd0198a",
+      "bytes": 5972
+    },
+    {
+      "path": "operator-console.html",
+      "sha256": "0585055eaf4a9f131603aac5006b340764cfe4867f746875a0b30e6d87ac74af",
+      "bytes": 6048
+    },
+    {
+      "path": "verification.html",
+      "sha256": "8cd6a8d602f83efbc32b4b34b567c4c4adad49782863d7f99125860ccfc1e32e",
+      "bytes": 2648
+    }
+  ]
+}

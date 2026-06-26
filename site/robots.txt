@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://montrealai.github.io/goalos-agijobmanager-ascension/sitemap.xml

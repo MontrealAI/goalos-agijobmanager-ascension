@@ -1,13 +1,2 @@
-{
-  "name": "goalos-agijobmanager-ascension",
-  "version": "2.0.0-institutional-atelier",
-  "private": true,
-  "type": "module",
-  "description": "GoalOS-native institutional evidence room and read-only operator console for AGIJobManager Ascension.",
-  "scripts": {
-    "build": "node tools/build.mjs",
-    "test": "node tests/verify.mjs",
-    "verify": "node tests/verify.mjs"
-  },
-  "engines": { "node": ">=20" }
-}
+{"name":"goalos-agijobmanager-ascension","version":"1.0.0","private":true,"scripts":{"build":"python3 tools/build.py","test":"python3 tools/verify.py"}}
+

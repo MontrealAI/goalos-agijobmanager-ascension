@@ -1,1 +1,9 @@
-{"schema":"goalos.evidence_docket.6_1.public","subject":"GoalOS AGIJobManager Ascension","claims":["public evidence room","read-only operator console","verification page","architecture dossier"],"nonClaims":["external audit completion","production activation","wallet authorization","token approval","Mainnet transaction broadcast"],"canonical":{"contract":"0xB3AAeb69b630f0299791679c063d68d6687481d1","token":"0xa61a3b3a130a9c20768eebf97e21515a6046a1fa","chainId":1,"url":"https://montrealai.github.io/goalos-agijobmanager-ascension/"}}
+{
+  "docketId":"AGIJOBMANAGER-ASCENSION-DOCKET-6-1",
+  "claim":"GoalOS-native public evidence layer and read-only operator chamber for AGIJobManager Ascension.",
+  "nonClaims":["No external audit completion claim","No Mainnet transaction claim","No production activation claim","No fund authorization claim","No factual certification claim"],
+  "publicSafetyInvariants":{"walletAutoConnect":0,"tokenApprovals":0,"networkSwitches":0,"transactionBroadcasts":0,"privateKeys":0,"externalActions":0},
+  "lifecycle":["request","escrow","execute","prove","validate","dispute","settle","finalize","chronicle","human_review"],
+  "terminalDisposition":"HUMAN_REVIEW_REQUIRED"
+}
+
