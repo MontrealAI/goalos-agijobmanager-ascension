@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Institutional Atelier v4
+name: GoalOS AGIJobManager Ascension Institutional Atelier v5
 
 on:
   workflow_dispatch:
@@ -17,15 +17,6 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml'
-      - 'site/**'
-      - 'data/**'
-      - 'docs/**'
-      - 'schemas/**'
-      - 'src/**'
-      - 'tools/**'
-      - 'tests/**'
-      - 'package.json'
-      - 'README.md'
 
 permissions:
   contents: write
@@ -34,7 +25,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: goalos-agijobmanager-ascension-institutional-atelier
+  group: goalos-agijobmanager-ascension-institutional-atelier-v5-${{ github.ref }}
   cancel-in-progress: true
 
 env:
@@ -42,6 +33,7 @@ env:
   PRODUCTION_URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
   AGIJOBMANAGER_ADDRESS: '0xB3AAeb69b630f0299791679c063d68d6687481d1'
   AGIALPHA_ADDRESS: '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa'
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   atelier:
@@ -49,9 +41,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: main
+
+      - name: Sync to latest main before generation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main --prune
+          git checkout -B main origin/main
 
       - name: Confirm canonical repository
         shell: bash
@@ -177,10 +177,10 @@ jobs:
           {"name":"GoalOS AGIJobManager Ascension","short_name":"AGIJobManager","start_url":"./","display":"standalone","background_color":"#03070d","theme_color":"#061522","description":"GoalOS-native institutional evidence room for AGIJobManager Ascension."}
           JSON
           cat > site/production-url.json <<JSON
-          {"schema":"goalos.production_url.v2","repository":"$CANONICAL_REPOSITORY","productionUrl":"$PRODUCTION_URL","status":"PASS","generatedBy":"GoalOS AGIJobManager Ascension Institutional Atelier v4","contract":"$AGIJOBMANAGER_ADDRESS","token":"$AGIALPHA_ADDRESS","chainId":1,"safety":{"walletAutoConnect":false,"tokenApproval":false,"networkSwitch":false,"transactionBroadcast":false,"privateKeys":false}}
+          {"schema":"goalos.production_url.v2","repository":"$CANONICAL_REPOSITORY","productionUrl":"$PRODUCTION_URL","status":"PASS","generatedBy":"GoalOS AGIJobManager Ascension Institutional Atelier v5","contract":"$AGIJOBMANAGER_ADDRESS","token":"$AGIALPHA_ADDRESS","chainId":1,"safety":{"walletAutoConnect":false,"tokenApproval":false,"networkSwitch":false,"transactionBroadcast":false,"privateKeys":false}}
           JSON
           cat > site/build-manifest.json <<JSON
-          {"schema":"goalos.build_manifest.v4","product":"GoalOS AGIJobManager Ascension","designLanguage":"institutional-atelier","productionUrl":"$PRODUCTION_URL","generatedAt":"$(date -u +%Y-%m-%dT%H:%M:%SZ)","pages":["index.html","operator-console.html","evidence/index.html","architecture.html","verification.html"],"canonicalIdentities":{"AGIJobManager":"$AGIJOBMANAGER_ADDRESS","AGIALPHA":"$AGIALPHA_ADDRESS","chainId":1}}
+          {"schema":"goalos.build_manifest.v5","product":"GoalOS AGIJobManager Ascension","designLanguage":"institutional-atelier-v5","productionUrl":"$PRODUCTION_URL","generatedAt":"$(date -u +%Y-%m-%dT%H:%M:%SZ)","pages":["index.html","operator-console.html","evidence/index.html","architecture.html","verification.html"],"canonicalIdentities":{"AGIJobManager":"$AGIJOBMANAGER_ADDRESS","AGIALPHA":"$AGIALPHA_ADDRESS","chainId":1}}
           JSON
           cat > site/robots.txt <<EOF
           User-agent: *
@@ -229,7 +229,7 @@ jobs:
 
           1. Replace the existing workflow file with the v4 Institutional Atelier workflow.
           2. Commit to `main`.
-          3. Open **Actions** and run **GoalOS AGIJobManager Ascension Institutional Atelier v4**.
+          3. Open **Actions** and run **GoalOS AGIJobManager Ascension Institutional Atelier v5**.
           4. Confirm the run is green.
           5. Open `https://montrealai.github.io/goalos-agijobmanager-ascension/`.
           6. Inspect `/verification.html`, `/evidence/`, and `/production-url.json`.
@@ -266,9 +266,9 @@ jobs:
           JS
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Verify and build static site
         shell: bash
@@ -286,35 +286,60 @@ jobs:
           grep -q "$AGIALPHA_ADDRESS" dist/index.html
           echo "Institutional Atelier production build PASS: $PRODUCTION_URL"
 
-      - name: Commit generated source
+      - name: Commit generated source safely
         if: ${{ github.event_name == 'push' || inputs.commit_generated_source }}
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md site data docs schemas src tools tests dist
-          if git diff --cached --quiet; then
-            echo "No generated source changes to commit."
-          else
-            git commit -m "Generate Institutional Atelier v4 site"
-            git push
-          fi
+
+          snapshot="$(mktemp -d)"
+          tar -czf "$snapshot/generated-source.tgz" \
+            README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md \
+            site data docs schemas src tools tests dist
+
+          restore_generated() {
+            rm -rf README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md site data docs schemas src tools tests dist
+            tar -xzf "$snapshot/generated-source.tgz"
+          }
+
+          for attempt in 1 2 3 4; do
+            echo "Commit attempt $attempt: rebasing generated source onto latest origin/main"
+            git fetch origin main --prune
+            git checkout -B main origin/main
+            restore_generated
+            git add README.md package.json .nojekyll AGIJOBMANAGER_ASCENSION_QA.md site data docs schemas src tools tests dist
+            if git diff --cached --quiet; then
+              echo "No generated source changes to commit after syncing with origin/main."
+              exit 0
+            fi
+            git commit -m "Generate Institutional Atelier v5 site"
+            if git push origin HEAD:main; then
+              echo "Generated source pushed successfully."
+              exit 0
+            fi
+            echo "Push was rejected because main advanced. Retrying on the newest main..."
+            sleep $((attempt * 2))
+          done
+
+          echo "Unable to push generated source after multiple retries." >&2
+          exit 1
 
       - name: Configure GitHub Pages
         if: ${{ github.event_name == 'push' || inputs.deploy_pages }}
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload GitHub Pages artifact
         if: ${{ github.event_name == 'push' || inputs.deploy_pages }}
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
       - name: Deploy GitHub Pages
         if: ${{ github.event_name == 'push' || inputs.deploy_pages }}
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       - name: Verify deployed URL
         if: ${{ github.event_name == 'push' || inputs.deploy_pages }}
