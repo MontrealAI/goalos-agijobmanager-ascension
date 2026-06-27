@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS AGIJobManager Legal Boundary Policy",
+  "type": "object",
+  "required": [
+    "policyVersion",
+    "dataZeroPosture",
+    "thirdPartyResponsibility",
+    "investmentAndTokenBoundary",
+    "auditAndAssuranceBoundary",
+    "claimBoundary"
+  ],
+  "properties": {
+    "policyVersion": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string"
+    },
+    "canonicalIdentities": {
+      "type": "object"
+    },
+    "dataZeroPosture": {
+      "type": "object",
+      "required": [
+        "intentionalPersonalDataCollection",
+        "analytics",
+        "cookies",
+        "forms",
+        "instructionToUsers"
+      ],
+      "properties": {
+        "intentionalPersonalDataCollection": {
+          "const": false
+        },
+        "analytics": {
+          "const": false
+        },
+        "cookies": {
+          "const": false
+        },
+        "forms": {
+          "const": false
+        },
+        "instructionToUsers": {
+          "type": "string"
+        }
+      }
+    },
+    "browserLocalPosture": {
+      "type": "object"
+    },
+    "thirdPartyResponsibility": {
+      "type": "object",
+      "required": [
+        "userBurden"
+      ]
+    },
+    "investmentAndTokenBoundary": {
+      "type": "object",
+      "required": [
+        "offering",
+        "investmentAdvice",
+        "profitPromise"
+      ],
+      "properties": {
+        "offering": {
+          "const": false
+        },
+        "investmentAdvice": {
+          "const": false
+        },
+        "profitPromise": {
+          "const": false
+        }
+      }
+    },
+    "auditAndAssuranceBoundary": {
+      "type": "object",
+      "required": [
+        "externalAuditCompleted",
+        "factualCorrectnessGuarantee"
+      ],
+      "properties": {
+        "externalAuditCompleted": {
+          "const": false
+        },
+        "factualCorrectnessGuarantee": {
+          "const": false
+        }
+      }
+    },
+    "claimBoundary": {
+      "type": "object"
+    },
+    "enforcementGates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

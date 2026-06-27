@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v11-final-assurance-kernel",
-  "builtAt": "2026-06-27T16:14:33.275502Z",
+  "release": "v12-legal-data-zero-shield",
+  "builtAt": "2026-06-27T16:07:39.431203Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -10,8 +10,8 @@
     },
     {
       "path": "architecture.html",
-      "sha256": "94a7de6e4b8d826bd8de086a04c65296873a687a932eb2689fc91d3e11849e36",
-      "bytes": 4397
+      "sha256": "b1abaa56f13a5f41e8548f05f4660f88f9057c6143197f542a9a9c6e0b86e570",
+      "bytes": 4427
     },
     {
       "path": "assets/atelier.css",
@@ -30,8 +30,8 @@
     },
     {
       "path": "assets/mainnet-console.js",
-      "sha256": "b503bb3da047998067208ea9357c0628f219c1c0d47752480dc6c998889857a0",
-      "bytes": 7954
+      "sha256": "16e65eb80e0436ab20393b538d86037dc0d47cda36bfc652a1352279270cb45a",
+      "bytes": 7980
     },
     {
       "path": "assets/sovereign-economy.js",
@@ -40,8 +40,8 @@
     },
     {
       "path": "assurance.html",
-      "sha256": "e23762302b59a9763c05c78a5358f169f637ba3048360b609b33c025b899b438",
-      "bytes": 3810
+      "sha256": "a7f9e51a7059ec3d7a6a079e41895b583f8a39d01b5bab5feda31919b2355ed8",
+      "bytes": 3840
     },
     {
       "path": "data/agijobmanager-action-catalog.json",
@@ -74,6 +74,11 @@
       "bytes": 2328
     },
     {
+      "path": "data/legal-boundary-policy.json",
+      "sha256": "c38ddbafa02d74be137ba718c721df642d8ec01b935c871ab19d109a2af7a418",
+      "bytes": 3951
+    },
+    {
       "path": "data/mainnet-capability-contract.json",
       "sha256": "24dfd7da2ec8436ce2db272053236ebddbf60f1c3773468433655ed49018f727",
       "bytes": 2993
@@ -104,6 +109,11 @@
       "bytes": 388
     },
     {
+      "path": "docs/DATA_ZERO_PRIVACY_POLICY.md",
+      "sha256": "66eff425db7a6a7df3afe8dde118076e0ecee681997bb6e6a8dd1da28382396e",
+      "bytes": 2434
+    },
+    {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
       "sha256": "44150fb9772ccbddc916bb7bf054827cf0a800e0d86c89b57d010016b31ac93e",
       "bytes": 607
@@ -112,6 +122,21 @@
       "path": "docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
       "sha256": "f14a13329522751a6a3779c679f78292ac4da8931219b465a012f29f44f906d0",
       "bytes": 1459
+    },
+    {
+      "path": "docs/INVESTMENT_AND_TOKEN_BOUNDARY.md",
+      "sha256": "adcf1d10397167bd49692cb1e7a029036e2098eb56a1b216cf662bff43b103e0",
+      "bytes": 1197
+    },
+    {
+      "path": "docs/LEGAL_AND_REGULATORY_BOUNDARY.md",
+      "sha256": "dfa1d699da15e9a7a90258597e9158c99ac47d281e953dd3eabdd8581cd45b11",
+      "bytes": 2258
+    },
+    {
+      "path": "docs/LEGAL_SHIELD_V12_REPORT.md",
+      "sha256": "978f81b11faad3c55d7f0022799b06c7dab53363426cd3cb9e2dadde492375f2",
+      "bytes": 1363
     },
     {
       "path": "docs/MAINNET_OPERATIONS_RUNBOOK.md",
@@ -129,9 +154,19 @@
       "bytes": 1486
     },
     {
+      "path": "docs/TERMS_OF_USE.md",
+      "sha256": "48501407303ecd2453423c17ef5e001a841b04ec4fb7a0a702710a2724a1703f",
+      "bytes": 3757
+    },
+    {
+      "path": "docs/THIRD_PARTY_OPERATOR_RESPONSIBILITY.md",
+      "sha256": "c737507b2bbc44817ac4655d828b5ddbba29e9efd927679fcef3f27895498828",
+      "bytes": 1217
+    },
+    {
       "path": "docs.html",
-      "sha256": "719eb79b895702707e19cdca8d1d28662d8ec97aca916d4dd19aeeee6f4df0d4",
-      "bytes": 1234
+      "sha256": "3ea1e0e9b960ea1693e44cf7a5a2f0a9938d598fed464422eee584c19b197476",
+      "bytes": 1264
     },
     {
       "path": "evidence/index.html",
@@ -140,23 +175,38 @@
     },
     {
       "path": "expert-console.html",
-      "sha256": "66460e2a72d5e85c2a411fc1ed5d5665e701af115b10cd1b491f935d24e5a18e",
-      "bytes": 8100
+      "sha256": "f9c29e9951516a991df2c177929f5277e9e73abcc8945370ff805c3df09fcd30",
+      "bytes": 8130
     },
     {
       "path": "expert-mainnet-console.html",
-      "sha256": "2f68e3a45ceba2b7eef5c3c69a8684271e017111db77e4e6978c2e4ef0e53edc",
-      "bytes": 4822
+      "sha256": "1e0f6e96ddf1ba0e8cb1acedcb24b1617a32dca89b8f442638043af45f15200e",
+      "bytes": 4905
     },
     {
       "path": "index.html",
-      "sha256": "546c7e0fac3f3d5eeb07d9038316f553cd67ad93474c0b379d97ad7305929f38",
-      "bytes": 7211
+      "sha256": "dd73ee492e7de9ba6a6807e19619cf5167bae47e110431a1678eb769d47f5a64",
+      "bytes": 7340
+    },
+    {
+      "path": "legal.html",
+      "sha256": "92998db336ea0d4ea833e6b5ceb0fa194c0f636129fbc3d66124ad6c8e38660d",
+      "bytes": 4734
     },
     {
       "path": "operator-console.html",
-      "sha256": "0585055eaf4a9f131603aac5006b340764cfe4867f746875a0b30e6d87ac74af",
-      "bytes": 6048
+      "sha256": "6e634a73c1dbce46ea64532dc81e170a4e82e68bcdae6f1423d2f4baee32432a",
+      "bytes": 6078
+    },
+    {
+      "path": "privacy.html",
+      "sha256": "9bf3c8599857b06af841ada238c5b18746f0d047e5f45e6547920e9c495d7eee",
+      "bytes": 3460
+    },
+    {
+      "path": "regulatory-boundary.html",
+      "sha256": "d7e464c47a52754597eba9637852985d8de0b0233bf86a4e85bb07fae5a594c4",
+      "bytes": 2997
     },
     {
       "path": "schemas/evidence-docket.schema.json",
@@ -167,6 +217,11 @@
       "path": "schemas/goalos-intent.schema.json",
       "sha256": "4411bb47ca79dff371bc3358d3fcc753bab1be11d38de7118215d611bc07ae30",
       "bytes": 341
+    },
+    {
+      "path": "schemas/legal-boundary-policy.schema.json",
+      "sha256": "15f3cf9f104ce16b9d7cd6d4d21ec6f0954bc6ee4d4187c6c95042096ca89fd3",
+      "bytes": 2242
     },
     {
       "path": "schemas/mainnet-capability-contract.schema.json",
@@ -180,8 +235,18 @@
     },
     {
       "path": "sovereign-machine-economy.html",
-      "sha256": "5220d6f32f84e81895b813bac36c7159553fd5c5cc3b4b8d560b5f25d9fc3a32",
-      "bytes": 5690
+      "sha256": "39de42f01a72e493d5c0ac494610e9a55920d492fbeea0120e808e6b0fa05c3a",
+      "bytes": 5720
+    },
+    {
+      "path": "terms.html",
+      "sha256": "1438fd76a3468c34433249d07f42cacc5a09ae4e8b9757fd2bae0b3258fd15f8",
+      "bytes": 3864
+    },
+    {
+      "path": "third-party-responsibility.html",
+      "sha256": "42078987fc6007de47ca3cab13ecd7945b14572d589754bcd37d77f4a66d3dc2",
+      "bytes": 2939
     },
     {
       "path": "vendor/ethers.umd.min.js",
@@ -190,8 +255,8 @@
     },
     {
       "path": "verification.html",
-      "sha256": "a11761df1fa3ffb106892a1730617997d154bcd83a6d6b7495ef16f9ba77522a",
-      "bytes": 3772
+      "sha256": "2c33b968a4adb69fcc449025d020828d2b4c33322f2c748fb5af5c24845381b2",
+      "bytes": 3802
     }
   ]
 }

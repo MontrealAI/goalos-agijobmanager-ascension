@@ -52,3 +52,16 @@ Open after deployment:
 - https://montrealai.github.io/goalos-agijobmanager-ascension/FINAL_ASSURANCE_DOCKET_V11.json
 
 Boundary: this is reproducible automated assurance, not a legal third-party audit opinion or production-fund authorization.
+
+
+## Legal/Data-Zero Shield v12
+
+This repository intentionally avoids user-data collection and publishes explicit legal, privacy, regulatory, investment, audit, and third-party responsibility boundaries.
+
+- Privacy: [`site/privacy.html`](site/privacy.html)
+- Terms: [`site/terms.html`](site/terms.html)
+- Legal boundary: [`site/legal.html`](site/legal.html)
+- Regulatory boundary: [`site/regulatory-boundary.html`](site/regulatory-boundary.html)
+- Machine-readable policy: [`data/legal-boundary-policy.json`](data/legal-boundary-policy.json)
+
+The public site is static and public-safe by default: no accounts, no forms, no analytics, no cookies, no advertising pixels, no intentional personal-data collection, no custody, no legal advice, no investment advice, and no audit certification. The separated Expert Console remains user-directed and wallet-signed.

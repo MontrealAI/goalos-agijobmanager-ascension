@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "1.1.0-sovereign-machine-economy-assurance-v11",
+  "version": "1.2.0-legal-data-zero-shield-v12",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,11 +8,13 @@
     "verify": "python3 tools/verify.py",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs",
-    "test:strict": "npm test && npm run assurance && npm run factual && npm run build",
+    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs && node tests/final-assurance-kernel.test.mjs && node tests/legal-shield.test.mjs",
+    "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
-    "test:final": "npm test && npm run assurance && npm run assurance:final && npm run factual:mainnet && npm run build && npm run assurance:final"
+    "test:final": "npm test && npm run assurance && npm run assurance:final && npm run legal && npm run factual:mainnet && npm run build && npm run assurance:final && npm run legal",
+    "legal": "node tools/legal-shield-kernel.mjs",
+    "test:legal": "npm run legal"
   },
   "dependencies": {
     "ethers": "6.13.4"

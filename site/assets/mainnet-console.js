@@ -1,4 +1,5 @@
-import { ethers } from 'https://cdn.jsdelivr.net/npm/ethers@6.13.4/+esm';
+const ethers = window.ethers;
+if (!ethers) { throw new Error('Local ethers library not loaded.'); }
 
 const AGI_JOB_MANAGER = '0xB3AAeb69b630f0299791679c063d68d6687481d1';
 const AGIALPHA = '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa';

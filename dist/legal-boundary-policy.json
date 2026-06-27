@@ -1,0 +1,76 @@
+{
+  "$schema": "../schemas/legal-boundary-policy.schema.json",
+  "policyVersion": "v12-legal-data-zero-shield",
+  "lastUpdated": "2026-06-27",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "repository": "https://github.com/MontrealAI/goalos-agijobmanager-ascension",
+  "canonicalIdentities": {
+    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "AGIALPHA": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa",
+    "chainId": 1,
+    "network": "Ethereum Mainnet"
+  },
+  "dataZeroPosture": {
+    "intentionalPersonalDataCollection": false,
+    "accounts": false,
+    "serverDatabase": false,
+    "forms": false,
+    "analytics": false,
+    "advertisingPixels": false,
+    "cookies": false,
+    "fingerprinting": false,
+    "supportChat": false,
+    "mailingList": false,
+    "userTracking": false,
+    "instructionToUsers": "Do not submit personal, confidential, regulated, customer, health, financial, biometric, child, employment, government-ID, secret, or private-key data. The project does not want it and does not need it."
+  },
+  "browserLocalPosture": {
+    "readOnlyChamber": "Generates unsigned public-safe intent and Evidence Docket JSON in the user's browser memory; the user controls any download or copy action.",
+    "expertConsole": "Uses the user's wallet provider only after explicit user action; any address, RPC, wallet, gas, approval, or transaction data is handled by the user's wallet, RPC provider, Ethereum network, and other third parties selected by the user.",
+    "projectServerReceipt": false,
+    "projectCustody": false,
+    "projectKeyStorage": false
+  },
+  "thirdPartyResponsibility": {
+    "githubPages": "GitHub hosts the static site and may process technical data under GitHub's own policies.",
+    "wallets": "Wallet providers are independent third parties chosen by the user.",
+    "rpcProviders": "RPC providers are independent third parties chosen by the user or wallet.",
+    "ethereumMainnet": "Public blockchain transactions are user-directed and may be public, permanent, and irreversible.",
+    "userBurden": "Users and operators are solely responsible for their data, wallet, keys, jurisdiction, tax, securities, sanctions, privacy, consumer-protection, employment, procurement, and other compliance obligations."
+  },
+  "investmentAndTokenBoundary": {
+    "offering": false,
+    "investmentAdvice": false,
+    "brokerDealer": false,
+    "exchange": false,
+    "investmentAdviser": false,
+    "profitPromise": false,
+    "yieldPromise": false,
+    "equityOrOwnership": false,
+    "utilityOnlyDescription": "AGIALPHA references are protocol-utility and identity references only; they are not an invitation, recommendation, solicitation, or promise of profit."
+  },
+  "auditAndAssuranceBoundary": {
+    "externalAuditCompleted": false,
+    "automatedAssurance": "Automated static, build, identity, and boundary checks are reproducible software assurance artifacts, not a legal audit opinion and not a regulated certification.",
+    "factualCorrectnessGuarantee": false,
+    "productionActivationGuarantee": false
+  },
+  "claimBoundary": {
+    "noAGIClaim": true,
+    "noASIClaim": true,
+    "noGuaranteedReturns": true,
+    "noLegalAdvice": true,
+    "noFinancialAdvice": true,
+    "noTaxAdvice": true,
+    "noMedicalAdvice": true,
+    "noComplianceAdvice": true,
+    "noExternalCertification": true
+  },
+  "enforcementGates": [
+    "privacy page must state zero intentional collection",
+    "terms page must place user/operator responsibility on users for wallet, data, law, tax, and jurisdiction",
+    "legal page must state no investment advice, no token offering, no audit certification, no legal advice, and no data wanted",
+    "public pages must not include analytics, cookies, forms, tracking pixels, or remote JavaScript dependencies",
+    "expert console may contain wallet operations only behind explicit user action and typed confirmation"
+  ]
+}
