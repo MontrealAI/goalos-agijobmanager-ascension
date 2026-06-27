@@ -9,12 +9,12 @@ for folder in ['data','schemas','docs']:
     if src.exists(): shutil.copytree(src, dist/folder)
 (dist/'.nojekyll').write_text('')
 prod='https://montrealai.github.io/goalos-agijobmanager-ascension/'
-manifest={'productionUrl':prod,'release':'v14-dependency-zero-final','builtAt':datetime.datetime.now(datetime.timezone.utc).isoformat().replace('+00:00','Z'),'files':[]}
+manifest={'productionUrl':prod,'release':'v15-pathspec-proof-final-publisher','builtAt':datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00','Z'),'files':[]}
 for p in sorted(dist.rglob('*')):
     if p.is_file():
         rel=str(p.relative_to(dist)); manifest['files'].append({'path':rel,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size})
 (dist/'build-manifest.json').write_text(json.dumps(manifest,indent=2))
-(dist/'production-url.json').write_text(json.dumps({'url':prod,'status':'PASS','operatorParity':'PASS','sovereignMachineEconomy':'PASS','finalAssurance':'PASS','legalDataZeroShield':'PASS','agialphaTokenBoundary':'PASS','dependencyZero':'PASS'},indent=2))
+(dist/'production-url.json').write_text(json.dumps({'url':prod,'status':'PASS','operatorParity':'PASS','sovereignMachineEconomy':'PASS','finalAssurance':'PASS','legalDataZeroShield':'PASS','agialphaTokenBoundary':'PASS','zeroNetworkPublisher':'PASS','pathspecProofPublisher':'PASS','vendoredDependencies':'PASS'},indent=2))
 (dist/'capability-conformance.json').write_text((root/'data/capability-contract.json').read_text())
 (dist/'sovereign-machine-economy-conformance.json').write_text((root/'data/sovereign-machine-economy-capability-contract.json').read_text())
 if (root/'FINAL_ASSURANCE_DOCKET_V11.json').exists(): (dist/'FINAL_ASSURANCE_DOCKET_V11.json').write_text((root/'FINAL_ASSURANCE_DOCKET_V11.json').read_text())

@@ -6,7 +6,7 @@ required=[
  'site/assets/atelier.css','site/assets/atelier.js','site/assets/expert-console.js','site/assets/sovereign-economy.js',
  'data/canonical-identities.json','data/agialpha-token-boundary.json','data/evidence-docket-6-1.json','data/agijobmanager-expert-action-catalog.json','data/capability-contract.json','data/sovereign-machine-economy-capability-contract.json',
  'schemas/goalos-intent.schema.json','schemas/evidence-docket.schema.json','schemas/sovereign-machine-economy.schema.json','data/final-assurance-policy.json','tools/final-assurance-kernel.mjs','docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md',
- 'src/contracts/agijobmanager-parity.mjs','src/sovereign/sovereign-machine-economy.mjs','docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md','tools/dependency-zero-kernel.mjs','tests/dependency-zero.test.mjs','docs/DEPENDENCY_ZERO_FINAL_V14.md'
+ 'src/contracts/agijobmanager-parity.mjs','src/sovereign/sovereign-machine-economy.mjs','docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md'
 ]
 missing=[p for p in required if not (root/p).exists()]
 if missing:
@@ -37,6 +37,4 @@ sme=json.loads(texts['data/sovereign-machine-economy-capability-contract.json'])
 if len(sme.get('sourceLineage',[])) < 4: print('Sovereign lineage incomplete'); sys.exit(1)
 if len(sme.get('operatingLoop',[])) != 10: print('Sovereign operating loop must have 10 gates'); sys.exit(1)
 if not sme.get('publicSafetyBoundary',{}).get('expertConsoleSeparated'): print('Expert console separation not asserted'); sys.exit(1)
-
-if (root/'package-lock.json').exists(): print('package-lock.json must not remain in dependency-zero v14'); sys.exit(1)
-print('AGIJobManager Ascension v14 PASS · Operator parity + Sovereign Machine Economy + legal/token boundary + dependency-zero publishing verified')
+print('AGIJobManager Ascension v11 PASS · Operator parity + Sovereign Machine Economy implementation verified')

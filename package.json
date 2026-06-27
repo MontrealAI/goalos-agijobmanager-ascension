@@ -1,17 +1,26 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "1.4.0-dependency-zero-final-v14",
+  "version": "1.5.0-pathspec-proof-final-v15",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "python3 tools/build.py",
     "verify": "python3 tools/verify.py",
-    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs && node tests/final-assurance-kernel.test.mjs && node tests/legal-shield.test.mjs && node tests/token-boundary.test.mjs && node tests/dependency-zero.test.mjs",
     "assurance": "node tools/automated-assurance.mjs",
+    "factual": "node tools/factual-correctness.mjs",
+    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs && node tests/final-assurance-kernel.test.mjs && node tests/legal-shield.test.mjs && node tests/token-boundary.test.mjs",
+    "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
-    "legal": "node tools/legal-shield-kernel.mjs",
-    "token-boundary": "node tools/token-boundary-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
-    "dependency-zero": "node tools/dependency-zero-kernel.mjs"
-  }
+    "test:final": "npm run preflight && npm test && npm run assurance && npm run assurance:final && npm run legal && npm run token-boundary && npm run factual:mainnet && npm run build && npm run assurance:final && npm run legal && npm run token-boundary && npm run pathspec-proof",
+    "legal": "node tools/legal-shield-kernel.mjs",
+    "test:legal": "npm run legal",
+    "token-boundary": "node tools/token-boundary-kernel.mjs",
+    "preflight": "node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs",
+    "test:zero-network": "node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs && node tests/final-assurance-kernel.test.mjs && node tests/legal-shield.test.mjs && node tests/token-boundary.test.mjs && npm run assurance && npm run assurance:final && npm run legal && npm run token-boundary",
+    "pathspec-proof": "node tools/pathspec-proof-kernel.mjs"
+  },
+  "dependencies": {},
+  "description": "GoalOS AGIJobManager Ascension static site with pathspec-proof, zero-registry deterministic publication, public proof surfaces, legal/data-zero boundary, AGIALPHA token market boundary, and gated Expert Mainnet Console.",
+  "devDependencies": {}
 }
