@@ -5,7 +5,7 @@ import crypto from 'node:crypto';
 const root = path.resolve(import.meta.dirname, '..');
 const prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/';
 const AGI_JOB_MANAGER = '0xB3AAeb69b630f0299791679c063d68d6687481d1';
-const AGIALPHA = '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa';
+const AGIALPHA = '0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA';
 const required = [
   'site/index.html','site/operator-console.html','site/expert-console.html','site/expert-mainnet-console.html','site/sovereign-machine-economy.html','site/evidence/index.html','site/architecture.html','site/verification.html','site/assurance.html',
   'site/assets/atelier.css','site/assets/atelier.js','site/assets/expert-console.js','site/assets/sovereign-economy.js','site/assets/mainnet-console.js',

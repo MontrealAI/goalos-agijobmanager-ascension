@@ -6,7 +6,7 @@ if (process.env.SKIP_LIVE_RPC === '1') {
   process.exit(0);
 }
 const AGI_JOB_MANAGER='0xB3AAeb69b630f0299791679c063d68d6687481d1';
-const AGIALPHA='0xa61a3b3a130a9c20768eebf97e21515a6046a1fa';
+const AGIALPHA='0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA';
 const endpoints=['https://ethereum.publicnode.com','https://ethereum-rpc.publicnode.com','https://cloudflare-eth.com'];
 async function rpc(url,method,params=[]){ const r=await fetch(url,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})}); if(!r.ok) throw new Error(`${url} HTTP ${r.status}`); const j=await r.json(); if(j.error) throw new Error(`${url} ${j.error.message}`); return j.result; }
 async function callAny(method,params){ const errors=[]; for(const url of endpoints){ try{ const result=await rpc(url,method,params); return {url,result}; }catch(e){ errors.push(e.message); } } throw new Error(errors.join(' | ')); }

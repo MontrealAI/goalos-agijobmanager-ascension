@@ -1,5 +1,5 @@
 export const PRODUCTION_URL = 'https://montrealai.github.io/goalos-agijobmanager-ascension/';
-export const CANONICAL = { manager: '0xB3AAeb69b630f0299791679c063d68d6687481d1', agialpha: '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa', chainId: 1 };
+export const CANONICAL = { manager: '0xB3AAeb69b630f0299791679c063d68d6687481d1', agialpha: '0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA', chainId: 1 };
 export const SOURCE_LINEAGE = [
   ['META-AGENTIC α-AGI','Institution Foundry','GoalOSCommit','SelectionCertificate'],
   ['AGI Alpha Node v0','Deterministic Runtime','RunCommitment','ProofPacket'],

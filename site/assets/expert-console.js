@@ -3,7 +3,7 @@
   const $ = (s, r=document) => r.querySelector(s);
   const CANON = {
     manager: '0xB3AAeb69b630f0299791679c063d68d6687481d1',
-    token: '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa',
+    token: '0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA',
     chainId: 1,
     chainHex: '0x1',
     productionUrl: 'https://montrealai.github.io/goalos-agijobmanager-ascension/',

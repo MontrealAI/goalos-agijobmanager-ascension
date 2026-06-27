@@ -2,7 +2,7 @@ const ethers = window.ethers;
 if (!ethers) { throw new Error('Local ethers library not loaded.'); }
 
 const AGI_JOB_MANAGER = '0xB3AAeb69b630f0299791679c063d68d6687481d1';
-const AGIALPHA = '0xa61a3b3a130a9c20768eebf97e21515a6046a1fa';
+const AGIALPHA = '0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA';
 const MAINNET = '0x1';
 const DECIMALS = 18;
 

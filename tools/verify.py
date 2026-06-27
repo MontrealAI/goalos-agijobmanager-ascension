@@ -4,7 +4,7 @@ root=Path(__file__).resolve().parents[1]
 required=[
  'site/index.html','site/operator-console.html','site/expert-console.html','site/sovereign-machine-economy.html','site/evidence/index.html','site/architecture.html','site/verification.html','site/assurance.html',
  'site/assets/atelier.css','site/assets/atelier.js','site/assets/expert-console.js','site/assets/sovereign-economy.js',
- 'data/canonical-identities.json','data/evidence-docket-6-1.json','data/agijobmanager-expert-action-catalog.json','data/capability-contract.json','data/sovereign-machine-economy-capability-contract.json',
+ 'data/canonical-identities.json','data/agialpha-token-boundary.json','data/evidence-docket-6-1.json','data/agijobmanager-expert-action-catalog.json','data/capability-contract.json','data/sovereign-machine-economy-capability-contract.json',
  'schemas/goalos-intent.schema.json','schemas/evidence-docket.schema.json','schemas/sovereign-machine-economy.schema.json','data/final-assurance-policy.json','tools/final-assurance-kernel.mjs','docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md',
  'src/contracts/agijobmanager-parity.mjs','src/sovereign/sovereign-machine-economy.mjs','docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md'
 ]
@@ -13,7 +13,7 @@ if missing:
     print('Missing required files:', missing); sys.exit(1)
 texts={p:(root/p).read_text(errors='ignore') for p in required}
 all_text='\n'.join(texts.values())
-need=['0xB3AAeb69b630f0299791679c063d68d6687481d1','0xa61a3b3a130a9c20768eebf97e21515a6046a1fa','https://montrealai.github.io/goalos-agijobmanager-ascension/','META-AGENTIC α-AGI','AGI Alpha Node v0','AGI Jobs v0 (v2)','AGIJobManager','Sovereign Machine Economy','GoalOSCommit','RunCommitment','ProofPacket','SelectionCertificate','Evidence Docket','Final Assurance Kernel','createJob','applyForJob','requestJobCompletion','validateJob','disapproveJob','disputeJob','finalizeJob','expireJob','cancelJob','eth_requestAccounts','wallet_switchEthereumChain','AUTHORIZE MAINNET','ACTIVATE PRODUCTION AUTHORITY','staticCall','estimateGas']
+need=['0xB3AAeb69b630f0299791679c063d68d6687481d1','0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA','https://montrealai.github.io/goalos-agijobmanager-ascension/','META-AGENTIC α-AGI','AGI Alpha Node v0','AGI Jobs v0 (v2)','AGIJobManager','Sovereign Machine Economy','GoalOSCommit','RunCommitment','ProofPacket','SelectionCertificate','Evidence Docket','Final Assurance Kernel','createJob','applyForJob','requestJobCompletion','validateJob','disapproveJob','disputeJob','finalizeJob','expireJob','cancelJob','eth_requestAccounts','wallet_switchEthereumChain','AUTHORIZE MAINNET','ACTIVATE PRODUCTION AUTHORITY','staticCall','estimateGas']
 miss=[x for x in need if x not in all_text]
 if miss:
     print('Missing required implementation marker:', miss); sys.exit(1)

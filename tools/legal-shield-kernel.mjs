@@ -8,10 +8,11 @@ function exists(p){ return fs.existsSync(path.join(root,p)); }
 const required = [
   'site/legal.html','site/privacy.html','site/terms.html','site/regulatory-boundary.html','site/third-party-responsibility.html',
   'docs/DATA_ZERO_PRIVACY_POLICY.md','docs/TERMS_OF_USE.md','docs/LEGAL_AND_REGULATORY_BOUNDARY.md','docs/INVESTMENT_AND_TOKEN_BOUNDARY.md','docs/THIRD_PARTY_OPERATOR_RESPONSIBILITY.md',
-  'data/legal-boundary-policy.json','schemas/legal-boundary-policy.schema.json'
+  'data/legal-boundary-policy.json','data/agialpha-token-boundary.json','schemas/legal-boundary-policy.schema.json','schemas/agialpha-token-boundary.schema.json'
 ];
 for (const f of required) assert(`required file exists: ${f}`, exists(f));
 const policy = JSON.parse(read('data/legal-boundary-policy.json'));
+const tokenBoundary = JSON.parse(read('data/agialpha-token-boundary.json'));
 assert('zero intentional personal-data collection', policy.dataZeroPosture.intentionalPersonalDataCollection === false);
 assert('analytics disabled', policy.dataZeroPosture.analytics === false);
 assert('cookies disabled', policy.dataZeroPosture.cookies === false);
@@ -20,9 +21,11 @@ assert('no investment offering', policy.investmentAndTokenBoundary.offering === 
 assert('no investment advice', policy.investmentAndTokenBoundary.investmentAdvice === false);
 assert('no profit promise', policy.investmentAndTokenBoundary.profitPromise === false);
 assert('no external audit completed claim', policy.auditAndAssuranceBoundary.externalAuditCompleted === false);
+assert('AGIALPHA token not available from project', tokenBoundary.marketPosture.notMadeAvailableFromMontrealAI === true && tokenBoundary.marketPosture.noAvailabilityGuarantee === true);
+assert('AGIALPHA no custody or price support', tokenBoundary.marketPosture.noCustody === true && tokenBoundary.marketPosture.noPriceSupport === true && tokenBoundary.marketPosture.noLiquiditySupport === true);
 assert('user burden explicit', /solely responsible/i.test(policy.thirdPartyResponsibility.userBurden));
 const combined = required.filter(f=>f.endsWith('.md') || f.endsWith('.html')).map(read).join('\n').toLowerCase();
-for (const phrase of ['do not submit personal data','no investment','not legal','solely responsible','no analytics','no cookies','no accounts','no forms','not a third-party audit']){
+for (const phrase of ['do not submit personal data','no investment','not legal','solely responsible','no analytics','no cookies','no accounts','no forms','not a third-party audit','not available from montrealai','not available from this website','no price support','no liquidity support']){
   assert(`legal phrase present: ${phrase}`, combined.includes(phrase));
 }
 const scanFiles = [];

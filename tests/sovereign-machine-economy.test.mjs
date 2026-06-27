@@ -6,7 +6,7 @@ const js=read('site/assets/sovereign-economy.js');
 const data=JSON.parse(read('data/sovereign-machine-economy-capability-contract.json'));
 assert.equal(data.repository,'MontrealAI/goalos-agijobmanager-ascension');
 assert.equal(data.canonicalIdentities.AGIJobManager,'0xB3AAeb69b630f0299791679c063d68d6687481d1');
-assert.equal(data.canonicalIdentities.AGIALPHA,'0xa61a3b3a130a9c20768eebf97e21515a6046a1fa');
+assert.equal(data.canonicalIdentities.AGIALPHA,'0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA');
 assert.equal(data.operatingLoop.length,10);
 for (const marker of ['Meta-Agentic','AGI Alpha Node v0','AGI Jobs v0 (v2)','AGIJobManager','Evidence Docket','Run local sovereign cycle']) assert(html.includes(marker), `missing ${marker}`);
 for (const marker of ['GoalOSCommit','RunCommitment','ProofPacket','SelectionCertificate','HUMAN_REVIEW_REQUIRED']) assert(read('src/sovereign/sovereign-machine-economy.mjs').includes(marker), `source missing ${marker}`);
