@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v13-agialpha-token-market-boundary",
-  "builtAt": "2026-06-27T17:09:07.477809Z",
+  "release": "v14-dependency-zero-final",
+  "builtAt": "2026-06-27T18:16:49.872137Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -127,6 +127,11 @@
       "path": "docs/DATA_ZERO_PRIVACY_POLICY.md",
       "sha256": "66eff425db7a6a7df3afe8dde118076e0ecee681997bb6e6a8dd1da28382396e",
       "bytes": 2434
+    },
+    {
+      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
+      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
+      "bytes": 1354
     },
     {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
