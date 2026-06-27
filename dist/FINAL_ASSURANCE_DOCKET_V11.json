@@ -2,7 +2,7 @@
   "status": "PASS",
   "release": "v11-final-assurance-kernel",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "checkedAt": "2026-06-27T16:14:32.357Z",
+  "checkedAt": "2026-06-27T16:56:27.426Z",
   "checks": {
     "passed": 90,
     "failed": 0,
@@ -18,28 +18,28 @@
   "fileHashes": [
     {
       "path": "site/index.html",
-      "sha256": "546c7e0fac3f3d5eeb07d9038316f553cd67ad93474c0b379d97ad7305929f38",
-      "bytes": 7211
+      "sha256": "dd73ee492e7de9ba6a6807e19619cf5167bae47e110431a1678eb769d47f5a64",
+      "bytes": 7340
     },
     {
       "path": "site/operator-console.html",
-      "sha256": "0585055eaf4a9f131603aac5006b340764cfe4867f746875a0b30e6d87ac74af",
-      "bytes": 6048
+      "sha256": "6e634a73c1dbce46ea64532dc81e170a4e82e68bcdae6f1423d2f4baee32432a",
+      "bytes": 6078
     },
     {
       "path": "site/expert-console.html",
-      "sha256": "66460e2a72d5e85c2a411fc1ed5d5665e701af115b10cd1b491f935d24e5a18e",
-      "bytes": 8100
+      "sha256": "f9c29e9951516a991df2c177929f5277e9e73abcc8945370ff805c3df09fcd30",
+      "bytes": 8130
     },
     {
       "path": "site/sovereign-machine-economy.html",
-      "sha256": "5220d6f32f84e81895b813bac36c7159553fd5c5cc3b4b8d560b5f25d9fc3a32",
-      "bytes": 5690
+      "sha256": "39de42f01a72e493d5c0ac494610e9a55920d492fbeea0120e808e6b0fa05c3a",
+      "bytes": 5720
     },
     {
       "path": "site/verification.html",
-      "sha256": "a11761df1fa3ffb106892a1730617997d154bcd83a6d6b7495ef16f9ba77522a",
-      "bytes": 3772
+      "sha256": "2c33b968a4adb69fcc449025d020828d2b4c33322f2c748fb5af5c24845381b2",
+      "bytes": 3802
     },
     {
       "path": "data/final-assurance-policy.json",
