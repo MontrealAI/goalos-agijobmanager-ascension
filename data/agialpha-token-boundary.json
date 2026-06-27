@@ -1,0 +1,72 @@
+{
+  "$schema": "../schemas/agialpha-token-boundary.schema.json",
+  "policyVersion": "v13-agialpha-market-boundary",
+  "lastUpdated": "2026-06-27",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "repository": "https://github.com/MontrealAI/goalos-agijobmanager-ascension",
+  "officialToken": {
+    "symbol": "AGIALPHA",
+    "name": "AGI ALPHA AGENT",
+    "chain": "Ethereum Mainnet",
+    "chainId": 1,
+    "addressChecksum": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "addressLowercase": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa"
+  },
+  "marketPosture": {
+    "preExistingPublicMarketToken": true,
+    "thirdPartyPublicMarkets": true,
+    "decentralizedMarketSurfaces": true,
+    "notOfferedByMontrealAI": true,
+    "notSoldByMontrealAI": true,
+    "notMadeAvailableFromMontrealAI": true,
+    "notRedeemableFromMontrealAI": true,
+    "noPrimarySale": true,
+    "noAllocationFromProject": true,
+    "noBrokerDealerOrExchangeService": true,
+    "noCustody": true,
+    "noLiquiditySupport": true,
+    "noMarketMaking": true,
+    "noPriceSupport": true,
+    "noAvailabilityGuarantee": true,
+    "noRecommendationToAcquireHoldOrSell": true
+  },
+  "userOperatorBurden": {
+    "soleResponsibility": true,
+    "text": "Users and operators are solely responsible for any acquisition, holding, transfer, approval, staking, spending, swap, tax, securities, sanctions, consumer-protection, wallet, custody, slippage, MEV, bridge, exchange, DEX, RPC, smart-contract, or jurisdictional decision, together with their advisers."
+  },
+  "publicLanguage": {
+    "mandatory": [
+      "AGIALPHA is not available from MontrealAI or this website.",
+      "AGIALPHA references are protocol-utility and canonical-identity references only.",
+      "The official Ethereum Mainnet address is 0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA.",
+      "Use third-party market, wallet, RPC, and explorer surfaces at your own risk.",
+      "No offer, sale, recommendation, solicitation, profit promise, exchange service, broker-dealer service, investment advice, custody, or price/liquidity support is provided."
+    ],
+    "forbidden": [
+      "buy from us",
+      "available from us",
+      "guaranteed liquidity",
+      "guaranteed price",
+      "guaranteed return",
+      "profit opportunity",
+      "official exchange service",
+      "we sell AGIALPHA",
+      "we custody AGIALPHA"
+    ]
+  },
+  "thirdPartySurfaces": {
+    "wallets": "Independent wallets chosen by users.",
+    "dexs": "Independent decentralized exchange interfaces and pools, not controlled by this site.",
+    "centralizedExchangesOrAggregators": "Independent market-data, routing, listing, trading, or aggregator surfaces, if any.",
+    "explorers": "Independent block explorers such as Etherscan.",
+    "rpcProviders": "Independent RPC providers selected by wallets or users."
+  },
+  "proofBoundary": {
+    "siteCanVerifyIdentity": true,
+    "siteCannotGuaranteeMarketQuality": true,
+    "siteCannotGuaranteeLiquidity": true,
+    "siteCannotGuaranteeDecentralizationOfEveryThirdPartySurface": true,
+    "siteCannotGuaranteeFactualCorrectnessBeyondAutomatedChecks": true,
+    "externalMarketDataChangesContinuously": true
+  }
+}
