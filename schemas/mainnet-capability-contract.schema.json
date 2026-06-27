@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "version",
+    "productionUrl",
+    "canonicalIdentities",
+    "capabilities",
+    "controls"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "canonicalIdentities": {
+      "type": "object"
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1
+    },
+    "controls": {
+      "type": "object"
+    }
+  }
+}

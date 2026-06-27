@@ -1,0 +1,64 @@
+{
+  "schema": "goalos/capability-contract/v2",
+  "status": "operator-parity-locked",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "capabilities": [
+    {
+      "id": "public-proof-institution",
+      "presented": "Public proof-settlement institution",
+      "implementation": [
+        "site/index.html",
+        "site/evidence/index.html",
+        "data/evidence-docket-6-1.json"
+      ],
+      "verification": [
+        "tools/verify.py",
+        "tests/operator-parity.test.mjs"
+      ]
+    },
+    {
+      "id": "read-only-chamber",
+      "presented": "Read-only public settlement chamber",
+      "implementation": [
+        "site/operator-console.html",
+        "site/assets/atelier.js"
+      ],
+      "verification": [
+        "tools/verify.py"
+      ]
+    },
+    {
+      "id": "expert-mainnet-console",
+      "presented": "Expert Mainnet operations separated from public default",
+      "implementation": [
+        "site/expert-console.html",
+        "site/assets/expert-console.js",
+        "data/agijobmanager-expert-action-catalog.json"
+      ],
+      "verification": [
+        "tests/operator-parity.test.mjs"
+      ]
+    },
+    {
+      "id": "wallet-operations",
+      "presented": "Wallet connection, Mainnet switch, approvals, transaction broadcast",
+      "implementation": [
+        "site/assets/expert-console.js"
+      ],
+      "verification": [
+        "tests/operator-parity.test.mjs"
+      ]
+    },
+    {
+      "id": "audit-grade-automation",
+      "presented": "Automated audit-grade verification suite",
+      "implementation": [
+        "tools/verify.py",
+        "docs/AUTOMATED_AUDIT_EQUIVALENT.md"
+      ],
+      "verification": [
+        "AGIJOBMANAGER_ASCENSION_QA.md"
+      ]
+    }
+  ]
+}

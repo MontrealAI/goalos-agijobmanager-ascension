@@ -1,9 +1,43 @@
 {
-  "docketId":"AGIJOBMANAGER-ASCENSION-DOCKET-6-1",
-  "claim":"GoalOS-native public evidence layer and read-only operator chamber for AGIJobManager Ascension.",
-  "nonClaims":["No external audit completion claim","No Mainnet transaction claim","No production activation claim","No fund authorization claim","No factual certification claim"],
-  "publicSafetyInvariants":{"walletAutoConnect":0,"tokenApprovals":0,"networkSwitches":0,"transactionBroadcasts":0,"privateKeys":0,"externalActions":0},
-  "lifecycle":["request","escrow","execute","prove","validate","dispute","settle","finalize","chronicle","human_review"],
-  "terminalDisposition":"HUMAN_REVIEW_REQUIRED"
+  "docketId": "AGIJOBMANAGER-ASCENSION-DOCKET-6-1",
+  "claim": "GoalOS-native public evidence layer and read-only operator chamber for AGIJobManager Ascension.",
+  "nonClaims": [
+    "No external audit completion claim",
+    "No Mainnet transaction claim",
+    "No production activation claim",
+    "No fund authorization claim",
+    "No factual certification claim"
+  ],
+  "publicSafetyInvariants": {
+    "walletAutoConnect": 0,
+    "tokenApprovals": 0,
+    "networkSwitches": 0,
+    "transactionBroadcasts": 0,
+    "privateKeys": 0,
+    "externalActions": 0
+  },
+  "lifecycle": [
+    "request",
+    "escrow",
+    "execute",
+    "prove",
+    "validate",
+    "dispute",
+    "settle",
+    "finalize",
+    "chronicle",
+    "human_review"
+  ],
+  "terminalDisposition": "HUMAN_REVIEW_REQUIRED",
+  "sovereignMachineEconomy": {
+    "status": "implemented-v10",
+    "surfaces": [
+      "META-AGENTIC \u03b1-AGI",
+      "AGI Alpha Node v0",
+      "AGI Jobs v0 (v2)",
+      "AGIJobManager"
+    ],
+    "terminalDisposition": "HUMAN_REVIEW_REQUIRED",
+    "externalActions": 0
+  }
 }
-

@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(p,'utf8');
+const html=read('site/sovereign-machine-economy.html');
+const js=read('site/assets/sovereign-economy.js');
+const data=JSON.parse(read('data/sovereign-machine-economy-capability-contract.json'));
+assert.equal(data.repository,'MontrealAI/goalos-agijobmanager-ascension');
+assert.equal(data.canonicalIdentities.AGIJobManager,'0xB3AAeb69b630f0299791679c063d68d6687481d1');
+assert.equal(data.canonicalIdentities.AGIALPHA,'0xa61a3b3a130a9c20768eebf97e21515a6046a1fa');
+assert.equal(data.operatingLoop.length,10);
+for (const marker of ['Meta-Agentic','AGI Alpha Node v0','AGI Jobs v0 (v2)','AGIJobManager','Evidence Docket','Run local sovereign cycle']) assert(html.includes(marker), `missing ${marker}`);
+for (const marker of ['GoalOSCommit','RunCommitment','ProofPacket','SelectionCertificate','HUMAN_REVIEW_REQUIRED']) assert(read('src/sovereign/sovereign-machine-economy.mjs').includes(marker), `source missing ${marker}`);
+for (const bad of ['eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','approve(CANON.manager','MaxUint256','privateKey']) assert(!html.includes(bad) && !js.includes(bad), `public SME page contains ${bad}`);
+assert(js.includes('externalActions:0'), 'public SME cycle must preserve zero external actions');
+assert(js.includes('Download Evidence Docket') || html.includes('Download Evidence Docket'), 'docket export missing');
+console.log('sovereign machine economy PASS · prior stack covered inside AGIJobManager Ascension');

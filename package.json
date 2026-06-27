@@ -1,2 +1,20 @@
-{"name":"goalos-agijobmanager-ascension","version":"1.0.0","private":true,"scripts":{"build":"python3 tools/build.py","test":"python3 tools/verify.py"}}
-
+{
+  "name": "goalos-agijobmanager-ascension",
+  "version": "1.1.0-sovereign-machine-economy-assurance-v11",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "verify": "python3 tools/verify.py",
+    "assurance": "node tools/automated-assurance.mjs",
+    "factual": "node tools/factual-correctness.mjs",
+    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs",
+    "test:strict": "npm test && npm run assurance && npm run factual && npm run build",
+    "assurance:final": "node tools/final-assurance-kernel.mjs",
+    "factual:mainnet": "node tools/mainnet-factual-check.mjs",
+    "test:final": "npm test && npm run assurance && npm run assurance:final && npm run factual:mainnet && npm run build && npm run assurance:final"
+  },
+  "dependencies": {
+    "ethers": "6.13.4"
+  }
+}

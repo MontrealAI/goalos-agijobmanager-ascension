@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Sovereign Machine Economy Capability Contract",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "name",
+    "productionUrl",
+    "repository",
+    "canonicalIdentities",
+    "sourceLineage",
+    "operatingLoop",
+    "capabilities",
+    "publicSafetyBoundary"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string",
+      "const": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    "repository": {
+      "type": "string",
+      "const": "MontrealAI/goalos-agijobmanager-ascension"
+    },
+    "canonicalIdentities": {
+      "type": "object",
+      "required": [
+        "AGIJobManager",
+        "AGIALPHA",
+        "chainId"
+      ],
+      "properties": {
+        "AGIJobManager": {
+          "type": "string",
+          "const": "0xB3AAeb69b630f0299791679c063d68d6687481d1"
+        },
+        "AGIALPHA": {
+          "type": "string",
+          "const": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa"
+        },
+        "chainId": {
+          "type": "integer",
+          "const": 1
+        }
+      }
+    },
+    "sourceLineage": {
+      "type": "array",
+      "minItems": 4
+    },
+    "operatingLoop": {
+      "type": "array",
+      "minItems": 10
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 7
+    },
+    "publicSafetyBoundary": {
+      "type": "object"
+    },
+    "claimBoundary": {
+      "type": "array"
+    }
+  }
+}
