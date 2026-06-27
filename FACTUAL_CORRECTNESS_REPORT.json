@@ -1,6 +1,6 @@
 {
   "status": "SKIPPED",
   "scope": "live Mainnet identity and ERC20 sanity check with AGIALPHA checksum token identity",
-  "error": "fetch failed | fetch failed | fetch failed",
-  "checkedAt": "2026-06-27T18:48:34.368Z"
+  "reason": "live RPC check disabled for deterministic zero-network publication; set run_live_factual_check=true and STRICT_LIVE_FACTUAL_CHECK=true for hard live RPC gate",
+  "checkedAt": "2026-06-27T19:41:00.647Z"
 }
