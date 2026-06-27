@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "name": "GoalOS AGIALPHA Ascension \u2014 Sovereign Machine Economy inside AGIJobManager Ascension",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "repository": "MontrealAI/goalos-agijobmanager-ascension",
+  "status": "implementation-backed-public-surface",
+  "canonicalIdentities": {
+    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "AGIALPHA": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa",
+    "chainId": 1
+  },
+  "sourceLineage": [
+    {
+      "surface": "META-AGENTIC \u03b1-AGI",
+      "legacyRepository": "MontrealAI/AGI-Alpha-Agent-v0",
+      "role": "institution foundry and meta-agentic governance"
+    },
+    {
+      "surface": "AGI Alpha Node v0",
+      "legacyRepository": "MontrealAI/AGI-Alpha-Node-v0",
+      "role": "deterministic runtime, proof flight, telemetry and sentinel posture"
+    },
+    {
+      "surface": "AGI Jobs v0 (v2)",
+      "legacyRepository": "MontrealAI/AGIJobsv0",
+      "role": "work OS, proof parliament, jobs, validators and market-state discipline"
+    },
+    {
+      "surface": "AGIJobManager",
+      "legacyRepository": "MontrealAI/AGIJobManager",
+      "role": "Ethereum Mainnet escrow, validation, dispute and settlement rail"
+    }
+  ],
+  "operatingLoop": [
+    "mandate",
+    "compose",
+    "route",
+    "execute",
+    "prove",
+    "validate",
+    "settle",
+    "chronicle",
+    "select",
+    "rollback"
+  ],
+  "capabilities": [
+    {
+      "id": "sme.public-front-door",
+      "title": "Sovereign Machine Economy route",
+      "implementation": [
+        "site/sovereign-machine-economy.html",
+        "site/assets/sovereign-economy.js",
+        "site/assets/atelier.css"
+      ],
+      "verification": [
+        "tools/verify.py",
+        "tests/sovereign-machine-economy.test.mjs"
+      ]
+    },
+    {
+      "id": "sme.meta-agentic-foundry",
+      "title": "Meta-Agentic institution foundry model",
+      "implementation": [
+        "data/sovereign-machine-economy-capability-contract.json",
+        "src/sovereign/sovereign-machine-economy.mjs"
+      ],
+      "verification": [
+        "tests/sovereign-machine-economy.test.mjs"
+      ]
+    },
+    {
+      "id": "sme.alpha-node-runtime",
+      "title": "AGI Alpha Node deterministic proof-flight model",
+      "implementation": [
+        "site/sovereign-machine-economy.html",
+        "site/assets/sovereign-economy.js"
+      ],
+      "verification": [
+        "tests/sovereign-machine-economy.test.mjs"
+      ]
+    },
+    {
+      "id": "sme.agi-jobs-work-os",
+      "title": "AGI Jobs work OS and proof parliament model",
+      "implementation": [
+        "data/sovereign-machine-economy-capability-contract.json",
+        "site/sovereign-machine-economy.html"
+      ],
+      "verification": [
+        "tools/verify.py"
+      ]
+    },
+    {
+      "id": "sme.agijobmanager-settlement",
+      "title": "AGIJobManager settlement rail and expert console handoff",
+      "implementation": [
+        "site/expert-console.html",
+        "site/assets/expert-console.js",
+        "data/agijobmanager-expert-action-catalog.json"
+      ],
+      "verification": [
+        "tests/operator-parity.test.mjs",
+        "tools/verify.py"
+      ]
+    },
+    {
+      "id": "sme.evidence-docket",
+      "title": "Evidence Docket and governed decision state export",
+      "implementation": [
+        "site/evidence/index.html",
+        "data/evidence-docket-6-1.json",
+        "schemas/sovereign-machine-economy.schema.json"
+      ],
+      "verification": [
+        "tools/verify.py",
+        "tests/sovereign-machine-economy.test.mjs"
+      ]
+    },
+    {
+      "id": "sme.public-private-boundary",
+      "title": "Public/private proof boundary and claim discipline",
+      "implementation": [
+        "docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md",
+        "docs/CLAIM_BOUNDARY.md"
+      ],
+      "verification": [
+        "tools/verify.py"
+      ]
+    }
+  ],
+  "publicSafetyBoundary": {
+    "publicPagesNoWalletPrimitives": true,
+    "expertConsoleSeparated": true,
+    "expertConsoleRequiresWalletAction": true,
+    "exactApprovalOnly": true,
+    "unlimitedApprovalForbidden": true,
+    "autoBroadcastForbidden": true,
+    "privateKeyStorageForbidden": true,
+    "productionAuthorityRequiresTypedConfirmation": true
+  },
+  "claimBoundary": [
+    "This repository does not claim achieved AGI or ASI.",
+    "This repository does not claim external audit completion by an audit firm.",
+    "This repository does not claim autonomous production authority without human review.",
+    "This repository implements a public-safe proof institution, Evidence Docket, local deterministic economy chamber and separated Expert Mainnet Console."
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "builtAt": "2026-06-26T16:13:36.403657Z",
+  "release": "v11-final-assurance-kernel",
+  "builtAt": "2026-06-27T16:14:33.275502Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -9,13 +10,13 @@
     },
     {
       "path": "architecture.html",
-      "sha256": "57266e04e9032879dbeff30071de1f4667edd2ecf729c3522e06f3665318bb26",
-      "bytes": 3166
+      "sha256": "94a7de6e4b8d826bd8de086a04c65296873a687a932eb2689fc91d3e11849e36",
+      "bytes": 4397
     },
     {
       "path": "assets/atelier.css",
-      "sha256": "ee4dbae677f87b1611dd0e64cef02c1e917120ae08750e616732089f67ccf154",
-      "bytes": 11661
+      "sha256": "40ba158ffd8239ae4784ad6f41d012f35f108950a67aff752892b3e5133d06b8",
+      "bytes": 17409
     },
     {
       "path": "assets/atelier.js",
@@ -23,14 +24,134 @@
       "bytes": 7086
     },
     {
+      "path": "assets/expert-console.js",
+      "sha256": "4b1a982b35c3caa4547662f493dbf8239380375457513fa4a23f63b138ab93fa",
+      "bytes": 14200
+    },
+    {
+      "path": "assets/mainnet-console.js",
+      "sha256": "b503bb3da047998067208ea9357c0628f219c1c0d47752480dc6c998889857a0",
+      "bytes": 7954
+    },
+    {
+      "path": "assets/sovereign-economy.js",
+      "sha256": "adbab6f70cfd17c914a5fcdb5d0dcce1a878c6439be83bdfb7434e561cdf1150",
+      "bytes": 2984
+    },
+    {
+      "path": "assurance.html",
+      "sha256": "e23762302b59a9763c05c78a5358f169f637ba3048360b609b33c025b899b438",
+      "bytes": 3810
+    },
+    {
+      "path": "data/agijobmanager-action-catalog.json",
+      "sha256": "f5791939553348d5a9d735e7a6f7db258fd0159d3c184e1e1ab8d829d2200e31",
+      "bytes": 1000
+    },
+    {
+      "path": "data/agijobmanager-expert-action-catalog.json",
+      "sha256": "98c5d88ce19ca39bba209cdd43e0982b9953f08cf22365c25ea82a243fa8acf4",
+      "bytes": 1214
+    },
+    {
+      "path": "data/canonical-identities.json",
+      "sha256": "751609f391cddc5ef50575819c04598ccabc7aa3107e02419750acc2eaad1a55",
+      "bytes": 405
+    },
+    {
+      "path": "data/capability-contract.json",
+      "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
+      "bytes": 1756
+    },
+    {
+      "path": "data/evidence-docket-6-1.json",
+      "sha256": "12a47c4704b64d5c4d6c9882331f88db0c49b156c0bd17ef4445cba5db54c296",
+      "bytes": 1072
+    },
+    {
+      "path": "data/final-assurance-policy.json",
+      "sha256": "aa14bb8f9d75d695b77cd9e5a69ef3b7015cb89c9ac5170af64750e7e87a4698",
+      "bytes": 2328
+    },
+    {
+      "path": "data/mainnet-capability-contract.json",
+      "sha256": "24dfd7da2ec8436ce2db272053236ebddbf60f1c3773468433655ed49018f727",
+      "bytes": 2993
+    },
+    {
+      "path": "data/production-authority.json",
+      "sha256": "2868124481b12ac0d977ee6b50f610dd7517bf86954e01808c9f844fd1c4b7c8",
+      "bytes": 342
+    },
+    {
+      "path": "data/sovereign-machine-economy-capability-contract.json",
+      "sha256": "44ebff7c6358708987a9b2ecbf6101ccf6445b754cf4d08680aa77c7fa9ddcd6",
+      "bytes": 4718
+    },
+    {
+      "path": "docs/AUTOMATED_ASSURANCE.md",
+      "sha256": "9a5ef53b77ba6fca82a9d3d56b566f5f09c3fa7d9accb7866f3693b0421f3385",
+      "bytes": 818
+    },
+    {
+      "path": "docs/AUTOMATED_AUDIT_EQUIVALENT.md",
+      "sha256": "c591f4a536f5e8ec1bc406a8d9ce34325d4c52d8745b93bbb14ad9872e90cde5",
+      "bytes": 552
+    },
+    {
+      "path": "docs/CLAIM_BOUNDARY.md",
+      "sha256": "446764c432c0cd964e0acb808a5f200a3c20e58305b96a974c1248a1217ea80f",
+      "bytes": 388
+    },
+    {
+      "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
+      "sha256": "44150fb9772ccbddc916bb7bf054827cf0a800e0d86c89b57d010016b31ac93e",
+      "bytes": 607
+    },
+    {
+      "path": "docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
+      "sha256": "f14a13329522751a6a3779c679f78292ac4da8931219b465a012f29f44f906d0",
+      "bytes": 1459
+    },
+    {
+      "path": "docs/MAINNET_OPERATIONS_RUNBOOK.md",
+      "sha256": "e1d5ebdaa3fbf23a98ab95956939abcbc61b52f82d089ae9741d9223398650af",
+      "bytes": 665
+    },
+    {
+      "path": "docs/PRODUCTION_RUNBOOK.md",
+      "sha256": "2d63d870c9108644df3c5ef31bb0ac95427255e26cc468855a0302592b181faa",
+      "bytes": 488
+    },
+    {
+      "path": "docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md",
+      "sha256": "621ce6b0dcebf76a47d1b959d1f0122f17a2cefb89d2462627d2fc544305aa9e",
+      "bytes": 1486
+    },
+    {
+      "path": "docs.html",
+      "sha256": "719eb79b895702707e19cdca8d1d28662d8ec97aca916d4dd19aeeee6f4df0d4",
+      "bytes": 1234
+    },
+    {
       "path": "evidence/index.html",
       "sha256": "a1bad4549ad519798f9915bcc2f29fecb8500da257e1bcd4c16945fe2298f75f",
       "bytes": 3757
     },
     {
+      "path": "expert-console.html",
+      "sha256": "66460e2a72d5e85c2a411fc1ed5d5665e701af115b10cd1b491f935d24e5a18e",
+      "bytes": 8100
+    },
+    {
+      "path": "expert-mainnet-console.html",
+      "sha256": "2f68e3a45ceba2b7eef5c3c69a8684271e017111db77e4e6978c2e4ef0e53edc",
+      "bytes": 4822
+    },
+    {
       "path": "index.html",
-      "sha256": "555131aaabb3b8a8255d29e4688b963e6cdf3b0ce037991fa0fadf9f5dd0198a",
-      "bytes": 5972
+      "sha256": "546c7e0fac3f3d5eeb07d9038316f553cd67ad93474c0b379d97ad7305929f38",
+      "bytes": 7211
     },
     {
       "path": "operator-console.html",
@@ -38,9 +159,39 @@
       "bytes": 6048
     },
     {
+      "path": "schemas/evidence-docket.schema.json",
+      "sha256": "066d02bfdbf9dd46a84c85b69f71213b8e4863ea50106446a185d563720b99a8",
+      "bytes": 343
+    },
+    {
+      "path": "schemas/goalos-intent.schema.json",
+      "sha256": "4411bb47ca79dff371bc3358d3fcc753bab1be11d38de7118215d611bc07ae30",
+      "bytes": 341
+    },
+    {
+      "path": "schemas/mainnet-capability-contract.schema.json",
+      "sha256": "bff4941052c6cfc34d454b1ab14d854c79a5a0153ef6d74310b7a9c3dd12a910",
+      "bytes": 504
+    },
+    {
+      "path": "schemas/sovereign-machine-economy.schema.json",
+      "sha256": "ba0c4e75313b832222292d83d3f596251023c2431300ea8c927e61d097fcf798",
+      "bytes": 1569
+    },
+    {
+      "path": "sovereign-machine-economy.html",
+      "sha256": "5220d6f32f84e81895b813bac36c7159553fd5c5cc3b4b8d560b5f25d9fc3a32",
+      "bytes": 5690
+    },
+    {
+      "path": "vendor/ethers.umd.min.js",
+      "sha256": "fd66c04651929c6a37806a37e8217e6b6aac07c7e816ad478f52690b7429bc61",
+      "bytes": 505826
+    },
+    {
       "path": "verification.html",
-      "sha256": "8cd6a8d602f83efbc32b4b34b567c4c4adad49782863d7f99125860ccfc1e32e",
-      "bytes": 2648
+      "sha256": "a11761df1fa3ffb106892a1730617997d154bcd83a6d6b7495ef16f9ba77522a",
+      "bytes": 3772
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+  "AGIALPHA": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa",
+  "chainId": 1,
+  "walletCapabilities": [
+    "eth_requestAccounts",
+    "wallet_switchEthereumChain",
+    "ERC20 approve exact",
+    "eth_call preflight",
+    "estimateGas",
+    "human wallet broadcast"
+  ],
+  "createJob": {
+    "signature": "createJob(string jobSpecURI,uint256 payout,uint256 duration,string details)",
+    "source": "legacy console presents this exact payload"
+  },
+  "lifecycleSignatures": [
+    "applyForJob(uint256 jobId)",
+    "submitCompletion(uint256 jobId,string completionURI)",
+    "approveCompletion(uint256 jobId)",
+    "disapproveCompletion(uint256 jobId)",
+    "openDispute(uint256 jobId,string reasonURI)",
+    "finalizeJob(uint256 jobId)",
+    "expireJob(uint256 jobId)",
+    "cancelJob(uint256 jobId)"
+  ],
+  "operatorNote": "If verified ABI names differ, use the signature field in the expert console or legacy agijobmanagerv0 page."
+}

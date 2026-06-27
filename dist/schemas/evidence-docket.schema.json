@@ -1,0 +1,2 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Evidence Docket 6.1","type":"object","required":["docketId","claim","nonClaims","publicSafetyInvariants"],"properties":{"docketId":{"type":"string"},"claim":{"type":"string"},"nonClaims":{"type":"array","items":{"type":"string"}},"publicSafetyInvariants":{"type":"object"}}}
+

@@ -1,0 +1,2 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GoalOS AGIJobManager Intent","type":"object","required":["docket","canonical","mission","lifecycle","selection"],"properties":{"docket":{"type":"string"},"canonical":{"type":"object"},"mission":{"type":"object"},"lifecycle":{"type":"array"},"selection":{"type":"object"}}}
+
