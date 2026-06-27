@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Dependency-Zero Publisher v14
+name: GoalOS AGIJobManager Ascension Pathspec-Proof Final Publisher v15
 
 on:
   workflow_dispatch:
@@ -14,9 +14,14 @@ on:
         default: true
         type: boolean
       run_live_factual_check:
-        description: Verify live Mainnet identities through RPC
+        description: Run live Ethereum Mainnet identity check through RPC. Recommended only with ETHEREUM_RPC_URL secret.
         required: true
-        default: true
+        default: false
+        type: boolean
+      strict_live_factual_check:
+        description: Fail deployment if live RPC factual check cannot complete.
+        required: true
+        default: false
         type: boolean
   push:
     branches: [ main ]
@@ -29,6 +34,7 @@ on:
       - 'tests/**'
       - 'docs/**'
       - 'package.json'
+      - 'package-lock.json'
       - 'AGIJOBMANAGER_ASCENSION_QA.md'
       - 'FINAL_ASSURANCE_DOCKET_V11.json'
       - 'FINAL_ASSURANCE_DOCKET_V11.md'
@@ -41,62 +47,66 @@ permissions:
   actions: read
 
 concurrency:
-  group: agijobmanager-ascension-dependency-zero-v14
+  group: agijobmanager-ascension-pathspec-proof-final-v15
   cancel-in-progress: false
 
 jobs:
   publish:
-    name: Build, assure, and publish without registry dependencies
+    name: Build, assure, and publish without registry installs or pathspec fragility
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v6.0.0
         with:
           fetch-depth: 0
 
-      - name: Neutralize registry lock-in and committed dependency state
+      - name: Zero-network preflight
         shell: bash
         run: |
           set -euo pipefail
-          rm -rf node_modules
-          rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
+          echo "Node: $(node --version)"
+          echo "Python: $(python3 --version)"
+          test -f package.json
+          test -f tools/no-registry-preflight.mjs
           test -f site/vendor/ethers.umd.min.js
-          python3 --version
-          node --version
+          node tools/no-registry-preflight.mjs
+          node tools/pathspec-proof-kernel.mjs
 
-      - name: Verify implementation, boundaries, and final assurance
+      - name: Verify implementation, boundaries, token posture, and final assurance
         shell: bash
         env:
-          SKIP_LIVE_RPC: ${{ inputs.run_live_factual_check == false && '1' || '0' }}
           RUN_LIVE_FACTUAL_CHECK: ${{ inputs.run_live_factual_check }}
+          SKIP_LIVE_RPC: ${{ inputs.run_live_factual_check == false && '1' || '0' }}
+          STRICT_LIVE_FACTUAL_CHECK: ${{ inputs.strict_live_factual_check }}
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
         run: |
           set -euo pipefail
-          python3 tools/verify.py
-          node tests/operator-parity.test.mjs
-          node tests/sovereign-machine-economy.test.mjs
-          node tests/final-assurance-kernel.test.mjs
-          node tests/legal-shield.test.mjs
-          node tests/token-boundary.test.mjs
-          node tests/dependency-zero.test.mjs
-          node tools/automated-assurance.mjs
-          node tools/final-assurance-kernel.mjs
-          node tools/legal-shield-kernel.mjs
-          node tools/token-boundary-kernel.mjs
-          node tools/mainnet-factual-check.mjs
+          npm run test
+          npm run assurance
+          npm run assurance:final
+          npm run legal
+          npm run token-boundary
+          if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
+            SKIP_LIVE_RPC=0 RUN_LIVE_FACTUAL_CHECK=true STRICT_LIVE_FACTUAL_CHECK=${STRICT_LIVE_FACTUAL_CHECK} npm run factual:mainnet
+          else
+            SKIP_LIVE_RPC=1 RUN_LIVE_FACTUAL_CHECK=false STRICT_LIVE_FACTUAL_CHECK=false npm run factual:mainnet
+          fi
+          node tools/no-registry-preflight.mjs
+          node tools/pathspec-proof-kernel.mjs
 
       - name: Build static Pages artifact
         shell: bash
         run: |
           set -euo pipefail
-          python3 tools/build.py
-          node tools/final-assurance-kernel.mjs
-          node tools/legal-shield-kernel.mjs
-          node tools/token-boundary-kernel.mjs
-          node tools/dependency-zero-kernel.mjs
+          npm run build
+          npm run assurance:final
+          npm run legal
+          npm run token-boundary
+          node tools/no-registry-preflight.mjs
+          node tools/pathspec-proof-kernel.mjs
           test -f dist/index.html
           test -f dist/operator-console.html
           test -f dist/expert-console.html
@@ -108,16 +118,24 @@ jobs:
           test -f dist/terms.html
           test -f dist/regulatory-boundary.html
           test -f dist/third-party-responsibility.html
-          test -f dist/agialpha-token-boundary.html
+          test -f dist/legal-boundary-policy.json
           test -f dist/agialpha-token-boundary.json
+          test -f dist/agialpha-token-boundary.html
           test -f dist/FINAL_ASSURANCE_DOCKET_V11.json
-          test -f dist/vendor/ethers.umd.min.js
+          test -f dist/data/final-assurance-policy.json
+          grep -q 'zeroNetworkPublisher' dist/production-url.json
+          grep -q 'pathspecProofPublisher' dist/production-url.json
           grep -q 'finalAssurance' dist/production-url.json
           grep -q 'Final Assurance Kernel' dist/assurance.html
           grep -q 'No user data' dist/legal.html
           grep -q 'not available from MontrealAI' dist/agialpha-token-boundary.html
+          grep -q 'not available from this website' dist/agialpha-token-boundary.html
           grep -q '0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA' dist/agialpha-token-boundary.html
           grep -q 'We do not want' dist/privacy.html
+          if grep -R -E "registry[.]npmjs|cdn[.]jsdelivr|unpkg[.]com" dist site .github/workflows; then
+            echo 'Forbidden external registry/CDN reference detected.' >&2
+            exit 1
+          fi
 
       - name: Commit generated source with retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source == true }}
@@ -126,14 +144,13 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          rm -rf node_modules
-          rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
-          git add -A site data schemas src tools tests docs package.json package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml AGIJOBMANAGER_ASCENSION_QA.md FINAL_ASSURANCE_DOCKET_V11.json FINAL_ASSURANCE_DOCKET_V11.md FACTUAL_CORRECTNESS_REPORT.json AUTOMATED_ASSURANCE_SUMMARY.json DEPENDENCY_ZERO_ASSURANCE_V14.json .github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml dist
+          git status --short
+          git add -A
           if git diff --cached --quiet; then
             echo 'No generated changes to commit.'
             exit 0
           fi
-          git commit -m 'Add Dependency-Zero Final Publisher v14'
+          git commit -m 'Add Pathspec-Proof Final Publisher v15'
           for i in 1 2 3 4; do
             git pull --rebase origin main || true
             if git push origin HEAD:main; then exit 0; fi
@@ -144,18 +161,18 @@ jobs:
 
       - name: Configure GitHub Pages
         if: ${{ inputs.deploy_pages == true || github.event_name == 'push' }}
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v6.0.0
 
       - name: Upload GitHub Pages artifact
         if: ${{ inputs.deploy_pages == true || github.event_name == 'push' }}
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: dist
 
       - name: Deploy GitHub Pages
         if: ${{ inputs.deploy_pages == true || github.event_name == 'push' }}
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.0
 
       - name: Verify deployed URL contract
         if: ${{ inputs.deploy_pages == true || github.event_name == 'push' }}
