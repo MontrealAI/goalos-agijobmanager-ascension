@@ -1,19 +1,6 @@
 {
-  "status": "PASS",
+  "status": "SKIPPED",
   "scope": "live Mainnet identity and ERC20 sanity check",
-  "chainId": 1,
-  "rpcEndpoint": "https://ethereum-rpc.publicnode.com",
-  "addresses": {
-    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
-    "AGIALPHA": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa"
-  },
-  "codeBytes": {
-    "AGIJobManager": 24547,
-    "AGIALPHA": 9322
-  },
-  "token": {
-    "symbol": "AGIALPHA",
-    "decimals": 18
-  },
-  "checkedAt": "2026-06-27T16:56:28.413Z"
+  "error": "fetch failed | fetch failed | fetch failed",
+  "checkedAt": "2026-06-27T14:46:22.883Z"
 }

@@ -22,5 +22,5 @@ Public pages remain local and default-deny. Expert Mainnet operations are intent
 ## Canonical identities
 
 - AGIJobManager: `0xB3AAeb69b630f0299791679c063d68d6687481d1`
-- AGIALPHA: `0xa61a3b3a130a9c20768eebf97e21515a6046a1fa`
+- AGIALPHA: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`
 - Production URL: `https://montrealai.github.io/goalos-agijobmanager-ascension/`

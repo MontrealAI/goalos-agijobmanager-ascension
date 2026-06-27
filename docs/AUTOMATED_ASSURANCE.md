@@ -15,4 +15,4 @@ Scope:
 Boundary: this is not a third-party audit opinion, legal opinion, financial advice, or certification. It is an automated software assurance package that must be reviewed by a human before production reliance.
 
 Canonical contract: `0xB3AAeb69b630f0299791679c063d68d6687481d1`
-Official AGIALPHA: `0xa61a3b3a130a9c20768eebf97e21515a6046a1fa`
+Official AGIALPHA: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`

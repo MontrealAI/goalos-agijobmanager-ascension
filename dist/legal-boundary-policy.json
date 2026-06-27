@@ -1,12 +1,12 @@
 {
   "$schema": "../schemas/legal-boundary-policy.schema.json",
-  "policyVersion": "v12-legal-data-zero-shield",
+  "policyVersion": "v13-legal-data-zero-token-market-boundary",
   "lastUpdated": "2026-06-27",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "repository": "https://github.com/MontrealAI/goalos-agijobmanager-ascension",
   "canonicalIdentities": {
     "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
-    "AGIALPHA": "0xa61a3b3a130a9c20768eebf97e21515a6046a1fa",
+    "AGIALPHA": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
     "chainId": 1,
     "network": "Ethereum Mainnet"
   },
@@ -36,7 +36,8 @@
     "wallets": "Wallet providers are independent third parties chosen by the user.",
     "rpcProviders": "RPC providers are independent third parties chosen by the user or wallet.",
     "ethereumMainnet": "Public blockchain transactions are user-directed and may be public, permanent, and irreversible.",
-    "userBurden": "Users and operators are solely responsible for their data, wallet, keys, jurisdiction, tax, securities, sanctions, privacy, consumer-protection, employment, procurement, and other compliance obligations."
+    "userBurden": "Users and operators are solely responsible for their data, wallet, keys, jurisdiction, tax, securities, sanctions, privacy, consumer-protection, employment, procurement, and other compliance obligations.",
+    "tokenMarkets": "Any market, DEX, aggregator, exchange, wallet, bridge, pool, route, RPC, slippage, liquidity, listing, price, and token-interaction surface is a third-party/user-selected surface. MontrealAI and this website do not provide token availability, custody, exchange, brokerage, market-making, price support, or liquidity support."
   },
   "investmentAndTokenBoundary": {
     "offering": false,
@@ -47,7 +48,22 @@
     "profitPromise": false,
     "yieldPromise": false,
     "equityOrOwnership": false,
-    "utilityOnlyDescription": "AGIALPHA references are protocol-utility and identity references only; they are not an invitation, recommendation, solicitation, or promise of profit."
+    "utilityOnlyDescription": "AGIALPHA references are protocol-utility and canonical-identity references only. AGIALPHA is treated as a pre-existing public-market token at the checksum Ethereum Mainnet address 0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA. It is not offered, sold, made available, custodied, redeemed, market-made, price-supported, or liquidity-supported by MontrealAI or this website.",
+    "officialAGIALPHAAddress": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "preExistingPublicMarketToken": true,
+    "thirdPartyMarketsOnly": true,
+    "notAvailableFromMontrealAI": true,
+    "notAvailableFromThisWebsite": true,
+    "notSoldByMontrealAI": true,
+    "notOfferedByMontrealAI": true,
+    "noPrimarySaleByProject": true,
+    "noCustody": true,
+    "noRedemption": true,
+    "noPriceSupport": true,
+    "noLiquiditySupport": true,
+    "noMarketMaking": true,
+    "noAvailabilityGuarantee": true,
+    "noAcquireHoldSellRecommendation": true
   },
   "auditAndAssuranceBoundary": {
     "externalAuditCompleted": false,
@@ -71,6 +87,10 @@
     "terms page must place user/operator responsibility on users for wallet, data, law, tax, and jurisdiction",
     "legal page must state no investment advice, no token offering, no audit certification, no legal advice, and no data wanted",
     "public pages must not include analytics, cookies, forms, tracking pixels, or remote JavaScript dependencies",
-    "expert console may contain wallet operations only behind explicit user action and typed confirmation"
+    "expert console may contain wallet operations only behind explicit user action and typed confirmation",
+    "AGIALPHA checksum address must appear in canonical identity files and token-boundary policy",
+    "public legal pages must state AGIALPHA is not available from MontrealAI or this website",
+    "public legal pages must state no primary sale, no custody, no price support, no liquidity support, and no acquisition recommendation",
+    "token market language must place wallet, DEX, exchange, tax, securities, sanctions, and jurisdictional review on users/operators"
   ]
 }

@@ -9,19 +9,19 @@ Checks: 90/90 passed.
 Canonical identities:
 
 - AGIJobManager: `0xB3AAeb69b630f0299791679c063d68d6687481d1`
-- AGIALPHA: `0xa61a3b3a130a9c20768eebf97e21515a6046a1fa`
+- AGIALPHA: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`
 - Chain: Ethereum Mainnet, chain id `1`
 
 Boundary: Automated assurance is not a legal third-party audit opinion and does not by itself authorize funds or activate production authority.
 
 ## Critical file hashes
 
-- `dd73ee492e7de9ba6a6807e19619cf5167bae47e110431a1678eb769d47f5a64`  site/index.html
+- `32f12be4b6f719104c800282ef1b11e6e3867e54edc1e70fbfbf7d7afaa05aba`  site/index.html
 - `6e634a73c1dbce46ea64532dc81e170a4e82e68bcdae6f1423d2f4baee32432a`  site/operator-console.html
-- `f9c29e9951516a991df2c177929f5277e9e73abcc8945370ff805c3df09fcd30`  site/expert-console.html
+- `0d8ff5a4e0c5867160acf45252e99488359d4d105d61ea4f38d0e563f06402cf`  site/expert-console.html
 - `39de42f01a72e493d5c0ac494610e9a55920d492fbeea0120e808e6b0fa05c3a`  site/sovereign-machine-economy.html
-- `2c33b968a4adb69fcc449025d020828d2b4c33322f2c748fb5af5c24845381b2`  site/verification.html
-- `aa14bb8f9d75d695b77cd9e5a69ef3b7015cb89c9ac5170af64750e7e87a4698`  data/final-assurance-policy.json
-- `751609f391cddc5ef50575819c04598ccabc7aa3107e02419750acc2eaad1a55`  data/canonical-identities.json
-- `98c5d88ce19ca39bba209cdd43e0982b9953f08cf22365c25ea82a243fa8acf4`  data/agijobmanager-expert-action-catalog.json
-- `5e93134489a874bf3c7fe4a590d9ca8f7a6e100b2f3348ce889541ac9cfde935`  tools/final-assurance-kernel.mjs
+- `b28b23833674ac0ae293706e23c0ab893e72c934103fcc6c8ea14c1ee8d36506`  site/verification.html
+- `1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e`  data/final-assurance-policy.json
+- `9d67b07a97b790414ab740199dec2b8391d5887be79349597b10807dffb4f8e5`  data/canonical-identities.json
+- `e29d2d65633b7d18d99b3e8507b8161f3b7b5645e60f67780b09691801b22c1f`  data/agijobmanager-expert-action-catalog.json
+- `f7eb5c6084ef0a1abdb94a3f4c0cccabb0003aae64a98af74cb68a40928dd61b`  tools/final-assurance-kernel.mjs

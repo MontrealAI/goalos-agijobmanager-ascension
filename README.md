@@ -7,7 +7,7 @@ GoalOS-native public evidence room, read-only settlement chamber, and separated 
 Canonical identities:
 
 - AGIJobManager: `0xB3AAeb69b630f0299791679c063d68d6687481d1`
-- AGIALPHA: `0xa61a3b3a130a9c20768eebf97e21515a6046a1fa`
+- AGIALPHA: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`
 - Chain: Ethereum Mainnet, chain id `1`
 
 ## Capability posture
@@ -65,3 +65,8 @@ This repository intentionally avoids user-data collection and publishes explicit
 - Machine-readable policy: [`data/legal-boundary-policy.json`](data/legal-boundary-policy.json)
 
 The public site is static and public-safe by default: no accounts, no forms, no analytics, no cookies, no advertising pixels, no intentional personal-data collection, no custody, no legal advice, no investment advice, and no audit certification. The separated Expert Console remains user-directed and wallet-signed.
+
+
+## AGIALPHA token boundary
+
+Official AGIALPHA Ethereum Mainnet address: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`. AGIALPHA is treated as a pre-existing public-market token and is not available from MontrealAI, this website, or this repository. Nothing here is an offer, sale, recommendation, exchange service, custody service, price support, liquidity support, or investment advice. Users/operators are solely responsible for any third-party market, wallet, RPC, tax, securities, sanctions, privacy, smart-contract, or jurisdictional review.

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGIALPHA Token Market Boundary Policy",
+  "type": "object",
+  "required": [
+    "policyVersion",
+    "officialToken",
+    "marketPosture",
+    "userOperatorBurden",
+    "publicLanguage"
+  ],
+  "properties": {
+    "policyVersion": {
+      "type": "string"
+    },
+    "officialToken": {
+      "type": "object",
+      "required": [
+        "addressChecksum",
+        "chainId"
+      ],
+      "properties": {
+        "addressChecksum": {
+          "const": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA"
+        },
+        "chainId": {
+          "const": 1
+        }
+      }
+    },
+    "marketPosture": {
+      "type": "object",
+      "required": [
+        "notOfferedByMontrealAI",
+        "notSoldByMontrealAI",
+        "notMadeAvailableFromMontrealAI",
+        "noPrimarySale",
+        "noCustody",
+        "noPriceSupport",
+        "noAvailabilityGuarantee"
+      ],
+      "properties": {
+        "notOfferedByMontrealAI": {
+          "const": true
+        },
+        "notSoldByMontrealAI": {
+          "const": true
+        },
+        "notMadeAvailableFromMontrealAI": {
+          "const": true
+        },
+        "noPrimarySale": {
+          "const": true
+        },
+        "noCustody": {
+          "const": true
+        },
+        "noPriceSupport": {
+          "const": true
+        },
+        "noAvailabilityGuarantee": {
+          "const": true
+        }
+      }
+    },
+    "userOperatorBurden": {
+      "type": "object",
+      "required": [
+        "soleResponsibility"
+      ],
+      "properties": {
+        "soleResponsibility": {
+          "const": true
+        }
+      }
+    },
+    "publicLanguage": {
+      "type": "object"
+    }
+  }
+}
