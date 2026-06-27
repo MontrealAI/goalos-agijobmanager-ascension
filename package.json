@@ -1,23 +1,17 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "1.3.0-agialpha-token-boundary-v13",
+  "version": "1.4.0-dependency-zero-final-v14",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "python3 tools/build.py",
     "verify": "python3 tools/verify.py",
+    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs && node tests/final-assurance-kernel.test.mjs && node tests/legal-shield.test.mjs && node tests/token-boundary.test.mjs && node tests/dependency-zero.test.mjs",
     "assurance": "node tools/automated-assurance.mjs",
-    "factual": "node tools/factual-correctness.mjs",
-    "test": "python3 tools/verify.py && node tests/operator-parity.test.mjs && node tests/sovereign-machine-economy.test.mjs && node tests/final-assurance-kernel.test.mjs && node tests/legal-shield.test.mjs && node tests/token-boundary.test.mjs",
-    "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
-    "factual:mainnet": "node tools/mainnet-factual-check.mjs",
-    "test:final": "npm test && npm run assurance && npm run assurance:final && npm run legal && npm run token-boundary && npm run factual:mainnet && npm run build && npm run assurance:final && npm run legal && npm run token-boundary",
     "legal": "node tools/legal-shield-kernel.mjs",
-    "test:legal": "npm run legal",
-    "token-boundary": "node tools/token-boundary-kernel.mjs"
-  },
-  "dependencies": {
-    "ethers": "6.13.4"
+    "token-boundary": "node tools/token-boundary-kernel.mjs",
+    "factual:mainnet": "node tools/mainnet-factual-check.mjs",
+    "dependency-zero": "node tools/dependency-zero-kernel.mjs"
   }
 }

@@ -1,6 +1,6 @@
 {
   "status": "SKIPPED",
-  "scope": "live Mainnet identity and ERC20 sanity check",
+  "scope": "live Mainnet identity and ERC20 sanity check with AGIALPHA checksum token identity",
   "error": "fetch failed | fetch failed | fetch failed",
-  "checkedAt": "2026-06-27T14:46:22.883Z"
+  "checkedAt": "2026-06-27T18:14:15.537Z"
 }

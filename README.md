@@ -70,3 +70,9 @@ The public site is static and public-safe by default: no accounts, no forms, no 
 ## AGIALPHA token boundary
 
 Official AGIALPHA Ethereum Mainnet address: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`. AGIALPHA is treated as a pre-existing public-market token and is not available from MontrealAI, this website, or this repository. Nothing here is an offer, sale, recommendation, exchange service, custody service, price support, liquidity support, or investment advice. Users/operators are solely responsible for any third-party market, wallet, RPC, tax, securities, sanctions, privacy, smart-contract, or jurisdictional review.
+
+## Production publisher
+
+Current release: **Dependency-Zero Final Publisher v14**.
+
+The autonomous publisher does not install npm packages, does not require a package lock, and does not contact an npm registry. The Expert Console uses the local vendored `site/vendor/ethers.umd.min.js` bundle. This prevents registry lock-in and keeps the publication path static, reproducible, and public-safe.
