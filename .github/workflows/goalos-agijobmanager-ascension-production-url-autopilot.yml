@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Final Assurance Publisher v11
+name: GoalOS AGIJobManager Ascension Legal/Data-Zero Shield Publisher v12
 
 on:
   workflow_dispatch:
@@ -40,7 +40,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: agijobmanager-ascension-final-assurance-v11
+  group: agijobmanager-ascension-legal-data-zero-shield-v12
   cancel-in-progress: false
 
 jobs:
@@ -80,6 +80,7 @@ jobs:
           npm run test
           npm run assurance
           npm run assurance:final
+          npm run legal
           npm run factual:mainnet
 
       - name: Build static Pages artifact
@@ -93,10 +94,19 @@ jobs:
           test -f dist/expert-console.html
           test -f dist/sovereign-machine-economy.html
           test -f dist/assurance.html
+          test -f dist/legal.html
+          test -f dist/privacy.html
+          test -f dist/terms.html
+          test -f dist/regulatory-boundary.html
+          test -f dist/third-party-responsibility.html
+          test -f dist/legal-boundary-policy.json
           test -f dist/FINAL_ASSURANCE_DOCKET_V11.json
           test -f dist/data/final-assurance-policy.json
           grep -q 'finalAssurance' dist/production-url.json
           grep -q 'Final Assurance Kernel' dist/assurance.html
+          grep -q 'No user data' dist/legal.html
+          grep -q 'We do not want' dist/privacy.html
+          npm run legal
 
       - name: Commit generated source with retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source == true }}
@@ -110,7 +120,7 @@ jobs:
             echo 'No generated changes to commit.'
             exit 0
           fi
-          git commit -m 'Add Final Assurance Kernel v11'
+          git commit -m 'Add Legal/Data-Zero Shield v12'
           for i in 1 2 3; do
             git pull --rebase origin main || true
             if git push origin HEAD:main; then exit 0; fi
