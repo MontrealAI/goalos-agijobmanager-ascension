@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v14-dependency-zero-final",
-  "builtAt": "2026-06-27T18:16:49.872137Z",
+  "release": "v15-pathspec-proof-final-publisher",
+  "builtAt": "2026-06-27T18:48:36.008016Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -129,11 +129,6 @@
       "bytes": 2434
     },
     {
-      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
-      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
-      "bytes": 1354
-    },
-    {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
       "sha256": "44150fb9772ccbddc916bb7bf054827cf0a800e0d86c89b57d010016b31ac93e",
       "bytes": 607
@@ -167,6 +162,11 @@
       "path": "docs/MAINNET_OPERATIONS_RUNBOOK.md",
       "sha256": "e1d5ebdaa3fbf23a98ab95956939abcbc61b52f82d089ae9741d9223398650af",
       "bytes": 665
+    },
+    {
+      "path": "docs/PATHSPEC_PROOF_FINAL_V15.md",
+      "sha256": "e8c7677975ec051625195aadf7f2c21b57e27f506046e7d7653a3936c9c3a04e",
+      "bytes": 900
     },
     {
       "path": "docs/PRODUCTION_RUNBOOK.md",

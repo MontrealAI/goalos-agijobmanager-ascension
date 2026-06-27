@@ -6,5 +6,7 @@
   "finalAssurance": "PASS",
   "legalDataZeroShield": "PASS",
   "agialphaTokenBoundary": "PASS",
-  "dependencyZero": "PASS"
+  "zeroNetworkPublisher": "PASS",
+  "pathspecProofPublisher": "PASS",
+  "vendoredDependencies": "PASS"
 }
