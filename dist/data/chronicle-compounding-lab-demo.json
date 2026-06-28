@@ -1,0 +1,68 @@
+{
+  "release": "v20-chronicle-compounding-lab",
+  "page": "chronicle-compounding-lab.html",
+  "networkRequests": 0,
+  "walletCalls": 0,
+  "externalActions": 0,
+  "storageWrites": 0,
+  "userDataWanted": false,
+  "dataBoundary": [
+    "no personal data",
+    "no confidential data",
+    "no regulated data",
+    "no wallet data",
+    "no customer data"
+  ],
+  "coreLaw": "No Chronicle entry, no institutional memory.",
+  "publicDoctrine": [
+    "Aim",
+    "Act",
+    "Prove",
+    "Evolve"
+  ],
+  "protocolObjects": [
+    "GoalOSCommit",
+    "ProofPacket",
+    "SelectionCertificate",
+    "ChronicleEntry",
+    "CapabilityPackage"
+  ],
+  "gates": [
+    "ObjectiveBounded",
+    "EvidenceDocketComplete",
+    "EvaluatorPass",
+    "RiskLedgerClean",
+    "RollbackReady",
+    "ClaimBoundaryPass",
+    "ChronicleEligible"
+  ],
+  "missionPresets": [
+    {
+      "id": "market-brief",
+      "title": "Proof-settled market brief",
+      "capability": "evidence-bound briefing loop"
+    },
+    {
+      "id": "software-review",
+      "title": "Validator-ready software review",
+      "capability": "software review proof path"
+    },
+    {
+      "id": "settlement-rehearsal",
+      "title": "AGIJobManager settlement rehearsal",
+      "capability": "job lifecycle proof scaffold"
+    },
+    {
+      "id": "policy-decision",
+      "title": "Governed decision state",
+      "capability": "proof-to-action decision loop"
+    },
+    {
+      "id": "failure-postmortem",
+      "title": "Failed proof postmortem",
+      "capability": "claim-bound rejection loop"
+    }
+  ],
+  "downloadableDocket": true,
+  "humanReviewTerminalState": "HUMAN_REVIEW_REQUIRED"
+}

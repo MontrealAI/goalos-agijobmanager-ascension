@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chronicle Compounding Lab · GoalOS AGIJobManager Ascension</title>
+  <meta name="description" content="A browser-local GoalOS demonstration showing how verified work becomes Chronicle memory and reusable capability.">
+  <link rel="stylesheet" href="assets/atelier.css">
+  <link rel="stylesheet" href="assets/chronicle-lab.css">
+</head>
+<body class="chronicle-lab">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="ascendField" class="ascend-field" aria-hidden="true"></canvas>
+<header class="cl-top">
+  <div class="cl-line">GoalOS AGIJobManager Ascension · Chronicle Compounding Lab · browser-local · public-safe</div>
+  <div class="cl-wrap cl-nav">
+    <a class="cl-brand" href="./"><span class="cl-mark"></span><span>GoalOS Chronicle<small>Compounding Lab</small></span></a>
+    <nav class="cl-links" aria-label="Primary">
+      <a href="./">Home</a>
+      <a href="start.html">Start</a>
+      <a href="demo-lab.html">Demos</a>
+      <a href="proof-to-action-theatre.html">Proof Theatre</a>
+      <a href="proof-gradient-arena.html">Proof Gradient</a>
+      <a href="multi-agent-institution.html">Institution Lab</a>
+      <a href="operator-console.html">Console</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="cl-hero">
+    <div class="cl-wrap cl-hero-grid">
+      <div>
+        <div class="cl-kicker">Public demo 020 · Chronicle memory · capability reuse</div>
+        <h1>Verified work<br><span>becomes</span><br><em>institutional memory.</em></h1>
+        <p class="cl-lead">Run a browser-local GoalOS cycle where only proof-cleared work enters Chronicle. Accepted evidence becomes a reusable capability package; rejected work becomes a warning, not authority.</p>
+        <div class="cl-actions">
+          <a class="cl-btn primary" href="#lab">Run the lab</a>
+          <button class="cl-btn" id="quickRunTop" type="button">Run three cycles</button>
+          <a class="cl-btn" href="proof-gradient-arena.html">Inspect Selection Gate</a>
+        </div>
+        <p class="cl-boundary"><strong>No user data wanted.</strong> Do not enter personal, confidential, regulated, wallet, seed phrase, private-key, customer, or proprietary information. This page is local-only: no account, no analytics, no cookies, no storage, no wallet, no network request, no external action.</p>
+      </div>
+      <aside class="cl-constellation" aria-label="Chronicle flywheel visual">
+        <div class="cl-panel-title"><span>Compounding chamber</span><b>READY</b></div>
+        <div class="cl-flywheel" id="flywheel">
+          <div class="cl-core">Chronicle<br><small>accepted memory only</small></div>
+          <div class="cl-orbit o1"></div><div class="cl-orbit o2"></div><div class="cl-orbit o3"></div>
+          <div class="cl-node n1">Objective</div><div class="cl-node n2">Proof</div><div class="cl-node n3">Gate</div><div class="cl-node n4">Memory</div><div class="cl-node n5">Capability</div><div class="cl-node n6">Harder mission</div>
+        </div>
+        <div class="cl-stats">
+          <div><strong id="acceptedCount">0</strong><span>accepted</span></div>
+          <div><strong id="archiveCount">0</strong><span>capabilities</span></div>
+          <div><strong id="proofDebt">42</strong><span>proof debt</span></div>
+          <div><strong>0</strong><span>external actions</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="cl-section" id="lab">
+    <div class="cl-wrap cl-lab-grid">
+      <aside class="cl-card cl-control">
+        <div class="cl-kicker">Mission contract</div>
+        <h2>Choose one repeatable workflow.</h2>
+        <label>Mission preset
+          <select id="preset"></select>
+        </label>
+        <label>Public-safe objective
+          <textarea id="objective" rows="5" spellcheck="false"></textarea>
+        </label>
+        <div class="cl-two">
+          <label>Evidence discipline
+            <input id="evidence" type="range" min="30" max="100" value="82">
+            <span id="evidenceValue">82</span>
+          </label>
+          <label>Risk pressure
+            <input id="risk" type="range" min="0" max="100" value="36">
+            <span id="riskValue">36</span>
+          </label>
+        </div>
+        <div class="cl-actions stack">
+          <button id="runCycle" class="cl-btn primary" type="button">Run one proof cycle</button>
+          <button id="runClimb" class="cl-btn" type="button">Run three-cycle climb</button>
+          <button id="resetLab" class="cl-btn ghost" type="button">Reset</button>
+        </div>
+        <p class="cl-note">GoalOS remembers accepted proof, not persuasive output. Failed runs become visible lessons without becoming future authority.</p>
+      </aside>
+
+      <section class="cl-card cl-theatre" aria-label="Proof cycle theatre">
+        <div class="cl-theatre-head">
+          <div><span class="cl-kicker">Run state</span><h2 id="stateTitle">Awaiting first mission</h2></div>
+          <div class="cl-badge" id="terminalBadge">HUMAN_REVIEW_REQUIRED</div>
+        </div>
+        <div class="cl-gates" id="gates"></div>
+        <div class="cl-meter-row">
+          <div><span>Verified value</span><b id="verifiedMetric">—</b></div>
+          <div><span>Reuse lift</span><b id="reuseMetric">—</b></div>
+          <div><span>Risk</span><b id="riskMetric">—</b></div>
+          <div><span>Latency</span><b id="latencyMetric">—</b></div>
+        </div>
+        <div class="cl-compound">
+          <div>
+            <h3>Report-only output</h3>
+            <p id="reportOnly">A report can sound complete while leaving proof debt, unknown provenance, unresolved risk, and no reusable capability.</p>
+          </div>
+          <div>
+            <h3>GoalOS Chronicle path</h3>
+            <p id="goalosPath">A GoalOS run emits bounded claims, proof packet, evaluator result, risk ledger, selection decision, Chronicle entry, and capability package.</p>
+          </div>
+        </div>
+        <div class="cl-actions">
+          <button class="cl-btn" id="downloadDocket" type="button">Download Evidence Docket</button>
+          <button class="cl-btn" id="copyBrief" type="button">Copy review brief</button>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="cl-section">
+    <div class="cl-wrap cl-three">
+      <article class="cl-card">
+        <div class="cl-kicker">Chronicle trace</div>
+        <h3>Only proof-cleared runs become memory.</h3>
+        <ol id="trace" class="cl-trace"></ol>
+      </article>
+      <article class="cl-card">
+        <div class="cl-kicker">Capability archive</div>
+        <h3>Accepted work becomes reusable.</h3>
+        <div id="archive" class="cl-archive"></div>
+      </article>
+      <article class="cl-card">
+        <div class="cl-kicker">Protocol objects</div>
+        <h3>Inspect the package.</h3>
+        <pre id="objectPreview" class="cl-pre"></pre>
+      </article>
+    </div>
+  </section>
+
+  <section class="cl-section">
+    <div class="cl-wrap cl-card cl-wide">
+      <div class="cl-kicker">Core idea</div>
+      <h2>No Chronicle entry, no institutional memory.</h2>
+      <p class="cl-lead">GoalOS turns autonomous activity into a governed state transition. An objective becomes a commitment; a run emits proof; a gate accepts or rejects; accepted evidence enters Chronicle; only then can a capability influence a harder future mission.</p>
+      <div class="cl-law">
+        <span>Objective</span><span>→</span><span>ProofPacket</span><span>→</span><span>SelectionCertificate</span><span>→</span><span>ChronicleEntry</span><span>→</span><span>CapabilityPackage</span>
+      </div>
+      <p class="cl-boundary">Public demonstration only. This page performs no factual certification, no external audit, no token route, no wallet connection, no Mainnet transaction, and no production authority activation.</p>
+    </div>
+  </section>
+</main>
+<footer class="cl-footer"><div class="cl-wrap">© MontrealAI · GoalOS AGIJobManager Ascension · browser-local public demonstration · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+<script src="assets/chronicle-lab.js"></script>
+</body>
+</html>

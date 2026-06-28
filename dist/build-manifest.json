@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v19-proof-gradient-arena",
-  "builtAt": "2026-06-28T18:12:52.061444Z",
+  "release": "v20-chronicle-compounding-lab",
+  "builtAt": "2026-06-28T18:23:03.729340Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -27,6 +27,16 @@
       "path": "assets/atelier.js",
       "sha256": "70cc95afa5892f84318924f63390449caa113ec76819d78829bfe6d771712008",
       "bytes": 7086
+    },
+    {
+      "path": "assets/chronicle-lab.css",
+      "sha256": "4a5927b3176ec59efb9e1fedd39002ed9d1dd8bdcdf1a114343d1d09bdcf7e95",
+      "bytes": 8639
+    },
+    {
+      "path": "assets/chronicle-lab.js",
+      "sha256": "60c63132e9e1d192b1e38860974be13ad2ab38f29151984a5ac588d2b9911e98",
+      "bytes": 10664
     },
     {
       "path": "assets/delight.css",
@@ -89,6 +99,11 @@
       "bytes": 3840
     },
     {
+      "path": "chronicle-compounding-lab.html",
+      "sha256": "b2bfe73ee83bfe1cd61923905a3f21aa0bcf6e64a0ffac4946667906215ab41a",
+      "bytes": 8441
+    },
+    {
       "path": "coordination-engine.html",
       "sha256": "a15d9ead56156981c6ea2b6b7c1b2615d6d9348cf786e69114244ce95f5f1c42",
       "bytes": 5800
@@ -122,6 +137,11 @@
       "path": "data/capability-contract.json",
       "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
       "bytes": 1756
+    },
+    {
+      "path": "data/chronicle-compounding-lab-demo.json",
+      "sha256": "7a86ce7c34d79ff2e3cd10ca60dcd24e3e5e658e2c7b1dbdc23ee04841141fbe",
+      "bytes": 1639
     },
     {
       "path": "data/demo-missions.json",
@@ -199,6 +219,11 @@
       "bytes": 552
     },
     {
+      "path": "docs/CHRONICLE_COMPOUNDING_LAB_V20.md",
+      "sha256": "c87d1c970a2b753e39e6cf69737e28a921bce41cc021879d41e46661c3b71988",
+      "bytes": 1506
+    },
+    {
       "path": "docs/CLAIM_BOUNDARY.md",
       "sha256": "446764c432c0cd964e0acb808a5f200a3c20e58305b96a974c1248a1217ea80f",
       "bytes": 388
@@ -212,11 +237,6 @@
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
       "sha256": "0c35d26754eab3a0ea73caee67b7c106d60ebddd12b72bc8ddef830f17b59a9e",
       "bytes": 392
-    },
-    {
-      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
-      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
-      "bytes": 1354
     },
     {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
@@ -330,8 +350,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "fe06dc283196b44e7b16a2b9ccfde699cc34a3c77fd33362a44ab3fd87c02f76",
-      "bytes": 13338
+      "sha256": "0b3872be60394b0e00a1507e52f4690c86e5e015959049d64596680ea6f7cb4c",
+      "bytes": 14373
     },
     {
       "path": "legal.html",
@@ -382,6 +402,11 @@
       "path": "schemas/agialpha-token-boundary.schema.json",
       "sha256": "5bc242a64193feacdca9f223a38e9f7a3d584acf2db10d187f1a48eb1e4bd546",
       "bytes": 1720
+    },
+    {
+      "path": "schemas/chronicle-compounding-lab.schema.json",
+      "sha256": "99f0dccfe3f3b24a4028f4c26cc8528664c479c48c8ad9490d0bfbefba7174c4",
+      "bytes": 1139
     },
     {
       "path": "schemas/demo-mission.schema.json",
@@ -440,8 +465,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "45577e367f2b10898eb6b0e2ceda60681d071660b9bab0bc36f3d2bf26eee719",
-      "bytes": 4005
+      "sha256": "c943d9ae27004fe0218945ffb3c4bf3cb30f853574b6f5b3ccf01344d92e551d",
+      "bytes": 4345
     },
     {
       "path": "terms.html",
