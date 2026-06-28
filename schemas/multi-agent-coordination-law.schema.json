@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/multi-agent-coordination-law.schema.json",
+  "title": "GoalOS Multi-Agent Coordination Law v17",
+  "type": "object",
+  "required": ["schema", "title", "doctrine", "coordinationLaw", "workEquation", "objectModel", "loops", "coordinationObjects", "proofGates", "routerFamily", "browserLocalBoundary", "claimBoundary"],
+  "properties": {
+    "schema": {"const": "goalos.multiAgentCoordinationLaw.v17"},
+    "title": {"type": "string"},
+    "doctrine": {"type": "string"},
+    "coordinationLaw": {"type": "string"},
+    "workEquation": {"type": "string"},
+    "objectModel": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "loops": {"type": "array", "minItems": 5, "items": {"type": "object", "required": ["id", "name", "flow"]}},
+    "coordinationObjects": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "proofGates": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "string"}},
+    "routerFamily": {"type": "array", "minItems": 6, "items": {"type": "object", "required": ["id", "name", "role"]}},
+    "browserLocalBoundary": {"type": "object"},
+    "claimBoundary": {"type": "string"}
+  }
+}

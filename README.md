@@ -75,3 +75,19 @@ Official AGIALPHA Ethereum Mainnet address: `0xA61a3B3a130a9c20768EEBF97E21515A6
 ## Publisher posture
 
 The current publisher is v15 Pathspec-Proof Final: zero registry installs, vendored Expert Console dependency, `git add -A` generated commits, public wallet-free pages, Expert-only transaction surface, Data-Zero legal boundary, and AGIALPHA third-party-market boundary.
+
+## User-friendly autonomous demos
+
+The site now includes a browser-local user path:
+
+- `start.html` — guided first-run path.
+- `demo-lab.html` — autonomous local proof-cycle demos with downloadable public-safe dockets.
+- `mission-studio.html` — plain-language objective to local GoalOS proof-pack JSON.
+- `proof-cards.html` — copyable stakeholder explanations.
+
+These demos do not use accounts, cookies, analytics, form submissions, wallet connection, network requests, token availability, fund authorization, or production authority.
+
+
+## Browser-local Coordination Lab
+
+The v17 addition adds `coordination-lab.html`: a 100% browser-local proof-governed multi-agent institution demo. Users can compare swarm, fixed-crew, and proof-governed institution modes, run ten proof gates, inspect a Chronicle trace, and download a public-safe Evidence Docket JSON. No accounts, forms, analytics, cookies, storage, wallet connection, network request, token approval, or Mainnet broadcast are used.

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Proof-to-Action Theatre Demo",
+  "type": "object",
+  "required": [
+    "schema",
+    "release",
+    "thesis",
+    "localOnly",
+    "networkRequests",
+    "walletCalls",
+    "externalActions",
+    "userDataWanted",
+    "doneGates",
+    "protocolObjects",
+    "claimBoundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "goalos.proof_to_action_theatre.demo.v18"
+    },
+    "release": {
+      "type": "string"
+    },
+    "thesis": {
+      "type": "string"
+    },
+    "localOnly": {
+      "const": true
+    },
+    "networkRequests": {
+      "const": 0
+    },
+    "walletCalls": {
+      "const": 0
+    },
+    "externalActions": {
+      "const": 0
+    },
+    "userDataWanted": {
+      "const": false
+    },
+    "doneGates": {
+      "type": "array",
+      "minItems": 10
+    },
+    "protocolObjects": {
+      "type": "array",
+      "minItems": 10
+    },
+    "claimBoundary": {
+      "type": "array",
+      "minItems": 3
+    }
+  },
+  "additionalProperties": true
+}
