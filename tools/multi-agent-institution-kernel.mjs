@@ -1,0 +1,35 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root=process.cwd();
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const exists=p=>fs.existsSync(path.join(root,p));
+const fail=m=>{throw new Error(m)};
+const ok=m=>console.log('PASS · '+m);
+const pages=['site/multi-agent-institution.html','site/coordination-engine.html'];
+for(const p of pages){
+  if(!exists(p)) fail('missing multi-agent institution page '+p);
+  const t=read(p);
+  if(!t.includes('assets/institution.css')||!t.includes('assets/institution.js')) fail(p+' must load institution assets');
+  if(/<form\b/i.test(t)) fail(p+' must not contain form tags');
+  for(const bad of ['eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','approve(','localStorage','sessionStorage','document.cookie','fetch(','XMLHttpRequest','navigator.sendBeacon']) if(t.includes(bad)) fail(p+' contains forbidden public-demo primitive '+bad);
+}
+ok('institution pages exist and remain public-safe');
+const js=read('site/assets/institution.js');
+for(const marker of ['Large multi-agent systems coordinate','GoalOSCommit','RunCommitment','ProofPacket','EvalAttestation','SelectionCertificate','ChronicleEntry','CapabilityPackage','AI Work = Output × Proof × Validation × Settlement × Reuse','d.y-=d.v','walletCalls:0','networkRequests:0','externalActions:0','downloadDocket','copySummary']) if(!js.includes(marker)) fail('institution.js missing marker '+marker);
+for(const bad of ['eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','localStorage.setItem','sessionStorage.setItem','document.cookie','fetch(','XMLHttpRequest','navigator.sendBeacon']) if(js.includes(bad)) fail('institution.js contains forbidden primitive '+bad);
+ok('institution javascript is browser-local, ascendant, and wallet-free');
+const law=JSON.parse(read('data/multi-agent-coordination-law.json'));
+if(law.schema!=='goalos.multiAgentCoordinationLaw.v17') fail('coordination law schema id mismatch');
+if(!law.doctrine.includes('proof-governed sovereign institutions')) fail('coordination doctrine missing');
+if(!law.coordinationLaw.includes('verified useful work')) fail('coordination law missing verified work objective');
+if(!Array.isArray(law.proofGates)||law.proofGates.length!==10) fail('coordination law must include exactly ten proof gates');
+if(!Array.isArray(law.routerFamily)||law.routerFamily.length<6) fail('router family must include R0-R5');
+for(const key of ['noAccounts','noForms','noAnalytics','noCookies','noStorage','noWalletConnection','noNetworkRequests','noTokenRoute','noTransactionBroadcast','noProductionAuthority','noUserDataWanted']) if(law.browserLocalBoundary[key]!==true) fail('browser-local boundary missing '+key);
+ok('machine-readable coordination law is complete and data-zero');
+const build=read('tools/build.py');
+for(const route of ['multi-agent-institution.html','coordination-engine.html','multi-agent-coordination-law.json']) if(!build.includes(route)) fail('build pipeline must include '+route);
+ok('build pipeline includes multi-agent institution routes');
+const home=read('site/index.html');
+for(const route of ['multi-agent-institution.html','coordination-engine.html']) if(!home.includes(route)) fail('home page must link '+route);
+ok('homepage exposes multi-agent institution additions');
+console.log('MULTI-AGENT INSTITUTION v17 PASS · browser-local proof-governed coordination demos verified');
