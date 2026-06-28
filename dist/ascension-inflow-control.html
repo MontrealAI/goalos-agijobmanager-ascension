@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ascension Inflow Control Room · GoalOS AGIJobManager Ascension</title>
+  <meta name="description" content="A browser-local public demonstration of GoalOS regulated inflow: compute, data, tasks, incentives, feedback, governance, and tools become verified work only through proof gates.">
+  <link rel="stylesheet" href="assets/atelier.css">
+  <link rel="stylesheet" href="assets/inflow-control.css">
+</head>
+<body class="inflow-body">
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="inflowField" class="inflow-field" aria-hidden="true"></canvas>
+  <header class="inflow-top">
+    <div class="topline">GoalOS AGIJobManager Ascension · Open-system proof control · browser-local</div>
+    <div class="wrap inflow-nav">
+      <a class="brand" href="./"><span class="brand-mark"></span><span>GoalOS AGIJobManager<small>Ascension Inflow Control</small></span></a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="./">Home</a>
+        <a href="start.html">Start</a>
+        <a href="proof-to-action-theatre.html">Proof Theatre</a>
+        <a href="proof-gradient-arena.html">Proof Gradient</a>
+        <a href="chronicle-compounding-lab.html">Chronicle Lab</a>
+        <a href="multi-agent-institution.html">Institution Lab</a>
+        <a href="operator-console.html">Console</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="inflow-hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Open-system control · proof-gated work</div>
+          <h1>Ascension is<br><span class="grad">regulated inflow</span><br><span class="serif">becoming proof.</span></h1>
+          <p class="lead">Tune compute, data, tasks, incentives, feedback, governance, and tools. Watch the institution move between idle, stale, chaotic, over-governed, and proof-sustaining regimes.</p>
+          <div class="cta">
+            <button id="runBalanced" class="btn">Run balanced institution</button>
+            <button id="runStress" class="btn secondary">Stress the system</button>
+          </div>
+          <p class="boundary">Browser-local demonstration only. No account. No wallet. No cookies, no analytics, no storage, no network request, no token route, no transaction, no production authority. Do not enter personal, confidential, regulated, wallet, seed phrase, private-key, customer, or proprietary information.</p>
+        </div>
+        <aside class="state-orb" aria-label="GoalOS inflow state">
+          <div class="orb-head">
+            <div><span class="tag">Current regime</span><h2 id="regimeTitle">SUSTAINED_ASCENSION</h2></div>
+            <span id="proofSeal" class="seal-pass">PROOF-GATED</span>
+          </div>
+          <canvas id="stateCanvas" width="620" height="360" aria-label="Verified work simulation chart"></canvas>
+          <div class="metric-grid">
+            <div><strong id="verifiedMetric">87</strong><span>Verified work</span></div>
+            <div><strong id="riskMetric">12</strong><span>Risk</span></div>
+            <div><strong id="debtMetric">9</strong><span>Proof debt</span></div>
+            <div><strong id="entropyMetric">54</strong><span>Productive entropy</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="control-room wrap" aria-label="Interactive inflow control room">
+      <div class="panel control-panel">
+        <div class="panel-head">
+          <div>
+            <div class="kicker">Seven institutional inflows</div>
+            <h2>Move the sliders. Watch proof decide.</h2>
+          </div>
+          <button id="runCycle" class="btn small">Run 40-cycle proof simulation</button>
+        </div>
+        <div id="sliders" class="sliders"></div>
+        <div class="scenario-row" aria-label="Scenario presets">
+          <button data-scenario="balanced">Balanced institution</button>
+          <button data-scenario="overheated">Overheated swarm</button>
+          <button data-scenario="stale">Stale memory</button>
+          <button data-scenario="ungoverned">Ungoverned tools</button>
+          <button data-scenario="bureaucratic">Over-governed</button>
+        </div>
+      </div>
+
+      <div class="panel analysis-panel">
+        <div class="kicker">GoalOS operating law</div>
+        <h2>Trusted Work = Output × Proof × Validation × Settlement × Reuse</h2>
+        <p id="diagnosis" class="diagnosis">The institution is producing verified work while keeping risk, proof debt, and entropy inside the governed band.</p>
+        <div class="law-grid">
+          <article><span>01</span><b>Compute</b><small>powers search and verification; excess becomes waste without gates.</small></article>
+          <article><span>02</span><b>Data</b><small>grounds beliefs; low provenance creates stale or self-referential work.</small></article>
+          <article><span>03</span><b>Tasks</b><small>supply gradients; vague tasks produce activity without institutional value.</small></article>
+          <article><span>04</span><b>Incentives</b><small>create selection pressure; ungoverned incentives reward gaming.</small></article>
+          <article><span>05</span><b>Feedback</b><small>turns action into learning; no feedback means no correction.</small></article>
+          <article><span>06</span><b>Governance</b><small>keeps autonomy lawful, auditable, reversible, and reviewable.</small></article>
+          <article><span>07</span><b>Tools</b><small>create external work and external risk; they require scope and rollback.</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap proof-console">
+      <div class="panel timeline-panel">
+        <div class="panel-head"><div><div class="kicker">Chronicle trace</div><h2>What changed, and why?</h2></div><span id="cycleCount" class="chip">40 cycles</span></div>
+        <ol id="trace" class="trace"></ol>
+      </div>
+      <div class="panel docket-panel">
+        <div class="kicker">Public-safe evidence package</div>
+        <h2>Export the inflow docket.</h2>
+        <p>The generated docket records sliders, regime, metrics, claims, non-claims, public/private boundary, and review status. It is a demonstration artifact, not a factual certification or audit opinion.</p>
+        <pre id="docketPreview" class="json-preview"></pre>
+        <div class="cta stack">
+          <button id="downloadDocket" class="btn">Download Evidence Docket JSON</button>
+          <button id="copyBrief" class="btn secondary">Copy review brief</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap teaching-strip">
+      <article>
+        <span class="tag">The key lesson</span>
+        <h2>Maximum inflow is not maximum intelligence.</h2>
+        <p>The useful regime is regulated: enough compute, data, tasks, incentives, feedback, governance, and tools to produce verified work — not so much unbounded actuation that the system outruns proof.</p>
+      </article>
+      <article>
+        <span class="tag">The institutional rule</span>
+        <h2>No proof, no settlement. No Chronicle, no memory.</h2>
+        <p>The control room shows why GoalOS turns autonomy into a bounded proof process: validated work can settle, enter Chronicle, and become reusable capability; everything else remains provisional.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap">© MontrealAI · Ascension Inflow Control Room · browser-local public demonstration · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+  <script src="assets/inflow-control.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/ascension-inflow-control.schema.json",
+  "title": "GoalOS Ascension Inflow Control Room Demo Contract",
+  "type": "object",
+  "required": ["name", "version", "coreThesis", "equation", "inflows", "regimes", "scenarios", "publicSafetyBoundary", "protocolObjects", "claimBoundary"],
+  "properties": {
+    "name": {"type": "string"},
+    "version": {"type": "string"},
+    "productionUrl": {"type": "string"},
+    "coreThesis": {"type": "string"},
+    "equation": {"type": "string"},
+    "inflows": {"type": "array", "minItems": 7, "items": {"type": "object", "required": ["id", "label", "role"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "role": {"type": "string"}}}},
+    "regimes": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+    "scenarios": {"type": "object"},
+    "publicSafetyBoundary": {"type": "object", "required": ["noAccount", "noCookies", "noAnalytics", "noLocalStorage", "noSessionStorage", "noWallet", "noNetworkRequest", "noTokenRoute", "noTransactionBroadcast", "noProductionAuthority", "noUserDataWanted"]},
+    "downloadArtifacts": {"type": "array", "items": {"type": "string"}},
+    "protocolObjects": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+    "claimBoundary": {"type": "string"}
+  }
+}

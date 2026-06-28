@@ -1,0 +1,48 @@
+{
+  "name": "GoalOS Ascension Inflow Control Room",
+  "version": "v21-public-demo",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ascension-inflow-control.html",
+  "coreThesis": "A system does not ascend by maximizing autonomy or inflow. It ascends when regulated inflows become proof, verified work, Chronicle memory, and reusable capability.",
+  "equation": "Trusted Work = Output × Proof × Validation × Settlement × Reuse",
+  "inflows": [
+    {"id": "compute", "label": "Compute", "role": "Powers search, simulation, execution, and verification."},
+    {"id": "data", "label": "Data", "role": "Grounds work in fresh, provenance-bound information."},
+    {"id": "tasks", "label": "Tasks", "role": "Supplies gradients, success criteria, and stop conditions."},
+    {"id": "incentives", "label": "Incentives", "role": "Creates selection pressure for useful verified contribution."},
+    {"id": "feedback", "label": "Feedback", "role": "Turns action into learning through tests, validators, incidents, and delayed outcomes."},
+    {"id": "governance", "label": "Governance", "role": "Keeps autonomy permissioned, lawful, auditable, reversible, and claim-bounded."},
+    {"id": "tools", "label": "Tools", "role": "Converts plans into external work and external risk, requiring scope and rollback."}
+  ],
+  "regimes": [
+    "SUSTAINED_ASCENSION",
+    "INERT_QUEUE",
+    "STALE_SELF_REFERENCE",
+    "UNGOVERNED_ACTUATION",
+    "CHAOTIC_SWARM",
+    "BUREAUCRATIC_STALL",
+    "NEEDS_REBALANCE"
+  ],
+  "scenarios": {
+    "balanced": {"compute": 72, "data": 78, "tasks": 76, "incentives": 66, "feedback": 84, "governance": 88, "tools": 58},
+    "overheated": {"compute": 96, "data": 54, "tasks": 94, "incentives": 92, "feedback": 38, "governance": 34, "tools": 88},
+    "stale": {"compute": 66, "data": 24, "tasks": 42, "incentives": 45, "feedback": 22, "governance": 72, "tools": 39},
+    "ungoverned": {"compute": 86, "data": 70, "tasks": 82, "incentives": 88, "feedback": 44, "governance": 18, "tools": 95},
+    "bureaucratic": {"compute": 42, "data": 64, "tasks": 36, "incentives": 28, "feedback": 72, "governance": 98, "tools": 24}
+  },
+  "publicSafetyBoundary": {
+    "noAccount": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noLocalStorage": true,
+    "noSessionStorage": true,
+    "noWallet": true,
+    "noNetworkRequest": true,
+    "noTokenRoute": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "downloadArtifacts": ["goalos-ascension-inflow-docket-v21.json"],
+  "protocolObjects": ["GoalOSCommit", "RunCommitment", "ProofPacket", "EvalAttestation", "SelectionCertificate", "ChronicleEntry", "EvidenceDocket"],
+  "claimBoundary": "This is a browser-local public demonstration. It is not an external audit, factual certification, investment advice, legal advice, Mainnet action, or production authority."
+}

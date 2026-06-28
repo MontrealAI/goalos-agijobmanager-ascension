@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v20-chronicle-compounding-lab",
-  "builtAt": "2026-06-28T18:56:58.616409Z",
+  "release": "v21-ascension-inflow-control-room",
+  "builtAt": "2026-06-28T19:38:39.462980Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -17,6 +17,11 @@
       "path": "architecture.html",
       "sha256": "b1abaa56f13a5f41e8548f05f4660f88f9057c6143197f542a9a9c6e0b86e570",
       "bytes": 4427
+    },
+    {
+      "path": "ascension-inflow-control.html",
+      "sha256": "e898de457725657fe6f24aa536f8dd34050481086f5426b87b9652148eb535a0",
+      "bytes": 7871
     },
     {
       "path": "assets/atelier.css",
@@ -52,6 +57,16 @@
       "path": "assets/expert-console.js",
       "sha256": "1417c5c317860d80a2b25adf463afd16cbcfc12165baf1099110b0e39f98aaf7",
       "bytes": 14200
+    },
+    {
+      "path": "assets/inflow-control.css",
+      "sha256": "c83fc614e5956b708f42110bd4a1d01983f8b25a50e22ab5e370648a6e573aa7",
+      "bytes": 7707
+    },
+    {
+      "path": "assets/inflow-control.js",
+      "sha256": "d6ebae950daef8f3ad73ebd11786235f56ccb7183696920799c60b0d12080ac8",
+      "bytes": 11779
     },
     {
       "path": "assets/institution.css",
@@ -127,6 +142,11 @@
       "path": "data/agijobmanager-expert-action-catalog.json",
       "sha256": "e29d2d65633b7d18d99b3e8507b8161f3b7b5645e60f67780b09691801b22c1f",
       "bytes": 1214
+    },
+    {
+      "path": "data/ascension-inflow-control-demo.json",
+      "sha256": "7ee3b667623680b6f3b7de08ed8e9a4eca1b620f8dd53407723bfdca29fe95ad",
+      "bytes": 2925
     },
     {
       "path": "data/canonical-identities.json",
@@ -207,6 +227,11 @@
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
       "sha256": "1002f8fd8222e25e7d40f5cfc546afd631a101b728b6df612cd8dd134698ce02",
       "bytes": 2761
+    },
+    {
+      "path": "docs/ASCENSION_INFLOW_CONTROL_ROOM_V21.md",
+      "sha256": "eae6f71073605cfbe12400e0af9a815b85eb86ab7962e95e7781e15f20157a9e",
+      "bytes": 1556
     },
     {
       "path": "docs/AUTOMATED_ASSURANCE.md",
@@ -355,8 +380,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "0b3872be60394b0e00a1507e52f4690c86e5e015959049d64596680ea6f7cb4c",
-      "bytes": 14373
+      "sha256": "3ff5e9a8ae948f0b84eacceb274d8f7749b36358e0f94e475f0e2043f7c40029",
+      "bytes": 15462
     },
     {
       "path": "legal.html",
@@ -407,6 +432,11 @@
       "path": "schemas/agialpha-token-boundary.schema.json",
       "sha256": "5bc242a64193feacdca9f223a38e9f7a3d584acf2db10d187f1a48eb1e4bd546",
       "bytes": 1720
+    },
+    {
+      "path": "schemas/ascension-inflow-control.schema.json",
+      "sha256": "4efffea26069282ddf5343d7067d40b676a1fc628b5166012ed6a226e72e0924",
+      "bytes": 1415
     },
     {
       "path": "schemas/chronicle-compounding-lab.schema.json",
@@ -470,8 +500,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "c943d9ae27004fe0218945ffb3c4bf3cb30f853574b6f5b3ccf01344d92e551d",
-      "bytes": 4345
+      "sha256": "cf04e476e249ec0e006be1751773de480407fd0e46471c5aeeebc8f94f677dda",
+      "bytes": 4632
     },
     {
       "path": "terms.html",
