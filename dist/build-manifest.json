@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v18-proof-to-action-theatre",
-  "builtAt": "2026-06-28T16:26:53.096866Z",
+  "release": "v19-proof-gradient-arena",
+  "builtAt": "2026-06-28T16:35:50.688784Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -57,6 +57,16 @@
       "path": "assets/mainnet-console.js",
       "sha256": "60e71bbbf0daa29e222811339f5666097be19cce9d2e7e9cdcff1b3632306fc2",
       "bytes": 7980
+    },
+    {
+      "path": "assets/proof-gradient-arena.css",
+      "sha256": "d300311de76a7b3664c30efe1d08e7ec9fbe8bec22786c2d784375b80a5b6782",
+      "bytes": 10291
+    },
+    {
+      "path": "assets/proof-gradient-arena.js",
+      "sha256": "719eb9dcaa89eeff0e7a973986610a58af5a63d2bf4968ba8fd7dabd51dd5a98",
+      "bytes": 12767
     },
     {
       "path": "assets/proof-theatre.css",
@@ -154,6 +164,11 @@
       "bytes": 2290
     },
     {
+      "path": "data/proof-gradient-arena-demo.json",
+      "sha256": "616907e75beecc55409b8be30cb1f41d57bf0fec1418520a584289c8bdd5d30e",
+      "bytes": 4065
+    },
+    {
       "path": "data/proof-to-action-theatre-demo.json",
       "sha256": "81047427362014acd16acf4bba39f8ae970215d78f64c36bb3b06513aa921f12",
       "bytes": 1010
@@ -197,11 +212,6 @@
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
       "sha256": "0c35d26754eab3a0ea73caee67b7c106d60ebddd12b72bc8ddef830f17b59a9e",
       "bytes": 392
-    },
-    {
-      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
-      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
-      "bytes": 1354
     },
     {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
@@ -259,6 +269,11 @@
       "bytes": 2274
     },
     {
+      "path": "docs/PROOF_GRADIENT_ARENA_V19.md",
+      "sha256": "32d22ad3291cd06a82dc5637a513043a126f73d0581e30fc61cb177284b0edda",
+      "bytes": 1046
+    },
+    {
       "path": "docs/PROOF_TO_ACTION_THEATRE_V18.md",
       "sha256": "dae9c6a5877ab80691a062521a515454dc4f4281e9b747b2f3b284ccf6974ad1",
       "bytes": 1138
@@ -310,8 +325,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "79c20565368633a69b2b785339af9cec241cd0c0c329947f4e9b8941744a9aa5",
-      "bytes": 12320
+      "sha256": "fe06dc283196b44e7b16a2b9ccfde699cc34a3c77fd33362a44ab3fd87c02f76",
+      "bytes": 13338
     },
     {
       "path": "legal.html",
@@ -342,6 +357,11 @@
       "path": "proof-cards.html",
       "sha256": "6271cd49c192aa0954ef80df9cc99a00c3e9e6fb1801387bdfdc67f260ab5e1a",
       "bytes": 2990
+    },
+    {
+      "path": "proof-gradient-arena.html",
+      "sha256": "e967c0aa283d7d4651b35117091789e6f29159d87865360d5cf6de662ba71a87",
+      "bytes": 8328
     },
     {
       "path": "proof-to-action-theatre.html",
@@ -394,6 +414,11 @@
       "bytes": 1543
     },
     {
+      "path": "schemas/proof-gradient-arena.schema.json",
+      "sha256": "5ebd18a3a78f04847a5b2d9214b43329f8e420be019dac37564bd8907517c4a8",
+      "bytes": 2106
+    },
+    {
       "path": "schemas/proof-to-action-theatre.schema.json",
       "sha256": "8ea671789c7fc75a4d7ae9e5bf0b7a3feeada4c4a3fa14e1c1a7ec46d0ca43b2",
       "bytes": 1048
@@ -410,8 +435,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "bab609a09ff03472765ba948e2b67b97bc2c12c306aba2ab92b08d6806d44c40",
-      "bytes": 3790
+      "sha256": "45577e367f2b10898eb6b0e2ceda60681d071660b9bab0bc36f3d2bf26eee719",
+      "bytes": 4005
     },
     {
       "path": "terms.html",
