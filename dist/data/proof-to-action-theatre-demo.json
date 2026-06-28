@@ -1,0 +1,43 @@
+{
+  "schema": "goalos.proof_to_action_theatre.demo.v18",
+  "release": "v18-proof-to-action-theatre",
+  "thesis": "Set the objective. GoalOS runs until proof is done.",
+  "localOnly": true,
+  "networkRequests": 0,
+  "walletCalls": 0,
+  "externalActions": 0,
+  "userDataWanted": false,
+  "doneGates": [
+    "Objective",
+    "Mission Contract",
+    "Claims Matrix",
+    "Source Provenance",
+    "Contradiction Register",
+    "Evidence Docket",
+    "Verifier Report",
+    "Risk Ledger",
+    "Action Graph",
+    "Chronicle / Capability"
+  ],
+  "protocolObjects": [
+    "GoalOSCommit",
+    "MissionContract",
+    "ClaimsMatrix",
+    "VerifierReport",
+    "EvidenceDocket",
+    "RiskLedger",
+    "GovernedDecisionState",
+    "ActionGraph",
+    "ChronicleEntry",
+    "CapabilityPackage"
+  ],
+  "claimBoundary": [
+    "browser-local demonstration only",
+    "no factual certification",
+    "no legal/investment/tax/compliance advice",
+    "no wallet",
+    "no network",
+    "no storage",
+    "no user data wanted"
+  ]
+}

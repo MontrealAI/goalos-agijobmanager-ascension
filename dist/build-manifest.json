@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v15-pathspec-proof-final-publisher",
-  "builtAt": "2026-06-27T19:41:00.866419Z",
+  "release": "v18-proof-to-action-theatre",
+  "builtAt": "2026-06-28T14:02:10.455307Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -29,14 +29,44 @@
       "bytes": 7086
     },
     {
+      "path": "assets/delight.css",
+      "sha256": "8e0d5bb43f13ad17d2bdfac4c9915e272f70c4bba083c5d0e41125b004580dc2",
+      "bytes": 8635
+    },
+    {
+      "path": "assets/delight.js",
+      "sha256": "1760cbe4e8cb2b36e91b8592a933172187ceebc0f6dd87ce0276161ec94e6748",
+      "bytes": 9658
+    },
+    {
       "path": "assets/expert-console.js",
       "sha256": "1417c5c317860d80a2b25adf463afd16cbcfc12165baf1099110b0e39f98aaf7",
       "bytes": 14200
     },
     {
+      "path": "assets/institution.css",
+      "sha256": "5aa54a762a59dc924e99b67272e95ab324cebf0348cee84894a642ee3c438314",
+      "bytes": 10628
+    },
+    {
+      "path": "assets/institution.js",
+      "sha256": "24b4777a1cf73eb3282fd8752f9cee085f253a8afd893879763a0da7fdce2b51",
+      "bytes": 11348
+    },
+    {
       "path": "assets/mainnet-console.js",
       "sha256": "60e71bbbf0daa29e222811339f5666097be19cce9d2e7e9cdcff1b3632306fc2",
       "bytes": 7980
+    },
+    {
+      "path": "assets/proof-theatre.css",
+      "sha256": "0e0c7d362891b6d366b9f4cf1012029a3f31fb5b2bae64523173fe2cb19bb2d7",
+      "bytes": 11165
+    },
+    {
+      "path": "assets/proof-theatre.js",
+      "sha256": "5f0481948644b50db54b035ca5955209bd70b4682a85ad5ced8294bc145858d5",
+      "bytes": 12664
     },
     {
       "path": "assets/sovereign-economy.js",
@@ -47,6 +77,16 @@
       "path": "assurance.html",
       "sha256": "a7f9e51a7059ec3d7a6a079e41895b583f8a39d01b5bab5feda31919b2355ed8",
       "bytes": 3840
+    },
+    {
+      "path": "coordination-engine.html",
+      "sha256": "a15d9ead56156981c6ea2b6b7c1b2615d6d9348cf786e69114244ce95f5f1c42",
+      "bytes": 5800
+    },
+    {
+      "path": "coordination-lab.html",
+      "sha256": "d52846b7d486ba005087e8713c120faf94731960139c47b8c42486fc91be87b5",
+      "bytes": 8869
     },
     {
       "path": "data/agialpha-token-boundary.json",
@@ -74,6 +114,11 @@
       "bytes": 1756
     },
     {
+      "path": "data/demo-missions.json",
+      "sha256": "19a7bc09f88f66d1d2e863a18453252cdaf3e73b3623f0e1730a1f8e1c9f2ce4",
+      "bytes": 3621
+    },
+    {
       "path": "data/evidence-docket-6-1.json",
       "sha256": "12a47c4704b64d5c4d6c9882331f88db0c49b156c0bd17ef4445cba5db54c296",
       "bytes": 1072
@@ -94,14 +139,34 @@
       "bytes": 2993
     },
     {
+      "path": "data/multi-agent-coordination-law.json",
+      "sha256": "a73a2c000d6cc94685c42ba2571dbac556a908f170275fa77d580cc2cd761684",
+      "bytes": 2858
+    },
+    {
       "path": "data/production-authority.json",
       "sha256": "2868124481b12ac0d977ee6b50f610dd7517bf86954e01808c9f844fd1c4b7c8",
       "bytes": 342
     },
     {
+      "path": "data/proof-governed-institution-demo.json",
+      "sha256": "ae847596e54c9be93cc893cc9ef682009a6d43a751f948c7ba186b3be5dd13c4",
+      "bytes": 2290
+    },
+    {
+      "path": "data/proof-to-action-theatre-demo.json",
+      "sha256": "81047427362014acd16acf4bba39f8ae970215d78f64c36bb3b06513aa921f12",
+      "bytes": 1010
+    },
+    {
       "path": "data/sovereign-machine-economy-capability-contract.json",
       "sha256": "026afd4ea5b24fc3b38d0ec1af5fc92312e9ac596b5770dfb852370e24bb04df",
       "bytes": 4718
+    },
+    {
+      "path": "demo-lab.html",
+      "sha256": "f3611c7fc6ef70a970ba1e5c592f1379ab346ff925d7ccd602e2bbec3514957e",
+      "bytes": 3095
     },
     {
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
@@ -129,9 +194,9 @@
       "bytes": 2434
     },
     {
-      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
-      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
-      "bytes": 1354
+      "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
+      "sha256": "0c35d26754eab3a0ea73caee67b7c106d60ebddd12b72bc8ddef830f17b59a9e",
+      "bytes": 392
     },
     {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
@@ -179,6 +244,26 @@
       "bytes": 488
     },
     {
+      "path": "docs/PROOF_GOVERNED_INSTITUTION_LAB_V17.md",
+      "sha256": "ea1509e64e4faabc7fb737f5483cfcb3ec858c81fba7e69e77220833914163cd",
+      "bytes": 1612
+    },
+    {
+      "path": "docs/PROOF_GOVERNED_MULTI_AGENT_INSTITUTION.md",
+      "sha256": "f9d1602f93af5b6e454ee7d5afa961f2d41b66cfbd28cbc6eb8114686f165d9a",
+      "bytes": 2274
+    },
+    {
+      "path": "docs/PROOF_TO_ACTION_THEATRE_V18.md",
+      "sha256": "dae9c6a5877ab80691a062521a515454dc4f4281e9b747b2f3b284ccf6974ad1",
+      "bytes": 1138
+    },
+    {
+      "path": "docs/PROOF_TO_ACTION_THEATRE_V18_WEB_UI_GUIDE.md",
+      "sha256": "64436a33517bac3219c351962e929490d14a69f44c8a3646adde49d800991de8",
+      "bytes": 1389
+    },
+    {
       "path": "docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md",
       "sha256": "d4cb6455e82068fe8e6dee8e00e0b35a966b8d361be7832eb6313e5ce5a59520",
       "bytes": 1486
@@ -192,6 +277,11 @@
       "path": "docs/THIRD_PARTY_OPERATOR_RESPONSIBILITY.md",
       "sha256": "c737507b2bbc44817ac4655d828b5ddbba29e9efd927679fcef3f27895498828",
       "bytes": 1217
+    },
+    {
+      "path": "docs/USER_DEMO_LAB_RUNBOOK.md",
+      "sha256": "562407b354ce4fdf19daf8fccfdfc92442f691f9ffc2e53fcc500bfcfbd1e034",
+      "bytes": 685
     },
     {
       "path": "docs.html",
@@ -215,13 +305,23 @@
     },
     {
       "path": "index.html",
-      "sha256": "32f12be4b6f719104c800282ef1b11e6e3867e54edc1e70fbfbf7d7afaa05aba",
-      "bytes": 8347
+      "sha256": "79c20565368633a69b2b785339af9cec241cd0c0c329947f4e9b8941744a9aa5",
+      "bytes": 12320
     },
     {
       "path": "legal.html",
       "sha256": "c990759d51508ead8beebd532d778bf2cb1ece91f2e3a5e7248a66e763213503",
       "bytes": 5821
+    },
+    {
+      "path": "mission-studio.html",
+      "sha256": "25691465c0acc315f3c087e13eb568890d2f11b544b07eb937ea54fb247e0ce3",
+      "bytes": 3319
+    },
+    {
+      "path": "multi-agent-institution.html",
+      "sha256": "c9534c77101ecca9f47ac327810851bdefe466883b9e87a6fb9abc899864d73e",
+      "bytes": 8397
     },
     {
       "path": "operator-console.html",
@@ -230,8 +330,18 @@
     },
     {
       "path": "privacy.html",
-      "sha256": "1ad25a9c6d955a6c1846b365c5a9026cfb4a512e464bb73e100db0e5d4d669e9",
-      "bytes": 3584
+      "sha256": "37af3e77d8d54940a88e20c8a95558adebd3be189d643220500b9091cbeb5419",
+      "bytes": 4060
+    },
+    {
+      "path": "proof-cards.html",
+      "sha256": "6271cd49c192aa0954ef80df9cc99a00c3e9e6fb1801387bdfdc67f260ab5e1a",
+      "bytes": 2990
+    },
+    {
+      "path": "proof-to-action-theatre.html",
+      "sha256": "56cf60f86a29bec76f3dc2bf38e0fd3b8f5254b209685882bb9bf82a4a50466f",
+      "bytes": 8231
     },
     {
       "path": "regulatory-boundary.html",
@@ -242,6 +352,11 @@
       "path": "schemas/agialpha-token-boundary.schema.json",
       "sha256": "5bc242a64193feacdca9f223a38e9f7a3d584acf2db10d187f1a48eb1e4bd546",
       "bytes": 1720
+    },
+    {
+      "path": "schemas/demo-mission.schema.json",
+      "sha256": "a1c51be61e524425264bb5f13c2a0c710b8714f3b7d72b186621ce66e6e8dddf",
+      "bytes": 727
     },
     {
       "path": "schemas/evidence-docket.schema.json",
@@ -264,6 +379,21 @@
       "bytes": 504
     },
     {
+      "path": "schemas/multi-agent-coordination-law.schema.json",
+      "sha256": "f7f135847c358630fee4b7cd271fcfd50fad184555306996e44210e70bba29da",
+      "bytes": 1288
+    },
+    {
+      "path": "schemas/proof-governed-institution-demo.schema.json",
+      "sha256": "ca88fd1b28871ec2c27e1361cd7c0c7088a0c90ff0a0a4764c9c9e4b614a562e",
+      "bytes": 1543
+    },
+    {
+      "path": "schemas/proof-to-action-theatre.schema.json",
+      "sha256": "8ea671789c7fc75a4d7ae9e5bf0b7a3feeada4c4a3fa14e1c1a7ec46d0ca43b2",
+      "bytes": 1048
+    },
+    {
       "path": "schemas/sovereign-machine-economy.schema.json",
       "sha256": "5c88db9be9163e436a381fa04f2e089a5cb38c479feea2d53db18c6ef4be4479",
       "bytes": 1569
@@ -272,6 +402,11 @@
       "path": "sovereign-machine-economy.html",
       "sha256": "39de42f01a72e493d5c0ac494610e9a55920d492fbeea0120e808e6b0fa05c3a",
       "bytes": 5720
+    },
+    {
+      "path": "start.html",
+      "sha256": "bab609a09ff03472765ba948e2b67b97bc2c12c306aba2ab92b08d6806d44c40",
+      "bytes": 3790
     },
     {
       "path": "terms.html",
