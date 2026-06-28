@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "release": "v19-proof-gradient-arena",
-  "builtAt": "2026-06-28T16:35:50.688784Z",
+  "builtAt": "2026-06-28T18:12:52.061444Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -212,6 +212,11 @@
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
       "sha256": "0c35d26754eab3a0ea73caee67b7c106d60ebddd12b72bc8ddef830f17b59a9e",
       "bytes": 392
+    },
+    {
+      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
+      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
+      "bytes": 1354
     },
     {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
