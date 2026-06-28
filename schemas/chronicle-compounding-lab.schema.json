@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/chronicle-compounding-lab.schema.json",
+  "title": "GoalOS Chronicle Compounding Lab v20 Demo Contract",
+  "type": "object",
+  "required": [
+    "release",
+    "page",
+    "networkRequests",
+    "walletCalls",
+    "externalActions",
+    "storageWrites",
+    "userDataWanted",
+    "protocolObjects",
+    "gates",
+    "missionPresets"
+  ],
+  "properties": {
+    "release": {
+      "const": "v20-chronicle-compounding-lab"
+    },
+    "page": {
+      "const": "chronicle-compounding-lab.html"
+    },
+    "networkRequests": {
+      "const": 0
+    },
+    "walletCalls": {
+      "const": 0
+    },
+    "externalActions": {
+      "const": 0
+    },
+    "storageWrites": {
+      "const": 0
+    },
+    "userDataWanted": {
+      "const": false
+    },
+    "protocolObjects": {
+      "type": "array",
+      "contains": {
+        "const": "ChronicleEntry"
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 7
+    },
+    "missionPresets": {
+      "type": "array",
+      "minItems": 5
+    }
+  }
+}

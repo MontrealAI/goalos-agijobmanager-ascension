@@ -96,3 +96,10 @@ The v17 addition adds `coordination-lab.html`: a 100% browser-local proof-govern
 ## v19 Proof Gradient Arena
 
 New public demonstration: `/proof-gradient-arena.html` shows the GoalOS Selection Gate. Score is advisory; gates are mandatory. Users can run the local simulator, inspect hard gates, export a SelectionCertificate, and download a public-safe Evidence Docket.
+
+
+## Public demonstrations
+
+- Proof-to-Action Theatre: objective to governed decision state.
+- Proof Gradient Arena: score is advisory; hard gates decide propagation.
+- Chronicle Compounding Lab: accepted proof becomes reusable capability; no Chronicle entry means no institutional memory.
