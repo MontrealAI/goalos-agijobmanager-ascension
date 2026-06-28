@@ -1,0 +1,112 @@
+{
+  "release": "v16-user-delight-autonomous-demos",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "privacy": "browser-local; no network; no storage; no forms; no wallet; no token availability",
+  "missions": [
+    {
+      "id": "market-brief",
+      "title": "Proof-settled market brief",
+      "audience": "Executive",
+      "risk": "Consequential",
+      "objective": "Produce a decision-ready market brief for an evidence-governed AI service with assumptions, downside cases, measurable success criteria, validator duties, and unresolved questions.",
+      "docketClass": "Evidence Docket 6.1",
+      "expectedArtifact": "Executive brief + claims matrix + risk ledger",
+      "gates": [
+        "Request",
+        "Scope",
+        "Evidence",
+        "Claims",
+        "Risk",
+        "Validation",
+        "Dissent",
+        "Docket",
+        "Chronicle",
+        "Human Review"
+      ]
+    },
+    {
+      "id": "validator-task",
+      "title": "Validator-ready software task",
+      "audience": "Builder",
+      "risk": "Prudential",
+      "objective": "Convert a software improvement request into a bounded job spec with acceptance tests, tool limits, replay requirements, and a settlement-ready proof packet.",
+      "docketClass": "ProofPacket",
+      "expectedArtifact": "Job spec + validation checklist + replay path",
+      "gates": [
+        "Aim",
+        "Commit",
+        "Plan",
+        "Bound Tools",
+        "Execute",
+        "Test",
+        "Proof",
+        "Eval",
+        "Rollback",
+        "Review"
+      ]
+    },
+    {
+      "id": "dispute-rehearsal",
+      "title": "Dispute-resolution rehearsal",
+      "audience": "Operator",
+      "risk": "High consequence",
+      "objective": "Simulate a contested AGIJobManager work package, surface evaluator disagreement, preserve dissent, and prepare a human review path without moving funds.",
+      "docketClass": "SelectionCertificate",
+      "expectedArtifact": "Dissent register + dispute note + selection record",
+      "gates": [
+        "Claim",
+        "Counterclaim",
+        "Evidence",
+        "Validator Split",
+        "Challenge",
+        "Replay",
+        "Decision",
+        "Rollback",
+        "Record",
+        "Review"
+      ]
+    },
+    {
+      "id": "sovereign-economy",
+      "title": "Sovereign Machine Economy walkthrough",
+      "audience": "Institutional",
+      "risk": "Public-safe demo",
+      "objective": "Show how Meta-Agentic cognition, Alpha Node runtime, AGI Jobs work OS, and AGIJobManager settlement connect into one proof-producing loop.",
+      "docketClass": "Sovereign Machine Economy",
+      "expectedArtifact": "Lineage map + operating loop + claim boundary",
+      "gates": [
+        "Identify",
+        "Mission",
+        "Policy",
+        "Route",
+        "Execute",
+        "Evaluate",
+        "Consensus",
+        "Guardian",
+        "Authority",
+        "Docket"
+      ]
+    },
+    {
+      "id": "data-zero",
+      "title": "Data-Zero legal boundary check",
+      "audience": "Reviewer",
+      "risk": "Low",
+      "objective": "Verify that the public user experience asks for no personal data, uses no forms, runs local demos only, and keeps wallet operations behind the Expert Console.",
+      "docketClass": "Legal/Data-Zero Shield",
+      "expectedArtifact": "Boundary checklist + responsibility matrix",
+      "gates": [
+        "No Forms",
+        "No Analytics",
+        "No Cookies",
+        "No Accounts",
+        "No Advice",
+        "No Custody",
+        "No Offer",
+        "User Burden",
+        "Third Parties",
+        "Publish"
+      ]
+    }
+  ]
+}
