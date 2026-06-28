@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Proof Gradient Arena Demo",
+  "type": "object",
+  "required": [
+    "release",
+    "title",
+    "networkRequests",
+    "walletCalls",
+    "externalActions",
+    "userDataWanted",
+    "hardGates",
+    "candidates"
+  ],
+  "properties": {
+    "release": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "networkRequests": {
+      "const": 0
+    },
+    "walletCalls": {
+      "const": 0
+    },
+    "externalActions": {
+      "const": 0
+    },
+    "userDataWanted": {
+      "const": false
+    },
+    "storageWrites": {
+      "const": 0
+    },
+    "hardGates": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "summary",
+          "qualityDelta",
+          "transfer",
+          "verifiedValue",
+          "evidenceIntegrity",
+          "costDelta",
+          "risk",
+          "coordinationOverhead",
+          "rollbackDebt",
+          "gates"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "qualityDelta": {
+            "type": "number"
+          },
+          "transfer": {
+            "type": "number"
+          },
+          "verifiedValue": {
+            "type": "number"
+          },
+          "evidenceIntegrity": {
+            "type": "number"
+          },
+          "costDelta": {
+            "type": "number"
+          },
+          "risk": {
+            "type": "number"
+          },
+          "coordinationOverhead": {
+            "type": "number"
+          },
+          "rollbackDebt": {
+            "type": "number"
+          },
+          "gates": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

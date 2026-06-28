@@ -1,0 +1,138 @@
+{
+  "$schema": "../schemas/proof-gradient-arena.schema.json",
+  "release": "v19-proof-gradient-arena",
+  "title": "Proof Gradient Arena",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "principle": "Score is advisory; gates are mandatory.",
+  "networkRequests": 0,
+  "walletCalls": 0,
+  "externalActions": 0,
+  "userDataWanted": false,
+  "storageWrites": 0,
+  "advisoryFormula": "PG(U)=0.22*qualityDelta+0.18*transfer+0.20*verifiedValue+0.20*evidenceIntegrity-0.08*costDelta-0.06*risk-0.04*coordinationOverhead-0.02*rollbackDebt",
+  "hardGates": [
+    "ProofValid",
+    "EvalPass",
+    "RiskWithinBound",
+    "RollbackReady",
+    "CanaryReady",
+    "ScopeAuthorized",
+    "ChallengeWindowCleared"
+  ],
+  "candidates": [
+    {
+      "id": "fast-output",
+      "name": "Fast persuasive output",
+      "summary": "Looks finished but lacks replayable proof and rollback.",
+      "qualityDelta": 82,
+      "transfer": 28,
+      "verifiedValue": 36,
+      "evidenceIntegrity": 22,
+      "costDelta": 18,
+      "risk": 67,
+      "coordinationOverhead": 22,
+      "rollbackDebt": 74,
+      "gates": {
+        "ProofValid": false,
+        "EvalPass": false,
+        "RiskWithinBound": false,
+        "RollbackReady": false,
+        "CanaryReady": true,
+        "ScopeAuthorized": true,
+        "ChallengeWindowCleared": false
+      }
+    },
+    {
+      "id": "specialist-swarm",
+      "name": "Specialist swarm proposal",
+      "summary": "High capability but coordination overhead and challenge uncertainty remain unresolved.",
+      "qualityDelta": 77,
+      "transfer": 62,
+      "verifiedValue": 68,
+      "evidenceIntegrity": 70,
+      "costDelta": 55,
+      "risk": 46,
+      "coordinationOverhead": 64,
+      "rollbackDebt": 31,
+      "gates": {
+        "ProofValid": true,
+        "EvalPass": true,
+        "RiskWithinBound": true,
+        "RollbackReady": true,
+        "CanaryReady": false,
+        "ScopeAuthorized": true,
+        "ChallengeWindowCleared": false
+      }
+    },
+    {
+      "id": "verified-capability",
+      "name": "Verified capability package",
+      "summary": "Strong evidence, replay path, rollback target, and cleared challenge window.",
+      "qualityDelta": 71,
+      "transfer": 84,
+      "verifiedValue": 79,
+      "evidenceIntegrity": 92,
+      "costDelta": 33,
+      "risk": 21,
+      "coordinationOverhead": 26,
+      "rollbackDebt": 12,
+      "gates": {
+        "ProofValid": true,
+        "EvalPass": true,
+        "RiskWithinBound": true,
+        "RollbackReady": true,
+        "CanaryReady": true,
+        "ScopeAuthorized": true,
+        "ChallengeWindowCleared": true
+      }
+    },
+    {
+      "id": "high-novelty",
+      "name": "High-novelty breakthrough candidate",
+      "summary": "Potentially valuable, but high novelty raises the burden of proof rather than lowering it.",
+      "qualityDelta": 91,
+      "transfer": 77,
+      "verifiedValue": 85,
+      "evidenceIntegrity": 64,
+      "costDelta": 47,
+      "risk": 58,
+      "coordinationOverhead": 48,
+      "rollbackDebt": 45,
+      "gates": {
+        "ProofValid": true,
+        "EvalPass": false,
+        "RiskWithinBound": false,
+        "RollbackReady": true,
+        "CanaryReady": false,
+        "ScopeAuthorized": false,
+        "ChallengeWindowCleared": false
+      }
+    }
+  ],
+  "selectionCertificateTemplate": {
+    "type": "SelectionCertificate",
+    "decision": "promote|reject|canary|pause",
+    "scope": "public-safe browser-local demonstration",
+    "rollbackTarget": "prior accepted artifact or null candidate",
+    "challengeWindow": "simulated public review window",
+    "humanAuthority": "required before production action"
+  },
+  "publicPrivateBoundary": {
+    "public": [
+      "candidate id",
+      "proof hash placeholder",
+      "eval verdict",
+      "gate status",
+      "selection decision",
+      "rollback target",
+      "claim boundary"
+    ],
+    "private": [
+      "private prompts",
+      "customer data",
+      "raw traces",
+      "privileged approvals",
+      "internal workpapers"
+    ]
+  }
+}
