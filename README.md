@@ -91,3 +91,8 @@ These demos do not use accounts, cookies, analytics, form submissions, wallet co
 ## Browser-local Coordination Lab
 
 The v17 addition adds `coordination-lab.html`: a 100% browser-local proof-governed multi-agent institution demo. Users can compare swarm, fixed-crew, and proof-governed institution modes, run ten proof gates, inspect a Chronicle trace, and download a public-safe Evidence Docket JSON. No accounts, forms, analytics, cookies, storage, wallet connection, network request, token approval, or Mainnet broadcast are used.
+
+
+## v19 Proof Gradient Arena
+
+New public demonstration: `/proof-gradient-arena.html` shows the GoalOS Selection Gate. Score is advisory; gates are mandatory. Users can run the local simulator, inspect hard gates, export a SelectionCertificate, and download a public-safe Evidence Docket.
