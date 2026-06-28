@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Proof Gradient Arena Publisher v19
+name: GoalOS AGIJobManager Ascension Chronicle Compounding Lab Publisher v20
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Proof Gradient Arena
+    name: Build, assure, and publish Chronicle Compounding Lab
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, demos, institution lab, proof theatre, and proof gradient arena
+      - name: Verify implementation, boundaries, demos, proof gradient arena, and Chronicle Lab
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -86,6 +86,7 @@ jobs:
           node tests/proof-governed-institution.test.mjs
           node tests/proof-to-action-theatre.test.mjs
           node tests/proof-gradient-arena.test.mjs
+          node tests/chronicle-compounding-lab.test.mjs
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
           node tools/automated-assurance.mjs
@@ -96,6 +97,7 @@ jobs:
           node tools/proof-governed-institution-kernel.mjs
           node tools/proof-to-action-theatre-kernel.mjs
           node tools/proof-gradient-arena-kernel.mjs
+          node tools/chronicle-compounding-lab-kernel.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
               node tools/mainnet-factual-check.mjs
@@ -109,7 +111,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact with Proof Gradient Arena
+      - name: Build static Pages artifact with Chronicle Compounding Lab
         shell: bash
         run: |
           set -euo pipefail
@@ -118,17 +120,20 @@ jobs:
           node tools/proof-governed-institution-kernel.mjs
           node tools/proof-to-action-theatre-kernel.mjs
           node tools/proof-gradient-arena-kernel.mjs
+          node tools/chronicle-compounding-lab-kernel.mjs
           test -f dist/start.html
           test -f dist/demo-lab.html
           test -f dist/coordination-lab.html
           test -f dist/proof-to-action-theatre.html
           test -f dist/proof-gradient-arena.html
+          test -f dist/chronicle-compounding-lab.html
           test -f dist/mission-studio.html
           test -f dist/proof-cards.html
           test -f dist/demo-missions.json
           test -f dist/proof-governed-institution-demo.json
           test -f dist/proof-to-action-theatre-demo.json
           test -f dist/proof-gradient-arena-demo.json
+          test -f dist/chronicle-compounding-lab-demo.json
 
       - name: Commit generated source with retry
         if: ${{ inputs.commit_generated_source != false }}
@@ -142,7 +147,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Proof Gradient Arena v19"
+          git commit -m "Generate GoalOS Chronicle Compounding Lab v20"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
