@@ -1,0 +1,74 @@
+{
+  "schema": "goalos.proof_governed_multi_agent_institution.v17",
+  "release": "v17-proof-governed-institution-lab",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/coordination-lab.html",
+  "thesis": "Large multi-agent systems coordinate to maximum effect when they become proof-governed sovereign institutions.",
+  "coordinationLaw": {
+    "aiWork": "Output × Proof × Validation × Settlement × Reuse",
+    "maximumCoordination": "verified useful work per unit of risk, cost, latency, and proof debt",
+    "antiPattern": "agents talking without bounded work, observable traces, validator judgment, settlement, Chronicle memory, or reusable capability"
+  },
+  "browserLocalBoundary": {
+    "accounts": false,
+    "forms": false,
+    "analytics": false,
+    "cookies": false,
+    "storage": false,
+    "walletConnection": false,
+    "networkRequests": false,
+    "externalActions": false,
+    "userDataWanted": false
+  },
+  "gates": [
+    "Commit",
+    "Route",
+    "Bound",
+    "Execute",
+    "Prove",
+    "Validate",
+    "Risk",
+    "Settle",
+    "Chronicle",
+    "Review"
+  ],
+  "roles": [
+    "Planner",
+    "Researcher",
+    "Builder",
+    "Verifier",
+    "Risk",
+    "Settlement",
+    "Chronicle",
+    "Human"
+  ],
+  "modes": {
+    "swarm": {
+      "label": "Unstructured swarm",
+      "purpose": "Shows high activity with weak proof and high proof debt."
+    },
+    "crew": {
+      "label": "Fixed crew",
+      "purpose": "Shows role structure but limited adaptive proof governance."
+    },
+    "institution": {
+      "label": "Proof-governed institution",
+      "purpose": "Shows bounded work, validators, risk state, settlement readiness, Chronicle memory, and reusable capability."
+    }
+  },
+  "exportedObjects": [
+    "GoalOSCommit",
+    "RunCommitment",
+    "ProofPacket",
+    "EvalAttestation",
+    "SelectionCertificate",
+    "ChronicleEntry",
+    "CapabilityPackage"
+  ],
+  "claimBoundary": [
+    "Browser-local demonstration only.",
+    "No personal, confidential, regulated, wallet, seed, private-key, or customer data should be entered.",
+    "No factual correctness certification.",
+    "No production authority activation.",
+    "No wallet connection, token approval, network switch, Mainnet broadcast, or fund authorization."
+  ]
+}
