@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Chronicle Compounding Lab Publisher v20
+name: GoalOS AGIJobManager Ascension Inflow Control Publisher v21
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Chronicle Compounding Lab
+    name: Build, assure, and publish Ascension Inflow Control Room
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, demos, proof gradient arena, and Chronicle Lab
+      - name: Verify implementation, boundaries, demos, Chronicle Lab, and Inflow Control
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -87,6 +87,7 @@ jobs:
           node tests/proof-to-action-theatre.test.mjs
           node tests/proof-gradient-arena.test.mjs
           node tests/chronicle-compounding-lab.test.mjs
+          node tests/ascension-inflow-control.test.mjs
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
           node tools/automated-assurance.mjs
@@ -98,6 +99,7 @@ jobs:
           node tools/proof-to-action-theatre-kernel.mjs
           node tools/proof-gradient-arena-kernel.mjs
           node tools/chronicle-compounding-lab-kernel.mjs
+          node tools/ascension-inflow-control-kernel.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
               node tools/mainnet-factual-check.mjs
@@ -111,7 +113,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact with Chronicle Compounding Lab
+      - name: Build static Pages artifact with Ascension Inflow Control Room
         shell: bash
         run: |
           set -euo pipefail
@@ -121,12 +123,14 @@ jobs:
           node tools/proof-to-action-theatre-kernel.mjs
           node tools/proof-gradient-arena-kernel.mjs
           node tools/chronicle-compounding-lab-kernel.mjs
+          node tools/ascension-inflow-control-kernel.mjs
           test -f dist/start.html
           test -f dist/demo-lab.html
           test -f dist/coordination-lab.html
           test -f dist/proof-to-action-theatre.html
           test -f dist/proof-gradient-arena.html
           test -f dist/chronicle-compounding-lab.html
+          test -f dist/ascension-inflow-control.html
           test -f dist/mission-studio.html
           test -f dist/proof-cards.html
           test -f dist/demo-missions.json
@@ -134,6 +138,7 @@ jobs:
           test -f dist/proof-to-action-theatre-demo.json
           test -f dist/proof-gradient-arena-demo.json
           test -f dist/chronicle-compounding-lab-demo.json
+          test -f dist/ascension-inflow-control-demo.json
 
       - name: Commit generated source with retry
         if: ${{ inputs.commit_generated_source != false }}
@@ -147,7 +152,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Chronicle Compounding Lab v20"
+          git commit -m "Generate GoalOS Ascension Inflow Control Room v21"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
