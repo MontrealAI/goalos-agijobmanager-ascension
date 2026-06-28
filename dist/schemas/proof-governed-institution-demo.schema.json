@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/proof-governed-institution-demo.schema.json",
+  "title": "GoalOS Proof-Governed Multi-Agent Institution Demo",
+  "type": "object",
+  "required": ["schema", "release", "thesis", "coordinationLaw", "browserLocalBoundary", "gates", "roles", "modes", "exportedObjects", "claimBoundary"],
+  "properties": {
+    "schema": {"const": "goalos.proof_governed_multi_agent_institution.v17"},
+    "release": {"type": "string"},
+    "productionUrl": {"type": "string"},
+    "thesis": {"type": "string"},
+    "coordinationLaw": {"type": "object"},
+    "browserLocalBoundary": {
+      "type": "object",
+      "properties": {
+        "accounts": {"const": false},
+        "forms": {"const": false},
+        "analytics": {"const": false},
+        "cookies": {"const": false},
+        "storage": {"const": false},
+        "walletConnection": {"const": false},
+        "networkRequests": {"const": false},
+        "externalActions": {"const": false},
+        "userDataWanted": {"const": false}
+      },
+      "required": ["accounts", "forms", "analytics", "cookies", "storage", "walletConnection", "networkRequests", "externalActions", "userDataWanted"]
+    },
+    "gates": {"type": "array", "minItems": 10, "maxItems": 10},
+    "roles": {"type": "array", "minItems": 8},
+    "modes": {"type": "object"},
+    "exportedObjects": {"type": "array", "minItems": 7},
+    "claimBoundary": {"type": "array", "minItems": 4}
+  }
+}

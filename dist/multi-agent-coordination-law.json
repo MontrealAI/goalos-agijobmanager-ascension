@@ -1,0 +1,39 @@
+{
+  "schema": "goalos.multiAgentCoordinationLaw.v17",
+  "title": "Proof-Governed Multi-Agent Institution",
+  "doctrine": "Large multi-agent systems coordinate to maximum effect when they become proof-governed sovereign institutions.",
+  "coordinationLaw": "Maximum coordination = maximum verified useful work per unit of risk, cost, latency, and proof debt.",
+  "workEquation": "AI Work = Output × Proof × Validation × Settlement × Reuse",
+  "objectModel": ["GoalOSCommit", "RunCommitment", "ProofPacket", "EvalAttestation", "SelectionCertificate", "EvolutionLedgerEntry", "EvidenceDocket", "ChronicleEntry", "CapabilityPackage"],
+  "loops": [
+    {"id":"mission", "name":"Mission loop", "flow":"Objective → Mission Contract → Success/failure criteria"},
+    {"id":"work", "name":"Work loop", "flow":"Agents → Jobs → Tools → Traces"},
+    {"id":"proof", "name":"Proof loop", "flow":"Claims → Evidence → ProofBundle → Evidence Docket"},
+    {"id":"validation", "name":"Validation loop", "flow":"Verifier Mesh → Risk Ledger → Governed Decision State"},
+    {"id":"compounding", "name":"Compounding loop", "flow":"Chronicle → Capability Package → Settlement → Harder Mission"}
+  ],
+  "coordinationObjects": ["bounded work", "observable trace", "evidence package", "validator judgment", "risk state", "Chronicle memory", "settlement decision", "reusable capability"],
+  "proofGates": ["Mission Contract", "Agent Allocation", "Tool Scope", "Work Trace", "Proof Bundle", "Validator Mesh", "Risk Ledger", "Settlement Check", "Chronicle Memory", "Human Review"],
+  "routerFamily": [
+    {"id":"R0", "name":"Heuristic Hamiltonian baseline", "role":"auditable fallback"},
+    {"id":"R1", "name":"Natural-language workflow router", "role":"open-ended decomposition"},
+    {"id":"R2", "name":"Evidence-state lightweight router", "role":"structured high-volume routing"},
+    {"id":"R3", "name":"Evolutionary coordinator", "role":"sparse terminal validator rewards"},
+    {"id":"R4", "name":"Reinforcement-learned coordinator", "role":"stable domains with replayable trajectories"},
+    {"id":"R5", "name":"Hybrid proof-conditioned selector", "role":"production arbitration by task, cost, risk, validators, evidence density, and auditability"}
+  ],
+  "browserLocalBoundary": {
+    "noAccounts": true,
+    "noForms": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noStorage": true,
+    "noWalletConnection": true,
+    "noNetworkRequests": true,
+    "noTokenRoute": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "claimBoundary": "This is a browser-local demonstration and implementation scaffold. It is not an empirical maximum-performance claim, investment advice, legal advice, factual certification, external audit completion, or Mainnet transaction record."
+}
