@@ -103,3 +103,8 @@ New public demonstration: `/proof-gradient-arena.html` shows the GoalOS Selectio
 - Proof-to-Action Theatre: objective to governed decision state.
 - Proof Gradient Arena: score is advisory; hard gates decide propagation.
 - Chronicle Compounding Lab: accepted proof becomes reusable capability; no Chronicle entry means no institutional memory.
+
+
+## v21 · Ascension Inflow Control Room
+
+Browser-local public demonstration of regulated open-system inflow: compute, data, tasks, incentives, feedback, governance, and tools become trusted work only through proof, validation, settlement, and reuse. Route: `/ascension-inflow-control.html`.
