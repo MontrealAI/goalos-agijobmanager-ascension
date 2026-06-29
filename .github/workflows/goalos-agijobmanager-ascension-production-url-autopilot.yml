@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Navigation System Final Publisher v38
+name: GoalOS AGIJobManager Ascension Complete Website Publisher v39
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Navigation System Final
+    name: Build, assure, and publish Complete Website
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -60,12 +60,13 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Neutralize registry lock-in and keep dependency-zero state
+      - name: Neutralize registry lock-in, rehydrate missing routes, and keep dependency-zero state
         shell: bash
         run: |
           set -euo pipefail
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
+          node tools/site-rehydrate.mjs
 
       - name: Verify implementation, boundaries, workflow references, navigation, and all demos
         shell: bash
@@ -76,6 +77,7 @@ jobs:
         run: |
           set -euo pipefail
           node --version
+          node tools/site-rehydrate.mjs
           python3 tools/verify.py
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
@@ -94,13 +96,18 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and verify navigation system
+      - name: Build static Pages artifact and verify complete website
         shell: bash
         run: |
           set -euo pipefail
+          node tools/site-rehydrate.mjs
           python3 tools/build.py
           node tools/run-existing-kernels.mjs
           test -f dist/index.html
+          test -f dist/experience-concierge.html
+          test -f dist/assets/site-command-v39.js
+          test -f dist/assets/site-command-v39.css
+          test -f dist/site-navigation-v39.json
           test -f dist/site-atlas.html
           test -f dist/archive-v36-ascension-chamber.html
           test -f dist/site-navigation-map.json
@@ -130,7 +137,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Navigation System Final v38"
+          git commit -m "Generate GoalOS Complete Website v39"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
