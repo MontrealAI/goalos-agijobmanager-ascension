@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.1.0-ascension-flight-deck-v31",
+  "version": "3.2.0-proof-constitution-simulator-v32",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,11 +8,11 @@
     "verify": "python3 tools/verify.py",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/run-all-tests.mjs",
+    "test": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/run-all-tests.mjs",
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
-    "test:final": "npm test && python3 tools/build.py && node tools/ascension-flight-deck-kernel.mjs",
+    "test:final": "npm test && python3 tools/build.py && node tools/proof-constitution-simulator-kernel.mjs && node tools/ascension-flight-deck-kernel.mjs && node tools/proof-conditioned-router-observatory-kernel.mjs",
     "legal": "node tools/legal-shield-kernel.mjs",
     "test:legal": "npm run legal",
     "token-boundary": "node tools/token-boundary-kernel.mjs",
@@ -43,9 +43,11 @@
     "router-observatory": "node tests/proof-conditioned-router-observatory.test.mjs && python3 tools/build.py && node tools/proof-conditioned-router-observatory-kernel.mjs",
     "test:router-observatory": "node tests/proof-conditioned-router-observatory.test.mjs && python3 tools/build.py && node tools/proof-conditioned-router-observatory-kernel.mjs",
     "flight-deck": "node tests/ascension-flight-deck.test.mjs && python3 tools/build.py && node tools/ascension-flight-deck-kernel.mjs",
-    "test:flight-deck": "npm run flight-deck"
+    "test:flight-deck": "npm run flight-deck",
+    "proof-constitution": "node tests/proof-constitution-simulator.test.mjs && python3 tools/build.py && node tools/proof-constitution-simulator-kernel.mjs",
+    "test:proof-constitution": "npm run proof-constitution"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension static site with Ascension Flight Deck, Router Observatory, and public-safe GoalOS demonstrations.",
+  "description": "GoalOS AGIJobManager Ascension static site with Proof Constitution Simulator, Flight Deck, Router Observatory, and public-safe GoalOS demonstrations.",
   "devDependencies": {}
 }

@@ -1,0 +1,42 @@
+{
+  "schema": "goalos/agijobmanager/operator-parity-catalog/v1",
+  "canonical": {
+    "agiJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "agialpha": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "chainId": 1
+  },
+  "publicDefault": "read-only chamber",
+  "expertConsole": "site/expert-console.html",
+  "legacyReference": "https://montrealai.github.io/agijobmanagerv0.html",
+  "walletCapabilities": [
+    "connect wallet by explicit button",
+    "switch to Ethereum Mainnet by explicit button",
+    "approve exact AGIALPHA amount",
+    "simulate transaction via staticCall",
+    "estimate gas",
+    "broadcast through wallet after typed confirmation",
+    "export evidence report"
+  ],
+  "actions": [
+    "createJob",
+    "applyForJob",
+    "requestJobCompletion",
+    "validateJob",
+    "disapproveJob",
+    "disputeJob",
+    "finalizeJob",
+    "expireJob",
+    "cancelJob",
+    "resolveDisputeWithCode",
+    "lockJobENS"
+  ],
+  "guards": [
+    "no auto-connect",
+    "no unlimited approval",
+    "no private key handling",
+    "no hidden broadcast",
+    "typed confirmation AUTHORIZE MAINNET",
+    "local authority phrase ACTIVATE PRODUCTION AUTHORITY",
+    "simulation before broadcast"
+  ]
+}

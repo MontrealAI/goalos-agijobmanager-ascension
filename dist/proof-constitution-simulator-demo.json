@@ -1,0 +1,252 @@
+{
+  "title": "GoalOS Proof Constitution Simulator",
+  "version": "v32-proof-constitution-simulator",
+  "posture": {
+    "browserLocal": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noUserDataWanted": true,
+    "publicSafeExamplesOnly": true
+  },
+  "coreDoctrine": [
+    "Aim",
+    "Act",
+    "Prove",
+    "Evolve"
+  ],
+  "protocolObjects": [
+    {
+      "id": "goaloscommit",
+      "name": "GoalOSCommit",
+      "stage": "Aim",
+      "purpose": "Signed institutional aim: objective, constraints, authority, risk, budget, evaluators, rollback obligations.",
+      "publicFields": [
+        "commitHash",
+        "policyRoot",
+        "riskClass",
+        "claimBoundary",
+        "signer"
+      ],
+      "privateCounterpart": "Full objective context, private documents, privileged constraints."
+    },
+    {
+      "id": "runcommitment",
+      "name": "RunCommitment",
+      "stage": "Act",
+      "purpose": "Execution contract: agent set, artifact versions, tool permissions, context roots, policies, runtime limits.",
+      "publicFields": [
+        "runId",
+        "artifactRoot",
+        "traceRoot",
+        "toolPermissionRoot"
+      ],
+      "privateCounterpart": "Complete traces, raw logs, sensitive tool outputs."
+    },
+    {
+      "id": "proofpacket",
+      "name": "ProofPacket",
+      "stage": "Prove",
+      "purpose": "Attestable record of execution: trace root, output hash, evals, policy decisions, costs, signatures.",
+      "publicFields": [
+        "proofHash",
+        "evidenceURI",
+        "evalRoot",
+        "signatureBundle"
+      ],
+      "privateCounterpart": "Evidence Docket private appendix and evaluator workpapers."
+    },
+    {
+      "id": "selectioncertificate",
+      "name": "SelectionCertificate",
+      "stage": "Evolve",
+      "purpose": "Decision object: admit, reject, canary, promote, pause, or roll back a candidate upgrade.",
+      "publicFields": [
+        "decision",
+        "scope",
+        "canary",
+        "rollbackTarget",
+        "challengeWindow"
+      ],
+      "privateCounterpart": "Internal rationale and approvals."
+    },
+    {
+      "id": "rolloutreceipt",
+      "name": "RolloutReceipt",
+      "stage": "Evolve",
+      "purpose": "Scoped release record with monitoring thresholds, percentage, safety thresholds, and signer.",
+      "publicFields": [
+        "percentage",
+        "monitoringRoot",
+        "safetyThresholds",
+        "signer"
+      ],
+      "privateCounterpart": "Tenant-level deployment data."
+    },
+    {
+      "id": "rollbackreceipt",
+      "name": "RollbackReceipt",
+      "stage": "Evolve",
+      "purpose": "Recovery record for trigger, rollback target, incident root, and current rollback status.",
+      "publicFields": [
+        "rollbackTarget",
+        "trigger",
+        "status",
+        "incidentRoot"
+      ],
+      "privateCounterpart": "Incident details and remediations."
+    }
+  ],
+  "gates": [
+    {
+      "id": "schema",
+      "label": "Schema-valid",
+      "weight": 1,
+      "explain": "Objects validate against the AEP-style object vocabulary."
+    },
+    {
+      "id": "proof",
+      "label": "Proof-valid",
+      "weight": 2,
+      "explain": "Execution emits an inspectable proof packet and evidence pointer."
+    },
+    {
+      "id": "eval",
+      "label": "Eval-gated",
+      "weight": 2,
+      "explain": "Registered evals and baseline comparisons are present."
+    },
+    {
+      "id": "risk",
+      "label": "Risk-bounded",
+      "weight": 2,
+      "explain": "Safety, legal, security, and privacy risks are within scope."
+    },
+    {
+      "id": "publicprivate",
+      "label": "Public/private boundary",
+      "weight": 2,
+      "explain": "Public proof is minimal; private intelligence is not exposed."
+    },
+    {
+      "id": "rollback",
+      "label": "Rollback-ready",
+      "weight": 2,
+      "explain": "Valid rollback target and recovery condition are defined."
+    },
+    {
+      "id": "challenge",
+      "label": "Challenge window",
+      "weight": 1,
+      "explain": "Review, replay, and dispute window exist before propagation."
+    },
+    {
+      "id": "human",
+      "label": "Human-reviewed",
+      "weight": 1,
+      "explain": "Human or institutional approval is required before authority."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "website-publication",
+      "title": "Autonomous website publication",
+      "objective": "Publish a public-safe GoalOS page from source only after automation, claim-boundary, and human-review gates pass.",
+      "starting": {
+        "schema": 90,
+        "proof": 76,
+        "eval": 70,
+        "risk": 82,
+        "publicprivate": 96,
+        "rollback": 72,
+        "challenge": 68,
+        "human": 60
+      }
+    },
+    {
+      "id": "job-settlement",
+      "title": "AGI job settlement",
+      "objective": "Move one bounded machine-work job from request to proof, validation, settlement posture, and Chronicle entry.",
+      "starting": {
+        "schema": 82,
+        "proof": 70,
+        "eval": 64,
+        "risk": 75,
+        "publicprivate": 88,
+        "rollback": 58,
+        "challenge": 74,
+        "human": 62
+      }
+    },
+    {
+      "id": "capability-upgrade",
+      "title": "Capability upgrade right",
+      "objective": "Evaluate whether a reusable artifact earns a scoped upgrade right after proof, canary, challenge, and rollback checks.",
+      "starting": {
+        "schema": 86,
+        "proof": 72,
+        "eval": 66,
+        "risk": 70,
+        "publicprivate": 92,
+        "rollback": 61,
+        "challenge": 64,
+        "human": 55
+      }
+    },
+    {
+      "id": "public-claim",
+      "title": "Public claim boundary",
+      "objective": "Decide whether a strong claim can be published, revised, quarantined, or rejected under Evidence Docket discipline.",
+      "starting": {
+        "schema": 88,
+        "proof": 59,
+        "eval": 63,
+        "risk": 78,
+        "publicprivate": 90,
+        "rollback": 60,
+        "challenge": 72,
+        "human": 67
+      }
+    }
+  ],
+  "conformanceLevels": [
+    {
+      "level": "L0",
+      "name": "Schema-valid",
+      "threshold": 30
+    },
+    {
+      "level": "L1",
+      "name": "Proof-emitting",
+      "threshold": 45
+    },
+    {
+      "level": "L2",
+      "name": "Eval-gated",
+      "threshold": 58
+    },
+    {
+      "level": "L3",
+      "name": "Rollbackable",
+      "threshold": 70
+    },
+    {
+      "level": "L4",
+      "name": "Attestable",
+      "threshold": 80
+    },
+    {
+      "level": "L5",
+      "name": "Production-governed",
+      "threshold": 90
+    },
+    {
+      "level": "L6",
+      "name": "Cross-institutional",
+      "threshold": 96
+    }
+  ]
+}

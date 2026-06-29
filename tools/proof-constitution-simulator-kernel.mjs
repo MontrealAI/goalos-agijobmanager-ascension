@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const must=(cond,msg)=>{if(!cond){console.error('FAIL · '+msg);process.exit(1)}console.log('PASS · '+msg)};
+must(fs.existsSync('dist/proof-constitution-simulator.html'),'dist proof constitution page exists');
+must(fs.existsSync('dist/proof-constitution-simulator-demo.json'),'dist proof constitution JSON exists');
+const page=fs.readFileSync('dist/proof-constitution-simulator.html','utf8');
+must(/An institution must prove/.test(page),'dist page carries the core constitutional line');
+const policy=JSON.parse(fs.readFileSync('dist/proof-constitution-simulator-demo.json','utf8'));
+must(policy.posture.noWallet===true && policy.posture.zeroNetwork===true, 'dist data remains public-safe');
+fs.writeFileSync('PROOF_CONSTITUTION_SIMULATOR_V32_REPORT.json', JSON.stringify({status:'PASS',page:'proof-constitution-simulator.html',version:'v32-proof-constitution-simulator'}, null, 2));
+console.log('Proof Constitution Simulator v32 kernel PASS');

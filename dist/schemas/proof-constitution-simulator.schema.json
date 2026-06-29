@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProofConstitutionSimulatorDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "posture",
+    "coreDoctrine",
+    "protocolObjects",
+    "gates",
+    "scenarios",
+    "conformanceLevels"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object",
+      "required": [
+        "browserLocal",
+        "zeroNetwork",
+        "noWallet",
+        "noForms",
+        "noAccounts",
+        "noCookies",
+        "noAnalytics",
+        "noUserDataWanted"
+      ]
+    },
+    "coreDoctrine": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "protocolObjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "stage",
+          "purpose",
+          "publicFields",
+          "privateCounterpart"
+        ]
+      }
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "weight",
+          "explain"
+        ]
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "objective",
+          "starting"
+        ]
+      }
+    },
+    "conformanceLevels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "level",
+          "name",
+          "threshold"
+        ]
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@
   "agialphaTokenBoundary": "PASS",
   "zeroNetworkPublisher": "PASS",
   "pathspecProofPublisher": "PASS",
+  "workflowReferenceAuditor": "PASS",
   "userDelightDemos": "PASS",
   "multiAgentInstitution": "PASS",
   "proofToActionTheatre": "PASS",
@@ -24,5 +25,6 @@
   "proofCarryingArtifactPassport": "PASS",
   "proofConditionedRouterObservatory": "PASS",
   "ascensionFlightDeck": "PASS",
+  "proofConstitutionSimulator": "PASS",
   "vendoredDependencies": "PASS"
 }

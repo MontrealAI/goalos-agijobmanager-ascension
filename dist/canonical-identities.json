@@ -1,0 +1,23 @@
+{
+  "repository": "MontrealAI/goalos-agijobmanager-ascension",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "chain": {
+    "name": "Ethereum Mainnet",
+    "chainId": 1
+  },
+  "contracts": {
+    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "AGIALPHA": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA"
+  },
+  "authority": "PUBLIC_READ_ONLY",
+  "externalActions": 0,
+  "tokenBoundary": {
+    "status": "pre_existing_public_market_token",
+    "notAvailableFromProject": true,
+    "noPrimarySaleByMontrealAI": true,
+    "noCustodyByProject": true,
+    "noPriceOrLiquiditySupport": true,
+    "thirdPartyMarketsOnly": true,
+    "verificationInstruction": "Verify the exact Ethereum Mainnet checksum address before interacting with any token or market surface."
+  }
+}

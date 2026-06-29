@@ -2,7 +2,7 @@
   "status": "PASS",
   "release": "v11-final-assurance-kernel",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "checkedAt": "2026-06-29T14:20:16.351Z",
+  "checkedAt": "2026-06-29T15:23:33.719Z",
   "checks": {
     "passed": 90,
     "failed": 0,
@@ -18,8 +18,8 @@
   "fileHashes": [
     {
       "path": "site/index.html",
-      "sha256": "7bfa51f7b47c3229fa89b0f50679802ef33ea75635e219ab8807432aa03254b9",
-      "bytes": 23367
+      "sha256": "3a2a2e6e3bbd2990479f9a78d2a53b4e947bd1ae1662fd7f2075cd147282fc2b",
+      "bytes": 24360
     },
     {
       "path": "site/operator-console.html",

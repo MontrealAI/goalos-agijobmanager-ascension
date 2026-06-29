@@ -1,0 +1,92 @@
+{
+  "version": "v9-mainnet-capability-lock",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "repository": "https://github.com/MontrealAI/goalos-agijobmanager-ascension",
+  "canonicalIdentities": {
+    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "AGIALPHA": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "chainId": 1,
+    "chain": "Ethereum Mainnet"
+  },
+  "capabilities": [
+    {
+      "id": "public-proof-institution",
+      "website": "Public evidence institution with Evidence Docket and verification surfaces",
+      "implementation": [
+        "site/index.html",
+        "site/evidence/index.html",
+        "data/evidence-docket-6-1.json"
+      ]
+    },
+    {
+      "id": "read-only-operator-chamber",
+      "website": "Public operator chamber exports public-safe intent",
+      "implementation": [
+        "site/operator-console.html",
+        "site/assets/atelier.js"
+      ]
+    },
+    {
+      "id": "expert-wallet-connect",
+      "website": "Separated expert console can connect wallet on user request",
+      "implementation": [
+        "site/expert-mainnet-console.html",
+        "site/assets/mainnet-console.js"
+      ]
+    },
+    {
+      "id": "network-switch",
+      "website": "Expert console can request Ethereum Mainnet after typed confirmation",
+      "implementation": [
+        "site/assets/mainnet-console.js"
+      ]
+    },
+    {
+      "id": "exact-token-approval",
+      "website": "Expert console can approve exact AGIALPHA amounts, never unlimited approval",
+      "implementation": [
+        "site/assets/mainnet-console.js"
+      ]
+    },
+    {
+      "id": "mainnet-transaction-broadcast",
+      "website": "Expert console can broadcast contract writes after preflight, gas estimate, terms, and typed confirmation",
+      "implementation": [
+        "site/assets/mainnet-console.js",
+        "data/agijobmanager-action-catalog.json"
+      ]
+    },
+    {
+      "id": "factual-correctness",
+      "website": "Verification room reports canonical identity and live code checks",
+      "implementation": [
+        "tools/factual-correctness.mjs",
+        "site/verification.html"
+      ]
+    },
+    {
+      "id": "automated-assurance",
+      "website": "Automated assurance package approximates audit-style checks without claiming third-party audit status",
+      "implementation": [
+        "tools/automated-assurance.mjs",
+        "docs/AUTOMATED_ASSURANCE.md"
+      ]
+    },
+    {
+      "id": "production-authority",
+      "website": "Web publication authority is active; Mainnet authority remains human wallet signature only",
+      "implementation": [
+        "data/production-authority.json",
+        "site/expert-mainnet-console.html"
+      ]
+    }
+  ],
+  "controls": {
+    "noAutonomousWallet": true,
+    "noUnlimitedApproval": true,
+    "noActionWithoutTypedConfirmation": true,
+    "ethCallPreflightRequired": true,
+    "gasEstimateRequired": true,
+    "humanWalletSignatureRequired": true
+  }
+}

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const must=(cond,msg)=>{if(!cond){console.error('FAIL · '+msg);process.exit(1)}console.log('PASS · '+msg)};
+const files=['site/proof-constitution-simulator.html','site/assets/proof-constitution.css','site/assets/proof-constitution.js','data/proof-constitution-simulator-demo.json','schemas/proof-constitution-simulator.schema.json','docs/PROOF_CONSTITUTION_SIMULATOR_V32.md'];
+for (const f of files) must(fs.existsSync(f), `required file exists: ${f}`);
+const html=fs.readFileSync('site/proof-constitution-simulator.html','utf8');
+const js=fs.readFileSync('site/assets/proof-constitution.js','utf8');
+const data=JSON.parse(fs.readFileSync('data/proof-constitution-simulator-demo.json','utf8'));
+must(/Aim/.test(html)&&/Act/.test(html)&&/Prove/.test(html)&&/Evolve/.test(html),'public doctrine is visible');
+must(/No account/i.test(html)&&/no wallet/i.test(html)&&/no transaction/i.test(html),'public-safe posture is visible');
+must(/GoalOSCommit/.test(JSON.stringify(data))&&/RunCommitment/.test(JSON.stringify(data))&&/ProofPacket/.test(JSON.stringify(data))&&/SelectionCertificate/.test(JSON.stringify(data)),'protocol objects are encoded');
+must(data.gates.length>=8,'hard gate set is complete');
+must(data.conformanceLevels.some(x=>x.level==='L6'),'L0-L6 conformance ladder is represented');
+must(/ConstitutionReceipt/.test(html+js),'receipt export is implemented');
+must(!/<form\b/i.test(html),'no form tag');
+must(!/localStorage|sessionStorage|document\.cookie|fetch\(['"]https?:/i.test(html+js),'no storage, cookies, or external network calls');
+must(data.posture.noUserDataWanted===true&&data.posture.noWallet===true&&data.posture.zeroNetwork===true,'data contract encodes Data-Zero posture');
+console.log('Proof Constitution Simulator v32 PASS');

@@ -1,0 +1,72 @@
+{
+  "name": "GoalOS AGIJobManager Ascension Final Assurance Policy",
+  "version": "v11",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "canonicalIdentities": {
+    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "AGIALPHA": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "chainId": 1
+  },
+  "surfaces": {
+    "publicDefaultDeny": [
+      "site/index.html",
+      "site/operator-console.html",
+      "site/sovereign-machine-economy.html",
+      "site/evidence/index.html",
+      "site/architecture.html",
+      "site/verification.html",
+      "site/assurance.html"
+    ],
+    "expertMainnet": [
+      "site/expert-console.html",
+      "site/assets/expert-console.js"
+    ],
+    "legacyHandoff": [
+      "https://montrealai.github.io/agijobmanagerv0.html"
+    ]
+  },
+  "hardBoundaries": [
+    "public pages do not auto-connect wallets",
+    "public pages do not request token approvals",
+    "public pages do not switch networks",
+    "public pages do not broadcast Mainnet transactions",
+    "expert console requires explicit wallet connection",
+    "expert console requires Mainnet switch by user action",
+    "expert console uses exact AGIALPHA approvals only",
+    "expert console requires simulation and gas estimate before broadcast",
+    "expert console requires typed production phrase and wallet signature",
+    "private keys are never stored",
+    "public proof commitments remain separate from private intelligence"
+  ],
+  "requiredProtocolObjects": [
+    "GoalOSCommit",
+    "RunCommitment",
+    "ProofPacket",
+    "EvalAttestation",
+    "SelectionCertificate",
+    "Evidence Docket",
+    "RollbackReceipt"
+  ],
+  "requiredAGIAlphaLineage": [
+    "META-AGENTIC \u03b1-AGI",
+    "AGI Alpha Node v0",
+    "AGI Jobs v0 (v2)",
+    "AGIJobManager",
+    "Sovereign Machine Economy"
+  ],
+  "requiredLifecycleActions": [
+    "createJob",
+    "applyForJob",
+    "requestJobCompletion",
+    "validateJob",
+    "disapproveJob",
+    "disputeJob",
+    "finalizeJob",
+    "expireJob",
+    "cancelJob",
+    "resolveDisputeWithCode",
+    "lockJobENS"
+  ],
+  "evidenceStandard": "Evidence Docket 6.1",
+  "claimBoundary": "This is a public implementation and automated assurance system, not a legal third-party audit opinion or a claim of autonomous production authority."
+}

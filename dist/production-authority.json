@@ -1,0 +1,8 @@
+{
+  "status": "WEB_PUBLICATION_ACTIVE",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "mainnetOperations": "HUMAN_WALLET_SIGNATURE_REQUIRED",
+  "fundsAuthority": "USER_APPROVAL_AND_WALLET_CONFIRMATION_ONLY",
+  "activatedBy": "GitHub Pages deployment after automated QA",
+  "notAThirdPartyAudit": true
+}

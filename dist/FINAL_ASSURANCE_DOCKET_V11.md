@@ -16,7 +16,7 @@ Boundary: Automated assurance is not a legal third-party audit opinion and does 
 
 ## Critical file hashes
 
-- `7bfa51f7b47c3229fa89b0f50679802ef33ea75635e219ab8807432aa03254b9`  site/index.html
+- `3a2a2e6e3bbd2990479f9a78d2a53b4e947bd1ae1662fd7f2075cd147282fc2b`  site/index.html
 - `6e634a73c1dbce46ea64532dc81e170a4e82e68bcdae6f1423d2f4baee32432a`  site/operator-console.html
 - `0d8ff5a4e0c5867160acf45252e99488359d4d105d61ea4f38d0e563f06402cf`  site/expert-console.html
 - `39de42f01a72e493d5c0ac494610e9a55920d492fbeea0120e808e6b0fa05c3a`  site/sovereign-machine-economy.html

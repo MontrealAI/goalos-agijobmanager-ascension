@@ -22,6 +22,7 @@
       "durationMinutes": 5,
       "summary": "The fastest path to understand the core GoalOS idea from bounded work to governed authority.",
       "steps": [
+        "proof-constitution-simulator",
         "proof-to-action-theatre",
         "proof-gradient-arena",
         "chronicle-compounding-lab"
@@ -54,6 +55,7 @@
       "durationMinutes": 10,
       "summary": "Understand claim discipline, replay, challenge, and boundary enforcement for public-safe demonstrations.",
       "steps": [
+        "proof-constitution-simulator",
         "claim-boundary-firewall",
         "replay-falsification-gauntlet",
         "agialpha-token-boundary"
@@ -61,6 +63,26 @@
     }
   ],
   "demos": [
+    {
+      "id": "proof-constitution-simulator",
+      "title": "Proof Constitution Simulator",
+      "href": "proof-constitution-simulator.html",
+      "audience": [
+        "all",
+        "non-technical",
+        "executive",
+        "advanced",
+        "risk",
+        "legal"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "constitution",
+        "gates",
+        "public-private-boundary"
+      ],
+      "summary": "Run Aim \u2192 Act \u2192 Prove \u2192 Evolve as hard gates and export a public-safe ConstitutionReceipt."
+    },
     {
       "id": "proof-to-action-theatre",
       "title": "Proof-to-Action Theatre",

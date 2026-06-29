@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v31-ascension-flight-deck",
-  "builtAt": "2026-06-29T14:20:59.459830Z",
+  "release": "v32-proof-constitution-simulator",
+  "builtAt": "2026-06-29T15:23:40.209209Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -30,12 +30,12 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "8ab7f92eb29a389cb8b090b4b851668cbc20b39a5c4059013dc6a47f67946ce8",
+      "sha256": "760ee49aec287973251b3b5fd7855ce346592b6240d3faf7672458df5c63b792",
       "bytes": 12605
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.md",
-      "sha256": "18dc4d4cb01f0297beb5cc581c6b2951c73979fe0138eaa552a75b9a5aa1be03",
+      "sha256": "12a56c33a7ce0de154ba2b2fcba104396b44500ac4de014bafdcbda0dbddba38",
       "bytes": 1436
     },
     {
@@ -49,6 +49,11 @@
       "bytes": 1131
     },
     {
+      "path": "GOALOS_AGIJOBMANAGER_CLAIM_BOUNDARY_FIREWALL_V22_REPORT.md",
+      "sha256": "8e314fb3b480fe2d7a9a8fd9d3a9e4831cd94560e1650dd861a23fbd0cdd3cdb",
+      "bytes": 1007
+    },
+    {
       "path": "GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.md",
       "sha256": "98b8df65f614194e729113df7886ef76f959d5b8c1db133759859d54e2df8c45",
       "bytes": 866
@@ -57,6 +62,11 @@
       "path": "GOALOS_AGIJOBMANAGER_PROOF_CONDITIONED_ROUTER_OBSERVATORY_V30_REPORT.md",
       "sha256": "9f1eb4b90935a6daf3b5e520a0cba4e5f393a0ca3f26b54c86ea04d29f1b2d65",
       "bytes": 1419
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_PROOF_CONSTITUTION_SIMULATOR_V32_REPORT.md",
+      "sha256": "76d02dcaa31be5bd77e5b3d562f2d215fed1464cc424f5d0bec767cbd5030235",
+      "bytes": 1523
     },
     {
       "path": "MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.md",
@@ -72,6 +82,11 @@
       "path": "PROOF_BACKED_UPGRADE_FOUNDRY_V25_REPORT.md",
       "sha256": "34ac828334801183f05d7ea998f48a357b0ce03f7d19e64370191f47be112788",
       "bytes": 881
+    },
+    {
+      "path": "PROOF_GOVERNED_INSTITUTION_V17_REPORT.md",
+      "sha256": "539ef78093753d46fd26e66d6927edbb8db79e5825fc3b548e79a786ab3581e4",
+      "bytes": 1925
     },
     {
       "path": "PROOF_GRADIENT_ARENA_V19_REPORT.md",
@@ -119,19 +134,29 @@
       "bytes": 3212
     },
     {
+      "path": "agijobmanager-action-catalog.json",
+      "sha256": "3b06e35cd363513cebd1df116803c44d1f2931b318d0cae630b85600206a5950",
+      "bytes": 1000
+    },
+    {
+      "path": "agijobmanager-expert-action-catalog.json",
+      "sha256": "e29d2d65633b7d18d99b3e8507b8161f3b7b5645e60f67780b09691801b22c1f",
+      "bytes": 1214
+    },
+    {
       "path": "architecture.html",
       "sha256": "b1abaa56f13a5f41e8548f05f4660f88f9057c6143197f542a9a9c6e0b86e570",
       "bytes": 4427
     },
     {
       "path": "ascension-flight-deck-demo.json",
-      "sha256": "f566cc0a55c833435315296e78f212f028d74ab77b34107c45baa08b752abb16",
-      "bytes": 6531
+      "sha256": "7c1e33109f3c36be1b5a76522288651b03d55ea135c7053f31a8b11c896b412b",
+      "bytes": 7162
     },
     {
       "path": "ascension-flight-deck.html",
-      "sha256": "73856542706fef48d2a9e6159e601528a878933c937ebb62187da8132513198c",
-      "bytes": 4723
+      "sha256": "be2221bb27f7b609a5febf5d50ee8eb0e1d21433b6a6dbf39e855232cc9bbc9d",
+      "bytes": 4789
     },
     {
       "path": "ascension-inflow-control-demo.json",
@@ -274,6 +299,16 @@
       "bytes": 9739
     },
     {
+      "path": "assets/proof-constitution.css",
+      "sha256": "e3d63599c9ac42ac43acec55a947154cce206eb26d57fb697b0c5c0bd3ce9c4c",
+      "bytes": 6274
+    },
+    {
+      "path": "assets/proof-constitution.js",
+      "sha256": "7d23e5f91ccf632abff920fd0174f4ada787b34b89c9a6e532c032145c349484",
+      "bytes": 5216
+    },
+    {
       "path": "assets/proof-gradient-arena.css",
       "sha256": "d300311de76a7b3664c30efe1d08e7ec9fbe8bec22786c2d784375b80a5b6782",
       "bytes": 10291
@@ -334,6 +369,11 @@
       "bytes": 3840
     },
     {
+      "path": "canonical-identities.json",
+      "sha256": "9d67b07a97b790414ab740199dec2b8391d5887be79349597b10807dffb4f8e5",
+      "bytes": 817
+    },
+    {
       "path": "capability-conformance.json",
       "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
       "bytes": 1756
@@ -390,8 +430,8 @@
     },
     {
       "path": "data/ascension-flight-deck-demo.json",
-      "sha256": "f566cc0a55c833435315296e78f212f028d74ab77b34107c45baa08b752abb16",
-      "bytes": 6531
+      "sha256": "7c1e33109f3c36be1b5a76522288651b03d55ea135c7053f31a8b11c896b412b",
+      "bytes": 7162
     },
     {
       "path": "data/ascension-inflow-control-demo.json",
@@ -472,6 +512,11 @@
       "path": "data/proof-conditioned-router-observatory-demo.json",
       "sha256": "b06a338f5df1eb482fb4a2384bc196a77f393105d0311430f15f46be1a33c5e6",
       "bytes": 1831
+    },
+    {
+      "path": "data/proof-constitution-simulator-demo.json",
+      "sha256": "11ab82180eb50e554ce2194ac9bd19bfd7d6f593a363a76e3492d968ec973bd8",
+      "bytes": 6736
     },
     {
       "path": "data/proof-governed-institution-demo.json",
@@ -639,6 +684,11 @@
       "bytes": 1419
     },
     {
+      "path": "docs/PROOF_CONSTITUTION_SIMULATOR_V32.md",
+      "sha256": "a7338c6c73fb321f06b3f1d8e3684de8701ab961ad023122eaafe084ff8531cf",
+      "bytes": 844
+    },
+    {
       "path": "docs/PROOF_GOVERNED_INSTITUTION_LAB_V17.md",
       "sha256": "ea1509e64e4faabc7fb737f5483cfcb3ec858c81fba7e69e77220833914163cd",
       "bytes": 1612
@@ -709,6 +759,11 @@
       "bytes": 3757
     },
     {
+      "path": "evidence-docket-6-1.json",
+      "sha256": "12a47c4704b64d5c4d6c9882331f88db0c49b156c0bd17ef4445cba5db54c296",
+      "bytes": 1072
+    },
+    {
       "path": "evidence-docket-court.html",
       "sha256": "41dfe1a0e8aa50decbaa1195954adbe7a3d5e8c02ac3065227b5b8bf7ccf76e0",
       "bytes": 400
@@ -724,9 +779,14 @@
       "bytes": 4905
     },
     {
+      "path": "final-assurance-policy.json",
+      "sha256": "1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e",
+      "bytes": 2328
+    },
+    {
       "path": "index.html",
-      "sha256": "7bfa51f7b47c3229fa89b0f50679802ef33ea75635e219ab8807432aa03254b9",
-      "bytes": 23367
+      "sha256": "3a2a2e6e3bbd2990479f9a78d2a53b4e947bd1ae1662fd7f2075cd147282fc2b",
+      "bytes": 24360
     },
     {
       "path": "legal-boundary-policy.json",
@@ -737,6 +797,11 @@
       "path": "legal.html",
       "sha256": "c990759d51508ead8beebd532d778bf2cb1ece91f2e3a5e7248a66e763213503",
       "bytes": 5821
+    },
+    {
+      "path": "mainnet-capability-contract.json",
+      "sha256": "ffa64f480f4fb7a881ec2a9aab4ea92ea0da382b05e062041c24ee8647d91464",
+      "bytes": 2993
     },
     {
       "path": "mandate-epoch-clearinghouse-demo.json",
@@ -774,9 +839,14 @@
       "bytes": 4060
     },
     {
+      "path": "production-authority.json",
+      "sha256": "2868124481b12ac0d977ee6b50f610dd7517bf86954e01808c9f844fd1c4b7c8",
+      "bytes": 342
+    },
+    {
       "path": "production-url.json",
-      "sha256": "8dfd8953cbcbce334163cf82b05c822e6360b6f8661b3327512915284db850cb",
-      "bytes": 949
+      "sha256": "329e1a9c9a6fc0d92509d6bcbbe2e8bdd0b509c0ee333cfa21fcffb3cff8d78b",
+      "bytes": 1027
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -812,6 +882,16 @@
       "path": "proof-conditioned-router-observatory.html",
       "sha256": "5e0e7bd19aabc9eabd9b970750f34c4400ca65da23c382f2b87ba1e3b401a7a2",
       "bytes": 6803
+    },
+    {
+      "path": "proof-constitution-simulator-demo.json",
+      "sha256": "11ab82180eb50e554ce2194ac9bd19bfd7d6f593a363a76e3492d968ec973bd8",
+      "bytes": 6736
+    },
+    {
+      "path": "proof-constitution-simulator.html",
+      "sha256": "cb5e8fc59ca3654b29dfe46d3f2c2c9c8650554e62fb35ffca0d14055c7c69cb",
+      "bytes": 4525
     },
     {
       "path": "proof-governed-institution-demo.json",
@@ -949,6 +1029,11 @@
       "bytes": 1250
     },
     {
+      "path": "schemas/proof-constitution-simulator.schema.json",
+      "sha256": "ef6855a0d2177d6dcd41e36992574f97004b2c6162e532bff231a2da76855934",
+      "bytes": 1642
+    },
+    {
       "path": "schemas/proof-governed-institution-demo.schema.json",
       "sha256": "ca88fd1b28871ec2c27e1361cd7c0c7088a0c90ff0a0a4764c9c9e4b614a562e",
       "bytes": 1543
@@ -985,8 +1070,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "178c4efa0fcacf68b1690de2665285136c49d88d8df3cbdae33c914ce83bc7bd",
-      "bytes": 6585
+      "sha256": "f1787199709822380fa64ac69980342190fb08be5957c8116f17217d5f1fda1b",
+      "bytes": 10668
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -1010,8 +1095,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "0852239046a6388b69e3c86826d1343db11cb05c9942652d713e254de789d849",
-      "bytes": 7316
+      "sha256": "07de72ad217ad79c2f7bbae3b0cfc7652afd664742dbfdcc5e93f99bf659a49d",
+      "bytes": 7676
     },
     {
       "path": "terms.html",
