@@ -42,6 +42,9 @@
   "experienceConcierge": "PASS",
   "siteRehydration": "PASS",
   "navigationPolishV40": "PASS",
+  "navigationPolishV41": "PASS",
+  "navigationSourcePolishV41": "PASS",
   "menuOverlayConsolidated": "PASS",
+  "singleNativeHeader": "PASS",
   "vendoredDependencies": "PASS"
 }
