@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v33-until-done-mission-control",
-  "builtAt": "2026-06-29T16:04:57.458906Z",
+  "release": "v34-evidence-docket-composer",
+  "builtAt": "2026-06-29T16:32:30.150226Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -30,12 +30,12 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "26cab7f17707200503556d2bbbe71cad9f2446693918076f3f49e814115f25d5",
+      "sha256": "74a84bde3756a1de4b448bec9236fe6f8e5a026e2b53af904366e42d0554fac6",
       "bytes": 12605
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.md",
-      "sha256": "3c55fbcb772cec85d9ad461d0f41ead13d1c63ee868b04ce47fa14b8cb9c3b92",
+      "sha256": "852d7ed96609b4137495cda7812f449f1019decf2657ccac7bc3c5c21e42bad2",
       "bytes": 1436
     },
     {
@@ -52,6 +52,11 @@
       "path": "GOALOS_AGIJOBMANAGER_CLAIM_BOUNDARY_FIREWALL_V22_REPORT.md",
       "sha256": "8e314fb3b480fe2d7a9a8fd9d3a9e4831cd94560e1650dd861a23fbd0cdd3cdb",
       "bytes": 1007
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_EVIDENCE_DOCKET_COMPOSER_V34_REPORT.md",
+      "sha256": "e6d0ef55270096c0b6fd066209172f71b60139c9d574719c368499be764cdb19",
+      "bytes": 1266
     },
     {
       "path": "GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.md",
@@ -160,8 +165,8 @@
     },
     {
       "path": "ascension-flight-deck.html",
-      "sha256": "be2221bb27f7b609a5febf5d50ee8eb0e1d21433b6a6dbf39e855232cc9bbc9d",
-      "bytes": 4789
+      "sha256": "a935c6f87c6ea53b9591b7a86b97e18a2e99bd15f30694a5f926a9185a4cd740",
+      "bytes": 5280
     },
     {
       "path": "ascension-inflow-control-demo.json",
@@ -252,6 +257,16 @@
       "path": "assets/delight.js",
       "sha256": "1760cbe4e8cb2b36e91b8592a933172187ceebc0f6dd87ce0276161ec94e6748",
       "bytes": 9658
+    },
+    {
+      "path": "assets/evidence-docket-composer.css",
+      "sha256": "8878a9dd355b48b8ef5c49486703852a2025d2f296b8ff36cb3a9ef2c4fad94f",
+      "bytes": 6413
+    },
+    {
+      "path": "assets/evidence-docket-composer.js",
+      "sha256": "12036090c6650f859e42fb3cd35f84cb48fceff23ccbdaee8db61560891acb4f",
+      "bytes": 6341
     },
     {
       "path": "assets/experience-stream.css",
@@ -484,6 +499,11 @@
       "bytes": 1072
     },
     {
+      "path": "data/evidence-docket-composer-demo.json",
+      "sha256": "9c4437a8690027fb7536680a97e76a7d85ebb1502feadb725679005beec0ac4f",
+      "bytes": 3943
+    },
+    {
       "path": "data/final-assurance-policy.json",
       "sha256": "1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e",
       "bytes": 2328
@@ -639,6 +659,11 @@
       "bytes": 392
     },
     {
+      "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
+      "sha256": "39719e22673df9ca3b65bf6ab47bf122823634521b736b8149399a0ec6184368",
+      "bytes": 609
+    },
+    {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
       "sha256": "44150fb9772ccbddc916bb7bf054827cf0a800e0d86c89b57d010016b31ac93e",
       "bytes": 607
@@ -789,6 +814,16 @@
       "bytes": 1072
     },
     {
+      "path": "evidence-docket-composer-demo.json",
+      "sha256": "9c4437a8690027fb7536680a97e76a7d85ebb1502feadb725679005beec0ac4f",
+      "bytes": 3943
+    },
+    {
+      "path": "evidence-docket-composer.html",
+      "sha256": "41acc74cde688521f4a1e06bd7ba0d4539060bfa080bbad1d301819737108321",
+      "bytes": 4894
+    },
+    {
       "path": "evidence-docket-court.html",
       "sha256": "41dfe1a0e8aa50decbaa1195954adbe7a3d5e8c02ac3065227b5b8bf7ccf76e0",
       "bytes": 400
@@ -810,8 +845,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "e975063c8d2660dcdb6faba6bc884ebe83bfe458c75adbba1d9212f9d2fa4355",
-      "bytes": 25343
+      "sha256": "12e65c386030153935e6d5ade26e274faa22e5ee37618dc5c7c4bd73a8af909b",
+      "bytes": 25893
     },
     {
       "path": "legal-boundary-policy.json",
@@ -870,8 +905,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "eee8d5515d8e73dac24449ca5115b58653aa000365c03fe2b1a23f497567da1e",
-      "bytes": 1064
+      "sha256": "d322e6bb6ee83d89cf00e999a9cd5cb946c9b34ff6d628f71d65a60dee2c44d1",
+      "bytes": 1100
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -1009,6 +1044,11 @@
       "bytes": 727
     },
     {
+      "path": "schemas/evidence-docket-composer.schema.json",
+      "sha256": "9974735ec89d10777f4f670a51761d57770def07a592f76c4224bc9519979c28",
+      "bytes": 924
+    },
+    {
       "path": "schemas/evidence-docket.schema.json",
       "sha256": "066d02bfdbf9dd46a84c85b69f71213b8e4863ea50106446a185d563720b99a8",
       "bytes": 343
@@ -1100,8 +1140,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "36688f3c15b2dee1d305473a5ea529479c63c98a59d545cade57b30e4638ed6f",
-      "bytes": 11051
+      "sha256": "f278d94cc4e44ff6cd26d644e141e767571ba25ace8499d346ad6f770fad0a91",
+      "bytes": 11428
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -1125,8 +1165,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "0dff1d6e1ae9280cc4fd2cf10705da67ec3bb3f084eb972e3288e706a2166eb4",
-      "bytes": 7732
+      "sha256": "95dfed638a22216ab0d3369f257229774ed08d2733bb6afa7abd88ded02ba647",
+      "bytes": 8282
     },
     {
       "path": "terms.html",

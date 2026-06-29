@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceDocketComposerDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "posture",
+    "protocolObjects",
+    "sections",
+    "presets",
+    "verdicts",
+    "gates"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "protocolObjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "presets": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "verdicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "title": "Evidence Docket Composer",
+  "version": "v34-evidence-docket-composer",
+  "posture": {
+    "browserLocal": true,
+    "zeroExternalNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noLocalStorage": true,
+    "noSessionStorage": true,
+    "noUserDataWanted": true,
+    "noProductionAuthority": true
+  },
+  "canonicalLine": "A proof page is not a marketing page. It is a claim-bound evidence room.",
+  "protocolObjects": [
+    "EvidenceDocket",
+    "ClaimsMatrix",
+    "SourceProvenance",
+    "ProofPacket",
+    "VerifierReport",
+    "RiskLedger",
+    "ReplayPath",
+    "ClaimBoundary",
+    "GovernedDecisionState",
+    "ChronicleEntry"
+  ],
+  "sections": [
+    {
+      "id": "manifest",
+      "title": "Manifest",
+      "purpose": "What is being claimed, by which institution, at which version, under which public/private boundary."
+    },
+    {
+      "id": "claimsMatrix",
+      "title": "Claims Matrix",
+      "purpose": "What is claimed, not claimed, evidence needed, status, and claim boundary."
+    },
+    {
+      "id": "sourceProvenance",
+      "title": "Source Provenance",
+      "purpose": "Which sources, artifacts, commits, logs, or witnesses support the claim."
+    },
+    {
+      "id": "proofPackets",
+      "title": "Proof Packets",
+      "purpose": "Trace roots, output hashes, policy decisions, signatures, costs, latency, and replay references."
+    },
+    {
+      "id": "verifierReport",
+      "title": "Verifier Report",
+      "purpose": "Validator judgments, contradictions, evaluator notes, acceptance, revision, or rejection."
+    },
+    {
+      "id": "riskLedger",
+      "title": "Risk Ledger",
+      "purpose": "Residual risk, blocked actions, safety ledger, privacy boundary, and rollback obligations."
+    },
+    {
+      "id": "replayPath",
+      "title": "Replay Path",
+      "purpose": "How a reviewer can rerun, inspect, challenge, or falsify the evidence."
+    },
+    {
+      "id": "decisionState",
+      "title": "Governed Decision State",
+      "purpose": "What the evidence permits now: publish, revise, quarantine, review, action, or stop."
+    },
+    {
+      "id": "chronicle",
+      "title": "Chronicle Entry",
+      "purpose": "What gets remembered, reused, or explicitly not reused."
+    }
+  ],
+  "presets": [
+    {
+      "id": "architecture-claim",
+      "title": "Architecture claim",
+      "claim": "GoalOS structures autonomous AI work into proof-backed governed decision states.",
+      "defaultEvidence": 73,
+      "defaultReplay": 61,
+      "defaultRisk": 24,
+      "defaultBoundary": 88
+    },
+    {
+      "id": "demo-claim",
+      "title": "Public demo claim",
+      "claim": "This browser-local demo explains the GoalOS proof loop without collecting user data or authorizing external action.",
+      "defaultEvidence": 86,
+      "defaultReplay": 72,
+      "defaultRisk": 14,
+      "defaultBoundary": 96
+    },
+    {
+      "id": "empirical-claim",
+      "title": "Empirical performance claim",
+      "claim": "The system outperforms baseline agents on a real task family.",
+      "defaultEvidence": 38,
+      "defaultReplay": 31,
+      "defaultRisk": 42,
+      "defaultBoundary": 70
+    },
+    {
+      "id": "settlement-claim",
+      "title": "Settlement-readiness claim",
+      "claim": "A bounded unit of machine work is ready for validator review and settlement simulation.",
+      "defaultEvidence": 64,
+      "defaultReplay": 58,
+      "defaultRisk": 30,
+      "defaultBoundary": 84
+    }
+  ],
+  "verdicts": [
+    "PUBLIC_SAFE_DOCKET_READY",
+    "HUMAN_REVIEW_READY",
+    "NEEDS_MORE_EVIDENCE",
+    "QUARANTINE_PRIVATE_APPENDIX",
+    "REJECT_OR_RESTATE_CLAIM"
+  ],
+  "gates": [
+    "claim_explicit",
+    "evidence_support",
+    "source_provenance",
+    "contradiction_coverage",
+    "replay_path",
+    "risk_ledger",
+    "public_private_boundary",
+    "claim_boundary",
+    "human_review"
+  ]
+}

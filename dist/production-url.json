@@ -27,5 +27,6 @@
   "ascensionFlightDeck": "PASS",
   "proofConstitutionSimulator": "PASS",
   "untilDoneMissionControl": "PASS",
+  "evidenceDocketComposer": "PASS",
   "vendoredDependencies": "PASS"
 }
