@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Until-DONE Publisher v33
+name: GoalOS AGIJobManager Ascension Evidence Docket Composer Publisher v34
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Until-DONE Mission Control
+    name: Build, assure, and publish Evidence Docket Composer
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -94,7 +94,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and run existing post-build kernels
+      - name: Build static Pages artifact and run manifest-guarded post-build kernels
         shell: bash
         run: |
           set -euo pipefail
@@ -102,6 +102,8 @@ jobs:
           node tools/run-existing-kernels.mjs
           test -f dist/until-done-mission-control.html
           test -f dist/until-done-mission-control-demo.json
+          test -f dist/evidence-docket-composer.html
+          test -f dist/evidence-docket-composer-demo.json
           test -f dist/proof-constitution-simulator.html
           test -f dist/ascension-flight-deck.html
           test -f dist/legal.html
@@ -119,7 +121,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Until-DONE Mission Control v33"
+          git commit -m "Generate GoalOS Evidence Docket Composer v34"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
