@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Site Navigation Map",
+  "type": "object",
+  "required": [
+    "version",
+    "productionUrl",
+    "posture",
+    "routes",
+    "journeys"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "href",
+          "group",
+          "audience",
+          "time",
+          "summary"
+        ]
+      }
+    },
+    "journeys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "steps"
+        ]
+      }
+    }
+  }
+}

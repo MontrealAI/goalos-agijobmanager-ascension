@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSExperienceHubCatalog",
+  "type": "object",
+  "required": [
+    "release",
+    "productionUrl",
+    "posture",
+    "personas",
+    "paths",
+    "categories",
+    "pages"
+  ],
+  "properties": {
+    "release": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "personas": {
+      "type": "array"
+    },
+    "paths": {
+      "type": "array"
+    },
+    "categories": {
+      "type": "array"
+    },
+    "pages": {
+      "type": "array"
+    }
+  }
+}

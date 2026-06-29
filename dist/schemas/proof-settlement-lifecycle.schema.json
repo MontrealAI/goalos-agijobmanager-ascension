@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSProofSettlementLifecycleDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "coreLaw",
+    "posture",
+    "stages",
+    "gates",
+    "presets"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "coreLaw": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object",
+      "required": [
+        "browserLocal",
+        "zeroNetwork",
+        "noWallet",
+        "noUserDataWanted",
+        "simulatedSettlementOnly",
+        "noProductionAuthority"
+      ]
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 7
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 8
+    },
+    "presets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "description",
+          "values"
+        ]
+      },
+      "minItems": 5
+    }
+  }
+}

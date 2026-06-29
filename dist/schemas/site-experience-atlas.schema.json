@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSSiteExperienceAtlas",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "productionUrl",
+    "posture",
+    "routes",
+    "recommendedPaths"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "href",
+          "category",
+          "description"
+        ]
+      }
+    },
+    "recommendedPaths": {
+      "type": "array"
+    }
+  }
+}
