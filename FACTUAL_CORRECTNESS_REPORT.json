@@ -1,6 +1,1 @@
-{
-  "status": "SKIPPED",
-  "scope": "live Mainnet identity and ERC20 sanity check with AGIALPHA checksum token identity",
-  "error": "fetch failed | fetch failed | fetch failed",
-  "checkedAt": "2026-06-27T18:48:34.368Z"
-}
+{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}
