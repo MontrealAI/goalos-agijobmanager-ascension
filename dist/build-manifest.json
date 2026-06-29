@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v32-proof-constitution-simulator",
-  "builtAt": "2026-06-29T15:23:40.209209Z",
+  "release": "v33-until-done-mission-control",
+  "builtAt": "2026-06-29T16:04:57.458906Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -30,12 +30,12 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "760ee49aec287973251b3b5fd7855ce346592b6240d3faf7672458df5c63b792",
+      "sha256": "26cab7f17707200503556d2bbbe71cad9f2446693918076f3f49e814115f25d5",
       "bytes": 12605
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.md",
-      "sha256": "12a56c33a7ce0de154ba2b2fcba104396b44500ac4de014bafdcbda0dbddba38",
+      "sha256": "3c55fbcb772cec85d9ad461d0f41ead13d1c63ee868b04ce47fa14b8cb9c3b92",
       "bytes": 1436
     },
     {
@@ -67,6 +67,11 @@
       "path": "GOALOS_AGIJOBMANAGER_PROOF_CONSTITUTION_SIMULATOR_V32_REPORT.md",
       "sha256": "76d02dcaa31be5bd77e5b3d562f2d215fed1464cc424f5d0bec767cbd5030235",
       "bytes": 1523
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_UNTIL_DONE_MISSION_CONTROL_V33_REPORT.md",
+      "sha256": "9cd1f949ace953a40e1ba0f8b13fefeb89e00b2595a42eac06993415d01d0517",
+      "bytes": 2295
     },
     {
       "path": "MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.md",
@@ -150,8 +155,8 @@
     },
     {
       "path": "ascension-flight-deck-demo.json",
-      "sha256": "7c1e33109f3c36be1b5a76522288651b03d55ea135c7053f31a8b11c896b412b",
-      "bytes": 7162
+      "sha256": "e2c9e14400a02c401158e81c8e6f638c69e3d953344d1c11c3721bc48c4dff50",
+      "bytes": 7717
     },
     {
       "path": "ascension-flight-deck.html",
@@ -354,6 +359,16 @@
       "bytes": 2984
     },
     {
+      "path": "assets/until-done.css",
+      "sha256": "1404c7f2e760a9a8533ab2c8a3adcc74887080436229b878609d026d5ae03eab",
+      "bytes": 9678
+    },
+    {
+      "path": "assets/until-done.js",
+      "sha256": "c56cad043cb5ee84227863eaaa37c5bee2b0b5277bd5117bebab787fbd4a2db2",
+      "bytes": 6797
+    },
+    {
       "path": "assets/upgrade-foundry.css",
       "sha256": "8e186c0f92756d909b889099fceb4a8356127bf2516d42b5e91b856d35f57694",
       "bytes": 9655
@@ -430,8 +445,8 @@
     },
     {
       "path": "data/ascension-flight-deck-demo.json",
-      "sha256": "7c1e33109f3c36be1b5a76522288651b03d55ea135c7053f31a8b11c896b412b",
-      "bytes": 7162
+      "sha256": "e2c9e14400a02c401158e81c8e6f638c69e3d953344d1c11c3721bc48c4dff50",
+      "bytes": 7717
     },
     {
       "path": "data/ascension-inflow-control-demo.json",
@@ -552,6 +567,11 @@
       "path": "data/sovereign-machine-economy-capability-contract.json",
       "sha256": "026afd4ea5b24fc3b38d0ec1af5fc92312e9ac596b5770dfb852370e24bb04df",
       "bytes": 4718
+    },
+    {
+      "path": "data/until-done-mission-control-demo.json",
+      "sha256": "aea77c0d001422f298d4f6808251402d0cd65fb9b120ab4275bfce1b753122e6",
+      "bytes": 4679
     },
     {
       "path": "demo-lab.html",
@@ -744,6 +764,11 @@
       "bytes": 1217
     },
     {
+      "path": "docs/UNTIL_DONE_MISSION_CONTROL_V33.md",
+      "sha256": "c77800c4df0b3c9dc44772ac5a0585b7473162190bc31949fe64077768342b03",
+      "bytes": 850
+    },
+    {
       "path": "docs/USER_DEMO_LAB_RUNBOOK.md",
       "sha256": "562407b354ce4fdf19daf8fccfdfc92442f691f9ffc2e53fcc500bfcfbd1e034",
       "bytes": 685
@@ -785,8 +810,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "3a2a2e6e3bbd2990479f9a78d2a53b4e947bd1ae1662fd7f2075cd147282fc2b",
-      "bytes": 24360
+      "sha256": "e975063c8d2660dcdb6faba6bc884ebe83bfe458c75adbba1d9212f9d2fa4355",
+      "bytes": 25343
     },
     {
       "path": "legal-boundary-policy.json",
@@ -845,8 +870,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "329e1a9c9a6fc0d92509d6bcbbe2e8bdd0b509c0ee333cfa21fcffb3cff8d78b",
-      "bytes": 1027
+      "sha256": "eee8d5515d8e73dac24449ca5115b58653aa000365c03fe2b1a23f497567da1e",
+      "bytes": 1064
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -1069,9 +1094,14 @@
       "bytes": 1569
     },
     {
+      "path": "schemas/until-done-mission-control.schema.json",
+      "sha256": "d2c2a95167cda3b631d578bb8d75abb25de16f2682abb339d98a87e6bc6bfdd2",
+      "bytes": 948
+    },
+    {
       "path": "sitemap.xml",
-      "sha256": "f1787199709822380fa64ac69980342190fb08be5957c8116f17217d5f1fda1b",
-      "bytes": 10668
+      "sha256": "36688f3c15b2dee1d305473a5ea529479c63c98a59d545cade57b30e4638ed6f",
+      "bytes": 11051
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -1095,8 +1125,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "07de72ad217ad79c2f7bbae3b0cfc7652afd664742dbfdcc5e93f99bf659a49d",
-      "bytes": 7676
+      "sha256": "0dff1d6e1ae9280cc4fd2cf10705da67ec3bb3f084eb972e3288e706a2166eb4",
+      "bytes": 7732
     },
     {
       "path": "terms.html",
@@ -1107,6 +1137,16 @@
       "path": "third-party-responsibility.html",
       "sha256": "fa6ca587e051f83764a4ebfb67858f3ed9a79c2429312ff88e53d519e23b3f12",
       "bytes": 3063
+    },
+    {
+      "path": "until-done-mission-control-demo.json",
+      "sha256": "aea77c0d001422f298d4f6808251402d0cd65fb9b120ab4275bfce1b753122e6",
+      "bytes": 4679
+    },
+    {
+      "path": "until-done-mission-control.html",
+      "sha256": "0ea57877212bb0ffe0c310806330fe101a55d0a6edef6848e29210ee3b3ec1ba",
+      "bytes": 5810
     },
     {
       "path": "vendor/ethers.umd.min.js",

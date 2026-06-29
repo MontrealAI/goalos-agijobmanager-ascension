@@ -22,6 +22,7 @@
       "durationMinutes": 5,
       "summary": "The fastest path to understand the core GoalOS idea from bounded work to governed authority.",
       "steps": [
+        "until-done-mission-control",
         "proof-constitution-simulator",
         "proof-to-action-theatre",
         "proof-gradient-arena",
@@ -63,6 +64,24 @@
     }
   ],
   "demos": [
+    {
+      "id": "until-done-mission-control",
+      "title": "Until-DONE Mission Control",
+      "href": "until-done-mission-control.html",
+      "audience": [
+        "all",
+        "non-technical",
+        "executive",
+        "advanced",
+        "operator"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "state-machine",
+        "core"
+      ],
+      "summary": "Watch GoalOS loop until the Evidence Docket, decision state, action graph, Chronicle, and human-review boundary are complete."
+    },
     {
       "id": "proof-constitution-simulator",
       "title": "Proof Constitution Simulator",
