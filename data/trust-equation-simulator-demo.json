@@ -1,0 +1,145 @@
+{
+  "title": "Trust Equation Simulator",
+  "version": "v35-trust-equation-simulator",
+  "posture": {
+    "browserLocal": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noStorage": true,
+    "noUserDataWanted": true
+  },
+  "equations": {
+    "AIWork": "Output \u00d7 Proof \u00d7 Validation \u00d7 Settlement \u00d7 Reuse",
+    "TrustedWorkZeroLaw": "If Proof = 0, TrustedWork = 0",
+    "MissionValue": "DecisionImpact \u00d7 ProofIntegrity \u00d7 Actionability \u00d7 Reuse \u00f7 (Cost + Risk + Latency + ProofDebt)",
+    "ProofDebt": "Impact \u00d7 Unverified \u00d7 Irreversibility \u00d7 Reuse"
+  },
+  "presets": [
+    {
+      "id": "report-only",
+      "name": "Report-only output",
+      "values": {
+        "output": 92,
+        "proof": 15,
+        "validation": 12,
+        "settlement": 5,
+        "reuse": 18,
+        "decisionImpact": 70,
+        "actionability": 52,
+        "cost": 30,
+        "risk": 62,
+        "latency": 25,
+        "proofDebt": 82
+      },
+      "lesson": "High output cannot substitute for proof."
+    },
+    {
+      "id": "agent-swarm",
+      "name": "Busy agent swarm",
+      "values": {
+        "output": 76,
+        "proof": 34,
+        "validation": 28,
+        "settlement": 18,
+        "reuse": 30,
+        "decisionImpact": 68,
+        "actionability": 61,
+        "cost": 74,
+        "risk": 71,
+        "latency": 66,
+        "proofDebt": 78
+      },
+      "lesson": "Activity without gates creates proof debt."
+    },
+    {
+      "id": "evidence-room",
+      "name": "Evidence-room mission",
+      "values": {
+        "output": 74,
+        "proof": 82,
+        "validation": 79,
+        "settlement": 67,
+        "reuse": 70,
+        "decisionImpact": 78,
+        "actionability": 80,
+        "cost": 42,
+        "risk": 32,
+        "latency": 36,
+        "proofDebt": 24
+      },
+      "lesson": "Evidence turns output into governable work."
+    },
+    {
+      "id": "goalos-ready",
+      "name": "GoalOS-ready governed state",
+      "values": {
+        "output": 86,
+        "proof": 91,
+        "validation": 88,
+        "settlement": 82,
+        "reuse": 84,
+        "decisionImpact": 88,
+        "actionability": 86,
+        "cost": 38,
+        "risk": 25,
+        "latency": 31,
+        "proofDebt": 12
+      },
+      "lesson": "Proof-cleared output can become action and reusable capability."
+    },
+    {
+      "id": "missing-rollback",
+      "name": "Missing rollback boundary",
+      "values": {
+        "output": 84,
+        "proof": 74,
+        "validation": 76,
+        "settlement": 40,
+        "reuse": 72,
+        "decisionImpact": 90,
+        "actionability": 77,
+        "cost": 48,
+        "risk": 78,
+        "latency": 39,
+        "proofDebt": 55
+      },
+      "lesson": "No rollback, no release."
+    }
+  ],
+  "gates": [
+    {
+      "id": "proof-valid",
+      "label": "Proof valid",
+      "source": "proof"
+    },
+    {
+      "id": "eval-pass",
+      "label": "Eval pass",
+      "source": "validation"
+    },
+    {
+      "id": "settlement-ready",
+      "label": "Settlement ready",
+      "source": "settlement"
+    },
+    {
+      "id": "rollback-ready",
+      "label": "Rollback ready",
+      "source": "riskInverse"
+    },
+    {
+      "id": "reuse-bounded",
+      "label": "Reuse bounded",
+      "source": "reuse"
+    },
+    {
+      "id": "claim-boundary",
+      "label": "Claim boundary",
+      "source": "proofDebtInverse"
+    }
+  ]
+}
