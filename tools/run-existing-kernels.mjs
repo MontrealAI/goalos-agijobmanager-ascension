@@ -1,6 +1,30 @@
 import fs from 'node:fs'; import path from 'node:path'; import {spawnSync} from 'node:child_process';
 const productionKernels=[
-  'action-graph-handoff-kernel.mjs','ascension-flight-deck-kernel.mjs','ascension-inflow-control-kernel.mjs','chronicle-compounding-lab-kernel.mjs','claim-boundary-firewall-kernel.mjs','dependency-zero-kernel.mjs','evidence-docket-composer-kernel.mjs','mandate-epoch-clearinghouse-kernel.mjs','multi-agent-institution-kernel.mjs','proof-backed-upgrade-foundry-kernel.mjs','proof-carrying-artifact-passport-kernel.mjs','proof-conditioned-router-observatory-kernel.mjs','proof-constitution-simulator-kernel.mjs','proof-governed-institution-kernel.mjs','proof-gradient-arena-kernel.mjs','proof-to-action-theatre-kernel.mjs','real-task-benchmark-bridge-kernel.mjs','replay-falsification-gauntlet-kernel.mjs','sovereign-experience-stream-kernel.mjs','until-done-mission-control-kernel.mjs','user-delight-kernel.mjs','trust-equation-simulator-kernel.mjs'
+  'action-graph-handoff-kernel.mjs',
+  'ascension-flight-deck-kernel.mjs',
+  'ascension-inflow-control-kernel.mjs',
+  'chronicle-compounding-lab-kernel.mjs',
+  'claim-boundary-firewall-kernel.mjs',
+  'dependency-zero-kernel.mjs',
+  'evidence-docket-composer-kernel.mjs',
+  'mandate-epoch-clearinghouse-kernel.mjs',
+  'multi-agent-institution-kernel.mjs',
+  'proof-backed-upgrade-foundry-kernel.mjs',
+  'proof-carrying-artifact-passport-kernel.mjs',
+  'proof-conditioned-router-observatory-kernel.mjs',
+  'proof-constitution-simulator-kernel.mjs',
+  'proof-governed-institution-kernel.mjs',
+  'proof-gradient-arena-kernel.mjs',
+  'proof-to-action-theatre-kernel.mjs',
+  'real-task-benchmark-bridge-kernel.mjs',
+  'replay-falsification-gauntlet-kernel.mjs',
+  'sovereign-experience-stream-kernel.mjs',
+  'until-done-mission-control-kernel.mjs',
+  'user-delight-kernel.mjs',
+  'trust-equation-simulator-kernel.mjs',
+  'proof-settlement-lifecycle-kernel.mjs',
+  'experience-hub-kernel.mjs',
+  'navigation-system-final-kernel.mjs'
 ];
 let ran=0,skipped=[];
 for(const file of productionKernels){const p=path.join('tools',file); if(!fs.existsSync(p)){skipped.push(file); continue;} console.log(`RUN ${p}`); const r=spawnSync(process.execPath,[p],{stdio:'inherit'}); if(r.status!==0) process.exit(r.status??1); ran++;}

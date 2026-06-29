@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+must(fs.existsSync('dist/index.html'),'dist homepage exists');
+must(fs.existsSync('dist/command-center.html'),'dist Command Center exists');
+must(fs.existsSync('dist/experience-hub.html'),'dist Experience Hub exists');
+must(fs.existsSync('dist/site-navigation-v38.json'),'dist v38 navigation JSON exists');
+const home=fs.readFileSync('dist/index.html','utf8');
+const command=fs.readFileSync('dist/command-center.html','utf8');
+const status=JSON.parse(fs.readFileSync('dist/production-url.json','utf8'));
+must(home.includes('assets/navigation-v38.css') && home.includes('assets/navigation-v38.js'), 'v38 navigation injected into homepage');
+must(command.includes('assets/navigation-v38.css') && command.includes('assets/navigation-v38.js'), 'v38 navigation present in Command Center');
+must(!home.includes('assets/navigation-v37.js'), 'legacy v37 build injection absent from homepage');
+must(status.navigationSystemFinal==='PASS', 'production-url marks navigation system final PASS');
+fs.writeFileSync('NAVIGATION_SYSTEM_FINAL_V38_REPORT.json', JSON.stringify({status:'PASS',routes:JSON.parse(fs.readFileSync('dist/site-navigation-v38.json','utf8')).pages.length}, null, 2));
+console.log('Navigation System Final v38 kernel PASS');

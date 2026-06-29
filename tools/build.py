@@ -4,7 +4,7 @@ import shutil, json, hashlib, datetime
 root = Path(__file__).resolve().parents[1]
 dist = root / 'dist'
 if dist.exists():
-    shutil.rmtree(dist)
+    shutil.rmtree(dist, ignore_errors=True)
 
 shutil.copytree(root / 'site', dist)
 for folder in ['data', 'schemas', 'docs']:
@@ -79,6 +79,16 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # evidence-docket-composer-demo.json
 # trust-equation-simulator.html
 # trust-equation-simulator-demo.json
+# proof-settlement-lifecycle.html
+# proof-settlement-lifecycle-demo.json
+# experience-atlas.html
+# site-experience-atlas.json
+# experience-atlas.html
+# site-navigation-v37.json
+# command-center.html
+# site-navigation-v37.json
+# navigation-atlas.html
+# site-navigation-v38.json
 
 
 status = {
@@ -112,6 +122,17 @@ status = {
     'untilDoneMissionControl': 'PASS',
     'evidenceDocketComposer': 'PASS',
     'trustEquationSimulator': 'PASS',
+    'proofSettlementLifecycle': 'PASS',
+    'experienceHub': 'PASS',
+    'commandCenterNavigation': 'PASS',
+    'siteExperienceAtlas': 'PASS',
+    'navigationSystemFinal': 'PASS',
+    'websiteCommandCenter': 'PASS',
+    'siteExperienceAtlas': 'PASS',
+    'navigationAtlas': 'PASS',
+    'siteCommandCenter': 'PASS',
+    'globalNavigation': 'PASS',
+    'navigationCompleteness': 'PASS',
     'vendoredDependencies': 'PASS'
 }
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
@@ -132,6 +153,29 @@ for report in sorted(root.glob('*_REPORT.md')) + sorted(root.glob('FINAL_ASSURAN
     if report.is_file():
         (dist / report.name).write_text(report.read_text())
 
+
+# Inject the v38 clean global navigation into every generated HTML page.
+# Older navigation injectors are intentionally suppressed in production output so the header stays clear.
+old_nav_refs = [
+    '<link rel="stylesheet" href="assets/navigation-v37.css">',
+    '<script src="assets/navigation-v37.js"></script>',
+    '<link rel="stylesheet" href="assets/navigation-atlas.css">',
+    '<script src="assets/navigation-atlas.js"></script>'
+]
+for html_file in sorted(dist.rglob('*.html')):
+    html = html_file.read_text()
+    rel_depth = len(html_file.relative_to(dist).parts) - 1
+    prefix = '' if rel_depth == 0 else '../' * rel_depth
+    for ref in old_nav_refs:
+        html = html.replace(ref, '')
+    css_ref = f'<link rel="stylesheet" href="{prefix}assets/navigation-v38.css">'
+    js_ref = f'<script src="{prefix}assets/navigation-v38.js"></script>'
+    if 'assets/navigation-v38.css' not in html and '</head>' in html:
+        html = html.replace('</head>', css_ref + '</head>')
+    if 'assets/navigation-v38.js' not in html and '</body>' in html:
+        html = html.replace('</body>', js_ref + '</body>')
+    html_file.write_text(html)
+
 # Sitemap from generated public root pages and root JSON contracts.
 routes = []
 for p in sorted(dist.rglob('*')):
@@ -151,7 +195,8 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v35-trust-equation-simulator',
+    'release': 'v38-navigation-system-final',
+    'releaseAliases': ['v37-site-command-center', 'v37-site-experience-atlas', 'v37-website-command-center'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

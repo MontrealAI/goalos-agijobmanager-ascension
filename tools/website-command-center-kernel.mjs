@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+const ok=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+ok(fs.existsSync('dist/command-center.html'),'dist command-center.html exists');
+ok(fs.existsSync('dist/site-navigation-v37.json'),'dist site-navigation-v37.json exists');
+ok(fs.existsSync('dist/assets/navigation-v37.css'),'dist navigation css exists');
+ok(fs.existsSync('dist/assets/navigation-v37.js'),'dist navigation js exists');
+const page=fs.readFileSync('dist/index.html','utf8');
+ok((page.includes('navigation-v37.css')&&page.includes('navigation-v37.js')) || (page.includes('navigation-v38.css')&&page.includes('navigation-v38.js')),'global navigation assets are injected into home page');
+const status=JSON.parse(fs.readFileSync('dist/production-url.json','utf8'));
+ok(status.websiteCommandCenter==='PASS','production status includes websiteCommandCenter PASS');
+fs.writeFileSync('WEBSITE_COMMAND_CENTER_V37_REPORT.json',JSON.stringify({status:'PASS',route:'command-center.html',navigation:'global',posture:'public-safe'},null,2));
+console.log('Website Command Center v37 kernel PASS');

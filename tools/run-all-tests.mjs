@@ -26,7 +26,13 @@ const productionTests = [
   'ascension-flight-deck.test.mjs',
   'proof-constitution-simulator.test.mjs',
   'until-done-mission-control.test.mjs',
-  'evidence-docket-composer.test.mjs'
+  'evidence-docket-composer.test.mjs',
+  'trust-equation-simulator.test.mjs',
+  'proof-settlement-lifecycle.test.mjs',
+  'navigation-system-final.test.mjs',
+  'website-command-center.test.mjs',
+  'command-center-navigation.test.mjs',
+  'site-experience-atlas.test.mjs'
 ];
 let ran=0, skipped=[];
 for(const file of productionTests){
