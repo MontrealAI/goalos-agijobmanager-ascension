@@ -77,6 +77,8 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # until-done-mission-control-demo.json
 # evidence-docket-composer.html
 # evidence-docket-composer-demo.json
+# trust-equation-simulator.html
+# trust-equation-simulator-demo.json
 
 
 status = {
@@ -109,6 +111,7 @@ status = {
     'proofConstitutionSimulator': 'PASS',
     'untilDoneMissionControl': 'PASS',
     'evidenceDocketComposer': 'PASS',
+    'trustEquationSimulator': 'PASS',
     'vendoredDependencies': 'PASS'
 }
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
@@ -148,7 +151,7 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v34-evidence-docket-composer',
+    'release': 'v35-trust-equation-simulator',
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

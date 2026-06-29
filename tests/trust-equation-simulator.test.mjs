@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const files=['site/trust-equation-simulator.html','site/assets/trust-equation.js','site/assets/trust-equation.css','data/trust-equation-simulator-demo.json','schemas/trust-equation-simulator.schema.json','docs/TRUST_EQUATION_SIMULATOR_V35.md'];
+for(const f of files) must(fs.existsSync(f),`required file exists: ${f}`);
+const html=fs.readFileSync(files[0],'utf8'), js=fs.readFileSync(files[1],'utf8'), data=JSON.parse(fs.readFileSync(files[3],'utf8'));
+const all=html+js;
+must(all.includes('AI Work = Output × Proof × Validation × Settlement × Reuse'),'AI Work trust equation appears');
+must(all.includes('When proof is zero') && all.includes('trusted work is zero'),'zero-proof law is visible');
+must(all.includes('Mission Value') && all.includes('Proof Debt'),'mission value and proof debt are represented');
+must(all.includes('GoalOSTrustEquationReceipt'),'downloadable TrustReceipt is implemented');
+must((all.match(/type=\"range\"/g)||[]).length>=10,'interactive slider surface is substantial');
+for(const bad of ['eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','approve(','MaxUint256','localStorage','sessionStorage','document.cookie','fetch(','XMLHttpRequest','navigator.sendBeacon','<form']) must(!all.includes(bad),`forbidden public demo primitive absent: ${bad}`);
+must(data.posture.noUserDataWanted===true && data.posture.zeroNetwork===true && data.posture.noWallet===true,'data contract encodes public-safe posture');
+must(data.presets.length>=5 && data.gates.length>=6,'presets and gates are present');
+console.log('Trust Equation Simulator v35 PASS');
