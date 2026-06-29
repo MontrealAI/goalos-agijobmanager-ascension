@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v21-ascension-inflow-control-room",
-  "builtAt": "2026-06-28T19:38:39.462980Z",
+  "release": "v22-claim-boundary-firewall",
+  "builtAt": "2026-06-29T03:40:10.934987Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -42,6 +42,16 @@
       "path": "assets/chronicle-lab.js",
       "sha256": "60c63132e9e1d192b1e38860974be13ad2ab38f29151984a5ac588d2b9911e98",
       "bytes": 10664
+    },
+    {
+      "path": "assets/claim-firewall.css",
+      "sha256": "d8169d86140fb37ce1344a98cfacfa557ef47c1d84398110152165bb3cd3a75b",
+      "bytes": 8931
+    },
+    {
+      "path": "assets/claim-firewall.js",
+      "sha256": "63535aef7c9342d7094d118fb8721f2753b499cb770c2940cfb86ed4d52a0bf9",
+      "bytes": 16442
     },
     {
       "path": "assets/delight.css",
@@ -119,6 +129,11 @@
       "bytes": 8441
     },
     {
+      "path": "claim-boundary-firewall.html",
+      "sha256": "ef1e6b096434deee4eddf7e03fb3c523ea0eb6463c36fad42115459974b223bd",
+      "bytes": 9732
+    },
+    {
       "path": "coordination-engine.html",
       "sha256": "a15d9ead56156981c6ea2b6b7c1b2615d6d9348cf786e69114244ce95f5f1c42",
       "bytes": 5800
@@ -162,6 +177,11 @@
       "path": "data/chronicle-compounding-lab-demo.json",
       "sha256": "7a86ce7c34d79ff2e3cd10ca60dcd24e3e5e658e2c7b1dbdc23ee04841141fbe",
       "bytes": 1639
+    },
+    {
+      "path": "data/claim-boundary-firewall-demo.json",
+      "sha256": "12b05bf57df28e49337873a5481227b071026900d4e4b5cea31ad9d5a94b0b2c",
+      "bytes": 2080
     },
     {
       "path": "data/demo-missions.json",
@@ -252,6 +272,11 @@
       "path": "docs/CLAIM_BOUNDARY.md",
       "sha256": "446764c432c0cd964e0acb808a5f200a3c20e58305b96a974c1248a1217ea80f",
       "bytes": 388
+    },
+    {
+      "path": "docs/CLAIM_BOUNDARY_FIREWALL_V22.md",
+      "sha256": "1363ea073d313c452458941ac3807215339f87fcfe3762feb93321b53f12280e",
+      "bytes": 858
     },
     {
       "path": "docs/DATA_ZERO_PRIVACY_POLICY.md",
@@ -369,6 +394,11 @@
       "bytes": 3757
     },
     {
+      "path": "evidence-docket-court.html",
+      "sha256": "41dfe1a0e8aa50decbaa1195954adbe7a3d5e8c02ac3065227b5b8bf7ccf76e0",
+      "bytes": 400
+    },
+    {
       "path": "expert-console.html",
       "sha256": "0d8ff5a4e0c5867160acf45252e99488359d4d105d61ea4f38d0e563f06402cf",
       "bytes": 8130
@@ -380,8 +410,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "3ff5e9a8ae948f0b84eacceb274d8f7749b36358e0f94e475f0e2043f7c40029",
-      "bytes": 15462
+      "sha256": "c8cc79af8f71eb27f8037591fa4f6d14062c4a04f69c124972edb0ba98973d8a",
+      "bytes": 16491
     },
     {
       "path": "legal.html",
@@ -444,6 +474,11 @@
       "bytes": 1139
     },
     {
+      "path": "schemas/claim-boundary-firewall.schema.json",
+      "sha256": "5b2c1215055ee1d3045b671ba9ce2a2b62c82f5d5a90ef1005b71dd022fe86e2",
+      "bytes": 1499
+    },
+    {
       "path": "schemas/demo-mission.schema.json",
       "sha256": "a1c51be61e524425264bb5f13c2a0c710b8714f3b7d72b186621ce66e6e8dddf",
       "bytes": 727
@@ -500,8 +535,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "cf04e476e249ec0e006be1751773de480407fd0e46471c5aeeebc8f94f677dda",
-      "bytes": 4632
+      "sha256": "56a286f93c70c700e4f309b6f90f2aedd0a616ee250fb8a8587064bd8909fe72",
+      "bytes": 4923
     },
     {
       "path": "terms.html",

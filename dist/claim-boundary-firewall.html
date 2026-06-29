@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Claim Boundary Firewall · GoalOS AGIJobManager Ascension</title>
+  <meta name="description" content="A browser-local GoalOS demonstration showing how claims become publishable only after evidence, contradiction, risk, replay, claim-boundary, and human-review gates pass.">
+  <link rel="stylesheet" href="assets/atelier.css">
+  <link rel="stylesheet" href="assets/claim-firewall.css">
+</head>
+<body class="evidence-court">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="ascendField" class="ec-field" aria-hidden="true"></canvas>
+<header class="ec-top">
+  <div class="ec-line">GoalOS AGIJobManager Ascension · Claim Boundary Firewall · local-only · public-safe</div>
+  <div class="ec-wrap ec-nav">
+    <a class="ec-brand" href="./"><span class="ec-mark"></span><span>GoalOS Claim<small>Boundary Firewall</small></span></a>
+    <nav class="ec-links" aria-label="Primary">
+      <a href="./">Home</a>
+      <a href="start.html">Start</a>
+      <a href="proof-to-action-theatre.html">Proof Theatre</a>
+      <a href="proof-gradient-arena.html">Proof Gradient</a>
+      <a href="chronicle-compounding-lab.html">Chronicle Lab</a>
+      <a href="multi-agent-institution.html">Institution Lab</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="ec-hero">
+    <div class="ec-wrap ec-hero-grid">
+      <div>
+        <div class="ec-kicker">Public demo 022 · Claim boundary · Evidence Docket 6.1</div>
+        <h1>A claim enters.<br><span>The firewall</span><br><em>decides.</em></h1>
+        <p class="ec-lead"><strong class="sr-only">Evidence decides.</strong> Run a browser-local proof firewall where a public claim must survive provenance, contradiction, risk, replay, public/private boundary, and human-review gates before it becomes a publishable Evidence Docket.</p>
+        <div class="ec-actions">
+          <a class="ec-btn primary" href="#court">Open the firewall</a>
+          <button class="ec-btn" id="quickRunTop" type="button">Run Verifier Mesh</button>
+          <a class="ec-btn" href="proof-gradient-arena.html">Selection Gate</a>
+        </div>
+        <p class="ec-boundary"><strong>No user data wanted.</strong> Use demo text only. Do not enter personal, confidential, regulated, customer, wallet, seed phrase, private-key, or proprietary information. This page uses no account, no cookies, no analytics, no storage, no wallet, no network request, and no external action.</p>
+      </div>
+      <aside class="ec-chamber" aria-label="Evidence docket visual">
+        <div class="ec-panel-title"><span>Proof room</span><b id="heroStatus">AWAITING CLAIM</b></div>
+        <div class="ec-orbit" id="orbit">
+          <div class="ec-core"><strong>Docket</strong><small>claim-bound proof room</small></div>
+          <div class="ec-ring r1"></div><div class="ec-ring r2"></div><div class="ec-ring r3"></div>
+          <div class="ec-node c1">Claims</div><div class="ec-node c2">Sources</div><div class="ec-node c3">Contradictions</div><div class="ec-node c4">Risk</div><div class="ec-node c5">Replay</div><div class="ec-node c6">Review</div>
+        </div>
+        <div class="ec-stats">
+          <div><strong id="heroPass">0</strong><span>gates pass</span></div>
+          <div><strong id="heroFail">8</strong><span>open gates</span></div>
+          <div><strong id="heroDebt">64</strong><span>proof debt</span></div>
+          <div><strong>0</strong><span>external actions</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="ec-section" id="court">
+    <div class="ec-wrap ec-court-grid">
+      <aside class="ec-card ec-control">
+        <div class="ec-kicker">Claim firewall</div>
+        <h2>Choose a public-safe claim.</h2>
+        <label>Claim preset
+          <select id="preset"></select>
+        </label>
+        <label>Public claim text
+          <textarea id="claim" rows="6" spellcheck="false"></textarea>
+        </label>
+        <div class="ec-sliders">
+          <label>Source provenance <input id="provenance" type="range" min="0" max="100" value="78"><span id="provenanceValue">78</span></label>
+          <label>Evidence support <input id="support" type="range" min="0" max="100" value="74"><span id="supportValue">74</span></label>
+          <label>Contradiction coverage <input id="contradiction" type="range" min="0" max="100" value="66"><span id="contradictionValue">66</span></label>
+          <label>Replay readiness <input id="replay" type="range" min="0" max="100" value="70"><span id="replayValue">70</span></label>
+          <label>Residual risk <input id="risk" type="range" min="0" max="100" value="34"><span id="riskValue">34</span></label>
+        </div>
+        <div class="ec-actions stack">
+          <button class="ec-btn primary" id="runCourt" type="button">Run Verifier Mesh</button>
+          <button class="ec-btn" id="adversarialPass" type="button">Run adversarial pass</button>
+          <button class="ec-btn ghost" id="resetCourt" type="button">Reset</button>
+        </div>
+        <p class="ec-note">The firewall is deterministic and local. It does not verify real-world truth. It teaches the publication discipline: no Evidence Docket, no strong public claim.</p>
+      </aside>
+
+      <section class="ec-card ec-theatre" aria-live="polite">
+        <div class="ec-theatre-head">
+          <div>
+            <div class="ec-kicker">Verifier Mesh</div>
+            <h2 id="verdictTitle">Awaiting docket review.</h2>
+            <p id="verdictText">Run the firewall to see whether the claim can be published, quarantined, revised, or rejected.</p>
+          </div>
+          <div class="ec-verdict" id="verdictBadge">PENDING</div>
+        </div>
+        <div class="ec-gates" id="gates"></div>
+        <div class="ec-metrics">
+          <div><span>Proof integrity</span><b id="proofIntegrity">—</b></div>
+          <div><span>Publication readiness</span><b id="readiness">—</b></div>
+          <div><span>Claim boundary</span><b id="boundary">—</b></div>
+          <div><span>Recommended action</span><b id="action">—</b></div>
+        </div>
+        <div class="ec-trial">
+          <div class="ec-column">
+            <h3>Claims matrix</h3>
+            <ul id="claimsMatrix" class="ec-list"></ul>
+          </div>
+          <div class="ec-column">
+            <h3>Verifier findings</h3>
+            <ul id="verifierFindings" class="ec-list"></ul>
+          </div>
+          <div class="ec-column">
+            <h3>Risk and replay</h3>
+            <ul id="riskReplay" class="ec-list"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="ec-section">
+    <div class="ec-wrap ec-three">
+      <article class="ec-card">
+        <div class="ec-kicker">Public / private boundary</div>
+        <h3>Publish proof, not private intelligence.</h3>
+        <p>Public dockets should show commitments, hashes, summaries, gates, decisions, and claim boundaries. Private prompts, raw customer data, privileged workpapers, and sensitive traces stay outside the public surface.</p>
+      </article>
+      <article class="ec-card">
+        <div class="ec-kicker">Falsification posture</div>
+        <h3>A strong system can show failure.</h3>
+        <p>If evidence is missing, contradictions are unresolved, replay is absent, or risk is too high, the claim is not published as strong. It returns to evidence gathering or human review.</p>
+      </article>
+      <article class="ec-card">
+        <div class="ec-kicker">Downloadable docket</div>
+        <h3>Every run emits a public-safe artifact.</h3>
+        <p>The generated JSON makes the demo inspectable: claim, gates, evidence posture, risk state, replay path, verdict, and non-claims are recorded for review.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="ec-section">
+    <div class="ec-wrap ec-output-grid">
+      <article class="ec-card">
+        <div class="ec-kicker">Chronicle trace</div>
+        <h2>What happened?</h2>
+        <ol id="chronicle" class="ec-trace"></ol>
+      </article>
+      <article class="ec-card">
+        <div class="ec-kicker">Docket JSON</div>
+        <h2>Public-safe Evidence Docket</h2>
+        <pre id="docketJson" class="ec-pre">Run the Verifier Mesh to generate a docket.</pre>
+        <div class="ec-actions">
+          <button class="ec-btn primary" id="downloadDocket" type="button">Download docket JSON</button>
+          <button class="ec-btn" id="copyBrief" type="button">Copy review brief</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="ec-section ec-wide">
+    <div class="ec-wrap ec-card">
+      <div class="ec-kicker">GoalOS publication law</div>
+      <h2>No proof, no settlement. No eval, no propagation. No rollback, no release.</h2>
+      <p>The firewall shows the social contract of GoalOS: claims do not advance because they sound impressive. They advance only when evidence survives review and remains bounded by what was actually shown.</p>
+      <div class="ec-law">
+        <span>Claim</span><span>Evidence</span><span>Contradiction</span><span>Risk</span><span>Replay</span><span>Boundary</span><span>Human review</span><span>Chronicle</span>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="ec-footer">
+  <div class="ec-wrap">© MontrealAI · Evidence Docket Court · Local public demonstration only · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="agialpha-token-boundary.html">AGIALPHA boundary</a></div>
+</footer>
+<script src="assets/claim-firewall.js"></script>
+</body>
+</html>

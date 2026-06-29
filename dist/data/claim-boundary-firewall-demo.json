@@ -1,0 +1,79 @@
+{
+  "schema": "GoalOS.ClaimBoundaryFirewallDemo.v22",
+  "release": "v22-claim-boundary-firewall",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/claim-boundary-firewall.html",
+  "principle": "A public claim becomes publishable only after evidence, contradiction, risk, replay, boundary, and human-review gates pass.",
+  "teachingLine": "No Evidence Docket, no strong public claim.",
+  "publicSafety": {
+    "userDataWanted": false,
+    "accounts": false,
+    "forms": false,
+    "cookies": false,
+    "analytics": false,
+    "browserStorage": false,
+    "walletConnection": false,
+    "networkRequest": false,
+    "transactionBroadcast": false,
+    "productionAuthority": false
+  },
+  "gates": [
+    "claimBounded",
+    "sourceProvenance",
+    "evidenceSupport",
+    "contradictionCoverage",
+    "riskClassed",
+    "replayPath",
+    "publicPrivateBoundary",
+    "humanReview"
+  ],
+  "verdicts": [
+    "PUBLISH_PUBLIC_SAFE_DOCKET",
+    "NEEDS_MORE_EVIDENCE",
+    "QUARANTINE_PRIVATE_APPENDIX",
+    "REJECT_STRONG_CLAIM"
+  ],
+  "demoPresets": [
+    "proof-settled-public-claim",
+    "governed-decision-state",
+    "multi-agent-institution",
+    "safety-boundary"
+  ],
+  "nonClaims": [
+    "No factual certification",
+    "No external audit completion",
+    "No production activation",
+    "No user-data collection",
+    "No investment advice",
+    "No token availability from this site",
+    "No wallet operation",
+    "No Mainnet transaction",
+    "No legal/tax/compliance advice"
+  ],
+  "protocolObjects": [
+    "GoalOSCommit",
+    "ProofPacket",
+    "EvalAttestation",
+    "SelectionCertificate",
+    "EvidenceDocket",
+    "ChronicleEntry"
+  ],
+  "publicPrivateBoundary": {
+    "public": [
+      "claim summary",
+      "hashes",
+      "gate results",
+      "verdict",
+      "non-claims",
+      "replay pointer",
+      "public-safe evidence docket"
+    ],
+    "private": [
+      "raw private prompts",
+      "customer data",
+      "privileged workpapers",
+      "private traces",
+      "sensitive tool outputs",
+      "keys or secrets"
+    ]
+  }
+}

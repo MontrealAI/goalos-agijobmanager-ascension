@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/claim-boundary-firewall.schema.json",
+  "title": "GoalOS Claim Boundary Firewall v22",
+  "type": "object",
+  "required": [
+    "schema",
+    "docketId",
+    "claim",
+    "gateResults",
+    "metrics",
+    "verdict",
+    "nonClaims",
+    "publicPrivateBoundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "GoalOS.ClaimBoundaryFirewall.v22"
+    },
+    "docketId": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "locality": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "riskClass": {
+      "type": "string"
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "publicPrivateBoundary": {
+      "type": "object"
+    },
+    "claimsMatrix": {
+      "type": "array"
+    },
+    "sourceProvenance": {
+      "type": "array"
+    },
+    "gateResults": {
+      "type": "object"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "verdict": {
+      "enum": [
+        "PUBLISH_PUBLIC_SAFE_DOCKET",
+        "NEEDS_MORE_EVIDENCE",
+        "QUARANTINE_PRIVATE_APPENDIX",
+        "REJECT_STRONG_CLAIM"
+      ]
+    },
+    "recommendedAction": {
+      "type": "string"
+    },
+    "nonClaims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "chronicle": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}
