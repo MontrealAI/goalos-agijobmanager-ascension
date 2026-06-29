@@ -1,18 +1,18 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.8.0-navigation-system-final",
+  "version": "3.9.0-experience-concierge-v39",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "python3 tools/build.py",
+    "build": "node tools/site-rehydrate.mjs && python3 tools/build.py && node tools/run-existing-kernels.mjs",
     "verify": "python3 tools/verify.py",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/run-all-tests.mjs",
+    "test": "node tools/site-rehydrate.mjs && python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/run-all-tests.mjs",
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
-    "test:final": "npm test && python3 tools/build.py && node tools/run-existing-kernels.mjs",
+    "test:final": "npm test && npm run build",
     "legal": "node tools/legal-shield-kernel.mjs",
     "test:legal": "npm run legal",
     "token-boundary": "node tools/token-boundary-kernel.mjs",
@@ -64,9 +64,10 @@
     "site-command-center": "node tests/site-command-center.test.mjs && python3 tools/build.py && node tools/site-command-center-kernel.mjs",
     "test:site-command-center": "npm run site-command-center",
     "navigation-final": "node tests/navigation-system-final.test.mjs && python3 tools/build.py && node tools/navigation-system-final-kernel.mjs",
-    "test:navigation-final": "node tests/navigation-system-final.test.mjs && python3 tools/build.py && node tools/navigation-system-final-kernel.mjs"
+    "test:navigation-final": "node tests/navigation-system-final.test.mjs && python3 tools/build.py && node tools/navigation-system-final-kernel.mjs",
+    "rehydrate": "node tools/site-rehydrate.mjs"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension website with complete navigation system, Experience Hub, Command Center, proof demos, evidence rooms, and public-safe boundaries.",
+  "description": "GoalOS AGIJobManager Ascension complete website with Experience Concierge, clean navigation, self-healing route rehydration, and public-safe proof demos.",
   "devDependencies": {}
 }
