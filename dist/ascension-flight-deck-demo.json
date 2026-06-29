@@ -27,7 +27,8 @@
         "proof-constitution-simulator",
         "proof-to-action-theatre",
         "proof-gradient-arena",
-        "chronicle-compounding-lab"
+        "chronicle-compounding-lab",
+        "proof-settlement-lifecycle"
       ]
     },
     {
@@ -299,6 +300,23 @@
         "boundary"
       ],
       "summary": "Explicitly states the token is pre-existing, decentralized, third-party market only, and not offered by the project."
+    },
+    {
+      "id": "proof-settlement-lifecycle",
+      "title": "Proof-Settlement Lifecycle",
+      "href": "proof-settlement-lifecycle.html",
+      "audience": [
+        "all",
+        "advanced",
+        "operator"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "settlement",
+        "proof",
+        "replay"
+      ],
+      "summary": "Run the Request \u2192 Escrow \u2192 Execute \u2192 Proof \u2192 Validate \u2192 Settle \u2192 Chronicle rail and export a public-safe SettlementReceipt."
     }
   ]
 }
