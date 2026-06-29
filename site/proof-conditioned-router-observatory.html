@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proof-Conditioned Router Observatory · GoalOS AGIJobManager Ascension</title>
+<meta name="description" content="A browser-local GoalOS demonstration of proof-conditioned routing: select the smallest sufficient agent constellation, route by evidence, and export a public-safe RoutingReceipt.">
+<link rel="stylesheet" href="assets/atelier.css">
+<link rel="stylesheet" href="assets/router-observatory.css">
+</head>
+<body class="router-page">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="routerStars" class="router-stars" aria-hidden="true"></canvas>
+<header class="router-top">
+  <div class="router-line">GoalOS AGIJobManager Ascension · proof-conditioned routing · browser-local · public-safe</div>
+  <div class="router-wrap router-nav">
+    <a class="router-brand" href="./"><span class="router-mark"></span><span><b>Router Observatory</b><small>coordination policy under proof</small></span></a>
+    <nav aria-label="Primary">
+      <a href="./">Home</a>
+      <a href="start.html">Start</a>
+      <a href="proof-to-action-theatre.html">Proof Theatre</a>
+      <a href="proof-gradient-arena.html">Proof Gradient</a>
+      <a href="real-task-benchmark-bridge.html">Benchmark Bridge</a>
+      <a href="proof-carrying-artifact-passport.html">Artifact Passport</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="router-hero">
+    <div class="router-wrap hero-grid">
+      <div>
+        <p class="eyebrow">R0 → R5 · evidence-state coordination</p>
+        <h1>Route the institution, <span>not the swarm.</span></h1>
+        <p class="lead">Large agent systems become useful when GoalOS selects the smallest sufficient constellation for a mission, binds every role to tool scope, assigns validators, defines stopping rules, and exports a replayable RoutingReceipt.</p>
+        <div class="hero-actions">
+          <button id="runRouter" class="primary">Run router selection</button>
+          <button id="stressRouter">Run adversarial stress</button>
+          <button id="downloadReceipt">Download RoutingReceipt JSON</button>
+        </div>
+        <p class="safety-note">Browser-local demonstration only. Do not enter personal, confidential, regulated, wallet, seed phrase, private-key, customer, or proprietary information. No account, cookie, storage, network request, wallet connection, token route, or transaction broadcast.</p>
+      </div>
+      <aside class="observatory-card" aria-label="Router outcome summary">
+        <div class="card-head"><span>Current routing posture</span><strong id="routerName">R0 · Heuristic Baseline</strong></div>
+        <div class="orbital-map" id="orbitalMap">
+          <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+          <div class="hub">GoalOS<br><small>Router</small></div>
+          <div class="agent a1">Planner</div><div class="agent a2">Worker</div><div class="agent a3">Verifier</div><div class="agent a4">Risk</div><div class="agent a5">Reviewer</div><div class="agent a6">Memory</div>
+        </div>
+        <div class="metric-row">
+          <div><strong id="verifiedWork">0.72</strong><span>verified work</span></div>
+          <div><strong id="riskScore">0.24</strong><span>risk</span></div>
+          <div><strong id="coordinationCost">0.31</strong><span>overhead</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="router-wrap control-grid">
+    <article class="panel control-panel">
+      <div class="panel-title"><span>01</span><h2>Mission manifest</h2></div>
+      <label>Task family</label>
+      <select id="taskFamily">
+        <option value="software-repair">Software repair</option>
+        <option value="policy-tool-use">Policy-bound tool use</option>
+        <option value="scientific-workflow">Scientific / data workflow</option>
+        <option value="agi-jobs-native">AGI Jobs protocol-native task</option>
+        <option value="sovereign-economy">Sovereign Machine Economy rehearsal</option>
+      </select>
+      <label>Public-safe objective</label>
+      <textarea id="objective" maxlength="680">Produce a proof-backed plan for a bounded machine-work mission, including role contracts, allowed tools, validators, evidence bundle requirements, stopping rules, escalation rules, and rollback posture.</textarea>
+      <div class="two"><div><label>Risk class</label><select id="riskClass"><option>low</option><option selected>medium</option><option>high</option></select></div><div><label>Audit mode</label><select id="auditMode"><option selected>institutional</option><option>technical</option><option>executive</option></select></div></div>
+      <p class="mini">No user data wanted. Use fictional or public-safe examples only.</p>
+    </article>
+    <article class="panel slider-panel">
+      <div class="panel-title"><span>02</span><h2>Evidence-state controls</h2></div>
+      <div id="sliders"></div>
+    </article>
+    <article class="panel result-panel">
+      <div class="panel-title"><span>03</span><h2>Routing decision</h2></div>
+      <div class="decision" id="decision">Awaiting router run.</div>
+      <div class="gate-list" id="gateList"></div>
+      <div class="router-code" id="routerReceipt"></div>
+    </article>
+  </section>
+  <section class="router-wrap section-grid">
+    <article class="panel">
+      <p class="eyebrow">Router family</p>
+      <h2>Every router must emit the same contract.</h2>
+      <p>Selected agents, role assignments, subtasks, access graph, tool permissions, budget, validators, stopping rule, escalation rule, proof requirements, rollback target, and public/private boundary.</p>
+      <div class="router-ladder" id="routerLadder"></div>
+    </article>
+    <article class="panel">
+      <p class="eyebrow">Coordination law</p>
+      <h2>Maximum effect is not more agents.</h2>
+      <p>Maximum effect is verified useful work per unit of cost, latency, risk, and proof debt. The router is advisory until validators, evidence, risk, and human-review boundaries agree.</p>
+      <div class="quote">No validator, no stopping rule, no proof bundle — no route.</div>
+    </article>
+  </section>
+  <section class="router-wrap panel receipt-panel">
+    <div class="panel-title"><span>04</span><h2>Chronicle trace</h2></div>
+    <ol id="chronicle" class="chronicle"></ol>
+  </section>
+</main>
+<footer class="router-footer">© MontrealAI · Proof-Conditioned Router Observatory · public-safe browser-local demonstration · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a></footer>
+<script src="assets/router-observatory.js"></script>
+</body>
+</html>
