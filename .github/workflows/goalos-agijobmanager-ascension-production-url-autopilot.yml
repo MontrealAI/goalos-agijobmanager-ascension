@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Flight Deck Publisher v31
+name: GoalOS AGIJobManager Ascension Proof Constitution Publisher v32
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Flight Deck
+    name: Build, assure, and publish Proof Constitution Simulator
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, demos, and Flight Deck
+      - name: Verify implementation, boundaries, workflow references, and all demos
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -79,6 +79,7 @@ jobs:
           python3 tools/verify.py
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
+          node tools/workflow-reference-auditor.mjs
           node tools/run-all-tests.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
@@ -93,18 +94,20 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact with Flight Deck
+      - name: Build static Pages artifact with Proof Constitution Simulator
         shell: bash
         run: |
           set -euo pipefail
           python3 tools/build.py
+          node tools/proof-constitution-simulator-kernel.mjs
           node tools/ascension-flight-deck-kernel.mjs
           node tools/proof-conditioned-router-observatory-kernel.mjs
+          test -f dist/proof-constitution-simulator.html
+          test -f dist/proof-constitution-simulator-demo.json
           test -f dist/ascension-flight-deck.html
-          test -f dist/ascension-flight-deck-demo.json
           test -f dist/proof-conditioned-router-observatory.html
-          test -f dist/agialpha-token-boundary.html
           test -f dist/legal.html
+          test -f dist/agialpha-token-boundary.html
 
       - name: Commit generated source with retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source != false }}
@@ -118,7 +121,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Ascension Flight Deck v31"
+          git commit -m "Generate GoalOS Proof Constitution Simulator v32"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
