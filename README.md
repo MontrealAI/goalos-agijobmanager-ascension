@@ -1,3 +1,7 @@
+## Navigation Polish v40
+
+Final website polish: native page headers preserved, one floating Site Command, no stacked menu overlays, and failsafe site rehydration in the publisher.
+
 ## Navigation System Final v38
 
 The public website now has a complete user-friendly navigation system: a concise homepage, Experience Hub, Command Center, Navigation Atlas, global Explore menu, guided journeys, and machine-readable route map. Public pages remain default-deny: no accounts, no forms, no analytics, no cookies, no public wallet connection, no token route, and no user data wanted.

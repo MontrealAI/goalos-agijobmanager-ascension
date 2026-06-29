@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.9.0-experience-concierge-v39",
+  "version": "4.0.0-navigation-polish-failsafe",
   "private": true,
   "type": "module",
   "scripts": {
@@ -68,6 +68,6 @@
     "rehydrate": "node tools/site-rehydrate.mjs"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension complete website with Experience Concierge, clean navigation, self-healing route rehydration, and public-safe proof demos.",
+  "description": "GoalOS AGIJobManager Ascension complete website with polished navigation and failsafe publishing.",
   "devDependencies": {}
 }
