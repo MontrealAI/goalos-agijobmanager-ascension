@@ -10,7 +10,7 @@
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-29T23:04:25.869158Z",
+  "builtAt": "2026-06-29T23:30:36.305407Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -39,7 +39,7 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "9406ce746709c68f4649cf10b1304410e7d29c01aee7abad4d1ff287357ad82a",
+      "sha256": "b3fac14c06eb4c4d4b48ad3bb5920e68570933938a32b239c30af15c812c1c25",
       "bytes": 12605
     },
     {
@@ -958,9 +958,19 @@
       "bytes": 1638
     },
     {
+      "path": "docs/AGIALPHA_BOUNDARY.md",
+      "sha256": "b16640ad5888574fcf536575a31606e94234ac85b0c181c843315c386cd56869",
+      "bytes": 489
+    },
+    {
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
       "sha256": "1002f8fd8222e25e7d40f5cfc546afd631a101b728b6df612cd8dd134698ce02",
       "bytes": 2761
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "aee9a544e5926d7aa9db01e33558d82e95de79de0d91bcc96ae2faae469b4d68",
+      "bytes": 3356
     },
     {
       "path": "docs/ASCENSION_FLIGHT_DECK_V31.md",
@@ -989,8 +999,8 @@
     },
     {
       "path": "docs/CLAIM_BOUNDARY.md",
-      "sha256": "446764c432c0cd964e0acb808a5f200a3c20e58305b96a974c1248a1217ea80f",
-      "bytes": 388
+      "sha256": "5f8c264311d579fbce5b63c7838d1444acb6b550992cc16852acd7e5231839ad",
+      "bytes": 519
     },
     {
       "path": "docs/CLAIM_BOUNDARY_FIREWALL_V22.md",
@@ -1003,9 +1013,19 @@
       "bytes": 681
     },
     {
+      "path": "docs/CONTRIBUTING.md",
+      "sha256": "8ed7af9749a6e3855283a3b3cf134330d90a7ff46eae48fdd2a467fe3bcd28d6",
+      "bytes": 536
+    },
+    {
       "path": "docs/DATA_ZERO_PRIVACY_POLICY.md",
       "sha256": "66eff425db7a6a7df3afe8dde118076e0ecee681997bb6e6a8dd1da28382396e",
       "bytes": 2434
+    },
+    {
+      "path": "docs/DEMO_CATALOG.md",
+      "sha256": "33b91dbeeacdbcca6ab26213fec5d6e3185ead224d8b9a8bda539afaff606ef5",
+      "bytes": 8299
     },
     {
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
@@ -1016,6 +1036,11 @@
       "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
       "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
       "bytes": 1354
+    },
+    {
+      "path": "docs/DEPLOYMENT_GITHUB_WEB_UI.md",
+      "sha256": "e479fe6d6bc71fd84220726c94f2cb24ad100a296ba1dfbec53f760c721cb777",
+      "bytes": 691
     },
     {
       "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
@@ -1038,9 +1063,19 @@
       "bytes": 607
     },
     {
+      "path": "docs/FAQ.md",
+      "sha256": "239a9233f9df0789f6db0530e6ea2e5192940d125737fbcac37968c9498cdc1e",
+      "bytes": 1011
+    },
+    {
       "path": "docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
       "sha256": "f14a13329522751a6a3779c679f78292ac4da8931219b465a012f29f44f906d0",
       "bytes": 1459
+    },
+    {
+      "path": "docs/GETTING_STARTED.md",
+      "sha256": "ccdb6c668b834c801623132227b5e2a69eb78f2be419031e9d9349c991973d0e",
+      "bytes": 925
     },
     {
       "path": "docs/INVESTMENT_AND_TOKEN_BOUNDARY.md",
@@ -1133,6 +1168,11 @@
       "bytes": 1046
     },
     {
+      "path": "docs/PROOF_OBJECTS.md",
+      "sha256": "d989eb4b63f3daae5fa0a76bc4b384fbbe9102555b2e6b704bdda85fb0f56692",
+      "bytes": 1469
+    },
+    {
       "path": "docs/PROOF_SETTLEMENT_LIFECYCLE_V36.md",
       "sha256": "fde3edb072797042b3319a2d29f8f83635da5e22d6fb6a33f6d0d205cd75aeb7",
       "bytes": 496
@@ -1148,14 +1188,29 @@
       "bytes": 1389
     },
     {
+      "path": "docs/README.md",
+      "sha256": "f04a57a87294a3ca7a1c4319fbfce5b5b78d5f9acd675265cc903bc1d44ff082",
+      "bytes": 1259
+    },
+    {
       "path": "docs/REAL_TASK_BENCHMARK_BRIDGE_V27.md",
       "sha256": "efeda34a731518d1699c980219ebf259bddaa7063863fada3ffe9c7414ab3996",
       "bytes": 1106
     },
     {
+      "path": "docs/RELEASE_CHECKLIST.md",
+      "sha256": "6a5735f77e6f9339e6b1df2d71632123d46ef7f92e08743cf438d26390509895",
+      "bytes": 306
+    },
+    {
       "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
       "sha256": "c8d5f3e9b1411a9d81783f40218a7b29c217520128643eb563977bd0b8833192",
       "bytes": 1791
+    },
+    {
+      "path": "docs/SECURITY_PRIVACY_BOUNDARY.md",
+      "sha256": "2888d38680cbfe552b6acf34343df1553ea421f892e2b8aebc9193845d34b7cf",
+      "bytes": 659
     },
     {
       "path": "docs/SITE_COMMAND_CENTER_V37.md",
@@ -1188,6 +1243,11 @@
       "bytes": 1217
     },
     {
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "26478241accf19e8732d0ffe383ed59365d5717b5f14890b051002649efca8d3",
+      "bytes": 867
+    },
+    {
       "path": "docs/TRUST_EQUATION_SIMULATOR_V35.md",
       "sha256": "d85f14010a7a1f5e884ef608690968a855d59e3d2794967bca358782b2375a2d",
       "bytes": 623
@@ -1206,6 +1266,16 @@
       "path": "docs/WEBSITE_COMMAND_CENTER_V37.md",
       "sha256": "6f36372a276c13aa92c089f1df82b715a97d030a5cb913b22704b84a88309c09",
       "bytes": 641
+    },
+    {
+      "path": "docs/WORKFLOW_AUTOPILOT.md",
+      "sha256": "fbb3b1a3e1b88906377d87cc65e31029e04c1b4eee380bd68d174016d3b15f9a",
+      "bytes": 824
+    },
+    {
+      "path": "docs/releases/V41_DOCUMENTATION_UPGRADE.md",
+      "sha256": "148ff01c3c4c5b5d19c0fe0d4f20a0ced4aa699db7b3f5c2ee65afb53a36503b",
+      "bytes": 1675
     },
     {
       "path": "docs.html",
