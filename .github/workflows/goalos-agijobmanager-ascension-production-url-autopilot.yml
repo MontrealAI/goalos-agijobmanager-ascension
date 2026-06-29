@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Claim Boundary Firewall Publisher v22
+name: GoalOS AGIJobManager Ascension Replay & Falsification Gauntlet Publisher v23
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Claim Boundary Firewall
+    name: Build, assure, and publish Replay & Falsification Gauntlet
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, demos, Chronicle Lab, Inflow Control, and Claim Firewall
+      - name: Verify implementation, boundaries, demos, Claim Firewall, and Replay Gauntlet
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -89,6 +89,7 @@ jobs:
           node tests/chronicle-compounding-lab.test.mjs
           node tests/ascension-inflow-control.test.mjs
           node tests/claim-boundary-firewall.test.mjs
+          node tests/replay-falsification-gauntlet.test.mjs
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
           node tools/automated-assurance.mjs
@@ -102,6 +103,7 @@ jobs:
           node tools/chronicle-compounding-lab-kernel.mjs
           node tools/ascension-inflow-control-kernel.mjs
           node tools/claim-boundary-firewall-kernel.mjs
+          node tools/replay-falsification-gauntlet-kernel.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
               node tools/mainnet-factual-check.mjs
@@ -115,7 +117,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact with Claim Boundary Firewall
+      - name: Build static Pages artifact with Replay & Falsification Gauntlet
         shell: bash
         run: |
           set -euo pipefail
@@ -127,6 +129,7 @@ jobs:
           node tools/chronicle-compounding-lab-kernel.mjs
           node tools/ascension-inflow-control-kernel.mjs
           node tools/claim-boundary-firewall-kernel.mjs
+          node tools/replay-falsification-gauntlet-kernel.mjs
           test -f dist/start.html
           test -f dist/demo-lab.html
           test -f dist/coordination-lab.html
@@ -135,6 +138,7 @@ jobs:
           test -f dist/chronicle-compounding-lab.html
           test -f dist/ascension-inflow-control.html
           test -f dist/claim-boundary-firewall.html
+          test -f dist/replay-falsification-gauntlet.html
           test -f dist/mission-studio.html
           test -f dist/proof-cards.html
           test -f dist/demo-missions.json
@@ -144,6 +148,7 @@ jobs:
           test -f dist/chronicle-compounding-lab-demo.json
           test -f dist/ascension-inflow-control-demo.json
           test -f dist/claim-boundary-firewall-demo.json
+          test -f dist/replay-falsification-gauntlet-demo.json
 
       - name: Commit generated source with retry
         if: ${{ inputs.commit_generated_source != false }}
@@ -157,7 +162,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Claim Boundary Firewall v22"
+          git commit -m "Generate GoalOS Replay & Falsification Gauntlet v23"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
