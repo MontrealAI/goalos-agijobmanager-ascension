@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Replay & Falsification Gauntlet Publisher v23
+name: GoalOS AGIJobManager Ascension Sovereign Experience Stream Publisher v24
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Replay & Falsification Gauntlet
+    name: Build, assure, and publish Sovereign Experience Stream
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, demos, Claim Firewall, and Replay Gauntlet
+      - name: Verify implementation, boundaries, demos, Replay Gauntlet, and Experience Stream
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -104,6 +104,8 @@ jobs:
           node tools/ascension-inflow-control-kernel.mjs
           node tools/claim-boundary-firewall-kernel.mjs
           node tools/replay-falsification-gauntlet-kernel.mjs
+          node tests/sovereign-experience-stream.test.mjs
+          node tools/sovereign-experience-stream-kernel.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
               node tools/mainnet-factual-check.mjs
@@ -117,7 +119,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact with Replay & Falsification Gauntlet
+      - name: Build static Pages artifact with Sovereign Experience Stream
         shell: bash
         run: |
           set -euo pipefail
@@ -130,6 +132,8 @@ jobs:
           node tools/ascension-inflow-control-kernel.mjs
           node tools/claim-boundary-firewall-kernel.mjs
           node tools/replay-falsification-gauntlet-kernel.mjs
+          node tests/sovereign-experience-stream.test.mjs
+          node tools/sovereign-experience-stream-kernel.mjs
           test -f dist/start.html
           test -f dist/demo-lab.html
           test -f dist/coordination-lab.html
@@ -139,6 +143,7 @@ jobs:
           test -f dist/ascension-inflow-control.html
           test -f dist/claim-boundary-firewall.html
           test -f dist/replay-falsification-gauntlet.html
+          test -f dist/sovereign-experience-stream.html
           test -f dist/mission-studio.html
           test -f dist/proof-cards.html
           test -f dist/demo-missions.json
@@ -149,6 +154,7 @@ jobs:
           test -f dist/ascension-inflow-control-demo.json
           test -f dist/claim-boundary-firewall-demo.json
           test -f dist/replay-falsification-gauntlet-demo.json
+          test -f dist/sovereign-experience-stream-demo.json
 
       - name: Commit generated source with retry
         if: ${{ inputs.commit_generated_source != false }}
@@ -162,7 +168,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Replay & Falsification Gauntlet v23"
+          git commit -m "Generate GoalOS Sovereign Experience Stream v24"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
