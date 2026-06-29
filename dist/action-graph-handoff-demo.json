@@ -1,0 +1,104 @@
+{
+  "release": "v28-action-graph-handoff",
+  "title": "Action Graph Handoff Console",
+  "principle": "Proof does not become authority until it is converted into scoped action, approval, rollback, and Chronicle responsibility.",
+  "publicSafety": {
+    "noAccount": true,
+    "noForms": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noLocalStorage": true,
+    "noSessionStorage": true,
+    "noWalletConnection": true,
+    "noNetworkRequest": true,
+    "noTokenRoute": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "presets": [
+    {
+      "id": "procurement-review",
+      "name": "AI procurement decision",
+      "objective": "Decide whether a public-safe AI procurement package is ready for executive review.",
+      "decision": "Approve a limited pilot only if evidence, cost, risk, rollback, and owner responsibility are visible.",
+      "actions": [
+        "Inspect Evidence Docket",
+        "Assign reviewer owner",
+        "Run reversible pilot",
+        "Monitor proof debt",
+        "Record Chronicle disposition"
+      ],
+      "rollback": "Return to evidence gathering if owner, risk ledger, or replay path is incomplete."
+    },
+    {
+      "id": "software-release",
+      "name": "Software release gate",
+      "objective": "Convert a tested software improvement into a human-review-ready release action graph.",
+      "decision": "Hold release until tests, rollback target, monitoring plan, and signer authority are present.",
+      "actions": [
+        "Validate build",
+        "Check rollback target",
+        "Stage canary",
+        "Open human review",
+        "Chronicle release outcome"
+      ],
+      "rollback": "Revert to previous version when canary health or monitoring fails."
+    },
+    {
+      "id": "market-brief",
+      "name": "Market intelligence handoff",
+      "objective": "Turn a public-safe market brief into an action graph for strategic review.",
+      "decision": "Escalate only bounded options with explicit uncertainty and contradiction notes.",
+      "actions": [
+        "Review claims matrix",
+        "Challenge contradictions",
+        "Score options",
+        "Prepare decision deck",
+        "Archive rejected claims"
+      ],
+      "rollback": "Withdraw or downgrade any option whose evidence boundary fails."
+    },
+    {
+      "id": "defensive-security",
+      "name": "Defensive security remediation",
+      "objective": "Prepare a repo-owned defensive remediation package for human review.",
+      "decision": "Allow only safe PR proposal, no external scanning, no auto-merge, and no secret disclosure.",
+      "actions": [
+        "Validate repo-owned scope",
+        "Check safety invariants",
+        "Prepare safe patch",
+        "Request human review",
+        "Monitor delayed outcome"
+      ],
+      "rollback": "Close remediation path if any safety invariant fails or human reviewer requests revision."
+    }
+  ],
+  "handoffObjects": [
+    "GoalOSCommit",
+    "EvidenceDocket",
+    "VerifierReport",
+    "RiskLedger",
+    "GovernedDecisionState",
+    "ActionGraph",
+    "RollbackPlan",
+    "ChronicleEntry"
+  ],
+  "gates": [
+    "Evidence docket sealed",
+    "Contradictions addressed",
+    "Risk ledger bounded",
+    "Rollback target exists",
+    "Responsible owner assigned",
+    "Human authority required",
+    "Public/private boundary preserved",
+    "Action graph scoped"
+  ],
+  "outcomes": [
+    "HUMAN_REVIEW_READY_ACTION_GRAPH",
+    "ACTION_GRAPH_HELD_FOR_REVIEW",
+    "EVIDENCE_DEBT_RETURN_TO_PROOF",
+    "ROLLBACK_REQUIRED",
+    "NEEDS_REVISION_BEFORE_ACTION"
+  ]
+}
