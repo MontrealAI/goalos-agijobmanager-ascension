@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+const fail=m=>{console.error('FAIL · '+m);process.exit(1)}; const ok=m=>console.log('PASS · '+m);
+for(const f of ['site/evidence-docket-composer.html','site/assets/evidence-docket-composer.css','site/assets/evidence-docket-composer.js','data/evidence-docket-composer-demo.json','schemas/evidence-docket-composer.schema.json','docs/EVIDENCE_DOCKET_COMPOSER_V34.md']) if(!fs.existsSync(f)) fail('missing '+f);
+const html=fs.readFileSync('site/evidence-docket-composer.html','utf8'), js=fs.readFileSync('site/assets/evidence-docket-composer.js','utf8'), data=JSON.parse(fs.readFileSync('data/evidence-docket-composer-demo.json','utf8'));
+for(const marker of ['Evidence Docket Composer','A proof page is not a marketing page','Claims Matrix','Verifier Mesh','No user data wanted','No wallet']) if(!(html+js+JSON.stringify(data)).includes(marker)) fail('missing marker '+marker);
+for(const obj of ['EvidenceDocket','ClaimsMatrix','ProofPacket','VerifierReport','RiskLedger','ReplayPath','GovernedDecisionState','ChronicleEntry']) if(!data.protocolObjects.includes(obj)&&!(html+js).includes(obj)) fail('missing protocol object '+obj);
+for(const verdict of ['PUBLIC_SAFE_DOCKET_READY','HUMAN_REVIEW_READY','QUARANTINE_PRIVATE_APPENDIX','REJECT_OR_RESTATE_CLAIM']) if(!JSON.stringify(data).includes(verdict)&&!js.includes(verdict)) fail('missing verdict '+verdict);
+for(const bad of ['<form','localStorage','sessionStorage','document.cookie','fetch(','XMLHttpRequest','WebSocket','navigator.sendBeacon','eth_requestAccounts','ethereum.request','approve(','eth_sendTransaction']) if((html+js).includes(bad)) fail('forbidden primitive '+bad);
+ok('Evidence Docket Composer v34 PASS');

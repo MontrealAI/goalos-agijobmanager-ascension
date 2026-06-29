@@ -25,7 +25,8 @@ const productionTests = [
   'proof-conditioned-router-observatory.test.mjs',
   'ascension-flight-deck.test.mjs',
   'proof-constitution-simulator.test.mjs',
-  'until-done-mission-control.test.mjs'
+  'until-done-mission-control.test.mjs',
+  'evidence-docket-composer.test.mjs'
 ];
 let ran=0, skipped=[];
 for(const file of productionTests){

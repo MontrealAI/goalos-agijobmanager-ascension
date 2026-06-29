@@ -75,6 +75,8 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # proof-constitution-simulator-demo.json
 # until-done-mission-control.html
 # until-done-mission-control-demo.json
+# evidence-docket-composer.html
+# evidence-docket-composer-demo.json
 
 
 status = {
@@ -106,6 +108,7 @@ status = {
     'ascensionFlightDeck': 'PASS',
     'proofConstitutionSimulator': 'PASS',
     'untilDoneMissionControl': 'PASS',
+    'evidenceDocketComposer': 'PASS',
     'vendoredDependencies': 'PASS'
 }
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
@@ -145,7 +148,7 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v33-until-done-mission-control',
+    'release': 'v34-evidence-docket-composer',
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }
