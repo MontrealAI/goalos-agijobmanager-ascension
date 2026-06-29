@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Evidence Docket Composer Publisher v34
+name: GoalOS AGIJobManager Ascension Trust Equation Publisher v35
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Evidence Docket Composer
+    name: Build, assure, and publish Trust Equation Simulator
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -104,6 +104,8 @@ jobs:
           test -f dist/until-done-mission-control-demo.json
           test -f dist/evidence-docket-composer.html
           test -f dist/evidence-docket-composer-demo.json
+          test -f dist/trust-equation-simulator.html
+          test -f dist/trust-equation-simulator-demo.json
           test -f dist/proof-constitution-simulator.html
           test -f dist/ascension-flight-deck.html
           test -f dist/legal.html
@@ -121,7 +123,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Evidence Docket Composer v34"
+          git commit -m "Generate GoalOS Trust Equation Simulator v35"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
