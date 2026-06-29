@@ -39,5 +39,7 @@
   "siteCommandCenter": "PASS",
   "globalNavigation": "PASS",
   "navigationCompleteness": "PASS",
+  "experienceConcierge": "PASS",
+  "siteRehydration": "PASS",
   "vendoredDependencies": "PASS"
 }
