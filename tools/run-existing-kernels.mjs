@@ -24,7 +24,10 @@ const productionKernels=[
   'trust-equation-simulator-kernel.mjs',
   'proof-settlement-lifecycle-kernel.mjs',
   'experience-hub-kernel.mjs',
-  'navigation-system-final-kernel.mjs'
+  'navigation-system-final-kernel.mjs',
+  'experience-concierge-kernel.mjs',
+  'navigation-polish-v40-kernel.mjs',
+  'navigation-polish-v41-kernel.mjs'
 ];
 let ran=0,skipped=[];
 for(const file of productionKernels){const p=path.join('tools',file); if(!fs.existsSync(p)){skipped.push(file); continue;} console.log(`RUN ${p}`); const r=spawnSync(process.execPath,[p],{stdio:'inherit'}); if(r.status!==0) process.exit(r.status??1); ran++;}

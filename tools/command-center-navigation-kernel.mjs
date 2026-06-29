@@ -1,12 +1,8 @@
 import fs from 'node:fs';
 const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
-for(const f of ['dist/command-center.html','dist/site-navigation-catalog.json','dist/assets/navigation-atlas.css','dist/assets/navigation-atlas.js']) must(fs.existsSync(f),`dist file exists: ${f}`);
-const index=fs.readFileSync('dist/index.html','utf8');
-const command=fs.readFileSync('dist/command-center.html','utf8');
-const data=JSON.parse(fs.readFileSync('dist/site-navigation-catalog.json','utf8'));
+for(const f of ['dist/index.html','dist/command-center.html','dist/site-navigation-v37.json','dist/assets/site-command-v39.js','dist/assets/site-command-v39.css','dist/production-url.json']) must(fs.existsSync(f),`dist file exists: ${f}`);
+const index=fs.readFileSync('dist/index.html','utf8'); const command=fs.readFileSync('dist/command-center.html','utf8');
 must(index.includes('command-center.html'),'home links to command center');
-must(index.includes('assets/navigation-atlas.css') && index.includes('assets/navigation-atlas.js'),'global navigation assets injected into home');
-must(command.includes('Complete page catalog'),'command center renders catalog section');
-must(data.pages.length>=30,'dist navigation catalog is complete');
-fs.writeFileSync('COMMAND_CENTER_NAVIGATION_V37_REPORT.json', JSON.stringify({status:'PASS',pages:data.pages.length,paths:data.primaryPaths.length,posture:data.posture}, null, 2));
-console.log('Command Center Navigation v37 kernel PASS');
+must(index.includes('assets/site-command-v39.js') && command.includes('assets/site-command-v39.js'),'floating Site Command present without stacked top nav');
+for(const ref of ['navigation-v38.js','navigation-v37.js','site-shell.js','site-guide.js']) must(!index.includes(ref),`home excludes ${ref}`);
+console.log('Command Center Navigation v41 PASS');

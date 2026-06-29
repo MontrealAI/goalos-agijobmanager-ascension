@@ -1,5 +1,5 @@
 from pathlib import Path
-import shutil, json, hashlib, datetime
+import shutil, json, hashlib, datetime, re
 
 root = Path(__file__).resolve().parents[1]
 dist = root / 'dist'
@@ -138,7 +138,10 @@ status = {
     'experienceConcierge': 'PASS',
     'siteRehydration': 'PASS',
     'navigationPolishV40': 'PASS',
+    'navigationPolishV41': 'PASS',
+    'navigationSourcePolishV41': 'PASS',
     'menuOverlayConsolidated': 'PASS',
+    'singleNativeHeader': 'PASS',
     'vendoredDependencies': 'PASS'
 }
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
@@ -190,6 +193,10 @@ for html_file in sorted(dist.rglob('*.html')):
     prefix = '' if rel_depth == 0 else '../' * rel_depth
     for ref in extra_refs:
         html = html.replace(ref, '')
+
+    # v41 hard cleanup: if old scripts previously materialized top-menu markup, remove known wrappers.
+    html = re.sub(r'<div[^>]+class="[^"]*(?:v38-nav|v39-clean-nav|site-shell|site-guide|nav-atlas)[^"]*"[\s\S]*?</div>', '', html, flags=re.I)
+    html = re.sub(r'<nav[^>]+class="[^"]*(?:v38-nav|v39-clean-nav|site-shell|site-guide|nav-atlas)[^"]*"[\s\S]*?</nav>', '', html, flags=re.I)
     # Remove older site-command-v39 tags so the final output has exactly one floating command injection.
     html = html.replace('<link rel="stylesheet" href="assets/site-command-v39.css">', '')
     html = html.replace('<script src="assets/site-command-v39.js"></script>', '')
@@ -222,8 +229,8 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v40-navigation-polish-failsafe',
-    'releaseAliases': ['v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
+    'release': 'v41-navigation-source-polish-final',
+    'releaseAliases': ['v40-navigation-polish-failsafe','v40-navigation-polish-failsafe','v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

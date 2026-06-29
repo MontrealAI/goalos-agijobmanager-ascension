@@ -32,7 +32,10 @@ const productionTests = [
   'navigation-system-final.test.mjs',
   'website-command-center.test.mjs',
   'command-center-navigation.test.mjs',
-  'site-experience-atlas.test.mjs'
+  'site-experience-atlas.test.mjs',
+  'experience-concierge-v39.test.mjs',
+  'navigation-polish-v40.test.mjs',
+  'navigation-polish-v41.test.mjs'
 ];
 let ran=0, skipped=[];
 for(const file of productionTests){

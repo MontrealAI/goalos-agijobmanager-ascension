@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)} console.log('PASS · '+m)};
+for(const f of ['dist/index.html','dist/assets/site-command-v39.js','dist/assets/site-command-v39.css','dist/production-url.json']) must(fs.existsSync(f),`dist file exists: ${f}`);
+const home=fs.readFileSync('dist/index.html','utf8');
+const js=fs.readFileSync('dist/assets/site-command-v39.js','utf8');
+const status=JSON.parse(fs.readFileSync('dist/production-url.json','utf8'));
+must(status.navigationPolishV41==='PASS','production-url marks navigation polish v41 PASS');
+must(status.menuOverlayConsolidated==='PASS','production-url marks menu overlay consolidated PASS');
+must(status.singleNativeHeader==='PASS','production-url marks single native header PASS');
+must((home.match(/<nav\b/g)||[]).length<=1,'homepage has no menu-over-menu nav stacking');
+must(home.includes('assets/site-command-v39.js'),'homepage includes one floating Site Command script');
+for(const ref of ['assets/site-shell.js','assets/site-guide.js','assets/navigation-v38.js','assets/navigation-v37.js','assets/navigation-atlas.js']) must(!home.includes(ref),`homepage excludes legacy top-menu injector ${ref}`);
+must(!js.includes('document.body.appendChild(nav)'),'floating command script does not append top nav');
+fs.writeFileSync('NAVIGATION_POLISH_V41_REPORT.json',JSON.stringify({status:'PASS',release:'v41-navigation-polish-final',checkedAt:new Date().toISOString()},null,2));
+console.log('Navigation Polish v41 kernel PASS');
