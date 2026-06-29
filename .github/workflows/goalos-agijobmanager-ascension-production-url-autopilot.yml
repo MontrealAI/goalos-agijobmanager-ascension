@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Trust Equation Publisher v35
+name: GoalOS AGIJobManager Ascension Navigation System Final Publisher v38
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Trust Equation Simulator
+    name: Build, assure, and publish Navigation System Final
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, workflow references, and all demos
+      - name: Verify implementation, boundaries, workflow references, navigation, and all demos
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -94,22 +94,29 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and run manifest-guarded post-build kernels
+      - name: Build static Pages artifact and verify navigation system
         shell: bash
         run: |
           set -euo pipefail
           python3 tools/build.py
           node tools/run-existing-kernels.mjs
-          test -f dist/until-done-mission-control.html
-          test -f dist/until-done-mission-control-demo.json
-          test -f dist/evidence-docket-composer.html
-          test -f dist/evidence-docket-composer-demo.json
+          test -f dist/index.html
+          test -f dist/site-atlas.html
+          test -f dist/archive-v36-ascension-chamber.html
+          test -f dist/site-navigation-map.json
+          test -f dist/assets/site-shell.js
+          test -f dist/assets/site-shell.css
+          test -f dist/proof-settlement-lifecycle.html
           test -f dist/trust-equation-simulator.html
-          test -f dist/trust-equation-simulator-demo.json
-          test -f dist/proof-constitution-simulator.html
+          test -f dist/evidence-docket-composer.html
+          test -f dist/until-done-mission-control.html
           test -f dist/ascension-flight-deck.html
           test -f dist/legal.html
           test -f dist/agialpha-token-boundary.html
+          test -f dist/experience-hub.html
+          test -f dist/command-center.html
+          test -f dist/navigation-atlas.html
+          test -f dist/site-navigation-v38.json
 
       - name: Commit generated source with retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source != false }}
@@ -123,7 +130,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Trust Equation Simulator v35"
+          git commit -m "Generate GoalOS Navigation System Final v38"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
