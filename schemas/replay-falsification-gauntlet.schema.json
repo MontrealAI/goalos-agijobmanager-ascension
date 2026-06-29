@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/replay-falsification-gauntlet.schema.json",
+  "title": "GoalOS Replay & Falsification Gauntlet v23",
+  "type": "object",
+  "required": ["schema", "title", "productionRoute", "principle", "publicSafety", "protocolObjects", "gates", "verdicts", "nonClaims"],
+  "properties": {
+    "schema": {"const": "goalos.replay-falsification-gauntlet.v23"},
+    "title": {"type": "string"},
+    "productionRoute": {"const": "/replay-falsification-gauntlet.html"},
+    "principle": {"type": "string"},
+    "publicSafety": {
+      "type": "object",
+      "required": ["noUserDataWanted", "noForms", "noCookies", "noAnalytics", "noLocalStorage", "noSessionStorage", "noWalletConnection", "noNetworkRequest", "noTokenRoute", "noTransactionBroadcast", "noProductionAuthority"]
+    },
+    "protocolObjects": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "gates": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "verdicts": {"type": "array", "minItems": 4, "items": {"type": "string"}},
+    "nonClaims": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+    "presets": {"type": "array", "items": {"type": "object"}}
+  }
+}

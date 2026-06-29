@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const html = fs.readFileSync('site/replay-falsification-gauntlet.html','utf8');
+const js = fs.readFileSync('site/assets/replay-gauntlet.js','utf8');
+const data = JSON.parse(fs.readFileSync('data/replay-falsification-gauntlet-demo.json','utf8'));
+const assert = (cond,msg) => { if(!cond){ console.error(msg); process.exit(1); } };
+assert(html.includes('Replay the proof.'),'hero headline missing');
+assert(html.includes('Try to break'),'falsification headline missing');
+assert(html.includes('No user data wanted'),'data-zero notice missing');
+assert(html.includes('Run replay gauntlet'),'run control missing');
+assert(js.includes('REPLAY_SURVIVED_PUBLIC_SAFE'),'survival verdict missing');
+assert(js.includes('QUARANTINE_PRIVATE_APPENDIX'),'quarantine verdict missing');
+assert(js.includes('REJECT_STRONG_CLAIM'),'reject verdict missing');
+assert(js.includes('missingBaseline') && js.includes('brokenReplay') && js.includes('validatorCollusion'),'falsification probes missing');
+assert(data.protocolObjects.includes('ReplayReceipt') && data.protocolObjects.includes('FalsificationReport'),'protocol objects missing');
+assert(data.gates.length >= 8,'not enough gates');
+assert(data.publicSafety.noNetworkRequest === true && data.publicSafety.noTransactionBroadcast === true,'public safety broken');
+console.log('replay-falsification-gauntlet test PASS');

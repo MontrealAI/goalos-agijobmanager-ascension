@@ -113,3 +113,14 @@ Browser-local public demonstration of regulated open-system inflow: compute, dat
 ## v22 Claim Boundary Firewall
 
 Adds `/claim-boundary-firewall.html`, a browser-local public demonstration of GoalOS claim discipline: a public claim enters the Verifier Mesh and must pass provenance, evidence, contradiction, risk, replay, public/private boundary, and human-review gates before a public-safe Evidence Docket can be exported.
+
+## v23 — Replay & Falsification Gauntlet
+
+The Replay & Falsification Gauntlet adds a browser-local public demonstration of the GoalOS replay standard: a proof claim advances only when it can be replayed, challenged, compared with baselines, bounded by public/private proof rules, and handed to human review.
+
+Routes:
+
+- `/replay-falsification-gauntlet.html`
+- `/replay-falsification-gauntlet-demo.json`
+
+The page remains public-safe: no account, no cookies, no analytics, no storage, no wallet connection, no network request, no token route, no transaction broadcast, and no user data wanted.
