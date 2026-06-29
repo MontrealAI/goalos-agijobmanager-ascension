@@ -69,7 +69,10 @@
     "test:source-navigation-polish": "node tests/source-navigation-polish-v41.test.mjs",
     "navigation-polish-v41": "node tests/navigation-polish-v41.test.mjs && python3 tools/build.py && node tools/navigation-polish-v41-kernel.mjs",
     "test:navigation-polish-v41": "npm run navigation-polish-v41",
-    "test:navigation-polish": "node tests/navigation-polish-v41.test.mjs && python3 tools/build.py && node tools/navigation-polish-v41-kernel.mjs"
+    "test:navigation-polish": "node tests/navigation-polish-v41.test.mjs && python3 tools/build.py && node tools/navigation-polish-v41-kernel.mjs",
+    "docs:check": "node tools/docs-link-checker.mjs",
+    "test:docs": "node tests/documentation.test.mjs",
+    "verify:docs": "npm run docs:check && npm run test:docs"
   },
   "dependencies": {},
   "description": "GoalOS AGIJobManager Ascension complete public evidence institution with corrected single-header navigation and failsafe publisher.",
