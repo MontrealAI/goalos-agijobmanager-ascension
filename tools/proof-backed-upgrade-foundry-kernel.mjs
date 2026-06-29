@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const fail=m=>{ console.error(m); process.exit(1); };
+const required=['site/proof-backed-upgrade-foundry.html','site/assets/upgrade-foundry.css','site/assets/upgrade-foundry.js','data/proof-backed-upgrade-foundry-demo.json','schemas/proof-backed-upgrade-foundry.schema.json','docs/PROOF_BACKED_UPGRADE_FOUNDRY_V25.md'];
+for (const f of required) if(!fs.existsSync(f)) fail(`missing ${f}`);
+const html=fs.readFileSync('site/proof-backed-upgrade-foundry.html','utf8');
+const js=fs.readFileSync('site/assets/upgrade-foundry.js','utf8');
+const build=fs.existsSync('dist/proof-backed-upgrade-foundry.html')?fs.readFileSync('dist/proof-backed-upgrade-foundry.html','utf8'):'';
+for (const s of ['proof-backed upgrade right','hard gates','human review','rollback']) if(!(html.toLowerCase()+build.toLowerCase()).includes(s)) fail(`missing teaching marker ${s}`);
+for (const s of ['ProofValid','EvalPass','RollbackReady','ChallengeCleared','ScopeAuthorized']) if(!js.includes(s)) fail(`missing gate ${s}`);
+for (const bad of ['localStorage','sessionStorage','fetch(','XMLHttpRequest','WebSocket','ethereum.request','sendBeacon']) if(html.includes(bad)||js.includes(bad)) fail(`forbidden primitive: ${bad}`);
+console.log('Proof-Backed Upgrade Foundry kernel PASS');

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const must=(cond,msg)=>{if(!cond){console.error('FAIL · '+msg);process.exit(1)} console.log('PASS · '+msg)};
+const files=['site/until-done-mission-control.html','site/assets/until-done.css','site/assets/until-done.js','data/until-done-mission-control-demo.json','schemas/until-done-mission-control.schema.json','docs/UNTIL_DONE_MISSION_CONTROL_V33.md'];
+for(const f of files) must(fs.existsSync(f),`required file exists: ${f}`);
+const html=fs.readFileSync(files[0],'utf8');
+const js=fs.readFileSync(files[2],'utf8');
+const data=JSON.parse(fs.readFileSync(files[3],'utf8'));
+must(/Until-DONE Mission Control/.test(html),'page names Until-DONE Mission Control');
+must(/Set the objective/.test(html)&&/Run until proof/.test(html),'page communicates core GoalOS promise');
+must(!/<form\b/i.test(html),'no form tag');
+must(!/localStorage|sessionStorage|document\.cookie|fetch\(['\"]https?:/i.test(html+js),'no browser storage, cookies, or external fetch');
+must(data.posture.zeroNetwork===true&&data.posture.noWallet===true&&data.posture.noUserDataWanted===true,'data contract encodes public-safe posture');
+must(data.states.length>=10&&data.states.some(s=>s.id==='DONE'),'DONE state machine is represented');
+must(data.states.some(s=>s.id==='EVIDENCE_DOCKET')&&data.states.some(s=>s.id==='GOVERNED_DECISION_STATE')&&data.states.some(s=>s.id==='ACTION_GRAPH'),'Mission OS artifacts are represented');
+must(/GoalOSUntilDoneMissionReceipt/.test(js),'exportable mission receipt is implemented');
+must(/shouldLoop/.test(js)&&/returning to/i.test(js),'loopback behavior is implemented');
+console.log('Until-DONE Mission Control v33 PASS');

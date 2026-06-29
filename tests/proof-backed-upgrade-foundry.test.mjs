@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+const must=(condition,msg)=>{ if(!condition){ console.error(msg); process.exit(1); } };
+const html=fs.readFileSync('site/proof-backed-upgrade-foundry.html','utf8');
+const js=fs.readFileSync('site/assets/upgrade-foundry.js','utf8');
+const data=JSON.parse(fs.readFileSync('data/proof-backed-upgrade-foundry-demo.json','utf8'));
+for (const s of ['Proof-Backed Upgrade Foundry','SelectionCertificate','RollbackReceipt','No user data wanted','No wallet','No network request']) must(html.includes(s),`missing ${s}`);
+for (const s of ['GoalOSCommit','RunCommitment','ProofPacket','EvalAttestation','SelectionCertificate','RolloutReceipt','RollbackReceipt']) must(js.includes(s),`missing protocol object ${s}`);
+for (const s of ['UPGRADE_RIGHT_GRANTED_AFTER_HUMAN_REVIEW','CANARY_ONLY_NEEDS_MORE_PROOF','ROLLBACK_REQUIRED','REJECT_UPGRADE_RIGHT']) must(js.includes(s),`missing outcome ${s}`);
+for (const bad of ['<form','localStorage','sessionStorage','fetch(','XMLHttpRequest','WebSocket','navigator.sendBeacon','ethereum.request']) must(!html.includes(bad)&&!js.includes(bad),`forbidden primitive present: ${bad}`);
+must(js.includes('d.y-=d.v'),'ascendant particle motion missing');
+must(data.hardGates.length===9,'expected 9 hard gates');
+must(data.publicSafety.noWalletConnection===true,'wallet boundary missing');
+console.log('Proof-Backed Upgrade Foundry v25 PASS');

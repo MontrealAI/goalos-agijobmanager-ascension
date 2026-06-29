@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const must=(cond,msg)=>{if(!cond){console.error('FAIL · '+msg);process.exit(1)} console.log('PASS · '+msg)};
+must(fs.existsSync('dist/until-done-mission-control.html'),'dist Until-DONE page exists');
+must(fs.existsSync('dist/until-done-mission-control-demo.json'),'dist Until-DONE JSON exists');
+const html=fs.readFileSync('dist/until-done-mission-control.html','utf8');
+const json=JSON.parse(fs.readFileSync('dist/until-done-mission-control-demo.json','utf8'));
+must(html.includes('Set the objective')&&html.includes('Run until proof'),'dist page keeps core promise');
+must(json.posture.noWallet&&json.posture.zeroNetwork&&json.posture.noProductionAuthority,'dist data keeps public-safe posture');
+fs.writeFileSync('UNTIL_DONE_MISSION_CONTROL_V33_REPORT.json',JSON.stringify({status:'PASS',page:'until-done-mission-control.html',demo:'until-done-mission-control-demo.json',posture:json.posture},null,2));
+console.log('Until-DONE Mission Control v33 kernel PASS');
