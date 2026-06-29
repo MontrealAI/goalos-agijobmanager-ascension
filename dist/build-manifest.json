@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v22-claim-boundary-firewall",
-  "builtAt": "2026-06-29T03:40:10.934987Z",
+  "release": "v23-replay-falsification-gauntlet",
+  "builtAt": "2026-06-29T13:38:14.366971Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -112,6 +112,16 @@
       "path": "assets/proof-theatre.js",
       "sha256": "5f0481948644b50db54b035ca5955209bd70b4682a85ad5ced8294bc145858d5",
       "bytes": 12664
+    },
+    {
+      "path": "assets/replay-gauntlet.css",
+      "sha256": "88322cf9c9ad43925ce66be4051b4cbaa4399195189b3c998f2f4069bb1bc089",
+      "bytes": 8737
+    },
+    {
+      "path": "assets/replay-gauntlet.js",
+      "sha256": "2b928a51979541df40c0c6a4b07eba4261c79bba6de1c3d9c0b5081f76714e05",
+      "bytes": 14889
     },
     {
       "path": "assets/sovereign-economy.js",
@@ -232,6 +242,11 @@
       "path": "data/proof-to-action-theatre-demo.json",
       "sha256": "81047427362014acd16acf4bba39f8ae970215d78f64c36bb3b06513aa921f12",
       "bytes": 1010
+    },
+    {
+      "path": "data/replay-falsification-gauntlet-demo.json",
+      "sha256": "b4b05bb6a4e9463e07f893f5b6de2cf05f8d64e2eb3c23e9079e7f73796042a3",
+      "bytes": 2661
     },
     {
       "path": "data/sovereign-machine-economy-capability-contract.json",
@@ -364,6 +379,11 @@
       "bytes": 1389
     },
     {
+      "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
+      "sha256": "c8d5f3e9b1411a9d81783f40218a7b29c217520128643eb563977bd0b8833192",
+      "bytes": 1791
+    },
+    {
       "path": "docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md",
       "sha256": "d4cb6455e82068fe8e6dee8e00e0b35a966b8d361be7832eb6313e5ce5a59520",
       "bytes": 1486
@@ -410,8 +430,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "c8cc79af8f71eb27f8037591fa4f6d14062c4a04f69c124972edb0ba98973d8a",
-      "bytes": 16491
+      "sha256": "54e6d8daf96e44ae5379f78708655e8a2e35edadfd5212805a0b130617e2c572",
+      "bytes": 17567
     },
     {
       "path": "legal.html",
@@ -457,6 +477,11 @@
       "path": "regulatory-boundary.html",
       "sha256": "0175c74c33bdf63d1148b942d4d28d2b092682ac0264315b0df5c02034805609",
       "bytes": 3964
+    },
+    {
+      "path": "replay-falsification-gauntlet.html",
+      "sha256": "67faee3d4132b0d13d11212d141a12c68fdeddaee8710cf74b9ae87618a3b037",
+      "bytes": 10366
     },
     {
       "path": "schemas/agialpha-token-boundary.schema.json",
@@ -524,6 +549,11 @@
       "bytes": 1048
     },
     {
+      "path": "schemas/replay-falsification-gauntlet.schema.json",
+      "sha256": "a491eb4e363d33195514b9dc98c6ab1492bba5ba038a2321334d7e7761f99060",
+      "bytes": 1295
+    },
+    {
       "path": "schemas/sovereign-machine-economy.schema.json",
       "sha256": "5c88db9be9163e436a381fa04f2e089a5cb38c479feea2d53db18c6ef4be4479",
       "bytes": 1569
@@ -535,8 +565,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "56a286f93c70c700e4f309b6f90f2aedd0a616ee250fb8a8587064bd8909fe72",
-      "bytes": 4923
+      "sha256": "5678b33d6dbaae7740269ffe7be05bb478b1883abe9117e57d8eb4dff20ffdbd",
+      "bytes": 5212
     },
     {
       "path": "terms.html",

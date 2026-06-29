@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Replay & Falsification Gauntlet · GoalOS AGIJobManager Ascension</title>
+  <meta name="description" content="A browser-local GoalOS demonstration showing that a proof claim survives only if it can be replayed, challenged, compared with baselines, and bounded by a public-safe Evidence Docket.">
+  <link rel="stylesheet" href="assets/atelier.css">
+  <link rel="stylesheet" href="assets/replay-gauntlet.css">
+</head>
+<body class="replay-gauntlet">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="riseField" class="rg-field" aria-hidden="true"></canvas>
+<header class="rg-top">
+  <div class="rg-line">GoalOS AGIJobManager Ascension · Replay & Falsification Gauntlet · local-only · public-safe</div>
+  <div class="rg-wrap rg-nav">
+    <a class="rg-brand" href="./"><span class="rg-mark"></span><span>GoalOS Replay<small>Falsification Gauntlet</small></span></a>
+    <nav class="rg-links" aria-label="Primary">
+      <a href="./">Home</a>
+      <a href="start.html">Start</a>
+      <a href="proof-to-action-theatre.html">Proof Theatre</a>
+      <a href="proof-gradient-arena.html">Proof Gradient</a>
+      <a href="chronicle-compounding-lab.html">Chronicle</a>
+      <a href="claim-boundary-firewall.html">Claim Firewall</a>
+      <a href="evidence/">Evidence</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="rg-hero">
+    <div class="rg-wrap rg-hero-grid">
+      <div>
+        <div class="rg-kicker">Public demo 023 · replay · falsification · independent review</div>
+        <h1>Replay the proof.<br><span>Try to break</span><br><em>the claim.</em></h1>
+        <p class="rg-lead">A browser-local gauntlet for the core GoalOS standard: a claim does not become stronger because it is polished. It becomes stronger only when the evidence can be replayed, compared, challenged, bounded, and handed to a human reviewer.</p>
+        <div class="rg-actions">
+          <a class="rg-btn primary" href="#gauntlet">Open the gauntlet</a>
+          <button class="rg-btn" id="quickReplay" type="button">Run replay now</button>
+          <a class="rg-btn" href="claim-boundary-firewall.html">Claim Firewall</a>
+        </div>
+        <p class="rg-boundary"><strong>No user data wanted.</strong> Use only public-safe demo text. Do not enter personal, confidential, regulated, customer, wallet, seed phrase, private-key, or proprietary information. This page uses No account, No cookies, No analytics, No storage, No wallet, No network request, and No external action.</p>
+      </div>
+      <aside class="rg-dashboard" aria-label="Replay gauntlet dashboard">
+        <div class="rg-panel-title"><span>Replay chamber</span><b id="heroVerdict">AWAITING DOCKET</b></div>
+        <div class="rg-stack" id="heroStack">
+          <div class="rg-chain-item active"><b>01</b><span>GoalOSCommit</span></div>
+          <div class="rg-chain-item"><b>02</b><span>RunCommitment</span></div>
+          <div class="rg-chain-item"><b>03</b><span>ProofPacket</span></div>
+          <div class="rg-chain-item"><b>04</b><span>EvalAttestation</span></div>
+          <div class="rg-chain-item"><b>05</b><span>SelectionCertificate</span></div>
+          <div class="rg-chain-item"><b>06</b><span>ReplayReceipt</span></div>
+          <div class="rg-chain-item"><b>07</b><span>FalsificationReport</span></div>
+        </div>
+        <div class="rg-stats">
+          <div><strong id="heroReplay">0</strong><span>replay score</span></div>
+          <div><strong id="heroFaults">7</strong><span>open faults</span></div>
+          <div><strong id="heroOutcome">PENDING</strong><span>verdict</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="rg-section" id="gauntlet">
+    <div class="rg-wrap rg-grid">
+      <aside class="rg-card rg-controls">
+        <div class="rg-kicker">Docket under test</div>
+        <h2>Choose the claim and the attack.</h2>
+        <label>Replay preset
+          <select id="preset"></select>
+        </label>
+        <label>Public claim under review
+          <textarea id="claimText" rows="5" spellcheck="false"></textarea>
+        </label>
+        <div class="rg-sliders">
+          <label>Trace completeness <input id="trace" type="range" min="0" max="100" value="82"><span id="traceValue">82</span></label>
+          <label>Baseline strength <input id="baseline" type="range" min="0" max="100" value="74"><span id="baselineValue">74</span></label>
+          <label>Replay readiness <input id="replay" type="range" min="0" max="100" value="78"><span id="replayValue">78</span></label>
+          <label>Validator independence <input id="validator" type="range" min="0" max="100" value="72"><span id="validatorValue">72</span></label>
+          <label>Cost/risk accounting <input id="risk" type="range" min="0" max="100" value="68"><span id="riskValue">68</span></label>
+          <label>Public/private boundary <input id="boundary" type="range" min="0" max="100" value="88"><span id="boundaryValue">88</span></label>
+        </div>
+        <fieldset class="rg-attacks" aria-label="Falsification probes">
+          <legend>Falsification probes</legend>
+          <label><input type="checkbox" id="attackBaseline"> Remove the baseline</label>
+          <label><input type="checkbox" id="attackReplay"> Break replay path</label>
+          <label><input type="checkbox" id="attackValidator"> Simulate validator collusion</label>
+          <label><input type="checkbox" id="attackPrivacy"> Inject private-data leakage</label>
+          <label><input type="checkbox" id="attackCost"> Hide cost/risk ledger</label>
+          <label><input type="checkbox" id="attackDrift"> Add silent state drift</label>
+        </fieldset>
+        <div class="rg-actions stack">
+          <button class="rg-btn primary" id="runReplay" type="button">Run replay gauntlet</button>
+          <button class="rg-btn" id="runFalsification" type="button">Run adversarial replay</button>
+          <button class="rg-btn ghost" id="reset" type="button">Reset</button>
+        </div>
+      </aside>
+
+      <section class="rg-card rg-theatre" aria-live="polite">
+        <div class="rg-theatre-head">
+          <div>
+            <div class="rg-kicker">Replay verdict</div>
+            <h2 id="verdictTitle">Awaiting replay.</h2>
+            <p id="verdictText">Run the gauntlet to see whether the claim survives replay, baseline comparison, validator challenge, privacy boundary, and drift checks.</p>
+          </div>
+          <div class="rg-verdict" id="verdictBadge">PENDING</div>
+        </div>
+        <div class="rg-flow" id="flow"></div>
+        <div class="rg-meters">
+          <div><span>Replayability</span><b id="mReplay">—</b></div>
+          <div><span>Falsifiability</span><b id="mFalsify">—</b></div>
+          <div><span>Evidence integrity</span><b id="mIntegrity">—</b></div>
+          <div><span>Promotion posture</span><b id="mPosture">—</b></div>
+        </div>
+        <div class="rg-result-grid">
+          <article>
+            <h3>Baseline ladder</h3>
+            <ul id="baselineList" class="rg-list"></ul>
+          </article>
+          <article>
+            <h3>Replay findings</h3>
+            <ul id="replayFindings" class="rg-list"></ul>
+          </article>
+          <article>
+            <h3>Falsification result</h3>
+            <ul id="falsificationFindings" class="rg-list"></ul>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="rg-section">
+    <div class="rg-wrap rg-three">
+      <article class="rg-card"><div class="rg-kicker">Replay</div><h3>If it cannot be replayed, it cannot settle.</h3><p>The demo teaches that a proof packet needs trace roots, output hashes, environment pins, baseline context, and replay instructions before it can support a stronger claim.</p></article>
+      <article class="rg-card"><div class="rg-kicker">Falsification</div><h3>A proof system must show what would break it.</h3><p>Missing baselines, validator collusion, privacy leakage, silent drift, and hidden costs are not cosmetic issues. They change the verdict.</p></article>
+      <article class="rg-card"><div class="rg-kicker">Human boundary</div><h3>Surviving the gauntlet is not automatic authority.</h3><p>The page stops at review-ready status. It emits a docket; it does not certify factual correctness, authorize funds, or activate production authority.</p></article>
+    </div>
+  </section>
+
+  <section class="rg-section">
+    <div class="rg-wrap rg-output-grid">
+      <article class="rg-card">
+        <div class="rg-kicker">Chronicle trace</div>
+        <h2>Replay log</h2>
+        <ol id="chronicle" class="rg-trace"></ol>
+      </article>
+      <article class="rg-card">
+        <div class="rg-kicker">ReplayReceipt JSON</div>
+        <h2>Downloadable public-safe docket</h2>
+        <pre id="receiptJson" class="rg-pre">Run the replay gauntlet to generate a ReplayReceipt.</pre>
+        <div class="rg-actions">
+          <button class="rg-btn primary" id="downloadReceipt" type="button">Download ReplayReceipt JSON</button>
+          <button class="rg-btn" id="copyBrief" type="button">Copy review brief</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="rg-section rg-wide">
+    <div class="rg-wrap rg-card">
+      <div class="rg-kicker">GoalOS core idea</div>
+      <h2>The next proof is not another claim.<br><span>It is a replay people can challenge.</span></h2>
+      <p>GoalOS turns public demonstrations into proof rooms: claims, baselines, proof packets, replay receipts, validator notes, risk ledgers, rollback boundaries, and review decisions.</p>
+      <div class="rg-law"><span>Claim</span><span>Baseline</span><span>Trace</span><span>Replay</span><span>Falsify</span><span>Boundary</span><span>Review</span><span>Chronicle</span></div>
+    </div>
+  </section>
+</main>
+<footer class="rg-footer"><div class="rg-wrap">© MontrealAI · Replay & Falsification Gauntlet · local public demonstration only · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+<script src="assets/replay-gauntlet.js"></script>
+</body>
+</html>

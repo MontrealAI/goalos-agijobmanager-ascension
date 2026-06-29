@@ -15,5 +15,6 @@
   "chronicleCompoundingLab": "PASS",
   "ascensionInflowControl": "PASS",
   "claimBoundaryFirewall": "PASS",
+  "replayFalsificationGauntlet": "PASS",
   "vendoredDependencies": "PASS"
 }

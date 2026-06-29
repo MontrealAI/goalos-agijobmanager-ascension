@@ -1,0 +1,76 @@
+{
+  "schema": "goalos.replay-falsification-gauntlet.v23",
+  "title": "Replay & Falsification Gauntlet",
+  "productionRoute": "/replay-falsification-gauntlet.html",
+  "principle": "A proof claim advances only when it can be replayed, challenged, compared with baselines, bounded by public/private proof rules, and handed to human review.",
+  "publicSafety": {
+    "noUserDataWanted": true,
+    "noForms": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noLocalStorage": true,
+    "noSessionStorage": true,
+    "noWalletConnection": true,
+    "noNetworkRequest": true,
+    "noTokenRoute": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true
+  },
+  "protocolObjects": [
+    "GoalOSCommit",
+    "RunCommitment",
+    "ProofPacket",
+    "EvalAttestation",
+    "SelectionCertificate",
+    "ReplayReceipt",
+    "FalsificationReport",
+    "ChronicleEntry"
+  ],
+  "gates": [
+    "Trace root",
+    "Baseline ladder",
+    "Replay path",
+    "Validator independence",
+    "Cost/risk ledger",
+    "Public/private boundary",
+    "Challenge window",
+    "Human review stop"
+  ],
+  "verdicts": [
+    "REPLAY_SURVIVED_PUBLIC_SAFE",
+    "NEEDS_MORE_PROOF",
+    "QUARANTINE_PRIVATE_APPENDIX",
+    "REJECT_STRONG_CLAIM"
+  ],
+  "nonClaims": [
+    "not factual certification",
+    "not external audit completion",
+    "not investment advice",
+    "not fund authorization",
+    "not production activation",
+    "not a Mainnet transaction"
+  ],
+  "presets": [
+    {
+      "id": "mission-os-proof-run",
+      "title": "Mission OS proof run",
+      "claim": "GoalOS converts an objective into a governed decision state containing mission contract, claims matrix, verifier report, risk ledger, Evidence Docket, action graph, Chronicle entry, and reusable capability package.",
+      "baselineStrength": 78,
+      "replayReadiness": 82
+    },
+    {
+      "id": "agijobmanager-ascension-public-surface",
+      "title": "AGIJobManager Ascension public surface",
+      "claim": "AGIJobManager Ascension is a public proof institution around the deployed settlement contract, with a read-only chamber, Evidence Docket, verification page, legal boundary, token boundary, and separated Expert Console.",
+      "baselineStrength": 70,
+      "replayReadiness": 80
+    },
+    {
+      "id": "multi-agent-institution",
+      "title": "Proof-governed multi-agent institution",
+      "claim": "Large multi-agent systems coordinate to greater useful effect when bounded work, proof packets, verifier judgments, settlement decisions, Chronicle memory, and reusable capability are first-class state.",
+      "baselineStrength": 72,
+      "replayReadiness": 76
+    }
+  ]
+}
