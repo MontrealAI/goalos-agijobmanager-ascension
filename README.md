@@ -1,3 +1,31 @@
+## Navigation System Final v38
+
+The public website now has a complete user-friendly navigation system: a concise homepage, Experience Hub, Command Center, Navigation Atlas, global Explore menu, guided journeys, and machine-readable route map. Public pages remain default-deny: no accounts, no forms, no analytics, no cookies, no public wallet connection, no token route, and no user data wanted.
+
+## Site Command Center v37
+
+The public website now opens through a complete command center and searchable Site Atlas. All previous pages remain available, and the v36 homepage is preserved at `archive-v36-ascension-chamber.html`. The public surface remains browser-local, account-free, analytics-free, cookie-free, form-free, wallet-free, and token-route-free.
+
+## Site Experience Atlas v37
+
+The public website now includes a complete intent-first navigation system, a rebuilt homepage, and `/experience-atlas.html` so non-technical users, reviewers, builders, and expert operators can find the right proof surface quickly.
+
+## Navigation Atlas v37
+
+The public website now includes a compact homepage, role-based journeys, and a complete searchable Experience Atlas at `experience-atlas.html`.
+
+## Experience Hub v37
+
+The website now has a complete guided front door, searchable public page catalog, persona-based paths, and a universal floating Site Guide across pages.
+
+## Command Center Navigation v37
+
+The public site now includes a complete Command Center with guided paths, catalog search, compact global navigation, and no user-data collection.
+
+## Proof-Settlement Lifecycle v36
+
+A browser-local console demonstrates the AGIJobManager settlement rail: Request → Escrow → Execute → Proof → Validate → Settle → Chronicle. It is simulated only and never connects a wallet or authorizes funds.
+
 ## Evidence Docket Composer v34
 
 A browser-local public proof-room composer now helps users turn public-safe claims into Evidence Docket receipts without accounts, wallets, forms, analytics, cookies, or user data.

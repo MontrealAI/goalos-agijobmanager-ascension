@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSSiteNavigationV37",
+  "type": "object",
+  "required": [
+    "version",
+    "title",
+    "posture",
+    "groups",
+    "pages",
+    "journeys",
+    "primary"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "href",
+          "group",
+          "audience",
+          "time",
+          "why"
+        ]
+      }
+    },
+    "journeys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "audience",
+          "steps"
+        ]
+      }
+    },
+    "primary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

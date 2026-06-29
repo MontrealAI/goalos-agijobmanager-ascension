@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.5.0-trust-equation-simulator-v35",
+  "version": "3.8.0-navigation-system-final",
   "private": true,
   "type": "module",
   "scripts": {
@@ -51,9 +51,22 @@
     "evidence-docket-composer": "node tests/evidence-docket-composer.test.mjs && python3 tools/build.py && node tools/evidence-docket-composer-kernel.mjs",
     "test:evidence-docket-composer": "npm run evidence-docket-composer",
     "trust-equation": "node tests/trust-equation-simulator.test.mjs && python3 tools/build.py && node tools/trust-equation-simulator-kernel.mjs",
-    "test:trust-equation": "npm run trust-equation"
+    "test:trust-equation": "npm run trust-equation",
+    "proof-settlement": "node tests/proof-settlement-lifecycle.test.mjs && python3 tools/build.py && node tools/proof-settlement-lifecycle-kernel.mjs",
+    "test:proof-settlement": "npm run proof-settlement",
+    "command-center": "node tests/website-command-center.test.mjs && python3 tools/build.py && node tools/website-command-center-kernel.mjs",
+    "test:command-center": "npm run command-center",
+    "experience-hub": "node tests/experience-hub.test.mjs && python3 tools/build.py && node tools/experience-hub-kernel.mjs",
+    "test:experience-hub": "npm run experience-hub",
+    "test:navigation": "node tests/navigation-atlas.test.mjs && python3 tools/build.py && node tools/navigation-atlas-kernel.mjs",
+    "site-atlas": "node tests/site-experience-atlas.test.mjs && python3 tools/build.py && node tools/site-experience-atlas-kernel.mjs",
+    "test:site-atlas": "npm run site-atlas",
+    "site-command-center": "node tests/site-command-center.test.mjs && python3 tools/build.py && node tools/site-command-center-kernel.mjs",
+    "test:site-command-center": "npm run site-command-center",
+    "navigation-final": "node tests/navigation-system-final.test.mjs && python3 tools/build.py && node tools/navigation-system-final-kernel.mjs",
+    "test:navigation-final": "node tests/navigation-system-final.test.mjs && python3 tools/build.py && node tools/navigation-system-final-kernel.mjs"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension static site with fault-tolerant publisher and browser-local Trust Equation Simulator.",
+  "description": "GoalOS AGIJobManager Ascension website with complete navigation system, Experience Hub, Command Center, proof demos, evidence rooms, and public-safe boundaries.",
   "devDependencies": {}
 }

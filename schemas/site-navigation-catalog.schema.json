@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSSiteNavigationCatalog",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "posture",
+    "primaryPaths",
+    "sections",
+    "pages"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "primaryPaths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "time",
+          "href",
+          "steps"
+        ]
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "description"
+        ]
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "href",
+          "section",
+          "audience",
+          "time",
+          "summary"
+        ]
+      }
+    }
+  }
+}
