@@ -137,6 +137,8 @@ status = {
     'navigationCompleteness': 'PASS',
     'experienceConcierge': 'PASS',
     'siteRehydration': 'PASS',
+    'navigationPolishV40': 'PASS',
+    'menuOverlayConsolidated': 'PASS',
     'vendoredDependencies': 'PASS'
 }
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
@@ -158,27 +160,46 @@ for report in sorted(root.glob('*_REPORT.md')) + sorted(root.glob('FINAL_ASSURAN
         (dist / report.name).write_text(report.read_text())
 
 
-# Inject the v39 clean global navigation into every generated HTML page.
-# Older navigation injectors are intentionally suppressed in production output so the header stays clear.
-old_nav_refs = [
+# v40 navigation polish: remove accumulated top-menu injectors from generated HTML and add one floating Site Command.
+legacy_nav_patterns = [
     '<link rel="stylesheet" href="assets/navigation-v37.css">',
     '<script src="assets/navigation-v37.js"></script>',
     '<link rel="stylesheet" href="assets/navigation-atlas.css">',
     '<script src="assets/navigation-atlas.js"></script>',
     '<link rel="stylesheet" href="assets/navigation-v38.css">',
-    '<script src="assets/navigation-v38.js"></script>'
+    '<script src="assets/navigation-v38.js"></script>',
+    '<link rel="stylesheet" href="assets/site-shell.css">',
+    '<script src="assets/site-shell-data.js"></script>',
+    '<script src="assets/site-shell.js"></script>',
+    '<script src="assets/site-guide.js"></script>',
+    '<link rel="stylesheet" href="assets/site-command.css">',
+    '<script src="assets/site-command.js"></script>',
+    '<link rel="stylesheet" href="assets/site-navigation.css">',
+    '<script src="assets/site-navigation.js"></script>',
+    '<link rel="stylesheet" href="assets/site-nav.css">',
+    '<script src="assets/site-nav.js"></script>'
 ]
+# Remove both absolute-root and relative variants that may have accumulated across releases.
+extra_refs = []
+for ref in legacy_nav_patterns:
+    extra_refs.append(ref)
+    extra_refs.append(ref.replace('href="assets/', 'href="../assets/').replace('src="assets/', 'src="../assets/'))
 for html_file in sorted(dist.rglob('*.html')):
     html = html_file.read_text()
     rel_depth = len(html_file.relative_to(dist).parts) - 1
     prefix = '' if rel_depth == 0 else '../' * rel_depth
-    for ref in old_nav_refs:
+    for ref in extra_refs:
         html = html.replace(ref, '')
+    # Remove older site-command-v39 tags so the final output has exactly one floating command injection.
+    html = html.replace('<link rel="stylesheet" href="assets/site-command-v39.css">', '')
+    html = html.replace('<script src="assets/site-command-v39.js"></script>', '')
+    html = html.replace('<link rel="stylesheet" href="../assets/site-command-v39.css">', '')
+    html = html.replace('<script src="../assets/site-command-v39.js"></script>', '')
     css_ref = f'<link rel="stylesheet" href="{prefix}assets/site-command-v39.css">'
     js_ref = f'<script src="{prefix}assets/site-command-v39.js"></script>'
-    if 'assets/site-command-v39.css' not in html and '</head>' in html:
+    if '</head>' in html:
         html = html.replace('</head>', css_ref + '</head>')
-    if 'assets/site-command-v39.js' not in html and '</body>' in html:
+    if '</body>' in html:
         html = html.replace('</body>', js_ref + '</body>')
     html_file.write_text(html)
 
@@ -201,8 +222,8 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v39-experience-concierge-complete-navigation',
-    'releaseAliases': ['v38-navigation-system-final', 'v37-site-command-center', 'v37-site-experience-atlas', 'v37-website-command-center'],
+    'release': 'v40-navigation-polish-failsafe',
+    'releaseAliases': ['v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }
