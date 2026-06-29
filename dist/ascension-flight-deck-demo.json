@@ -1,0 +1,244 @@
+{
+  "title": "Ascension Flight Deck",
+  "version": "v31-ascension-flight-deck",
+  "posture": {
+    "browserLocal": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noUserDataWanted": true
+  },
+  "journeys": [
+    {
+      "id": "five-minute-proof-path",
+      "title": "5-minute proof path",
+      "audience": [
+        "non-technical",
+        "executive"
+      ],
+      "durationMinutes": 5,
+      "summary": "The fastest path to understand the core GoalOS idea from bounded work to governed authority.",
+      "steps": [
+        "proof-to-action-theatre",
+        "proof-gradient-arena",
+        "chronicle-compounding-lab"
+      ]
+    },
+    {
+      "id": "institution-builder-path",
+      "title": "Institution builder path",
+      "audience": [
+        "advanced",
+        "builder"
+      ],
+      "durationMinutes": 12,
+      "summary": "See how routing, memory, action graphs, and capability passports turn multi-agent output into a proof-governed institution.",
+      "steps": [
+        "proof-conditioned-router-observatory",
+        "action-graph-handoff",
+        "proof-carrying-artifact-passport",
+        "multi-agent-institution"
+      ]
+    },
+    {
+      "id": "safety-boundary-path",
+      "title": "Public-safety boundary path",
+      "audience": [
+        "risk",
+        "legal",
+        "advanced"
+      ],
+      "durationMinutes": 10,
+      "summary": "Understand claim discipline, replay, challenge, and boundary enforcement for public-safe demonstrations.",
+      "steps": [
+        "claim-boundary-firewall",
+        "replay-falsification-gauntlet",
+        "agialpha-token-boundary"
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "proof-to-action-theatre",
+      "title": "Proof-to-Action Theatre",
+      "href": "proof-to-action-theatre.html",
+      "audience": [
+        "all"
+      ],
+      "durationMinutes": 3,
+      "focus": [
+        "core",
+        "intro"
+      ],
+      "summary": "Objective \u2192 evidence \u2192 governed decision state in one clean loop."
+    },
+    {
+      "id": "proof-gradient-arena",
+      "title": "Proof Gradient Arena",
+      "href": "proof-gradient-arena.html",
+      "audience": [
+        "all"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "selection",
+        "validation"
+      ],
+      "summary": "Watch claims pass or fail through hard gates rather than persuasion."
+    },
+    {
+      "id": "chronicle-compounding-lab",
+      "title": "Chronicle Compounding Lab",
+      "href": "chronicle-compounding-lab.html",
+      "audience": [
+        "all"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "memory",
+        "reuse"
+      ],
+      "summary": "Accepted proof becomes reusable capability and rejected work becomes warning memory."
+    },
+    {
+      "id": "proof-conditioned-router-observatory",
+      "title": "Router Observatory",
+      "href": "proof-conditioned-router-observatory.html",
+      "audience": [
+        "advanced",
+        "builder"
+      ],
+      "durationMinutes": 5,
+      "focus": [
+        "routing",
+        "coordination"
+      ],
+      "summary": "Choose the smallest sufficient constellation, validator set, and stopping rule."
+    },
+    {
+      "id": "action-graph-handoff",
+      "title": "Action Graph Handoff",
+      "href": "action-graph-handoff.html",
+      "audience": [
+        "advanced",
+        "operator"
+      ],
+      "durationMinutes": 5,
+      "focus": [
+        "handoff",
+        "action"
+      ],
+      "summary": "Convert governed decision state into a scoped action graph and handoff plan."
+    },
+    {
+      "id": "proof-carrying-artifact-passport",
+      "title": "Artifact Passport",
+      "href": "proof-carrying-artifact-passport.html",
+      "audience": [
+        "advanced",
+        "operator"
+      ],
+      "durationMinutes": 5,
+      "focus": [
+        "artifact",
+        "portability"
+      ],
+      "summary": "Attach replay, provenance, and capability boundaries directly to artifacts."
+    },
+    {
+      "id": "multi-agent-institution",
+      "title": "Multi-Agent Institution",
+      "href": "multi-agent-institution.html",
+      "audience": [
+        "all",
+        "advanced"
+      ],
+      "durationMinutes": 5,
+      "focus": [
+        "institution",
+        "coordination"
+      ],
+      "summary": "See why proof-governed institutions outperform swarms of unbounded agents."
+    },
+    {
+      "id": "claim-boundary-firewall",
+      "title": "Claim Boundary Firewall",
+      "href": "claim-boundary-firewall.html",
+      "audience": [
+        "risk",
+        "legal",
+        "all"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "claim",
+        "boundary"
+      ],
+      "summary": "Promote, quarantine, revise, or reject claims under evidence and risk rules."
+    },
+    {
+      "id": "replay-falsification-gauntlet",
+      "title": "Replay & Falsification Gauntlet",
+      "href": "replay-falsification-gauntlet.html",
+      "audience": [
+        "advanced",
+        "risk"
+      ],
+      "durationMinutes": 5,
+      "focus": [
+        "replay",
+        "challenge"
+      ],
+      "summary": "Replay a proof package, attack it, and inspect whether it still deserves authority."
+    },
+    {
+      "id": "proof-backed-upgrade-foundry",
+      "title": "Proof-Backed Upgrade Foundry",
+      "href": "proof-backed-upgrade-foundry.html",
+      "audience": [
+        "advanced",
+        "operator"
+      ],
+      "durationMinutes": 4,
+      "focus": [
+        "upgrade",
+        "rollback"
+      ],
+      "summary": "Selection, canary, rollback, and human-review gates for capability upgrades."
+    },
+    {
+      "id": "real-task-benchmark-bridge",
+      "title": "Real-Task Benchmark Bridge",
+      "href": "real-task-benchmark-bridge.html",
+      "audience": [
+        "advanced",
+        "research"
+      ],
+      "durationMinutes": 5,
+      "focus": [
+        "benchmark",
+        "empirics"
+      ],
+      "summary": "Compare baselines on real-task evidence rather than vague claims."
+    },
+    {
+      "id": "agialpha-token-boundary",
+      "title": "AGIALPHA Boundary",
+      "href": "agialpha-token-boundary.html",
+      "audience": [
+        "risk",
+        "legal",
+        "all"
+      ],
+      "durationMinutes": 2,
+      "focus": [
+        "token",
+        "boundary"
+      ],
+      "summary": "Explicitly states the token is pre-existing, decentralized, third-party market only, and not offered by the project."
+    }
+  ]
+}

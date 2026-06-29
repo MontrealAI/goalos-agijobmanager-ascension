@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const distPage='dist/ascension-flight-deck.html';
+const distData='dist/ascension-flight-deck-demo.json';
+const report='ASCENSION_FLIGHT_DECK_V31_REPORT.json';
+must(fs.existsSync(distPage),'dist Flight Deck page exists');
+must(fs.existsSync(distData),'dist Flight Deck demo JSON exists');
+const payload={status:'PASS',page:'ascension-flight-deck.html',demo:'ascension-flight-deck-demo.json',posture:['browser-local','zero-network','no-wallet','no-user-data']};
+fs.writeFileSync(report,JSON.stringify(payload,null,2));
+console.log('Ascension Flight Deck v31 kernel PASS');

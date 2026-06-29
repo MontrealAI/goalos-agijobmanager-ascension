@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AscensionFlightDeckDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "posture",
+    "journeys",
+    "demos"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object",
+      "required": [
+        "browserLocal",
+        "zeroNetwork",
+        "noWallet",
+        "noForms",
+        "noAccounts",
+        "noCookies",
+        "noAnalytics",
+        "noUserDataWanted"
+      ]
+    },
+    "journeys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "audience",
+          "durationMinutes",
+          "summary",
+          "steps"
+        ]
+      }
+    },
+    "demos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "href",
+          "audience",
+          "durationMinutes",
+          "focus",
+          "summary"
+        ]
+      }
+    }
+  }
+}

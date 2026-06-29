@@ -1,3 +1,7 @@
+## Ascension Flight Deck v31
+
+A browser-local guided launch surface now helps non-technical and advanced users run the best GoalOS demonstrations autonomously.
+
 # GoalOS AGIJobManager Ascension
 
 Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
@@ -135,3 +139,36 @@ New browser-local public demonstration:
 Core lesson: evidence bundles are not only audit logs. Only replayable, validated, public-safe experience may become governed institutional learning, Chronicle memory, reward-ledger signal, router update candidate, or policy-update candidate.
 
 The page remains Data-Zero: no account, no form, no analytics, no cookies, no storage, no wallet connection, no network request, no token route, no transaction broadcast, and no production authority.
+
+
+## v25 · Proof-Backed Upgrade Foundry
+
+New browser-local page: `proof-backed-upgrade-foundry.html`.
+
+It demonstrates the GoalOS commercial primitive: an artifact earns a proof-backed upgrade right only after proof, eval, risk, scope, canary, challenge-window, rollback, and human-review gates. No user data, account, analytics, storage, wallet connection, network request, token route, transaction broadcast, or production authority is used.
+
+
+## v26 MandateEpoch Clearinghouse
+
+New public demo: [`mandate-epoch-clearinghouse.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/mandate-epoch-clearinghouse.html). It shows how one mandate can clear many proof receipts through public roots, quarantine, challenge windows, AGIJobManager-compatible checkpoint posture, and Chronicle memory without wallet, network, storage, or user-data collection.
+
+## v27 Real-Task Benchmark Bridge
+
+New public demo: [`real-task-benchmark-bridge.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/real-task-benchmark-bridge.html).
+
+It demonstrates the GoalOS empirical claim boundary: architecture becomes credible only through real tasks, equal-budget baselines, ProofBundles, replay logs, cost/risk ledgers, validator reports, delayed outcomes, and human review. Users can compare report-only, single-agent, unstructured swarm, fixed crew, GoalOS routed constellation, GoalOS + Chronicle reuse, and external-replay candidate modes, then export a public-safe BenchmarkEvidenceDocket JSON.
+
+The page remains Data-Zero: no account, no form, no analytics, no cookies, no storage, no wallet connection, no network request, no token route, no transaction broadcast, no production authority, and no user data wanted.
+
+## Proof-Carrying Artifact Passport
+
+The v29 public demo shows how a reusable capability earns a proof-carrying artifact passport: stable identity, immutable version hash, proof history, evaluator attestations, scope authorization, rollback target, challenge window, and public/private proof boundary. It is browser-local and public-safe: no user data, wallet, network request, token route, transaction, or production authority.
+
+
+## v30 — Proof-Conditioned Router Observatory
+
+The repository now includes `/proof-conditioned-router-observatory.html`, a browser-local demonstration of GoalOS routing: select the smallest sufficient agent constellation, bind every role to a proof obligation, assign validators, define stopping/escalation rules, and export a public-safe `GoalOSProofConditionedRoutingReceipt`.
+
+Core law: **Route the institution, not the swarm.**
+
+The page remains default-deny: no account, no forms, no cookies, no analytics, no storage, no wallet, no network request, no token route, no transaction broadcast, and no user data wanted.

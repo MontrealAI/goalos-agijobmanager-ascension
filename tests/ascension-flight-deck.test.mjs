@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const must=(cond,msg)=>{if(!cond){console.error('FAIL · '+msg);process.exit(1)}console.log('PASS · '+msg)};
+const page='site/ascension-flight-deck.html', js='site/assets/ascension-flight-deck.js', css='site/assets/ascension-flight-deck.css', data='data/ascension-flight-deck-demo.json', schema='schemas/ascension-flight-deck.schema.json', docs='docs/ASCENSION_FLIGHT_DECK_V31.md';
+for (const file of [page,js,css,data,schema,docs]) must(fs.existsSync(file), `required file exists: ${file}`);
+const html=fs.readFileSync(page,'utf8'), script=fs.readFileSync(js,'utf8'), json=JSON.parse(fs.readFileSync(data,'utf8'));
+must(/Ascension Flight Deck/.test(html),'page identifies the Flight Deck');
+must(/no account/i.test(html) && /no wallet/i.test(html) && /no network/i.test(html),'page states zero-account zero-wallet zero-network posture');
+must(/iframe/.test(html),'same-origin preview frame is present');
+must(/JourneyReceipt/.test(html+script),'journey export receipt exists');
+must(!/localStorage|sessionStorage|document\.cookie|fetch\(['"]https?:/i.test(script+html),'page avoids storage, cookies, and external network');
+must(json.posture.noUserDataWanted===true && json.posture.noWallet===true,'data contract encodes public-safe posture');
+must(Array.isArray(json.journeys) && json.journeys.length>=3,'three guided journeys are present');
+must(Array.isArray(json.demos) && json.demos.length>=10,'demo catalog is substantial');
+console.log('Ascension Flight Deck v31 PASS');

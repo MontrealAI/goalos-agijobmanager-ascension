@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v24-sovereign-experience-stream",
-  "builtAt": "2026-06-29T13:53:22.453988Z",
+  "release": "v31-ascension-flight-deck",
+  "builtAt": "2026-06-29T14:20:59.459830Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -9,9 +9,114 @@
       "bytes": 0
     },
     {
+      "path": "ASCENSION_INFLOW_CONTROL_ROOM_V21_REPORT.md",
+      "sha256": "a8f050fee279ea44a9d143eb1f592e9e314cde3539855f5ad40cd4b3283faddc",
+      "bytes": 1067
+    },
+    {
+      "path": "CHRONICLE_COMPOUNDING_LAB_V20_REPORT.md",
+      "sha256": "a4064e519da62bf4533c8859113ec3052dd71b6bfd1dbbbf07e93e4c01e584d0",
+      "bytes": 182
+    },
+    {
+      "path": "CLAIM_BOUNDARY_FIREWALL_V22_REPORT.md",
+      "sha256": "f83aba782b8789430555e18a0697b4d94a9b064f323657fdcd8e090079f10cf4",
+      "bytes": 184
+    },
+    {
+      "path": "DEMO_DELIGHT_V16_REPORT.md",
+      "sha256": "a93ef66d8f2728bd90c3371a2a2896603b3b934b8cfb7a75b0deba162afe494b",
+      "bytes": 473
+    },
+    {
+      "path": "FINAL_ASSURANCE_DOCKET_V11.json",
+      "sha256": "8ab7f92eb29a389cb8b090b4b851668cbc20b39a5c4059013dc6a47f67946ce8",
+      "bytes": 12605
+    },
+    {
+      "path": "FINAL_ASSURANCE_DOCKET_V11.md",
+      "sha256": "18dc4d4cb01f0297beb5cc581c6b2951c73979fe0138eaa552a75b9a5aa1be03",
+      "bytes": 1436
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_ACTION_GRAPH_HANDOFF_V28_REPORT.md",
+      "sha256": "d48fc5e0832c8cdc6def906945fd84d022551dcbc8a509a1f8364baf5b3152f9",
+      "bytes": 1324
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_ASCENSION_FLIGHT_DECK_V31_REPORT.md",
+      "sha256": "2ab21101de8c3c73badfd377c1d23af664f22c3f5c1ef8d409267b30335f2b72",
+      "bytes": 1131
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.md",
+      "sha256": "98b8df65f614194e729113df7886ef76f959d5b8c1db133759859d54e2df8c45",
+      "bytes": 866
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_PROOF_CONDITIONED_ROUTER_OBSERVATORY_V30_REPORT.md",
+      "sha256": "9f1eb4b90935a6daf3b5e520a0cba4e5f393a0ca3f26b54c86ea04d29f1b2d65",
+      "bytes": 1419
+    },
+    {
+      "path": "MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.md",
+      "sha256": "81b6dd57c7319cf34f057d18d3ac00a278b59d6dbc2bc264a0f93ce145262799",
+      "bytes": 1068
+    },
+    {
+      "path": "MULTI_AGENT_INSTITUTION_V17_REPORT.md",
+      "sha256": "86577f80db3220d60b6aab58f743ec1e77eecf7d26b84b2971870c745fb47192",
+      "bytes": 2372
+    },
+    {
+      "path": "PROOF_BACKED_UPGRADE_FOUNDRY_V25_REPORT.md",
+      "sha256": "34ac828334801183f05d7ea998f48a357b0ce03f7d19e64370191f47be112788",
+      "bytes": 881
+    },
+    {
+      "path": "PROOF_GRADIENT_ARENA_V19_REPORT.md",
+      "sha256": "af7be10f04b6c95ac13fae4784baa92b95646ecd150e05151c2e9d7a84bad120",
+      "bytes": 171
+    },
+    {
+      "path": "PROOF_TO_ACTION_THEATRE_V18_REPORT.md",
+      "sha256": "376a3605238286387d3704b7da3d57e366e00b04e517ff6dc521647b177271d0",
+      "bytes": 2722
+    },
+    {
+      "path": "REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.md",
+      "sha256": "c8f2f4f3799ab0a663f3e385b377e7fb2dcc673b428820139927a6290097ff5a",
+      "bytes": 943
+    },
+    {
+      "path": "REPLAY_FALSIFICATION_GAUNTLET_V23_REPORT.md",
+      "sha256": "ef23735093c8252ff612805c8b010121e5b6c2c4c9009e0f09143e5888e9f441",
+      "bytes": 1392
+    },
+    {
+      "path": "SOVEREIGN_EXPERIENCE_STREAM_V24_REPORT.md",
+      "sha256": "1913f1290818187f28856c8b7d9b69ddf2ea280e0e75f028884ac28599b2e271",
+      "bytes": 1261
+    },
+    {
+      "path": "action-graph-handoff-demo.json",
+      "sha256": "808f5c2942bd7449ac6ec920664db28d60408871be54c075ca954eda5302d52d",
+      "bytes": 3618
+    },
+    {
+      "path": "action-graph-handoff.html",
+      "sha256": "03218fd08d1946aeae9913416a4bc4e188003df172a12ff2faf5f8f24377eee2",
+      "bytes": 7016
+    },
+    {
       "path": "agialpha-token-boundary.html",
       "sha256": "ce32be9eed53d1dcfd9d7bd3031c7024fcadb4bfc4f3868c69c0adee41fe2039",
       "bytes": 4226
+    },
+    {
+      "path": "agialpha-token-boundary.json",
+      "sha256": "628d64397a7a96b05c29a79320ace1848b58a71fccd85cd005e2d47f34f20ff2",
+      "bytes": 3212
     },
     {
       "path": "architecture.html",
@@ -19,9 +124,54 @@
       "bytes": 4427
     },
     {
+      "path": "ascension-flight-deck-demo.json",
+      "sha256": "f566cc0a55c833435315296e78f212f028d74ab77b34107c45baa08b752abb16",
+      "bytes": 6531
+    },
+    {
+      "path": "ascension-flight-deck.html",
+      "sha256": "73856542706fef48d2a9e6159e601528a878933c937ebb62187da8132513198c",
+      "bytes": 4723
+    },
+    {
+      "path": "ascension-inflow-control-demo.json",
+      "sha256": "7ee3b667623680b6f3b7de08ed8e9a4eca1b620f8dd53407723bfdca29fe95ad",
+      "bytes": 2925
+    },
+    {
       "path": "ascension-inflow-control.html",
       "sha256": "e898de457725657fe6f24aa536f8dd34050481086f5426b87b9652148eb535a0",
       "bytes": 7871
+    },
+    {
+      "path": "assets/action-graph-handoff.css",
+      "sha256": "fcb890225b707ff3a1cc4d98a02db54256fd5fda5dc75e7c1b36940c5fb7f755",
+      "bytes": 9382
+    },
+    {
+      "path": "assets/action-graph-handoff.js",
+      "sha256": "5c55db80c4d1a7aaee37bca83fcde7f3eba92cbd32e34a03f75b7e497f2e406e",
+      "bytes": 9362
+    },
+    {
+      "path": "assets/artifact-passport.css",
+      "sha256": "d7c746c1afd2357d529c00eb63ac9bb4158954350e6b14c2a0665950e6cdf5e5",
+      "bytes": 9255
+    },
+    {
+      "path": "assets/artifact-passport.js",
+      "sha256": "6370c4fe3864ab77baa5976d0ed5e9267c95f1be5d86bbd59e853eab557890e3",
+      "bytes": 12204
+    },
+    {
+      "path": "assets/ascension-flight-deck.css",
+      "sha256": "b2c3d78368e13d6f628d043fe4f3240634f9409948cdfe2fd75c6531a0cb37d3",
+      "bytes": 4799
+    },
+    {
+      "path": "assets/ascension-flight-deck.js",
+      "sha256": "b273e1f4ff411da18a99eee5f254f2a2834dface537c338947be708cf8a27f60",
+      "bytes": 5333
     },
     {
       "path": "assets/atelier.css",
@@ -32,6 +182,16 @@
       "path": "assets/atelier.js",
       "sha256": "70cc95afa5892f84318924f63390449caa113ec76819d78829bfe6d771712008",
       "bytes": 7086
+    },
+    {
+      "path": "assets/benchmark-bridge.css",
+      "sha256": "fae4e23f610d57939b3c4df543890a633bae7f2e7fe5ba48093565dd7849f730",
+      "bytes": 9876
+    },
+    {
+      "path": "assets/benchmark-bridge.js",
+      "sha256": "13fc25aa5219ee4ab0952c409df8f194502e970a9c82b44bfa2e3126373b36d3",
+      "bytes": 12464
     },
     {
       "path": "assets/chronicle-lab.css",
@@ -104,6 +264,16 @@
       "bytes": 7980
     },
     {
+      "path": "assets/mandate-epoch.css",
+      "sha256": "3b889704f5ca125f010e947c6cd8013f91608c4c2a1243c87ee0345eda5cb07c",
+      "bytes": 9535
+    },
+    {
+      "path": "assets/mandate-epoch.js",
+      "sha256": "a4d0082e0975f9e0781539d8e675c5d87615213fc142864f2074169d86b8980f",
+      "bytes": 9739
+    },
+    {
       "path": "assets/proof-gradient-arena.css",
       "sha256": "d300311de76a7b3664c30efe1d08e7ec9fbe8bec22786c2d784375b80a5b6782",
       "bytes": 10291
@@ -134,9 +304,29 @@
       "bytes": 14889
     },
     {
+      "path": "assets/router-observatory.css",
+      "sha256": "d30203e64965f2445003170aadbac9f3d7aef9659dbc05b721a63e2841035fa9",
+      "bytes": 8691
+    },
+    {
+      "path": "assets/router-observatory.js",
+      "sha256": "65d45efb82264393478b7eac6938c7fb25918d2b6445beb682592abc67dda6a4",
+      "bytes": 8641
+    },
+    {
       "path": "assets/sovereign-economy.js",
       "sha256": "d2f8c1b8dbc3c23885eb7ac18f5b11d8ee23c8df2bb70a17c5e6dfc72c9d273b",
       "bytes": 2984
+    },
+    {
+      "path": "assets/upgrade-foundry.css",
+      "sha256": "8e186c0f92756d909b889099fceb4a8356127bf2516d42b5e91b856d35f57694",
+      "bytes": 9655
+    },
+    {
+      "path": "assets/upgrade-foundry.js",
+      "sha256": "4e77402a886837498d367f4fda9244572eff68445fe5a50cf62c13a9a0fc0668",
+      "bytes": 10072
     },
     {
       "path": "assurance.html",
@@ -144,9 +334,24 @@
       "bytes": 3840
     },
     {
+      "path": "capability-conformance.json",
+      "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
+      "bytes": 1756
+    },
+    {
+      "path": "chronicle-compounding-lab-demo.json",
+      "sha256": "7a86ce7c34d79ff2e3cd10ca60dcd24e3e5e658e2c7b1dbdc23ee04841141fbe",
+      "bytes": 1639
+    },
+    {
       "path": "chronicle-compounding-lab.html",
       "sha256": "b2bfe73ee83bfe1cd61923905a3f21aa0bcf6e64a0ffac4946667906215ab41a",
       "bytes": 8441
+    },
+    {
+      "path": "claim-boundary-firewall-demo.json",
+      "sha256": "12b05bf57df28e49337873a5481227b071026900d4e4b5cea31ad9d5a94b0b2c",
+      "bytes": 2080
     },
     {
       "path": "claim-boundary-firewall.html",
@@ -164,6 +369,11 @@
       "bytes": 8869
     },
     {
+      "path": "data/action-graph-handoff-demo.json",
+      "sha256": "808f5c2942bd7449ac6ec920664db28d60408871be54c075ca954eda5302d52d",
+      "bytes": 3618
+    },
+    {
       "path": "data/agialpha-token-boundary.json",
       "sha256": "628d64397a7a96b05c29a79320ace1848b58a71fccd85cd005e2d47f34f20ff2",
       "bytes": 3212
@@ -177,6 +387,11 @@
       "path": "data/agijobmanager-expert-action-catalog.json",
       "sha256": "e29d2d65633b7d18d99b3e8507b8161f3b7b5645e60f67780b09691801b22c1f",
       "bytes": 1214
+    },
+    {
+      "path": "data/ascension-flight-deck-demo.json",
+      "sha256": "f566cc0a55c833435315296e78f212f028d74ab77b34107c45baa08b752abb16",
+      "bytes": 6531
     },
     {
       "path": "data/ascension-inflow-control-demo.json",
@@ -229,6 +444,11 @@
       "bytes": 2993
     },
     {
+      "path": "data/mandate-epoch-clearinghouse-demo.json",
+      "sha256": "06a6a3e26a32d3abadd96a24a18ae4eee0a4576c999b4c30da7eeed626064156",
+      "bytes": 1144
+    },
+    {
       "path": "data/multi-agent-coordination-law.json",
       "sha256": "a73a2c000d6cc94685c42ba2571dbac556a908f170275fa77d580cc2cd761684",
       "bytes": 2858
@@ -237,6 +457,21 @@
       "path": "data/production-authority.json",
       "sha256": "2868124481b12ac0d977ee6b50f610dd7517bf86954e01808c9f844fd1c4b7c8",
       "bytes": 342
+    },
+    {
+      "path": "data/proof-backed-upgrade-foundry-demo.json",
+      "sha256": "93e8d97dc5b4b700407e15fcd8a3fd4647c0962025dd7b7e32e795055ff30af5",
+      "bytes": 1210
+    },
+    {
+      "path": "data/proof-carrying-artifact-passport-demo.json",
+      "sha256": "feebce09842140399e2a361797178ed562c41567256bd4fe8694a635c07f1300",
+      "bytes": 2229
+    },
+    {
+      "path": "data/proof-conditioned-router-observatory-demo.json",
+      "sha256": "b06a338f5df1eb482fb4a2384bc196a77f393105d0311430f15f46be1a33c5e6",
+      "bytes": 1831
     },
     {
       "path": "data/proof-governed-institution-demo.json",
@@ -252,6 +487,11 @@
       "path": "data/proof-to-action-theatre-demo.json",
       "sha256": "81047427362014acd16acf4bba39f8ae970215d78f64c36bb3b06513aa921f12",
       "bytes": 1010
+    },
+    {
+      "path": "data/real-task-benchmark-bridge-demo.json",
+      "sha256": "cb64d808781937099bce530e613fe9c52b37908006a4d7c21db4b30bd7504ab3",
+      "bytes": 1497
     },
     {
       "path": "data/replay-falsification-gauntlet-demo.json",
@@ -274,9 +514,24 @@
       "bytes": 3095
     },
     {
+      "path": "demo-missions.json",
+      "sha256": "19a7bc09f88f66d1d2e863a18453252cdaf3e73b3623f0e1730a1f8e1c9f2ce4",
+      "bytes": 3621
+    },
+    {
+      "path": "docs/ACTION_GRAPH_HANDOFF_V28.md",
+      "sha256": "36fa2531e91b8607bc607dbd4b6067e136178437f462f010fbd4ac3792206e26",
+      "bytes": 1638
+    },
+    {
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
       "sha256": "1002f8fd8222e25e7d40f5cfc546afd631a101b728b6df612cd8dd134698ce02",
       "bytes": 2761
+    },
+    {
+      "path": "docs/ASCENSION_FLIGHT_DECK_V31.md",
+      "sha256": "07801c7517df5cfe5aa7d7b8d3e6d541d1bf278ad7c137c579e727b37dceb7a7",
+      "bytes": 540
     },
     {
       "path": "docs/ASCENSION_INFLOW_CONTROL_ROOM_V21.md",
@@ -319,11 +574,6 @@
       "bytes": 392
     },
     {
-      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
-      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
-      "bytes": 1354
-    },
-    {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
       "sha256": "44150fb9772ccbddc916bb7bf054827cf0a800e0d86c89b57d010016b31ac93e",
       "bytes": 607
@@ -359,6 +609,11 @@
       "bytes": 665
     },
     {
+      "path": "docs/MANDATE_EPOCH_CLEARINGHOUSE_V26.md",
+      "sha256": "168740e98188dc5f380a18e169962d1c60eec07b35576dce83ab3fc1c28ca848",
+      "bytes": 1218
+    },
+    {
       "path": "docs/PATHSPEC_PROOF_FINAL_V15.md",
       "sha256": "e8c7677975ec051625195aadf7f2c21b57e27f506046e7d7653a3936c9c3a04e",
       "bytes": 900
@@ -367,6 +622,21 @@
       "path": "docs/PRODUCTION_RUNBOOK.md",
       "sha256": "2d63d870c9108644df3c5ef31bb0ac95427255e26cc468855a0302592b181faa",
       "bytes": 488
+    },
+    {
+      "path": "docs/PROOF_BACKED_UPGRADE_FOUNDRY_V25.md",
+      "sha256": "13c34631a81eb5efe6210e05e59de02670989bb589467d1b134ee9f32405a854",
+      "bytes": 1052
+    },
+    {
+      "path": "docs/PROOF_CARRYING_ARTIFACT_PASSPORT_V29.md",
+      "sha256": "98b8df65f614194e729113df7886ef76f959d5b8c1db133759859d54e2df8c45",
+      "bytes": 866
+    },
+    {
+      "path": "docs/PROOF_CONDITIONED_ROUTER_OBSERVATORY_V30.md",
+      "sha256": "9f1eb4b90935a6daf3b5e520a0cba4e5f393a0ca3f26b54c86ea04d29f1b2d65",
+      "bytes": 1419
     },
     {
       "path": "docs/PROOF_GOVERNED_INSTITUTION_LAB_V17.md",
@@ -392,6 +662,11 @@
       "path": "docs/PROOF_TO_ACTION_THEATRE_V18_WEB_UI_GUIDE.md",
       "sha256": "64436a33517bac3219c351962e929490d14a69f44c8a3646adde49d800991de8",
       "bytes": 1389
+    },
+    {
+      "path": "docs/REAL_TASK_BENCHMARK_BRIDGE_V27.md",
+      "sha256": "efeda34a731518d1699c980219ebf259bddaa7063863fada3ffe9c7414ab3996",
+      "bytes": 1106
     },
     {
       "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
@@ -450,8 +725,13 @@
     },
     {
       "path": "index.html",
-      "sha256": "6b3cd6dd240a0dc65156d4b78c21adc25957c8a59c6920ed04b1c9781c23d0f4",
-      "bytes": 18800
+      "sha256": "7bfa51f7b47c3229fa89b0f50679802ef33ea75635e219ab8807432aa03254b9",
+      "bytes": 23367
+    },
+    {
+      "path": "legal-boundary-policy.json",
+      "sha256": "e4cca4e74e41dd1c504e528e5495e5f9efe93542a88d82ba0fe02cc7687ed9db",
+      "bytes": 5562
     },
     {
       "path": "legal.html",
@@ -459,9 +739,24 @@
       "bytes": 5821
     },
     {
+      "path": "mandate-epoch-clearinghouse-demo.json",
+      "sha256": "06a6a3e26a32d3abadd96a24a18ae4eee0a4576c999b4c30da7eeed626064156",
+      "bytes": 1144
+    },
+    {
+      "path": "mandate-epoch-clearinghouse.html",
+      "sha256": "989679038a5d353901aef84ed9db2e406b22db7d07c651f37879e27433c1c18f",
+      "bytes": 8570
+    },
+    {
       "path": "mission-studio.html",
       "sha256": "25691465c0acc315f3c087e13eb568890d2f11b544b07eb937ea54fb247e0ce3",
       "bytes": 3319
+    },
+    {
+      "path": "multi-agent-coordination-law.json",
+      "sha256": "a73a2c000d6cc94685c42ba2571dbac556a908f170275fa77d580cc2cd761684",
+      "bytes": 2858
     },
     {
       "path": "multi-agent-institution.html",
@@ -479,9 +774,54 @@
       "bytes": 4060
     },
     {
+      "path": "production-url.json",
+      "sha256": "8dfd8953cbcbce334163cf82b05c822e6360b6f8661b3327512915284db850cb",
+      "bytes": 949
+    },
+    {
+      "path": "proof-backed-upgrade-foundry-demo.json",
+      "sha256": "93e8d97dc5b4b700407e15fcd8a3fd4647c0962025dd7b7e32e795055ff30af5",
+      "bytes": 1210
+    },
+    {
+      "path": "proof-backed-upgrade-foundry.html",
+      "sha256": "badab23c46338bf49db477d4746209bfc1d01b002015698080fb71ebf15884c3",
+      "bytes": 8082
+    },
+    {
       "path": "proof-cards.html",
       "sha256": "6271cd49c192aa0954ef80df9cc99a00c3e9e6fb1801387bdfdc67f260ab5e1a",
       "bytes": 2990
+    },
+    {
+      "path": "proof-carrying-artifact-passport-demo.json",
+      "sha256": "feebce09842140399e2a361797178ed562c41567256bd4fe8694a635c07f1300",
+      "bytes": 2229
+    },
+    {
+      "path": "proof-carrying-artifact-passport.html",
+      "sha256": "bc221697a0dd44f54f6e6a4f54b8306104b62a06d20c6dcf67aadfc99cefc105",
+      "bytes": 8966
+    },
+    {
+      "path": "proof-conditioned-router-observatory-demo.json",
+      "sha256": "b06a338f5df1eb482fb4a2384bc196a77f393105d0311430f15f46be1a33c5e6",
+      "bytes": 1831
+    },
+    {
+      "path": "proof-conditioned-router-observatory.html",
+      "sha256": "5e0e7bd19aabc9eabd9b970750f34c4400ca65da23c382f2b87ba1e3b401a7a2",
+      "bytes": 6803
+    },
+    {
+      "path": "proof-governed-institution-demo.json",
+      "sha256": "ae847596e54c9be93cc893cc9ef682009a6d43a751f948c7ba186b3be5dd13c4",
+      "bytes": 2290
+    },
+    {
+      "path": "proof-gradient-arena-demo.json",
+      "sha256": "616907e75beecc55409b8be30cb1f41d57bf0fec1418520a584289c8bdd5d30e",
+      "bytes": 4065
     },
     {
       "path": "proof-gradient-arena.html",
@@ -489,9 +829,24 @@
       "bytes": 8328
     },
     {
+      "path": "proof-to-action-theatre-demo.json",
+      "sha256": "81047427362014acd16acf4bba39f8ae970215d78f64c36bb3b06513aa921f12",
+      "bytes": 1010
+    },
+    {
       "path": "proof-to-action-theatre.html",
       "sha256": "56cf60f86a29bec76f3dc2bf38e0fd3b8f5254b209685882bb9bf82a4a50466f",
       "bytes": 8231
+    },
+    {
+      "path": "real-task-benchmark-bridge-demo.json",
+      "sha256": "cb64d808781937099bce530e613fe9c52b37908006a4d7c21db4b30bd7504ab3",
+      "bytes": 1497
+    },
+    {
+      "path": "real-task-benchmark-bridge.html",
+      "sha256": "644b714e9961590723e692566137c5e360f54569ad5aa52e9b07e5f8e9eba4b8",
+      "bytes": 8617
     },
     {
       "path": "regulatory-boundary.html",
@@ -499,14 +854,34 @@
       "bytes": 3964
     },
     {
+      "path": "replay-falsification-gauntlet-demo.json",
+      "sha256": "b4b05bb6a4e9463e07f893f5b6de2cf05f8d64e2eb3c23e9079e7f73796042a3",
+      "bytes": 2661
+    },
+    {
       "path": "replay-falsification-gauntlet.html",
       "sha256": "67faee3d4132b0d13d11212d141a12c68fdeddaee8710cf74b9ae87618a3b037",
       "bytes": 10366
     },
     {
+      "path": "robots.txt",
+      "sha256": "449657e9872ad1d4a267b96f88bf2574e9df584e484e85d8b8252253fd731421",
+      "bytes": 104
+    },
+    {
+      "path": "schemas/action-graph-handoff.schema.json",
+      "sha256": "5076adce03c6ec774bb4981c5f6b0e2328afec7b9895566525772d7add30e288",
+      "bytes": 998
+    },
+    {
       "path": "schemas/agialpha-token-boundary.schema.json",
       "sha256": "5bc242a64193feacdca9f223a38e9f7a3d584acf2db10d187f1a48eb1e4bd546",
       "bytes": 1720
+    },
+    {
+      "path": "schemas/ascension-flight-deck.schema.json",
+      "sha256": "e65ad314ab7f4112ed2736f760def3427543a26940f34c4fc08615cc0351834b",
+      "bytes": 1109
     },
     {
       "path": "schemas/ascension-inflow-control.schema.json",
@@ -549,9 +924,29 @@
       "bytes": 504
     },
     {
+      "path": "schemas/mandate-epoch-clearinghouse.schema.json",
+      "sha256": "f644a1d555755003e75d83daf0a9babbda905b1202f41bc3da7d8df7155a490f",
+      "bytes": 963
+    },
+    {
       "path": "schemas/multi-agent-coordination-law.schema.json",
       "sha256": "f7f135847c358630fee4b7cd271fcfd50fad184555306996e44210e70bba29da",
       "bytes": 1288
+    },
+    {
+      "path": "schemas/proof-backed-upgrade-foundry.schema.json",
+      "sha256": "7f7928cfa6a49e2770547e06386f2fd1db6a87cb0b7e7a07dc20f714dfabb206",
+      "bytes": 904
+    },
+    {
+      "path": "schemas/proof-carrying-artifact-passport.schema.json",
+      "sha256": "45adc6f22f45cc56b28ff0781abdff341c16d156d470f01c536119d3fdda81f5",
+      "bytes": 731
+    },
+    {
+      "path": "schemas/proof-conditioned-router-observatory.schema.json",
+      "sha256": "bdd3c70aacebefa355cd20a83aef1cf2eccd571cbf55c009c6b97ed4dc93f3d5",
+      "bytes": 1250
     },
     {
       "path": "schemas/proof-governed-institution-demo.schema.json",
@@ -569,6 +964,11 @@
       "bytes": 1048
     },
     {
+      "path": "schemas/real-task-benchmark-bridge.schema.json",
+      "sha256": "3a4f7a7cb992228188c9be68414e3c2754feb5874f1c3b48030d156e2201bca1",
+      "bytes": 1010
+    },
+    {
       "path": "schemas/replay-falsification-gauntlet.schema.json",
       "sha256": "a491eb4e363d33195514b9dc98c6ab1492bba5ba038a2321334d7e7761f99060",
       "bytes": 1295
@@ -584,9 +984,24 @@
       "bytes": 1569
     },
     {
+      "path": "sitemap.xml",
+      "sha256": "178c4efa0fcacf68b1690de2665285136c49d88d8df3cbdae33c914ce83bc7bd",
+      "bytes": 6585
+    },
+    {
+      "path": "sovereign-experience-stream-demo.json",
+      "sha256": "e0aa0b56903e8cd39875202d1d1baeda18d2697c01ed31bb772b91cda2c6e502",
+      "bytes": 1692
+    },
+    {
       "path": "sovereign-experience-stream.html",
       "sha256": "b5ad658a267cac885b9659c9537afb0544360fa5c324f974e068d5c1ee65009d",
       "bytes": 8024
+    },
+    {
+      "path": "sovereign-machine-economy-conformance.json",
+      "sha256": "026afd4ea5b24fc3b38d0ec1af5fc92312e9ac596b5770dfb852370e24bb04df",
+      "bytes": 4718
     },
     {
       "path": "sovereign-machine-economy.html",
@@ -595,8 +1010,8 @@
     },
     {
       "path": "start.html",
-      "sha256": "ce2fd91eba3bddb1a75532000bf605be586258f7b8376167ebef9891a7967814",
-      "bytes": 5494
+      "sha256": "0852239046a6388b69e3c86826d1343db11cb05c9942652d713e254de789d849",
+      "bytes": 7316
     },
     {
       "path": "terms.html",
