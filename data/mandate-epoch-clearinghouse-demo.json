@@ -1,0 +1,43 @@
+{
+  "title": "MandateEpoch Clearinghouse",
+  "version": "v26-public-demo",
+  "productionRoute": "/mandate-epoch-clearinghouse.html",
+  "principle": "One mandate can clear many proof receipts through one human-reviewed settlement boundary.",
+  "lifecycle": [
+    "SponsorMandate",
+    "PaymasterBudgetEnvelope",
+    "NettingHouseReceiptBatch",
+    "AlphaFactoryWorkSwarm",
+    "ProofBundleExport",
+    "ChallengeWindow",
+    "AGIJobManagerCheckpoint",
+    "ChronicleHandoff"
+  ],
+  "publicRoots": [
+    "receiptRoot",
+    "payoutRoot",
+    "archiveDeltaRoot",
+    "quarantineRoot"
+  ],
+  "safeByDefault": {
+    "browserLocal": true,
+    "noUserDataWanted": true,
+    "noWallet": true,
+    "noNetwork": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true
+  },
+  "outcomes": [
+    "REVIEW_READY_FOR_SETTLEMENT_CHECKPOINT",
+    "NEEDS_MORE_PROOF_OR_QUARANTINE",
+    "CHALLENGE_WINDOW_OPEN",
+    "EPOCH_OPEN"
+  ],
+  "sourceDoctrine": [
+    "AGIJobManager as settlement checkpoint",
+    "MandateEpoch batching",
+    "No ProofBundle, no settlement",
+    "No replay, no settlement",
+    "Chronicle memory after validation"
+  ]
+}

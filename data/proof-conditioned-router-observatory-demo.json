@@ -1,0 +1,75 @@
+{
+  "demo": "proof-conditioned-router-observatory",
+  "version": "v30",
+  "publicSafe": true,
+  "law": "Route the institution, not the swarm.",
+  "inputs": [
+    "taskFamily",
+    "riskClass",
+    "auditMode",
+    "evidenceDensity",
+    "taskSeparability",
+    "validatorAvailability",
+    "auditabilityNeed",
+    "costPressure",
+    "riskPressure",
+    "toolComplexity",
+    "replayReadiness"
+  ],
+  "routerFamily": [
+    {
+      "id": "R0",
+      "name": "Heuristic Hamiltonian baseline",
+      "use": "auditability and sparse evidence"
+    },
+    {
+      "id": "R1",
+      "name": "Natural-language workflow router",
+      "use": "open-ended decomposition"
+    },
+    {
+      "id": "R2",
+      "name": "Evidence-state lightweight router",
+      "use": "high-volume structured tasks"
+    },
+    {
+      "id": "R3",
+      "name": "Evolutionary coordinator",
+      "use": "sparse terminal validator rewards"
+    },
+    {
+      "id": "R4",
+      "name": "Reinforcement-learned coordinator",
+      "use": "stable domains with many validated episodes"
+    },
+    {
+      "id": "R5",
+      "name": "Hybrid proof-conditioned router",
+      "use": "mixed, high-value, or high-risk work"
+    }
+  ],
+  "receiptObject": "GoalOSProofConditionedRoutingReceipt",
+  "hardGates": [
+    "Proof bundle required",
+    "Validator set assigned",
+    "Tool scope bounded",
+    "Replay path exists",
+    "Risk within routing budget",
+    "Stopping rule explicit",
+    "Escalation rule explicit",
+    "Public/private boundary preserved"
+  ],
+  "safetyBoundary": {
+    "accounts": false,
+    "forms": false,
+    "cookies": false,
+    "analytics": false,
+    "storage": false,
+    "wallet": false,
+    "networkRequests": false,
+    "tokenRoute": false,
+    "transactionBroadcast": false,
+    "productionAuthority": false,
+    "userDataWanted": false
+  }
+}

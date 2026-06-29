@@ -1,0 +1,184 @@
+{
+  "title": "Until-DONE Mission Control",
+  "version": "v33-until-done-mission-control",
+  "posture": {
+    "browserLocal": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noStorage": true,
+    "noUserDataWanted": true,
+    "noProductionAuthority": true
+  },
+  "states": [
+    {
+      "id": "CREATED",
+      "title": "Created",
+      "kind": "intake",
+      "requires": [
+        "objective",
+        "decision_to_support"
+      ],
+      "returnsTo": null,
+      "publicSafe": true
+    },
+    {
+      "id": "MISSION_CONTRACT",
+      "title": "Mission Contract",
+      "kind": "contract",
+      "requires": [
+        "success_criteria",
+        "failure_criteria",
+        "risk_class",
+        "allowed_sources",
+        "done_condition"
+      ],
+      "returnsTo": "CREATED",
+      "publicSafe": true
+    },
+    {
+      "id": "WORKSTREAMS",
+      "title": "Bounded Workstreams",
+      "kind": "work",
+      "requires": [
+        "research",
+        "source_map",
+        "contradiction_scan",
+        "risk_pass",
+        "action_plan"
+      ],
+      "returnsTo": "MISSION_CONTRACT",
+      "publicSafe": true
+    },
+    {
+      "id": "CLAIMS_MATRIX",
+      "title": "Claims Matrix",
+      "kind": "proof",
+      "requires": [
+        "claim",
+        "support",
+        "uncertainty",
+        "not_claimed"
+      ],
+      "returnsTo": "WORKSTREAMS",
+      "publicSafe": true
+    },
+    {
+      "id": "VERIFIER_MESH",
+      "title": "Verifier Mesh",
+      "kind": "validation",
+      "requires": [
+        "source_reality",
+        "support_check",
+        "freshness_check",
+        "contradiction_check"
+      ],
+      "returnsTo": "CLAIMS_MATRIX",
+      "publicSafe": true
+    },
+    {
+      "id": "EVIDENCE_DOCKET",
+      "title": "Evidence Docket",
+      "kind": "proof-room",
+      "requires": [
+        "manifest",
+        "provenance",
+        "baselines",
+        "proof_packets",
+        "risk_cost_ledgers",
+        "replay_path"
+      ],
+      "returnsTo": "VERIFIER_MESH",
+      "publicSafe": true
+    },
+    {
+      "id": "GOVERNED_DECISION_STATE",
+      "title": "Governed Decision State",
+      "kind": "decision",
+      "requires": [
+        "verifier_report",
+        "risk_ledger",
+        "claim_boundary",
+        "review_packet"
+      ],
+      "returnsTo": "EVIDENCE_DOCKET",
+      "publicSafe": true
+    },
+    {
+      "id": "ACTION_GRAPH",
+      "title": "Action Graph",
+      "kind": "handoff",
+      "requires": [
+        "owners",
+        "approvals",
+        "proof_requirements",
+        "rollback_conditions"
+      ],
+      "returnsTo": "GOVERNED_DECISION_STATE",
+      "publicSafe": true
+    },
+    {
+      "id": "CHRONICLE",
+      "title": "Chronicle Entry",
+      "kind": "memory",
+      "requires": [
+        "accepted_facts",
+        "warnings",
+        "capability_package",
+        "reuse_boundary"
+      ],
+      "returnsTo": "ACTION_GRAPH",
+      "publicSafe": true
+    },
+    {
+      "id": "DONE",
+      "title": "DONE",
+      "kind": "terminal",
+      "requires": [
+        "human_review_ready",
+        "public_safe_docket",
+        "rollback_ready"
+      ],
+      "returnsTo": null,
+      "publicSafe": true
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "market-entry",
+      "title": "Market-entry decision pack",
+      "objective": "Evaluate whether a public-safe AI work settlement page is ready for stakeholder review.",
+      "risk": "medium",
+      "stress": "missing evidence loops back to Claims Matrix"
+    },
+    {
+      "id": "software-change",
+      "title": "Software change handoff",
+      "objective": "Prepare a review-ready patch handoff with tests, proof bundle, rollback plan, and owner approvals.",
+      "risk": "medium",
+      "stress": "failed rollback drill loops back to Action Graph"
+    },
+    {
+      "id": "policy-decision",
+      "title": "Policy-bound recommendation",
+      "objective": "Prepare a claim-bounded, evidence-backed policy option brief with uncertainty and contradiction register.",
+      "risk": "high",
+      "stress": "unresolved contradiction loops back to Workstreams"
+    },
+    {
+      "id": "proof-mission",
+      "title": "Public proof mission",
+      "objective": "Run a browser-local proof mission from objective to Evidence Docket without collecting user data.",
+      "risk": "low",
+      "stress": "claim boundary violation loops back to Verifier Mesh"
+    }
+  ],
+  "doctrine": [
+    "Set the objective. GoalOS runs until proof is done.",
+    "AI creates output. GoalOS creates proof.",
+    "No proof, no settlement. No eval, no propagation. No rollback, no release."
+  ]
+}
