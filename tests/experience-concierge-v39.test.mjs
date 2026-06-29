@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+const must=(cond,msg)=>{if(!cond){console.error('FAIL · '+msg);process.exit(1)}console.log('PASS · '+msg)};
+const files=['site/experience-concierge.html','site/assets/experience-concierge.css','site/assets/experience-concierge.js','site/assets/site-command-v39.css','site/assets/site-command-v39.js','data/site-navigation-v39.json','schemas/site-navigation-v39.schema.json','docs/EXPERIENCE_CONCIERGE_V39.md','tools/site-rehydrate.mjs'];
+for(const f of files) must(fs.existsSync(f),`required v39 file exists: ${f}`);
+const html=fs.readFileSync('site/experience-concierge.html','utf8');
+const js=fs.readFileSync('site/assets/experience-concierge.js','utf8')+fs.readFileSync('site/assets/site-command-v39.js','utf8');
+const css=fs.readFileSync('site/assets/site-command-v39.css','utf8');
+const nav=JSON.parse(fs.readFileSync('data/site-navigation-v39.json','utf8'));
+must(/Experience Concierge/.test(html),'Concierge page is named clearly');
+must(/Choose the right proof path/.test(html),'Concierge offers a clear user path');
+must(/No account/.test(html)&&/no wallet/i.test(html)&&/no user data wanted/i.test(html),'public-safe posture is visible');
+must(/Site Command/.test(js)&&/All pages/.test(js),'global Site Command exists');
+must(/v39-clean-nav/.test(css),'clean global navigation CSS exists');
+must(nav.pages.some(p=>p.href==='proof-settlement-lifecycle.html'),'v39 catalog includes settlement lifecycle');
+must(nav.pages.some(p=>p.href==='experience-concierge.html'),'v39 catalog includes Concierge');
+must(nav.journeys.length>=5,'v39 includes guided journeys');
+for(const bad of ['localStorage','sessionStorage','document.cookie','fetch(','XMLHttpRequest','navigator.sendBeacon','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','<form']) must(!(html+js).includes(bad),`forbidden primitive absent: ${bad}`);
+console.log('Experience Concierge v39 PASS');
