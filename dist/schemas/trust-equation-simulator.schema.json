@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TrustEquationSimulatorDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "posture",
+    "equations",
+    "presets",
+    "gates"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object",
+      "required": [
+        "browserLocal",
+        "zeroNetwork",
+        "noWallet",
+        "noForms",
+        "noAccounts",
+        "noCookies",
+        "noAnalytics",
+        "noStorage",
+        "noUserDataWanted"
+      ]
+    },
+    "equations": {
+      "type": "object"
+    },
+    "presets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "values",
+          "lesson"
+        ]
+      }
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "source"
+        ]
+      }
+    }
+  }
+}

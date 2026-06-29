@@ -28,5 +28,6 @@
   "proofConstitutionSimulator": "PASS",
   "untilDoneMissionControl": "PASS",
   "evidenceDocketComposer": "PASS",
+  "trustEquationSimulator": "PASS",
   "vendoredDependencies": "PASS"
 }
