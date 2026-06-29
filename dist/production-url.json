@@ -29,5 +29,15 @@
   "untilDoneMissionControl": "PASS",
   "evidenceDocketComposer": "PASS",
   "trustEquationSimulator": "PASS",
+  "proofSettlementLifecycle": "PASS",
+  "experienceHub": "PASS",
+  "commandCenterNavigation": "PASS",
+  "siteExperienceAtlas": "PASS",
+  "navigationSystemFinal": "PASS",
+  "websiteCommandCenter": "PASS",
+  "navigationAtlas": "PASS",
+  "siteCommandCenter": "PASS",
+  "globalNavigation": "PASS",
+  "navigationCompleteness": "PASS",
   "vendoredDependencies": "PASS"
 }
