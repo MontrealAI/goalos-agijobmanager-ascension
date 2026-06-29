@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proof-Backed Upgrade Foundry Demo",
+  "type": "object",
+  "required": [
+    "demo",
+    "version",
+    "principle",
+    "publicSafety",
+    "protocolObjects",
+    "hardGates",
+    "outcomes"
+  ],
+  "properties": {
+    "demo": {
+      "const": "Proof-Backed Upgrade Foundry"
+    },
+    "version": {
+      "const": "v25"
+    },
+    "principle": {
+      "type": "string"
+    },
+    "publicSafety": {
+      "type": "object"
+    },
+    "protocolObjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hardGates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

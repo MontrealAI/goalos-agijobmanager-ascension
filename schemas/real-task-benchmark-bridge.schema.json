@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RealTaskBenchmarkBridgeDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "route",
+    "teachingLine",
+    "publicSafety",
+    "baselineLadder",
+    "promotionGates",
+    "outcomes"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "teachingLine": {
+      "type": "string"
+    },
+    "publicSafety": {
+      "type": "object"
+    },
+    "taskFamilies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "baselineLadder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "promotionGates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}

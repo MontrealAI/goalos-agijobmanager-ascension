@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.2.0-proof-constitution-simulator-v32",
+  "version": "3.3.0-until-done-mission-control-v33",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
-    "test:final": "npm test && python3 tools/build.py && node tools/proof-constitution-simulator-kernel.mjs && node tools/ascension-flight-deck-kernel.mjs && node tools/proof-conditioned-router-observatory-kernel.mjs",
+    "test:final": "npm test && python3 tools/build.py && node tools/run-existing-kernels.mjs",
     "legal": "node tools/legal-shield-kernel.mjs",
     "test:legal": "npm run legal",
     "token-boundary": "node tools/token-boundary-kernel.mjs",
@@ -45,9 +45,11 @@
     "flight-deck": "node tests/ascension-flight-deck.test.mjs && python3 tools/build.py && node tools/ascension-flight-deck-kernel.mjs",
     "test:flight-deck": "npm run flight-deck",
     "proof-constitution": "node tests/proof-constitution-simulator.test.mjs && python3 tools/build.py && node tools/proof-constitution-simulator-kernel.mjs",
-    "test:proof-constitution": "npm run proof-constitution"
+    "test:proof-constitution": "npm run proof-constitution",
+    "until-done": "node tests/until-done-mission-control.test.mjs && python3 tools/build.py && node tools/until-done-mission-control-kernel.mjs",
+    "test:until-done": "npm run until-done"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension static site with Proof Constitution Simulator, Flight Deck, Router Observatory, and public-safe GoalOS demonstrations.",
+  "description": "GoalOS AGIJobManager Ascension static site with Until-DONE Mission Control, Proof Constitution Simulator, Flight Deck, and public-safe GoalOS demonstrations.",
   "devDependencies": {}
 }

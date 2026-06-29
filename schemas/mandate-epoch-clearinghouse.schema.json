@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MandateEpoch Clearinghouse Demo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "productionRoute",
+    "principle",
+    "lifecycle",
+    "publicRoots",
+    "safeByDefault",
+    "outcomes"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "productionRoute": {
+      "type": "string"
+    },
+    "principle": {
+      "type": "string"
+    },
+    "lifecycle": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicRoots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safeByDefault": {
+      "type": "object"
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceDoctrine": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

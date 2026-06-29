@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Action Graph Handoff Demo v28",
+  "type": "object",
+  "required": [
+    "release",
+    "title",
+    "principle",
+    "publicSafety",
+    "presets",
+    "handoffObjects",
+    "gates",
+    "outcomes"
+  ],
+  "properties": {
+    "release": {
+      "const": "v28-action-graph-handoff"
+    },
+    "title": {
+      "type": "string"
+    },
+    "principle": {
+      "type": "string"
+    },
+    "publicSafety": {
+      "type": "object"
+    },
+    "presets": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "objective",
+          "decision",
+          "actions",
+          "rollback"
+        ]
+      }
+    },
+    "handoffObjects": {
+      "type": "array",
+      "minItems": 8
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 8
+    },
+    "outcomes": {
+      "type": "array",
+      "minItems": 5
+    }
+  }
+}

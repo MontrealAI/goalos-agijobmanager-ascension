@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UntilDoneMissionControlDemo",
+  "type": "object",
+  "required": [
+    "title",
+    "version",
+    "posture",
+    "states",
+    "scenarios",
+    "doctrine"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "kind",
+          "requires",
+          "publicSafe"
+        ]
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "objective",
+          "risk",
+          "stress"
+        ]
+      }
+    },
+    "doctrine": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
