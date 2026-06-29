@@ -1,7 +1,7 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "release": "v34-evidence-docket-composer",
-  "builtAt": "2026-06-29T16:32:30.150226Z",
+  "builtAt": "2026-06-29T16:50:14.523997Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -30,18 +30,13 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "74a84bde3756a1de4b448bec9236fe6f8e5a026e2b53af904366e42d0554fac6",
+      "sha256": "920c177d5c9cfc3468cbce27861dac66deda63e5618d22aade6272adfa5da828",
       "bytes": 12605
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.md",
       "sha256": "852d7ed96609b4137495cda7812f449f1019decf2657ccac7bc3c5c21e42bad2",
       "bytes": 1436
-    },
-    {
-      "path": "GOALOS_AGIJOBMANAGER_ACTION_GRAPH_HANDOFF_V28_REPORT.md",
-      "sha256": "d48fc5e0832c8cdc6def906945fd84d022551dcbc8a509a1f8364baf5b3152f9",
-      "bytes": 1324
     },
     {
       "path": "GOALOS_AGIJOBMANAGER_ASCENSION_FLIGHT_DECK_V31_REPORT.md",
@@ -59,16 +54,6 @@
       "bytes": 1266
     },
     {
-      "path": "GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.md",
-      "sha256": "98b8df65f614194e729113df7886ef76f959d5b8c1db133759859d54e2df8c45",
-      "bytes": 866
-    },
-    {
-      "path": "GOALOS_AGIJOBMANAGER_PROOF_CONDITIONED_ROUTER_OBSERVATORY_V30_REPORT.md",
-      "sha256": "9f1eb4b90935a6daf3b5e520a0cba4e5f393a0ca3f26b54c86ea04d29f1b2d65",
-      "bytes": 1419
-    },
-    {
       "path": "GOALOS_AGIJOBMANAGER_PROOF_CONSTITUTION_SIMULATOR_V32_REPORT.md",
       "sha256": "76d02dcaa31be5bd77e5b3d562f2d215fed1464cc424f5d0bec767cbd5030235",
       "bytes": 1523
@@ -79,19 +64,9 @@
       "bytes": 2295
     },
     {
-      "path": "MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.md",
-      "sha256": "81b6dd57c7319cf34f057d18d3ac00a278b59d6dbc2bc264a0f93ce145262799",
-      "bytes": 1068
-    },
-    {
       "path": "MULTI_AGENT_INSTITUTION_V17_REPORT.md",
       "sha256": "86577f80db3220d60b6aab58f743ec1e77eecf7d26b84b2971870c745fb47192",
       "bytes": 2372
-    },
-    {
-      "path": "PROOF_BACKED_UPGRADE_FOUNDRY_V25_REPORT.md",
-      "sha256": "34ac828334801183f05d7ea998f48a357b0ce03f7d19e64370191f47be112788",
-      "bytes": 881
     },
     {
       "path": "PROOF_GOVERNED_INSTITUTION_V17_REPORT.md",
@@ -107,11 +82,6 @@
       "path": "PROOF_TO_ACTION_THEATRE_V18_REPORT.md",
       "sha256": "376a3605238286387d3704b7da3d57e366e00b04e517ff6dc521647b177271d0",
       "bytes": 2722
-    },
-    {
-      "path": "REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.md",
-      "sha256": "c8f2f4f3799ab0a663f3e385b377e7fb2dcc673b428820139927a6290097ff5a",
-      "bytes": 943
     },
     {
       "path": "REPLAY_FALSIFICATION_GAUNTLET_V23_REPORT.md",
@@ -659,6 +629,11 @@
       "bytes": 392
     },
     {
+      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
+      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
+      "bytes": 1354
+    },
+    {
       "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
       "sha256": "39719e22673df9ca3b65bf6ab47bf122823634521b736b8149399a0ec6184368",
       "bytes": 609
@@ -1140,8 +1115,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "f278d94cc4e44ff6cd26d644e141e767571ba25ace8499d346ad6f770fad0a91",
-      "bytes": 11428
+      "sha256": "bea72c339fd4b4bc124ae2f51392c7da469824a6adecbd9f5d54f76937079247",
+      "bytes": 10602
     },
     {
       "path": "sovereign-experience-stream-demo.json",
