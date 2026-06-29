@@ -1,14 +1,16 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v40-navigation-polish-failsafe",
+  "release": "v41-navigation-source-polish-final",
   "releaseAliases": [
+    "v40-navigation-polish-failsafe",
+    "v40-navigation-polish-failsafe",
     "v39-experience-concierge-complete-navigation",
     "v38-navigation-system-final",
     "v37-site-command-center",
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-29T21:47:17.366137Z",
+  "builtAt": "2026-06-29T22:43:22.103751Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -37,12 +39,12 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "3a3bacd67dccda93a7f945426b85c0385bb87a340e732fc46f4ac915c6dc79f8",
+      "sha256": "8985fd58e3f45842a1e987b7add1bc5f1b08b5e1e8e1456592cfdbdc4f1d63c7",
       "bytes": 12605
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.md",
-      "sha256": "add018d46762213d1a101b2e19031d7eb72b45fb9f64edd7ff0626f1115f99f2",
+      "sha256": "1b6031fb0f29075fd51196c7071f905e7054530d812ffb8a2156041a559f8fa1",
       "bytes": 1436
     },
     {
@@ -91,9 +93,29 @@
       "bytes": 1246
     },
     {
+      "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_COMMAND_FINAL_V41_REPORT.md",
+      "sha256": "69e76fac98b187fc745a08562df4bec0e9493df0f392f77dbe507b759e045ec3",
+      "bytes": 729
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_FAILSAFE_V41_REPORT.md",
+      "sha256": "162fda653ebb8c7eba6e5d4072436ef2785b7b4cbb4926bf34f58256d650da32",
+      "bytes": 1504
+    },
+    {
       "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_POLISH_V40_REPORT.md",
       "sha256": "1fc2d53a889c87e9143dc1cacae1258a89ba8c09fe14c84392e10ad2608de4bb",
       "bytes": 1128
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_POLISH_V41_REPORT.md",
+      "sha256": "707fc08cb84a5e0f547d2ea83d72d25f4b2b4b0590763a9ea717a9805b2ea066",
+      "bytes": 963
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_SOURCE_POLISH_V41_REPORT.md",
+      "sha256": "0c235fdf6d2c775fa78926940b7276a257c24f80a379ee899a7bacd024eaa26d",
+      "bytes": 1041
     },
     {
       "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_SYSTEM_FINAL_V38_REPORT.md",
@@ -326,6 +348,16 @@
       "bytes": 16442
     },
     {
+      "path": "assets/command-center-v41.css",
+      "sha256": "a85e1364db894f17ca64f87d8624d67feab3d5534cc546b89c24bc464453ddc6",
+      "bytes": 1313
+    },
+    {
+      "path": "assets/command-center-v41.js",
+      "sha256": "72fc42c24d3595419f1a1c973ebcf318c80f46c6ce78977116ba1d19f63a3a31",
+      "bytes": 8027
+    },
+    {
       "path": "assets/delight.css",
       "sha256": "8e0d5bb43f13ad17d2bdfac4c9915e272f70c4bba083c5d0e41125b004580dc2",
       "bytes": 8635
@@ -527,13 +559,13 @@
     },
     {
       "path": "assets/site-command-v39.css",
-      "sha256": "cf09bad00833ea2aabaede95d34e9509ea8307d7920ff89caba172d2502538c5",
-      "bytes": 1889
+      "sha256": "f5c70c62ca6e2c8eb0eae3eb6afb89cf83d7881f36aab3730df90ed1cff3fe61",
+      "bytes": 2363
     },
     {
       "path": "assets/site-command-v39.js",
-      "sha256": "cfa52030c95bc35f0b012fc45e73a6f1a5044e1eae07a8cbf4bbbb940d3ef476",
-      "bytes": 9116
+      "sha256": "88f7f3a1de2bc0c601586805781df1f67d3ccb3b8ac58c5e8ee24d19239bf5c9",
+      "bytes": 298
     },
     {
       "path": "assets/site-command-v40.css",
@@ -544,6 +576,16 @@
       "path": "assets/site-command-v40.js",
       "sha256": "cfa52030c95bc35f0b012fc45e73a6f1a5044e1eae07a8cbf4bbbb940d3ef476",
       "bytes": 9116
+    },
+    {
+      "path": "assets/site-command-v41.css",
+      "sha256": "3c937fbfea68d37d54eb04d10fa1eeaff3116e84e619a14be3ec87d7ac0035a6",
+      "bytes": 2215
+    },
+    {
+      "path": "assets/site-command-v41.js",
+      "sha256": "fe4b83af7e0fa23112ecc978aa9e397046af82798daa44d002315ca83c3237d7",
+      "bytes": 6199
     },
     {
       "path": "assets/site-command.css",
@@ -677,8 +719,8 @@
     },
     {
       "path": "command-center.html",
-      "sha256": "5377df56cebc9df870fdb938219679caa6a1c41827975974066b8d3e0bbbac0d",
-      "bytes": 1782
+      "sha256": "a64fd182c558de1800e2f67897454d522aee99a4c81db68b6c5d808a824896a0",
+      "bytes": 4124
     },
     {
       "path": "coordination-engine.html",
@@ -871,6 +913,11 @@
       "bytes": 15998
     },
     {
+      "path": "data/site-navigation-v41.json",
+      "sha256": "cfb4a312d0f6b380e256d0c0cd93b36591406a603e43e74ec52545c2e5abe086",
+      "bytes": 8474
+    },
+    {
       "path": "data/site-rehydration-v39.json",
       "sha256": "29aeff2b634b57fe444e51eecc00eb58a4b38d3dba09c6e9fbbffbec38aa6324",
       "bytes": 85
@@ -1024,6 +1071,11 @@
       "path": "docs/NAVIGATION_ATLAS_V37.md",
       "sha256": "4935900547d222d3cb36ad0357f00dd6b4b59d2cdff4dfa83168846fae9b348e",
       "bytes": 858
+    },
+    {
+      "path": "docs/NAVIGATION_COMMAND_FINAL_V41.md",
+      "sha256": "8f38a78ad0a80f73dad7c57f4a90ea16b544512cdf477c22a442a1f12d71d5fb",
+      "bytes": 335
     },
     {
       "path": "docs/NAVIGATION_SYSTEM_FINAL_V38.md",
@@ -1217,8 +1269,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "3d1cf0e2b75796f9f93103a9c3899af13ebd836d6dfca93199f7904210b309ac",
-      "bytes": 15228
+      "sha256": "9ecedf8af58e888290253f70f154f0b5062715025f2432996da2660cbd795e02",
+      "bytes": 11736
     },
     {
       "path": "legal-boundary-policy.json",
@@ -1282,8 +1334,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "3ba78794fbd6357eb40530c2e1fa206691085e863dfedb234bd7b90304d96ee5",
-      "bytes": 1598
+      "sha256": "cf3e3835bc2075bc23bf9decd75c5b8bab72133c37ede85a7db7e25e5b2f8b4f",
+      "bytes": 1702
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -1551,6 +1603,11 @@
       "bytes": 1057
     },
     {
+      "path": "schemas/site-navigation-v41.schema.json",
+      "sha256": "8c40d281f6bc0def7279d414c48ed6928fde7a5bea373ca4a30237dd801d9f61",
+      "bytes": 494
+    },
+    {
       "path": "schemas/sovereign-experience-stream.schema.json",
       "sha256": "6ed50f0e35e80a63bf2b8971d7cf1494436a92b5c6e847392ed19f57eb51e44d",
       "bytes": 943
@@ -1606,14 +1663,19 @@
       "bytes": 15998
     },
     {
+      "path": "site-navigation-v41.json",
+      "sha256": "cfb4a312d0f6b380e256d0c0cd93b36591406a603e43e74ec52545c2e5abe086",
+      "bytes": 8474
+    },
+    {
       "path": "site-rehydration-v39.json",
       "sha256": "29aeff2b634b57fe444e51eecc00eb58a4b38d3dba09c6e9fbbffbec38aa6324",
       "bytes": 85
     },
     {
       "path": "sitemap.xml",
-      "sha256": "85249c1a40cb11c4b0f402f1ae91f0a5b897c8c769d507d7f55a2a0631545843",
-      "bytes": 15362
+      "sha256": "6fd754e0acdb2040428fba0263ab6856c5ba8c9bc8dfbe83f328475bcb6eb2b2",
+      "bytes": 16035
     },
     {
       "path": "sovereign-experience-stream-demo.json",
