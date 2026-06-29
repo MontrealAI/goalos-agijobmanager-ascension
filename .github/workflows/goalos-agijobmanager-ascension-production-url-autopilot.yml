@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Sovereign Experience Stream Publisher v24
+name: GoalOS AGIJobManager Ascension Proof-Backed Upgrade Foundry Publisher v25
 
 on:
   workflow_dispatch:
@@ -48,7 +48,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Sovereign Experience Stream
+    name: Build, assure, and publish Proof-Backed Upgrade Foundry
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -67,7 +67,7 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
 
-      - name: Verify implementation, boundaries, demos, Replay Gauntlet, and Experience Stream
+      - name: Verify implementation, boundaries, demos, Experience Stream, and Upgrade Foundry
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -106,6 +106,8 @@ jobs:
           node tools/replay-falsification-gauntlet-kernel.mjs
           node tests/sovereign-experience-stream.test.mjs
           node tools/sovereign-experience-stream-kernel.mjs
+          node tests/proof-backed-upgrade-foundry.test.mjs
+          node tools/proof-backed-upgrade-foundry-kernel.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
               node tools/mainnet-factual-check.mjs
@@ -119,7 +121,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact with Sovereign Experience Stream
+      - name: Build static Pages artifact with Proof-Backed Upgrade Foundry
         shell: bash
         run: |
           set -euo pipefail
@@ -134,6 +136,8 @@ jobs:
           node tools/replay-falsification-gauntlet-kernel.mjs
           node tests/sovereign-experience-stream.test.mjs
           node tools/sovereign-experience-stream-kernel.mjs
+          node tests/proof-backed-upgrade-foundry.test.mjs
+          node tools/proof-backed-upgrade-foundry-kernel.mjs
           test -f dist/start.html
           test -f dist/demo-lab.html
           test -f dist/coordination-lab.html
@@ -144,6 +148,7 @@ jobs:
           test -f dist/claim-boundary-firewall.html
           test -f dist/replay-falsification-gauntlet.html
           test -f dist/sovereign-experience-stream.html
+          test -f dist/proof-backed-upgrade-foundry.html
           test -f dist/mission-studio.html
           test -f dist/proof-cards.html
           test -f dist/demo-missions.json
@@ -155,6 +160,7 @@ jobs:
           test -f dist/claim-boundary-firewall-demo.json
           test -f dist/replay-falsification-gauntlet-demo.json
           test -f dist/sovereign-experience-stream-demo.json
+          test -f dist/proof-backed-upgrade-foundry-demo.json
 
       - name: Commit generated source with retry
         if: ${{ inputs.commit_generated_source != false }}
@@ -168,7 +174,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Sovereign Experience Stream v24"
+          git commit -m "Generate GoalOS Proof-Backed Upgrade Foundry v25"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
