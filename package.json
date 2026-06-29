@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.3.0-until-done-mission-control-v33",
+  "version": "3.4.0-evidence-docket-composer-v34",
   "private": true,
   "type": "module",
   "scripts": {
@@ -47,9 +47,11 @@
     "proof-constitution": "node tests/proof-constitution-simulator.test.mjs && python3 tools/build.py && node tools/proof-constitution-simulator-kernel.mjs",
     "test:proof-constitution": "npm run proof-constitution",
     "until-done": "node tests/until-done-mission-control.test.mjs && python3 tools/build.py && node tools/until-done-mission-control-kernel.mjs",
-    "test:until-done": "npm run until-done"
+    "test:until-done": "npm run until-done",
+    "evidence-docket-composer": "node tests/evidence-docket-composer.test.mjs && python3 tools/build.py && node tools/evidence-docket-composer-kernel.mjs",
+    "test:evidence-docket-composer": "npm run evidence-docket-composer"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension static site with Until-DONE Mission Control, Proof Constitution Simulator, Flight Deck, and public-safe GoalOS demonstrations.",
+  "description": "GoalOS AGIJobManager Ascension static site with fault-tolerant publisher and browser-local Evidence Docket Composer.",
   "devDependencies": {}
 }

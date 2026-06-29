@@ -1,3 +1,7 @@
+## Evidence Docket Composer v34
+
+A browser-local public proof-room composer now helps users turn public-safe claims into Evidence Docket receipts without accounts, wallets, forms, analytics, cookies, or user data.
+
 ## Ascension Flight Deck v31
 
 A browser-local guided launch surface now helps non-technical and advanced users run the best GoalOS demonstrations autonomously.
