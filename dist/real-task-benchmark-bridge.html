@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real‑Task Benchmark Bridge · GoalOS AGIJobManager Ascension</title>
+<meta name="description" content="A browser-local GoalOS demonstration showing how public claims become eligible only through real-task benchmark dockets, baselines, replay, cost/risk ledgers, and human review.">
+<link rel="stylesheet" href="assets/atelier.css">
+<link rel="stylesheet" href="assets/benchmark-bridge.css">
+</head>
+<body class="bb-page">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="bbField" class="bb-field" aria-hidden="true"></canvas>
+<header class="bb-top">
+  <div class="bb-line">GoalOS AGIJobManager Ascension · real-task benchmark bridge · browser-local · public-safe</div>
+  <div class="bb-wrap bb-nav">
+    <a class="bb-brand" href="./"><span class="bb-mark"></span><span>Real‑Task Benchmark Bridge<small>Baselines · proof bundles · promotion law</small></span></a>
+    <nav aria-label="Primary"><a href="./">Home</a><a href="start.html">Start</a><a href="proof-to-action-theatre.html">Proof Theatre</a><a href="replay-falsification-gauntlet.html">Replay</a><a href="mandate-epoch-clearinghouse.html">MandateEpoch</a><a href="assurance.html">Assurance</a><a href="legal.html">Legal</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="bb-hero">
+  <div class="bb-wrap bb-hero-grid">
+    <div>
+      <div class="bb-kicker">Empirical claim boundary</div>
+      <h1>Architecture is not evidence.<br><span>Evidence is not enough.</span><br><em>Benchmarks decide.</em></h1>
+      <p class="bb-lead">Run a browser-local bridge from a GoalOS claim to a public-safe benchmark docket. Compare report-only, single-agent, unstructured swarm, fixed crew, proof-governed constellation, and Chronicle-compounding modes under equal-budget rules.</p>
+      <div class="bb-actions"><a class="bb-button primary" href="#bridge">Run benchmark bridge</a><a class="bb-button" href="replay-falsification-gauntlet.html">Open Replay Gauntlet</a></div>
+      <p class="bb-boundary"><b>No user data wanted.</b> This page is a local public demonstration. No account. No form. No cookies. No analytics. No storage. No wallet. No network request. No token route. Do not enter personal, confidential, regulated, customer, wallet, seed phrase, private-key, or proprietary information.</p>
+    </div>
+    <aside class="bb-console" aria-label="Benchmark bridge visualizer">
+      <div class="bb-console-head"><span>BENCHMARK DOCKET</span><b id="heroVerdict">WAITING</b></div>
+      <div class="bb-ladder" id="heroLadder">
+        <div>B0<br><small>single</small></div><div>B1<br><small>swarm</small></div><div>B2<br><small>fixed</small></div><div>B3<br><small>routed</small></div><div>B4<br><small>memory</small></div><div>B5<br><small>full</small></div><div>B6<br><small>external</small></div>
+      </div>
+      <div class="bb-orbit"><div class="bb-core">D<sub>real</sub><small>verified work / cost / risk</small></div><span class="p p1">tasks</span><span class="p p2">baselines</span><span class="p p3">replay</span><span class="p p4">validators</span><span class="p p5">safety</span><span class="p p6">claim</span></div>
+      <div class="bb-metrics"><div><strong id="heroTasks">6</strong><span>task families</span></div><div><strong id="heroBaselines">7</strong><span>baselines</span></div><div><strong id="heroSafety">0</strong><span>critical incidents</span></div></div>
+    </aside>
+  </div>
+</section>
+<section id="bridge" class="bb-section">
+  <div class="bb-wrap bb-grid">
+    <section class="bb-panel">
+      <div class="bb-panel-head"><span>01</span><h2>Set the benchmark claim</h2></div>
+      <label class="bb-label">Task family<select id="taskFamily"><option value="software">Software repair</option><option value="assistant">General assistant work</option><option value="web">Web / desktop workflow</option><option value="policy">Policy-bound tool use</option><option value="science">Scientific / data workflow</option><option value="agijobs">AGI Jobs protocol-native work</option></select></label>
+      <label class="bb-label">Public-safe claim to test<textarea id="claimText" maxlength="720">A proof-governed constellation should produce more review-ready verified work than report-only, single-agent, unstructured-swarm, and fixed-crew baselines under the same public-safe task budget.</textarea></label>
+      <div class="bb-note">The bridge is local and illustrative. It teaches the evidence standard; it is not an empirical SOTA claim, not a live benchmark, and not an external audit.</div>
+      <div class="bb-sliders">
+        <label>Task count <input id="taskCount" type="range" min="3" max="18" value="8"><span></span></label>
+        <label>Equal-budget discipline <input id="budget" type="range" min="25" max="100" value="92"><span></span></label>
+        <label>Baseline strength <input id="baseline" type="range" min="30" max="100" value="72"><span></span></label>
+        <label>Replay completeness <input id="replay" type="range" min="20" max="100" value="83"><span></span></label>
+        <label>Validator independence <input id="validator" type="range" min="20" max="100" value="78"><span></span></label>
+        <label>Cost/risk ledger quality <input id="ledger" type="range" min="20" max="100" value="86"><span></span></label>
+        <label>Safety margin <input id="safety" type="range" min="20" max="100" value="90"><span></span></label>
+        <label>External replay readiness <input id="external" type="range" min="0" max="100" value="42"><span></span></label>
+      </div>
+      <div class="bb-actions"><button id="runBridge" class="bb-button primary">Run benchmark bridge</button><button id="runAdversary" class="bb-button">Adversarial check</button><button id="resetBridge" class="bb-button">Reset</button></div>
+    </section>
+    <section class="bb-panel bb-results">
+      <div class="bb-panel-head"><span>02</span><h2>Equal-budget baseline ladder</h2></div>
+      <div id="baselineRows" class="bb-baselines"></div>
+      <div class="bb-verdict"><span id="verdictLabel">WAITING_FOR_RUN</span><p id="verdictText">Run the bridge to see whether the claim can be promoted, held, quarantined, or rejected.</p></div>
+      <div class="bb-score-grid"><div><span>Best baseline</span><strong id="bestBaseline">—</strong></div><div><span>Candidate Δ</span><strong id="candidateDelta">—</strong></div><div><span>D<sub>real</sub></span><strong id="dreal">—</strong></div><div><span>Claim level</span><strong id="claimLevel">—</strong></div></div>
+    </section>
+  </div>
+</section>
+<section class="bb-section bb-wrap bb-grid">
+  <section class="bb-panel">
+    <div class="bb-panel-head"><span>03</span><h2>Promotion gates</h2></div>
+    <div id="gateGrid" class="bb-gates"></div>
+    <p class="bb-note">Score never bypasses gates. A candidate that wins on raw value still fails if replay, safety, baselines, public/private boundary, or human-review readiness are missing.</p>
+  </section>
+  <section class="bb-panel">
+    <div class="bb-panel-head"><span>04</span><h2>Benchmark Evidence Docket</h2></div>
+    <pre id="docketJson" class="bb-json">Run the bridge to generate a BenchmarkEvidenceDocket.</pre>
+    <div class="bb-actions"><button id="downloadDocket" class="bb-button primary">Download docket JSON</button><button id="copyBrief" class="bb-button">Copy review brief</button></div>
+  </section>
+</section>
+<section class="bb-section bb-wrap">
+  <div class="bb-law">
+    <div><span>01</span><b>Real tasks</b><p>Benchmark claims start with task manifests, acceptance criteria, and risk class.</p></div>
+    <div><span>02</span><b>Equal baselines</b><p>GoalOS must beat strong comparators under equal model, tool, budget, and safety constraints.</p></div>
+    <div><span>03</span><b>Replayable proof</b><p>ProofBundles, logs, cost/risk ledgers, and validator decisions must remain inspectable.</p></div>
+    <div><span>04</span><b>Bounded claim</b><p>If external replay is missing, the site says so. No unsupported empirical promotion.</p></div>
+  </div>
+</section>
+</main>
+<footer class="bb-footer"><div class="bb-wrap">© MontrealAI · Real‑Task Benchmark Bridge · browser-local public demonstration · no user data wanted · no wallet · no network · no transaction broadcast · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+<script src="assets/benchmark-bridge.js"></script>
+</body>
+</html>

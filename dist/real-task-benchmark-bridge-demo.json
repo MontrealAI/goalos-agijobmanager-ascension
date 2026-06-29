@@ -1,0 +1,53 @@
+{
+  "title": "Real-Task Benchmark Bridge",
+  "version": "v27-public-demo",
+  "route": "/real-task-benchmark-bridge.html",
+  "teachingLine": "Architecture is not evidence. Evidence is not enough. Benchmarks decide.",
+  "publicSafety": {
+    "browserLocal": true,
+    "noUserDataWanted": true,
+    "noAccount": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noStorage": true,
+    "noWallet": true,
+    "noNetwork": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true
+  },
+  "taskFamilies": [
+    "software repair",
+    "general assistant work",
+    "web/desktop workflow",
+    "policy-bound tool use",
+    "scientific/data workflow",
+    "AGI Jobs protocol-native work"
+  ],
+  "baselineLadder": [
+    "B0 report-only",
+    "B1 single strongest agent",
+    "B2 unstructured swarm",
+    "B3 fixed-role crew",
+    "B4 GoalOS routed constellation",
+    "B5 GoalOS + Chronicle reuse",
+    "B6 external replay candidate"
+  ],
+  "promotionGates": [
+    "task manifest",
+    "equal budget",
+    "baseline ladder",
+    "proof bundle",
+    "replay path",
+    "cost/risk ledgers",
+    "claim boundary",
+    "human review",
+    "external replay for stronger claims"
+  ],
+  "outcomes": [
+    "EXTERNAL_REPLAY_READY_FOR_REVIEW",
+    "LOCAL_BENCHMARK_DOCKET_READY",
+    "HOLD_FOR_MISSING_GATES",
+    "BASELINE_WINS_REJECT_PROMOTION"
+  ],
+  "claimBoundary": "This demo is not an empirical SOTA claim, not a live benchmark, not factual certification, and not an external audit."
+}

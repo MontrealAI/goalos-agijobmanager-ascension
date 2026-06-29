@@ -1,0 +1,48 @@
+{
+  "demo": "Proof-Backed Upgrade Foundry",
+  "version": "v25",
+  "principle": "A candidate output earns propagation only through proof, evaluation, canary, challenge, rollback readiness, and human review.",
+  "publicSafety": {
+    "noUserDataWanted": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noStorage": true,
+    "noWalletConnection": true,
+    "noNetworkRequest": true,
+    "noTransactionBroadcast": true
+  },
+  "protocolObjects": [
+    "GoalOSCommit",
+    "RunCommitment",
+    "ProofPacket",
+    "EvalAttestation",
+    "SelectionCertificate",
+    "RolloutReceipt",
+    "RollbackReceipt",
+    "EvidenceDocket"
+  ],
+  "hardGates": [
+    "ProofValid",
+    "EvalPass",
+    "VerifiedValue",
+    "TransferReady",
+    "RiskControlled",
+    "RollbackReady",
+    "CanaryReady",
+    "ChallengeCleared",
+    "ScopeAuthorized"
+  ],
+  "outcomes": [
+    "UPGRADE_RIGHT_GRANTED_AFTER_HUMAN_REVIEW",
+    "SELECTION_CERTIFICATE_HELD_FOR_REVIEW",
+    "CANARY_ONLY_NEEDS_MORE_PROOF",
+    "ROLLBACK_REQUIRED",
+    "QUARANTINE_PRIVATE_APPENDIX",
+    "REJECT_UPGRADE_RIGHT"
+  ],
+  "routes": [
+    "/proof-backed-upgrade-foundry.html",
+    "/proof-backed-upgrade-foundry-demo.json"
+  ]
+}

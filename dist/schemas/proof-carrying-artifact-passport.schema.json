@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proof-Carrying Artifact Passport Demo",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "productionUrl",
+    "coreLaw",
+    "artifactClasses",
+    "gates",
+    "boundary"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "coreLaw": {
+      "type": "string"
+    },
+    "artifactClasses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "boundary": {
+      "type": "object"
+    }
+  }
+}

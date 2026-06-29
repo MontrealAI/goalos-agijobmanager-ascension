@@ -1,0 +1,80 @@
+{
+  "name": "Proof-Carrying Artifact Passport",
+  "version": "v29",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-carrying-artifact-passport.html",
+  "coreLaw": "Reusable capability is not copy-paste. It is a proof-carrying artifact with scope, lineage, rollback, and public/private boundaries.",
+  "artifactClasses": [
+    "goal",
+    "plan",
+    "capability",
+    "tool",
+    "policy",
+    "eval",
+    "context_recipe",
+    "router",
+    "workflow"
+  ],
+  "gates": [
+    "immutable_version_hash",
+    "source_provenance",
+    "proof_history",
+    "validator_attestations",
+    "scope_authorization",
+    "dependency_integrity",
+    "privacy_boundary",
+    "rollback_target",
+    "replay_path",
+    "human_review"
+  ],
+  "conformanceLevels": [
+    {
+      "level": "L0",
+      "name": "schema-valid",
+      "meaning": "Passport object validates and has a stable artifact identity."
+    },
+    {
+      "level": "L1",
+      "name": "proof-emitting",
+      "meaning": "Artifact includes proof packets, trace roots, output hashes, cost, latency, and signatures or local demo equivalents."
+    },
+    {
+      "level": "L2",
+      "name": "eval-gated",
+      "meaning": "Artifact has baseline comparison and evaluator decision."
+    },
+    {
+      "level": "L3",
+      "name": "rollbackable",
+      "meaning": "Artifact includes rollback target and monitoring condition."
+    },
+    {
+      "level": "L4",
+      "name": "attestable",
+      "meaning": "Independent evaluators can sign or review attestations."
+    },
+    {
+      "level": "L5",
+      "name": "production-governed",
+      "meaning": "Canary, challenge window, incident log, and governance separation are present."
+    },
+    {
+      "level": "L6",
+      "name": "cross-institutional",
+      "meaning": "Artifact can be reused across institutions without exposing private intelligence."
+    }
+  ],
+  "boundary": {
+    "browserLocal": true,
+    "noUserDataWanted": true,
+    "noAccount": true,
+    "noForms": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noStorage": true,
+    "noWallet": true,
+    "noNetwork": true,
+    "noTokenRoute": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true
+  }
+}

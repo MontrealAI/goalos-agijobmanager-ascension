@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proof-Backed Upgrade Foundry · GoalOS AGIJobManager Ascension</title>
+<meta name="description" content="A browser-local GoalOS demo showing how an output earns a proof-backed upgrade right through evidence, evals, canary, challenge windows, rollback, and human review.">
+<link rel="stylesheet" href="assets/atelier.css">
+<link rel="stylesheet" href="assets/upgrade-foundry.css">
+</head>
+<body class="upgrade-page">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="upgradeField" class="uf-field" aria-hidden="true"></canvas>
+<header class="uf-top">
+  <div class="uf-line">GoalOS AGIJobManager Ascension · proof-backed upgrade right · browser-local · public-safe</div>
+  <div class="uf-wrap uf-nav">
+    <a class="uf-brand" href="./"><span class="uf-mark"></span><span>GoalOS Upgrade Foundry<small>Selection · canary · rollback</small></span></a>
+    <nav aria-label="Primary">
+      <a href="./">Home</a><a href="start.html">Start</a><a href="proof-gradient-arena.html">Proof Gradient</a><a href="sovereign-experience-stream.html">Experience</a><a href="replay-falsification-gauntlet.html">Replay</a><a href="assurance.html">Assurance</a><a href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="uf-hero">
+  <div class="uf-wrap uf-hero-grid">
+    <div>
+      <div class="uf-kicker">Proof-backed upgrade right</div>
+      <h1>A result becomes useful<br><span>only when it earns</span><br><em>the right to propagate.</em></h1>
+      <p class="uf-lead">Run a local GoalOS upgrade ceremony: a candidate artifact is proposed, tested, challenged, canaried, monitored, and either held for human review, rejected, or rolled back. The score helps. The gates decide.</p>
+      <div class="uf-actions"><a class="uf-button primary" href="#foundry">Run the upgrade foundry</a><a class="uf-button" href="proof-gradient-arena.html">Open Selection Gate</a></div>
+      <p class="uf-boundary"><b>No user data wanted.</b> No account. No cookies. No analytics. No storage. No wallet. No network request. No transaction broadcast. Do not enter personal, confidential, regulated, customer, wallet, seed phrase, private-key, or proprietary information.</p>
+    </div>
+    <aside class="uf-orbital" aria-label="Proof-backed upgrade diagram">
+      <div class="uf-status">LOCAL · HUMAN REVIEW · NO EXTERNAL ACTION</div>
+      <div class="uf-ring r1"></div><div class="uf-ring r2"></div><div class="uf-ring r3"></div>
+      <div class="uf-core">U<small>right</small></div>
+      <div class="uf-node a">COMMIT</div><div class="uf-node b">PROVE</div><div class="uf-node c">SELECT</div><div class="uf-node d">CANARY</div><div class="uf-node e">ROLLBACK</div><div class="uf-node f">REVIEW</div>
+      <div class="uf-metrics"><div><strong id="ufPromoted">0</strong><span>upgrade candidates</span></div><div><strong id="ufCanary">0</strong><span>canary stages</span></div><div><strong id="ufRollback">0</strong><span>rollback drills</span></div></div>
+    </aside>
+  </div>
+</section>
+<section id="foundry" class="uf-section">
+  <div class="uf-wrap uf-grid">
+    <section class="uf-panel">
+      <div class="uf-panel-head"><span>01</span><h2>Propose a public-safe upgrade</h2></div>
+      <label class="uf-label">Candidate artifact<select id="artifactPreset"><option value="router">Proof-conditioned router</option><option value="validator">Verifier Mesh rule</option><option value="capability">Reusable capability package</option><option value="workflow">Mission workflow</option><option value="policy">Governance policy</option></select></label>
+      <label class="uf-label">Upgrade proposal<textarea id="proposal" maxlength="760">Promote a proof-conditioned routing rule that selects smaller agent constellations when replay evidence shows equal verified value at lower cost and risk.</textarea></label>
+      <div class="uf-note">This is a local demonstration. The proposal is never submitted and never stored.</div>
+      <div class="uf-sliders">
+        <label>Proof integrity <input id="proof" type="range" min="0" max="100" value="86"><span></span></label>
+        <label>Eval pass strength <input id="eval" type="range" min="0" max="100" value="82"><span></span></label>
+        <label>Verified value <input id="value" type="range" min="0" max="100" value="79"><span></span></label>
+        <label>Transfer readiness <input id="transfer" type="range" min="0" max="100" value="73"><span></span></label>
+        <label>Risk control <input id="risk" type="range" min="0" max="100" value="76"><span></span></label>
+        <label>Rollback readiness <input id="rollback" type="range" min="0" max="100" value="88"><span></span></label>
+        <label>Canary health <input id="canary" type="range" min="0" max="100" value="81"><span></span></label>
+        <label>Challenge window <input id="challenge" type="range" min="0" max="100" value="84"><span></span></label>
+        <label>Public/private boundary <input id="boundary" type="range" min="0" max="100" value="93"><span></span></label>
+      </div>
+      <div class="uf-actions"><button id="runGate" class="uf-button primary">Run upgrade gate</button><button id="runCanary" class="uf-button">Run canary</button><button id="forceRollback" class="uf-button">Force rollback drill</button><button id="resetUpgrade" class="uf-button">Reset</button></div>
+    </section>
+    <section class="uf-panel uf-stage">
+      <div class="uf-panel-head"><span>02</span><h2>Watch the upgrade ceremony</h2></div>
+      <div id="ufStagebar" class="uf-stagebar"></div>
+      <div id="ufTrace" class="uf-trace" aria-live="polite"></div>
+      <div class="uf-scoreboard">
+        <div><span>Upgrade density</span><strong id="densityScore">—</strong></div>
+        <div><span>Gate result</span><strong id="gateResult">NOT RUN</strong></div>
+        <div><span>Authority</span><strong id="authorityState">NONE</strong></div>
+      </div>
+    </section>
+  </div>
+</section>
+<section class="uf-section uf-wrap uf-grid">
+  <section class="uf-panel">
+    <div class="uf-panel-head"><span>03</span><h2>Hard gates</h2></div>
+    <div id="gateGrid" class="uf-gate-grid"></div>
+    <p class="uf-note">A candidate may score well and still fail. Proof validity, eval pass, scope, canary, challenge window, rollback readiness, and claim boundary are mandatory gates.</p>
+  </section>
+  <section class="uf-panel">
+    <div class="uf-panel-head"><span>04</span><h2>Selection certificate</h2></div>
+    <pre id="certificateJson" class="uf-json">Run the gate to generate a SelectionCertificate.</pre>
+    <div class="uf-actions"><button id="downloadCertificate" class="uf-button primary">Download certificate</button><button id="copyUpgradeBrief" class="uf-button">Copy review brief</button></div>
+  </section>
+</section>
+<section class="uf-section uf-wrap">
+  <div class="uf-cardline">
+    <article><span>GoalOSCommit</span><p>The institution states the upgrade objective, authority, constraints, risk, evaluators, and rollback obligations.</p></article>
+    <article><span>ProofPacket</span><p>The run emits trace roots, output hashes, eval results, cost, latency, and evidence pointers.</p></article>
+    <article><span>SelectionCertificate</span><p>The candidate is admitted, rejected, canaried, paused, or rolled back by gates rather than narrative.</p></article>
+    <article><span>RollbackReceipt</span><p>Every promoted candidate keeps a recovery target before it receives wider authority.</p></article>
+  </div>
+</section>
+</main>
+<footer class="uf-footer"><div class="uf-wrap">© MontrealAI · Proof-Backed Upgrade Foundry · browser-local public demonstration · no user data wanted · no wallet · no network · no transaction broadcast · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+<script src="assets/upgrade-foundry.js"></script>
+</body>
+</html>

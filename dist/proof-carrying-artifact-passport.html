@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proof‑Carrying Artifact Passport · GoalOS AGIJobManager Ascension</title>
+<meta name="description" content="A browser-local GoalOS demonstration showing how a reusable capability earns a proof-carrying artifact passport with evidence, scope, lineage, rollback, and public/private boundaries.">
+<link rel="stylesheet" href="assets/atelier.css">
+<link rel="stylesheet" href="assets/artifact-passport.css">
+</head>
+<body class="ap-page">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="apField" class="ap-field" aria-hidden="true"></canvas>
+<header class="ap-top">
+  <div class="ap-line">GoalOS AGIJobManager Ascension · proof-carrying artifacts · browser-local · public-safe</div>
+  <div class="ap-wrap ap-nav">
+    <a class="ap-brand" href="./"><span class="ap-mark"></span><span>Artifact Passport<small>Vault · scope · rollback · reuse</small></span></a>
+    <nav aria-label="Primary">
+      <a href="./">Home</a><a href="start.html">Start</a><a href="chronicle-compounding-lab.html">Chronicle</a><a href="proof-backed-upgrade-foundry.html">Upgrade Foundry</a><a href="real-task-benchmark-bridge.html">Benchmark</a><a href="assurance.html">Assurance</a><a href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="ap-hero">
+  <div class="ap-wrap ap-hero-grid">
+    <div>
+      <div class="ap-kicker">Artifact Vault · cross-institutional reuse</div>
+      <h1>Reusable capability<br><span>must carry proof,</span><br><em>not just promise.</em></h1>
+      <p class="ap-lead">Run a local ceremony that turns a candidate workflow, tool, policy, router, eval, or capability package into a proof-carrying artifact passport. Scope, provenance, evidence, rollback, and public/private boundaries decide whether reuse is allowed.</p>
+      <div class="ap-actions"><a class="ap-button primary" href="#passport">Issue a passport</a><a class="ap-button" href="proof-backed-upgrade-foundry.html">Open Upgrade Foundry</a></div>
+      <p class="ap-boundary"><b>No user data wanted.</b> This page is a local public demonstration. No account. No form. No cookies. No analytics. No storage. No wallet. No network request. No token route. Do not enter personal, confidential, regulated, customer, wallet, seed phrase, private-key, or proprietary information.</p>
+    </div>
+    <aside class="ap-console" aria-label="Proof-carrying artifact visualizer">
+      <div class="ap-console-head"><span>ARTIFACT PASSPORT</span><b id="heroOutcome">WAITING</b></div>
+      <div class="ap-vault">
+        <div class="ap-core"><b>Ψ</b><small>artifact</small></div>
+        <span class="a a1">version</span><span class="a a2">proof</span><span class="a a3">eval</span><span class="a a4">scope</span><span class="a a5">rollback</span><span class="a a6">reuse</span>
+      </div>
+      <div class="ap-meter"><i id="heroMeter"></i></div>
+      <div class="ap-metrics"><div><strong id="heroLevel">L0</strong><span>conformance</span></div><div><strong id="heroReuse">0%</strong><span>reuse readiness</span></div><div><strong>0</strong><span>external actions</span></div></div>
+    </aside>
+  </div>
+</section>
+<section id="passport" class="ap-section">
+  <div class="ap-wrap ap-grid">
+    <section class="ap-panel">
+      <div class="ap-panel-head"><span>01</span><h2>Define the candidate artifact</h2></div>
+      <label class="ap-label">Artifact class<select id="artifactClass"><option value="capability">Capability package</option><option value="workflow">Workflow</option><option value="tool">Tool contract</option><option value="policy">Policy</option><option value="eval">Evaluation</option><option value="router">Router</option><option value="context_recipe">Context recipe</option><option value="plan">Plan</option><option value="goal">Goal</option></select></label>
+      <label class="ap-label">Public-safe artifact summary<textarea id="artifactSummary" maxlength="720">A reusable GoalOS capability package that converts a public-safe mission objective into a claims matrix, verifier report, Evidence Docket, action graph, Chronicle entry, and review brief.</textarea></label>
+      <label class="ap-label">Receiving institution posture<select id="receiverPosture"><option value="review">Human review required</option><option value="sandbox">Sandbox-only adoption</option><option value="canary">Canary adoption</option><option value="cross">Cross-institutional reuse candidate</option></select></label>
+      <div class="ap-sliders">
+        <label>Proof history <input id="proof" type="range" min="0" max="100" value="83"><span></span></label>
+        <label>Source provenance <input id="provenance" type="range" min="0" max="100" value="88"><span></span></label>
+        <label>Evaluator attestations <input id="attest" type="range" min="0" max="100" value="76"><span></span></label>
+        <label>Transfer evidence <input id="transfer" type="range" min="0" max="100" value="65"><span></span></label>
+        <label>Scope control <input id="scope" type="range" min="0" max="100" value="90"><span></span></label>
+        <label>Dependency integrity <input id="deps" type="range" min="0" max="100" value="80"><span></span></label>
+        <label>Rollback readiness <input id="rollback" type="range" min="0" max="100" value="86"><span></span></label>
+        <label>Public/private boundary <input id="boundary" type="range" min="0" max="100" value="92"><span></span></label>
+        <label>Challenge-window clearance <input id="challenge" type="range" min="0" max="100" value="58"><span></span></label>
+      </div>
+      <div class="ap-actions"><button id="issuePassport" class="ap-button primary">Issue artifact passport</button><button id="stressPassport" class="ap-button">Run adoption stress test</button><button id="resetPassport" class="ap-button">Reset</button></div>
+    </section>
+    <section class="ap-panel ap-results">
+      <div class="ap-panel-head"><span>02</span><h2>Adoption passport</h2></div>
+      <div class="ap-passport-card">
+        <div><span>Artifact ID</span><b id="artifactId">—</b></div>
+        <div><span>Version hash</span><b id="versionHash">—</b></div>
+        <div><span>Selection status</span><b id="selectionStatus">WAITING</b></div>
+        <div><span>Reuse right</span><b id="reuseRight">—</b></div>
+      </div>
+      <div class="ap-verdict"><span id="outcomeLabel">WAITING_FOR_RUN</span><p id="outcomeText">Issue a passport to see whether the artifact may be reused, held for review, canaried, sandboxed, or rejected.</p></div>
+      <div class="ap-score-grid"><div><span>Passport score</span><strong id="passportScore">—</strong></div><div><span>Conformance</span><strong id="conformanceLevel">—</strong></div><div><span>Scope</span><strong id="scopeMode">—</strong></div><div><span>Private leakage risk</span><strong id="leakRisk">—</strong></div></div>
+    </section>
+  </div>
+</section>
+<section class="ap-section ap-wrap ap-grid">
+  <section class="ap-panel">
+    <div class="ap-panel-head"><span>03</span><h2>Passport gates</h2></div>
+    <div id="gateGrid" class="ap-gates"></div>
+    <p class="ap-note">A high score cannot bypass a missing rollback target, weak public/private boundary, absent provenance, incomplete proof history, or missing challenge window.</p>
+  </section>
+  <section class="ap-panel">
+    <div class="ap-panel-head"><span>04</span><h2>Proof-Carrying Artifact JSON</h2></div>
+    <pre id="passportJson" class="ap-json">Issue a passport to generate a ProofCarryingArtifactPassport.</pre>
+    <div class="ap-actions"><button id="downloadPassport" class="ap-button primary">Download passport JSON</button><button id="copyBrief" class="ap-button">Copy review brief</button></div>
+  </section>
+</section>
+<section class="ap-section ap-wrap">
+  <div class="ap-law">
+    <div><span>01</span><b>Immutable identity</b><p>Reusable capability begins with a stable artifact id and version hash.</p></div>
+    <div><span>02</span><b>Evidence history</b><p>ProofPackets, evals, costs, risks, and replay paths explain why reuse is allowed.</p></div>
+    <div><span>03</span><b>Scope and rollback</b><p>Adoption rights are scoped, canaried, challengeable, and rollback-ready.</p></div>
+    <div><span>04</span><b>Private intelligence stays private</b><p>The passport carries public proof commitments, not confidential traces.</p></div>
+  </div>
+</section>
+</main>
+<footer class="ap-footer"><div class="ap-wrap">© MontrealAI · Proof-Carrying Artifact Passport · browser-local public demonstration · no user data wanted · no wallet · no network · no transaction broadcast · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+<script src="assets/artifact-passport.js"></script>
+</body>
+</html>

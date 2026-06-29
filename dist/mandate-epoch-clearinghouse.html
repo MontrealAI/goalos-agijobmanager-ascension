@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MandateEpoch Clearinghouse · GoalOS AGIJobManager Ascension</title>
+<meta name="description" content="A browser-local GoalOS public demo showing how many proof receipts clear through one MandateEpoch settlement boundary without exposing private intelligence or moving funds.">
+<link rel="stylesheet" href="assets/atelier.css">
+<link rel="stylesheet" href="assets/mandate-epoch.css">
+</head>
+<body class="me-page">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="meField" class="me-field" aria-hidden="true"></canvas>
+<header class="me-top">
+  <div class="me-line">GoalOS AGIJobManager Ascension · MandateEpoch clearinghouse · browser-local · public-safe</div>
+  <div class="me-wrap me-nav">
+    <a class="me-brand" href="./"><span class="me-mark"></span><span>MandateEpoch Clearinghouse<small>Receipts · roots · settlement boundary</small></span></a>
+    <nav aria-label="Primary"><a href="./">Home</a><a href="start.html">Start</a><a href="proof-to-action-theatre.html">Proof Theatre</a><a href="proof-gradient-arena.html">Proof Gradient</a><a href="proof-backed-upgrade-foundry.html">Upgrade Foundry</a><a href="expert-console.html">Expert Console</a><a href="legal.html">Legal</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="me-hero">
+  <div class="me-wrap me-hero-grid">
+    <div>
+      <div class="me-kicker">Proof-settlement at scale</div>
+      <h1>Many work receipts.<br><span>One settlement</span><br><em>boundary.</em></h1>
+      <p class="me-lead">Run a local MandateEpoch: a sponsor mandate becomes bounded microjobs, proof receipts, quarantine roots, payout roots, archive deltas, AGIJobManager checkpoint posture, and Chronicle memory. The demo never touches a wallet, network, token route, or user data.</p>
+      <div class="me-actions"><a class="me-button primary" href="#clearinghouse">Run the clearinghouse</a><a class="me-button" href="proof-backed-upgrade-foundry.html">Open Upgrade Foundry</a></div>
+      <p class="me-boundary"><b>No user data wanted.</b> No account. No form. No cookies. No analytics. No storage. No wallet. No network request. No transaction broadcast. Do not enter personal, confidential, regulated, customer, wallet, seed phrase, private-key, or proprietary information.</p>
+    </div>
+    <aside class="me-orbit" aria-label="MandateEpoch proof settlement diagram">
+      <div class="me-status">LOCAL SIMULATION · HUMAN REVIEW · ZERO EXTERNAL ACTIONS</div>
+      <div class="me-globe"><span>ME</span><small>MandateEpoch</small></div>
+      <div class="me-node n1">SPONSOR</div><div class="me-node n2">NETTING</div><div class="me-node n3">PROOF</div><div class="me-node n4">CHALLENGE</div><div class="me-node n5">AGIJobManager</div><div class="me-node n6">CHRONICLE</div>
+      <svg class="me-orbits" viewBox="0 0 600 420" role="img" aria-label="Orbiting proof receipts">
+        <ellipse cx="300" cy="210" rx="205" ry="116"></ellipse><ellipse cx="300" cy="210" rx="166" ry="78"></ellipse><path d="M95 210 C180 70 405 70 505 210 C420 350 185 350 95 210"></path><path d="M150 315 C220 170 380 160 455 104"></path>
+      </svg>
+      <div class="me-metric-strip"><div><strong id="heroReceipts">0</strong><span>receipts</span></div><div><strong id="heroRoots">4</strong><span>roots</span></div><div><strong id="heroExternal">0</strong><span>external actions</span></div></div>
+    </aside>
+  </div>
+</section>
+<section id="clearinghouse" class="me-section">
+  <div class="me-wrap me-grid">
+    <section class="me-panel">
+      <div class="me-panel-head"><span>01</span><h2>Compose the mandate</h2></div>
+      <label class="me-label">Mandate archetype<select id="mandatePreset"><option value="invention">Open-ended invention search</option><option value="software">Software repair swarm</option><option value="research">Evidence-bound research mission</option><option value="market">Market intelligence proof mission</option><option value="security">Defensive security review</option></select></label>
+      <label class="me-label">Public-safe mandate objective<textarea id="mandateObjective" maxlength="760">Produce a replayable proof pack for an evidence-governed market brief: route bounded research work, validate claims, quarantine uncertain outputs, and export public-safe receipts for human review.</textarea></label>
+      <div class="me-note">This is a local demonstration of the clearing logic. It does not submit, store, transmit, approve, trade, or settle anything.</div>
+      <div class="me-sliders">
+        <label>Microjob receipts <input id="microjobs" type="range" min="12" max="96" value="48"><span></span></label>
+        <label>Replay coverage <input id="replay" type="range" min="30" max="100" value="84"><span></span></label>
+        <label>Validator quorum <input id="quorum" type="range" min="1" max="9" value="5"><span></span></label>
+        <label>Dispute pressure <input id="dispute" type="range" min="0" max="100" value="18"><span></span></label>
+        <label>Red-team strictness <input id="redteam" type="range" min="0" max="100" value="71"><span></span></label>
+        <label>Public/private boundary <input id="boundary" type="range" min="0" max="100" value="94"><span></span></label>
+        <label>α-WU quality multiplier <input id="quality" type="range" min="30" max="100" value="78"><span></span></label>
+      </div>
+      <div class="me-actions"><button id="openEpoch" class="me-button primary">Open epoch</button><button id="clearReceipts" class="me-button">Clear receipts</button><button id="challengeReceipts" class="me-button">Challenge</button><button id="finalizeEpoch" class="me-button">Finalize locally</button><button id="resetEpoch" class="me-button">Reset</button></div>
+    </section>
+    <section class="me-panel me-board">
+      <div class="me-panel-head"><span>02</span><h2>Clearinghouse state</h2></div>
+      <div class="me-epoch-banner"><span id="epochState">WAITING_FOR_MANDATE</span><small id="epochId">epoch: —</small></div>
+      <div id="stageRail" class="me-stage-rail"></div>
+      <div class="me-scoreboard">
+        <div><span>accepted receipts</span><strong id="acceptedCount">—</strong></div>
+        <div><span>quarantined</span><strong id="quarantineCount">—</strong></div>
+        <div><span>disputed</span><strong id="disputeCount">—</strong></div>
+        <div><span>α-WU cleared</span><strong id="awuCount">—</strong></div>
+      </div>
+      <div id="traceLog" class="me-trace" aria-live="polite"></div>
+    </section>
+  </div>
+</section>
+<section class="me-section me-wrap me-grid">
+  <section class="me-panel">
+    <div class="me-panel-head"><span>03</span><h2>Public roots</h2></div>
+    <div id="rootsGrid" class="me-roots"></div>
+    <p class="me-note">The public proof layer sees roots, signatures, attestations, summaries, and boundaries. Private traces, customer data, prompts, and sensitive tool output remain outside the public page.</p>
+  </section>
+  <section class="me-panel">
+    <div class="me-panel-head"><span>04</span><h2>MandateEpoch receipt</h2></div>
+    <pre id="epochJson" class="me-json">Run the clearinghouse to generate a MandateEpochReceipt.</pre>
+    <div class="me-actions"><button id="downloadEpoch" class="me-button primary">Download receipt JSON</button><button id="copyEpochBrief" class="me-button">Copy review brief</button></div>
+  </section>
+</section>
+<section class="me-section me-wrap">
+  <div class="me-law"><div><span>01</span><b>One mandate</b><p>A single AGIJobManager-compatible epoch represents a bounded body of work.</p></div><div><span>02</span><b>Many receipts</b><p>NettingHouse-style batches summarize microjobs without putting every step on-chain.</p></div><div><span>03</span><b>Challenge window</b><p>Disputes, quarantine, and validator reveals block weak receipts before settlement.</p></div><div><span>04</span><b>Chronicle memory</b><p>Only accepted receipts become durable institutional memory and reusable capability.</p></div></div>
+</section>
+</main>
+<footer class="me-footer"><div class="me-wrap">© MontrealAI · MandateEpoch Clearinghouse · browser-local public demonstration · no user data wanted · no wallet · no network · no transaction broadcast · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a> · <a href="agialpha-token-boundary.html">AGIALPHA Boundary</a></div></footer>
+<script src="assets/mandate-epoch.js"></script>
+</body>
+</html>
