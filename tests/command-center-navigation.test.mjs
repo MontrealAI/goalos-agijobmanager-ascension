@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const files=['site/command-center.html','site/assets/navigation-atlas.css','site/assets/navigation-atlas.js','data/site-navigation-catalog.json','schemas/site-navigation-catalog.schema.json','docs/COMMAND_CENTER_NAVIGATION_V37.md'];
+for(const f of files) must(fs.existsSync(f),`required file exists: ${f}`);
+const html=fs.readFileSync('site/command-center.html','utf8');
+const js=fs.readFileSync('site/assets/navigation-atlas.js','utf8');
+const data=JSON.parse(fs.readFileSync('data/site-navigation-catalog.json','utf8'));
+must(/Command Center/.test(html),'Command Center page is present');
+must(/Complete page catalog/.test(html),'complete page catalog is visible');
+must(/No account/.test(html)&&/no wallet/i.test(html)&&/no user data wanted/i.test(html),'public-safe posture is visible');
+for(const bad of ['<form','localStorage','sessionStorage','document.cookie','fetch(','XMLHttpRequest','navigator.sendBeacon','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','approve(']) must(!html.includes(bad)&&!js.includes(bad),`forbidden primitive absent: ${bad}`);
+must(data.pages.length>=30,'catalog contains at least 30 pages');
+must(data.primaryPaths.length>=4,'catalog contains guided user paths');
+must(data.pages.some(p=>p.href==='command-center.html'),'catalog includes command center');
+must(data.pages.some(p=>p.href==='proof-settlement-lifecycle.html'),'catalog includes settlement lifecycle');
+must(data.pages.some(p=>p.href==='agialpha-token-boundary.html'),'catalog includes token boundary');
+console.log('Command Center Navigation v37 PASS');

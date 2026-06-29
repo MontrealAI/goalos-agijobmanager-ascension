@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const files=['site/proof-settlement-lifecycle.html','site/assets/proof-settlement.css','site/assets/proof-settlement.js','data/proof-settlement-lifecycle-demo.json','schemas/proof-settlement-lifecycle.schema.json','docs/PROOF_SETTLEMENT_LIFECYCLE_V36.md'];
+for(const f of files) must(fs.existsSync(f),`required file exists: ${f}`);
+const page=fs.readFileSync('site/proof-settlement-lifecycle.html','utf8'); const js=fs.readFileSync('site/assets/proof-settlement.js','utf8'); const data=JSON.parse(fs.readFileSync('data/proof-settlement-lifecycle-demo.json','utf8'));
+must(/Request → Escrow → Execute → Proof → Validate → Settle → Chronicle/.test(page),'page exposes proof-settlement lifecycle');
+must(/No ProofBundle, no settlement/.test(page+js+JSON.stringify(data)),'page teaches no-proof no-settlement law');
+must(/No replay, no settlement/.test(page+js+JSON.stringify(data)),'page teaches no-replay no-settlement law');
+must(/No authority, no autonomy/.test(page+js+JSON.stringify(data)),'page teaches authority boundary law');
+must(!/<form\b/i.test(page),'no form tag');
+must(!/localStorage|sessionStorage|document\.cookie|fetch\(['\"]https?:|eth_requestAccounts|wallet_switchEthereumChain|eth_sendTransaction/i.test(page+js),'no storage, cookies, external network, wallet, or transaction primitives');
+must(data.posture.browserLocal===true && data.posture.noWallet===true && data.posture.simulatedSettlementOnly===true,'data contract encodes public-safe simulated settlement posture');
+must(data.stages.length===7 && data.gates.length>=8,'data contract includes lifecycle stages and gates');
+must(/GoalOSProofSettlementLifecycleReceipt/.test(js),'exportable lifecycle receipt is implemented');
+console.log('Proof-Settlement Lifecycle Console v36 PASS');

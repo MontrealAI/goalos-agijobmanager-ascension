@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const files=['site/index.html','site/experience-atlas.html','site/assets/site-v37.css','site/assets/site-v37.js','data/site-navigation-v37.json','schemas/site-navigation-v37.schema.json','docs/NAVIGATION_ATLAS_V37.md'];
+for(const f of files) must(fs.existsSync(f),`required file exists: ${f}`);
+const home=fs.readFileSync('site/index.html','utf8');
+const atlas=fs.readFileSync('site/experience-atlas.html','utf8');
+const js=fs.readFileSync('site/assets/site-v37.js','utf8');
+const nav=JSON.parse(fs.readFileSync('data/site-navigation-v37.json','utf8'));
+must(home.includes('Experience Atlas') && home.includes('Choose the right path'), 'homepage has concise primary navigation and atlas entry');
+must(atlas.includes('Searchable library') && atlas.includes('Guided journeys'), 'atlas page exposes guided journeys and searchable library');
+must(nav.sections.length>=6, 'navigation contract has six major sections');
+must(nav.sections.reduce((n,s)=>n+s.items.length,0)>=20, 'navigation contract covers substantial route library');
+must(nav.journeys.length>=4, 'navigation contract has role-based journeys');
+must(nav.posture.noWallet===true && nav.posture.noUserDataWanted===true, 'navigation contract encodes public-safe posture');
+must(!/<form\b/i.test(home+atlas), 'homepage and atlas avoid form tags');
+must(!/localStorage|sessionStorage|document\.cookie|gtag\(|googletagmanager|google-analytics|cdn\.jsdelivr|unpkg\.com/i.test(home+atlas+js), 'navigation avoids tracking, storage, cookies, and external CDN primitives');
+must(js.includes("fetch('site-navigation-v37.json')"), 'navigation loads same-origin public contract');
+console.log('Navigation Atlas v37 PASS');

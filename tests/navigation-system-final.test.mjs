@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const files=['site/index.html','site/command-center.html','site/experience-hub.html','site/assets/navigation-v38.css','site/assets/navigation-v38.js','data/site-navigation-v38.json','schemas/site-navigation-v38.schema.json','docs/NAVIGATION_SYSTEM_FINAL_V38.md'];
+for(const f of files) must(fs.existsSync(f),`required v38 file exists: ${f}`);
+const home=fs.readFileSync('site/index.html','utf8');
+const command=fs.readFileSync('site/command-center.html','utf8');
+const js=fs.readFileSync('site/assets/navigation-v38.js','utf8');
+const css=fs.readFileSync('site/assets/navigation-v38.css','utf8');
+const data=JSON.parse(fs.readFileSync('data/site-navigation-v38.json','utf8'));
+must(home.includes('Experience Hub') && home.includes('Default deny') && home.includes('Start by intent'), 'homepage is concise, guided, and boundary-aware');
+must(command.includes('Complete page catalog') && command.includes('navigationSystemApp'), 'Command Center exposes complete catalog mount');
+must(data.pages.length>=38, 'v38 navigation map indexes the complete route set');
+must((data.groups||[]).length>=7, 'v38 navigation map is grouped');
+must((data.journeys||[]).length>=4, 'v38 guided journeys are present');
+for(const href of ['experience-hub.html','command-center.html','navigation-atlas.html','trust-equation-simulator.html','evidence-docket-composer.html','proof-settlement-lifecycle.html','legal.html','agialpha-token-boundary.html']) must(data.pages.some(p=>p.href===href), `navigation map includes ${href}`);
+for(const p of data.pages){ if(p.href && p.href.endsWith('.html')) must(fs.existsSync('site/'+p.href), `mapped html route exists: ${p.href}`); }
+const forbidden=['<form','document.cookie','localStorage','sessionStorage','googletagmanager','google-analytics','gtag(','fbq(','cdn.jsdelivr','unpkg.com','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','navigator.sendBeacon'];
+for(const bad of forbidden) must(!home.includes(bad)&&!command.includes(bad)&&!js.includes(bad), `forbidden primitive absent: ${bad}`);
+must(css.includes('nav38-drawer') && css.includes('nav38-primary'), 'v38 navigation drawer and primary nav are styled');
+must(js.includes('GoalOSNavigationSystemReceipt') && js.includes('installCommandCenter'), 'v38 NavigationReceipt export and command center renderer exist');
+console.log('Navigation System Final v38 PASS');
