@@ -1,0 +1,63 @@
+{
+  "id": "goalos-sovereign-experience-stream-v24",
+  "title": "Sovereign Experience Stream",
+  "release": "v24",
+  "principle": "A proof does not become institutional learning merely because it happened; only replayable, validated, public-safe experience events can update governed memory and policy.",
+  "protocolObjects": [
+    "GoalOSCommit",
+    "RunCommitment",
+    "ProofPacket",
+    "EvalAttestation",
+    "SelectionCertificate",
+    "ExperienceEvent",
+    "GroundedRewardLedger",
+    "ChronicleEntry",
+    "PolicyUpdateReceipt"
+  ],
+  "experienceTuple": [
+    "state",
+    "action",
+    "observation",
+    "groundedReward",
+    "validatorDecision",
+    "costLedger",
+    "riskState",
+    "memoryUpdate"
+  ],
+  "gates": [
+    "Replayability",
+    "Validator independence",
+    "Delayed outcome quality",
+    "Reward integrity",
+    "Cost/risk accounting",
+    "Public/private boundary",
+    "Chronicle eligibility",
+    "Human review"
+  ],
+  "verdicts": [
+    "POLICY_UPDATE_ALLOWED_AFTER_HUMAN_REVIEW",
+    "EXPERIENCE_ADMITTED_TO_CHRONICLE",
+    "EVIDENCE_ONLY_NO_POLICY_UPDATE",
+    "QUARANTINE_REWARD_SIGNAL",
+    "QUARANTINE_PRIVATE_APPENDIX",
+    "DELAYED_OUTCOME_REQUIRED"
+  ],
+  "publicSafety": {
+    "noUserDataWanted": true,
+    "noAccount": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noStorage": true,
+    "noWalletConnection": true,
+    "noNetworkRequest": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true
+  },
+  "demoMissions": [
+    "Validator-ready software task",
+    "Evidence-bound market intelligence",
+    "Policy-bound tool-use review",
+    "Scientific workflow rehearsal",
+    "AGIJobManager settlement rehearsal"
+  ]
+}

@@ -16,5 +16,6 @@
   "ascensionInflowControl": "PASS",
   "claimBoundaryFirewall": "PASS",
   "replayFalsificationGauntlet": "PASS",
+  "sovereignExperienceStream": "PASS",
   "vendoredDependencies": "PASS"
 }
