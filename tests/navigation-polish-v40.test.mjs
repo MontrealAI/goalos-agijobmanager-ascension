@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)} console.log('PASS · '+m)};
+for(const f of ['site/assets/site-command-v39.js','site/assets/site-command-v39.css','tools/build.py','tools/site-rehydrate.mjs']) must(fs.existsSync(f),`required v40 file exists: ${f}`);
+const js=fs.readFileSync('site/assets/site-command-v39.js','utf8');
+const css=fs.readFileSync('site/assets/site-command-v39.css','utf8');
+const build=fs.readFileSync('tools/build.py','utf8');
+must(js.includes('Site Command') && js.includes('All pages'),'floating Site Command remains available');
+must(!js.includes('document.body.appendChild(nav)') && !js.includes('v39-clean-nav\';nav.innerHTML'),'Site Command does not inject a second top menu');
+must(/\.v39-clean-nav\{display:none!important\}/.test(css),'legacy v39 top-nav class is disabled');
+for(const primitive of ['localStorage','sessionStorage','document.cookie','navigator.sendBeacon','ethereum.request','eth_sendTransaction','wallet_switchEthereumChain']) must(!js.includes(primitive),`forbidden primitive absent from site command: ${primitive}`);
+for(const ref of ['site-shell.js','site-guide.js','navigation-v38.js','navigation-v37.js','navigation-atlas.js']) must(build.includes(ref),'build strips legacy nav injector '+ref);
+must(build.includes('v40-navigation-polish-failsafe'),'build advertises v40 release');
+console.log('Navigation Polish v40 test PASS');
