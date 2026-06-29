@@ -1,6 +1,6 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "3.4.0-evidence-docket-composer-v34",
+  "version": "3.5.0-trust-equation-simulator-v35",
   "private": true,
   "type": "module",
   "scripts": {
@@ -49,9 +49,11 @@
     "until-done": "node tests/until-done-mission-control.test.mjs && python3 tools/build.py && node tools/until-done-mission-control-kernel.mjs",
     "test:until-done": "npm run until-done",
     "evidence-docket-composer": "node tests/evidence-docket-composer.test.mjs && python3 tools/build.py && node tools/evidence-docket-composer-kernel.mjs",
-    "test:evidence-docket-composer": "npm run evidence-docket-composer"
+    "test:evidence-docket-composer": "npm run evidence-docket-composer",
+    "trust-equation": "node tests/trust-equation-simulator.test.mjs && python3 tools/build.py && node tools/trust-equation-simulator-kernel.mjs",
+    "test:trust-equation": "npm run trust-equation"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension static site with fault-tolerant publisher and browser-local Evidence Docket Composer.",
+  "description": "GoalOS AGIJobManager Ascension static site with fault-tolerant publisher and browser-local Trust Equation Simulator.",
   "devDependencies": {}
 }

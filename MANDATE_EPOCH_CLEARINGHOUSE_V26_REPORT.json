@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "release": "v26-mandate-epoch-clearinghouse",
+  "route": "/mandate-epoch-clearinghouse.html",
+  "zeroNetwork": true,
+  "noUserDataWanted": true,
+  "noWallet": true,
+  "noTransactionBroadcast": true
+}
