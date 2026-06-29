@@ -594,5 +594,7 @@
     "proof-settlement-lifecycle.html",
     "legal.html",
     "agialpha-token-boundary.html"
-  ]
+  ],
+  "navigationPolish": "v40",
+  "menuOverlayConsolidated": true
 }
