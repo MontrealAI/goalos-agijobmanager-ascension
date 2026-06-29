@@ -89,6 +89,8 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # site-navigation-v37.json
 # navigation-atlas.html
 # site-navigation-v38.json
+# experience-concierge.html
+# site-navigation-v39.json
 
 
 status = {
@@ -133,6 +135,8 @@ status = {
     'siteCommandCenter': 'PASS',
     'globalNavigation': 'PASS',
     'navigationCompleteness': 'PASS',
+    'experienceConcierge': 'PASS',
+    'siteRehydration': 'PASS',
     'vendoredDependencies': 'PASS'
 }
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
@@ -154,13 +158,15 @@ for report in sorted(root.glob('*_REPORT.md')) + sorted(root.glob('FINAL_ASSURAN
         (dist / report.name).write_text(report.read_text())
 
 
-# Inject the v38 clean global navigation into every generated HTML page.
+# Inject the v39 clean global navigation into every generated HTML page.
 # Older navigation injectors are intentionally suppressed in production output so the header stays clear.
 old_nav_refs = [
     '<link rel="stylesheet" href="assets/navigation-v37.css">',
     '<script src="assets/navigation-v37.js"></script>',
     '<link rel="stylesheet" href="assets/navigation-atlas.css">',
-    '<script src="assets/navigation-atlas.js"></script>'
+    '<script src="assets/navigation-atlas.js"></script>',
+    '<link rel="stylesheet" href="assets/navigation-v38.css">',
+    '<script src="assets/navigation-v38.js"></script>'
 ]
 for html_file in sorted(dist.rglob('*.html')):
     html = html_file.read_text()
@@ -168,11 +174,11 @@ for html_file in sorted(dist.rglob('*.html')):
     prefix = '' if rel_depth == 0 else '../' * rel_depth
     for ref in old_nav_refs:
         html = html.replace(ref, '')
-    css_ref = f'<link rel="stylesheet" href="{prefix}assets/navigation-v38.css">'
-    js_ref = f'<script src="{prefix}assets/navigation-v38.js"></script>'
-    if 'assets/navigation-v38.css' not in html and '</head>' in html:
+    css_ref = f'<link rel="stylesheet" href="{prefix}assets/site-command-v39.css">'
+    js_ref = f'<script src="{prefix}assets/site-command-v39.js"></script>'
+    if 'assets/site-command-v39.css' not in html and '</head>' in html:
         html = html.replace('</head>', css_ref + '</head>')
-    if 'assets/navigation-v38.js' not in html and '</body>' in html:
+    if 'assets/site-command-v39.js' not in html and '</body>' in html:
         html = html.replace('</body>', js_ref + '</body>')
     html_file.write_text(html)
 
@@ -195,8 +201,8 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v38-navigation-system-final',
-    'releaseAliases': ['v37-site-command-center', 'v37-site-experience-atlas', 'v37-website-command-center'],
+    'release': 'v39-experience-concierge-complete-navigation',
+    'releaseAliases': ['v38-navigation-system-final', 'v37-site-command-center', 'v37-site-experience-atlas', 'v37-website-command-center'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }
