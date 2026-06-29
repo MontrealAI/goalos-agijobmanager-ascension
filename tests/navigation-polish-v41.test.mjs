@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const must=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+const home=fs.readFileSync('site/index.html','utf8');
+const cmd=fs.readFileSync('site/assets/site-command-v39.js','utf8');
+must(home.includes('Experience Hub') && home.includes('Command Center') && home.includes('Everything remains available'),'homepage keeps complete navigation promises');
+must(home.includes('Default deny') && home.includes('default read-only'),'homepage keeps public-safe default-deny posture');
+must(home.includes('Choose the right path') && home.includes('Start by intent'),'homepage keeps guided path language');
+must(home.includes('Proof-governed multi-agent institution') && home.includes('coordination-lab.html'),'homepage keeps multi-agent institution path');
+must(home.includes('expert-console.html') && home.includes('legal.html') && home.includes('privacy.html') && home.includes('terms.html'),'homepage keeps expert/legal/privacy/terms routes');
+must((home.match(/<nav\b/g)||[]).length===1,'homepage has exactly one native nav element');
+must(!home.includes('navigation-v38.js') && !home.includes('navigation-v37.js') && !home.includes('site-shell.js') && !home.includes('site-guide.js'),'homepage source has no legacy top-menu injectors');
+must(cmd.includes('Site Command') && !cmd.includes('document.body.appendChild(nav)'),'floating Site Command remains available without injecting top nav');
+for(const bad of ['localStorage','sessionStorage','document.cookie','navigator.sendBeacon','ethereum.request','eth_sendTransaction','wallet_switchEthereumChain','<form']) must(!home.includes(bad)&&!cmd.includes(bad),`forbidden primitive absent: ${bad}`);
+console.log('Navigation Polish v41 test PASS');
