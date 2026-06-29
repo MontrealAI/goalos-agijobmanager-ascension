@@ -1,6 +1,13 @@
 # Claim Boundary
 
-This repository publishes a public website, read-only operator chamber, evidence room, architecture page, verification page, schemas, and manifests for GoalOS AGIJobManager Ascension.
+[Docs index](README.md)
 
-It does not claim external audit completion, Mainnet transaction execution, fund authorization, factual certification, production activation, wallet approval, or autonomous authority.
+## Claims made
 
+- Public demos are browser-local demonstrations.
+- The repository contains schemas, data contracts, tests, and publisher automation.
+- Evidence Dockets and ProofBundles are presented as proof-object scaffolding and demonstrations.
+
+## Claims not made
+
+This project does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified status, legal advice, financial advice, guaranteed return, or an investment opportunity.

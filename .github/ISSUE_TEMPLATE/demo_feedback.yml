@@ -1,0 +1,26 @@
+name: Demo feedback
+description: Share feedback on a browser-local demonstration.
+title: "Demo feedback: "
+labels: [demo-feedback]
+body:
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: User type
+      options: [new, advanced, operator, reviewer]
+  - type: input
+    id: route
+    attributes:
+      label: Demo route
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What was confusing?
+  - type: textarea
+    id: helped
+    attributes:
+      label: What helped?
+  - type: textarea
+    id: artifact
+    attributes:
+      label: What receipt or docket was exported, if any?
