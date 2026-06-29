@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const html = fs.readFileSync('site/sovereign-experience-stream.html','utf8');
+const js = fs.readFileSync('site/assets/experience-stream.js','utf8');
+const data = JSON.parse(fs.readFileSync('data/sovereign-experience-stream-demo.json','utf8'));
+const assert = (cond,msg) => { if(!cond){ console.error(msg); process.exit(1); } };
+assert(html.includes('Experience is admitted'),'hero headline missing');
+assert(html.includes('Validator is not reward'),'validator-reward section missing');
+assert(html.includes('No user data wanted'),'data-zero notice missing');
+assert(html.includes('Run experience stream'),'run control missing');
+assert(js.includes('POLICY_UPDATE_ALLOWED_AFTER_HUMAN_REVIEW'),'policy verdict missing');
+assert(js.includes('QUARANTINE_REWARD_SIGNAL'),'reward quarantine missing');
+assert(js.includes('QUARANTINE_PRIVATE_APPENDIX'),'private appendix quarantine missing');
+assert(js.includes('groundedReward') && js.includes('validatorDecision') && js.includes('memoryUpdate'),'experience tuple missing');
+assert(data.protocolObjects.includes('ExperienceEvent') && data.protocolObjects.includes('GroundedRewardLedger'),'protocol objects missing');
+assert(data.experienceTuple.length >= 8,'experience tuple incomplete');
+assert(data.publicSafety.noNetworkRequest === true && data.publicSafety.noWalletConnection === true,'public safety broken');
+console.log('sovereign-experience-stream test PASS');

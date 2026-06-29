@@ -124,3 +124,14 @@ Routes:
 - `/replay-falsification-gauntlet-demo.json`
 
 The page remains public-safe: no account, no cookies, no analytics, no storage, no wallet connection, no network request, no token route, no transaction broadcast, and no user data wanted.
+
+## v24 — Sovereign Experience Stream
+
+New browser-local public demonstration:
+
+- `/sovereign-experience-stream.html`
+- `/sovereign-experience-stream-demo.json`
+
+Core lesson: evidence bundles are not only audit logs. Only replayable, validated, public-safe experience may become governed institutional learning, Chronicle memory, reward-ledger signal, router update candidate, or policy-update candidate.
+
+The page remains Data-Zero: no account, no form, no analytics, no cookies, no storage, no wallet connection, no network request, no token route, no transaction broadcast, and no production authority.
