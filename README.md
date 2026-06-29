@@ -108,3 +108,8 @@ New public demonstration: `/proof-gradient-arena.html` shows the GoalOS Selectio
 ## v21 · Ascension Inflow Control Room
 
 Browser-local public demonstration of regulated open-system inflow: compute, data, tasks, incentives, feedback, governance, and tools become trusted work only through proof, validation, settlement, and reuse. Route: `/ascension-inflow-control.html`.
+
+
+## v22 Claim Boundary Firewall
+
+Adds `/claim-boundary-firewall.html`, a browser-local public demonstration of GoalOS claim discipline: a public claim enters the Verifier Mesh and must pass provenance, evidence, contradiction, risk, replay, public/private boundary, and human-review gates before a public-safe Evidence Docket can be exported.
