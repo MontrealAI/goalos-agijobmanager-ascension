@@ -1,0 +1,594 @@
+{
+  "version": "v38-navigation-system-final",
+  "title": "GoalOS AGIJobManager Ascension Navigation System Final",
+  "posture": {
+    "browserLocal": true,
+    "noAccounts": true,
+    "noForms": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noWalletByDefault": true,
+    "noUserDataWanted": true,
+    "publicSafe": true
+  },
+  "groups": [
+    "Start here",
+    "Core idea",
+    "Evidence & claims",
+    "Protocol & gates",
+    "Coordination & routing",
+    "Work economy",
+    "Capability reuse",
+    "Assurance & boundaries",
+    "Consoles"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "href": "index.html",
+      "group": "Start here",
+      "audience": [
+        "all"
+      ],
+      "time": "1 min",
+      "why": "The public front door: identity, posture, and the proof-settlement institution."
+    },
+    {
+      "id": "start",
+      "title": "Guided Start",
+      "href": "start.html",
+      "group": "Start here",
+      "audience": [
+        "new",
+        "all"
+      ],
+      "time": "2 min",
+      "why": "A simple, non-technical path through the project."
+    },
+    {
+      "id": "command",
+      "title": "Command Center",
+      "href": "command-center.html",
+      "group": "Start here",
+      "audience": [
+        "all"
+      ],
+      "time": "3 min",
+      "why": "The complete navigation layer, route map, filters, and journey launcher."
+    },
+    {
+      "id": "flight-deck",
+      "title": "Ascension Flight Deck",
+      "href": "ascension-flight-deck.html",
+      "group": "Start here",
+      "audience": [
+        "new",
+        "builder",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Guided journeys and same-origin preview for the best demonstrations."
+    },
+    {
+      "id": "trust",
+      "title": "Trust Equation Simulator",
+      "href": "trust-equation-simulator.html",
+      "group": "Core idea",
+      "audience": [
+        "new",
+        "executive",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "Shows why proof, validation, settlement, and reuse turn output into trusted work."
+    },
+    {
+      "id": "until-done",
+      "title": "Until-DONE Mission Control",
+      "href": "until-done-mission-control.html",
+      "group": "Core idea",
+      "audience": [
+        "new",
+        "builder",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "Objective \u2192 Mission Contract \u2192 Evidence Docket \u2192 Governed Decision State \u2192 DONE."
+    },
+    {
+      "id": "proof-theatre",
+      "title": "Proof-to-Action Theatre",
+      "href": "proof-to-action-theatre.html",
+      "group": "Core idea",
+      "audience": [
+        "new",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "The shortest demonstration of output becoming proof-backed decision state."
+    },
+    {
+      "id": "gradient",
+      "title": "Proof Gradient Arena",
+      "href": "proof-gradient-arena.html",
+      "group": "Core idea",
+      "audience": [
+        "new",
+        "builder",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Score is advisory; gates are mandatory."
+    },
+    {
+      "id": "docket-composer",
+      "title": "Evidence Docket Composer",
+      "href": "evidence-docket-composer.html",
+      "group": "Evidence & claims",
+      "audience": [
+        "reviewer",
+        "legal",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Build the proof room before the claim."
+    },
+    {
+      "id": "claim-firewall",
+      "title": "Claim Boundary Firewall",
+      "href": "claim-boundary-firewall.html",
+      "group": "Evidence & claims",
+      "audience": [
+        "reviewer",
+        "legal",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Promote, revise, quarantine, or reject public claims based on evidence."
+    },
+    {
+      "id": "replay",
+      "title": "Replay & Falsification Gauntlet",
+      "href": "replay-falsification-gauntlet.html",
+      "group": "Evidence & claims",
+      "audience": [
+        "reviewer",
+        "builder",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "A proof that cannot be challenged is not ready for stronger claims."
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence Room",
+      "href": "evidence/",
+      "group": "Evidence & claims",
+      "audience": [
+        "reviewer",
+        "legal",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Public-safe Evidence Docket and review surfaces."
+    },
+    {
+      "id": "constitution",
+      "title": "Proof Constitution Simulator",
+      "href": "proof-constitution-simulator.html",
+      "group": "Protocol & gates",
+      "audience": [
+        "builder",
+        "reviewer",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "Aim \u2192 Act \u2192 Prove \u2192 Evolve as an interactive constitutional workbench."
+    },
+    {
+      "id": "chronicle",
+      "title": "Chronicle Compounding Lab",
+      "href": "chronicle-compounding-lab.html",
+      "group": "Protocol & gates",
+      "audience": [
+        "builder",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Only proof-cleared work becomes institutional memory."
+    },
+    {
+      "id": "experience",
+      "title": "Sovereign Experience Stream",
+      "href": "sovereign-experience-stream.html",
+      "group": "Protocol & gates",
+      "audience": [
+        "builder",
+        "advanced",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "Proof events become governed learning only after replay, validation, and review."
+    },
+    {
+      "id": "upgrade",
+      "title": "Proof-Backed Upgrade Foundry",
+      "href": "proof-backed-upgrade-foundry.html",
+      "group": "Protocol & gates",
+      "audience": [
+        "builder",
+        "operator",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "Artifacts earn scoped upgrade rights only with canary, rollback, and human review."
+    },
+    {
+      "id": "router",
+      "title": "Router Observatory",
+      "href": "proof-conditioned-router-observatory.html",
+      "group": "Coordination & routing",
+      "audience": [
+        "builder",
+        "advanced",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "Route the institution, not the swarm."
+    },
+    {
+      "id": "institution",
+      "title": "Multi-Agent Institution",
+      "href": "multi-agent-institution.html",
+      "group": "Coordination & routing",
+      "audience": [
+        "new",
+        "builder",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Large multi-agent systems coordinate when they become proof-governed institutions."
+    },
+    {
+      "id": "coord-lab",
+      "title": "Coordination Lab",
+      "href": "coordination-lab.html",
+      "group": "Coordination & routing",
+      "audience": [
+        "builder",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Browser-local comparison of swarm activity and proof-governed coordination."
+    },
+    {
+      "id": "coord-engine",
+      "title": "Advanced Coordination Engine",
+      "href": "coordination-engine.html",
+      "group": "Coordination & routing",
+      "audience": [
+        "advanced",
+        "builder"
+      ],
+      "time": "8 min",
+      "why": "Technical engine for coordination law and proof-governed routing."
+    },
+    {
+      "id": "inflow",
+      "title": "Ascension Inflow Control",
+      "href": "ascension-inflow-control.html",
+      "group": "Work economy",
+      "audience": [
+        "builder",
+        "advanced",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Verified work survives inside the governed band of compute, data, tasks, incentives, feedback, governance, and tools."
+    },
+    {
+      "id": "settlement",
+      "title": "Proof-Settlement Lifecycle",
+      "href": "proof-settlement-lifecycle.html",
+      "group": "Work economy",
+      "audience": [
+        "operator",
+        "builder",
+        "all"
+      ],
+      "time": "6 min",
+      "why": "Request \u2192 Escrow \u2192 Execute \u2192 Proof \u2192 Validate \u2192 Settle \u2192 Chronicle."
+    },
+    {
+      "id": "mandate",
+      "title": "MandateEpoch Clearinghouse",
+      "href": "mandate-epoch-clearinghouse.html",
+      "group": "Work economy",
+      "audience": [
+        "operator",
+        "advanced"
+      ],
+      "time": "6 min",
+      "why": "Many proof receipts clear through roots, challenge windows, and Chronicle handoff."
+    },
+    {
+      "id": "benchmark",
+      "title": "Real-Task Benchmark Bridge",
+      "href": "real-task-benchmark-bridge.html",
+      "group": "Work economy",
+      "audience": [
+        "reviewer",
+        "builder",
+        "advanced"
+      ],
+      "time": "6 min",
+      "why": "Public claims must pass real-task baselines and benchmark evidence."
+    },
+    {
+      "id": "artifact",
+      "title": "Artifact Passport",
+      "href": "proof-carrying-artifact-passport.html",
+      "group": "Capability reuse",
+      "audience": [
+        "builder",
+        "operator",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Reusable capability carries proof, scope, rollback, and lineage."
+    },
+    {
+      "id": "action",
+      "title": "Action Graph Handoff",
+      "href": "action-graph-handoff.html",
+      "group": "Capability reuse",
+      "audience": [
+        "operator",
+        "builder",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Proof becomes scoped action or stops."
+    },
+    {
+      "id": "mission-studio",
+      "title": "Mission Studio",
+      "href": "mission-studio.html",
+      "group": "Capability reuse",
+      "audience": [
+        "new",
+        "builder",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "Compose a local proof-pack from a public-safe objective."
+    },
+    {
+      "id": "proof-cards",
+      "title": "Proof Cards",
+      "href": "proof-cards.html",
+      "group": "Capability reuse",
+      "audience": [
+        "new",
+        "executive",
+        "all"
+      ],
+      "time": "3 min",
+      "why": "Copyable proof-language for stakeholders."
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "href": "architecture.html",
+      "group": "Assurance & boundaries",
+      "audience": [
+        "reviewer",
+        "operator",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Separation of proof, presentation, action, and human authority."
+    },
+    {
+      "id": "verification",
+      "title": "Verification",
+      "href": "verification.html",
+      "group": "Assurance & boundaries",
+      "audience": [
+        "reviewer",
+        "operator",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "Canonical identities and generated-publication verification."
+    },
+    {
+      "id": "assurance",
+      "title": "Assurance",
+      "href": "assurance.html",
+      "group": "Assurance & boundaries",
+      "audience": [
+        "reviewer",
+        "operator",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Final assurance, capability lock, and public/expert separation."
+    },
+    {
+      "id": "legal",
+      "title": "Legal Boundary",
+      "href": "legal.html",
+      "group": "Assurance & boundaries",
+      "audience": [
+        "legal",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "Data-zero, no-advice, no-investment, third-party responsibility posture."
+    },
+    {
+      "id": "token",
+      "title": "AGIALPHA Boundary",
+      "href": "agialpha-token-boundary.html",
+      "group": "Assurance & boundaries",
+      "audience": [
+        "legal",
+        "all"
+      ],
+      "time": "3 min",
+      "why": "AGIALPHA is pre-existing public-market, not available from this site or MontrealAI."
+    },
+    {
+      "id": "operator",
+      "title": "Read-Only Console",
+      "href": "operator-console.html",
+      "group": "Consoles",
+      "audience": [
+        "operator",
+        "all"
+      ],
+      "time": "5 min",
+      "why": "Public read-only chamber and unsigned intent export."
+    },
+    {
+      "id": "expert",
+      "title": "Expert Console",
+      "href": "expert-console.html",
+      "group": "Consoles",
+      "audience": [
+        "operator",
+        "advanced"
+      ],
+      "time": "5 min",
+      "why": "Separated expert surface with explicit boundaries."
+    },
+    {
+      "id": "expert-mainnet",
+      "title": "Expert Mainnet Console",
+      "href": "expert-mainnet-console.html",
+      "group": "Consoles",
+      "audience": [
+        "operator",
+        "advanced"
+      ],
+      "time": "6 min",
+      "why": "Human-signed wallet operations only; never public auto-connect."
+    },
+    {
+      "id": "economy",
+      "title": "Sovereign Machine Economy",
+      "href": "sovereign-machine-economy.html",
+      "group": "Consoles",
+      "audience": [
+        "advanced",
+        "operator"
+      ],
+      "time": "6 min",
+      "why": "Sovereign economy route and institutional economy posture."
+    },
+    {
+      "id": "experience-hub",
+      "title": "Experience Hub",
+      "href": "experience-hub.html",
+      "group": "Start here",
+      "audience": [
+        "all"
+      ],
+      "time": "3 min",
+      "why": "The clean public front door for every user path."
+    },
+    {
+      "id": "navigation-atlas",
+      "title": "Navigation Atlas",
+      "href": "navigation-atlas.html",
+      "group": "Start here",
+      "audience": [
+        "all"
+      ],
+      "time": "3 min",
+      "why": "Complete page index, guided journeys, preview, and receipt export."
+    }
+  ],
+  "journeys": [
+    {
+      "id": "first-visit",
+      "title": "I am new \u2014 show me the idea",
+      "audience": "new",
+      "steps": [
+        "command",
+        "trust",
+        "until-done",
+        "docket-composer",
+        "settlement"
+      ]
+    },
+    {
+      "id": "reviewer",
+      "title": "I need to review the proof posture",
+      "audience": "reviewer",
+      "steps": [
+        "docket-composer",
+        "claim-firewall",
+        "replay",
+        "benchmark",
+        "assurance"
+      ]
+    },
+    {
+      "id": "builder",
+      "title": "I want to understand the architecture",
+      "audience": "builder",
+      "steps": [
+        "constitution",
+        "router",
+        "institution",
+        "artifact",
+        "action"
+      ]
+    },
+    {
+      "id": "operator",
+      "title": "I operate or inspect the settlement rail",
+      "audience": "operator",
+      "steps": [
+        "settlement",
+        "operator",
+        "expert-mainnet",
+        "legal",
+        "token"
+      ]
+    },
+    {
+      "id": "complete-tour",
+      "title": "Complete public tour",
+      "audience": "all",
+      "steps": [
+        "trust",
+        "until-done",
+        "gradient",
+        "chronicle",
+        "inflow",
+        "docket-composer",
+        "replay",
+        "experience",
+        "upgrade",
+        "mandate",
+        "benchmark",
+        "router",
+        "settlement"
+      ]
+    }
+  ],
+  "primary": [
+    "experience-hub",
+    "start",
+    "trust",
+    "until-done",
+    "docket-composer",
+    "settlement",
+    "flight-deck",
+    "legal"
+  ]
+}

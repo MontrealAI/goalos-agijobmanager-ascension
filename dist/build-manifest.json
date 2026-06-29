@@ -1,7 +1,12 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v35-trust-equation-simulator",
-  "builtAt": "2026-06-29T17:33:21.441205Z",
+  "release": "v38-navigation-system-final",
+  "releaseAliases": [
+    "v37-site-command-center",
+    "v37-site-experience-atlas",
+    "v37-website-command-center"
+  ],
+  "builtAt": "2026-06-29T18:48:42.473207Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -30,12 +35,12 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "fd537d48b7b7f2ec76605b321ff934d3e89eac37c52ea201e0b8d428d4ee5265",
+      "sha256": "fc207042f7c69830ba41e888bf31a3bcfdc7eff4b356dfddccb4a46f63bda493",
       "bytes": 12605
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.md",
-      "sha256": "a0727050299ee6b6985cab140ee96a1c82a8d3820cca898940368dc0ec78e035",
+      "sha256": "f77148c57b462bbbc1c53e47ce7fd409a3644c950eb93ec5b8782c841c4588e8",
       "bytes": 1436
     },
     {
@@ -54,9 +59,34 @@
       "bytes": 1007
     },
     {
+      "path": "GOALOS_AGIJOBMANAGER_COMMAND_CENTER_NAVIGATION_V37_REPORT.md",
+      "sha256": "0530658857e7f1f31664f2027b0bc340ce8403f68e10974536b1f6ebc149f4e6",
+      "bytes": 1182
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_COMPLETE_WEBSITE_NAVIGATION_V38_REPORT.md",
+      "sha256": "2e8f7cd1466328786442a4e614e4687ca38bc4e985047bdfbd85de8158f8be4a",
+      "bytes": 2443
+    },
+    {
       "path": "GOALOS_AGIJOBMANAGER_EVIDENCE_DOCKET_COMPOSER_V34_REPORT.md",
       "sha256": "e6d0ef55270096c0b6fd066209172f71b60139c9d574719c368499be764cdb19",
       "bytes": 1266
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_EXPERIENCE_HUB_V37_REPORT.md",
+      "sha256": "f8a238b7d6156db1eadcb8aaf4cc1512a6c777feac52e8d8201b0fedefb63960",
+      "bytes": 1064
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_ATLAS_V37_REPORT.md",
+      "sha256": "d200d53a516abdce8d3729c0d7dccee9ab8b2d16e9691a7a9465aafb59ea3d08",
+      "bytes": 1246
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_NAVIGATION_SYSTEM_FINAL_V38_REPORT.md",
+      "sha256": "70b1e234a93f583142f25927b0399111be273bcb91304c8f224bd9d20e689d19",
+      "bytes": 2270
     },
     {
       "path": "GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.md",
@@ -74,6 +104,21 @@
       "bytes": 1523
     },
     {
+      "path": "GOALOS_AGIJOBMANAGER_PROOF_SETTLEMENT_LIFECYCLE_V36_REPORT.md",
+      "sha256": "4391a9429c7bbcd2e2e088ee34c8ad07e3675b61ea650ecf53800bc5abb1833e",
+      "bytes": 742
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_SITE_COMMAND_CENTER_V37_REPORT.md",
+      "sha256": "d19655ecec132a588ce6a884174b6ae8869a52897a424ba05eaf7fdf857cf91c",
+      "bytes": 975
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_SITE_EXPERIENCE_ATLAS_V37_REPORT.md",
+      "sha256": "c80277dd1d94cca722bfbf32fe337acfaddd30f6e41f5cf7333f0a53b718bb72",
+      "bytes": 981
+    },
+    {
       "path": "GOALOS_AGIJOBMANAGER_TRUST_EQUATION_SIMULATOR_V35_REPORT.md",
       "sha256": "8f631c90cf7436444b019bb86e123e54b9273e35ef16b6165ae3b95af1276fad",
       "bytes": 930
@@ -82,6 +127,11 @@
       "path": "GOALOS_AGIJOBMANAGER_UNTIL_DONE_MISSION_CONTROL_V33_REPORT.md",
       "sha256": "9cd1f949ace953a40e1ba0f8b13fefeb89e00b2595a42eac06993415d01d0517",
       "bytes": 2295
+    },
+    {
+      "path": "GOALOS_AGIJOBMANAGER_WEBSITE_COMMAND_CENTER_V37_REPORT.md",
+      "sha256": "d02f1a40e621eba001f4d44894c68f4cfe5207554582c77b47ac34330e1eb752",
+      "bytes": 957
     },
     {
       "path": "MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.md",
@@ -135,13 +185,13 @@
     },
     {
       "path": "action-graph-handoff.html",
-      "sha256": "03218fd08d1946aeae9913416a4bc4e188003df172a12ff2faf5f8f24377eee2",
-      "bytes": 7016
+      "sha256": "a95eb0a006f8fe43f869ce4159b376f6000e5136789df5157e9fc24c282f7fe7",
+      "bytes": 7309
     },
     {
       "path": "agialpha-token-boundary.html",
-      "sha256": "ce32be9eed53d1dcfd9d7bd3031c7024fcadb4bfc4f3868c69c0adee41fe2039",
-      "bytes": 4226
+      "sha256": "11f5f471f88c6991e25a5108d962b75b472adeb2719fc6c1c4e5fd32dbb93ee3",
+      "bytes": 4519
     },
     {
       "path": "agialpha-token-boundary.json",
@@ -160,18 +210,28 @@
     },
     {
       "path": "architecture.html",
-      "sha256": "b1abaa56f13a5f41e8548f05f4660f88f9057c6143197f542a9a9c6e0b86e570",
-      "bytes": 4427
+      "sha256": "27c12e0c766f962cc1987ac85887eedaf0cffd370d3d286b5bb60a1ac3672f63",
+      "bytes": 4720
+    },
+    {
+      "path": "archive-v36-ascension-chamber.html",
+      "sha256": "2937f3c378f9c8d0637983391ae3a2cf6e02c5e70e5fce867286673cc4487ba3",
+      "bytes": 28142
+    },
+    {
+      "path": "archive-v37-pre-navigation-final.html",
+      "sha256": "11f540ce51bf1c40be2b96f2d66919d0e2dc5f2d4994bf278782f0a6bb4d2cd5",
+      "bytes": 9974
     },
     {
       "path": "ascension-flight-deck-demo.json",
-      "sha256": "92a2e107a62955dc90cd8112d961e9ec0d124db9df70a081ab4374f233a02f94",
-      "bytes": 8232
+      "sha256": "8f1856c9aa81ead4e6c9e891723271b802f4572308e0470c71d54b46a125f122",
+      "bytes": 8785
     },
     {
       "path": "ascension-flight-deck.html",
-      "sha256": "212dad823a7a7333b64fd133706db562d99dbd5fc2c311dbfbd4b661f698b96a",
-      "bytes": 5338
+      "sha256": "1e1e173d30803129f890dd1ccfc3ae4a1554027f6c3f8195998b14a50dba5ab2",
+      "bytes": 5692
     },
     {
       "path": "ascension-inflow-control-demo.json",
@@ -180,8 +240,8 @@
     },
     {
       "path": "ascension-inflow-control.html",
-      "sha256": "e898de457725657fe6f24aa536f8dd34050481086f5426b87b9652148eb535a0",
-      "bytes": 7871
+      "sha256": "cd69067f8cd30ecc0a777e0cf1857ef5714f575f4260c367e5bc11adf8ffa422",
+      "bytes": 8164
     },
     {
       "path": "assets/action-graph-handoff.css",
@@ -274,6 +334,26 @@
       "bytes": 6341
     },
     {
+      "path": "assets/experience-atlas.css",
+      "sha256": "633f027c09538625873efadc02ee356e21c1a497b0bedc1e56fb2d2ed7c050e6",
+      "bytes": 6353
+    },
+    {
+      "path": "assets/experience-atlas.js",
+      "sha256": "206a8d8a6c1ed33e5ee1e9a64b81402bdfb75c34a336909da454ee2e88fe6c0b",
+      "bytes": 9682
+    },
+    {
+      "path": "assets/experience-hub.css",
+      "sha256": "131787ff5bc2d2bfad3506a119368ac9cd96ab706b8c0eaba2ac3dff6b3ad63e",
+      "bytes": 7190
+    },
+    {
+      "path": "assets/experience-hub.js",
+      "sha256": "9d5c516602298401455154ebb688fb0fd3bba4dc4fdaef78d3e7de3927b3285b",
+      "bytes": 4877
+    },
+    {
       "path": "assets/experience-stream.css",
       "sha256": "2bcb3477e1625ae975858b347d7fa240dd6a5a9be49928858945e9f302ff7bae",
       "bytes": 9750
@@ -324,6 +404,36 @@
       "bytes": 9739
     },
     {
+      "path": "assets/navigation-atlas.css",
+      "sha256": "3c8a7be4684eb282e357c9aa9e5d9d0b9fe06060ce32d18fba4a298a8b3e18b3",
+      "bytes": 7864
+    },
+    {
+      "path": "assets/navigation-atlas.js",
+      "sha256": "07672c67fe1b39ebbe0ddb8c27a0b4256445772afa392f3950ba34f96cc8e3a0",
+      "bytes": 13291
+    },
+    {
+      "path": "assets/navigation-v37.css",
+      "sha256": "280d9408e1f23c07f0a2fb8172a0cc5034227dd50b0b941b5ac72930f1fb7335",
+      "bytes": 7298
+    },
+    {
+      "path": "assets/navigation-v37.js",
+      "sha256": "9b6ffff66d170d261d684833ecd0a5f171b046207094d03cb30da8d049d95145",
+      "bytes": 17808
+    },
+    {
+      "path": "assets/navigation-v38.css",
+      "sha256": "5332ed8d06dee7a50066fe9c328ccbeac028a8f9159a4a26280f583a1f7113db",
+      "bytes": 6716
+    },
+    {
+      "path": "assets/navigation-v38.js",
+      "sha256": "8aeef4b13253e964c385517b49203d82b1a2c0d3f86f48477f679415e57655d0",
+      "bytes": 17652
+    },
+    {
       "path": "assets/proof-constitution.css",
       "sha256": "e3d63599c9ac42ac43acec55a947154cce206eb26d57fb697b0c5c0bd3ce9c4c",
       "bytes": 6274
@@ -342,6 +452,16 @@
       "path": "assets/proof-gradient-arena.js",
       "sha256": "719eb9dcaa89eeff0e7a973986610a58af5a63d2bf4968ba8fd7dabd51dd5a98",
       "bytes": 12767
+    },
+    {
+      "path": "assets/proof-settlement.css",
+      "sha256": "6373b7888837ffe7edbed690c904d4eb3e8319fbcb4459ea83cb155cdee73907",
+      "bytes": 7421
+    },
+    {
+      "path": "assets/proof-settlement.js",
+      "sha256": "7ede89b82688975e0c42638471fd08c0ad808dadb12ee441f5833da2eee2b9f9",
+      "bytes": 8703
     },
     {
       "path": "assets/proof-theatre.css",
@@ -372,6 +492,76 @@
       "path": "assets/router-observatory.js",
       "sha256": "65d45efb82264393478b7eac6938c7fb25918d2b6445beb682592abc67dda6a4",
       "bytes": 8641
+    },
+    {
+      "path": "assets/site-atlas.css",
+      "sha256": "ffb9a6552c6ad2f34cc63cfaca07d31af43f61e28ffc627ab7b1d04ebc59a64c",
+      "bytes": 3651
+    },
+    {
+      "path": "assets/site-atlas.js",
+      "sha256": "ac551010b546ff74c46217c22e9f121c1128dac3b1f1131c21069dc24ae47dd0",
+      "bytes": 1932
+    },
+    {
+      "path": "assets/site-command.css",
+      "sha256": "9316ac7b60b393a261dd163923cd470c62ed84ac7c6963d43c193bd241239757",
+      "bytes": 2983
+    },
+    {
+      "path": "assets/site-command.js",
+      "sha256": "278abb371990f1082ec7b0ca7164515bfa4d314b1fb541803acfae5749ba37d3",
+      "bytes": 5680
+    },
+    {
+      "path": "assets/site-guide.js",
+      "sha256": "ea67a29a9f84c4a73cad87cd71edba86bd462ebf4498b715a93a73032243635d",
+      "bytes": 6210
+    },
+    {
+      "path": "assets/site-nav.css",
+      "sha256": "91d6a98f22eef7b06d6b4cc7e0c12747de70482cd1f7f869f130ee58dc886348",
+      "bytes": 5563
+    },
+    {
+      "path": "assets/site-nav.js",
+      "sha256": "28687e9ac22ccf436805891105b3af5adb708192c7f49633e08b809835873b3b",
+      "bytes": 9905
+    },
+    {
+      "path": "assets/site-navigation.css",
+      "sha256": "24cf59bc9ad2f07d3f67b2a50d7bdb5a4f9f6f1554c3eb8f7d4251064d83ea04",
+      "bytes": 9732
+    },
+    {
+      "path": "assets/site-navigation.js",
+      "sha256": "a790d1d8bb579cb3972c10f66c9b63d70c0071ba172490cec82e0a2e805da3d3",
+      "bytes": 9418
+    },
+    {
+      "path": "assets/site-shell-data.js",
+      "sha256": "09f6a3d70c9c7f289e55e91b0f0df1ccd79b1828a208957a307ead240c759bed",
+      "bytes": 11074
+    },
+    {
+      "path": "assets/site-shell.css",
+      "sha256": "eb0d8a2bd9830ca3807efe306476b058ad48e8985dbfc980cdf33dc153ac1e21",
+      "bytes": 5835
+    },
+    {
+      "path": "assets/site-shell.js",
+      "sha256": "b2cbf28bf713d07257b1c2341a022cf2d33e032ac04e38968e8dd383bef85964",
+      "bytes": 5490
+    },
+    {
+      "path": "assets/site-v37.css",
+      "sha256": "566eacc143e18c4930018559999ab17b5df406142524ec45077190eff3324954",
+      "bytes": 9912
+    },
+    {
+      "path": "assets/site-v37.js",
+      "sha256": "ef33983737039627ebfe2d27be301f9cbd109bc0251cbdddb8b5d02e84d3be9e",
+      "bytes": 3657
     },
     {
       "path": "assets/sovereign-economy.js",
@@ -410,8 +600,8 @@
     },
     {
       "path": "assurance.html",
-      "sha256": "a7f9e51a7059ec3d7a6a079e41895b583f8a39d01b5bab5feda31919b2355ed8",
-      "bytes": 3840
+      "sha256": "e956803a51b2e53914aeb0e6fd79b3a5c6539407be074f6ae7fa3576033948c4",
+      "bytes": 4133
     },
     {
       "path": "canonical-identities.json",
@@ -430,8 +620,8 @@
     },
     {
       "path": "chronicle-compounding-lab.html",
-      "sha256": "b2bfe73ee83bfe1cd61923905a3f21aa0bcf6e64a0ffac4946667906215ab41a",
-      "bytes": 8441
+      "sha256": "dc2056171efea106b865359667dcaf28d58a00a3e5a9d0b7744cc3cdc572d1a4",
+      "bytes": 8734
     },
     {
       "path": "claim-boundary-firewall-demo.json",
@@ -440,18 +630,23 @@
     },
     {
       "path": "claim-boundary-firewall.html",
-      "sha256": "ef1e6b096434deee4eddf7e03fb3c523ea0eb6463c36fad42115459974b223bd",
-      "bytes": 9732
+      "sha256": "776a1dd7defa23ce914cb925ee6845475e2f9a3e6e6ca607692b932a0f7e6b38",
+      "bytes": 10025
+    },
+    {
+      "path": "command-center.html",
+      "sha256": "4e0af6a36cfe843c1149c81183f64eab043cbcfa2d96083b9f1dc918fb6f689c",
+      "bytes": 1967
     },
     {
       "path": "coordination-engine.html",
-      "sha256": "a15d9ead56156981c6ea2b6b7c1b2615d6d9348cf786e69114244ce95f5f1c42",
-      "bytes": 5800
+      "sha256": "01194f974937b4562e6c4f58edc02a8223e3b02b2b1ddb6a827cf386cb1b37cc",
+      "bytes": 6093
     },
     {
       "path": "coordination-lab.html",
-      "sha256": "d52846b7d486ba005087e8713c120faf94731960139c47b8c42486fc91be87b5",
-      "bytes": 8869
+      "sha256": "c79dac195f2e06c8375b7bcf35b7a774437fd258abdc3f2337c6c853d48cc1d7",
+      "bytes": 9162
     },
     {
       "path": "data/action-graph-handoff-demo.json",
@@ -475,8 +670,8 @@
     },
     {
       "path": "data/ascension-flight-deck-demo.json",
-      "sha256": "92a2e107a62955dc90cd8112d961e9ec0d124db9df70a081ab4374f233a02f94",
-      "bytes": 8232
+      "sha256": "8f1856c9aa81ead4e6c9e891723271b802f4572308e0470c71d54b46a125f122",
+      "bytes": 8785
     },
     {
       "path": "data/ascension-inflow-control-demo.json",
@@ -517,6 +712,11 @@
       "path": "data/evidence-docket-composer-demo.json",
       "sha256": "9c4437a8690027fb7536680a97e76a7d85ebb1502feadb725679005beec0ac4f",
       "bytes": 3943
+    },
+    {
+      "path": "data/experience-hub-catalog.json",
+      "sha256": "c4c73e224bc20f41c7cc501c3a506f911de29f752f19e58ac280c6d798d9fad3",
+      "bytes": 17137
     },
     {
       "path": "data/final-assurance-policy.json",
@@ -579,6 +779,11 @@
       "bytes": 4065
     },
     {
+      "path": "data/proof-settlement-lifecycle-demo.json",
+      "sha256": "700df580ff5a5b4b11ceb0de098316656ccc28d25be0a62f550b69182db9dd09",
+      "bytes": 3563
+    },
+    {
       "path": "data/proof-to-action-theatre-demo.json",
       "sha256": "81047427362014acd16acf4bba39f8ae970215d78f64c36bb3b06513aa921f12",
       "bytes": 1010
@@ -592,6 +797,31 @@
       "path": "data/replay-falsification-gauntlet-demo.json",
       "sha256": "b4b05bb6a4e9463e07f893f5b6de2cf05f8d64e2eb3c23e9079e7f73796042a3",
       "bytes": 2661
+    },
+    {
+      "path": "data/site-experience-atlas.json",
+      "sha256": "7a195a838d52ddf1146e40402106b81de5b0eb7fa6d92f1a17e853460c6ca65d",
+      "bytes": 10409
+    },
+    {
+      "path": "data/site-navigation-catalog.json",
+      "sha256": "a18d12515e70ef78af65edd069e3adbf59c3737b0f4bbb394d82003f1c5cdd08",
+      "bytes": 13228
+    },
+    {
+      "path": "data/site-navigation-map.json",
+      "sha256": "903b869ba1635c2f34e2d254962c5eabd3d550dd39cc239ae9535762d454ecb6",
+      "bytes": 15404
+    },
+    {
+      "path": "data/site-navigation-v37.json",
+      "sha256": "e567153b8887e8e9121881381edeab9ab5243b3819ace0aba961dbc1d9e69f38",
+      "bytes": 29255
+    },
+    {
+      "path": "data/site-navigation-v38.json",
+      "sha256": "4dbf8e0428161e09c04be36ddeff384d1013decd747eb580203d5ff15acf703d",
+      "bytes": 15022
     },
     {
       "path": "data/sovereign-experience-stream-demo.json",
@@ -615,8 +845,8 @@
     },
     {
       "path": "demo-lab.html",
-      "sha256": "f3611c7fc6ef70a970ba1e5c592f1379ab346ff925d7ccd602e2bbec3514957e",
-      "bytes": 3095
+      "sha256": "8e5d8c94fa829f2e61e8908c0d96755b1ae3dcb67485e7fb89eae565bd7b9c5a",
+      "bytes": 3388
     },
     {
       "path": "demo-missions.json",
@@ -669,6 +899,11 @@
       "bytes": 858
     },
     {
+      "path": "docs/COMMAND_CENTER_NAVIGATION_V37.md",
+      "sha256": "24a3156278849cd2755153466ad1f453a83a02b7035654848e478405948afc4a",
+      "bytes": 681
+    },
+    {
       "path": "docs/DATA_ZERO_PRIVACY_POLICY.md",
       "sha256": "66eff425db7a6a7df3afe8dde118076e0ecee681997bb6e6a8dd1da28382396e",
       "bytes": 2434
@@ -679,14 +914,14 @@
       "bytes": 392
     },
     {
-      "path": "docs/DEPENDENCY_ZERO_FINAL_V14.md",
-      "sha256": "c746ed240c4c255ca5a8d24ff2fb07325282afb52ae64efee9be789b7a615410",
-      "bytes": 1354
-    },
-    {
       "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
       "sha256": "39719e22673df9ca3b65bf6ab47bf122823634521b736b8149399a0ec6184368",
       "bytes": 609
+    },
+    {
+      "path": "docs/EXPERIENCE_HUB_V37.md",
+      "sha256": "802215f359a45303039400d5b317e69b2416b55e8b4d67215a87dd613abac28d",
+      "bytes": 533
     },
     {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
@@ -727,6 +962,16 @@
       "path": "docs/MANDATE_EPOCH_CLEARINGHOUSE_V26.md",
       "sha256": "168740e98188dc5f380a18e169962d1c60eec07b35576dce83ab3fc1c28ca848",
       "bytes": 1218
+    },
+    {
+      "path": "docs/NAVIGATION_ATLAS_V37.md",
+      "sha256": "4935900547d222d3cb36ad0357f00dd6b4b59d2cdff4dfa83168846fae9b348e",
+      "bytes": 858
+    },
+    {
+      "path": "docs/NAVIGATION_SYSTEM_FINAL_V38.md",
+      "sha256": "d85cda9c3bb932e67b23448d0b57ce4967273cd7469fe6d74e4eb5c99b50e8f0",
+      "bytes": 742
     },
     {
       "path": "docs/PATHSPEC_PROOF_FINAL_V15.md",
@@ -774,6 +1019,11 @@
       "bytes": 1046
     },
     {
+      "path": "docs/PROOF_SETTLEMENT_LIFECYCLE_V36.md",
+      "sha256": "fde3edb072797042b3319a2d29f8f83635da5e22d6fb6a33f6d0d205cd75aeb7",
+      "bytes": 496
+    },
+    {
       "path": "docs/PROOF_TO_ACTION_THEATRE_V18.md",
       "sha256": "dae9c6a5877ab80691a062521a515454dc4f4281e9b747b2f3b284ccf6974ad1",
       "bytes": 1138
@@ -792,6 +1042,16 @@
       "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
       "sha256": "c8d5f3e9b1411a9d81783f40218a7b29c217520128643eb563977bd0b8833192",
       "bytes": 1791
+    },
+    {
+      "path": "docs/SITE_COMMAND_CENTER_V37.md",
+      "sha256": "ec431faa6ff6cfe138bf2a01040554bc3110ad55910dd870fad58a542621b159",
+      "bytes": 604
+    },
+    {
+      "path": "docs/SITE_EXPERIENCE_ATLAS_V37.md",
+      "sha256": "fd0c0c3e272f21848027ec6b16958f7c23cac98a69d00be1e3f4a6d52ffd501c",
+      "bytes": 941
     },
     {
       "path": "docs/SOVEREIGN_EXPERIENCE_STREAM_V24.md",
@@ -829,14 +1089,19 @@
       "bytes": 685
     },
     {
+      "path": "docs/WEBSITE_COMMAND_CENTER_V37.md",
+      "sha256": "6f36372a276c13aa92c089f1df82b715a97d030a5cb913b22704b84a88309c09",
+      "bytes": 641
+    },
+    {
       "path": "docs.html",
-      "sha256": "3ea1e0e9b960ea1693e44cf7a5a2f0a9938d598fed464422eee584c19b197476",
-      "bytes": 1264
+      "sha256": "120d864a72d3bb6f9c52427be3fdee04ac50221deeda3ea7d83df2af814adb06",
+      "bytes": 1557
     },
     {
       "path": "evidence/index.html",
-      "sha256": "a1bad4549ad519798f9915bcc2f29fecb8500da257e1bcd4c16945fe2298f75f",
-      "bytes": 3757
+      "sha256": "eab8c825d95ba433f5f040d47dfe3f62b892135bb31ab83ed36e95b448600ffa",
+      "bytes": 4068
     },
     {
       "path": "evidence-docket-6-1.json",
@@ -850,23 +1115,38 @@
     },
     {
       "path": "evidence-docket-composer.html",
-      "sha256": "41acc74cde688521f4a1e06bd7ba0d4539060bfa080bbad1d301819737108321",
-      "bytes": 4894
+      "sha256": "d4fb50e364f63f6a924391574a3a75917438ac1414a09b9876936560e14910d6",
+      "bytes": 5187
     },
     {
       "path": "evidence-docket-court.html",
-      "sha256": "41dfe1a0e8aa50decbaa1195954adbe7a3d5e8c02ac3065227b5b8bf7ccf76e0",
-      "bytes": 400
+      "sha256": "e469001aa7acd6cf2d48d1c1f3d4fec5931d5480e7cf9ac15d1cd29f0e30b16c",
+      "bytes": 693
+    },
+    {
+      "path": "experience-atlas.html",
+      "sha256": "c0d611bbad429bcb03106b57607d08fea1c02edf167e941b498ea358966b97a8",
+      "bytes": 5711
+    },
+    {
+      "path": "experience-hub-catalog.json",
+      "sha256": "c4c73e224bc20f41c7cc501c3a506f911de29f752f19e58ac280c6d798d9fad3",
+      "bytes": 17137
+    },
+    {
+      "path": "experience-hub.html",
+      "sha256": "de26048334d3d36758a4c4aaad5f99086a8fa526c1ba8c449a923f8854410fb6",
+      "bytes": 7632
     },
     {
       "path": "expert-console.html",
-      "sha256": "0d8ff5a4e0c5867160acf45252e99488359d4d105d61ea4f38d0e563f06402cf",
-      "bytes": 8130
+      "sha256": "521857dc6e075ddc5412a15144e7aa82f94e23db219b37df0066fa5b654a2b15",
+      "bytes": 8423
     },
     {
       "path": "expert-mainnet-console.html",
-      "sha256": "1e0f6e96ddf1ba0e8cb1acedcb24b1617a32dca89b8f442638043af45f15200e",
-      "bytes": 4905
+      "sha256": "1c44582a38543a847c511ba3424378bb51beb18b3104823c05cc2a3e5fff315d",
+      "bytes": 5198
     },
     {
       "path": "final-assurance-policy.json",
@@ -875,8 +1155,8 @@
     },
     {
       "path": "index.html",
-      "sha256": "592eaae0a605d0e510ed6dbe1864e3186341110e75ef75a37bfe72edb062822d",
-      "bytes": 26835
+      "sha256": "9f3b4c4a345e4be8400504004230c0900b19065321bedfb7e32e538b6e96cbf6",
+      "bytes": 15413
     },
     {
       "path": "legal-boundary-policy.json",
@@ -885,8 +1165,8 @@
     },
     {
       "path": "legal.html",
-      "sha256": "c990759d51508ead8beebd532d778bf2cb1ece91f2e3a5e7248a66e763213503",
-      "bytes": 5821
+      "sha256": "a97f3ff942a7dc5cd5a11d6f4679f7fb4a850096758e65edc320aa93df951537",
+      "bytes": 6114
     },
     {
       "path": "mainnet-capability-contract.json",
@@ -900,13 +1180,13 @@
     },
     {
       "path": "mandate-epoch-clearinghouse.html",
-      "sha256": "989679038a5d353901aef84ed9db2e406b22db7d07c651f37879e27433c1c18f",
-      "bytes": 8570
+      "sha256": "a566a1508cbfd0d9dce22547cd408a23464fd24bac65ed4331d7b86a0d9726d7",
+      "bytes": 8863
     },
     {
       "path": "mission-studio.html",
-      "sha256": "25691465c0acc315f3c087e13eb568890d2f11b544b07eb937ea54fb247e0ce3",
-      "bytes": 3319
+      "sha256": "51ee0c8afb155f6de3154777d483017eda7b931136913ff9f5751aec56d25a25",
+      "bytes": 3612
     },
     {
       "path": "multi-agent-coordination-law.json",
@@ -915,18 +1195,23 @@
     },
     {
       "path": "multi-agent-institution.html",
-      "sha256": "c9534c77101ecca9f47ac327810851bdefe466883b9e87a6fb9abc899864d73e",
-      "bytes": 8397
+      "sha256": "2730bcd72f2a25ba0c298af414543e3855e96db68dbef06b5c55002546c918f4",
+      "bytes": 8690
+    },
+    {
+      "path": "navigation-atlas.html",
+      "sha256": "dcb6dbefce0aaa52ef2b1def342080255c2a73c79a1a014b3af9309db4249b64",
+      "bytes": 4577
     },
     {
       "path": "operator-console.html",
-      "sha256": "6e634a73c1dbce46ea64532dc81e170a4e82e68bcdae6f1423d2f4baee32432a",
-      "bytes": 6078
+      "sha256": "6d8d7cc1d1b75f6a81c968576d87bdd5e38207653739a5727860a93acf31824e",
+      "bytes": 6371
     },
     {
       "path": "privacy.html",
-      "sha256": "37af3e77d8d54940a88e20c8a95558adebd3be189d643220500b9091cbeb5419",
-      "bytes": 4060
+      "sha256": "c56e53f0176936f986a05488e4831b166af1dad86fcab48ee35184abd3a15bc7",
+      "bytes": 4353
     },
     {
       "path": "production-authority.json",
@@ -935,8 +1220,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "5126937f6e321090fdb63e97a77fb891d3ddeddedea88c36f48db6bd775bd863",
-      "bytes": 1136
+      "sha256": "c384d7675e6860240d290c944229de0c3b7f588b4a513dd613d614aa59380acd",
+      "bytes": 1466
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -945,13 +1230,13 @@
     },
     {
       "path": "proof-backed-upgrade-foundry.html",
-      "sha256": "badab23c46338bf49db477d4746209bfc1d01b002015698080fb71ebf15884c3",
-      "bytes": 8082
+      "sha256": "2ada4ff32d6c05947133082eca0dfe0885020526b37b505b130e03cf688fb3e8",
+      "bytes": 8375
     },
     {
       "path": "proof-cards.html",
-      "sha256": "6271cd49c192aa0954ef80df9cc99a00c3e9e6fb1801387bdfdc67f260ab5e1a",
-      "bytes": 2990
+      "sha256": "e4246224fd3d584765c7cd6b119278dd9e88fa90d823a09497fbcbe65ed8e4b6",
+      "bytes": 3283
     },
     {
       "path": "proof-carrying-artifact-passport-demo.json",
@@ -960,8 +1245,8 @@
     },
     {
       "path": "proof-carrying-artifact-passport.html",
-      "sha256": "bc221697a0dd44f54f6e6a4f54b8306104b62a06d20c6dcf67aadfc99cefc105",
-      "bytes": 8966
+      "sha256": "4899a68c235be5bf2c8d71ac57f07646d3905486b993f9a8b5eb37f19e8d9d98",
+      "bytes": 9259
     },
     {
       "path": "proof-conditioned-router-observatory-demo.json",
@@ -970,8 +1255,8 @@
     },
     {
       "path": "proof-conditioned-router-observatory.html",
-      "sha256": "5e0e7bd19aabc9eabd9b970750f34c4400ca65da23c382f2b87ba1e3b401a7a2",
-      "bytes": 6803
+      "sha256": "fb6ebabe069a6fa62f59ebfd312cb477a21626c0f83aaac30100ade40b9ef071",
+      "bytes": 7096
     },
     {
       "path": "proof-constitution-simulator-demo.json",
@@ -980,8 +1265,8 @@
     },
     {
       "path": "proof-constitution-simulator.html",
-      "sha256": "cb5e8fc59ca3654b29dfe46d3f2c2c9c8650554e62fb35ffca0d14055c7c69cb",
-      "bytes": 4525
+      "sha256": "0f3f789d15725b991dafd02822ffa399d8bcf7076f13cd3750c6694b929b6d30",
+      "bytes": 4818
     },
     {
       "path": "proof-governed-institution-demo.json",
@@ -995,8 +1280,18 @@
     },
     {
       "path": "proof-gradient-arena.html",
-      "sha256": "e967c0aa283d7d4651b35117091789e6f29159d87865360d5cf6de662ba71a87",
-      "bytes": 8328
+      "sha256": "00ba4be6d8f47f7935e49cfd2faa670c9f93b35202f1e7d76a558b0c3495759d",
+      "bytes": 8621
+    },
+    {
+      "path": "proof-settlement-lifecycle-demo.json",
+      "sha256": "700df580ff5a5b4b11ceb0de098316656ccc28d25be0a62f550b69182db9dd09",
+      "bytes": 3563
+    },
+    {
+      "path": "proof-settlement-lifecycle.html",
+      "sha256": "a7c0ad370bdf269cb26ff3042aab03815ea864209ff3ff61329892df0bec4912",
+      "bytes": 6137
     },
     {
       "path": "proof-to-action-theatre-demo.json",
@@ -1005,8 +1300,8 @@
     },
     {
       "path": "proof-to-action-theatre.html",
-      "sha256": "56cf60f86a29bec76f3dc2bf38e0fd3b8f5254b209685882bb9bf82a4a50466f",
-      "bytes": 8231
+      "sha256": "6663e529df4adf5b7e54994ac9f6e1ff1da2b80693036d325abd5dc79066ddd8",
+      "bytes": 8524
     },
     {
       "path": "real-task-benchmark-bridge-demo.json",
@@ -1015,13 +1310,13 @@
     },
     {
       "path": "real-task-benchmark-bridge.html",
-      "sha256": "644b714e9961590723e692566137c5e360f54569ad5aa52e9b07e5f8e9eba4b8",
-      "bytes": 8617
+      "sha256": "5c7783a1ee4daa2a9cdd1aa808fb6993d99f875b4861142709c17fbe7f60851c",
+      "bytes": 8910
     },
     {
       "path": "regulatory-boundary.html",
-      "sha256": "0175c74c33bdf63d1148b942d4d28d2b092682ac0264315b0df5c02034805609",
-      "bytes": 3964
+      "sha256": "1e3db3a00727e155fd763ec9ce8a58f638cede7864a85a74cb0adb83c99203ec",
+      "bytes": 4257
     },
     {
       "path": "replay-falsification-gauntlet-demo.json",
@@ -1030,8 +1325,8 @@
     },
     {
       "path": "replay-falsification-gauntlet.html",
-      "sha256": "67faee3d4132b0d13d11212d141a12c68fdeddaee8710cf74b9ae87618a3b037",
-      "bytes": 10366
+      "sha256": "527421b9c7630de8229bb6f0ffa141ff04cc37d9e08bb3b5b08000c0e3861754",
+      "bytes": 10659
     },
     {
       "path": "robots.txt",
@@ -1082,6 +1377,11 @@
       "path": "schemas/evidence-docket.schema.json",
       "sha256": "066d02bfdbf9dd46a84c85b69f71213b8e4863ea50106446a185d563720b99a8",
       "bytes": 343
+    },
+    {
+      "path": "schemas/experience-hub-catalog.schema.json",
+      "sha256": "fa5e1c6c37b7fb89c85739eac5183aacda39d082c95ed31193bba489958ca616",
+      "bytes": 608
     },
     {
       "path": "schemas/goalos-intent.schema.json",
@@ -1139,6 +1439,11 @@
       "bytes": 2106
     },
     {
+      "path": "schemas/proof-settlement-lifecycle.schema.json",
+      "sha256": "22f6297856830cdf4764381a6fe1240b03243e4bf12b046a66fc4baf9b712145",
+      "bytes": 1113
+    },
+    {
       "path": "schemas/proof-to-action-theatre.schema.json",
       "sha256": "8ea671789c7fc75a4d7ae9e5bf0b7a3feeada4c4a3fa14e1c1a7ec46d0ca43b2",
       "bytes": 1048
@@ -1152,6 +1457,31 @@
       "path": "schemas/replay-falsification-gauntlet.schema.json",
       "sha256": "a491eb4e363d33195514b9dc98c6ab1492bba5ba038a2321334d7e7761f99060",
       "bytes": 1295
+    },
+    {
+      "path": "schemas/site-experience-atlas.schema.json",
+      "sha256": "75fbaf2decc486e1552e051dfc58fff5329b522fa1ba5308e89a463a3116ac44",
+      "bytes": 726
+    },
+    {
+      "path": "schemas/site-navigation-catalog.schema.json",
+      "sha256": "83db74c40134629ad2ed7872586ce3a16077c8071a4a43a8ac419d108b1bf1d3",
+      "bytes": 1058
+    },
+    {
+      "path": "schemas/site-navigation-map.schema.json",
+      "sha256": "1c3c308bc0fa0b90ab785e2d97a20cba5c4c1943094708ce63a443dd768b3d86",
+      "bytes": 839
+    },
+    {
+      "path": "schemas/site-navigation-v37.schema.json",
+      "sha256": "40558e4f2b297225963b3cee740bdd7b84d11d61ce36fd9d9e49372c664a838e",
+      "bytes": 1058
+    },
+    {
+      "path": "schemas/site-navigation-v38.schema.json",
+      "sha256": "dd7c4bd26395bfd703edaae90d6d3bd9cdb948e56b82cfbc86d9854a4b7a8961",
+      "bytes": 658
     },
     {
       "path": "schemas/sovereign-experience-stream.schema.json",
@@ -1174,9 +1504,39 @@
       "bytes": 948
     },
     {
+      "path": "site-atlas.html",
+      "sha256": "6ff2664fcc7a836ae77fe40087f343e2b876decc7a51e44ba646d9f0491f180c",
+      "bytes": 2692
+    },
+    {
+      "path": "site-experience-atlas.json",
+      "sha256": "7a195a838d52ddf1146e40402106b81de5b0eb7fa6d92f1a17e853460c6ca65d",
+      "bytes": 10409
+    },
+    {
+      "path": "site-navigation-catalog.json",
+      "sha256": "a18d12515e70ef78af65edd069e3adbf59c3737b0f4bbb394d82003f1c5cdd08",
+      "bytes": 13228
+    },
+    {
+      "path": "site-navigation-map.json",
+      "sha256": "903b869ba1635c2f34e2d254962c5eabd3d550dd39cc239ae9535762d454ecb6",
+      "bytes": 15404
+    },
+    {
+      "path": "site-navigation-v37.json",
+      "sha256": "e567153b8887e8e9121881381edeab9ab5243b3819ace0aba961dbc1d9e69f38",
+      "bytes": 29255
+    },
+    {
+      "path": "site-navigation-v38.json",
+      "sha256": "4dbf8e0428161e09c04be36ddeff384d1013decd747eb580203d5ff15acf703d",
+      "bytes": 15022
+    },
+    {
       "path": "sitemap.xml",
-      "sha256": "0110ef91eaa2b76af5ea4aa769259af92b0d3ca5e7200aa7925c4bb83ec969e0",
-      "bytes": 11805
+      "sha256": "e323e81309f71109b851b6e379b7670a91e1bdbdd6f4cfc57b2ecf122ec57875",
+      "bytes": 14739
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -1185,8 +1545,8 @@
     },
     {
       "path": "sovereign-experience-stream.html",
-      "sha256": "b5ad658a267cac885b9659c9537afb0544360fa5c324f974e068d5c1ee65009d",
-      "bytes": 8024
+      "sha256": "6ce9cf30386cb5ebaa9b49060940a2ebe09d73a9003bb8b88d3b65bfcb98d097",
+      "bytes": 8317
     },
     {
       "path": "sovereign-machine-economy-conformance.json",
@@ -1195,23 +1555,23 @@
     },
     {
       "path": "sovereign-machine-economy.html",
-      "sha256": "39de42f01a72e493d5c0ac494610e9a55920d492fbeea0120e808e6b0fa05c3a",
-      "bytes": 5720
+      "sha256": "68f127804c297f14824de2568fd1b5f63142ea852f0c1ebe4ec56aed66bed669",
+      "bytes": 6013
     },
     {
       "path": "start.html",
-      "sha256": "96042f427448e5da9445568a42208841dc89ccb49d0b14d80d959a45c33714ab",
-      "bytes": 8624
+      "sha256": "bad2571b1f1804d19c06ba52c65fbded855a987d98d4286d01111a8b2f270dea",
+      "bytes": 9377
     },
     {
       "path": "terms.html",
-      "sha256": "076d52a08f83cb39f1fafb9e7912d0aca9d7ef61852aa23813c0f29cc3fa4fe3",
-      "bytes": 4319
+      "sha256": "f1555ec417d52887a94fce04f732dcc744e7ed77ee90b28e5e5a114a448db64a",
+      "bytes": 4612
     },
     {
       "path": "third-party-responsibility.html",
-      "sha256": "fa6ca587e051f83764a4ebfb67858f3ed9a79c2429312ff88e53d519e23b3f12",
-      "bytes": 3063
+      "sha256": "584e81354e64629ba77e53e6f52188a1323d11b05943ba7b87810279a02dd61a",
+      "bytes": 3356
     },
     {
       "path": "trust-equation-simulator-demo.json",
@@ -1220,8 +1580,8 @@
     },
     {
       "path": "trust-equation-simulator.html",
-      "sha256": "04c8d77e92105f90070920cfe59b783e003c434c4a8a3900eea7420411446afd",
-      "bytes": 6048
+      "sha256": "a9675139968596b06b3397143e59ca1d944661fd3b2cd597108928cce3406901",
+      "bytes": 6341
     },
     {
       "path": "until-done-mission-control-demo.json",
@@ -1230,8 +1590,8 @@
     },
     {
       "path": "until-done-mission-control.html",
-      "sha256": "0ea57877212bb0ffe0c310806330fe101a55d0a6edef6848e29210ee3b3ec1ba",
-      "bytes": 5810
+      "sha256": "04c5935a075ac2d01918954a40bdd1013eb501d908a50e00ee0326893cf1ac5e",
+      "bytes": 6103
     },
     {
       "path": "vendor/ethers.umd.min.js",
@@ -1240,8 +1600,8 @@
     },
     {
       "path": "verification.html",
-      "sha256": "b28b23833674ac0ae293706e23c0ab893e72c934103fcc6c8ea14c1ee8d36506",
-      "bytes": 4318
+      "sha256": "a838dcecfa343aed2c0a591d3cfee1083e686d7bf85f5f2b965c220d39b8d6ed",
+      "bytes": 4611
     }
   ]
 }

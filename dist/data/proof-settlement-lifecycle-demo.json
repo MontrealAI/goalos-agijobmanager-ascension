@@ -1,0 +1,128 @@
+{
+  "title": "Proof-Settlement Lifecycle Console",
+  "version": "v36-proof-settlement-lifecycle-console",
+  "coreLaw": "No ProofBundle, no settlement. No replay, no settlement. No authority, no autonomy.",
+  "posture": {
+    "browserLocal": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAccounts": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noUserDataWanted": true,
+    "simulatedSettlementOnly": true,
+    "noProductionAuthority": true
+  },
+  "stages": [
+    "REQUEST",
+    "ESCROW",
+    "EXECUTE",
+    "PROOF",
+    "VALIDATE",
+    "SETTLE",
+    "CHRONICLE"
+  ],
+  "gates": [
+    "JobSpec complete",
+    "Escrow simulated only",
+    "ProofBundle complete",
+    "Replay path present",
+    "Validator quorum clear",
+    "Dispute window clear",
+    "Authority boundary explicit",
+    "Chronicle receipt ready"
+  ],
+  "presets": [
+    {
+      "id": "clean-proof-settlement",
+      "name": "Clean proof-settlement run",
+      "description": "A public-safe mandate has a clear job spec, simulated escrow, complete ProofBundle, replay path, validator quorum, dispute clearance, explicit authority boundary, and Chronicle receipt.",
+      "values": {
+        "jobSpec": 92,
+        "escrow": 82,
+        "execution": 84,
+        "proofBundle": 91,
+        "replay": 88,
+        "validatorQuorum": 86,
+        "disputeClearance": 78,
+        "authority": 90,
+        "chronicle": 84,
+        "risk": 24,
+        "proofDebt": 14
+      }
+    },
+    {
+      "id": "no-proofbundle",
+      "name": "No ProofBundle",
+      "description": "The job produces output but no settlement-grade proof bundle. Settlement is blocked.",
+      "values": {
+        "jobSpec": 82,
+        "escrow": 78,
+        "execution": 80,
+        "proofBundle": 12,
+        "replay": 25,
+        "validatorQuorum": 62,
+        "disputeClearance": 66,
+        "authority": 74,
+        "chronicle": 20,
+        "risk": 45,
+        "proofDebt": 88
+      }
+    },
+    {
+      "id": "unreplayable-run",
+      "name": "Unreplayable run",
+      "description": "The run appears useful but cannot be replayed from pinned inputs, artifacts, signatures, and validator records. Settlement is blocked.",
+      "values": {
+        "jobSpec": 88,
+        "escrow": 80,
+        "execution": 82,
+        "proofBundle": 74,
+        "replay": 18,
+        "validatorQuorum": 76,
+        "disputeClearance": 72,
+        "authority": 82,
+        "chronicle": 35,
+        "risk": 55,
+        "proofDebt": 74
+      }
+    },
+    {
+      "id": "authority-gap",
+      "name": "Authority gap",
+      "description": "The work has evidence, but the authority boundary is not explicit enough for institutional settlement. Human review must stop it.",
+      "values": {
+        "jobSpec": 86,
+        "escrow": 72,
+        "execution": 78,
+        "proofBundle": 82,
+        "replay": 80,
+        "validatorQuorum": 78,
+        "disputeClearance": 70,
+        "authority": 22,
+        "chronicle": 48,
+        "risk": 62,
+        "proofDebt": 58
+      }
+    },
+    {
+      "id": "disputed-receipt",
+      "name": "Disputed receipt",
+      "description": "A challenge window catches pressure on validator consensus. The system keeps proof visible but holds settlement.",
+      "values": {
+        "jobSpec": 84,
+        "escrow": 80,
+        "execution": 82,
+        "proofBundle": 84,
+        "replay": 79,
+        "validatorQuorum": 42,
+        "disputeClearance": 18,
+        "authority": 80,
+        "chronicle": 44,
+        "risk": 66,
+        "proofDebt": 63
+      }
+    }
+  ]
+}
