@@ -1,0 +1,517 @@
+{
+  "status": "PASS",
+  "release": "v11-final-assurance-kernel",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "checkedAt": "2026-06-30T14:41:52.384Z",
+  "checks": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90
+  },
+  "canonicalIdentities": {
+    "AGIJobManager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "AGIALPHA": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "chainId": 1
+  },
+  "assuranceLevel": "publication-grade automated assurance with expert Mainnet separation",
+  "explicitBoundary": "Automated assurance is not a legal third-party audit opinion and does not by itself authorize funds or activate production authority.",
+  "fileHashes": [
+    {
+      "path": "site/index.html",
+      "sha256": "a5b5669d19403e60cf1c545786a40d98190a3be59539447053442cad583ee214",
+      "bytes": 13027
+    },
+    {
+      "path": "site/operator-console.html",
+      "sha256": "e1f1134bf24a8406694805f84fc56f33c54e839d11f03495fd8fdd3b8d0985f5",
+      "bytes": 7259
+    },
+    {
+      "path": "site/expert-console.html",
+      "sha256": "6d2b32ab3e6077b18380d490c9cb9876fe4263647f40bd678f1aed062ac67065",
+      "bytes": 9493
+    },
+    {
+      "path": "site/sovereign-machine-economy.html",
+      "sha256": "dd8e48d0e573c8d18b1022c27b13d070bdb2d6b41736b539b1b34431856c43cd",
+      "bytes": 6881
+    },
+    {
+      "path": "site/verification.html",
+      "sha256": "3fb98ea63a72c01ed525901dfd7560ed0f659d03290159fa2d693d1ad8fb21bc",
+      "bytes": 5583
+    },
+    {
+      "path": "data/final-assurance-policy.json",
+      "sha256": "1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e",
+      "bytes": 2328
+    },
+    {
+      "path": "data/canonical-identities.json",
+      "sha256": "9d67b07a97b790414ab740199dec2b8391d5887be79349597b10807dffb4f8e5",
+      "bytes": 817
+    },
+    {
+      "path": "data/agijobmanager-expert-action-catalog.json",
+      "sha256": "e29d2d65633b7d18d99b3e8507b8161f3b7b5645e60f67780b09691801b22c1f",
+      "bytes": 1214
+    },
+    {
+      "path": "tools/final-assurance-kernel.mjs",
+      "sha256": "f7eb5c6084ef0a1abdb94a3f4c0cccabb0003aae64a98af74cb68a40928dd61b",
+      "bytes": 8258
+    }
+  ],
+  "results": [
+    {
+      "name": "required file: site/index.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/operator-console.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/expert-console.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/expert-mainnet-console.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/sovereign-machine-economy.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/evidence/index.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/architecture.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/verification.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/assurance.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/assets/atelier.css",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/assets/atelier.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/assets/expert-console.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/assets/sovereign-economy.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: site/assets/mainnet-console.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/canonical-identities.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/evidence-docket-6-1.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/agijobmanager-action-catalog.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/agijobmanager-expert-action-catalog.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/capability-contract.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/mainnet-capability-contract.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/sovereign-machine-economy-capability-contract.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: data/final-assurance-policy.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: schemas/goalos-intent.schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: schemas/evidence-docket.schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: schemas/mainnet-capability-contract.schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: schemas/sovereign-machine-economy.schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: src/contracts/agijobmanager-parity.mjs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: src/sovereign/sovereign-machine-economy.mjs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: tools/build.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: tools/verify.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: tools/automated-assurance.mjs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: tools/factual-correctness.mjs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: tools/mainnet-factual-check.mjs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: docs/CLAIM_BOUNDARY.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: docs/AUTOMATED_AUDIT_EQUIVALENT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: docs/SOVEREIGN_MACHINE_ECONOMY_IMPLEMENTATION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "required file: docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "production URL present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "canonical AGIJobManager address present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "canonical AGIALPHA address present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "chain id 1 present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "lineage marker: META-AGENTIC α-AGI",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "lineage marker: AGI Alpha Node v0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "lineage marker: AGI Jobs v0 (v2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "lineage marker: AGIJobManager",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "lineage marker: Sovereign Machine Economy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AEP object marker: GoalOSCommit",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AEP object marker: RunCommitment",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AEP object marker: ProofPacket",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AEP object marker: SelectionCertificate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AEP object marker: Evidence Docket",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: createJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: applyForJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: requestJobCompletion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: validateJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: disapproveJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: disputeJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: finalizeJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: expireJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGIJobManager action: cancelJob",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes eth_requestAccounts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes wallet_switchEthereumChain",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes eth_sendTransaction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes approve(CANON.manager",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes MaxUint256",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes privateKey",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "public surface excludes sendTransaction(",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains eth_requestAccounts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains wallet_switchEthereumChain",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains approve(CANON.manager",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains staticCall",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains estimateGas",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains AUTHORIZE MAINNET",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console contains ACTIVATE PRODUCTION AUTHORITY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console excludes MaxUint256",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console excludes localStorage.setItem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console excludes sessionStorage.setItem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert console excludes privateKey",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Expert console contains typed production authority gate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Expert console contains exact approval posture",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Ascendant particle field preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "expert action catalog has at least 10 actions",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "name": "expert action catalog covers legacy lifecycle",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "canonical identity JSON locks AGIJobManager",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "canonical identity JSON locks AGIALPHA",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "sovereign lineage has 4+ components",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "sovereign operating loop has 10 gates",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "sovereign public safety boundary separates expert console",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claim boundary visible on website",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}
