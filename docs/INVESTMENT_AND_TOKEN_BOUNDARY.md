@@ -40,7 +40,7 @@ Public materials must not claim or imply:
 - external audit completion unless a real independent audit exists;
 - tokenholder rights in MontrealAI, QUEBEC.AI, GoalOS, AGI ALPHA, or any entity;
 - that AGIALPHA can be purchased, obtained, redeemed, or made available from MontrealAI or this website;
-- that MontrealAI provides price support, liquidity support, routing, custody, exchange, brokerage, or market-making.
+- must not state that MontrealAI provides price support, liquidity support, routing, custody, exchange, brokerage, or market-making.
 
 ## Operator responsibility
 

@@ -12,7 +12,7 @@
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-30T13:09:54.045163Z",
+  "builtAt": "2026-06-30T13:21:53.684723Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -41,7 +41,7 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "e302bb121f7e5915a80b23cd42230e536b5c56e9172fdb4524fee2c78191f157",
+      "sha256": "f8272bf1384e0072ee533e084f54e996fef5cc1de6687d43658f073be2a49be9",
       "bytes": 12605
     },
     {
@@ -1000,9 +1000,39 @@
       "bytes": 1638
     },
     {
+      "path": "docs/ADR/0001-public-safe-browser-local-demos.md",
+      "sha256": "1e437bec6ec5ef4edc9de5498767cf54d2525e435f4b9690c92631d82c4618d5",
+      "bytes": 304
+    },
+    {
+      "path": "docs/ADR/0002-dependency-zero-publisher.md",
+      "sha256": "b6691eea8cfb2b7c5211ea10cbac5f530320132aa48a4577e8b505a395945d1c",
+      "bytes": 316
+    },
+    {
+      "path": "docs/ADR/0003-public-private-proof-boundary.md",
+      "sha256": "2e295eb6fdd61101f04bf6f672767d9b4d956c2a8c68938623fef523bb2dd687",
+      "bytes": 334
+    },
+    {
+      "path": "docs/ADR/0004-expert-console-separation.md",
+      "sha256": "5b68b0af363b8a1adb8d3c6fbd4ba8e943757777c3d7002fc67b6dfdcabce49b",
+      "bytes": 310
+    },
+    {
+      "path": "docs/ADR/0005-claim-bounded-publication.md",
+      "sha256": "fd62f34607f7c00da19588c4f382b129c35e2d3f847f54031a994d155fb604d6",
+      "bytes": 364
+    },
+    {
+      "path": "docs/ADR/README.md",
+      "sha256": "e871a692bcfac386a8b9631ff03ea59e929e37b6c6c289d20d0b00493b8ec8c9",
+      "bytes": 404
+    },
+    {
       "path": "docs/AGIALPHA_BOUNDARY.md",
-      "sha256": "3e60f423433d28b7c365aedb5e7f0bc916421efa0897830c54122ee370411e0f",
-      "bytes": 1407
+      "sha256": "e4d35115422b81bb74911ec9fb3cc881a3212dcf85cf35d2b877db33d3117f08",
+      "bytes": 739
     },
     {
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
@@ -1011,8 +1041,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "163f64c4c582f80eeb8e057adcb1e08d47e51d09f2b2b635e931dc78ae80a04b",
-      "bytes": 1351
+      "sha256": "bae16be84eac7917c0cd4278c27ac05542ee23cb807adfbb9782be2d65c9e923",
+      "bytes": 2347
     },
     {
       "path": "docs/ASCENSION_FLIGHT_DECK_V31.md",
@@ -1041,8 +1071,8 @@
     },
     {
       "path": "docs/CLAIM_BOUNDARY.md",
-      "sha256": "aee8c3e9202eb5c2714ea06ee671c592f927d1df29d488133d523636e8a5b89a",
-      "bytes": 1704
+      "sha256": "5dedd7777f97cd00cf16ec88f7b4a3058a3227d470d5d73958f85744ba7c106c",
+      "bytes": 987
     },
     {
       "path": "docs/CLAIM_BOUNDARY_FIREWALL_V22.md",
@@ -1066,8 +1096,8 @@
     },
     {
       "path": "docs/DEMO_CATALOG.md",
-      "sha256": "b3e10780c07eed2a7f5148edd63cf07220513dd80fd5ab075fbd66fd1a053091",
-      "bytes": 2090
+      "sha256": "8b92ee66d5a38feabf25d6d64af083a71a05dc6ba6cbde9840d1c65cfeb66aa9",
+      "bytes": 29015
     },
     {
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
@@ -1081,8 +1111,8 @@
     },
     {
       "path": "docs/DEPLOYMENT_GITHUB_WEB_UI.md",
-      "sha256": "95bd9be9350bcb98234bb80cca7d2b3341f06f64094d01184d3eccaf8c020cbe",
-      "bytes": 1155
+      "sha256": "59dcb4bc22c5b4d92ecb3d4433326307f949b1758693d42808a3219b094814b0",
+      "bytes": 548
     },
     {
       "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
@@ -1100,14 +1130,19 @@
       "bytes": 533
     },
     {
+      "path": "docs/EXPERT_CONSOLE_BOUNDARY.md",
+      "sha256": "c5dc6caef200e694887e9676737617925978f08c8aa2f1eb4b24ca76adf24d4c",
+      "bytes": 645
+    },
+    {
       "path": "docs/EXPERT_CONSOLE_TRANSACTION_POSTURE.md",
       "sha256": "44150fb9772ccbddc916bb7bf054827cf0a800e0d86c89b57d010016b31ac93e",
       "bytes": 607
     },
     {
       "path": "docs/FAQ.md",
-      "sha256": "8c799e2069aa72b32c047b0342799997df103f4705229f02dcc31cc47c905a8b",
-      "bytes": 1680
+      "sha256": "de979106f22f04949eee2917bfd5f8b68c117ff82c3fb8d60b522f9bd2b3c1b0",
+      "bytes": 1612
     },
     {
       "path": "docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
@@ -1116,13 +1151,13 @@
     },
     {
       "path": "docs/GETTING_STARTED.md",
-      "sha256": "c7dfe6231f5a26095f3948238347ee4d9331d8a83f0f7b3542bc29e4354aec86",
-      "bytes": 1527
+      "sha256": "45ddb71440692ee667be475b70d6d49222869bc9bfd0ec44c1f03beb3de6dec0",
+      "bytes": 757
     },
     {
       "path": "docs/GITHUB_SETTINGS_GUIDE.md",
-      "sha256": "c2aa016c52a5fe145e145c45675c9ed6ef12664344b3e4c67a771b9f8219c588",
-      "bytes": 1469
+      "sha256": "26ae50f838510b9e02b7db0b444e739871253e04d0c6d447e5c4bdfcea3253c0",
+      "bytes": 945
     },
     {
       "path": "docs/INSTITUTIONAL_WEBSITE_FINALIZATION_V42.md",
@@ -1131,8 +1166,8 @@
     },
     {
       "path": "docs/INVESTMENT_AND_TOKEN_BOUNDARY.md",
-      "sha256": "9d3a8983629eef0d9cac23ab4e6b77e39ef393c9657c650ce331d322756923b2",
-      "bytes": 2591
+      "sha256": "4418ed0aa9ec902607e81f88c5074f57db243933a828d545f0b8ad464f3ae475",
+      "bytes": 2606
     },
     {
       "path": "docs/LEGAL_AND_REGULATORY_BOUNDARY.md",
@@ -1221,8 +1256,8 @@
     },
     {
       "path": "docs/PROOF_OBJECTS.md",
-      "sha256": "6cf80e6cf88264ace6d6d40177b403aeda39b11123d89d3df7f86a556a6e8680",
-      "bytes": 1678
+      "sha256": "4c88d0509a05577b93035aa9af52e017bd5df94ea1d7eb0f7fc5cf4c4da6ac2b",
+      "bytes": 1319
     },
     {
       "path": "docs/PROOF_SETTLEMENT_LIFECYCLE_V36.md",
@@ -1240,14 +1275,24 @@
       "bytes": 1389
     },
     {
+      "path": "docs/PROOF_TO_SETTLEMENT_LIFECYCLE.md",
+      "sha256": "d74bbb701df6f744e04c867a784eea9f357421f854429fd54df4de34db796fa2",
+      "bytes": 996
+    },
+    {
       "path": "docs/PUBLICATION_STANDARD.md",
       "sha256": "b4e995c383aba580f8dc6c5ea7f1f8b8e6b4257c4f19467d6d0c80af7dc43391",
       "bytes": 965
     },
     {
+      "path": "docs/QUICKSTART_NON_TECHNICAL.md",
+      "sha256": "1e76cbe7fd37c12c232abc73037822b641e452ec630429dbf6687def84d453b5",
+      "bytes": 928
+    },
+    {
       "path": "docs/README.md",
-      "sha256": "6c74733ca540b360e419de88ad2804061103d00c01ddc7269fa0d01326631507",
-      "bytes": 1395
+      "sha256": "7fc4687b5e5ce1f6f5e7d9bd505816f3373f83b3d4ea342426464debae8c6c1a",
+      "bytes": 945
     },
     {
       "path": "docs/REAL_TASK_BENCHMARK_BRIDGE_V27.md",
@@ -1256,8 +1301,8 @@
     },
     {
       "path": "docs/RELEASE_CHECKLIST.md",
-      "sha256": "8caa3c95bc023d78fa04bff9c36b9aa44de44980b052246fd884fd5ae9bbaeae",
-      "bytes": 1040
+      "sha256": "f0f80079aeeea5bbfa078367125523697e1de4313c06f2d33eb06f9bbe06b4de",
+      "bytes": 541
     },
     {
       "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
@@ -1265,9 +1310,14 @@
       "bytes": 1791
     },
     {
+      "path": "docs/REPOSITORY_AUDIT.md",
+      "sha256": "e081a7a1ebe44f81206822ea91cf14a50ceb5fbd7e85c45ee745cb242ca0603c",
+      "bytes": 11653
+    },
+    {
       "path": "docs/SECURITY_PRIVACY_BOUNDARY.md",
-      "sha256": "3d0ba4449c36add132a5d489b25523eb340b330ff74b02589854f660d0702102",
-      "bytes": 1184
+      "sha256": "315b7321500d35d46d08b94a871243aeb8e9bebb1b022b9662ceaa7f1251d67b",
+      "bytes": 663
     },
     {
       "path": "docs/SITE_COMMAND_CENTER_V37.md",
@@ -1301,8 +1351,8 @@
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "5ee11f07bffe3c7ce33fd8845f3cdf7b8d21e37aa7908d03f521568eb65f9b04",
-      "bytes": 1412
+      "sha256": "492c7868c9f075254798a65fd21d96e18cdc11488bb6950d28c71d8b6f985a8a",
+      "bytes": 1019
     },
     {
       "path": "docs/TRUST_EQUATION_SIMULATOR_V35.md",
@@ -1326,13 +1376,18 @@
     },
     {
       "path": "docs/WORKFLOW_AUTOPILOT.md",
-      "sha256": "933a3b207905f06a06ce9a5ff5031652197d898b7fb6eb8c7a0569f5019bc4aa",
-      "bytes": 1188
+      "sha256": "b96b9f995c99f2cd1f3b9a5cd9639d11aa2013a4df47f291e75a7304ec29df80",
+      "bytes": 851
     },
     {
       "path": "docs/releases/V41_DOCUMENTATION_UPGRADE.md",
       "sha256": "162947c3e199bfde1301df4d7ce55a6bdaec3532f3bdeda45418a88c06d03411",
       "bytes": 2821
+    },
+    {
+      "path": "docs/releases/V42_REPOSITORY_EXCELLENCE.md",
+      "sha256": "02f7015da6ced0c9f206352e504852e8538ec00e343dfa3720c73be62e5d4199",
+      "bytes": 1504
     },
     {
       "path": "docs/releases/V43_REPOSITORY_DOCUMENTATION_UPGRADE.md",

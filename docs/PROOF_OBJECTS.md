@@ -1,26 +1,32 @@
 # Proof Objects
 
-- GoalOSCommit: objective, scope, evaluator set, and authority boundary.
-- RunCommitment: immutable run identity and inputs hash.
-- ProofPacket: minimal local evidence unit.
-- ProofBundle: replayable package required before settlement.
-- EvidenceDocket: public-safe evidence room for a claim.
-- EvalAttestation: evaluator statement with method and result.
-- SelectionCertificate: gate result for propagation.
-- RolloutReceipt: bounded release record.
-- RollbackReceipt: recovery path record.
-- SettlementReceipt: request, proof, validation, and settlement summary.
-- ChronicleEntry: reusable institutional memory.
-- ProofCarryingArtifactPassport: reusable capability identity and proof history.
-- GovernedDecisionState: decision plus evidence, authority, rollback, and claim boundaries.
-- ActionGraph: human-review-ready action structure.
-- CapabilityPackage: reusable capability plus scope and validation metadata.
+| Object | Practical meaning |
+|---|---|
+| GoalOSCommit | Objective, constraints, and authority boundary for a mission. |
+| RunCommitment | Immutable run identity and replay pointer. |
+| ProofPacket | Small evidence unit. |
+| ProofBundle | Replayable package of evidence, hashes, evaluator outputs, and receipts. |
+| EvidenceDocket | Review-ready case file for a public claim. |
+| EvalAttestation | Validator or test result statement. |
+| SelectionCertificate | Why a route/model/action was selected. |
+| RolloutReceipt | What changed, where, and under which gate. |
+| RollbackReceipt | Recovery action and proof that rollback was available. |
+| SettlementReceipt | Boundary-confirmed settlement record. |
+| ChronicleEntry | Memory record for reuse and governance. |
+| GovernedDecisionState | Decision, evidence, authority, rollback, and claim boundary together. |
+| ActionGraph | Ordered action plan with gates. |
+| ProofCarryingArtifactPassport | Artifact identity plus proof status and portability metadata. |
+
+Example:
 
 ```json
-{ "object": "EvidenceDocket", "claim": "public-safe demonstration", "proofBoundary": "hashes and summaries only" }
+{
+  "type": "EvidenceDocket",
+  "claim": "Demo route generated a public-safe receipt",
+  "proofBundle": { "hash": "demo-hash", "replayable": true },
+  "boundary": "public-safe browser-local demonstration"
+}
 ```
 
+No ProofBundle, no settlement. No replay, no settlement.
 
-## Shared boundary
-
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

@@ -1,26 +1,62 @@
 # Architecture
 
-The repository is a dependency-zero static website. Source pages live in `site/`, public-safe contracts in `data/`, schemas in `schemas/`, checks in `tests/`, and build/verification kernels in `tools/`. GitHub Actions builds and publishes `dist/` to GitHub Pages. Expert-only surfaces are separated from public demos.
+GoalOS AGIJobManager Ascension is a static website with browser-local demonstrations, public-safe data contracts, JSON schemas, dependency-free tools/tests, and an autonomous GitHub Pages publisher. Expert-only pages are separated from public-safe demos and must not be treated as casual public demo routes.
+
+## Layers
+
+| Layer | Directory | Role |
+|---|---|---|
+| Public pages | `site/` | Static HTML proof surfaces |
+| Data contracts | `data/` | Public-safe demo inputs and receipts |
+| Schemas | `schemas/` | Validation contracts |
+| Tools | `tools/` | Build, verification, route, and kernel checks |
+| Tests | `tests/` | Dependency-free public-safe checks |
+| Publisher | `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml` | GitHub Pages build/review/deploy path |
+
+## Public/private proof boundary
+
+Public surfaces expose commitment hashes, summaries, attestations, receipts, and claim boundaries. Private prompts, raw traces, customer data, confidential workpapers, and private evaluator notes stay private.
+
+
+## Diagrams
 
 ```mermaid
-flowchart TB
-  Repo[Repository] --> Site[site/]
-  Repo --> Data[data/]
-  Repo --> Schemas[schemas/]
-  Repo --> Tools[tools/]
-  Repo --> Tests[tests/]
-  Tools --> Dist[dist/]
-  Dist --> Pages[GitHub Pages]
+flowchart LR
+  O[Objective] --> M[Mission Contract]
+  M --> W[Autonomous Work]
+  W --> V[Verification]
+  V --> E[Evidence Docket]
+  E --> G[Governed Decision State]
+  G --> A[Action Graph]
+  A --> C[Chronicle]
+  C --> R[Reusable Capability]
+```
+
+```mermaid
+flowchart LR
+  Req[Request] --> Esc[Escrow]
+  Esc --> Exe[Execute]
+  Exe --> Proof[ProofBundle]
+  Proof --> Val[Validate]
+  Val --> Settle[Settle]
+  Settle --> Chron[Chronicle]
+  Proof -. missing .-> Stop1[No ProofBundle, no settlement]
+  Val -. unreplayable .-> Stop2[No replay, no settlement]
 ```
 
 ```mermaid
 flowchart TB
-  Private[Private intelligence boundary] --> Hashes[Hashes / commitments]
-  Hashes --> Public[Public proof surface]
-  Public --> Review[Human review]
+  Repo[Repository] --> Site[site/ public pages]
+  Repo --> Data[data/ demo contracts]
+  Repo --> Schemas[schemas/ JSON schemas]
+  Repo --> Docs[docs/ documentation]
+  Repo --> Tools[tools/ verification and build]
+  Repo --> Tests[tests/ public-safe checks]
+  Repo --> Workflows[.github/workflows/ publisher]
+  Tools --> Dist[dist/ generated site]
+  Workflows --> Pages[GitHub Pages]
 ```
 
 
-## Shared boundary
+Public-safe boundary: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority from public demos.
 
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.
