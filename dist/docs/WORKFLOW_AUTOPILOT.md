@@ -1,8 +1,11 @@
 # Workflow Autopilot
 
-The publisher builds, verifies, commits generated source when requested, and deploys GitHub Pages when requested. Inputs: `deploy_pages`, `commit_generated_source`, `run_live_factual_check`, and `strict_live_factual_check`. Safe defaults deploy generated static pages without live RPC dependency. It never installs registry packages, collects data, moves funds, or grants production authority. Live factual checks are optional because RPC availability is environment-specific. Verify `dist/production-url.json` and production pages after every run.
+Publisher workflow: `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`
+Display name: **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**
 
+It rehydrates routes, runs dependency-free checks, builds static output, optionally commits generated source, and deploys GitHub Pages when requested. It never installs package-registry dependencies, never adds analytics, never creates forms, never connects wallets, never approves tokens, and never broadcasts transactions.
 
-## Shared boundary
+Inputs: `deploy_pages`, `commit_generated_source`, `run_live_factual_check`, `strict_live_factual_check`. Safe defaults keep live factual checks off unless an RPC secret is configured.
 
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.
+To recover from red historical runs, fix source, rerun the current workflow, inspect logs, and verify `dist/production-url.json`.
+

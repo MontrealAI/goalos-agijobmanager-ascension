@@ -72,9 +72,9 @@
     "test:navigation-polish": "node tests/navigation-polish-v41.test.mjs && python3 tools/build.py && node tools/navigation-polish-v41-kernel.mjs",
     "institutional-finalization": "node tests/institutional-website-finalization-v42.test.mjs && python3 tools/build.py && node tools/institutional-website-finalization-v42-kernel.mjs",
     "test:institutional-finalization": "npm run institutional-finalization",
-    "docs:check": "node tools/docs-link-checker.mjs",
+    "docs:check": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs",
     "test:docs": "node tests/documentation.test.mjs",
-    "verify:docs": "node tools/docs-link-checker.mjs && node tests/documentation.test.mjs"
+    "verify:docs": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tests/documentation.test.mjs"
   },
   "dependencies": {},
   "description": "GoalOS AGIJobManager Ascension public proof institution with static-first navigation, no menu stacking, no blank route states, and public-safe browser-local demos.",

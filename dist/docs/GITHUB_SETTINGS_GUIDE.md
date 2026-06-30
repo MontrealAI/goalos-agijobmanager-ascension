@@ -1,14 +1,12 @@
 # GitHub Settings Guide
 
-Codex cannot reliably change repository settings by code. Recommended About description: GoalOS-native AGIJobManager Ascension: public-safe proof-settlement demos, Evidence Dockets, settlement lifecycle, claim boundaries, and autonomous GitHub Pages publication.
+These are recommended repository UI settings; this file does not imply settings were changed by code.
 
-Recommended website: https://montrealai.github.io/goalos-agijobmanager-ascension/
+About description: GoalOS-native AGIJobManager Ascension: public-safe proof-settlement demos, Evidence Dockets, settlement lifecycle, claim boundaries, and autonomous GitHub Pages publication.
 
-Recommended topics: goalos, agialpha, agijobmanager, proof-of-evolution, evidence-docket, proof-settlement, governed-agents, multi-agent-systems, github-pages, browser-local, public-safe, validator-gated, proof-carrying-artifacts, machine-work.
+Website: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
-Set Pages to GitHub Actions, allow Actions to write contents/pages/id-token, enable branch protection, code scanning where available, private vulnerability reporting, and issue/discussion settings appropriate for public-safe support.
+Topics: goalos, agialpha, agijobmanager, proof-of-evolution, evidence-docket, proof-settlement, governed-agents, multi-agent-systems, github-pages, browser-local, public-safe, validator-gated, proof-carrying-artifacts, machine-work.
 
+Recommended settings: enable Issues; enable Discussions if desired; enable Dependabot alerts if dependencies exist; enable code scanning if available; use branch protection for `main` if compatible with the autonomous workflow; set GitHub Pages to GitHub Actions; grant Actions permissions required by the publisher.
 
-## Shared boundary
-
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

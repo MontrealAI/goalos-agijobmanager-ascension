@@ -217,6 +217,7 @@ node tools/no-registry-preflight.mjs
 node tools/pathspec-proof-kernel.mjs
 node tools/workflow-reference-auditor.mjs
 node tools/docs-link-checker.mjs
+node tools/claim-boundary-checker.mjs
 node tests/documentation.test.mjs
 node tools/run-all-tests.mjs
 python3 tools/build.py
@@ -254,3 +255,17 @@ Baselines beat GoalOS under equal budget; Evidence Dockets are unreplayable; pro
 ## Documentation
 
 Start at [docs/README.md](docs/README.md), then continue to [Getting Started](docs/GETTING_STARTED.md), [Architecture](docs/ARCHITECTURE.md), [Demo Catalog](docs/DEMO_CATALOG.md), [Claim Boundary](docs/CLAIM_BOUNDARY.md), and [AGIALPHA Boundary](docs/AGIALPHA_BOUNDARY.md).
+
+### Demo library map
+
+```mermaid
+flowchart TB
+  Home[Home] --> Concierge[Experience Concierge]
+  Concierge --> Trust[Trust Equation]
+  Concierge --> Evidence[Evidence Docket Composer]
+  Concierge --> Settlement[Proof-Settlement Lifecycle]
+  Concierge --> Mission[Until-DONE Mission Control]
+  Concierge --> Router[Router Observatory]
+  Concierge --> Passport[Artifact Passport]
+  Concierge --> Boundary[Legal and AGIALPHA Boundary]
+```

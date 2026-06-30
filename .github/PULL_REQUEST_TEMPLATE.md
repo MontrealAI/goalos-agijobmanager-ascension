@@ -15,6 +15,7 @@
 - [ ] Build passes or limitation is documented.
 - [ ] Public/private proof boundary preserved.
 - [ ] AGIALPHA boundary preserved.
+- [ ] Expert-console separation preserved.
 - [ ] No menu stacking introduced.
 - [ ] Route catalog updated if needed.
 - [ ] No hard-coded missing test/kernel references.

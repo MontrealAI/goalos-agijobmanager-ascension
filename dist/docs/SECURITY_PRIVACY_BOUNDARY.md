@@ -1,8 +1,6 @@
 # Security and Privacy Boundary
 
-Report vulnerabilities through GitHub security channels or issues without secrets. The public site wants no user data and uses no forms, analytics, cookies, localStorage/sessionStorage, public wallet calls, public token approvals, or external action from public pages. Public proof surfaces may show commitments, summaries, attestations, receipts, and claim boundaries; private prompts, raw traces, customer data, confidential workpapers, and private evaluator notes stay outside the public surface. Expert surfaces remain separated.
+Public-safe boundary: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority from public demos.
 
+Users should never paste private keys, seed phrases, secrets, wallet credentials, customer data, regulated data, confidential workpapers, or personal data into public demos. Public proof surfaces may show hashes, commitments, Evidence Docket summaries, attestations, receipts, and claim boundaries. Private intelligence remains private.
 
-## Shared boundary
-
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

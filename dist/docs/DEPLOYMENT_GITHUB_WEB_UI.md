@@ -1,15 +1,14 @@
-# Deployment with the GitHub Web UI
+# GitHub Web UI Deployment
 
-1. If you receive an overlay, unzip it first. Upload contents, not the ZIP.
-2. Commit to `main`.
-3. Open Actions.
-4. Run **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**.
-5. Set `deploy_pages=true` and `commit_generated_source=true`.
-6. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
-7. After completion, inspect `dist/production-url.json` and the production URL.
-8. Red historical workflow runs are immutable; fix source and rerun the current workflow.
+1. Open the repository.
+2. Click **Add file → Upload files**.
+3. Upload the contents of the overlay, not the ZIP itself.
+4. Commit to `main`.
+5. Open **Actions**.
+6. Run **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**.
+7. Keep `deploy_pages = true`.
+8. Keep `commit_generated_source = true`.
+9. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
+10. Verify `dist/production-url.json` and the production pages.
+11. Old red workflow runs are historical and cannot be edited.
 
-
-## Shared boundary
-
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

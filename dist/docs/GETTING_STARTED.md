@@ -1,24 +1,21 @@
 # Getting Started
 
-Best first click: production [Experience Concierge](https://montrealai.github.io/goalos-agijobmanager-ascension/experience-concierge.html).
+## Fastest public-safe path
 
-## 5-minute tour
+Open https://montrealai.github.io/goalos-agijobmanager-ascension/ and click **Experience Concierge**. For a full map, use **Command Center**.
 
-1. Open Experience Concierge for a guided path.
-2. Open Command Center for the full route catalog.
-3. Run Trust Equation Simulator to see why proof changes output into institutional work.
-4. Run Evidence Docket Composer and export a public-safe receipt.
-5. Run Proof-Settlement Lifecycle and inspect request -> proof -> validation -> settlement -> Chronicle.
+## Fastest developer path
 
-## What not to enter
+```bash
+node --version
+python3 tools/verify.py
+node tools/docs-link-checker.mjs
+node tools/claim-boundary-checker.mjs
+node tests/documentation.test.mjs
+python3 tools/build.py
+```
 
-Do not enter secrets, private keys, seed phrases, personal data, customer data, confidential traces, or production instructions. Demo receipts should contain only public-safe sample inputs.
+No npm install is required; dependencies are intentionally empty.
 
-## Inspect artifacts
+Public-safe boundary: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority from public demos.
 
-Generated static artifacts appear in `dist/` after `python3 tools/build.py`. Data contracts live in `data/`; schemas live in `schemas/`.
-
-
-## Shared boundary
-
-Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.
