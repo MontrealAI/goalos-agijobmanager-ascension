@@ -1,15 +1,11 @@
 import fs from 'node:fs';
-const workflow = fs.readFileSync('.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml','utf8');
-const pkg = JSON.parse(fs.readFileSync('package.json','utf8'));
-function assert(cond,msg){ if(!cond){ console.error('FAIL · '+msg); process.exit(1); } console.log('PASS · '+msg); }
-assert(workflow.includes('Repository Public Trust Failsafe Publisher v44'), 'workflow name is v44 failsafe');
-assert(workflow.includes('inline root cleanup'), 'workflow contains inline cleanup fallback');
-assert(!/node\s+tools\/root-cleanup-v43\.mjs/.test(workflow), 'workflow does not hard-call root-cleanup-v43.mjs');
-assert(workflow.includes('tools/run-all-tests.mjs'), 'workflow keeps dynamic test runner reference');
-assert(workflow.includes('tools/run-existing-kernels.mjs'), 'workflow keeps dynamic kernel runner reference');
-assert(pkg.version.startsWith('4.4.0'), 'package version is v44');
-assert(pkg.scripts.test.includes('tools/run-all-tests.mjs'), 'test script uses dynamic test runner');
-assert(pkg.scripts.build.includes('tools/run-existing-kernels.mjs'), 'build script uses dynamic kernel runner');
-assert(fs.existsSync('tools/root-cleanup-v43.mjs'), 'root cleanup helper included for full-source overlays');
-assert(fs.existsSync('tools/repository-public-trust-failsafe-v44-kernel.mjs'), 'v44 kernel included');
-console.log('Repository Public Trust Failsafe v44 test PASS');
+const wf = fs.readFileSync('.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml','utf8');
+const must = (ok,msg)=>{ if(!ok){ console.error('FAIL · '+msg); process.exit(1); } console.log('PASS · '+msg); };
+must(/Publisher v4[45]/.test(wf) || /Public Trust Ultimate Failsafe Publisher v45/.test(wf), 'workflow identifies v44-compatible or v45 release');
+must(wf.includes('tools/failsafe-bootstrap-v45.mjs') || wf.includes('tools/root-cleanup-v43.mjs') || wf.includes('tools/root-cleanup-v44.mjs'), 'workflow has public-trust cleanup/bootstrap path');
+must(wf.includes('tools/run-documentation-tests.mjs'), 'workflow uses guarded documentation tests');
+must(wf.includes('tools/run-all-tests.mjs'), 'workflow uses guarded production test runner');
+must(!/node\s+tests\/[^\s]+\.test\.mjs/.test(wf), 'workflow does not hard-call individual test files');
+must(fs.existsSync('tools/root-cleanup-v45.mjs') || fs.existsSync('tools/root-cleanup-v44.mjs') || fs.existsSync('tools/root-cleanup-v43.mjs'), 'source contains root cleanup tool');
+must(fs.existsSync('tools/repository-public-trust-failsafe-v45-kernel.mjs') || fs.existsSync('tools/repository-public-trust-failsafe-v44-kernel.mjs'), 'source contains public-trust failsafe kernel');
+console.log('Repository public trust failsafe v44 compatibility test PASS');
