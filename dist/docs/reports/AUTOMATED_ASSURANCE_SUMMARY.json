@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "checks": 11,
+  "scope": "static controls + capability conformance + no autonomous fund movement"
+}

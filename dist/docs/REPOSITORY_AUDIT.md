@@ -13,3 +13,7 @@
 11. Source-of-truth ambiguity: route metadata exists across navigation catalog versions; `site/` files remain the route existence source for this pass.
 12. Intentionally left unchanged: public demo behavior, expert console separation, publisher workflow path, site navigation density, legal/privacy/token boundary pages, committed `dist/` artifacts except generated build output.
 
+
+## Verification refresh — 2026-06-30
+
+The repository excellence pass was rechecked from the current working tree on 2026-06-30. The publisher workflow remains `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`, the display name remains **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**, and the documentation QA scripts remain dependency-free. `docs-link-checker` reported only external-link and anchor-depth warnings by design, with no missing local documentation targets. `claim-boundary-checker` passed across README, docs, and selected public site HTML, preserving the public-safe no-wallet, no-user-data, no-analytics/cookies/forms, AGIALPHA token-boundary, public/private proof-boundary, and expert-console separation posture.

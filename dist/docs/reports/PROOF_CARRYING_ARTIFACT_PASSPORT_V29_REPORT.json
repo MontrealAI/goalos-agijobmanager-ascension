@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "release": "v29-proof-carrying-artifact-passport",
+  "route": "proof-carrying-artifact-passport.html",
+  "zeroNetwork": true,
+  "browserLocal": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "page": "proof-settlement-lifecycle.html",
+  "demo": "proof-settlement-lifecycle-demo.json",
+  "posture": [
+    "browser-local",
+    "zero-network",
+    "no-wallet",
+    "simulated-settlement-only"
+  ]
+}
