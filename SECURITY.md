@@ -1,17 +1,7 @@
 # Security Policy
 
-## Supported branch
+Supported branch: `main`.
 
-Security reports should target the current `main` branch.
+Report vulnerabilities through GitHub security reporting or a minimal issue that does not include secrets. Do not include private keys, seed phrases, personal data, customer data, confidential traces, API keys, or unreleased vulnerability exploit details.
 
-## Scope
-
-Public demos are static, browser-local demonstrations. They should not collect user data, connect wallets, approve tokens, broadcast transactions, or activate production authority.
-
-## Reporting
-
-Open a GitHub security advisory when available, or contact maintainers privately. Do not include secrets, private keys, seed phrases, RPC credentials, personal data, or confidential customer data in public issues.
-
-## Public-demo limitations
-
-Automated checks are not an external audit, legal opinion, or security certification.
+Scope includes public static pages, data contracts, schemas, build tooling, tests, and GitHub Actions configuration. Public demos are browser-local demonstrations and grant no production authority. They do not connect public wallets, approve tokens, switch networks, broadcast transactions, move funds, collect user data, add analytics, or set cookies.

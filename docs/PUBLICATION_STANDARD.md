@@ -1,13 +1,6 @@
-# Deployment with the GitHub Web UI
+# Publication Standard
 
-1. If you receive an overlay, unzip it first. Upload contents, not the ZIP.
-2. Commit to `main`.
-3. Open Actions.
-4. Run **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**.
-5. Set `deploy_pages=true` and `commit_generated_source=true`.
-6. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
-7. After completion, inspect `dist/production-url.json` and the production URL.
-8. Red historical workflow runs are immutable; fix source and rerun the current workflow.
+Publication law: proof-aligned source -> automation checks -> static build -> human review -> GitHub Pages. Unsupported claims do not auto-merge. Claim boundaries are not silently removed. Generated artifacts should be reproducible, route catalogs should stay current, and public/private proof boundaries must be preserved.
 
 
 ## Shared boundary

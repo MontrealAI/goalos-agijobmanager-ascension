@@ -1,34 +1,10 @@
 # AGIALPHA Boundary
 
-[Docs index](README.md)
+Official AGIALPHA Ethereum Mainnet address: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`. AGIJobManager: `0xB3AAeb69b630f0299791679c063d68d6687481d1`. Chain id: `1`.
 
-AGIALPHA appears in this repository as an identity and boundary reference only. The production site and repository do not make AGIALPHA available.
+AGIALPHA is pre-existing and decentralized. The website/repository uses the address as an identity/reference boundary only. AGIALPHA is not available from this repository or site. The repository/site does not sell, offer, distribute, custody, broker, route, redeem, market-make, price-support, liquidity-support, recommend, or make available AGIALPHA. Users/operators are solely responsible for third-party market, wallet, RPC, tax, sanctions, securities, privacy, and jurisdictional decisions. Public demos do not connect wallets, approve AGIALPHA, switch networks, or broadcast Mainnet transactions.
 
-## Canonical identity reference
 
-Verified repository data identifies:
+## Shared boundary
 
-| Item | Value |
-| --- | --- |
-| Official AGIALPHA token address | `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA` |
-| Chain | Ethereum Mainnet |
-| Chain id | `1` |
-| AGIJobManager address | `0xB3AAeb69b630f0299791679c063d68d6687481d1` |
-
-These values are documented in [`../data/canonical-identities.json`](../data/canonical-identities.json) and [`../data/agialpha-token-boundary.json`](../data/agialpha-token-boundary.json).
-
-## What the site and repository do not do
-
-The site and repository do not sell, offer, distribute, custody, broker, route, redeem, market-make, price-support, liquidity-support, recommend, or make available AGIALPHA. They do not provide an exchange service, broker-dealer service, investment advice, legal advice, tax advice, wallet service, token approval flow, transaction-broadcasting flow, or availability guarantee.
-
-## Pre-existing decentralized market status
-
-Repository data describes AGIALPHA as a pre-existing public market token with independent third-party market, wallet, explorer, RPC, aggregator, and exchange surfaces. Those surfaces are not controlled by this website. Public demos must remain separated from third-party transaction surfaces.
-
-## User and operator responsibility
-
-Users and operators are solely responsible for third-party wallets, third-party markets, taxes, sanctions, securities, consumer-protection rules, privacy, smart-contract risk, jurisdictional decisions, RPC providers, bridges, slippage, MEV, custody, approvals, and any independent professional advice they choose to obtain.
-
-## Documentation rule
-
-When AGIALPHA is mentioned, describe it as an official identity reference and boundary subject. Do not use promotional language, price language, acquisition instructions, market-quality claims, liquidity claims, return claims, or recommendation language.
+Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

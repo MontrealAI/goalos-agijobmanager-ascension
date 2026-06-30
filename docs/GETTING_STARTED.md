@@ -1,29 +1,24 @@
 # Getting Started
 
-[Docs index](README.md) · [Getting started](GETTING_STARTED.md) · [Architecture](ARCHITECTURE.md) · [Demo catalog](DEMO_CATALOG.md) · [Claim boundary](CLAIM_BOUNDARY.md) · [AGIALPHA boundary](AGIALPHA_BOUNDARY.md)
+Best first click: production [Experience Concierge](https://montrealai.github.io/goalos-agijobmanager-ascension/experience-concierge.html).
 
-## For non-technical users
+## 5-minute tour
 
-1. Open https://montrealai.github.io/goalos-agijobmanager-ascension/.
-2. Choose **Experience Concierge** as the best first click.
-3. Try Trust Equation, Evidence Docket Composer, and Proof-Settlement Lifecycle.
-4. Export only public-safe receipts.
+1. Open Experience Concierge for a guided path.
+2. Open Command Center for the full route catalog.
+3. Run Trust Equation Simulator to see why proof changes output into institutional work.
+4. Run Evidence Docket Composer and export a public-safe receipt.
+5. Run Proof-Settlement Lifecycle and inspect request -> proof -> validation -> settlement -> Chronicle.
 
-## For advanced users
+## What not to enter
 
-```bash
-node --version
-npm run docs:check
-npm run test
-npm run build
-```
+Do not enter secrets, private keys, seed phrases, personal data, customer data, confidential traces, or production instructions. Demo receipts should contain only public-safe sample inputs.
 
-Inspect `data/`, `schemas/`, `tools/`, `tests/`, and the publisher workflow before changing public pages.
+## Inspect artifacts
 
-## What this page proves
+Generated static artifacts appear in `dist/` after `python3 tools/build.py`. Data contracts live in `data/`; schemas live in `schemas/`.
 
-It explains the safest path through the repository.
 
-## What this page does not prove
+## Shared boundary
 
-It does not prove external audit completion, production certification, or achieved AGI/ASI.
+Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

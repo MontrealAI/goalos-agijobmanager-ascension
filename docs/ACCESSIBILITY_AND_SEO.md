@@ -1,13 +1,15 @@
-# Deployment with the GitHub Web UI
+# Accessibility and SEO Checklist
 
-1. If you receive an overlay, unzip it first. Upload contents, not the ZIP.
-2. Commit to `main`.
-3. Open Actions.
-4. Run **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**.
-5. Set `deploy_pages=true` and `commit_generated_source=true`.
-6. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
-7. After completion, inspect `dist/production-url.json` and the production URL.
-8. Red historical workflow runs are immutable; fix source and rerun the current workflow.
+- Page titles are specific.
+- Meta descriptions are claim-bounded.
+- Canonical route names are stable.
+- Skip links are available where page structure requires them.
+- Keyboard navigation and visible focus states work.
+- Reduced motion preferences are respected.
+- Contrast is readable.
+- Mobile layout does not stack menus.
+- No-JS fallback is understandable.
+- Static routes are discoverable from catalogs.
 
 
 ## Shared boundary
