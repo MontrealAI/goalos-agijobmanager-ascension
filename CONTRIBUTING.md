@@ -1,20 +1,47 @@
 # Contributing
 
-Thank you for helping keep GoalOS AGIJobManager Ascension clear, public-safe, and proof-bound.
+Thank you for improving GoalOS AGIJobManager Ascension. The repository is public-facing, so every contribution must preserve the proof institution posture: public-safe by default, claim-bounded, browser-local, and reviewable.
 
-## Add a demo
+## Best first contribution paths
 
-1. Add the static page in `site/`.
-2. Add public-safe sample data in `data/`.
-3. Add a JSON schema in `schemas/`.
-4. Add a dependency-free test in `tests/` and a kernel in `tools/` when appropriate.
-5. Update route catalogs and documentation.
-6. Run the verification commands in `README.md`.
+| Contribution | Start here | Required checks |
+|---|---|---|
+| Fix documentation | `docs/` | `npm run verify:docs` |
+| Add a demo | `site/`, `data/`, `schemas/`, `tests/` | `npm test && npm run build` |
+| Improve navigation | `data/canonical-route-manifest-v43.json` and route docs | `node tools/public-trust-checker-v43.mjs` |
+| Improve boundaries | `docs/CLAIM_BOUNDARY.md`, `docs/AGIALPHA_BOUNDARY.md`, boundary pages | `node tools/claim-boundary-checker.mjs` |
 
-## Preserve boundaries
+## Adding a new public demo
 
-No user data wanted. Do not add analytics, cookies, forms that collect data, localStorage/sessionStorage, public wallet connection, public token approval, public network switching, public transaction broadcasting, package registry dependencies, or unsupported claims. Do not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.
+1. Add a static page under `site/`.
+2. Add public-safe demo data under `data/`.
+3. Add a JSON schema under `schemas/` when the output object is structured.
+4. Add a dependency-free test under `tests/`.
+5. Add or update a kernel under `tools/` only if it checks production artifacts.
+6. Add the route to the canonical route manifest.
+7. Update `docs/DEMO_CATALOG.md` and relevant docs.
 
-## Claims
+## Non-negotiable public-safe rules
 
-No Evidence Docket, no strong public claim. No ProofBundle, no settlement. Promote claims only when evidence, replay, validation, and human review support them.
+Public demos must not collect user data, submit forms, use analytics, set cookies, use `localStorage` / `sessionStorage`, connect wallets, approve tokens, switch networks, broadcast transactions, move funds, or grant production authority.
+
+## Claim discipline
+
+Do not add claims of achieved AGI, achieved ASI, empirical SOTA, external audit completion, production certification, guaranteed returns, legal advice, financial advice, investment opportunity, safe autonomy, or real-world certification unless an explicit claim-bound Evidence Docket supports the exact statement.
+
+## Before opening a pull request
+
+```bash
+python3 tools/verify.py
+node tools/no-registry-preflight.mjs
+node tools/pathspec-proof-kernel.mjs
+node tools/workflow-reference-auditor.mjs
+node tools/docs-link-checker.mjs
+node tools/claim-boundary-checker.mjs
+node tests/documentation.test.mjs
+node tools/run-all-tests.mjs
+node tools/apply-public-trust-metadata-v43.mjs
+python3 tools/build.py
+node tools/run-existing-kernels.mjs
+node tools/public-trust-checker-v43.mjs
+```
