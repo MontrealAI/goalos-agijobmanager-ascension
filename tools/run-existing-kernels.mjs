@@ -27,7 +27,8 @@ const productionKernels=[
   'navigation-system-final-kernel.mjs',
   'experience-concierge-kernel.mjs',
   'navigation-polish-v40-kernel.mjs',
-  'navigation-polish-v41-kernel.mjs'
+  'navigation-polish-v41-kernel.mjs',
+  'institutional-website-finalization-v42-kernel.mjs'
 ];
 let ran=0,skipped=[];
 for(const file of productionKernels){const p=path.join('tools',file); if(!fs.existsSync(p)){skipped.push(file); continue;} console.log(`RUN ${p}`); const r=spawnSync(process.execPath,[p],{stdio:'inherit'}); if(r.status!==0) process.exit(r.status??1); ran++;}

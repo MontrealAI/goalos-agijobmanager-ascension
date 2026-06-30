@@ -140,6 +140,7 @@ status = {
     'navigationPolishV40': 'PASS',
     'navigationPolishV41': 'PASS',
     'navigationSourcePolishV41': 'PASS',
+    'institutionalWebsiteFinalizationV42': 'PASS',
     'menuOverlayConsolidated': 'PASS',
     'singleNativeHeader': 'PASS',
     'vendoredDependencies': 'PASS'
@@ -229,8 +230,8 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v41-navigation-source-polish-final',
-    'releaseAliases': ['v40-navigation-polish-failsafe','v40-navigation-polish-failsafe','v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
+    'release': 'v42-institutional-website-finalization',
+    'releaseAliases': ['v42-institutional-website-finalization','v41-navigation-source-polish-final','v40-navigation-polish-failsafe','v40-navigation-polish-failsafe','v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }
