@@ -1,5 +1,5 @@
 {
-  "version": "v43-repository-public-trust-finalization",
+  "version": "v46",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "routeCount": 50,
   "generatedFrom": "site/*.html",
@@ -513,6 +513,7 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
   ],
+  "release": "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
     "v46-repository-public-trust-compatibility-failsafe",

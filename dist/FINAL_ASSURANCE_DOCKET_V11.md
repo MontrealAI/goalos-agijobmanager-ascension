@@ -16,11 +16,11 @@ Boundary: Automated assurance is not a legal third-party audit opinion and does 
 
 ## Critical file hashes
 
-- `9ecedf8af58e888290253f70f154f0b5062715025f2432996da2660cbd795e02`  site/index.html
-- `57a8417a9e36f7385fbeb4e99a1d7f4e4ff092e8331f094ac5f5547ee78a1d2f`  site/operator-console.html
-- `2278acb0fe033c318e92d5f8c62c69edd3b05310fcd89cbb549e742063f0578e`  site/expert-console.html
-- `601c06169d65e44ad661aaf1d75cb0a7744d63dcd656fe2ddaae64f9254c5e55`  site/sovereign-machine-economy.html
-- `12c5641dcbedb06483df59d92e29dcf243a0d221772fd479aaa6b83382fee325`  site/verification.html
+- `692ab7df91b4506dec16ac5fdfaf06ae8cadd75f1a2e56e042af78e1d4982442`  site/index.html
+- `e1f1134bf24a8406694805f84fc56f33c54e839d11f03495fd8fdd3b8d0985f5`  site/operator-console.html
+- `6d2b32ab3e6077b18380d490c9cb9876fe4263647f40bd678f1aed062ac67065`  site/expert-console.html
+- `dd8e48d0e573c8d18b1022c27b13d070bdb2d6b41736b539b1b34431856c43cd`  site/sovereign-machine-economy.html
+- `3fb98ea63a72c01ed525901dfd7560ed0f659d03290159fa2d693d1ad8fb21bc`  site/verification.html
 - `1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e`  data/final-assurance-policy.json
 - `9d67b07a97b790414ab740199dec2b8391d5887be79349597b10807dffb4f8e5`  data/canonical-identities.json
 - `e29d2d65633b7d18d99b3e8507b8161f3b7b5645e60f67780b09691801b22c1f`  data/agijobmanager-expert-action-catalog.json

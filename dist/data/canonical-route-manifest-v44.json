@@ -1,8 +1,8 @@
 {
-  "version": "v43-repository-public-trust-finalization",
+  "version": "v44-repository-public-trust-failsafe",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "routeCount": 50,
-  "generatedFrom": "site/*.html",
+  "generatedFrom": "Repository Public Trust Failsafe v44",
   "posture": {
     "browserLocal": true,
     "publicSafe": true,
@@ -512,21 +512,5 @@
       "boundary": "No external audit claim.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
-  ],
-  "releaseAliases": [
-    "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
-    "v46-repository-public-trust-compatibility-failsafe",
-    "v45-repository-public-trust-ultimate-failsafe",
-    "v45-repository-public-trust-zero-missing-test-failsafe",
-    "v44-repository-public-trust-failsafe",
-    "v43-repository-public-trust-finalization",
-    "v42-institutional-website-finalization",
-    "v41-navigation-source-polish-final",
-    "v40-navigation-polish-failsafe",
-    "v39-experience-concierge-complete-navigation",
-    "v38-navigation-system-final",
-    "v37-site-command-center",
-    "v37-site-experience-atlas",
-    "v37-website-command-center"
   ]
 }

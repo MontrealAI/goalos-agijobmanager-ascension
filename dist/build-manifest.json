@@ -1,12 +1,16 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v43-repository-public-trust-finalization",
+  "release": "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
   "routeCount": 50,
   "releaseAliases": [
+    "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v45-repository-public-trust-ultimate-failsafe",
+    "v45-repository-public-trust-zero-missing-test-failsafe",
+    "v44-repository-public-trust-failsafe",
     "v43-repository-public-trust-finalization",
     "v42-institutional-website-finalization",
     "v41-navigation-source-polish-final",
-    "v40-navigation-polish-failsafe",
     "v40-navigation-polish-failsafe",
     "v39-experience-concierge-complete-navigation",
     "v38-navigation-system-final",
@@ -14,12 +18,22 @@
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-30T14:47:27.446585Z",
+  "builtAt": "2026-06-30T18:01:17.074842Z",
   "files": [
     {
       "path": ".nojekyll",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
+    },
+    {
+      "path": "FINAL_ASSURANCE_DOCKET_V11.json",
+      "sha256": "f494d23050ceb27704810f4309604689f90c7b4cebcec90c32109dc221d7eb6b",
+      "bytes": 12605
+    },
+    {
+      "path": "FINAL_ASSURANCE_DOCKET_V11.md",
+      "sha256": "f204607fee9611aafcad60ce65fd67408fe601e0841140e27127eb3ab7341016",
+      "bytes": 1436
     },
     {
       "path": "action-graph-handoff-demo.json",
@@ -538,8 +552,23 @@
     },
     {
       "path": "canonical-route-manifest-v43.json",
-      "sha256": "8bf0bea4f6457d03db65786d3a90c4a21ca344329200f115e7ef65b3a99e4e64",
-      "bytes": 24169
+      "sha256": "b2ac3168a9e4ebfee66565aa6f3fe8ac911101b38dc3c73176616c9d92bc5f79",
+      "bytes": 24845
+    },
+    {
+      "path": "canonical-route-manifest-v44.json",
+      "sha256": "7616d051aac028d5723ff0c7cd640b51749b280b281cd03b980e683eb3266ec2",
+      "bytes": 24190
+    },
+    {
+      "path": "canonical-route-manifest-v45.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
+    },
+    {
+      "path": "canonical-route-manifest-v46.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
     },
     {
       "path": "capability-conformance.json",
@@ -618,8 +647,23 @@
     },
     {
       "path": "data/canonical-route-manifest-v43.json",
-      "sha256": "8bf0bea4f6457d03db65786d3a90c4a21ca344329200f115e7ef65b3a99e4e64",
-      "bytes": 24169
+      "sha256": "b2ac3168a9e4ebfee66565aa6f3fe8ac911101b38dc3c73176616c9d92bc5f79",
+      "bytes": 24845
+    },
+    {
+      "path": "data/canonical-route-manifest-v44.json",
+      "sha256": "7616d051aac028d5723ff0c7cd640b51749b280b281cd03b980e683eb3266ec2",
+      "bytes": 24190
+    },
+    {
+      "path": "data/canonical-route-manifest-v45.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
+    },
+    {
+      "path": "data/canonical-route-manifest-v46.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
     },
     {
       "path": "data/capability-contract.json",
@@ -1487,6 +1531,26 @@
       "bytes": 1306
     },
     {
+      "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_COMPATIBILITY_FAILSAFE_V46_REPORT.md",
+      "sha256": "35137a578683bc6d4411d92cd153df809f6b7e761d3792cd262a04a0d25170c8",
+      "bytes": 1800
+    },
+    {
+      "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_COMPATIBILITY_FAILSAFE_V46_WEB_UI_GUIDE.md",
+      "sha256": "27c270b3021f6ac2cae3e1706787dd2cacd14498cc30c851844d3f27b5ceca7b",
+      "bytes": 1553
+    },
+    {
+      "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_FAILSAFE_V44_REPORT.md",
+      "sha256": "894b263497febc51f405d43997e5ce51df5929b65a4800700e11b6cd38b6a1b3",
+      "bytes": 1009
+    },
+    {
+      "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_FAILSAFE_V44_WEB_UI_GUIDE.md",
+      "sha256": "e6bab35d0c412ac18f38dfd17900808e08d2b16d18b2a452748f7c247f9b0e0c",
+      "bytes": 910
+    },
+    {
       "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_FINALIZATION_V43_REPORT.md",
       "sha256": "bafb9521937de2a5fd612a0ef40291fc097a4391825da334bb30342f07afcfdb",
       "bytes": 2491
@@ -1495,6 +1559,16 @@
       "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_FINALIZATION_V43_WEB_UI_GUIDE.md",
       "sha256": "234c022019874bccffcbd758ed78ca35e5cb755e35dcc5201ed9a69b2cd09c09",
       "bytes": 2047
+    },
+    {
+      "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_ULTIMATE_FAILSAFE_V45_REPORT.md",
+      "sha256": "f04100e24c692e3899a4eba6de41983967cec89c434a72e2323df0a160c64fbd",
+      "bytes": 2150
+    },
+    {
+      "path": "docs/releases/GOALOS_AGIJOBMANAGER_REPOSITORY_PUBLIC_TRUST_ULTIMATE_FAILSAFE_V45_WEB_UI_GUIDE.md",
+      "sha256": "8d0a0c4f79076e38aa1a3ca930270bf607bfee0a5f0dae0eae62e5c1e66c9a5c",
+      "bytes": 1510
     },
     {
       "path": "docs/releases/GOALOS_AGIJOBMANAGER_SITE_COMMAND_CENTER_V37_REPORT.md",
@@ -1620,6 +1694,21 @@
       "path": "docs/releases/V43_REPOSITORY_PUBLIC_TRUST_FINALIZATION.md",
       "sha256": "6767150caa6b90cf8c6b6b49c3b87a0cb1a6bc6aee3f9ae0462bbae32f7befc7",
       "bytes": 1882
+    },
+    {
+      "path": "docs/releases/V44_REPOSITORY_PUBLIC_TRUST_FAILSAFE.md",
+      "sha256": "5dfada2b06dcdc6b0b55de3387467e3e78789d78e49662d2e9e841af22c91646",
+      "bytes": 1423
+    },
+    {
+      "path": "docs/releases/V45_REPOSITORY_PUBLIC_TRUST_ULTIMATE_FAILSAFE.md",
+      "sha256": "bcbf6660b9a5955872184b99050609171d4c87d9d9a2ca91933d42579548ed40",
+      "bytes": 1577
+    },
+    {
+      "path": "docs/releases/V46_REPOSITORY_PUBLIC_TRUST_COMPATIBILITY_FAILSAFE.md",
+      "sha256": "a08689b62347abb2b7a8739f48711db7b8ffff646b0a2aeedd5f4e726f3c62f8",
+      "bytes": 958
     },
     {
       "path": "docs/reports/ASCENSION_FLIGHT_DECK_V31_REPORT.json",
@@ -1762,6 +1851,11 @@
       "bytes": 110
     },
     {
+      "path": "docs/reports/historical-root/AGIJOBMANAGER_ASCENSION_QA.md",
+      "sha256": "86503cbd1f8199f9a9696535b31c0ba67f4ef290d52cb14bda910473778f945c",
+      "bytes": 655
+    },
+    {
       "path": "docs/reports/historical-root/ASCENSION_FLIGHT_DECK_V31_REPORT.json",
       "sha256": "91de3a57c98917bb7697e790081f515506c01115ebc2f88e3358298fc67e7d35",
       "bytes": 204
@@ -1770,6 +1864,16 @@
       "path": "docs/reports/historical-root/ASCENSION_INFLOW_CONTROL_ROOM_V21_REPORT.json",
       "sha256": "28d6d63d0c168e329b29001c8e122f7da777dfe7148ecdea1524e2dc30313880",
       "bytes": 463
+    },
+    {
+      "path": "docs/reports/historical-root/ASCENSION_INFLOW_CONTROL_ROOM_V21_REPORT.md",
+      "sha256": "a8f050fee279ea44a9d143eb1f592e9e314cde3539855f5ad40cd4b3283faddc",
+      "bytes": 1067
+    },
+    {
+      "path": "docs/reports/historical-root/AUTOMATED_ASSURANCE_SUMMARY.json",
+      "sha256": "5884baca1bccad0efc726417256579ecf20d222f8f066a015b58e8eaf1cecc19",
+      "bytes": 123
     },
     {
       "path": "docs/reports/historical-root/CHRONICLE_COMPOUNDING_LAB_V20_REPORT.json",
@@ -1792,6 +1896,16 @@
       "bytes": 184
     },
     {
+      "path": "docs/reports/historical-root/DEMO_DELIGHT_V16_REPORT.md",
+      "sha256": "a93ef66d8f2728bd90c3371a2a2896603b3b934b8cfb7a75b0deba162afe494b",
+      "bytes": 473
+    },
+    {
+      "path": "docs/reports/historical-root/DEPENDENCY_ZERO_ASSURANCE_V14.json",
+      "sha256": "76e3ec97c8264c176b7e502825dc98f7eea8ef29f4098556fac38c5473fd0cb4",
+      "bytes": 439
+    },
+    {
       "path": "docs/reports/historical-root/EVIDENCE_DOCKET_COMPOSER_V34_REPORT.json",
       "sha256": "aecf05281248d4881c405ab034e1aec9a208475cd81c4d261704efd5d5aa13f8",
       "bytes": 108
@@ -1807,6 +1921,11 @@
       "bytes": 111
     },
     {
+      "path": "docs/reports/historical-root/FACTUAL_CORRECTNESS_REPORT.json",
+      "sha256": "439c619217f362404be4c3d9a27980de517d8f16ff900880f9019cd534007d26",
+      "bytes": 95
+    },
+    {
       "path": "docs/reports/historical-root/FINAL_ASSURANCE_DOCKET_V11.json",
       "sha256": "6b661ff8cf694760b0a877235c3a506f20ab61e43a11720e700f72f3bb6b66f4",
       "bytes": 12605
@@ -1817,9 +1936,319 @@
       "bytes": 1436
     },
     {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_ACTION_GRAPH_HANDOFF_V28_REPORT.md",
+      "sha256": "d48fc5e0832c8cdc6def906945fd84d022551dcbc8a509a1f8364baf5b3152f9",
+      "bytes": 1324
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_ACTION_GRAPH_HANDOFF_V28_WEB_UI_GUIDE.md",
+      "sha256": "bd707c2a6abc6cb750676ae3d0d8dc9e4defe2785dae6b3bff7a094441c85c5b",
+      "bytes": 1023
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_ASCENSION_FLIGHT_DECK_V31_REPORT.md",
+      "sha256": "2ab21101de8c3c73badfd377c1d23af664f22c3f5c1ef8d409267b30335f2b72",
+      "bytes": 1131
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_ASCENSION_FLIGHT_DECK_V31_WEB_UI_GUIDE.md",
+      "sha256": "29496808b8c05070c5a5bcd5fd7350348fb058f0afa786df3236bc8c7561dbd6",
+      "bytes": 586
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_ASCENSION_INFLOW_CONTROL_V21_WEB_UI_GUIDE.md",
+      "sha256": "8cb0fd99f8aea25b247ef583e45f7522220802f36557678eb00a05bc5c85f5cb",
+      "bytes": 879
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_CHRONICLE_COMPOUNDING_LAB_V20_WEB_UI_GUIDE.md",
+      "sha256": "afdc501fdb1f3360e06db1221bdcd26f83206f3c15062d2b5c647180be7eef57",
+      "bytes": 1313
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_CLAIM_BOUNDARY_FIREWALL_V22_REPORT.md",
+      "sha256": "8e314fb3b480fe2d7a9a8fd9d3a9e4831cd94560e1650dd861a23fbd0cdd3cdb",
+      "bytes": 1007
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_CLAIM_BOUNDARY_FIREWALL_V22_WEB_UI_GUIDE.md",
+      "sha256": "c1ffc12f739292ba75089b2fb7f010432bbd327b33ba13b947fb1d721a8334ae",
+      "bytes": 653
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_COMMAND_CENTER_NAVIGATION_V37_REPORT.md",
+      "sha256": "0530658857e7f1f31664f2027b0bc340ce8403f68e10974536b1f6ebc149f4e6",
+      "bytes": 1182
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_COMMAND_CENTER_NAVIGATION_V37_WEB_UI_GUIDE.md",
+      "sha256": "87bf18e4a93a7d5cb6879976919a35edf1b687be73b9306a1d05eacbf9184516",
+      "bytes": 709
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_COMPLETE_WEBSITE_EXPERIENCE_CONCIERGE_V39_REPORT.md",
+      "sha256": "7808384c4469e5bd9145f68b5fcb91200aa13541876e0212f9fe4d75f55eab72",
+      "bytes": 1104
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_COMPLETE_WEBSITE_EXPERIENCE_CONCIERGE_V39_WEB_UI_GUIDE.md",
+      "sha256": "a9a1925a23da55217d7d8f573d7584026484c3393c81c481ac3b7d04f2e04526",
+      "bytes": 652
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_COMPLETE_WEBSITE_NAVIGATION_V38_REPORT.md",
+      "sha256": "2e8f7cd1466328786442a4e614e4687ca38bc4e985047bdfbd85de8158f8be4a",
+      "bytes": 2443
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_COMPLETE_WEBSITE_NAVIGATION_V38_WEB_UI_GUIDE.md",
+      "sha256": "5a478d25ee069fcc691fbd8387fb28f810f1ff90940ca81e0a99198cfd04a7a8",
+      "bytes": 1218
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_EVIDENCE_DOCKET_COMPOSER_V34_REPORT.md",
+      "sha256": "e6d0ef55270096c0b6fd066209172f71b60139c9d574719c368499be764cdb19",
+      "bytes": 1266
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_EVIDENCE_DOCKET_COMPOSER_V34_WEB_UI_GUIDE.md",
+      "sha256": "fd13d7de8437c01c2ea64f6bf86867f0d618ca39e847d0b1968329c011ab81ae",
+      "bytes": 735
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_EXPERIENCE_HUB_V37_REPORT.md",
+      "sha256": "f8a238b7d6156db1eadcb8aaf4cc1512a6c777feac52e8d8201b0fedefb63960",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_EXPERIENCE_HUB_V37_WEB_UI_GUIDE.md",
+      "sha256": "ca0a0d03f07db15a371c53cba6105eb5d83c50111b114611c38b82b38a59fc87",
+      "bytes": 650
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_INSTITUTIONAL_WEBSITE_FINALIZATION_V42_REPORT.md",
+      "sha256": "3bafbaaf61923a7de5e8fd71a513aba09ce6e7aeb43515646d881f76b68ead58",
+      "bytes": 959
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_INSTITUTIONAL_WEBSITE_FINALIZATION_V42_WEB_UI_GUIDE.md",
+      "sha256": "7ccab910ebdcd0b8fcdcba568b3271c206a24476fe430bbe85e1dafe7d92c642",
+      "bytes": 652
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_MANDATE_EPOCH_CLEARINGHOUSE_V26_WEB_UI_GUIDE.md",
+      "sha256": "acee4fcf264c2d7b8a34b2bd142080177a30020bf634c62d8fc343b6bf1e22ee",
+      "bytes": 812
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_ATLAS_V37_REPORT.md",
+      "sha256": "d200d53a516abdce8d3729c0d7dccee9ab8b2d16e9691a7a9465aafb59ea3d08",
+      "bytes": 1246
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_ATLAS_V37_WEB_UI_GUIDE.md",
+      "sha256": "3cb28c7bc8522442ffce354fed131108d9f58001789bbde7014bc87d29d4fd67",
+      "bytes": 658
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_COMMAND_FINAL_V41_REPORT.md",
+      "sha256": "69e76fac98b187fc745a08562df4bec0e9493df0f392f77dbe507b759e045ec3",
+      "bytes": 729
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_COMMAND_FINAL_V41_WEB_UI_GUIDE.md",
+      "sha256": "11a1dcd751ddbae925e5168a1a3537d99b4e4702dfd06848c6c053f5522d5b35",
+      "bytes": 516
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_FAILSAFE_V41_REPORT.md",
+      "sha256": "162fda653ebb8c7eba6e5d4072436ef2785b7b4cbb4926bf34f58256d650da32",
+      "bytes": 1504
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_FAILSAFE_V41_WEB_UI_GUIDE.md",
+      "sha256": "8ee4cbe2774da0ba68148537a41ef33662832a56e7a9df64614093f0a0ce6c03",
+      "bytes": 872
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_POLISH_V40_REPORT.md",
+      "sha256": "1fc2d53a889c87e9143dc1cacae1258a89ba8c09fe14c84392e10ad2608de4bb",
+      "bytes": 1128
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_POLISH_V40_WEB_UI_GUIDE.md",
+      "sha256": "6d24c4fafddabb9af39394e4c9416492d4aa3d31a465ad02fff3375cbdb39236",
+      "bytes": 778
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_POLISH_V41_REPORT.md",
+      "sha256": "707fc08cb84a5e0f547d2ea83d72d25f4b2b4b0590763a9ea717a9805b2ea066",
+      "bytes": 963
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_POLISH_V41_WEB_UI_GUIDE.md",
+      "sha256": "51d20d242087dc60c69fd127a1a4220c5129ef357026992e7f2aa29b1173d2fc",
+      "bytes": 519
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_SOURCE_POLISH_V41_REPORT.md",
+      "sha256": "0c235fdf6d2c775fa78926940b7276a257c24f80a379ee899a7bacd024eaa26d",
+      "bytes": 1041
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_SOURCE_POLISH_V41_WEB_UI_GUIDE.md",
+      "sha256": "a793d8dc2e74eea21f27fe5bdf100d9534cf0cf03bd00c72b820ba4a59d5af65",
+      "bytes": 635
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_SYSTEM_FINAL_V38_REPORT.md",
+      "sha256": "70b1e234a93f583142f25927b0399111be273bcb91304c8f224bd9d20e689d19",
+      "bytes": 2270
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_NAVIGATION_SYSTEM_FINAL_V38_WEB_UI_GUIDE.md",
+      "sha256": "080767bbe34348a4886f974b229acf58fbe66f1ff7d96563be26d5562ccd90fa",
+      "bytes": 1441
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_BACKED_UPGRADE_FOUNDRY_V25_WEB_UI_GUIDE.md",
+      "sha256": "9ae923fb87845243fdc4a440583bef28d62bf36b71c3659bca8966b8c98d9c3a",
+      "bytes": 674
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.md",
+      "sha256": "98b8df65f614194e729113df7886ef76f959d5b8c1db133759859d54e2df8c45",
+      "bytes": 866
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_CARRYING_ARTIFACT_PASSPORT_V29_WEB_UI_GUIDE.md",
+      "sha256": "74ffa2949927be8b6554544df3734d54208b496b79640aea3eb18b70ddc991af",
+      "bytes": 677
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_CONDITIONED_ROUTER_OBSERVATORY_V30_REPORT.md",
+      "sha256": "9f1eb4b90935a6daf3b5e520a0cba4e5f393a0ca3f26b54c86ea04d29f1b2d65",
+      "bytes": 1419
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_CONDITIONED_ROUTER_OBSERVATORY_V30_WEB_UI_GUIDE.md",
+      "sha256": "bd83d827ecc3c38cc95cf225986eaa6309961116efbda2072f0f6cf5895d7363",
+      "bytes": 786
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_CONSTITUTION_SIMULATOR_V32_REPORT.md",
+      "sha256": "76d02dcaa31be5bd77e5b3d562f2d215fed1464cc424f5d0bec767cbd5030235",
+      "bytes": 1523
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_CONSTITUTION_SIMULATOR_V32_WEB_UI_GUIDE.md",
+      "sha256": "bdb170fd891c6213d817620c9ad8364bc5632c211b56f00fdf26c25d46462999",
+      "bytes": 789
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_GOVERNED_INSTITUTION_V17_WEB_UI_GUIDE.md",
+      "sha256": "18a219152c97019b0225c1082e712389921da50d22d6c9f5fb53754d779dcd84",
+      "bytes": 1446
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_SETTLEMENT_LIFECYCLE_V36_REPORT.md",
+      "sha256": "4391a9429c7bbcd2e2e088ee34c8ad07e3675b61ea650ecf53800bc5abb1833e",
+      "bytes": 742
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_SETTLEMENT_LIFECYCLE_V36_WEB_UI_GUIDE.md",
+      "sha256": "fb28eca2bdbf6df83f0a9aba920010077705c49b3214af3882c80166dc4db22f",
+      "bytes": 640
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_PROOF_TO_ACTION_THEATRE_V18_WEB_UI_GUIDE.md",
+      "sha256": "f933c06e6a4dbffb5f27362ae5e2212ea4145fe781c0e6909206a189a4ee66c6",
+      "bytes": 1634
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_REAL_TASK_BENCHMARK_BRIDGE_V27_WEB_UI_GUIDE.md",
+      "sha256": "c6d4abb602faa63d691a9ac0e7b4fb4cbd9d1e79ee09682b8c91df8642103af6",
+      "bytes": 761
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_REPLAY_FALSIFICATION_GAUNTLET_V23_WEB_UI_GUIDE.md",
+      "sha256": "5a6987f53eecfed287cd92e27872869b8241d8cf66b4a952af0f4c46e43be8c4",
+      "bytes": 1306
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_SITE_COMMAND_CENTER_V37_REPORT.md",
+      "sha256": "d19655ecec132a588ce6a884174b6ae8869a52897a424ba05eaf7fdf857cf91c",
+      "bytes": 975
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_SITE_COMMAND_CENTER_V37_WEB_UI_GUIDE.md",
+      "sha256": "51a818b3d067c640fb5f85d2dec06e3df9afdb39cd5b607b582e24498be16839",
+      "bytes": 678
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_SITE_EXPERIENCE_ATLAS_V37_REPORT.md",
+      "sha256": "c80277dd1d94cca722bfbf32fe337acfaddd30f6e41f5cf7333f0a53b718bb72",
+      "bytes": 981
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_SITE_EXPERIENCE_ATLAS_V37_WEB_UI_GUIDE.md",
+      "sha256": "5dea769e07879aad7d392ee559d2bcf06965092ba4bda608fd93476589a045a8",
+      "bytes": 682
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_SOVEREIGN_EXPERIENCE_STREAM_V24_WEB_UI_GUIDE.md",
+      "sha256": "6c459f297d3562605dfaa549624eb0954a5f18ab32e23babe39fe43a9726c93e",
+      "bytes": 815
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_TRUST_EQUATION_SIMULATOR_V35_REPORT.md",
+      "sha256": "8f631c90cf7436444b019bb86e123e54b9273e35ef16b6165ae3b95af1276fad",
+      "bytes": 930
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_TRUST_EQUATION_SIMULATOR_V35_WEB_UI_GUIDE.md",
+      "sha256": "90be3f28ea1efd93ebb7f4e1420d0cddf43d7b8f63e62776895b8424d31cb193",
+      "bytes": 650
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_UNTIL_DONE_MISSION_CONTROL_V33_REPORT.md",
+      "sha256": "9cd1f949ace953a40e1ba0f8b13fefeb89e00b2595a42eac06993415d01d0517",
+      "bytes": 2295
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_UNTIL_DONE_MISSION_CONTROL_V33_WEB_UI_GUIDE.md",
+      "sha256": "02341e9d3d44b40d80f5ce3e005ed0d2d5ea9d1eeb0bb7b6196d44d138b6b35b",
+      "bytes": 1330
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_WEBSITE_COMMAND_CENTER_V37_REPORT.md",
+      "sha256": "d02f1a40e621eba001f4d44894c68f4cfe5207554582c77b47ac34330e1eb752",
+      "bytes": 957
+    },
+    {
+      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_WEBSITE_COMMAND_CENTER_V37_WEB_UI_GUIDE.md",
+      "sha256": "d8e3cb5f0a4dc84a226d49bd5d1e163cd905015c0041665704641330ffecaea7",
+      "bytes": 698
+    },
+    {
       "path": "docs/reports/historical-root/INSTITUTIONAL_WEBSITE_FINALIZATION_V42_REPORT.json",
       "sha256": "530c5bd5c2d6674b06b4707e316143e90ad7800996c015207efe8d0bf9ecfa02",
       "bytes": 93
+    },
+    {
+      "path": "docs/reports/historical-root/MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.json",
+      "sha256": "1ac38d4f459fa122a115e4ae8e71da65365c403f56946096669c2b28a45a3c6d",
+      "bytes": 223
+    },
+    {
+      "path": "docs/reports/historical-root/MANDATE_EPOCH_CLEARINGHOUSE_V26_REPORT.md",
+      "sha256": "81b6dd57c7319cf34f057d18d3ac00a278b59d6dbc2bc264a0f93ce145262799",
+      "bytes": 1068
+    },
+    {
+      "path": "docs/reports/historical-root/MULTI_AGENT_INSTITUTION_V17_REPORT.md",
+      "sha256": "86577f80db3220d60b6aab58f743ec1e77eecf7d26b84b2971870c745fb47192",
+      "bytes": 2372
     },
     {
       "path": "docs/reports/historical-root/NAVIGATION_POLISH_V40_REPORT.json",
@@ -1837,9 +2266,24 @@
       "bytes": 69
     },
     {
+      "path": "docs/reports/historical-root/PROOF_BACKED_UPGRADE_FOUNDRY_V25_REPORT.md",
+      "sha256": "34ac828334801183f05d7ea998f48a357b0ce03f7d19e64370191f47be112788",
+      "bytes": 881
+    },
+    {
+      "path": "docs/reports/historical-root/PROOF_CARRYING_ARTIFACT_PASSPORT_V29_REPORT.json",
+      "sha256": "052fce64212060564b5fa1083e55ea5c7a2028fc4e97b6e4efa2589f52a18c87",
+      "bytes": 174
+    },
+    {
       "path": "docs/reports/historical-root/PROOF_CONSTITUTION_SIMULATOR_V32_REPORT.json",
       "sha256": "7292fee7dddc995a5438675a188203448e8c649c5b76da90aa4b1563abf869fd",
       "bytes": 118
+    },
+    {
+      "path": "docs/reports/historical-root/PROOF_GOVERNED_INSTITUTION_V17_REPORT.md",
+      "sha256": "539ef78093753d46fd26e66d6927edbb8db79e5825fc3b548e79a786ab3581e4",
+      "bytes": 1925
     },
     {
       "path": "docs/reports/historical-root/PROOF_GRADIENT_ARENA_V19_REPORT.json",
@@ -1862,9 +2306,44 @@
       "bytes": 189
     },
     {
+      "path": "docs/reports/historical-root/PROOF_TO_ACTION_THEATRE_V18_REPORT.md",
+      "sha256": "376a3605238286387d3704b7da3d57e366e00b04e517ff6dc521647b177271d0",
+      "bytes": 2722
+    },
+    {
+      "path": "docs/reports/historical-root/REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.json",
+      "sha256": "2158419955168296e3420f0fbf84190fef38f7f9f3725d17064eca45e69ac1ca",
+      "bytes": 138
+    },
+    {
+      "path": "docs/reports/historical-root/REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.md",
+      "sha256": "c8f2f4f3799ab0a663f3e385b377e7fb2dcc673b428820139927a6290097ff5a",
+      "bytes": 943
+    },
+    {
+      "path": "docs/reports/historical-root/REPLAY_FALSIFICATION_GAUNTLET_V23_REPORT.md",
+      "sha256": "ef23735093c8252ff612805c8b010121e5b6c2c4c9009e0f09143e5888e9f441",
+      "bytes": 1392
+    },
+    {
       "path": "docs/reports/historical-root/REPOSITORY_PUBLIC_TRUST_V43_REPORT.json",
       "sha256": "2d6ea2619cc9d0359b3b06db5abe8098193965885b2b56a75e319f36f12e0b05",
       "bytes": 115
+    },
+    {
+      "path": "docs/reports/historical-root/SITE_COMMAND_CENTER_V37_REPORT.json",
+      "sha256": "c12e2c38a6f9ca5003d538d39372d833d9c6fc8053ba854193f598aedb320379",
+      "bytes": 78
+    },
+    {
+      "path": "docs/reports/historical-root/SITE_EXPERIENCE_ATLAS_V37_REPORT.json",
+      "sha256": "c90036a58a2562684daa5e9fe248dc1bea15008f49aea202361a461e4d56b5bc",
+      "bytes": 116
+    },
+    {
+      "path": "docs/reports/historical-root/SOVEREIGN_EXPERIENCE_STREAM_V24_REPORT.md",
+      "sha256": "1913f1290818187f28856c8b7d9b69ddf2ea280e0e75f028884ac28599b2e271",
+      "bytes": 1261
     },
     {
       "path": "docs/reports/historical-root/TRUST_EQUATION_SIMULATOR_V35_REPORT.json",
@@ -1877,14 +2356,19 @@
       "bytes": 390
     },
     {
+      "path": "docs/reports/historical-root/WEBSITE_COMMAND_CENTER_V37_REPORT.json",
+      "sha256": "19704ace506988eb063b4f4029e9018f84a8e6f024f1b07ea8dc15ca974a6c43",
+      "bytes": 110
+    },
+    {
       "path": "docs.html",
       "sha256": "ebb5361584202bb3b4ffebe3ba81604c570384afc666befca73e8c49b64a98fb",
       "bytes": 2511
     },
     {
       "path": "evidence/index.html",
-      "sha256": "628502f9675e30fae22cd1e6d3fac630c9da86cca160eeca0a2eb7e96f0ebae2",
-      "bytes": 3871
+      "sha256": "73cf7f602365eee99281e906790b0fa881c725eaa4565d37fd916e5f2292a408",
+      "bytes": 5041
     },
     {
       "path": "evidence-docket-6-1.json",
@@ -1943,7 +2427,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "c4a83d669e22c481f2cfdb1cdade11f1b41f0da397886ccd48922d030ea60f57",
+      "sha256": "ac62c73184f3d2414e123d0df1d7bfae3528cdb84709879a882db4d7edc70062",
       "bytes": 13027
     },
     {
@@ -2008,8 +2492,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "ccd0d0bbf27c145c4847a22c98a2150e8334aa29462e56d7cc6e262366c48485",
-      "bytes": 2004
+      "sha256": "3f45a2ebcf5d01ee1fda64b4b855be0862d56c9e89efd729f41ffb0a1ce41748",
+      "bytes": 2194
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -2363,8 +2847,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "434067308de291bf60ea65568f65bc11af27b70159352ba84173299ae0d68903",
-      "bytes": 11091
+      "sha256": "4070a10405628aeeb9c28f2bc0c91c06d9cb9498ce0e6de641b92db67e9c6071",
+      "bytes": 11675
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -2431,5 +2915,6 @@
       "sha256": "51215e4bdf24499fffde7f4fcada6630a351d70cbb7943a20ae711b068e72205",
       "bytes": 5583
     }
-  ]
+  ],
+  "version": "v46"
 }

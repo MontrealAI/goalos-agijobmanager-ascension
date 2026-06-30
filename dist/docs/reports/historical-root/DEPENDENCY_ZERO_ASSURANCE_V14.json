@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "release": "v14-dependency-zero-final",
+  "checks": [
+    "no package-lock registry lock-in",
+    "no npm install / npm ci in workflow",
+    "vendored ethers present",
+    "public surface excludes wallet primitives",
+    "expert console contains gated Mainnet capabilities",
+    "legal/data-zero/token boundary present",
+    "current GitHub Pages actions selected"
+  ],
+  "generatedAt": "2026-06-27T18:16:30.867Z"
+}

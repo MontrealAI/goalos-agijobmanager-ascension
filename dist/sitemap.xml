@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/FINAL_ASSURANCE_DOCKET_V11.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/FINAL_ASSURANCE_DOCKET_V11.md</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/action-graph-handoff-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/action-graph-handoff.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/agialpha-token-boundary.html</loc></url>
@@ -17,6 +19,9 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/assurance.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-identities.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v43.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v44.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v45.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v46.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/capability-conformance.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab.html</loc></url>
