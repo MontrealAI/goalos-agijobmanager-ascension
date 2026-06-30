@@ -18,7 +18,7 @@
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-30T18:01:17.074842Z",
+  "builtAt": "2026-06-30T18:49:35.778865Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -27,7 +27,7 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "f494d23050ceb27704810f4309604689f90c7b4cebcec90c32109dc221d7eb6b",
+      "sha256": "f59498c1b55e4e589014070820f87e6f197f35adf87d7b8cef5762394fca20d3",
       "bytes": 12605
     },
     {
@@ -571,6 +571,11 @@
       "bytes": 24891
     },
     {
+      "path": "canonical-route-manifest.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
+    },
+    {
       "path": "capability-conformance.json",
       "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
       "bytes": 1756
@@ -662,6 +667,11 @@
     },
     {
       "path": "data/canonical-route-manifest-v46.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
+    },
+    {
+      "path": "data/canonical-route-manifest.json",
       "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
       "bytes": 24891
     },
@@ -1661,6 +1671,16 @@
       "bytes": 10027
     },
     {
+      "path": "docs/releases/README_V44_HOTFIX.md",
+      "sha256": "4b7968b62a5aa1b3fe93329464860f243f05fcc3c5a8d4773257f57f20ebebf7",
+      "bytes": 473
+    },
+    {
+      "path": "docs/releases/README_V45_HOTFIX.md",
+      "sha256": "296ebdf972baae430989764caacab3b07b8433cdfe6f5edfa49f08da989d4703",
+      "bytes": 250
+    },
+    {
       "path": "docs/releases/REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.md",
       "sha256": "c8f2f4f3799ab0a663f3e385b377e7fb2dcc673b428820139927a6290097ff5a",
       "bytes": 943
@@ -1709,6 +1729,11 @@
       "path": "docs/releases/V46_REPOSITORY_PUBLIC_TRUST_COMPATIBILITY_FAILSAFE.md",
       "sha256": "a08689b62347abb2b7a8739f48711db7b8ffff646b0a2aeedd5f4e726f3c62f8",
       "bytes": 958
+    },
+    {
+      "path": "docs/releases/V47_REPOSITORY_EXCELLENCE_AND_TRUST_STABILIZATION.md",
+      "sha256": "123388e04a854160b26a819d933486ac8c2dba38aaa3de6508ffdd8412081f63",
+      "bytes": 3745
     },
     {
       "path": "docs/reports/ASCENSION_FLIGHT_DECK_V31_REPORT.json",
@@ -2847,8 +2872,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "4070a10405628aeeb9c28f2bc0c91c06d9cb9498ce0e6de641b92db67e9c6071",
-      "bytes": 11675
+      "sha256": "2973445a9b74ac123463e163aaa3970b64ef8642e234c3d57d984c719b1d62a2",
+      "bytes": 11789
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -2915,6 +2940,5 @@
       "sha256": "51215e4bdf24499fffde7f4fcada6630a351d70cbb7943a20ae711b068e72205",
       "bytes": 5583
     }
-  ],
-  "version": "v46"
+  ]
 }

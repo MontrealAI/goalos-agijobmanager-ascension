@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Repository Public Trust Compatibility Failsafe Publisher v46
+name: GoalOS AGIJobManager Ascension Stable Public Trust Compatibility Failsafe Publisher v46
 
 on:
   workflow_dispatch:
@@ -9,12 +9,12 @@ on:
         default: true
         type: boolean
       commit_generated_source:
-        description: Commit generated source and build artifacts back to main
+        description: Commit generated source and build artifacts back to main after checks pass
         required: true
         default: true
         type: boolean
       run_live_factual_check:
-        description: Run optional live Ethereum factual check if ETHEREUM_RPC_URL is available
+        description: Run optional live Ethereum factual check if ETHEREUM_RPC_URL is configured
         required: true
         default: false
         type: boolean
@@ -36,11 +36,12 @@ on:
       - 'README.md'
       - 'LICENSE'
       - 'NOTICE'
+      - 'NOTICE.md'
       - 'CONTRIBUTING.md'
       - 'SECURITY.md'
       - 'SUPPORT.md'
       - 'CODE_OF_CONDUCT.md'
-      - '.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml'
+      - '.github/**'
 
 permissions:
   contents: write
@@ -54,7 +55,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish repository public trust compatibility release
+    name: Stable source audit, build, and Pages publication
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -66,71 +67,22 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Bootstrap compatibility failsafe tooling
+      - name: Bootstrap compatibility failsafe tooling and reference integrity
         shell: bash
         run: |
           set -euo pipefail
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
-          mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets
-          if [ ! -f tools/failsafe-bootstrap-v46.mjs ]; then
-            cat > tools/failsafe-bootstrap-v46.mjs <<'NODE'
-          import fs from 'node:fs';
-          fs.mkdirSync('data', { recursive: true }); fs.mkdirSync('docs/releases', { recursive: true }); fs.mkdirSync('docs/reports/historical-root', { recursive: true });
-          fs.writeFileSync('data/failsafe-bootstrap-v46.json', JSON.stringify({ status: 'PASS', release: 'v46', fallback: true }, null, 2));
-          console.log('PASS · inline fallback failsafe bootstrap v46 completed');
-          NODE
-          fi
+          node --version
           node tools/failsafe-bootstrap-v46.mjs
-          if [ ! -f tools/site-rehydrate.mjs ]; then
-            cat > tools/site-rehydrate.mjs <<'NODE'
-          import fs from 'node:fs';
-          fs.mkdirSync('data', { recursive: true });
-          fs.writeFileSync('data/site-rehydration-v46.json', JSON.stringify({ status: 'PASS', restored: 0, fallback: true }, null, 2));
-          console.log('PASS · fallback site rehydration v46 restored 0 missing files');
-          NODE
-          fi
-          if [ ! -f tools/root-cleanup-v46.mjs ]; then
-            cat > tools/root-cleanup-v46.mjs <<'NODE'
-          import fs from 'node:fs'; import path from 'node:path';
-          fs.mkdirSync('docs/releases',{recursive:true}); fs.mkdirSync('docs/reports/historical-root',{recursive:true});
-          let moved=0;
-          for(const e of fs.readdirSync('.',{withFileTypes:true})){ if(e.isFile() && /_V\d+_REPORT\.md$|_V\d+_WEB_UI_GUIDE\.md$/i.test(e.name)){ const to=path.join('docs','releases',e.name); if(fs.existsSync(to)) fs.rmSync(e.name); else fs.renameSync(e.name,to); moved++; } }
-          console.log('PASS · fallback root cleanup v46 moved/merged '+moved+' historical files');
-          NODE
-          fi
-          if [ ! -f tools/apply-public-trust-metadata-v46.mjs ]; then
-            if [ -f tools/apply-public-trust-metadata-v45.mjs ]; then cp tools/apply-public-trust-metadata-v45.mjs tools/apply-public-trust-metadata-v46.mjs; else
-              cat > tools/apply-public-trust-metadata-v46.mjs <<'NODE'
-          import fs from 'node:fs';
-          console.log('PASS · fallback public trust metadata v46 no-op because source metadata is already expected');
-          NODE
-            fi
-          fi
-          if [ ! -f tools/release-compatibility-harmonizer-v46.mjs ]; then
-            cat > tools/release-compatibility-harmonizer-v46.mjs <<'NODE'
-          import fs from 'node:fs';
-          const release='v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe';
-          const aliases=[release,'v46-repository-public-trust-compatibility-failsafe','v45-repository-public-trust-ultimate-failsafe','v44-repository-public-trust-failsafe','v43-repository-public-trust-finalization','v42-institutional-website-finalization'];
-          for(const file of ['dist/build-manifest.json','dist/production-url.json']){ if(!fs.existsSync(file)) continue; const j=JSON.parse(fs.readFileSync(file,'utf8')); j.release=release; j.version=j.version||'v46'; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]),...aliases])); j.repositoryPublicTrustCompatibilityFailsafeV46='PASS'; fs.writeFileSync(file,JSON.stringify(j,null,2)); }
-          console.log('PASS · fallback release compatibility harmonizer v46 completed');
-          NODE
-          fi
-          if [ ! -f tools/public-trust-checker-v46.mjs ]; then
-            if [ -f tools/public-trust-checker-v45.mjs ]; then cp tools/public-trust-checker-v45.mjs tools/public-trust-checker-v46.mjs; else
-              cat > tools/public-trust-checker-v46.mjs <<'NODE'
-          import fs from 'node:fs';
-          let fail=[]; for(const d of ['site', ...(process.env.CHECK_DIST==='true'?['dist']:[])]){ if(!fs.existsSync(d)) continue; for(const f of fs.readdirSync(d).filter(x=>x.endsWith('.html'))){ const h=fs.readFileSync(d+'/'+f,'utf8'); if(/Loading…|>\s*Loading\s*</i.test(h)) fail.push(d+'/'+f+': Loading fallback'); } }
-          if(fail.length){ console.error('FAIL · public trust v46 fallback checks failed'); fail.forEach(f=>console.error(' - '+f)); process.exit(1); }
-          console.log('PASS · fallback public trust checker v46 passed');
-          NODE
-            fi
-          fi
           node tools/site-rehydrate.mjs
           node tools/root-cleanup-v46.mjs
           node tools/apply-public-trust-metadata-v46.mjs
+          node tools/no-registry-preflight.mjs
+          node tools/pathspec-proof-kernel.mjs
+          node tools/reference-integrity-auditor.mjs
 
-      - name: Verify implementation, boundaries, workflow references, docs, metadata, and all demos
+      - name: Verify docs, claims, workflows, and demo tests
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -138,11 +90,9 @@ jobs:
           STRICT_LIVE_FACTUAL_CHECK: ${{ inputs.strict_live_factual_check || 'false' }}
         run: |
           set -euo pipefail
-          node --version
           python3 tools/verify.py
-          node tools/no-registry-preflight.mjs
-          node tools/pathspec-proof-kernel.mjs
           node tools/workflow-reference-auditor.mjs
+          node tools/reference-integrity-auditor.mjs
           node tools/docs-link-checker.mjs
           node tools/claim-boundary-checker.mjs
           node tools/run-documentation-tests.mjs
@@ -161,19 +111,16 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and verify public trust release
+      - name: Build static Pages artifact and run compatibility kernels
         shell: bash
         run: |
           set -euo pipefail
           python3 tools/build.py
           node tools/release-compatibility-harmonizer-v46.mjs
           node tools/run-existing-kernels.mjs
-          node tools/release-compatibility-harmonizer-v46.mjs
           CHECK_DIST=true node tools/public-trust-checker-v46.mjs
-          node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs
           test -f dist/index.html
           test -f dist/start.html
-          test -f dist/coordination-lab.html
           test -f dist/experience-concierge.html
           test -f dist/command-center.html
           test -f dist/production-url.json
@@ -190,7 +137,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Repository Public Trust Compatibility Failsafe v46"
+          git commit -m "Generate GoalOS stable public trust site"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
