@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Navigation Source Polish Publisher v41
+name: GoalOS AGIJobManager Ascension Institutional Website Publisher v42
 
 on:
   workflow_dispatch:
@@ -30,7 +30,6 @@ on:
       - 'data/**'
       - 'docs/**'
       - 'schemas/**'
-      - 'src/**'
       - 'tools/**'
       - 'tests/**'
       - 'package.json'
@@ -48,7 +47,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish Navigation Source Polish
+    name: Build, assure, and publish institutional website
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -60,27 +59,15 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Neutralize registry lock-in, rehydrate missing routes, and keep dependency-zero state
+      - name: Neutralize registry lock-in and rehydrate public routes
         shell: bash
         run: |
           set -euo pipefail
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
           if [ ! -f tools/site-rehydrate.mjs ]; then
-            mkdir -p tools
-            cat > tools/site-rehydrate.mjs <<'EOF'
-          import fs from 'node:fs';
-          import path from 'node:path';
-          const pages=['proof-settlement-lifecycle.html','trust-equation-simulator.html','evidence-docket-composer.html','until-done-mission-control.html','experience-concierge.html','experience-hub.html','command-center.html'];
-          fs.mkdirSync('site',{recursive:true});
-          fs.mkdirSync('data',{recursive:true});
-          for(const href of pages){
-            const p=path.join('site',href);
-            if(!fs.existsSync(p)) fs.writeFileSync(p,`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${href} · GoalOS AGIJobManager Ascension</title><link rel="stylesheet" href="assets/site-command-v39.css"></head><body style="margin:0;background:#06131a;color:#f7fff4;font-family:Inter,Arial,sans-serif"><main style="max-width:1100px;margin:0 auto;padding:84px 22px"><p style="color:#70ffd9;text-transform:uppercase;letter-spacing:.2em;font-weight:900">GoalOS AGIJobManager Ascension · restored public-safe route</p><h1>${href.replace(/[-.]/g,' ')}</h1><p>This route was restored by the v41 publisher preflight. It is public-safe, read-only, and redirects users to the complete navigation surfaces.</p><p><a href="experience-concierge.html">Open Experience Concierge</a> · <a href="command-center.html">Open Command Center</a></p></main><script src="assets/site-command-v39.js"></script></body></html>`);
-          }
-          if(!fs.existsSync('data/site-rehydration-v39.json')) fs.writeFileSync('data/site-rehydration-v39.json',JSON.stringify({status:'PASS',source:'v41-workflow-fallback',restored:pages},null,2));
-          console.log('site rehydration fallback PASS');
-          EOF
+            echo "Missing tools/site-rehydrate.mjs. Upload the v42 full-source overlay." >&2
+            exit 1
           fi
           node tools/site-rehydrate.mjs
 
@@ -93,7 +80,6 @@ jobs:
         run: |
           set -euo pipefail
           node --version
-          node tools/site-rehydrate.mjs
           python3 tools/verify.py
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
@@ -112,35 +98,23 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and verify polished website
+      - name: Build static Pages artifact and verify institutional website
         shell: bash
         run: |
           set -euo pipefail
-          node tools/site-rehydrate.mjs
           python3 tools/build.py
           node tools/run-existing-kernels.mjs
-          node tools/source-navigation-polish-v41-kernel.mjs
+          node tools/institutional-website-finalization-v42-kernel.mjs
           test -f dist/index.html
+          test -f dist/start.html
+          test -f dist/coordination-lab.html
           test -f dist/experience-concierge.html
-          test -f dist/assets/site-command-v39.js
-          test -f dist/assets/site-command-v39.css
-          test -f dist/site-navigation-v39.json
-          test -f dist/site-atlas.html
-          test -f dist/archive-v36-ascension-chamber.html
-          test -f dist/site-navigation-map.json
-          test -f dist/assets/site-shell.js
-          test -f dist/assets/site-shell.css
-          test -f dist/proof-settlement-lifecycle.html
-          test -f dist/trust-equation-simulator.html
-          test -f dist/evidence-docket-composer.html
-          test -f dist/until-done-mission-control.html
-          test -f dist/ascension-flight-deck.html
-          test -f dist/legal.html
-          test -f dist/agialpha-token-boundary.html
-          test -f dist/experience-hub.html
           test -f dist/command-center.html
+          test -f dist/experience-hub.html
+          test -f dist/site-atlas.html
           test -f dist/navigation-atlas.html
-          test -f dist/site-navigation-v38.json
+          test -f dist/proof-settlement-lifecycle.html
+          test -f dist/production-url.json
 
       - name: Commit generated source with retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source != false }}
@@ -154,7 +128,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Navigation Source Polish v41"
+          git commit -m "Generate GoalOS Institutional Website Finalization v42"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
