@@ -1,0 +1,271 @@
+{
+  "version": "v42-institutional-finalization",
+  "posture": {
+    "singleNativeHeader": true,
+    "floatingSiteCommand": true,
+    "noBlankFallbacks": true,
+    "noMenuStacking": true,
+    "noUserDataWanted": true,
+    "noWalletOnPublicDemos": true
+  },
+  "pages": [
+    {
+      "href": "ascension-flight-deck.html",
+      "title": "Ascension Flight Deck",
+      "why": "Guided journeys and same-origin preview for the best demonstrations.",
+      "group": "Start here"
+    },
+    {
+      "href": "command-center.html",
+      "title": "Command Center",
+      "why": "The complete navigation layer, route map, filters, and journey launcher.",
+      "group": "Start here"
+    },
+    {
+      "href": "experience-concierge.html",
+      "title": "Experience Concierge",
+      "why": "A single, friendly guide that asks what you want to do and launches the right GoalOS demonstration.",
+      "group": "Start here"
+    },
+    {
+      "href": "experience-hub.html",
+      "title": "Experience Hub",
+      "why": "The clean public front door for every user path.",
+      "group": "Start here"
+    },
+    {
+      "href": "start.html",
+      "title": "Guided Start",
+      "why": "A simple, non-technical path through the project.",
+      "group": "Start here"
+    },
+    {
+      "href": "index.html",
+      "title": "Home",
+      "why": "The public front door: identity, posture, and the proof-settlement institution.",
+      "group": "Start here"
+    },
+    {
+      "href": "navigation-atlas.html",
+      "title": "Navigation Atlas",
+      "why": "Complete page index, guided journeys, preview, and receipt export.",
+      "group": "Start here"
+    },
+    {
+      "href": "experience-atlas.html",
+      "title": "Experience Atlas",
+      "why": "Guided journeys across the demonstration library.",
+      "group": "Guide"
+    },
+    {
+      "href": "site-atlas.html",
+      "title": "Site Atlas",
+      "why": "Advanced public route map and searchable atlas.",
+      "group": "Guide"
+    },
+    {
+      "href": "proof-gradient-arena.html",
+      "title": "Proof Gradient Arena",
+      "why": "Score is advisory; gates are mandatory.",
+      "group": "Core idea"
+    },
+    {
+      "href": "proof-to-action-theatre.html",
+      "title": "Proof-to-Action Theatre",
+      "why": "The shortest demonstration of output becoming proof-backed decision state.",
+      "group": "Core idea"
+    },
+    {
+      "href": "trust-equation-simulator.html",
+      "title": "Trust Equation Simulator",
+      "why": "Shows why proof, validation, settlement, and reuse turn output into trusted work.",
+      "group": "Core idea"
+    },
+    {
+      "href": "until-done-mission-control.html",
+      "title": "Until-DONE Mission Control",
+      "why": "Objective \u2192 Mission Contract \u2192 Evidence Docket \u2192 Governed Decision State \u2192 DONE.",
+      "group": "Core idea"
+    },
+    {
+      "href": "claim-boundary-firewall.html",
+      "title": "Claim Boundary Firewall",
+      "why": "Promote, revise, quarantine, or reject public claims based on evidence.",
+      "group": "Evidence & claims"
+    },
+    {
+      "href": "evidence-docket-composer.html",
+      "title": "Evidence Docket Composer",
+      "why": "Build the proof room before the claim.",
+      "group": "Evidence & claims"
+    },
+    {
+      "href": "evidence/index.html",
+      "title": "Evidence Room",
+      "why": "Persistent evidence entrypoint and public-safe proof context.",
+      "group": "Evidence & claims"
+    },
+    {
+      "href": "replay-falsification-gauntlet.html",
+      "title": "Replay & Falsification Gauntlet",
+      "why": "A proof that cannot be challenged is not ready for stronger claims.",
+      "group": "Evidence & claims"
+    },
+    {
+      "href": "ascension-inflow-control.html",
+      "title": "Ascension Inflow Control",
+      "why": "Verified work survives inside the governed band of compute, data, tasks, incentives, feedback, governance, and tools.",
+      "group": "Work economy"
+    },
+    {
+      "href": "mandate-epoch-clearinghouse.html",
+      "title": "MandateEpoch Clearinghouse",
+      "why": "Many proof receipts clear through roots, challenge windows, and Chronicle handoff.",
+      "group": "Work economy"
+    },
+    {
+      "href": "proof-settlement-lifecycle.html",
+      "title": "Proof-Settlement Lifecycle",
+      "why": "Request \u2192 Escrow \u2192 Execute \u2192 Proof \u2192 Validate \u2192 Settle \u2192 Chronicle.",
+      "group": "Work economy"
+    },
+    {
+      "href": "real-task-benchmark-bridge.html",
+      "title": "Real-Task Benchmark Bridge",
+      "why": "Public claims must pass real-task baselines and benchmark evidence.",
+      "group": "Work economy"
+    },
+    {
+      "href": "chronicle-compounding-lab.html",
+      "title": "Chronicle Compounding Lab",
+      "why": "Only proof-cleared work becomes institutional memory.",
+      "group": "Protocol & gates"
+    },
+    {
+      "href": "proof-constitution-simulator.html",
+      "title": "Proof Constitution Simulator",
+      "why": "Aim \u2192 Act \u2192 Prove \u2192 Evolve as an interactive constitutional workbench.",
+      "group": "Protocol & gates"
+    },
+    {
+      "href": "proof-backed-upgrade-foundry.html",
+      "title": "Proof-Backed Upgrade Foundry",
+      "why": "Artifacts earn scoped upgrade rights only with canary, rollback, and human review.",
+      "group": "Protocol & gates"
+    },
+    {
+      "href": "sovereign-experience-stream.html",
+      "title": "Sovereign Experience Stream",
+      "why": "Proof events become governed learning only after replay, validation, and review.",
+      "group": "Protocol & gates"
+    },
+    {
+      "href": "coordination-engine.html",
+      "title": "Advanced Coordination Engine",
+      "why": "Technical engine for coordination law and proof-governed routing.",
+      "group": "Coordination & routing"
+    },
+    {
+      "href": "coordination-lab.html",
+      "title": "Coordination Lab",
+      "why": "Browser-local comparison of swarm activity and proof-governed coordination.",
+      "group": "Coordination & routing"
+    },
+    {
+      "href": "multi-agent-institution.html",
+      "title": "Multi-Agent Institution",
+      "why": "Large multi-agent systems coordinate when they become proof-governed institutions.",
+      "group": "Coordination & routing"
+    },
+    {
+      "href": "proof-conditioned-router-observatory.html",
+      "title": "Router Observatory",
+      "why": "Route the institution, not the swarm.",
+      "group": "Coordination & routing"
+    },
+    {
+      "href": "action-graph-handoff.html",
+      "title": "Action Graph Handoff",
+      "why": "Proof becomes scoped action or stops.",
+      "group": "Capability reuse"
+    },
+    {
+      "href": "proof-carrying-artifact-passport.html",
+      "title": "Artifact Passport",
+      "why": "Reusable capability carries proof, scope, rollback, and lineage.",
+      "group": "Capability reuse"
+    },
+    {
+      "href": "mission-studio.html",
+      "title": "Mission Studio",
+      "why": "Compose a local proof-pack from a public-safe objective.",
+      "group": "Capability reuse"
+    },
+    {
+      "href": "proof-cards.html",
+      "title": "Proof Cards",
+      "why": "Copyable proof-language for stakeholders.",
+      "group": "Capability reuse"
+    },
+    {
+      "href": "demo-lab.html",
+      "title": "Demo Lab",
+      "why": "First browser-local lifecycle demonstration with a public-safe docket.",
+      "group": "Create"
+    },
+    {
+      "href": "agialpha-token-boundary.html",
+      "title": "AGIALPHA Boundary",
+      "why": "AGIALPHA is pre-existing public-market, not available from this site or MontrealAI.",
+      "group": "Assurance & boundaries"
+    },
+    {
+      "href": "architecture.html",
+      "title": "Architecture",
+      "why": "Separation of proof, presentation, action, and human authority.",
+      "group": "Assurance & boundaries"
+    },
+    {
+      "href": "assurance.html",
+      "title": "Assurance",
+      "why": "Final assurance, capability lock, and public/expert separation.",
+      "group": "Assurance & boundaries"
+    },
+    {
+      "href": "legal.html",
+      "title": "Legal Boundary",
+      "why": "Data-zero, no-advice, no-investment, third-party responsibility posture.",
+      "group": "Assurance & boundaries"
+    },
+    {
+      "href": "verification.html",
+      "title": "Verification",
+      "why": "Canonical identities and generated-publication verification.",
+      "group": "Assurance & boundaries"
+    },
+    {
+      "href": "expert-console.html",
+      "title": "Expert Console",
+      "why": "Separated expert surface with explicit boundaries.",
+      "group": "Consoles"
+    },
+    {
+      "href": "expert-mainnet-console.html",
+      "title": "Expert Mainnet Console",
+      "why": "Human-signed wallet operations only; never public auto-connect.",
+      "group": "Consoles"
+    },
+    {
+      "href": "operator-console.html",
+      "title": "Read-Only Console",
+      "why": "Public read-only chamber and unsigned intent export.",
+      "group": "Consoles"
+    },
+    {
+      "href": "sovereign-machine-economy.html",
+      "title": "Sovereign Machine Economy",
+      "why": "Sovereign economy route and institutional economy posture.",
+      "group": "Consoles"
+    }
+  ]
+}

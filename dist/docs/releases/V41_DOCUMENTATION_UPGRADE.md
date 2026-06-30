@@ -14,11 +14,19 @@ The README now includes badges, production URL, route catalog, canonical identit
 
 ## Badges added
 
-Production, publisher workflow, license, last commit, language, repository size, public-safe demos, no wallet, no analytics/cookies, and dependency-zero publisher badges.
+Production, publisher workflow, last commit, language, public-safe demos, no wallet, no analytics/cookies, claim-bounded, Evidence Docket discipline, and dependency-zero publisher badges. License badges should only be added when a repository `LICENSE` file exists.
 
 ## Diagrams added
 
-Proof-to-action, proof-settlement, public/private boundary, publication pipeline, demo library, and repository architecture Mermaid diagrams.
+Proof-to-action, proof-settlement, public/private boundary, publication pipeline, and repository architecture Mermaid diagrams.
+
+## Repository inspection summary
+
+- Current publisher workflow: `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`, named **GoalOS AGIJobManager Ascension Navigation Source Polish Publisher v41**.
+- Current npm scripts include dependency-free build, verification, documentation, route, kernel, legal, token-boundary, and navigation-polish runners in `package.json`.
+- Current route and navigation catalogs include `data/site-navigation-v41.json`, `data/site-navigation-v39.json`, `data/site-navigation-v38.json`, `data/site-navigation-v37.json`, `data/site-navigation-catalog.json`, `data/site-navigation-map.json`, `data/site-experience-atlas.json`, and `data/experience-hub-catalog.json`.
+- Existing documentation was upgraded in place rather than duplicated; historical vXX reports remain as release evidence and are not treated as current onboarding entry points.
+- Existing public-safe runners remain dependency-free and are exercised by `tools/run-all-tests.mjs`, `tools/run-existing-kernels.mjs`, and the documentation QA tools.
 
 ## Tests added
 
