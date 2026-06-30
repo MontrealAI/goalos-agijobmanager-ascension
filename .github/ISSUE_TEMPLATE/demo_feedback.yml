@@ -8,10 +8,15 @@ body:
     attributes:
       label: User type
       options: [new, advanced, operator, reviewer]
+    validations:
+      required: true
   - type: input
     id: route
     attributes:
       label: Demo route
+      description: Example: /evidence-docket-composer.html
+    validations:
+      required: true
   - type: textarea
     id: confusing
     attributes:
@@ -23,4 +28,12 @@ body:
   - type: textarea
     id: artifact
     attributes:
-      label: What receipt or docket was exported, if any?
+      label: Receipt or docket exported, if any
+      description: Share only public-safe identifiers or summaries. Do not include secrets, private keys, seed phrases, personal data, customer data, or confidential workpapers.
+  - type: checkboxes
+    id: sensitive
+    attributes:
+      label: Sensitive data reminder
+      options:
+        - label: I did not include secrets or sensitive data.
+          required: true
