@@ -1,11 +1,11 @@
 import fs from 'node:fs';
 const wf = fs.readFileSync('.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml','utf8');
 const must = (ok,msg)=>{ if(!ok){ console.error('FAIL · '+msg); process.exit(1); } console.log('PASS · '+msg); };
-must(/Publisher v4[45]/.test(wf) || /Public Trust Ultimate Failsafe Publisher v45/.test(wf), 'workflow identifies v44-compatible or v45 release');
-must(wf.includes('tools/failsafe-bootstrap-v45.mjs') || wf.includes('tools/root-cleanup-v43.mjs') || wf.includes('tools/root-cleanup-v44.mjs'), 'workflow has public-trust cleanup/bootstrap path');
+must(/Publisher v4[456]/.test(wf) || /Public Trust Ultimate Failsafe Publisher v45/.test(wf) || /Compatibility Failsafe Publisher v46/.test(wf), 'workflow identifies v44/v45/v46-compatible release');
+must(wf.includes('tools/failsafe-bootstrap-v46.mjs') || wf.includes('tools/failsafe-bootstrap-v45.mjs') || wf.includes('tools/root-cleanup-v43.mjs') || wf.includes('tools/root-cleanup-v44.mjs') || wf.includes('tools/root-cleanup-v46.mjs'), 'workflow has public-trust cleanup/bootstrap path');
 must(wf.includes('tools/run-documentation-tests.mjs'), 'workflow uses guarded documentation tests');
 must(wf.includes('tools/run-all-tests.mjs'), 'workflow uses guarded production test runner');
 must(!/node\s+tests\/[^\s]+\.test\.mjs/.test(wf), 'workflow does not hard-call individual test files');
-must(fs.existsSync('tools/root-cleanup-v45.mjs') || fs.existsSync('tools/root-cleanup-v44.mjs') || fs.existsSync('tools/root-cleanup-v43.mjs'), 'source contains root cleanup tool');
-must(fs.existsSync('tools/repository-public-trust-failsafe-v45-kernel.mjs') || fs.existsSync('tools/repository-public-trust-failsafe-v44-kernel.mjs'), 'source contains public-trust failsafe kernel');
+must(fs.existsSync('tools/root-cleanup-v46.mjs') || fs.existsSync('tools/root-cleanup-v45.mjs') || fs.existsSync('tools/root-cleanup-v44.mjs') || fs.existsSync('tools/root-cleanup-v43.mjs'), 'source contains root cleanup tool');
+must(fs.existsSync('tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs') || fs.existsSync('tools/repository-public-trust-failsafe-v45-kernel.mjs') || fs.existsSync('tools/repository-public-trust-failsafe-v44-kernel.mjs'), 'source contains public-trust failsafe kernel');
 console.log('Repository public trust failsafe v44 compatibility test PASS');
