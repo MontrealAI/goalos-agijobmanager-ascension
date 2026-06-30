@@ -28,10 +28,12 @@ const productionKernels=[
   'experience-concierge-kernel.mjs',
   'navigation-polish-v40-kernel.mjs',
   'navigation-polish-v41-kernel.mjs',
-  'institutional-website-finalization-v42-kernel.mjs'
+  'institutional-website-finalization-v42-kernel.mjs',
+  'repository-public-trust-finalization-v43-kernel.mjs',
+  'repository-public-trust-failsafe-v44-kernel.mjs'
 ];
 let ran=0,skipped=[];
-for(const file of productionKernels){const p=path.join('tools',file); if(!fs.existsSync(p)){skipped.push(file); continue;} console.log(`RUN ${p}`); const r=spawnSync(process.execPath,[p],{stdio:'inherit'}); if(r.status!==0) process.exit(r.status??1); ran++;}
+for(const file of productionKernels){const p=path.join('tools',file); if(!fs.existsSync(p)){skipped.push(file); continue;} if((file==='repository-public-trust-finalization-v43-kernel.mjs'||file==='repository-public-trust-failsafe-v44-kernel.mjs') && fs.existsSync(path.join('tools','root-cleanup-v44.mjs'))){ console.log('RUN tools/root-cleanup-v44.mjs'); const c=spawnSync(process.execPath,[path.join('tools','root-cleanup-v44.mjs')],{stdio:'inherit'}); if(c.status!==0) process.exit(c.status??1); } console.log(`RUN ${p}`); const r=spawnSync(process.execPath,[p],{stdio:'inherit'}); if(r.status!==0) process.exit(r.status??1); ran++;}
 if(ran<18){console.error(`FAIL · post-build kernel coverage too low: ${ran}`);process.exit(1)}
 if(skipped.length) console.log(`SKIP · optional kernels not present: ${skipped.join(', ')}`);
 console.log(`PASS · ${ran} production post-build kernels executed with manifest guard`);

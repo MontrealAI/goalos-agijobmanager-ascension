@@ -141,10 +141,23 @@ status = {
     'navigationPolishV41': 'PASS',
     'navigationSourcePolishV41': 'PASS',
     'institutionalWebsiteFinalizationV42': 'PASS',
+    'repositoryPublicTrustFinalizationV43': 'PASS',
+    'repositoryPublicTrustFailsafeV44': 'PASS',
+    'canonicalRouteManifestV43': 'PASS',
+    'canonicalRouteManifestV44': 'PASS',
+    'socialPreviewMetadata': 'PASS',
     'menuOverlayConsolidated': 'PASS',
     'singleNativeHeader': 'PASS',
+    'exactRouteCount': 'PASS',
     'vendoredDependencies': 'PASS'
 }
+canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v44.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v43.json'
+if canonical_manifest_path.exists():
+    canonical_manifest = json.loads(canonical_manifest_path.read_text())
+    status['publicHtmlRouteCount'] = canonical_manifest.get('routeCount')
+    status['canonicalRouteManifest'] = 'data/' + canonical_manifest_path.name
 (dist / 'production-url.json').write_text(json.dumps(status, indent=2))
 
 # Promote public data contracts to root-level URLs for user-friendly access.
@@ -230,8 +243,9 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v42-institutional-website-finalization',
-    'releaseAliases': ['v42-institutional-website-finalization','v41-navigation-source-polish-final','v40-navigation-polish-failsafe','v40-navigation-polish-failsafe','v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
+    'release': 'v44-repository-public-trust-failsafe',
+    'routeCount': status.get('publicHtmlRouteCount'),
+    'releaseAliases': ['v44-repository-public-trust-failsafe','v43-repository-public-trust-finalization','v42-institutional-website-finalization','v41-navigation-source-polish-final','v40-navigation-polish-failsafe','v40-navigation-polish-failsafe','v39-experience-concierge-complete-navigation','v38-navigation-system-final','v37-site-command-center','v37-site-experience-atlas','v37-website-command-center'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

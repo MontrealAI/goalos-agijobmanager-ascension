@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+const root=process.cwd();
+const cleanup=spawnSync(process.execPath,['tools/root-cleanup-v43.mjs'],{stdio:'inherit'});
+if(cleanup.status!==0) process.exit(cleanup.status ?? 1);
+const manifest=JSON.parse(fs.readFileSync(path.join(root,'data','canonical-route-manifest-v43.json'),'utf8'));
+const required=['LICENSE','NOTICE','SECURITY.md','SUPPORT.md','CODE_OF_CONDUCT.md','CONTRIBUTING.md','docs/DEMO_CATALOG.md','docs/BRAND_AND_COMMUNICATIONS.md','docs/ACCESSIBILITY_QA.md','docs/releases/V43_REPOSITORY_PUBLIC_TRUST_FINALIZATION.md','tools/public-trust-checker-v43.mjs','tools/apply-public-trust-metadata-v43.mjs'];
+let fail=[];
+for(const f of required) if(!fs.existsSync(path.join(root,f))) fail.push(`missing ${f}`);
+if(manifest.routeCount !== manifest.pages.length) fail.push('route count mismatch');
+if(manifest.routeCount < 45) fail.push(`route count too low: ${manifest.routeCount}`);
+const readme=fs.readFileSync('README.md','utf8');
+if(!readme.includes(`${manifest.routeCount} canonical public routes`)) fail.push('README lacks exact route count');
+if(!readme.includes('No ProofBundle, no settlement')) fail.push('README lacks settlement invariant');
+if(!readme.includes('No public wallet connection')) fail.push('README lacks public wallet boundary');
+const rootFiles=fs.readdirSync(root).filter(f=>/_V\d+_REPORT\.md$|_V\d+_WEB_UI_GUIDE\.md$/i.test(f));
+if(rootFiles.length) fail.push(`historical reports still in root: ${rootFiles.slice(0,8).join(', ')}`);
+if(fail.length){console.error('FAIL · repository public trust v43 kernel'); for(const f of fail) console.error(' - '+f); process.exit(1);}
+fs.mkdirSync('docs/reports',{recursive:true});
+fs.writeFileSync('docs/reports/REPOSITORY_PUBLIC_TRUST_V43_REPORT.json', JSON.stringify({status:'PASS',routeCount:manifest.routeCount,checks:required.length,release:'v43-repository-public-trust-finalization'},null,2));
+console.log(`PASS · Repository Public Trust Finalization v43 kernel (${manifest.routeCount} routes)`);

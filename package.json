@@ -1,14 +1,14 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "4.3.0-repository-public-trust-finalization-v43",
+  "version": "4.4.0-repository-public-trust-failsafe-v44",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node tools/site-rehydrate.mjs && node tools/apply-public-trust-metadata-v43.mjs && python3 tools/build.py && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v43.mjs && node tools/repository-public-trust-finalization-v43-kernel.mjs && node tools/root-cleanup-v43.mjs",
+    "build": "npm run bootstrap && python3 tools/build.py && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v44.mjs && node tools/repository-public-trust-failsafe-v44-kernel.mjs",
     "verify": "python3 tools/verify.py",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "node tools/site-rehydrate.mjs && node tools/apply-public-trust-metadata-v43.mjs && python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/public-trust-checker-v43.mjs && node tools/run-all-tests.mjs",
+    "test": "npm run bootstrap && python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/public-trust-checker-v44.mjs && node tools/run-all-tests.mjs",
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
@@ -75,14 +75,19 @@
     "docs:check": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs",
     "test:docs": "node tests/documentation.test.mjs",
     "verify:docs": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tests/documentation.test.mjs",
-    "public-trust": "node tools/apply-public-trust-metadata-v43.mjs && node tools/public-trust-checker-v43.mjs",
-    "clean:root": "node tools/root-cleanup-v43.mjs",
+    "public-trust": "node tools/apply-public-trust-metadata-v44.mjs && node tools/public-trust-checker-v44.mjs",
+    "clean:root": "node tools/root-cleanup-v44.mjs",
     "test:chronicle-lab": "node tests/chronicle-compounding-lab.test.mjs && node tools/chronicle-compounding-lab-kernel.mjs",
     "chronicle-compounding": "node tests/chronicle-compounding-lab.test.mjs && node tools/chronicle-compounding-lab-kernel.mjs",
     "proof-gradient-arena": "node tests/proof-gradient-arena.test.mjs && node tools/proof-gradient-arena-kernel.mjs",
-    "test:proof-gradient-arena": "node tests/proof-gradient-arena.test.mjs && node tools/proof-gradient-arena-kernel.mjs"
+    "test:proof-gradient-arena": "node tests/proof-gradient-arena.test.mjs && node tools/proof-gradient-arena-kernel.mjs",
+    "repository-public-trust-failsafe": "node tools/root-cleanup-v44.mjs && node tools/repository-public-trust-failsafe-v44-kernel.mjs",
+    "test:repository-public-trust-failsafe": "node tests/repository-public-trust-failsafe-v44.test.mjs && node tools/repository-public-trust-failsafe-v44-kernel.mjs",
+    "public-trust:failsafe": "node tools/repository-public-trust-failsafe-v44-kernel.mjs",
+    "bootstrap": "node tools/site-rehydrate.mjs && node tools/root-cleanup-v44.mjs && node tools/apply-public-trust-metadata-v44.mjs",
+    "failsafe:v44": "node tools/repository-public-trust-failsafe-v44-kernel.mjs"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension public proof institution with canonical route manifest, social metadata, public-trust QA, clean repository root, and public-safe browser-local demos.",
+  "description": "GoalOS AGIJobManager Ascension public proof institution with failsafe GitHub Pages publication, canonical route manifest, social metadata, public-trust QA, clean repository root, and public-safe browser-local demos.",
   "devDependencies": {}
 }
