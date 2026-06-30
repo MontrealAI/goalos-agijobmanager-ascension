@@ -6,12 +6,26 @@ body:
   - type: input
     id: doc
     attributes:
-      label: Page or doc
+      label: Doc or page
+      description: Example: docs/CLAIM_BOUNDARY.md or /privacy.html
+    validations:
+      required: true
   - type: textarea
     id: unclear
     attributes:
       label: Unclear section
+      description: What sentence, table, diagram, or instruction was hard to understand?
+    validations:
+      required: true
   - type: textarea
     id: suggestion
     attributes:
       label: Suggested improvement
+      description: What would make it clearer or safer?
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: User type
+      options: [new visitor, non-technical operator, developer, reviewer / risk / legal, researcher]
+    validations:
+      required: true

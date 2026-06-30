@@ -8,7 +8,7 @@
     "verify": "python3 tools/verify.py",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "node tools/site-rehydrate.mjs && python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/run-all-tests.mjs",
+    "test": "node tools/site-rehydrate.mjs && python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/run-all-tests.mjs && node tools/docs-link-checker.mjs && node tests/documentation.test.mjs",
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
@@ -72,7 +72,7 @@
     "test:navigation-polish": "node tests/navigation-polish-v41.test.mjs && python3 tools/build.py && node tools/navigation-polish-v41-kernel.mjs",
     "docs:check": "node tools/docs-link-checker.mjs",
     "test:docs": "node tests/documentation.test.mjs",
-    "verify:docs": "npm run docs:check && npm run test:docs"
+    "verify:docs": "node tools/docs-link-checker.mjs && node tests/documentation.test.mjs"
   },
   "dependencies": {},
   "description": "GoalOS AGIJobManager Ascension complete public evidence institution with corrected single-header navigation and failsafe publisher.",

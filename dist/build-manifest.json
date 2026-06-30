@@ -10,7 +10,7 @@
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-29T23:43:40.403832Z",
+  "builtAt": "2026-06-29T23:54:34.210877Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -39,7 +39,7 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "e121309a5706a3dcc1b13da7e25aa5b73dfcaecaa61c44832d6c102a685c3840",
+      "sha256": "bea63e743416d08ccd0cfcc58ad3b5ea61a5005c6e22d9be0e882e5e1e20b6ea",
       "bytes": 12605
     },
     {
@@ -1076,6 +1076,11 @@
       "path": "docs/GETTING_STARTED.md",
       "sha256": "ccdb6c668b834c801623132227b5e2a69eb78f2be419031e9d9349c991973d0e",
       "bytes": 925
+    },
+    {
+      "path": "docs/GITHUB_SETTINGS_GUIDE.md",
+      "sha256": "37ff56e017f694239d958918c5fab21be0d90ef1582071952f21b0ac585cb45c",
+      "bytes": 2068
     },
     {
       "path": "docs/INVESTMENT_AND_TOKEN_BOUNDARY.md",
