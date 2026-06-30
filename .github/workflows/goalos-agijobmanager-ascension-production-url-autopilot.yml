@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Institutional Website Publisher v42
+name: GoalOS AGIJobManager Ascension Repository Public Trust Publisher v43
 
 on:
   workflow_dispatch:
@@ -47,7 +47,7 @@ concurrency:
 
 jobs:
   build-assure-publish:
-    name: Build, assure, and publish institutional website
+    name: Build, assure, and publish repository public trust release
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -59,19 +59,21 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Neutralize registry lock-in and rehydrate public routes
+      - name: Neutralize registry lock-in, clean root, rehydrate routes, and apply public-trust metadata
         shell: bash
         run: |
           set -euo pipefail
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
           if [ ! -f tools/site-rehydrate.mjs ]; then
-            echo "Missing tools/site-rehydrate.mjs. Upload the v42 full-source overlay." >&2
+            echo "Missing tools/site-rehydrate.mjs. Upload the v43 full-source overlay contents, not the ZIP file." >&2
             exit 1
           fi
           node tools/site-rehydrate.mjs
+          node tools/root-cleanup-v43.mjs
+          node tools/apply-public-trust-metadata-v43.mjs
 
-      - name: Verify implementation, boundaries, workflow references, navigation, and all demos
+      - name: Verify implementation, boundaries, workflow references, docs, metadata, and all demos
         shell: bash
         env:
           ETHEREUM_RPC_URL: ${{ secrets.ETHEREUM_RPC_URL }}
@@ -84,6 +86,10 @@ jobs:
           node tools/no-registry-preflight.mjs
           node tools/pathspec-proof-kernel.mjs
           node tools/workflow-reference-auditor.mjs
+          node tools/docs-link-checker.mjs
+          node tools/claim-boundary-checker.mjs
+          node tools/run-documentation-tests.mjs
+          node tools/public-trust-checker-v43.mjs
           node tools/run-all-tests.mjs
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
@@ -98,13 +104,15 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and verify institutional website
+      - name: Build static Pages artifact and verify public trust release
         shell: bash
         run: |
           set -euo pipefail
           python3 tools/build.py
           node tools/run-existing-kernels.mjs
           node tools/institutional-website-finalization-v42-kernel.mjs
+          CHECK_DIST=true node tools/public-trust-checker-v43.mjs
+          node tools/repository-public-trust-finalization-v43-kernel.mjs
           test -f dist/index.html
           test -f dist/start.html
           test -f dist/coordination-lab.html
@@ -128,7 +136,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Institutional Website Finalization v42"
+          git commit -m "Generate GoalOS Repository Public Trust Finalization v43"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
