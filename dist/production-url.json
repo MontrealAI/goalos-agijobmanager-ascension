@@ -45,7 +45,13 @@
   "navigationPolishV41": "PASS",
   "navigationSourcePolishV41": "PASS",
   "institutionalWebsiteFinalizationV42": "PASS",
+  "repositoryPublicTrustFinalizationV43": "PASS",
+  "canonicalRouteManifestV43": "PASS",
+  "socialPreviewMetadata": "PASS",
   "menuOverlayConsolidated": "PASS",
   "singleNativeHeader": "PASS",
-  "vendoredDependencies": "PASS"
+  "exactRouteCount": "PASS",
+  "vendoredDependencies": "PASS",
+  "publicHtmlRouteCount": 50,
+  "canonicalRouteManifest": "data/canonical-route-manifest-v43.json"
 }
