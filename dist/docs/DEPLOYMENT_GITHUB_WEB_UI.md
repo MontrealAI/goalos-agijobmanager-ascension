@@ -1,17 +1,15 @@
 # Deployment with the GitHub Web UI
 
-[Docs index](README.md) · [Workflow autopilot](WORKFLOW_AUTOPILOT.md)
+1. If you receive an overlay, unzip it first. Upload contents, not the ZIP.
+2. Commit to `main`.
+3. Open Actions.
+4. Run **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**.
+5. Set `deploy_pages=true` and `commit_generated_source=true`.
+6. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
+7. After completion, inspect `dist/production-url.json` and the production URL.
+8. Red historical workflow runs are immutable; fix source and rerun the current workflow.
 
-1. Open the repository on GitHub.
-2. Upload the overlay contents, not the zip file itself.
-3. Commit to `main`.
-4. Open **Actions**.
-5. Run **GoalOS AGIJobManager Ascension Navigation Source Polish Publisher v41**.
-6. Keep `deploy_pages` = `true`.
-7. Keep `commit_generated_source` = `true`.
-8. Leave live factual checks `false` unless `ETHEREUM_RPC_URL` is configured.
-9. Confirm the production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/.
 
-## Recovery
+## Shared boundary
 
-If a historical run is red, do not edit immutable logs. Commit a fix and run the current workflow again.
+Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

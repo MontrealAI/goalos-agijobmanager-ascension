@@ -1,210 +1,256 @@
-## Navigation Polish v40
-
-Final website polish: native page headers preserved, one floating Site Command, no stacked menu overlays, and failsafe site rehydration in the publisher.
-
-## Navigation System Final v38
-
-The public website now has a complete user-friendly navigation system: a concise homepage, Experience Hub, Command Center, Navigation Atlas, global Explore menu, guided journeys, and machine-readable route map. Public pages remain default-deny: no accounts, no forms, no analytics, no cookies, no public wallet connection, no token route, and no user data wanted.
-
-## Site Command Center v37
-
-The public website now opens through a complete command center and searchable Site Atlas. All previous pages remain available, and the v36 homepage is preserved at `archive-v36-ascension-chamber.html`. The public surface remains browser-local, account-free, analytics-free, cookie-free, form-free, wallet-free, and token-route-free.
-
-## Site Experience Atlas v37
-
-The public website now includes a complete intent-first navigation system, a rebuilt homepage, and `/experience-atlas.html` so non-technical users, reviewers, builders, and expert operators can find the right proof surface quickly.
-
-## Navigation Atlas v37
-
-The public website now includes a compact homepage, role-based journeys, and a complete searchable Experience Atlas at `experience-atlas.html`.
-
-## Experience Hub v37
-
-The website now has a complete guided front door, searchable public page catalog, persona-based paths, and a universal floating Site Guide across pages.
-
-## Command Center Navigation v37
-
-The public site now includes a complete Command Center with guided paths, catalog search, compact global navigation, and no user-data collection.
-
-## Proof-Settlement Lifecycle v36
-
-A browser-local console demonstrates the AGIJobManager settlement rail: Request → Escrow → Execute → Proof → Validate → Settle → Chronicle. It is simulated only and never connects a wallet or authorizes funds.
-
-## Evidence Docket Composer v34
-
-A browser-local public proof-room composer now helps users turn public-safe claims into Evidence Docket receipts without accounts, wallets, forms, analytics, cookies, or user data.
-
-## Ascension Flight Deck v31
-
-A browser-local guided launch surface now helps non-technical and advanced users run the best GoalOS demonstrations autonomously.
-
 # GoalOS AGIJobManager Ascension
+
+A public-safe proof-settlement institution for AGIJobManager: browser-local demos, Evidence Dockets, settlement lifecycle, claim boundaries, documentation, and autonomous GitHub Pages publication.
 
 Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
-GoalOS-native public evidence room, read-only settlement chamber, and separated Expert Mainnet Console for AGIJobManager Ascension.
+[![Production site](https://img.shields.io/badge/GitHub%20Pages-production-0f766e)](https://montrealai.github.io/goalos-agijobmanager-ascension/)
+[![Publisher](https://github.com/MontrealAI/goalos-agijobmanager-ascension/actions/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml/badge.svg)](https://github.com/MontrealAI/goalos-agijobmanager-ascension/actions/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml)
+![Last commit](https://img.shields.io/github/last-commit/MontrealAI/goalos-agijobmanager-ascension?color=334155)
+![Top language](https://img.shields.io/github/languages/top/MontrealAI/goalos-agijobmanager-ascension?color=1d4ed8)
+![Public-safe demos](https://img.shields.io/badge/public--safe-demos-16a34a)
+![No public wallet](https://img.shields.io/badge/public%20demos-no%20wallet-7c3aed)
+![No analytics or cookies](https://img.shields.io/badge/no%20analytics%20%2F%20cookies-true-065f46)
+![Dependency-zero publisher](https://img.shields.io/badge/publisher-dependency--zero-0f172a)
+![Claim bounded](https://img.shields.io/badge/claims-bounded-b45309)
+![Evidence Docket discipline](https://img.shields.io/badge/Evidence%20Docket-discipline-1e40af)
 
-Canonical identities:
+## 30-second explanation
 
-- AGIJobManager: `0xB3AAeb69b630f0299791679c063d68d6687481d1`
-- AGIALPHA: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`
-- Chain: Ethereum Mainnet, chain id `1`
+This repository publishes a static public website for understanding GoalOS-style proof-settlement. Start with [Experience Concierge](site/experience-concierge.html) if you are new, or [Command Center](site/command-center.html) if you want the full map. Proof matters because AI output is not institutional work until it is bounded, replayable, validated, and packaged as an Evidence Docket, ProofBundle, SettlementReceipt, Chronicle entry, or Governed Decision State. Public demos run in the browser and demonstrate proof logic with public-safe sample data. Public demos never connect wallets, approve tokens, switch networks, broadcast transactions, move funds, collect user data, grant production authority, add analytics, or set cookies.
 
-## Capability posture
+## Best first clicks
 
-This repository now implements both layers presented publicly:
+| User intent | Best first click | Why |
+|---|---|---|
+| I am new | [Experience Concierge](site/experience-concierge.html) | Guided path through the site |
+| I want the full map | [Command Center](site/command-center.html) | Complete route catalog |
+| I want the core proof law | [Trust Equation Simulator](site/trust-equation-simulator.html) | Shows why proof turns output into institutional work |
+| I want to build a proof room | [Evidence Docket Composer](site/evidence-docket-composer.html) | Creates a claim-bound Evidence Docket receipt |
+| I want settlement logic | [Proof-Settlement Lifecycle](site/proof-settlement-lifecycle.html) | Shows request -> proof -> validation -> settlement -> Chronicle |
+| I want architecture | [Architecture](site/architecture.html) | Explains source, pages, data, schemas, tests, and publisher |
+| I want boundaries | [Legal](site/legal.html) / [Privacy](site/privacy.html) / [AGIALPHA Boundary](site/agialpha-token-boundary.html) | Explains public-safe, data-zero, and token boundaries |
 
-1. **Public proof institution:** Evidence Docket, architecture, verification, claim boundaries, and read-only operator chamber.
-2. **Expert Mainnet capability:** manual wallet connection, manual Mainnet switch, exact AGIALPHA approval, eth_call preflight, gas estimation, and explicit human wallet-signed contract writes.
+## Core idea
 
-No workflow can move funds. Mainnet writes require a human wallet, accepted terms, typed confirmation, preflight, gas estimate, and wallet confirmation.
+GoalOS turns autonomous AI work into proof-bearing institutional work. A model can answer. An agent can act. An institution must prove.
 
-## Commands
+Canonical doctrine: no Evidence Docket, no strong public claim. No ProofBundle, no settlement. No replay, no settlement. No authority, no autonomy. Public pages are public-safe, browser-local demonstrations unless explicitly marked otherwise. Expert-only pages remain visually and textually separated from public-safe demos.
 
-```bash
-npm test
-npm run factual
-npm run build
+## What this repository contains
+
+- Static public website in `site/`.
+- Browser-local public demos, Evidence Docket demos, and proof-settlement lifecycle demos.
+- Data contracts in `data/` and JSON schemas in `schemas/`.
+- Dependency-free tests and verification tools in `tests/` and `tools/`.
+- Autonomous GitHub Pages publisher in `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`.
+- Legal, privacy, regulatory, third-party responsibility, and AGIALPHA boundary pages.
+- Expert-only surfaces, when present, separated from public-safe routes.
+
+## What this repository does not do
+
+- No public wallet connection.
+- No public token approval.
+- No public network switching.
+- No public transaction broadcast.
+- No funds moved by public demos.
+- No user data wanted.
+- No analytics.
+- No cookies.
+- No external audit claim.
+- No legal, financial, investment, tax, medical, safety-certification, or professional advice.
+- No achieved AGI, achieved ASI, empirical SOTA, production certified, or safe autonomy proven claim.
+- No production authority from public pages.
+
+## AGIALPHA identity and token boundary
+
+Repository source identifies AGIALPHA on Ethereum Mainnet as `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`, AGIJobManager as `0xB3AAeb69b630f0299791679c063d68d6687481d1`, and Ethereum Mainnet chain id as `1`. AGIALPHA is pre-existing and decentralized. This website/repository uses the token address as an identity/reference boundary where relevant. It does not sell, offer, distribute, custody, broker, route, redeem, market-make, price-support, liquidity-support, recommend, or make available AGIALPHA. Users/operators are solely responsible for third-party market, wallet, RPC, tax, sanctions, securities, privacy, and jurisdictional decisions. Public demos do not connect wallets, approve AGIALPHA, switch networks, or broadcast Mainnet transactions.
+
+## Route catalog
+
+| Route | Audience | What it demonstrates | Output artifact | Boundary |
+|---|---|---|---|---|
+| [`/`](site/index.html) | Public / reviewer | Home proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/experience-concierge.html`](site/experience-concierge.html) | Public / reviewer | Experience Concierge proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/experience-hub.html`](site/experience-hub.html) | Public / reviewer | Experience Hub proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/command-center.html`](site/command-center.html) | Public / reviewer | Command Center proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/experience-atlas.html`](site/experience-atlas.html) | Public / reviewer | Experience Atlas proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/site-atlas.html`](site/site-atlas.html) | Public / reviewer | Site Atlas proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/navigation-atlas.html`](site/navigation-atlas.html) | Public / reviewer | Navigation Atlas proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/start.html`](site/start.html) | Public / reviewer | Start proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/trust-equation-simulator.html`](site/trust-equation-simulator.html) | Public / reviewer | Trust Equation Simulator proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/evidence-docket-composer.html`](site/evidence-docket-composer.html) | Public / reviewer | Evidence Docket Composer proof surface | Evidence Docket receipt | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-settlement-lifecycle.html`](site/proof-settlement-lifecycle.html) | Public / reviewer | Proof Settlement Lifecycle proof surface | SettlementReceipt / Chronicle trace | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/until-done-mission-control.html`](site/until-done-mission-control.html) | Public / reviewer | Until Done Mission Control proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-constitution-simulator.html`](site/proof-constitution-simulator.html) | Public / reviewer | Proof Constitution Simulator proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/ascension-flight-deck.html`](site/ascension-flight-deck.html) | Public / reviewer | Ascension Flight Deck proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-conditioned-router-observatory.html`](site/proof-conditioned-router-observatory.html) | Public / reviewer | Proof Conditioned Router Observatory proof surface | Routing receipt | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-carrying-artifact-passport.html`](site/proof-carrying-artifact-passport.html) | Public / reviewer | Proof Carrying Artifact Passport proof surface | Proof-Carrying Artifact Passport | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/action-graph-handoff.html`](site/action-graph-handoff.html) | Public / reviewer | Action Graph Handoff proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/real-task-benchmark-bridge.html`](site/real-task-benchmark-bridge.html) | Public / reviewer | Real Task Benchmark Bridge proof surface | Benchmark Evidence Docket | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/mandate-epoch-clearinghouse.html`](site/mandate-epoch-clearinghouse.html) | Public / reviewer | Mandate Epoch Clearinghouse proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-backed-upgrade-foundry.html`](site/proof-backed-upgrade-foundry.html) | Public / reviewer | Proof Backed Upgrade Foundry proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/sovereign-experience-stream.html`](site/sovereign-experience-stream.html) | Public / reviewer | Sovereign Experience Stream proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/replay-falsification-gauntlet.html`](site/replay-falsification-gauntlet.html) | Public / reviewer | Replay Falsification Gauntlet proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/claim-boundary-firewall.html`](site/claim-boundary-firewall.html) | Public / reviewer | Claim Boundary Firewall proof surface | Boundary text / policy reference | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/ascension-inflow-control.html`](site/ascension-inflow-control.html) | Public / reviewer | Ascension Inflow Control proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/chronicle-compounding-lab.html`](site/chronicle-compounding-lab.html) | Public / reviewer | Chronicle Compounding Lab proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-gradient-arena.html`](site/proof-gradient-arena.html) | Public / reviewer | Proof Gradient Arena proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-to-action-theatre.html`](site/proof-to-action-theatre.html) | Public / reviewer | Proof To Action Theatre proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/multi-agent-institution.html`](site/multi-agent-institution.html) | Public / reviewer | Multi Agent Institution proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/coordination-lab.html`](site/coordination-lab.html) | Public / reviewer | Coordination Lab proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/mission-studio.html`](site/mission-studio.html) | Public / reviewer | Mission Studio proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/proof-cards.html`](site/proof-cards.html) | Public / reviewer | Proof Cards proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/architecture.html`](site/architecture.html) | Public / reviewer | Architecture proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/verification.html`](site/verification.html) | Public / reviewer | Verification proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/assurance.html`](site/assurance.html) | Public / reviewer | Assurance proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/legal.html`](site/legal.html) | Public / reviewer | Legal proof surface | Boundary text / policy reference | Boundary page; no advice, no custody, no token offer. |
+| [`/privacy.html`](site/privacy.html) | Public / reviewer | Privacy proof surface | Boundary text / policy reference | Boundary page; no advice, no custody, no token offer. |
+| [`/terms.html`](site/terms.html) | Public / reviewer | Terms proof surface | Boundary text / policy reference | Boundary page; no advice, no custody, no token offer. |
+| [`/regulatory-boundary.html`](site/regulatory-boundary.html) | Public / reviewer | Regulatory Boundary proof surface | Boundary text / policy reference | Boundary page; no advice, no custody, no token offer. |
+| [`/third-party-responsibility.html`](site/third-party-responsibility.html) | Public / reviewer | Third Party Responsibility proof surface | Public-safe receipt or route summary | Boundary page; no advice, no custody, no token offer. |
+| [`/agialpha-token-boundary.html`](site/agialpha-token-boundary.html) | Public / reviewer | Agialpha Token Boundary proof surface | Boundary text / policy reference | Boundary page; no advice, no custody, no token offer. |
+| [`/operator-console.html`](site/operator-console.html) | Public / reviewer | Operator Console proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+| [`/expert-console.html`](site/expert-console.html) | Public / reviewer | Expert Console proof surface | Expert-only human-directed console state | Expert-only; separated from public-safe demos; human wallet authority only if used. |
+| [`/expert-mainnet-console.html`](site/expert-mainnet-console.html) | Public / reviewer | Expert Mainnet Console proof surface | Expert-only human-directed console state | Expert-only; separated from public-safe demos; human wallet authority only if used. |
+| [`/sovereign-machine-economy.html`](site/sovereign-machine-economy.html) | Public / reviewer | Sovereign Machine Economy proof surface | Public-safe receipt or route summary | Public-safe browser-local demo; no wallet, no analytics, no cookies, no user data wanted. |
+
+## Repository architecture map
+
+```text
+.github/workflows/   autonomous publisher workflows
+site/                source public pages
+data/                public-safe demo data contracts
+schemas/             JSON schemas
+docs/                documentation and runbooks
+tools/               verification, build, route, and kernel tools
+tests/               dependency-free public-safe checks
+dist/                generated static site, if committed
+package.json         script entry points
 ```
 
+## Diagrams
+
+### Proof-to-action lifecycle
+
+```mermaid
+flowchart LR
+  O[Objective] --> M[Mission Contract]
+  M --> W[Autonomous Work]
+  W --> V[Verification]
+  V --> E[Evidence Docket]
+  E --> G[Governed Decision State]
+  G --> A[Action Graph]
+  A --> C[Chronicle]
+  C --> R[Reusable Capability]
+```
+
+### Proof-settlement lifecycle
+
+```mermaid
+flowchart LR
+  Req[Request] --> Esc[Escrow]
+  Esc --> Exe[Execute]
+  Exe --> Proof[ProofBundle]
+  Proof --> Val[Validate]
+  Val --> Settle[Settle]
+  Settle --> Chron[Chronicle]
+  Proof -. missing .-> Stop1[No ProofBundle, no settlement]
+  Val -. unreplayable .-> Stop2[No replay, no settlement]
+```
+
+### Public/private proof boundary
+
+```mermaid
+flowchart TB
+  subgraph Public[Public proof surface]
+    P1[Commitment hashes]
+    P2[Evidence Docket summary]
+    P3[Attestations]
+    P4[Selection / settlement receipts]
+    P5[Claim boundaries]
+  end
+  subgraph Private[Private intelligence boundary]
+    X1[Private prompts]
+    X2[Raw traces]
+    X3[Customer data]
+    X4[Confidential workpapers]
+    X5[Private evaluator notes]
+  end
+  X1 --> H[Hashes / commitments]
+  X2 --> H
+  H --> Public
+```
+
+### Autonomous website publication pipeline
+
+```mermaid
+flowchart LR
+  Source[Proof-aligned source] --> QA[Automation checks]
+  QA --> Build[Static site build]
+  Build --> Review[Human review]
+  Review --> Pages[GitHub Pages]
+  QA -. failure .-> Fix[Fix source, do not publish]
+```
+
+### Repository architecture
+
+```mermaid
+flowchart TB
+  Repo[Repository] --> Site[site/ public pages]
+  Repo --> Data[data/ demo contracts]
+  Repo --> Schemas[schemas/ JSON schemas]
+  Repo --> Tools[tools/ verification and build]
+  Repo --> Tests[tests/ checks]
+  Repo --> Docs[docs/ runbooks]
+  Repo --> Workflows[.github/workflows/ publisher]
+  Tools --> Dist[dist/ generated site]
+  Workflows --> Pages[GitHub Pages]
+```
+
+## Local verification
+
+```bash
+node --version
+python3 tools/verify.py
+node tools/no-registry-preflight.mjs
+node tools/pathspec-proof-kernel.mjs
+node tools/workflow-reference-auditor.mjs
+node tools/docs-link-checker.mjs
+node tests/documentation.test.mjs
+node tools/run-all-tests.mjs
+python3 tools/build.py
+node tools/run-existing-kernels.mjs
+```
+
+## GitHub Web UI deployment summary
+
+1. If applying an overlay, download and unzip it locally. Upload the overlay contents, not the ZIP file.
+2. Commit uploaded contents to `main`.
+3. Open GitHub Actions and run **GoalOS AGIJobManager Ascension Institutional Website Publisher v42**.
+4. Use `deploy_pages = true` and `commit_generated_source = true`.
+5. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
+6. Verify `dist/production-url.json` and then verify the production pages.
+7. Old red workflow logs remain historical; rerun the current publisher after fixing source.
 
-## Sovereign Machine Economy v10
+## Claim boundary
 
-This repository now covers the GoalOS AGIALPHA Ascension implementation lineage inside the AGIJobManager Ascension site:
+### What this claims
 
-- META-AGENTIC α‑AGI: institution foundry and selection logic.
-- AGI Alpha Node v0: deterministic runtime and proof-flight posture.
-- AGI Jobs v0 (v2): work OS, validators, proof parliament and Chronicle memory.
-- AGIJobManager: Ethereum Mainnet settlement rail.
+This repository claims to provide a public-safe static proof-settlement demonstration surface, data contracts, schemas, verification tooling, and documentation for GoalOS AGIJobManager Ascension.
 
-Public route: `https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html`
+### What this does not claim
 
-The public pages remain default-deny and local. The separated Expert Console contains wallet and Mainnet execution capability with explicit user gates.
+It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, investment opportunity, legal advice, financial advice, tax advice, medical advice, or real-world production authority from public pages.
 
+### What would prove more
 
-## Final Assurance Kernel v11
+Real tasks, baselines, ProofBundles, replay logs, validator reports, cost/risk ledgers, delayed outcomes, and independent reproduction.
 
-The repository includes an automated assurance kernel that checks public/default-deny surfaces, Expert Console Mainnet gates, canonical identities, action catalogs, Evidence Docket posture, Sovereign Machine Economy lineage, build manifests, and file hashes.
+### What would falsify this
 
-Open after deployment:
+Baselines beat GoalOS under equal budget; Evidence Dockets are unreplayable; proof gates are gameable; rollback fails; the public/private boundary fails; coordination overhead dominates verified value; or safety and claim boundaries fail.
 
-- https://montrealai.github.io/goalos-agijobmanager-ascension/assurance.html
-- https://montrealai.github.io/goalos-agijobmanager-ascension/FINAL_ASSURANCE_DOCKET_V11.json
+## Documentation
 
-Boundary: this is reproducible automated assurance, not a legal third-party audit opinion or production-fund authorization.
-
-
-## Legal/Data-Zero Shield v12
-
-This repository intentionally avoids user-data collection and publishes explicit legal, privacy, regulatory, investment, audit, and third-party responsibility boundaries.
-
-- Privacy: [`site/privacy.html`](site/privacy.html)
-- Terms: [`site/terms.html`](site/terms.html)
-- Legal boundary: [`site/legal.html`](site/legal.html)
-- Regulatory boundary: [`site/regulatory-boundary.html`](site/regulatory-boundary.html)
-- Machine-readable policy: [`data/legal-boundary-policy.json`](data/legal-boundary-policy.json)
-
-The public site is static and public-safe by default: no accounts, no forms, no analytics, no cookies, no advertising pixels, no intentional personal-data collection, no custody, no legal advice, no investment advice, and no audit certification. The separated Expert Console remains user-directed and wallet-signed.
-
-
-## AGIALPHA token boundary
-
-Official AGIALPHA Ethereum Mainnet address: `0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA`. AGIALPHA is treated as a pre-existing public-market token and is not available from MontrealAI, this website, or this repository. Nothing here is an offer, sale, recommendation, exchange service, custody service, price support, liquidity support, or investment advice. Users/operators are solely responsible for any third-party market, wallet, RPC, tax, securities, sanctions, privacy, smart-contract, or jurisdictional review.
-
-
-## Publisher posture
-
-The current publisher is v15 Pathspec-Proof Final: zero registry installs, vendored Expert Console dependency, `git add -A` generated commits, public wallet-free pages, Expert-only transaction surface, Data-Zero legal boundary, and AGIALPHA third-party-market boundary.
-
-## User-friendly autonomous demos
-
-The site now includes a browser-local user path:
-
-- `start.html` — guided first-run path.
-- `demo-lab.html` — autonomous local proof-cycle demos with downloadable public-safe dockets.
-- `mission-studio.html` — plain-language objective to local GoalOS proof-pack JSON.
-- `proof-cards.html` — copyable stakeholder explanations.
-
-These demos do not use accounts, cookies, analytics, form submissions, wallet connection, network requests, token availability, fund authorization, or production authority.
-
-
-## Browser-local Coordination Lab
-
-The v17 addition adds `coordination-lab.html`: a 100% browser-local proof-governed multi-agent institution demo. Users can compare swarm, fixed-crew, and proof-governed institution modes, run ten proof gates, inspect a Chronicle trace, and download a public-safe Evidence Docket JSON. No accounts, forms, analytics, cookies, storage, wallet connection, network request, token approval, or Mainnet broadcast are used.
-
-
-## v19 Proof Gradient Arena
-
-New public demonstration: `/proof-gradient-arena.html` shows the GoalOS Selection Gate. Score is advisory; gates are mandatory. Users can run the local simulator, inspect hard gates, export a SelectionCertificate, and download a public-safe Evidence Docket.
-
-
-## Public demonstrations
-
-- Proof-to-Action Theatre: objective to governed decision state.
-- Proof Gradient Arena: score is advisory; hard gates decide propagation.
-- Chronicle Compounding Lab: accepted proof becomes reusable capability; no Chronicle entry means no institutional memory.
-
-
-## v21 · Ascension Inflow Control Room
-
-Browser-local public demonstration of regulated open-system inflow: compute, data, tasks, incentives, feedback, governance, and tools become trusted work only through proof, validation, settlement, and reuse. Route: `/ascension-inflow-control.html`.
-
-
-## v22 Claim Boundary Firewall
-
-Adds `/claim-boundary-firewall.html`, a browser-local public demonstration of GoalOS claim discipline: a public claim enters the Verifier Mesh and must pass provenance, evidence, contradiction, risk, replay, public/private boundary, and human-review gates before a public-safe Evidence Docket can be exported.
-
-## v23 — Replay & Falsification Gauntlet
-
-The Replay & Falsification Gauntlet adds a browser-local public demonstration of the GoalOS replay standard: a proof claim advances only when it can be replayed, challenged, compared with baselines, bounded by public/private proof rules, and handed to human review.
-
-Routes:
-
-- `/replay-falsification-gauntlet.html`
-- `/replay-falsification-gauntlet-demo.json`
-
-The page remains public-safe: no account, no cookies, no analytics, no storage, no wallet connection, no network request, no token route, no transaction broadcast, and no user data wanted.
-
-## v24 — Sovereign Experience Stream
-
-New browser-local public demonstration:
-
-- `/sovereign-experience-stream.html`
-- `/sovereign-experience-stream-demo.json`
-
-Core lesson: evidence bundles are not only audit logs. Only replayable, validated, public-safe experience may become governed institutional learning, Chronicle memory, reward-ledger signal, router update candidate, or policy-update candidate.
-
-The page remains Data-Zero: no account, no form, no analytics, no cookies, no storage, no wallet connection, no network request, no token route, no transaction broadcast, and no production authority.
-
-
-## v25 · Proof-Backed Upgrade Foundry
-
-New browser-local page: `proof-backed-upgrade-foundry.html`.
-
-It demonstrates the GoalOS commercial primitive: an artifact earns a proof-backed upgrade right only after proof, eval, risk, scope, canary, challenge-window, rollback, and human-review gates. No user data, account, analytics, storage, wallet connection, network request, token route, transaction broadcast, or production authority is used.
-
-
-## v26 MandateEpoch Clearinghouse
-
-New public demo: [`mandate-epoch-clearinghouse.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/mandate-epoch-clearinghouse.html). It shows how one mandate can clear many proof receipts through public roots, quarantine, challenge windows, AGIJobManager-compatible checkpoint posture, and Chronicle memory without wallet, network, storage, or user-data collection.
-
-## v27 Real-Task Benchmark Bridge
-
-New public demo: [`real-task-benchmark-bridge.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/real-task-benchmark-bridge.html).
-
-It demonstrates the GoalOS empirical claim boundary: architecture becomes credible only through real tasks, equal-budget baselines, ProofBundles, replay logs, cost/risk ledgers, validator reports, delayed outcomes, and human review. Users can compare report-only, single-agent, unstructured swarm, fixed crew, GoalOS routed constellation, GoalOS + Chronicle reuse, and external-replay candidate modes, then export a public-safe BenchmarkEvidenceDocket JSON.
-
-The page remains Data-Zero: no account, no form, no analytics, no cookies, no storage, no wallet connection, no network request, no token route, no transaction broadcast, no production authority, and no user data wanted.
-
-## Proof-Carrying Artifact Passport
-
-The v29 public demo shows how a reusable capability earns a proof-carrying artifact passport: stable identity, immutable version hash, proof history, evaluator attestations, scope authorization, rollback target, challenge window, and public/private proof boundary. It is browser-local and public-safe: no user data, wallet, network request, token route, transaction, or production authority.
-
-
-## v30 — Proof-Conditioned Router Observatory
-
-The repository now includes `/proof-conditioned-router-observatory.html`, a browser-local demonstration of GoalOS routing: select the smallest sufficient agent constellation, bind every role to a proof obligation, assign validators, define stopping/escalation rules, and export a public-safe `GoalOSProofConditionedRoutingReceipt`.
-
-Core law: **Route the institution, not the swarm.**
-
-The page remains default-deny: no account, no forms, no cookies, no analytics, no storage, no wallet, no network request, no token route, no transaction broadcast, and no user data wanted.
+Start at [docs/README.md](docs/README.md), then continue to [Getting Started](docs/GETTING_STARTED.md), [Architecture](docs/ARCHITECTURE.md), [Demo Catalog](docs/DEMO_CATALOG.md), [Claim Boundary](docs/CLAIM_BOUNDARY.md), and [AGIALPHA Boundary](docs/AGIALPHA_BOUNDARY.md).

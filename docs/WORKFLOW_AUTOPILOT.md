@@ -1,24 +1,8 @@
 # Workflow Autopilot
 
-[Docs index](README.md)
+The publisher builds, verifies, commits generated source when requested, and deploys GitHub Pages when requested. Inputs: `deploy_pages`, `commit_generated_source`, `run_live_factual_check`, and `strict_live_factual_check`. Safe defaults deploy generated static pages without live RPC dependency. It never installs registry packages, collects data, moves funds, or grants production authority. Live factual checks are optional because RPC availability is environment-specific. Verify `dist/production-url.json` and production pages after every run.
 
-## What it does
 
-The publisher rehydrates missing public routes, runs verification, builds `dist/`, optionally commits generated source, and deploys GitHub Pages.
+## Shared boundary
 
-## What it never does
-
-It does not install registry packages, collect user data, connect wallets, approve tokens, broadcast transactions, or move funds.
-
-## Inputs
-
-| Input | Safe default | Use |
-| --- | --- | --- |
-| `deploy_pages` | `true` | Publish to GitHub Pages. |
-| `commit_generated_source` | `true` | Commit generated artifacts. |
-| `run_live_factual_check` | `false` | Only enable with `ETHEREUM_RPC_URL`. |
-| `strict_live_factual_check` | `false` | Only for configured operators. |
-
-## Troubleshooting
-
-Run `node tools/workflow-reference-auditor.mjs`, check Pages permissions, then rerun the workflow.
+Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

@@ -1,47 +1,19 @@
 # Troubleshooting
 
-[Docs index](README.md)
+- Red historical workflow runs are immutable; rerun after fixing source.
+- Missing route files: compare links with `site/*.html`.
+- Missing kernel files: run `node tools/run-existing-kernels.mjs`.
+- Workflow reference failures: run `node tools/workflow-reference-auditor.mjs`.
+- Stale workflow names: use the current publisher name in `.github/workflows/`.
+- GitHub Pages delay: wait, then inspect `dist/production-url.json`.
+- Pages permissions: verify Pages source and Actions permissions.
+- Upload overlay contents, not ZIP.
+- Browser cache: hard refresh.
+- Menu stacking: inspect generated page headers and Site Command only once.
+- No-JS/placeholder checks: run `python3 tools/verify.py`.
+- Docs link failures: run `node tools/docs-link-checker.mjs` and fix local links.
 
-## Red historical workflow runs remain visible
 
-GitHub Actions logs are historical records. A red run cannot be edited into a green run. Fix source, rerun the current publisher workflow, and judge the latest run by its own logs.
+## Shared boundary
 
-## Missing route files
-
-If a public route is referenced by a catalog but no matching file exists in `site/`, inspect `data/site-navigation-v41.json`, `data/site-navigation-catalog.json`, and `tools/site-rehydrate.mjs`. Restore the route from source when possible; do not delete catalog entries blindly.
-
-## Missing kernel files
-
-If a script references a missing kernel, inspect `package.json`, `tools/run-existing-kernels.mjs`, and the matching `tests/*.test.mjs` file. Repair only dependency-free repository-local files; do not add package registry dependencies.
-
-## Stale workflow names
-
-The current publisher workflow file is `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`. The human-readable workflow name is defined inside that YAML file and may be longer than the filename.
-
-## GitHub Pages delay
-
-A green workflow can still take a short time to appear on GitHub Pages. Verify the deployment URL from the workflow summary, then refresh the production route after the Pages deployment completes.
-
-## Pages environment permissions
-
-If deployment fails with a permissions or environment error, check repository Settings → Pages and Actions permissions. Recommended settings are documented in [GitHub settings guide](GITHUB_SETTINGS_GUIDE.md).
-
-## Upload overlay contents, not ZIP
-
-When using GitHub Web UI, open the overlay folder and upload the contained files/folders. Do not upload the ZIP archive itself unless the repository explicitly expects that archive.
-
-## Browser cache
-
-If production appears stale after a successful deploy, hard-refresh the route or open a private browsing window. Static assets may be cached by the browser.
-
-## production-url.json inspection
-
-After publication, inspect `production-url.json` in the generated site if present. It should point to `https://montrealai.github.io/goalos-agijobmanager-ascension/`.
-
-## Menu stacking diagnosis
-
-If two menus appear stacked, inspect shared shell assets before adding new navigation. Prefer updating the existing Site Command / Command Center catalog rather than adding another header.
-
-## Docs link checker failures
-
-Run `node tools/docs-link-checker.mjs`. Missing local links must be fixed. External links are warned but not fetched. Anchor warnings mean the target file exists but the exact heading was not deeply verified.
+Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

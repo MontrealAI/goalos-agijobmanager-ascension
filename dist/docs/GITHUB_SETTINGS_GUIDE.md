@@ -1,60 +1,14 @@
 # GitHub Settings Guide
 
-Codex cannot reliably change repository settings through code. This guide lists recommended GitHub UI settings for maintainers to review manually.
+Codex cannot reliably change repository settings by code. Recommended About description: GoalOS-native AGIJobManager Ascension: public-safe proof-settlement demos, Evidence Dockets, settlement lifecycle, claim boundaries, and autonomous GitHub Pages publication.
 
-## About panel
+Recommended website: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
-Recommended description:
+Recommended topics: goalos, agialpha, agijobmanager, proof-of-evolution, evidence-docket, proof-settlement, governed-agents, multi-agent-systems, github-pages, browser-local, public-safe, validator-gated, proof-carrying-artifacts, machine-work.
 
-> GoalOS-native AGIJobManager Ascension: public-safe proof-settlement demos, Evidence Dockets, settlement lifecycle, claim boundaries, and autonomous GitHub Pages publication.
+Set Pages to GitHub Actions, allow Actions to write contents/pages/id-token, enable branch protection, code scanning where available, private vulnerability reporting, and issue/discussion settings appropriate for public-safe support.
 
-Recommended website:
 
-<https://montrealai.github.io/goalos-agijobmanager-ascension/>
+## Shared boundary
 
-Recommended topics:
-
-- `goalos`
-- `agialpha`
-- `agijobmanager`
-- `proof-of-evolution`
-- `evidence-docket`
-- `proof-settlement`
-- `governed-agents`
-- `multi-agent-systems`
-- `github-pages`
-- `browser-local`
-- `public-safe`
-- `validator-gated`
-- `proof-carrying-artifacts`
-- `machine-work`
-
-## Pages
-
-- Source: GitHub Actions.
-- Production URL: <https://montrealai.github.io/goalos-agijobmanager-ascension/>.
-- Keep the publisher workflow name aligned with [docs/WORKFLOW_AUTOPILOT.md](WORKFLOW_AUTOPILOT.md).
-
-## Actions permissions
-
-- Allow GitHub Actions to run for this repository.
-- Permit the publisher workflow to write generated source and deploy Pages when maintainers intentionally run it.
-- Keep `ETHEREUM_RPC_URL` unset unless live factual checks are intentionally configured.
-
-## Collaboration settings
-
-- Enable Issues.
-- Enable Discussions if maintainers want public Q&A separate from bug reports.
-- Use the issue templates in `.github/ISSUE_TEMPLATE/`.
-- Use the pull request template in `.github/PULL_REQUEST_TEMPLATE.md`.
-
-## Security settings
-
-- Enable Dependabot alerts if dependencies are introduced in the future.
-- Enable code scanning if available.
-- Require branch protection for `main` if compatible with the publisher workflow.
-- Prefer human review before publication-affecting changes.
-
-## Boundary reminder
-
-These settings recommendations do not mean the settings have been changed. They also do not create production authority, legal advice, financial advice, token availability, external audit completion, production certification, or achieved AGI/ASI claims.
+Public demos are browser-local and public-safe: no user data wanted, no forms, no analytics, no cookies, no localStorage/sessionStorage, no public wallet connection, no public token approval, no public network switching, no public transaction broadcast, no funds moved, and no production authority. This material is not legal, financial, investment, tax, medical, audit, safety-certification, or professional advice. It does not claim achieved AGI, achieved ASI, empirical SOTA, external audit completed, production certified, safe autonomy proven, guaranteed return, or investment opportunity.

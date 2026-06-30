@@ -12,7 +12,7 @@
     "v37-site-experience-atlas",
     "v37-website-command-center"
   ],
-  "builtAt": "2026-06-30T12:46:32.247660Z",
+  "builtAt": "2026-06-30T13:09:54.045163Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -41,7 +41,7 @@
     },
     {
       "path": "FINAL_ASSURANCE_DOCKET_V11.json",
-      "sha256": "19bd6eba152255eb6843663996ea1f4ae9fa16b0ef32ef7845297ba42d08efd6",
+      "sha256": "e302bb121f7e5915a80b23cd42230e536b5c56e9172fdb4524fee2c78191f157",
       "bytes": 12605
     },
     {
@@ -990,14 +990,19 @@
       "bytes": 3621
     },
     {
+      "path": "docs/ACCESSIBILITY_AND_SEO.md",
+      "sha256": "64e6b1f772873261b09e6a004d75f443247190d4fbdbb9a66ba12407d7bb6927",
+      "bytes": 1061
+    },
+    {
       "path": "docs/ACTION_GRAPH_HANDOFF_V28.md",
       "sha256": "36fa2531e91b8607bc607dbd4b6067e136178437f462f010fbd4ac3792206e26",
       "bytes": 1638
     },
     {
       "path": "docs/AGIALPHA_BOUNDARY.md",
-      "sha256": "90e9f8e28f982974ec549096ac5c73df8464bea6a5c1acb21db028af094fc284",
-      "bytes": 2091
+      "sha256": "3e60f423433d28b7c365aedb5e7f0bc916421efa0897830c54122ee370411e0f",
+      "bytes": 1407
     },
     {
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
@@ -1006,8 +1011,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "aee9a544e5926d7aa9db01e33558d82e95de79de0d91bcc96ae2faae469b4d68",
-      "bytes": 3356
+      "sha256": "163f64c4c582f80eeb8e057adcb1e08d47e51d09f2b2b635e931dc78ae80a04b",
+      "bytes": 1351
     },
     {
       "path": "docs/ASCENSION_FLIGHT_DECK_V31.md",
@@ -1036,8 +1041,8 @@
     },
     {
       "path": "docs/CLAIM_BOUNDARY.md",
-      "sha256": "446764c432c0cd964e0acb808a5f200a3c20e58305b96a974c1248a1217ea80f",
-      "bytes": 388
+      "sha256": "aee8c3e9202eb5c2714ea06ee671c592f927d1df29d488133d523636e8a5b89a",
+      "bytes": 1704
     },
     {
       "path": "docs/CLAIM_BOUNDARY_FIREWALL_V22.md",
@@ -1061,8 +1066,8 @@
     },
     {
       "path": "docs/DEMO_CATALOG.md",
-      "sha256": "33b91dbeeacdbcca6ab26213fec5d6e3185ead224d8b9a8bda539afaff606ef5",
-      "bytes": 8299
+      "sha256": "b3e10780c07eed2a7f5148edd63cf07220513dd80fd5ab075fbd66fd1a053091",
+      "bytes": 2090
     },
     {
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
@@ -1076,8 +1081,8 @@
     },
     {
       "path": "docs/DEPLOYMENT_GITHUB_WEB_UI.md",
-      "sha256": "e479fe6d6bc71fd84220726c94f2cb24ad100a296ba1dfbec53f760c721cb777",
-      "bytes": 691
+      "sha256": "95bd9be9350bcb98234bb80cca7d2b3341f06f64094d01184d3eccaf8c020cbe",
+      "bytes": 1155
     },
     {
       "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
@@ -1101,8 +1106,8 @@
     },
     {
       "path": "docs/FAQ.md",
-      "sha256": "239a9233f9df0789f6db0530e6ea2e5192940d125737fbcac37968c9498cdc1e",
-      "bytes": 1011
+      "sha256": "8c799e2069aa72b32c047b0342799997df103f4705229f02dcc31cc47c905a8b",
+      "bytes": 1680
     },
     {
       "path": "docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
@@ -1111,13 +1116,13 @@
     },
     {
       "path": "docs/GETTING_STARTED.md",
-      "sha256": "ccdb6c668b834c801623132227b5e2a69eb78f2be419031e9d9349c991973d0e",
-      "bytes": 925
+      "sha256": "c7dfe6231f5a26095f3948238347ee4d9331d8a83f0f7b3542bc29e4354aec86",
+      "bytes": 1527
     },
     {
       "path": "docs/GITHUB_SETTINGS_GUIDE.md",
-      "sha256": "37ff56e017f694239d958918c5fab21be0d90ef1582071952f21b0ac585cb45c",
-      "bytes": 2068
+      "sha256": "c2aa016c52a5fe145e145c45675c9ed6ef12664344b3e4c67a771b9f8219c588",
+      "bytes": 1469
     },
     {
       "path": "docs/INSTITUTIONAL_WEBSITE_FINALIZATION_V42.md",
@@ -1216,8 +1221,8 @@
     },
     {
       "path": "docs/PROOF_OBJECTS.md",
-      "sha256": "981726740a7fd27b44e8df38b836a731fe3b9ff9a2374c36a61ba7d92bb3f6b2",
-      "bytes": 4467
+      "sha256": "6cf80e6cf88264ace6d6d40177b403aeda39b11123d89d3df7f86a556a6e8680",
+      "bytes": 1678
     },
     {
       "path": "docs/PROOF_SETTLEMENT_LIFECYCLE_V36.md",
@@ -1235,9 +1240,14 @@
       "bytes": 1389
     },
     {
+      "path": "docs/PUBLICATION_STANDARD.md",
+      "sha256": "b4e995c383aba580f8dc6c5ea7f1f8b8e6b4257c4f19467d6d0c80af7dc43391",
+      "bytes": 965
+    },
+    {
       "path": "docs/README.md",
-      "sha256": "2dffea2c50a5495ff5894944d3e80c07cdb7317e9c695ee4c3632b13ed9aa7af",
-      "bytes": 3921
+      "sha256": "6c74733ca540b360e419de88ad2804061103d00c01ddc7269fa0d01326631507",
+      "bytes": 1395
     },
     {
       "path": "docs/REAL_TASK_BENCHMARK_BRIDGE_V27.md",
@@ -1246,8 +1256,8 @@
     },
     {
       "path": "docs/RELEASE_CHECKLIST.md",
-      "sha256": "0aebcae244a42711e92db5affef0ca9d9333c4cb3153644446e05553161ea61a",
-      "bytes": 1847
+      "sha256": "8caa3c95bc023d78fa04bff9c36b9aa44de44980b052246fd884fd5ae9bbaeae",
+      "bytes": 1040
     },
     {
       "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
@@ -1256,8 +1266,8 @@
     },
     {
       "path": "docs/SECURITY_PRIVACY_BOUNDARY.md",
-      "sha256": "03885ce3b8c72af3e81b43ae3ae0e9ef8c8f3fba9e0c2b90ff652c524a3f23cb",
-      "bytes": 1707
+      "sha256": "3d0ba4449c36add132a5d489b25523eb340b330ff74b02589854f660d0702102",
+      "bytes": 1184
     },
     {
       "path": "docs/SITE_COMMAND_CENTER_V37.md",
@@ -1291,8 +1301,8 @@
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "64e27b06040991af3cb1476daafeb2aac09d9c8a71ea12181db5cee006fc435e",
-      "bytes": 2612
+      "sha256": "5ee11f07bffe3c7ce33fd8845f3cdf7b8d21e37aa7908d03f521568eb65f9b04",
+      "bytes": 1412
     },
     {
       "path": "docs/TRUST_EQUATION_SIMULATOR_V35.md",
@@ -1316,13 +1326,18 @@
     },
     {
       "path": "docs/WORKFLOW_AUTOPILOT.md",
-      "sha256": "fbb3b1a3e1b88906377d87cc65e31029e04c1b4eee380bd68d174016d3b15f9a",
-      "bytes": 824
+      "sha256": "933a3b207905f06a06ce9a5ff5031652197d898b7fb6eb8c7a0569f5019bc4aa",
+      "bytes": 1188
     },
     {
       "path": "docs/releases/V41_DOCUMENTATION_UPGRADE.md",
       "sha256": "162947c3e199bfde1301df4d7ce55a6bdaec3532f3bdeda45418a88c06d03411",
       "bytes": 2821
+    },
+    {
+      "path": "docs/releases/V43_REPOSITORY_DOCUMENTATION_UPGRADE.md",
+      "sha256": "c0c07daa41e1e0b1c63d3425ec5321d765ede5f3fb386f480a35ad5b86897b16",
+      "bytes": 929
     },
     {
       "path": "docs.html",

@@ -1,19 +1,5 @@
 # Support
 
-This repository is public documentation and browser-local demonstration software.
+Use GitHub issues for public-safe questions, documentation gaps, and demo feedback. Include the route, expected behavior, actual behavior, browser, and operating system. Do not include secrets, private keys, seed phrases, personal data, customer data, or confidential workpapers.
 
-## How to ask a good question
-
-Include:
-
-- Page or route.
-- What you expected.
-- What happened.
-- Browser and operating system if relevant.
-- Commands run and output for developer issues.
-
-Do not include secrets, private keys, seed phrases, RPC credentials, personal data, or confidential workpapers.
-
-## Expectations
-
-Support is best-effort through GitHub issues. The repository does not provide legal, financial, investment, tax, medical, audit, or security certification advice.
+For deployment help, start with `docs/DEPLOYMENT_GITHUB_WEB_UI.md` and `docs/TROUBLESHOOTING.md`.
