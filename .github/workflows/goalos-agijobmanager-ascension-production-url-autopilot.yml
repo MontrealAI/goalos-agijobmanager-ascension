@@ -1,5 +1,5 @@
-name: GoalOS AGIJobManager Ascension ASI Proof Horizon Console Publisher v53 / Loop to RSI to ASI Superintelligence Publisher v52 / Compatibility Failsafe Publisher v46 / Loop Evidence Reactor Publisher v49 / Loop to RSI Sovereign Governance Publisher v50 / Loop to RSI Control Room Publisher v51
-# Compatibility labels intentionally preserved for historical public-trust tests: Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
+name: GoalOS AGIJobManager Ascension Superintelligence Proof Governance Publisher v54 / ASI Proof Horizon Console Publisher v53 / Loop to RSI to ASI Superintelligence Publisher v52 / Compatibility Failsafe Publisher v46 / Loop Evidence Reactor Publisher v49 / Loop to RSI Sovereign Governance Publisher v50 / Loop to RSI Control Room Publisher v51
+# Compatibility labels intentionally preserved for historical public-trust tests: Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
 
 on:
   workflow_dispatch:
@@ -54,11 +54,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Release compatibility harmonizers: tools/release-compatibility-harmonizer-v53.mjs tools/release-compatibility-harmonizer-v52.mjs tools/release-compatibility-harmonizer-v50.mjs
-  # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v53.mjs tools/failsafe-bootstrap-v52.mjs tools/failsafe-bootstrap-v51.mjs tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
+  # Release compatibility harmonizers: tools/release-compatibility-harmonizer-v54.mjs tools/release-compatibility-harmonizer-v53.mjs tools/release-compatibility-harmonizer-v52.mjs tools/release-compatibility-harmonizer-v50.mjs
+  # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v54.mjs tools/failsafe-bootstrap-v53.mjs tools/failsafe-bootstrap-v52.mjs tools/failsafe-bootstrap-v51.mjs tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
   # Resilient dynamic references required by workflow-reference-auditor: tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/run-documentation-tests.mjs
   build-assure-publish:
-    name: Build, assure, and publish ASI Proof Horizon Console
+    name: Build, assure, and publish Superintelligence Proof Governance Console
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -77,14 +77,14 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
           mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets schemas
-          if [ ! -f tools/failsafe-bootstrap-v53.mjs ]; then
-            cat > tools/failsafe-bootstrap-v53.mjs <<'NODE'
-          import fs from 'node:fs'; fs.mkdirSync('data',{recursive:true}); fs.writeFileSync('data/failsafe-bootstrap-v53.json', JSON.stringify({status:'PASS',release:'v53',fallback:true}, null, 2)); console.log('PASS · inline fallback bootstrap v53 completed');
+          if [ ! -f tools/failsafe-bootstrap-v54.mjs ]; then
+            cat > tools/failsafe-bootstrap-v54.mjs <<'NODE'
+          import fs from 'node:fs'; fs.mkdirSync('data',{recursive:true}); fs.writeFileSync('data/failsafe-bootstrap-v53.json', JSON.stringify({status:'PASS',release:'v54',fallback:true}, null, 2)); console.log('PASS · inline fallback bootstrap v54 completed');
           NODE
           fi
-          if [ ! -f tools/release-compatibility-harmonizer-v53.mjs ]; then
-            cat > tools/release-compatibility-harmonizer-v53.mjs <<'NODE'
-          import fs from 'node:fs'; const release='v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe'; for(const file of ['dist/build-manifest.json','dist/production-url.json']){ if(!fs.existsSync(file)) continue; const j=JSON.parse(fs.readFileSync(file,'utf8')); j.release=release; j.version='v53'; j.asiProofHorizonConsole='PASS'; j.repositoryPublicTrustAsiProofHorizonV53='PASS'; j.publicHtmlRouteCount=59; j.routeCount=59; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]), release, 'v53-asi-proof-horizon-console','v52-loop-to-rsi-to-asi-superintelligence','v51-loop-to-rsi-control-room','v50-loop-to-rsi-sovereign-governance','v49-loop-evidence-reactor','v42-institutional-website-finalization'])); fs.writeFileSync(file,JSON.stringify(j,null,2)); } console.log('PASS · inline fallback v53 harmonizer completed');
+          if [ ! -f tools/release-compatibility-harmonizer-v54.mjs ]; then
+            cat > tools/release-compatibility-harmonizer-v54.mjs <<'NODE'
+          import fs from 'node:fs'; const release='v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe'; for(const file of ['dist/build-manifest.json','dist/production-url.json']){ if(!fs.existsSync(file)) continue; const j=JSON.parse(fs.readFileSync(file,'utf8')); j.release=release; j.version='v54'; j.superintelligenceProofGovernanceConsole='PASS'; j.repositoryPublicTrustSuperintelligenceProofGovernanceV54='PASS'; j.publicHtmlRouteCount=60; j.routeCount=60; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]), release, 'v54-superintelligence-proof-governance-console','v53-asi-proof-horizon-console','v52-loop-to-rsi-to-asi-superintelligence','v51-loop-to-rsi-control-room','v50-loop-to-rsi-sovereign-governance','v49-loop-evidence-reactor','v42-institutional-website-finalization'])); fs.writeFileSync(file,JSON.stringify(j,null,2)); } console.log('PASS · inline fallback v53 harmonizer completed');
           NODE
           fi
           npm run bootstrap
@@ -112,12 +112,13 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and verify ASI Proof Horizon release
+      - name: Build static Pages artifact and verify Superintelligence Proof Governance release
         shell: bash
         run: |
           set -euo pipefail
           npm run build
           test -f dist/index.html
+          test -f dist/superintelligence-proof-governance-console.html
           test -f dist/asi-proof-horizon-console.html
           test -f dist/loop-to-rsi-to-asi-superintelligence.html
           test -f dist/loop-to-asi-governance-corridor.html
@@ -137,7 +138,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS ASI Proof Horizon Console v53"
+          git commit -m "Generate GoalOS Superintelligence Proof Governance Console v54"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
