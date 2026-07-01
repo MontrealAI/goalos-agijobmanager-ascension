@@ -21,14 +21,20 @@
     "v42-institutional-website-finalization",
     "v41-navigation-source-polish-final",
     "v40-navigation-polish-failsafe",
+    "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
+    "v45-repository-public-trust-zero-missing-test-failsafe",
+    "v39-experience-concierge-complete-navigation",
+    "v38-navigation-system-final",
+    "v37-site-command-center",
+    "v37-site-experience-atlas",
+    "v37-website-command-center",
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
-    "v42-v43-v44-v45-v46-v47-v48-v49-loop-evidence-reactor-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe"
   ],
-  "builtAt": "2026-07-01T20:15:07.566945Z",
+  "builtAt": "2026-07-01T22:30:59.213879Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -687,8 +693,8 @@
     },
     {
       "path": "canonical-route-manifest-v46.json",
-      "sha256": "a43cd5b199e57c9ae0f005e6d778e8f9a7569b907ae4491b5be57c5dc9f69986",
-      "bytes": 28414
+      "sha256": "38e4e01b66ef1cfa45170846884976648e9d2d6c23f6577088fa9ead2a4e1761",
+      "bytes": 28181
     },
     {
       "path": "canonical-route-manifest-v47.json",
@@ -732,8 +738,8 @@
     },
     {
       "path": "canonical-route-manifest.json",
-      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
-      "bytes": 24891
+      "sha256": "d1fe8180b02712744104163e23be57589522d3c414aabc8cf7e1d82e0180c439",
+      "bytes": 32604
     },
     {
       "path": "capability-conformance.json",
@@ -832,8 +838,8 @@
     },
     {
       "path": "data/canonical-route-manifest-v46.json",
-      "sha256": "a43cd5b199e57c9ae0f005e6d778e8f9a7569b907ae4491b5be57c5dc9f69986",
-      "bytes": 28414
+      "sha256": "38e4e01b66ef1cfa45170846884976648e9d2d6c23f6577088fa9ead2a4e1761",
+      "bytes": 28181
     },
     {
       "path": "data/canonical-route-manifest-v47.json",
@@ -877,8 +883,8 @@
     },
     {
       "path": "data/canonical-route-manifest.json",
-      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
-      "bytes": 24891
+      "sha256": "d1fe8180b02712744104163e23be57589522d3c414aabc8cf7e1d82e0180c439",
+      "bytes": 32604
     },
     {
       "path": "data/capability-contract.json",
@@ -927,7 +933,7 @@
     },
     {
       "path": "data/failsafe-bootstrap-v50.json",
-      "sha256": "33ad218f86e75c8b261432e2bfbf7fa545fe996b147330847bdef3533236896c",
+      "sha256": "9693380bbec1978b740b38302a9599616de47520e2c92ef9c44c2f40cdfd7714",
       "bytes": 99
     },
     {
@@ -947,7 +953,7 @@
     },
     {
       "path": "data/failsafe-bootstrap-v54.json",
-      "sha256": "606f0d493e8e08ee1494749128eaffc9274f8123f88152b5e821d4000f425e27",
+      "sha256": "21f138203a0f405b1192f8205476f483e0cf52c3ba34ed354eec0c7255367afa",
       "bytes": 107
     },
     {
@@ -1197,8 +1203,8 @@
     },
     {
       "path": "docs/ACCESSIBILITY_QA.md",
-      "sha256": "d92a2fc5adc9b8baf17099f49925bf68eb2e344501d7b4e913780112a9b2ee08",
-      "bytes": 1361
+      "sha256": "210cd20d312786d89f80b88fc2128df6c0e7f0b975ae5202accbd811a9209d38",
+      "bytes": 1189
     },
     {
       "path": "docs/ACTION_GRAPH_HANDOFF_V28.md",
@@ -1237,8 +1243,8 @@
     },
     {
       "path": "docs/AGIALPHA_BOUNDARY.md",
-      "sha256": "e4d35115422b81bb74911ec9fb3cc881a3212dcf85cf35d2b877db33d3117f08",
-      "bytes": 739
+      "sha256": "59d5be7477cf1707e77e32728f258479527e760e045549be0b1d1370f6dbf5b1",
+      "bytes": 582
     },
     {
       "path": "docs/AGIALPHA_TOKEN_MARKET_BOUNDARY.md",
@@ -1287,8 +1293,8 @@
     },
     {
       "path": "docs/CLAIM_BOUNDARY.md",
-      "sha256": "5dedd7777f97cd00cf16ec88f7b4a3058a3227d470d5d73958f85744ba7c106c",
-      "bytes": 987
+      "sha256": "e0d8d33147d0f62066f4a72741be46990df0e0054ca910c58ec9f4b64c89a645",
+      "bytes": 601
     },
     {
       "path": "docs/CLAIM_BOUNDARY_FIREWALL_V22.md",
@@ -1317,7 +1323,7 @@
     },
     {
       "path": "docs/DEMO_CATALOG.md",
-      "sha256": "77d32c43494eea886fd077122c9050264701e705905e0c40c4be8e0083797c6b",
+      "sha256": "37a0cff585305b0104aa64b9f5896ec7624300d9a9a267b1555ef40b8e92809a",
       "bytes": 16711
     },
     {
@@ -1334,6 +1340,11 @@
       "path": "docs/DEPLOYMENT_GITHUB_WEB_UI.md",
       "sha256": "59dcb4bc22c5b4d92ecb3d4433326307f949b1758693d42808a3219b094814b0",
       "bytes": 548
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "sha256": "bbb329d4f7f002e9d92efd35ac34060fa7694be1eeaeddfc98880629abc856b0",
+      "bytes": 732
     },
     {
       "path": "docs/EVIDENCE_DOCKET_COMPOSER_V34.md",
@@ -1362,8 +1373,8 @@
     },
     {
       "path": "docs/FAQ.md",
-      "sha256": "de979106f22f04949eee2917bfd5f8b68c117ff82c3fb8d60b522f9bd2b3c1b0",
-      "bytes": 1612
+      "sha256": "f888e8f94a465a8d78b9d7f5da9c804214b7f7138b61768af2d277ec1b01e461",
+      "bytes": 371
     },
     {
       "path": "docs/FINAL_PRODUCTION_ASSURANCE_DOCKET_V11.md",
@@ -1546,6 +1557,16 @@
       "bytes": 965
     },
     {
+      "path": "docs/PUBLIC_SAFE_BOUNDARY.md",
+      "sha256": "9bd48fd0f75e449ed5c7eec377419819b49369a5ca5f6b96cf446dc044ee1b9b",
+      "bytes": 556
+    },
+    {
+      "path": "docs/PUBLIC_TRUST_QA.md",
+      "sha256": "fa930c48d568b9e995ea6db30c30c52618c5dc684fd4ee8c4b609045bce0f63a",
+      "bytes": 273
+    },
+    {
       "path": "docs/QUICKSTART_NON_TECHNICAL.md",
       "sha256": "1e76cbe7fd37c12c232abc73037822b641e452ec630429dbf6687def84d453b5",
       "bytes": 928
@@ -1566,6 +1587,16 @@
       "bytes": 541
     },
     {
+      "path": "docs/RELEASE_INDEX.md",
+      "sha256": "ff31360e657ec4cdd9aecef1e48a38ac1423502b2af4081d910c47d448059039",
+      "bytes": 243
+    },
+    {
+      "path": "docs/RELEASE_PROCESS.md",
+      "sha256": "44587a111f1cee28282de54f9173732d0bbb02e966132a1f63a881cae1c925ca",
+      "bytes": 339
+    },
+    {
       "path": "docs/REPLAY_FALSIFICATION_GAUNTLET_V23.md",
       "sha256": "c8d5f3e9b1411a9d81783f40218a7b29c217520128643eb563977bd0b8833192",
       "bytes": 1791
@@ -1574,6 +1605,26 @@
       "path": "docs/REPOSITORY_AUDIT.md",
       "sha256": "efe4e73f69103e9bade85c3c33c4a9d1899bba93c47227ae63d300aab96a8d64",
       "bytes": 12439
+    },
+    {
+      "path": "docs/REPOSITORY_GOVERNANCE.md",
+      "sha256": "a70336eccacd28f0ee3b89f43ee1668c7e82b60e97df35655ca18f86941a3037",
+      "bytes": 261
+    },
+    {
+      "path": "docs/REPOSITORY_MAP.md",
+      "sha256": "4aafb43828e81826c60e8a2573a85700fa11364cee639522cb2e116eb145956c",
+      "bytes": 412
+    },
+    {
+      "path": "docs/ROUTE_MANIFEST_POLICY.md",
+      "sha256": "ec60b2503219540001d7db6e29a1775aca4350ba3653b9b70f65e30473f99616",
+      "bytes": 614
+    },
+    {
+      "path": "docs/SECURITY_MODEL.md",
+      "sha256": "0ddafa8ef19ab2138ee122d8a9eee588a3bb483bf8f3be9a9738f3873df039d4",
+      "bytes": 401
     },
     {
       "path": "docs/SECURITY_PRIVACY_BOUNDARY.md",
@@ -1617,8 +1668,8 @@
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "492c7868c9f075254798a65fd21d96e18cdc11488bb6950d28c71d8b6f985a8a",
-      "bytes": 1019
+      "sha256": "c3315ac373bae23c4707c7593ff2cb96d4af6f8666f9ca0e47660ec6df9c1cf7",
+      "bytes": 475
     },
     {
       "path": "docs/TRUST_EQUATION_SIMULATOR_V35.md",
@@ -1636,9 +1687,19 @@
       "bytes": 685
     },
     {
+      "path": "docs/USER_GUIDE.md",
+      "sha256": "1a149d9c4512e38820be6f410360d96392d5e8fe138277949db4f96dd3ce2393",
+      "bytes": 893
+    },
+    {
       "path": "docs/WEBSITE_COMMAND_CENTER_V37.md",
       "sha256": "6f36372a276c13aa92c089f1df82b715a97d030a5cb913b22704b84a88309c09",
       "bytes": 641
+    },
+    {
+      "path": "docs/WEBSITE_EXPERIENCE_STANDARD.md",
+      "sha256": "8ab809687f5887f0214882ee95e8367664797a364acc0bd1d63d32f8596c6d4d",
+      "bytes": 570
     },
     {
       "path": "docs/WORKFLOW_AUTOPILOT.md",
@@ -2149,6 +2210,11 @@
       "path": "docs/releases/V54_SUPERINTELLIGENCE_PROOF_GOVERNANCE_CONSOLE.md",
       "sha256": "51d4b9eaae2793dc7c3c4b02df3bdc96c5cd424b9d59f88964ad53aff5b21585",
       "bytes": 606
+    },
+    {
+      "path": "docs/releases/V56_REPOSITORY_WEBSITE_INSTITUTIONAL_EXCELLENCE.md",
+      "sha256": "00e2fe95a83a2f0c657d8cf7815907c82a8c64b16cfdbd80b32d1ad72e186093",
+      "bytes": 1846
     },
     {
       "path": "docs/reports/ASCENSION_FLIGHT_DECK_V31_REPORT.json",
@@ -2867,7 +2933,7 @@
     },
     {
       "path": "failsafe-bootstrap-v50.json",
-      "sha256": "33ad218f86e75c8b261432e2bfbf7fa545fe996b147330847bdef3533236896c",
+      "sha256": "9693380bbec1978b740b38302a9599616de47520e2c92ef9c44c2f40cdfd7714",
       "bytes": 99
     },
     {
@@ -2887,7 +2953,7 @@
     },
     {
       "path": "failsafe-bootstrap-v54.json",
-      "sha256": "606f0d493e8e08ee1494749128eaffc9274f8123f88152b5e821d4000f425e27",
+      "sha256": "21f138203a0f405b1192f8205476f483e0cf52c3ba34ed354eec0c7255367afa",
       "bytes": 107
     },
     {
@@ -3559,8 +3625,6 @@
   "version": "v54",
   "dayScaleLoopObservatory": "PASS",
   "repositoryPublicTrustDayScaleLoopV48": "PASS",
-  "loopEvidenceReactor": "PASS",
-  "repositoryPublicTrustLoopEvidenceReactorV49": "PASS",
   "loopToRsi": "PASS",
   "loopToRsiSovereignGovernance": "PASS",
   "repositoryPublicTrustLoopToRsiV50": "PASS",

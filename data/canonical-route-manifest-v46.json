@@ -1,5 +1,5 @@
 {
-  "version": "v50",
+  "version": "v46",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "routeCount": 55,
   "generatedFrom": "v50-loop-to-rsi-sovereign-governance",
@@ -563,27 +563,21 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
   ],
-  "release": "v50-loop-to-rsi-sovereign-governance",
+  "release": "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
   "releaseAliases": [
-    "v50-loop-to-rsi-sovereign-governance",
-    "v37-site-command-center",
-    "v37-site-experience-atlas",
-    "v37-website-command-center",
-    "v38-navigation-system-final",
-    "v39-experience-concierge-complete-navigation",
-    "v40-navigation-polish-failsafe",
-    "v41-navigation-source-polish-final",
-    "v42-institutional-website-finalization",
     "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
-    "v42-v43-v44-v45-v46-v47-loop-operating-room-compatibility-failsafe",
-    "v43-repository-public-trust-finalization",
-    "v44-repository-public-trust-failsafe",
+    "v46-repository-public-trust-compatibility-failsafe",
     "v45-repository-public-trust-ultimate-failsafe",
     "v45-repository-public-trust-zero-missing-test-failsafe",
-    "v46-repository-public-trust-compatibility-failsafe",
-    "v47-loop-operating-room",
-    "v48-day-scale-loop-observatory",
-    "v49-loop-evidence-reactor",
-    "v50-loop-to-rsi-sovereign-invention"
+    "v44-repository-public-trust-failsafe",
+    "v43-repository-public-trust-finalization",
+    "v42-institutional-website-finalization",
+    "v41-navigation-source-polish-final",
+    "v40-navigation-polish-failsafe",
+    "v39-experience-concierge-complete-navigation",
+    "v38-navigation-system-final",
+    "v37-site-command-center",
+    "v37-site-experience-atlas",
+    "v37-website-command-center"
   ]
 }

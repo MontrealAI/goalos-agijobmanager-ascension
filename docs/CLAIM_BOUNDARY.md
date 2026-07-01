@@ -1,18 +1,7 @@
 # Claim Boundary
 
-## What this claims
+Architecture claims are not empirical claims. Strong public claims require an Evidence Docket with real tasks, baselines, ProofBundles, replay logs, validator reports, cost/safety ledgers, delayed outcomes, and independent review.
 
-Architecture, implementation scaffolding, browser-local public-safe demos, local proof object examples, autonomous static publication workflow, and claim-boundary discipline.
+Forbidden public implications include realized AGI, realized ASI, empirical SOTA, external audit completion, production certification, guaranteed ROI, legal advice, financial advice, investment advice, tax advice, medical advice, and proven safe autonomy.
 
-## What this does not claim
-
-It does not claim achieved AGI, achieved ASI, achieved superintelligence, empirical SOTA, external audit completed, production certified, guaranteed return, legal advice, financial advice, investment opportunity, tax advice, autonomous real-world authority, or AGIALPHA availability from the site.
-
-## What would prove more
-
-Real tasks, baselines, ProofBundles, replay logs, validator reports, cost/risk ledgers, delayed outcomes, independent reproduction, and external review.
-
-## What would falsify this
-
-Baselines beat GoalOS under equal budget; Evidence Dockets are unreplayable; proof gates are gameable; rollback fails; public/private boundary fails; coordination overhead dominates verified value; or safety and claim boundaries fail.
-
+ASI and superintelligence language is a governance horizon, not an achieved-capability claim.
