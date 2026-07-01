@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Loop to ASI Governance Corridor Demo",
+  "type": "object",
+  "required": [
+    "release",
+    "route",
+    "posture",
+    "corridor",
+    "hardGates",
+    "claimBoundary"
+  ],
+  "properties": {
+    "release": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "corridor": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "string"
+      }
+    },
+    "hardGates": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "string"
+      }
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}

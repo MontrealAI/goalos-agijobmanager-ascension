@@ -272,4 +272,11 @@ Baselines beating GoalOS under equal budget, unreplayable Evidence Dockets, game
 
 ### New in v51 — Loop → RSI Control Room
 
+- **Loop → RSI → ASI Governance Console** — [`loop-to-rsi-to-asi-superintelligence.html`](site/loop-to-rsi-to-asi-superintelligence.html): public-safe horizon demo showing proof, replay, baselines, validator quorum, and human authority before any stronger frontier-capability claim can advance.
+
 `/loop-to-rsi-control-room.html` is a browser-local control room showing contract-first loops, ECI, baseline gates, Move-37 handling, replay, dossier packaging, Chronicle, and the human review boundary.
+
+
+## New v52 demonstration
+
+**Loop → RSI → ASI Governance Corridor** shows how a restartable loop becomes deterministic RSI governance and how future ASI-class authority requires evidence, containment, council review, and a human boundary before any stronger claim can advance. Public route: `loop-to-asi-governance-corridor.html`.

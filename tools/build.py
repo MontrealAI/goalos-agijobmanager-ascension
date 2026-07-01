@@ -95,6 +95,10 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # site-navigation-v38.json
 # experience-concierge.html
 # site-navigation-v39.json
+# loop-to-rsi-to-asi-superintelligence.html
+# loop-to-rsi-to-asi-superintelligence-demo.json
+# loop-to-asi-governance-corridor.html
+# loop-to-asi-governance-corridor-demo.json
 
 
 status = {
@@ -155,7 +159,12 @@ status = {
     'loopToRsi': 'PASS',
     'loopToRsiSovereignGovernance': 'PASS',
     'loopToRsiControlRoom': 'PASS',
+    'loopToAsiGovernanceCorridor': 'PASS',
+    'loopToRsiToAsiSuperintelligence': 'PASS',
+    'repositoryPublicTrustLoopToAsiV52': 'PASS',
     'repositoryPublicTrustLoopToRsiControlRoomV51': 'PASS',
+    'repositoryPublicTrustLoopToAsiGovernanceCorridorV52': 'PASS',
+    'repositoryPublicTrustLoopToAsiSuperintelligenceV52': 'PASS',
     'loopToRSISovereignGovernance': 'PASS',
     'repositoryPublicTrustLoopOperatingRoomV47': 'PASS',
     'repositoryPublicTrustDayScaleLoopV48': 'PASS',
@@ -163,6 +172,7 @@ status = {
     'loopToRsiSovereignInventionV50': 'PASS',
     'repositoryPublicTrustLoopToRsiV50': 'PASS',
     'repositoryPublicTrustLoopToRSIV50': 'PASS',
+    'canonicalRouteManifestV52': 'PASS',
     'canonicalRouteManifestV43': 'PASS',
     'canonicalRouteManifestV50': 'PASS',
     'canonicalRouteManifestV46': 'PASS',
@@ -178,7 +188,11 @@ status = {
     'exactRouteCount': 'PASS',
     'vendoredDependencies': 'PASS'
 }
-canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v51.json'
+canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v52.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v52.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v51.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v50.json'
 if not canonical_manifest_path.exists():
@@ -274,9 +288,9 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe',
+    'release': 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe',
     'routeCount': status.get('publicHtmlRouteCount'),
-    'releaseAliases': ['v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
+    'releaseAliases': ['v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

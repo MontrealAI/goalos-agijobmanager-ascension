@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+function ok(c,m){if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)}
+const required=['site/loop-to-asi-governance-corridor.html','site/assets/loop-to-asi-governance-corridor.css','site/assets/loop-to-asi-governance-corridor.js','data/loop-to-asi-governance-corridor-demo.json','schemas/loop-to-asi-governance-corridor.schema.json','docs/LOOP_TO_ASI_GOVERNANCE_CORRIDOR_V52.md'];
+for(const f of required) ok(fs.existsSync(f),`required v52 file exists: ${f}`);
+const html=fs.readFileSync('site/loop-to-asi-governance-corridor.html','utf8');
+const js=fs.readFileSync('site/assets/loop-to-asi-governance-corridor.js','utf8');
+ok(/Loop → RSI → ASI Governance Corridor/.test(html),'page names Loop → RSI → ASI Governance Corridor');
+ok(/future-superintelligence governance/i.test(html),'page frames future-superintelligence governance');
+ok(/LOOP/.test(html)&&/RSI/.test(html)&&/ASI/.test(html)&&/CHRONICLE/.test(html),'page exposes loop-rsi-asi corridor');
+ok(/Capability does not equal authority/i.test(html),'page states capability/authority distinction');
+ok(/CorridorDossier/.test(html+js),'page exports CorridorDossier');
+ok(/No account\. No form\. No wallet\. No token approval\. No network request/i.test(html),'page states public-safe posture');
+ok(/does not claim achieved AGI, achieved ASI/i.test(html),'page preserves ASI claim boundary');
+ok(!/Loading…|>\s*Loading\s*<|localStorage|sessionStorage|document\.cookie|navigator\.sendBeacon|ethereum\.request|eth_sendTransaction|wallet_switchEthereumChain|<form\b|fetch\(|XMLHttpRequest/i.test(html+js),'forbidden public primitives absent');
+const data=JSON.parse(fs.readFileSync('data/loop-to-asi-governance-corridor-demo.json','utf8'));
+ok(data.posture.noWallet && data.posture.noNetworkRequest && data.posture.noBrowserStorage && data.posture.noUserDataWanted,'data contract encodes public-safe posture');
+ok(data.corridor.length===12 && data.corridor[0]==='LOOP' && data.corridor.at(-1)==='CHRONICLE','data contract encodes 12-stage corridor');
+ok(data.hardGates.includes('ArchitectValidatorCouncil') && data.hardGates.includes('HumanBoundary'),'data contract requires council and human boundary');
+ok(data.asiBoundaryRules.some(x=>/narrows authority/.test(x)),'data contract encodes ASI authority narrowing');
+console.log('Loop to ASI Governance Corridor v52 test PASS');

@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **50 canonical public routes** from `data/canonical-route-manifest-v43.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **57 canonical public routes** from `data/canonical-route-manifest-v52.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -115,3 +115,14 @@ This browser-local demo shows how a long-running agent loop becomes deterministi
 Route: `/loop-to-rsi-control-room.html`
 
 A browser-local RSI console that demonstrates how a long-running loop becomes governed recursive improvement: mission contract, separated roles, virtual disk state, ECI, baselines, Move-37 stress gates, replay, dossier packaging, Chronicle, and human review. Output: `RSIDossier`. Boundary: no wallet, no network, no user data, no production authority.
+
+
+## Loop → RSI → ASI Governance Console
+
+Route: `/loop-to-rsi-to-asi-superintelligence.html`
+
+This browser-local demonstration shows the full governance horizon: a restartable long-running loop becomes deterministic RSI governance, then enters an ASI-grade proof boundary where evidence execution, replay integrity, baseline advantage, risk gates, persistence, validator quorum, rollback readiness, public/private proof separation, and human authority decide what can advance. Output artifact: `HorizonDossier`. Boundary: no achieved ASI claim, no wallet, no network, no user data, no production authority.
+
+## Loop → RSI → ASI Governance Corridor
+
+A browser-local control room that turns long-running loops into RSI governance and then shows the added proof, containment, council, and human-boundary gates required for future ASI-class authority. Exports a local CorridorDossier JSON.

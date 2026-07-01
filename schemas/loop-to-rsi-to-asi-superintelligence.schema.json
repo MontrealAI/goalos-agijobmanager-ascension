@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Loop to RSI to ASI Governance Console Demo",
+  "type": "object",
+  "required": [
+    "id",
+    "release",
+    "route",
+    "title",
+    "pipeline",
+    "posture",
+    "gates",
+    "outputArtifact",
+    "claimBoundary"
+  ],
+  "properties": {
+    "id": {
+      "const": "loop-to-rsi-to-asi-superintelligence"
+    },
+    "release": {
+      "type": "string"
+    },
+    "route": {
+      "const": "/loop-to-rsi-to-asi-superintelligence.html"
+    },
+    "title": {
+      "type": "string"
+    },
+    "thesis": {
+      "type": "string"
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      }
+    },
+    "horizonBoundary": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputArtifact": {
+      "const": "HorizonDossier"
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}
