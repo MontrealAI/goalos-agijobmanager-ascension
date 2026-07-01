@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+function ok(c,m){ if(!c){ console.error('FAIL · '+m); process.exit(1); } console.log('PASS · '+m); }
+const page='dist/loop-operating-room.html';
+ok(fs.existsSync(page),'dist Loop Operating Room page exists');
+const h=fs.readFileSync(page,'utf8');
+ok(/GoalOS Loop Operating Room/.test(h),'dist page keeps title');
+ok(/LoopReceipt/.test(h),'dist page keeps receipt export');
+ok(!/Loading…|>\s*Loading\s*</i.test(h),'dist page has no Loading fallback');
+ok(/canonical" href="https:\/\/montrealai\.github\.io\/goalos-agijobmanager-ascension\/loop-operating-room\.html/.test(h),'dist page has canonical URL');
+ok(/og:title/.test(h) && /twitter:card/.test(h),'dist page has social metadata');
+ok(/site-command-v39\.js/.test(h),'dist page keeps floating Site Command access');
+const manifest=JSON.parse(fs.readFileSync('dist/build-manifest.json','utf8'));
+const files=manifest.files.map(f=>f.path);
+ok(files.includes('loop-operating-room.html'),'build manifest includes Loop Operating Room');
+const prod=JSON.parse(fs.readFileSync('dist/production-url.json','utf8'));
+ok(prod.loopOperatingRoom==='PASS','production-url marks Loop Operating Room PASS');
+const routeManifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest-v47.json','utf8'));
+ok(routeManifest.routeCount===routeManifest.pages.length,'v47 route count equals page length');
+ok(routeManifest.pages.some(p=>p.href==='loop-operating-room.html'),'v47 route manifest includes Loop Operating Room');
+console.log('Loop Operating Room v47 kernel PASS');

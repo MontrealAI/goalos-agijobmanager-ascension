@@ -1,0 +1,7 @@
+import fs from 'node:fs';
+function walk(d){let out=[]; if(!fs.existsSync(d)) return out; for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=d+'/'+e.name; if(e.isDirectory()) out=out.concat(walk(p)); else out.push(p)} return out;}
+const dirs=['site', ...(process.env.CHECK_DIST==='true'?['dist']:[])];
+let fail=[];
+for(const d of dirs){for(const f of walk(d).filter(x=>x.endsWith('.html'))){const h=fs.readFileSync(f,'utf8'); if(/Loading…|>\s*Loading\s*</i.test(h)) fail.push(`${f}: Loading fallback`); if(!/<link rel="canonical"/.test(h)) fail.push(`${f}: missing canonical`); if(!/og:title/.test(h)) fail.push(`${f}: missing OpenGraph title`); if(/<form\b|eth_requestAccounts|wallet_switchEthereumChain|eth_sendTransaction/.test(h)) fail.push(`${f}: forbidden public primitive`); }}
+for(const f of ['site/day-scale-loop-observatory.html', ...(process.env.CHECK_DIST==='true'?['dist/day-scale-loop-observatory.html']:[])]){ if(!fs.existsSync(f)) fail.push(`${f}: missing v48 route`); else {const h=fs.readFileSync(f,'utf8'); for(const phrase of ['LongLoopDocket','Virtual disk','Readable trace','no wallet','no network request','no production authority']) if(!h.toLowerCase().includes(phrase.toLowerCase())) fail.push(`${f}: missing ${phrase}`);}}
+if(fail.length){console.error('FAIL · public trust checker v48'); fail.forEach(x=>console.error(' - '+x)); process.exit(1);} console.log('PASS · public trust checker v48 passed');
