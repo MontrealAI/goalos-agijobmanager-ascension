@@ -487,6 +487,16 @@
       ],
       "time": "6 min",
       "why": "Sovereign economy route and institutional economy posture."
+    },
+    {
+      "route": "/loop-to-rsi-sovereign-governance.html",
+      "href": "loop-to-rsi-sovereign-governance.html",
+      "title": "From Loop to RSI \u00b7 Sovereign Governance",
+      "audience": "Advanced users / governance reviewers",
+      "description": "Browser-local demonstration of the transition from long-running agent loops to deterministic RSI governance: ECI, baselines, Move-37, stress tests, dossiers, and mechanical outcome authority.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production action.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
     }
   ],
   "journeys": [

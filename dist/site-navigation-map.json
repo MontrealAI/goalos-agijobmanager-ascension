@@ -12,6 +12,19 @@
   },
   "routes": [
     {
+      "id": "loop-to-rsi-sovereign-governance",
+      "title": "From Loop to RSI",
+      "href": "loop-to-rsi-sovereign-governance.html",
+      "group": "Core",
+      "audience": [
+        "advanced",
+        "operator",
+        "reviewer"
+      ],
+      "time": 8,
+      "summary": "Turns long-running loops into deterministic RSI governance: ECI, baselines, Move-37 stress, dossier, Chronicle."
+    },
+    {
       "id": "command-center",
       "title": "Command Center",
       "href": "index.html",
@@ -533,19 +546,37 @@
       "summary": "Full previous homepage preserved for continuity."
     },
     {
-      "id": "loop-contract-theatre",
-      "title": "Loop Contract Theatre",
-      "href": "loop-contract-theatre.html",
-      "group": "Core idea",
+      "title": "Loop Operating Room",
+      "href": "loop-operating-room.html",
+      "route": "/loop-operating-room.html",
+      "group": "Core",
+      "audience": "All users",
+      "description": "Run a browser-local proof loop: contract, roles, traces, restarts, scores, Evidence Docket, Chronicle, and bottleneck visibility.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local; no wallet, no network, no user data."
+    },
+    {
+      "id": "day-scale-loop-observatory",
+      "title": "Day-Scale Loop Observatory",
+      "href": "day-scale-loop-observatory.html",
+      "group": "Proof Loops",
       "audience": [
-        "new",
-        "builder",
+        "advanced",
         "operator",
-        "reviewer",
-        "all"
+        "reviewer"
       ],
-      "time": "4 min",
-      "why": "Run a contract-first, restart-safe, trace-readable agent loop and export a LoopReceipt."
+      "time": 5,
+      "summary": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session."
+    },
+    {
+      "route": "/loop-evidence-reactor.html",
+      "href": "loop-evidence-reactor.html",
+      "title": "Loop Evidence Reactor",
+      "audience": "AI builders / operators",
+      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
+      "outputArtifact": "LoopDocket",
+      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
     }
   ],
   "journeys": [
@@ -558,7 +589,8 @@
         "flight-deck",
         "trust-equation",
         "until-done",
-        "evidence-docket-composer"
+        "evidence-docket-composer",
+        "day-scale-loop-observatory"
       ]
     },
     {

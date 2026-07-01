@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/</loc></url>
-  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/FINAL_ASSURANCE_DOCKET_V11.json</loc></url>
-  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/FINAL_ASSURANCE_DOCKET_V11.md</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/action-graph-handoff-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/action-graph-handoff.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/agialpha-token-boundary.html</loc></url>
@@ -23,7 +21,9 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v45.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v46.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v47.json</loc></url>
-  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v48.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v49.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v50.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/capability-conformance.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab.html</loc></url>
@@ -32,6 +32,8 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/command-center.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/coordination-engine.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/coordination-lab.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/day-scale-loop-observatory-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/day-scale-loop-observatory.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/demo-lab.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/demo-missions.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/docs.html</loc></url>
@@ -46,12 +48,20 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-hub.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/expert-console.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/expert-mainnet-console.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v49.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v50.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/final-assurance-policy.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/index.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/legal-boundary-policy.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/legal.html</loc></url>
-  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre-demo.json</loc></url>
-  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mainnet-capability-contract.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mandate-epoch-clearinghouse-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mandate-epoch-clearinghouse.html</loc></url>
@@ -94,6 +104,7 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v41.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v42.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v43.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v50.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-rehydration-v39.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-experience-stream-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-experience-stream.html</loc></url>

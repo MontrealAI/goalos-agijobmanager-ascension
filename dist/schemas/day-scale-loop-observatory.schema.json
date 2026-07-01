@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Day-Scale Loop Observatory Demo Contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "release",
+    "route",
+    "publicSafe",
+    "browserLocal",
+    "noWallet",
+    "noNetwork",
+    "virtualFiles",
+    "gates",
+    "roles",
+    "outputs",
+    "claimBoundary"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "publicSafe": {
+      "const": true
+    },
+    "browserLocal": {
+      "const": true
+    },
+    "noWallet": {
+      "const": true
+    },
+    "noNetwork": {
+      "const": true
+    },
+    "noExternalAction": {
+      "const": true
+    },
+    "noUserDataWanted": {
+      "const": true
+    },
+    "coreLaw": {
+      "type": "string"
+    },
+    "virtualFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 5
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 7
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 5
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}
