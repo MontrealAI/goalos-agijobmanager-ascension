@@ -1,0 +1,90 @@
+{
+  "release": "v50-loop-to-rsi-sovereign-invention",
+  "title": "From Loop to RSI",
+  "route": "/loop-to-rsi.html",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi.html",
+  "posture": {
+    "browserLocal": true,
+    "noAccount": true,
+    "noForms": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetwork": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noUserDataWanted": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true
+  },
+  "thesis": "A restartable loop becomes RSI only when recursive improvement is governed by deterministic state, baseline comparisons, evidence contact, replay, stress tests, dossier packaging, and human authority.",
+  "pipeline": [
+    "TARGET",
+    "EMIT",
+    "FILTER",
+    "ATLAS",
+    "TEST-PLAN",
+    "EVAL",
+    "INSERT",
+    "PROMOTE"
+  ],
+  "loopToRsiMap": [
+    {
+      "loopRule": "write the loop, not the prompt",
+      "rsiControl": "deterministic cycle with stage logs"
+    },
+    {
+      "loopRule": "separate the roles",
+      "rsiControl": "target/emitter/filter/evaluator/promoter role separation"
+    },
+    {
+      "loopRule": "negotiate the contract first",
+      "rsiControl": "mission/mandate object before candidate generation"
+    },
+    {
+      "loopRule": "write to disk, not context",
+      "rsiControl": "RSIState with append-only archives and state hashes"
+    },
+    {
+      "loopRule": "let the loop restart",
+      "rsiControl": "drift sentinel and replay integrity"
+    },
+    {
+      "loopRule": "score the subjective",
+      "rsiControl": "baseline-comparative evidence and explicit rubrics"
+    },
+    {
+      "loopRule": "read the traces",
+      "rsiControl": "ECI ledger, proof bundles, dossier evidence"
+    },
+    {
+      "loopRule": "delete the harness",
+      "rsiControl": "remove scaffolds that no longer improve verified work"
+    },
+    {
+      "loopRule": "the bottleneck always moves",
+      "rsiControl": "operational dashboard exposes replay, evidence, exploration, advantage, safety, and state integrity bottlenecks"
+    }
+  ],
+  "hardGates": [
+    "risk",
+    "evidence",
+    "baseline",
+    "persistence",
+    "replay",
+    "validator",
+    "human_authority"
+  ],
+  "move37": {
+    "trigger": "noveltyDistance >= 0.80 and advantageDelta threshold with risk/evidence gates",
+    "requiredSteps": [
+      "recognize",
+      "reproduce",
+      "stress-test",
+      "persistence gate",
+      "dossier packaging"
+    ],
+    "principle": "High novelty raises skepticism."
+  },
+  "claimBoundary": "This page is a browser-local control-plane demonstration. It does not claim achieved RSI, AGI, ASI, SOTA, external audit completion, autonomous sovereignty, production certification, or production authority."
+}

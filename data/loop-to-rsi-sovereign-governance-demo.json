@@ -1,0 +1,63 @@
+{
+  "version": "v50-loop-to-rsi-sovereign-governance",
+  "route": "/loop-to-rsi-sovereign-governance.html",
+  "title": "From Loop to RSI \u00b7 Sovereign Governance",
+  "publicSafe": true,
+  "posture": {
+    "noWallet": true,
+    "zeroNetwork": true,
+    "noBrowserStorage": true,
+    "noUserDataWanted": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noForm": true
+  },
+  "doctrine": [
+    "Exploration is allowed",
+    "Outcome authority is mechanical",
+    "Promotion requires evidence",
+    "Compounding requires persistence",
+    "Autonomy requires authority"
+  ],
+  "pipeline": [
+    "TARGET",
+    "EMIT",
+    "FILTER",
+    "ATLAS",
+    "TEST-PLAN",
+    "EVAL",
+    "INSERT",
+    "PROMOTE"
+  ],
+  "eciLevels": [
+    "E0_SIMULATED",
+    "E1_PROBED",
+    "E2_EXECUTED",
+    "E3_REPLAYED",
+    "E4_STRESS_TESTED",
+    "E5_EXTERNALLY_VALIDATED"
+  ],
+  "move37": [
+    "Recognize",
+    "Reproduce",
+    "Stress-test",
+    "Persistence gate",
+    "Dossier bundle"
+  ],
+  "outputs": [
+    "RSIDossier",
+    "public-safe review brief"
+  ],
+  "boundaries": {
+    "noAccount": true,
+    "noForm": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetwork": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noBrowserStorage": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  }
+}

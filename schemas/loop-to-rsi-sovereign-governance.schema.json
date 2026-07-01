@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/loop-to-rsi-sovereign-governance.schema.json",
+  "title": "From Loop to RSI Sovereign Governance Dossier",
+  "type": "object",
+  "required": [
+    "type",
+    "release",
+    "route",
+    "pipeline",
+    "publicSafe",
+    "claimBoundary"
+  ],
+  "properties": {
+    "type": {
+      "const": "RSIDossier"
+    },
+    "release": {
+      "type": "string"
+    },
+    "route": {
+      "const": "/loop-to-rsi-sovereign-governance.html"
+    },
+    "pipeline": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eciLevel": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "publicSafe": {
+      "type": "object"
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}

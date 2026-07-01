@@ -1,7 +1,16 @@
 {
   "version": "v50",
-  "title": "GoalOS AGIJobManager Ascension Canonical Route Manifest",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "routeCount": 55,
+  "generatedFrom": "v50-loop-to-rsi-sovereign-governance",
+  "posture": {
+    "browserLocal": true,
+    "publicSafe": true,
+    "noUserDataWanted": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noPublicWallet": true
+  },
   "pages": [
     {
       "route": "/action-graph-handoff.html",
@@ -264,14 +273,14 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
     },
     {
-      "title": "Loop Operating Room",
-      "href": "loop-operating-room.html",
       "route": "/loop-operating-room.html",
-      "group": "Core",
-      "audience": "All users",
-      "description": "Run a browser-local proof loop: contract, roles, traces, restarts, scores, Evidence Docket, Chronicle, and bottleneck visibility.",
+      "href": "loop-operating-room.html",
+      "title": "Loop Operating Room",
+      "audience": "All users / operators / developers",
+      "description": "Turns long-running agent work into a proof-governed loop: contract, roles, traces, restarts, evaluator scores, Evidence Docket, Chronicle, and bottleneck visibility.",
       "outputArtifact": "LoopReceipt",
-      "boundary": "Browser-local; no wallet, no network, no user data."
+      "boundary": "Browser-local simulation; no wallet, no network, no user data, no external action.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html"
     },
     {
       "route": "/loop-to-rsi-sovereign-governance.html",
@@ -555,9 +564,26 @@
     }
   ],
   "release": "v50-loop-to-rsi-sovereign-governance",
-  "generatedFrom": "v50-loop-to-rsi-sovereign-governance",
   "releaseAliases": [
     "v50-loop-to-rsi-sovereign-governance",
+    "v37-site-command-center",
+    "v37-site-experience-atlas",
+    "v37-website-command-center",
+    "v38-navigation-system-final",
+    "v39-experience-concierge-complete-navigation",
+    "v40-navigation-polish-failsafe",
+    "v41-navigation-source-polish-final",
+    "v42-institutional-website-finalization",
+    "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
+    "v42-v43-v44-v45-v46-v47-loop-operating-room-compatibility-failsafe",
+    "v43-repository-public-trust-finalization",
+    "v44-repository-public-trust-failsafe",
+    "v45-repository-public-trust-ultimate-failsafe",
+    "v45-repository-public-trust-zero-missing-test-failsafe",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v47-loop-operating-room",
+    "v48-day-scale-loop-observatory",
+    "v49-loop-evidence-reactor",
     "v50-loop-to-rsi-sovereign-invention"
   ]
 }

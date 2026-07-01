@@ -17,7 +17,7 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
 ## 30-second explanation
 
-This repository publishes the public website and implementation scaffold for GoalOS AGIJobManager Ascension. It has **51 canonical public routes** generated from `data/canonical-route-manifest-v47.json`. Start with [Experience Concierge](site/experience-concierge.html) if you are new, or [Command Center](site/command-center.html) if you want the full map.
+This repository publishes the public website and implementation scaffold for GoalOS AGIJobManager Ascension. It has **50 canonical public routes** in the v43 baseline manifest and **55 canonical public routes** in the current v50 manifest. Start with [Experience Concierge](site/experience-concierge.html) if you are new, or [Command Center](site/command-center.html) if you want the full map.
 
 The core idea is simple: AI output is not institutional work until it is bounded, replayable, validated, and packaged as an Evidence Docket, ProofBundle, SettlementReceipt, Chronicle entry, or Governed Decision State. Public demos run in the browser and demonstrate proof logic with public-safe sample data.
 
@@ -45,7 +45,7 @@ No Evidence Docket, no strong public claim. No ProofBundle, no settlement. No re
 
 - Static public website in `site/`.
 - Browser-local public demos, Evidence Docket demos, and proof-settlement lifecycle demos.
-- Canonical route manifest in `data/canonical-route-manifest-v47.json`.
+- Canonical route manifest in `data/canonical-route-manifest-v43.json`.
 - Data contracts in `data/` and JSON schemas in `schemas/`.
 - Dependency-free tests and verification tools in `tests/` and `tools/`.
 - Autonomous GitHub Pages publisher in `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`.
@@ -99,6 +99,7 @@ See [docs/DEMO_CATALOG.md](docs/DEMO_CATALOG.md) for the full human-readable cat
 | [`/expert-console.html`](site/expert-console.html) | Expert operators | Separated expert surface with explicit human authority boundaries. | Expert console state | Expert-only; no public-safe guarantee. |
 | [`/expert-mainnet-console.html`](site/expert-mainnet-console.html) | Expert operators | Separated Mainnet operations chamber requiring deliberate human wallet authority if used. | Expert Mainnet state | Expert-only; human authority required. |
 | [`/`](site/index.html) | Everyone | Public front door for identity, proof posture, boundaries, and best first clicks. | Route summary | Public-safe, read-only. |
+| [`/loop-to-rsi.html`](site/loop-to-rsi.html) | Advanced builders / reviewers | Shows how long-running loops become deterministic RSI governance with ECI, baselines, Move-37 dossier, and mechanical authority gates. | RSIDossier | Browser-local simulation; no production authority. |
 | [`/legal.html`](site/legal.html) | Legal / risk reviewers | Plain-language legal and data-zero boundary. | Boundary statement | No legal advice. |
 | [`/mandate-epoch-clearinghouse.html`](site/mandate-epoch-clearinghouse.html) | Advanced operators | Shows how high-volume proof receipts can be batched, quarantined, and cleared without exposing private work. | MandateEpochReceipt | Local simulation. |
 | [`/mission-studio.html`](site/mission-studio.html) | Operators | Plain-language mission drafting surface for public-safe mission packages. | Mission draft | No submission; local only. |
@@ -123,7 +124,7 @@ See [docs/DEMO_CATALOG.md](docs/DEMO_CATALOG.md) for the full human-readable cat
 | [`/start.html`](site/start.html) | New visitors | Clean first-click path from objective to proof demos. | Route summary | Browser-local guidance. |
 | [`/terms.html`](site/terms.html) | All users | Use boundaries and disclaimers for public demos. | Terms statement | No professional advice. |
 | [`/third-party-responsibility.html`](site/third-party-responsibility.html) | Operators | Places third-party wallet, market, RPC, tax, sanctions, securities, privacy, and jurisdiction responsibility on users/operators. | Boundary statement | Third-party responsibility. |
-| [`/loop-contract-theatre.html`](site/loop-contract-theatre.html) | New users / operators / developers | Shows how days-long agent loops become contract-first, role-separated, restart-safe, trace-readable, and proof-gated. | LoopReceipt | Browser-local simulation; no user data, no storage, no wallet, no network. |
+| [`/loop-operating-room.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html) | All users | Runs a proof-governed agent loop: contract, roles, traces, restarts, evaluator scores, Evidence Docket, Chronicle. | LoopReceipt | Browser-local; no wallet/network/user data. |
 | [`/trust-equation-simulator.html`](site/trust-equation-simulator.html) | New users / reviewers | Shows why output becomes institutional work only after proof, validation, settlement, and reuse. | TrustReceipt | Local simulation; no factual certification. |
 | [`/until-done-mission-control.html`](site/until-done-mission-control.html) | Operators | Demonstrates run-to-completion: GoalOS stops at proof, not at output. | MissionReceipt | Local state machine. |
 | [`/verification.html`](site/verification.html) | Developers / reviewers | Explains verification scripts, build checks, and claim-boundary tests. | Verification summary | No external audit claim. |
@@ -251,3 +252,19 @@ Real tasks, strong baselines, ProofBundles, replay logs, validator reports, cost
 ### What would falsify this
 
 Baselines beating GoalOS under equal budget, unreplayable Evidence Dockets, gameable proof gates, failed rollback, public/private boundary failure, coordination overhead dominating value, or safety/claim-boundary failure.
+
+
+### v48 Day-Scale Loop Observatory
+
+- `/day-scale-loop-observatory.html` — browser-local demonstration of long-running agent loops: virtual disk state, restart recovery, readable traces, proof gates, Chronicle candidate, and `LongLoopDocket` export.
+
+
+### Loop Evidence Reactor
+
+- `/loop-evidence-reactor.html` — browser-local demonstration of long-running agent loops: contract-first state, separated roles, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and `LoopDocket` export.
+- `/loop-to-rsi-sovereign-governance.html` — browser-local demonstration of the transition from agent loops to deterministic RSI governance: ECI, baselines, Move-37, stress tests, dossiers, and mechanical outcome authority.
+
+
+### From Loop to RSI
+
+- `/loop-to-rsi.html` — browser-local demonstration of the transition from restartable long-running agent loops to deterministic RSI governance: TARGET → EMIT → FILTER → ATLAS → TEST-PLAN → EVAL → INSERT → PROMOTE, Evidence Contact Index, Move-37 dossier, and mechanical authority gates.

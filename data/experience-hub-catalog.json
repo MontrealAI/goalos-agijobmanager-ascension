@@ -1,5 +1,5 @@
 {
-  "release": "v37-navigation-experience-hub",
+  "release": "v50-loop-to-rsi-sovereign-governance",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "browserLocal": true,
@@ -51,7 +51,8 @@
         "ascension-flight-deck",
         "trust-equation-simulator",
         "proof-to-action-theatre",
-        "until-done-mission-control"
+        "until-done-mission-control",
+        "loop-to-rsi-sovereign-governance"
       ]
     },
     {
@@ -77,7 +78,8 @@
         "proof-carrying-artifact-passport",
         "real-task-benchmark-bridge",
         "proof-constitution-simulator",
-        "architecture"
+        "architecture",
+        "day-scale-loop-observatory"
       ]
     },
     {
@@ -129,22 +131,31 @@
   ],
   "pages": [
     {
-      "id": "start",
-      "title": "Start",
-      "href": "start.html",
-      "category": "start",
-      "level": "Intro",
-      "time": "2 min",
-      "summary": "Friendly first-user route for browser-local demos and plain-language orientation."
+      "id": "action-graph-handoff",
+      "title": "Action Graph Handoff",
+      "href": "action-graph-handoff.html",
+      "category": "settlement",
+      "level": "Advanced",
+      "time": "5 min",
+      "summary": "Turn governed decision state into scoped action nodes with owners, proof requirements, and rollback."
     },
     {
-      "id": "experience-hub",
-      "title": "Experience Hub",
-      "href": "experience-hub.html",
-      "category": "start",
-      "level": "Intro",
-      "time": "3 min",
-      "summary": "The complete guided navigation layer: personas, search, paths, all demos, and safety boundaries."
+      "id": "agialpha-token-boundary",
+      "title": "AGIALPHA Boundary",
+      "href": "agialpha-token-boundary.html",
+      "category": "assurance",
+      "level": "All",
+      "time": "2 min",
+      "summary": "AGIALPHA is pre-existing, decentralized, third-party market only, and not available from this site."
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "href": "architecture.html",
+      "category": "assurance",
+      "level": "All",
+      "time": "4 min",
+      "summary": "Readable separation of proof, presentation, and execution layers."
     },
     {
       "id": "ascension-flight-deck",
@@ -156,150 +167,6 @@
       "summary": "Guided launcher with journeys, audience filters, same-origin preview, and JourneyReceipt export."
     },
     {
-      "id": "demo-lab",
-      "title": "Demo Lab",
-      "href": "demo-lab.html",
-      "category": "start",
-      "level": "Intro",
-      "time": "5 min",
-      "summary": "Run safe, local proof-cycle demos and export public-safe Evidence Dockets."
-    },
-    {
-      "id": "mission-studio",
-      "title": "Mission Studio",
-      "href": "mission-studio.html",
-      "category": "start",
-      "level": "Intro",
-      "time": "4 min",
-      "summary": "Compose a non-sensitive mission and export a local proof pack."
-    },
-    {
-      "id": "proof-cards",
-      "title": "Proof Cards",
-      "href": "proof-cards.html",
-      "category": "start",
-      "level": "Intro",
-      "time": "3 min",
-      "summary": "Copyable public-safe explanations for executives, reviewers, and operators."
-    },
-    {
-      "id": "trust-equation-simulator",
-      "title": "Trust Equation Simulator",
-      "href": "trust-equation-simulator.html",
-      "category": "core",
-      "level": "Intro",
-      "time": "4 min",
-      "summary": "Tune Output \u00d7 Proof \u00d7 Validation \u00d7 Settlement \u00d7 Reuse and watch trusted work collapse when proof is zero."
-    },
-    {
-      "id": "proof-to-action-theatre",
-      "title": "Proof-to-Action Theatre",
-      "href": "proof-to-action-theatre.html",
-      "category": "core",
-      "level": "Intro",
-      "time": "4 min",
-      "summary": "Objective \u2192 proof \u2192 governed decision state, with report-only output compared to GoalOS proof."
-    },
-    {
-      "id": "until-done-mission-control",
-      "title": "Until-DONE Mission Control",
-      "href": "until-done-mission-control.html",
-      "category": "core",
-      "level": "Core",
-      "time": "6 min",
-      "summary": "A state machine that loops back on missing evidence, contradiction, risk-ledger, or rollback defects."
-    },
-    {
-      "id": "proof-constitution-simulator",
-      "title": "Proof Constitution Simulator",
-      "href": "proof-constitution-simulator.html",
-      "category": "core",
-      "level": "Core",
-      "time": "5 min",
-      "summary": "Aim \u2192 Act \u2192 Prove \u2192 Evolve as visible hard gates and protocol objects."
-    },
-    {
-      "id": "evidence-docket-composer",
-      "title": "Evidence Docket Composer",
-      "href": "evidence-docket-composer.html",
-      "category": "evidence",
-      "level": "Core",
-      "time": "5 min",
-      "summary": "Build the proof room before the claim: claims matrix, proof packets, verifier report, risk ledger, replay path."
-    },
-    {
-      "id": "claim-boundary-firewall",
-      "title": "Claim Boundary Firewall",
-      "href": "claim-boundary-firewall.html",
-      "category": "evidence",
-      "level": "Core",
-      "time": "4 min",
-      "summary": "Run a local Verifier Mesh and see claims promoted, quarantined, revised, or rejected."
-    },
-    {
-      "id": "replay-falsification-gauntlet",
-      "title": "Replay & Falsification Gauntlet",
-      "href": "replay-falsification-gauntlet.html",
-      "category": "evidence",
-      "level": "Advanced",
-      "time": "5 min",
-      "summary": "Challenge replay readiness, validator independence, baseline quality, and public/private boundary."
-    },
-    {
-      "id": "real-task-benchmark-bridge",
-      "title": "Real-Task Benchmark Bridge",
-      "href": "real-task-benchmark-bridge.html",
-      "category": "evidence",
-      "level": "Advanced",
-      "time": "5 min",
-      "summary": "Connect public claims to real-task families, baseline ladder, and Benchmark Evidence Docket."
-    },
-    {
-      "id": "proof-gradient-arena",
-      "title": "Proof Gradient Arena",
-      "href": "proof-gradient-arena.html",
-      "category": "evidence",
-      "level": "Core",
-      "time": "5 min",
-      "summary": "Score is advisory; hard gates decide selection, promotion, or rejection."
-    },
-    {
-      "id": "multi-agent-institution",
-      "title": "Multi-Agent Institution",
-      "href": "multi-agent-institution.html",
-      "category": "coordination",
-      "level": "Core",
-      "time": "5 min",
-      "summary": "Large systems coordinate when proof decides what survives."
-    },
-    {
-      "id": "coordination-lab",
-      "title": "Coordination Lab",
-      "href": "coordination-lab.html",
-      "category": "coordination",
-      "level": "Core",
-      "time": "5 min",
-      "summary": "Browser-local proof-governed coordination lab with autonomous proof cycle."
-    },
-    {
-      "id": "coordination-engine",
-      "title": "Advanced Coordination Engine",
-      "href": "coordination-engine.html",
-      "category": "coordination",
-      "level": "Advanced",
-      "time": "6 min",
-      "summary": "Technical engine for proof-governed multi-agent coordination."
-    },
-    {
-      "id": "proof-conditioned-router-observatory",
-      "title": "Router Observatory",
-      "href": "proof-conditioned-router-observatory.html",
-      "category": "coordination",
-      "level": "Advanced",
-      "time": "6 min",
-      "summary": "Select the smallest sufficient constellation and route by evidence, cost, risk, validators, and replay."
-    },
-    {
       "id": "ascension-inflow-control",
       "title": "Ascension Inflow Control",
       "href": "ascension-inflow-control.html",
@@ -309,40 +176,13 @@
       "summary": "Tune compute, data, tasks, incentives, feedback, governance, and tools inside the governed band."
     },
     {
-      "id": "sovereign-experience-stream",
-      "title": "Sovereign Experience Stream",
-      "href": "sovereign-experience-stream.html",
-      "category": "coordination",
-      "level": "Advanced",
-      "time": "5 min",
-      "summary": "Proof events become governed experience only after replay, reward, risk, and human-review gates."
-    },
-    {
-      "id": "proof-settlement-lifecycle",
-      "title": "Proof-Settlement Lifecycle",
-      "href": "proof-settlement-lifecycle.html",
-      "category": "settlement",
-      "level": "Core",
-      "time": "5 min",
-      "summary": "Request \u2192 Escrow \u2192 Execute \u2192 Proof \u2192 Validate \u2192 Settle \u2192 Chronicle as local simulation."
-    },
-    {
-      "id": "proof-backed-upgrade-foundry",
-      "title": "Upgrade Foundry",
-      "href": "proof-backed-upgrade-foundry.html",
-      "category": "settlement",
-      "level": "Advanced",
-      "time": "5 min",
-      "summary": "Proof-cleared artifacts earn scoped upgrade rights only after canary, challenge, rollback, and review."
-    },
-    {
-      "id": "proof-carrying-artifact-passport",
-      "title": "Artifact Passport",
-      "href": "proof-carrying-artifact-passport.html",
-      "category": "settlement",
-      "level": "Advanced",
-      "time": "5 min",
-      "summary": "Reusable capability travels with proof, scope, provenance, challenge window, and rollback target."
+      "id": "assurance",
+      "title": "Assurance",
+      "href": "assurance.html",
+      "category": "assurance",
+      "level": "All",
+      "time": "4 min",
+      "summary": "Final assurance, no-removal posture, and automated boundary checks."
     },
     {
       "id": "chronicle-compounding-lab",
@@ -354,40 +194,76 @@
       "summary": "Accepted proof becomes Chronicle memory and reusable capability; rejected work becomes warning memory."
     },
     {
-      "id": "mandate-epoch-clearinghouse",
-      "title": "MandateEpoch Clearinghouse",
-      "href": "mandate-epoch-clearinghouse.html",
-      "category": "settlement",
+      "id": "claim-boundary-firewall",
+      "title": "Claim Boundary Firewall",
+      "href": "claim-boundary-firewall.html",
+      "category": "evidence",
+      "level": "Core",
+      "time": "4 min",
+      "summary": "Run a local Verifier Mesh and see claims promoted, quarantined, revised, or rejected."
+    },
+    {
+      "id": "coordination-engine",
+      "title": "Advanced Coordination Engine",
+      "href": "coordination-engine.html",
+      "category": "coordination",
       "level": "Advanced",
       "time": "6 min",
-      "summary": "Clear many proof receipts into public roots, challenge windows, settlement boundary, and Chronicle handoff."
+      "summary": "Technical engine for proof-governed multi-agent coordination."
     },
     {
-      "id": "action-graph-handoff",
-      "title": "Action Graph Handoff",
-      "href": "action-graph-handoff.html",
-      "category": "settlement",
+      "id": "coordination-lab",
+      "title": "Coordination Lab",
+      "href": "coordination-lab.html",
+      "category": "coordination",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Browser-local proof-governed coordination lab with autonomous proof cycle."
+    },
+    {
+      "id": "day-scale-loop-observatory",
+      "title": "Day-Scale Loop Observatory",
+      "href": "day-scale-loop-observatory.html",
+      "category": "proof",
       "level": "Advanced",
       "time": "5 min",
-      "summary": "Turn governed decision state into scoped action nodes with owners, proof requirements, and rollback."
+      "summary": "See how a loop that runs for days stays trustworthy by writing disk state, surviving restarts, exposing traces, and exporting a LongLoopDocket."
     },
     {
-      "id": "sovereign-machine-economy",
-      "title": "Sovereign Machine Economy",
-      "href": "sovereign-machine-economy.html",
-      "category": "settlement",
-      "level": "Advanced",
-      "time": "8 min",
-      "summary": "Meta-agentic cognition, Alpha Node runtime, AGI Jobs work OS, and settlement as one route."
+      "id": "demo-lab",
+      "title": "Demo Lab",
+      "href": "demo-lab.html",
+      "category": "start",
+      "level": "Intro",
+      "time": "5 min",
+      "summary": "Run safe, local proof-cycle demos and export public-safe Evidence Dockets."
     },
     {
-      "id": "operator-console",
-      "title": "Read-Only Console",
-      "href": "operator-console.html",
+      "id": "evidence-docket-composer",
+      "title": "Evidence Docket Composer",
+      "href": "evidence-docket-composer.html",
+      "category": "evidence",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Build the proof room before the claim: claims matrix, proof packets, verifier report, risk ledger, replay path."
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence Room",
+      "href": "evidence/",
       "category": "assurance",
-      "level": "Operator",
+      "level": "All",
       "time": "4 min",
-      "summary": "Default-deny public console with no wallet, no external action, and public-safe review posture."
+      "summary": "Public evidence room and generated proof artifacts."
+    },
+    {
+      "id": "experience-hub",
+      "title": "Experience Hub",
+      "href": "experience-hub.html",
+      "category": "start",
+      "level": "Intro",
+      "time": "3 min",
+      "summary": "The complete guided navigation layer: personas, search, paths, all demos, and safety boundaries."
     },
     {
       "id": "expert-console",
@@ -408,42 +284,6 @@
       "summary": "Mainnet expert handoff, separated from public pages and clearly bounded."
     },
     {
-      "id": "evidence",
-      "title": "Evidence Room",
-      "href": "evidence/",
-      "category": "assurance",
-      "level": "All",
-      "time": "4 min",
-      "summary": "Public evidence room and generated proof artifacts."
-    },
-    {
-      "id": "architecture",
-      "title": "Architecture",
-      "href": "architecture.html",
-      "category": "assurance",
-      "level": "All",
-      "time": "4 min",
-      "summary": "Readable separation of proof, presentation, and execution layers."
-    },
-    {
-      "id": "verification",
-      "title": "Verification",
-      "href": "verification.html",
-      "category": "assurance",
-      "level": "All",
-      "time": "4 min",
-      "summary": "Canonical identities, public verification posture, and assurance state."
-    },
-    {
-      "id": "assurance",
-      "title": "Assurance",
-      "href": "assurance.html",
-      "category": "assurance",
-      "level": "All",
-      "time": "4 min",
-      "summary": "Final assurance, no-removal posture, and automated boundary checks."
-    },
-    {
       "id": "legal",
       "title": "Legal Boundary",
       "href": "legal.html",
@@ -451,6 +291,72 @@
       "level": "All",
       "time": "3 min",
       "summary": "No user data wanted, no advice, no custody, no audit claim, no investment posture."
+    },
+    {
+      "route": "/loop-evidence-reactor.html",
+      "href": "loop-evidence-reactor.html",
+      "title": "Loop Evidence Reactor",
+      "audience": "AI builders / operators",
+      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
+      "outputArtifact": "LoopDocket",
+      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
+    },
+    {
+      "title": "Loop Operating Room",
+      "href": "loop-operating-room.html",
+      "route": "/loop-operating-room.html",
+      "group": "Core",
+      "audience": "All users",
+      "description": "Run a browser-local proof loop: contract, roles, traces, restarts, scores, Evidence Docket, Chronicle, and bottleneck visibility.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local; no wallet, no network, no user data."
+    },
+    {
+      "route": "/loop-to-rsi.html",
+      "href": "loop-to-rsi.html",
+      "title": "From Loop to RSI",
+      "audience": "Advanced builders / reviewers",
+      "description": "Shows how long-running agent loops become deterministic RSI governance: target, emit, filter, atlas, test-plan, eval, insert, promote, Move-37 dossier, and outcome authority by evidence.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local control-plane simulation; no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi.html"
+    },
+    {
+      "id": "mandate-epoch-clearinghouse",
+      "title": "MandateEpoch Clearinghouse",
+      "href": "mandate-epoch-clearinghouse.html",
+      "category": "settlement",
+      "level": "Advanced",
+      "time": "6 min",
+      "summary": "Clear many proof receipts into public roots, challenge windows, settlement boundary, and Chronicle handoff."
+    },
+    {
+      "id": "mission-studio",
+      "title": "Mission Studio",
+      "href": "mission-studio.html",
+      "category": "start",
+      "level": "Intro",
+      "time": "4 min",
+      "summary": "Compose a non-sensitive mission and export a local proof pack."
+    },
+    {
+      "id": "multi-agent-institution",
+      "title": "Multi-Agent Institution",
+      "href": "multi-agent-institution.html",
+      "category": "coordination",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Large systems coordinate when proof decides what survives."
+    },
+    {
+      "id": "operator-console",
+      "title": "Read-Only Console",
+      "href": "operator-console.html",
+      "category": "assurance",
+      "level": "Operator",
+      "time": "4 min",
+      "summary": "Default-deny public console with no wallet, no external action, and public-safe review posture."
     },
     {
       "id": "privacy",
@@ -462,13 +368,85 @@
       "summary": "Data-zero privacy posture: no accounts, forms, analytics, or cookies."
     },
     {
-      "id": "terms",
-      "title": "Terms",
-      "href": "terms.html",
-      "category": "assurance",
-      "level": "All",
-      "time": "2 min",
-      "summary": "Use boundary and user/operator responsibility."
+      "id": "proof-backed-upgrade-foundry",
+      "title": "Upgrade Foundry",
+      "href": "proof-backed-upgrade-foundry.html",
+      "category": "settlement",
+      "level": "Advanced",
+      "time": "5 min",
+      "summary": "Proof-cleared artifacts earn scoped upgrade rights only after canary, challenge, rollback, and review."
+    },
+    {
+      "id": "proof-cards",
+      "title": "Proof Cards",
+      "href": "proof-cards.html",
+      "category": "start",
+      "level": "Intro",
+      "time": "3 min",
+      "summary": "Copyable public-safe explanations for executives, reviewers, and operators."
+    },
+    {
+      "id": "proof-carrying-artifact-passport",
+      "title": "Artifact Passport",
+      "href": "proof-carrying-artifact-passport.html",
+      "category": "settlement",
+      "level": "Advanced",
+      "time": "5 min",
+      "summary": "Reusable capability travels with proof, scope, provenance, challenge window, and rollback target."
+    },
+    {
+      "id": "proof-conditioned-router-observatory",
+      "title": "Router Observatory",
+      "href": "proof-conditioned-router-observatory.html",
+      "category": "coordination",
+      "level": "Advanced",
+      "time": "6 min",
+      "summary": "Select the smallest sufficient constellation and route by evidence, cost, risk, validators, and replay."
+    },
+    {
+      "id": "proof-constitution-simulator",
+      "title": "Proof Constitution Simulator",
+      "href": "proof-constitution-simulator.html",
+      "category": "core",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Aim \u2192 Act \u2192 Prove \u2192 Evolve as visible hard gates and protocol objects."
+    },
+    {
+      "id": "proof-gradient-arena",
+      "title": "Proof Gradient Arena",
+      "href": "proof-gradient-arena.html",
+      "category": "evidence",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Score is advisory; hard gates decide selection, promotion, or rejection."
+    },
+    {
+      "id": "proof-settlement-lifecycle",
+      "title": "Proof-Settlement Lifecycle",
+      "href": "proof-settlement-lifecycle.html",
+      "category": "settlement",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Request \u2192 Escrow \u2192 Execute \u2192 Proof \u2192 Validate \u2192 Settle \u2192 Chronicle as local simulation."
+    },
+    {
+      "id": "proof-to-action-theatre",
+      "title": "Proof-to-Action Theatre",
+      "href": "proof-to-action-theatre.html",
+      "category": "core",
+      "level": "Intro",
+      "time": "4 min",
+      "summary": "Objective \u2192 proof \u2192 governed decision state, with report-only output compared to GoalOS proof."
+    },
+    {
+      "id": "real-task-benchmark-bridge",
+      "title": "Real-Task Benchmark Bridge",
+      "href": "real-task-benchmark-bridge.html",
+      "category": "evidence",
+      "level": "Advanced",
+      "time": "5 min",
+      "summary": "Connect public claims to real-task families, baseline ladder, and Benchmark Evidence Docket."
     },
     {
       "id": "regulatory-boundary",
@@ -480,6 +458,51 @@
       "summary": "No legal, tax, financial, compliance, or investment advice."
     },
     {
+      "id": "replay-falsification-gauntlet",
+      "title": "Replay & Falsification Gauntlet",
+      "href": "replay-falsification-gauntlet.html",
+      "category": "evidence",
+      "level": "Advanced",
+      "time": "5 min",
+      "summary": "Challenge replay readiness, validator independence, baseline quality, and public/private boundary."
+    },
+    {
+      "id": "sovereign-experience-stream",
+      "title": "Sovereign Experience Stream",
+      "href": "sovereign-experience-stream.html",
+      "category": "coordination",
+      "level": "Advanced",
+      "time": "5 min",
+      "summary": "Proof events become governed experience only after replay, reward, risk, and human-review gates."
+    },
+    {
+      "id": "sovereign-machine-economy",
+      "title": "Sovereign Machine Economy",
+      "href": "sovereign-machine-economy.html",
+      "category": "settlement",
+      "level": "Advanced",
+      "time": "8 min",
+      "summary": "Meta-agentic cognition, Alpha Node runtime, AGI Jobs work OS, and settlement as one route."
+    },
+    {
+      "id": "start",
+      "title": "Start",
+      "href": "start.html",
+      "category": "start",
+      "level": "Intro",
+      "time": "2 min",
+      "summary": "Friendly first-user route for browser-local demos and plain-language orientation."
+    },
+    {
+      "id": "terms",
+      "title": "Terms",
+      "href": "terms.html",
+      "category": "assurance",
+      "level": "All",
+      "time": "2 min",
+      "summary": "Use boundary and user/operator responsibility."
+    },
+    {
       "id": "third-party-responsibility",
       "title": "Third-Party Responsibility",
       "href": "third-party-responsibility.html",
@@ -489,13 +512,42 @@
       "summary": "Wallets, RPCs, marketplaces, GitHub, chains, and other surfaces are third-party responsibilities."
     },
     {
-      "id": "agialpha-token-boundary",
-      "title": "AGIALPHA Boundary",
-      "href": "agialpha-token-boundary.html",
+      "id": "trust-equation-simulator",
+      "title": "Trust Equation Simulator",
+      "href": "trust-equation-simulator.html",
+      "category": "core",
+      "level": "Intro",
+      "time": "4 min",
+      "summary": "Tune Output \u00d7 Proof \u00d7 Validation \u00d7 Settlement \u00d7 Reuse and watch trusted work collapse when proof is zero."
+    },
+    {
+      "id": "until-done-mission-control",
+      "title": "Until-DONE Mission Control",
+      "href": "until-done-mission-control.html",
+      "category": "core",
+      "level": "Core",
+      "time": "6 min",
+      "summary": "A state machine that loops back on missing evidence, contradiction, risk-ledger, or rollback defects."
+    },
+    {
+      "id": "verification",
+      "title": "Verification",
+      "href": "verification.html",
       "category": "assurance",
       "level": "All",
-      "time": "2 min",
-      "summary": "AGIALPHA is pre-existing, decentralized, third-party market only, and not available from this site."
+      "time": "4 min",
+      "summary": "Canonical identities, public verification posture, and assurance state."
+    },
+    {
+      "route": "/loop-to-rsi-sovereign-governance.html",
+      "href": "loop-to-rsi-sovereign-governance.html",
+      "title": "From Loop to RSI \u00b7 Sovereign Governance",
+      "audience": "Advanced users / governance reviewers",
+      "description": "Browser-local demonstration of the transition from long-running agent loops to deterministic RSI governance: ECI, baselines, Move-37, stress tests, dossiers, and mechanical outcome authority.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production action.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
     }
-  ]
+  ],
+  "routeCount": 46
 }

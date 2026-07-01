@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **51 canonical public routes** from `data/canonical-route-manifest-v47.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **50 canonical public routes** from `data/canonical-route-manifest-v43.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -57,7 +57,6 @@ Start with [Experience Concierge](../site/experience-concierge.html). It guides 
 | [`/start.html`](../site/start.html) | New visitors | Clean first-click path from objective to proof demos. | Route summary | Browser-local guidance. |
 | [`/terms.html`](../site/terms.html) | All users | Use boundaries and disclaimers for public demos. | Terms statement | No professional advice. |
 | [`/third-party-responsibility.html`](../site/third-party-responsibility.html) | Operators | Places third-party wallet, market, RPC, tax, sanctions, securities, privacy, and jurisdiction responsibility on users/operators. | Boundary statement | Third-party responsibility. |
-| [`/loop-contract-theatre.html`](../site/loop-contract-theatre.html) | New users / operators / developers | Turns the “loop, not prompt” principle into a public-safe control room: contract first, separated roles, virtual disk state, restart, traces, scoring, Chronicle, and bottleneck exposure. | LoopReceipt | Browser-local simulation; no user data, no storage, no wallet, no network. |
 | [`/trust-equation-simulator.html`](../site/trust-equation-simulator.html) | New users / reviewers | Shows why output becomes institutional work only after proof, validation, settlement, and reuse. | TrustReceipt | Local simulation; no factual certification. |
 | [`/until-done-mission-control.html`](../site/until-done-mission-control.html) | Operators | Demonstrates run-to-completion: GoalOS stops at proof, not at output. | MissionReceipt | Local state machine. |
 | [`/verification.html`](../site/verification.html) | Developers / reviewers | Explains verification scripts, build checks, and claim-boundary tests. | Verification summary | No external audit claim. |
@@ -73,3 +72,39 @@ Start with [Experience Concierge](../site/experience-concierge.html). It guides 
 ## What should move to expert-only surfaces
 
 Anything involving human wallet authority, Mainnet writes, token approvals, network switching, transaction broadcast, credential use, external systems, or production operations belongs behind an explicit expert boundary and must not be presented as a normal public demo.
+
+
+## Loop Operating Room
+
+| Route | User type | Purpose | Inputs | Output artifact | Safety posture |
+|---|---|---|---|---|---|
+| `/loop-operating-room.html` | New users, operators, developers | Shows how long-running agent work becomes a proof-governed loop: contract, roles, traces, restarts, scoring, Evidence Docket, Chronicle, and bottleneck visibility. | Mission preset, loop posture, objective, budget, strictness, restart appetite. | `LoopReceipt` JSON. | Browser-local; no wallet, no network, no user data, no external action. |
+
+
+## Day-Scale Loop Observatory
+
+- **Route:** `/day-scale-loop-observatory.html`
+- **Audience:** operators, researchers, reviewers
+- **Purpose:** demonstrates how a long-running agent loop becomes credible by writing state outside context, surviving restarts, exposing readable traces, and exporting a LongLoopDocket.
+- **Output artifact:** LongLoopDocket JSON.
+- **Safety posture:** browser-local, no account, no forms, no wallet, no network request, no external action, no production authority.
+
+
+## Loop Evidence Reactor
+
+Route: `/loop-evidence-reactor.html`
+
+This browser-local demo shows how a long-running agent loop becomes a GoalOS proof system: contract first, separated roles, virtual disk state, crash/restart, trace reading, explicit rubric scoring, harness deletion, bottleneck exposure, Evidence Docket handoff, Chronicle, and `LoopDocket` export. It is public-safe and does not ask for user data, wallets, network requests, or production authority.
+### From Loop to RSI · Sovereign Governance
+
+Route: `/loop-to-rsi-sovereign-governance.html`
+
+This browser-local demo shows how a long-running agent loop becomes deterministic RSI governance: TARGET → EMIT → FILTER → ATLAS → TEST-PLAN → EVAL → INSERT → PROMOTE, with Evidence Contact Index discipline, baseline comparison, risk gates, Move-37 skepticism, stress tests, dossier packaging, and no outcome authority without mechanical gates. It exports a public-safe `RSIGovernanceDocket` and does not ask for user data, wallets, network requests, or production authority.
+
+
+
+## From Loop to RSI
+
+| Route | Audience | Purpose | Input | Output | Safety posture |
+|---|---|---|---|---|---|
+| `/loop-to-rsi.html` | Advanced builders, reviewers, governance readers | Demonstrates how a restartable loop becomes deterministic RSI governance through ECI, baseline discipline, Move-37 dossier handling, and mechanical outcome authority. | Public-safe preset and local sliders | `RSIDossier` JSON | Browser-local only; no wallet, no network, no user data, no production authority. |
