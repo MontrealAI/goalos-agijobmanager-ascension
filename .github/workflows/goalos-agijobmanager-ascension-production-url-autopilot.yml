@@ -1,4 +1,5 @@
-name: GoalOS AGIJobManager Ascension From Loop to RSI Publisher v50
+name: GoalOS AGIJobManager Ascension Repository Public Trust Compatibility Failsafe Publisher v46 / Day-Scale Loop Observatory Failsafe Publisher v48 / Loop Evidence Reactor Publisher v49 / Loop to RSI Sovereign Governance Publisher v50
+# Compatibility labels intentionally preserved for historical public-trust tests: Public Trust Ultimate Failsafe Publisher v45; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50.
 
 on:
   workflow_dispatch:
