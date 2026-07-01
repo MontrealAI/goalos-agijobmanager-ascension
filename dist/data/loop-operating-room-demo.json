@@ -1,0 +1,67 @@
+{
+  "id": "goalos-loop-operating-room-v47",
+  "title": "GoalOS Loop Operating Room",
+  "release": "v47-loop-operating-room",
+  "productionRoute": "/loop-operating-room.html",
+  "publicSafe": true,
+  "browserLocal": true,
+  "noUserDataWanted": true,
+  "noWallet": true,
+  "noNetwork": true,
+  "doctrine": [
+    "Prompt once. Loop until proof.",
+    "Contract before code.",
+    "Roles before autonomy.",
+    "Trace before trust.",
+    "Restart before rescue.",
+    "Evidence before Chronicle."
+  ],
+  "loopStages": [
+    "LoopContract",
+    "RoleCharter",
+    "BoundedArtifact",
+    "EvaluatorScore",
+    "RestartRecord",
+    "EvidenceDocket",
+    "ChronicleEntry",
+    "LoopReceipt"
+  ],
+  "roles": [
+    {
+      "name": "Planner",
+      "obligation": "turns intent into a testable loop contract"
+    },
+    {
+      "name": "Generator",
+      "obligation": "produces bounded artifacts"
+    },
+    {
+      "name": "Evaluator",
+      "obligation": "scores function, craft, originality, safety, replay, evidence, and proof debt"
+    },
+    {
+      "name": "Verifier",
+      "obligation": "blocks unsupported claims and checks replay"
+    },
+    {
+      "name": "Archivist",
+      "obligation": "writes Chronicle-ready accepted state"
+    }
+  ],
+  "gates": [
+    "contract",
+    "roles",
+    "trace",
+    "restart",
+    "score",
+    "evidence",
+    "chronicle"
+  ],
+  "outputs": [
+    "LoopReceipt",
+    "TraceLedger",
+    "EvidenceDocket summary",
+    "Chronicle-ready state"
+  ],
+  "claimBoundary": "Browser-local demonstration. It does not certify factual correctness, complete an external audit, authorize funds, broadcast transactions, or grant production authority."
+}
