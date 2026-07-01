@@ -17,7 +17,7 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
 ## 30-second explanation
 
-This repository publishes the public website and implementation scaffold for GoalOS AGIJobManager Ascension. It has **50 canonical public routes** generated from `data/canonical-route-manifest.json`. Start with [Experience Concierge](site/experience-concierge.html) if you are new, or [Command Center](site/command-center.html) if you want the full map.
+This repository publishes the public website and implementation scaffold for GoalOS AGIJobManager Ascension. It has **51 canonical public routes** generated from `data/canonical-route-manifest-v47.json`. Start with [Experience Concierge](site/experience-concierge.html) if you are new, or [Command Center](site/command-center.html) if you want the full map.
 
 The core idea is simple: AI output is not institutional work until it is bounded, replayable, validated, and packaged as an Evidence Docket, ProofBundle, SettlementReceipt, Chronicle entry, or Governed Decision State. Public demos run in the browser and demonstrate proof logic with public-safe sample data.
 
@@ -45,7 +45,7 @@ No Evidence Docket, no strong public claim. No ProofBundle, no settlement. No re
 
 - Static public website in `site/`.
 - Browser-local public demos, Evidence Docket demos, and proof-settlement lifecycle demos.
-- Canonical route manifest in `data/canonical-route-manifest.json`.
+- Canonical route manifest in `data/canonical-route-manifest-v47.json`.
 - Data contracts in `data/` and JSON schemas in `schemas/`.
 - Dependency-free tests and verification tools in `tests/` and `tools/`.
 - Autonomous GitHub Pages publisher in `.github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml`.
@@ -123,23 +123,23 @@ See [docs/DEMO_CATALOG.md](docs/DEMO_CATALOG.md) for the full human-readable cat
 | [`/start.html`](site/start.html) | New visitors | Clean first-click path from objective to proof demos. | Route summary | Browser-local guidance. |
 | [`/terms.html`](site/terms.html) | All users | Use boundaries and disclaimers for public demos. | Terms statement | No professional advice. |
 | [`/third-party-responsibility.html`](site/third-party-responsibility.html) | Operators | Places third-party wallet, market, RPC, tax, sanctions, securities, privacy, and jurisdiction responsibility on users/operators. | Boundary statement | Third-party responsibility. |
+| [`/loop-contract-theatre.html`](site/loop-contract-theatre.html) | New users / operators / developers | Shows how days-long agent loops become contract-first, role-separated, restart-safe, trace-readable, and proof-gated. | LoopReceipt | Browser-local simulation; no user data, no storage, no wallet, no network. |
 | [`/trust-equation-simulator.html`](site/trust-equation-simulator.html) | New users / reviewers | Shows why output becomes institutional work only after proof, validation, settlement, and reuse. | TrustReceipt | Local simulation; no factual certification. |
 | [`/until-done-mission-control.html`](site/until-done-mission-control.html) | Operators | Demonstrates run-to-completion: GoalOS stops at proof, not at output. | MissionReceipt | Local state machine. |
 | [`/verification.html`](site/verification.html) | Developers / reviewers | Explains verification scripts, build checks, and claim-boundary tests. | Verification summary | No external audit claim. |
 
 ## Repository architecture map
 
-```mermaid
-flowchart TB
-  Repo[Repository] --> Site[site/ source public pages]
-  Repo --> Data[data/ public-safe demo contracts]
-  Repo --> Schemas[schemas/ JSON schemas]
-  Repo --> Docs[docs/ documentation and runbooks]
-  Repo --> Tools[tools/ verification and build]
-  Repo --> Tests[tests/ dependency-free checks]
-  Repo --> Workflows[.github/workflows/ publisher]
-  Tools --> Dist[dist/ generated static site]
-  Workflows --> Pages[GitHub Pages]
+```text
+.github/workflows/   autonomous publisher workflows
+site/                source public pages
+data/                public-safe demo data contracts and route manifest
+schemas/             JSON schemas
+docs/                documentation, reports, runbooks, release notes
+tools/               verification, build, route, metadata, and kernel tools
+tests/               dependency-free public-safe checks
+dist/                generated static site, if committed
+package.json         script entry points
 ```
 
 ## Diagrams
@@ -216,22 +216,19 @@ node tools/pathspec-proof-kernel.mjs
 node tools/workflow-reference-auditor.mjs
 node tools/docs-link-checker.mjs
 node tools/claim-boundary-checker.mjs
-npm run preflight
-npm run verify
-npm run docs:check
-npm run test:docs
-npm run reference:check
-npm run public-trust
-npm test
-npm run build
-npm run kernels
+node tests/documentation.test.mjs
+node tools/run-all-tests.mjs
+node tools/apply-public-trust-metadata-v43.mjs
+python3 tools/build.py
+node tools/run-existing-kernels.mjs
+node tools/public-trust-checker-v43.mjs
 ```
 
 ## GitHub Web UI deployment summary
 
 1. If applying an overlay, download and unzip it locally. Upload the overlay contents, not the ZIP file.
 2. Commit uploaded contents to `main`.
-3. Open GitHub Actions and run **GoalOS AGIJobManager Ascension Stable Public Trust Compatibility Failsafe Publisher v46**.
+3. Open GitHub Actions and run **GoalOS AGIJobManager Ascension Repository Public Trust Publisher v43**.
 4. Use `deploy_pages = true` and `commit_generated_source = true`.
 5. Keep live factual checks false unless `ETHEREUM_RPC_URL` is configured.
 6. Verify `dist/production-url.json` and then verify the production pages.
