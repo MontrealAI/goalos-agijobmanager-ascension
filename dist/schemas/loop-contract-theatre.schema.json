@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Loop Contract Theatre demo contract",
+  "type": "object",
+  "required": [
+    "version",
+    "route",
+    "title",
+    "posture",
+    "loopRules",
+    "stateFiles",
+    "roles",
+    "proofLifecycle",
+    "outputArtifact"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "route": {
+      "const": "/loop-contract-theatre.html"
+    },
+    "title": {
+      "type": "string"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "coreThesis": {
+      "type": "string"
+    },
+    "loopRules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 9
+    },
+    "stateFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 4
+    },
+    "proofLifecycle": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 8
+    },
+    "presets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputArtifact": {
+      "const": "LoopReceipt"
+    }
+  }
+}

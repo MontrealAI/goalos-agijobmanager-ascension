@@ -277,6 +277,21 @@
       "href": "agialpha-token-boundary.html",
       "category": "Boundary",
       "description": "AGIALPHA is pre-existing, decentralized, third-party market only, and not available from the site."
+    },
+    {
+      "id": "loop-contract-theatre",
+      "title": "Loop Contract Theatre",
+      "href": "loop-contract-theatre.html",
+      "group": "Core idea",
+      "audience": [
+        "new",
+        "builder",
+        "operator",
+        "reviewer",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "Run a contract-first, restart-safe, trace-readable agent loop and export a LoopReceipt."
     }
   ],
   "recommendedPaths": [
