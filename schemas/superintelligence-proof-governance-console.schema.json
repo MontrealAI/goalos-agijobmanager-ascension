@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/superintelligence-proof-governance-console.schema.json",
+  "title": "SuperintelligenceGovernanceDocket",
+  "type": "object",
+  "required": [
+    "release",
+    "type",
+    "publicSafe",
+    "objective",
+    "stage",
+    "eci",
+    "authority",
+    "claimBoundary"
+  ],
+  "properties": {
+    "release": {
+      "const": "v54"
+    },
+    "type": {
+      "const": "SuperintelligenceGovernanceDocket"
+    },
+    "publicSafe": {
+      "const": true
+    },
+    "objective": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "eci": {
+      "type": "string"
+    },
+    "authority": {
+      "enum": [
+        "DENY",
+        "REVIEW"
+      ]
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "title": "GoalOS AGIJobManager Ascension Experience Atlas",
-  "version": "v37-site-experience-atlas",
+  "version": "v54-site-experience-atlas",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "publicSafe": true,
@@ -32,6 +32,18 @@
     "System control"
   ],
   "routes": [
+    {
+      "title": "Superintelligence Proof Governance Console",
+      "href": "superintelligence-proof-governance-console.html",
+      "category": "Core proof loop",
+      "description": "Loop state, RSI governance, ASI horizon boundary, council review, capacity discipline, and GovernanceDocket export."
+    },
+    {
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "category": "Core proof loop",
+      "description": "Public-safe control room for proof-governed frontier capability: loop, RSI, ASI boundary, and HorizonDossier."
+    },
     {
       "title": "Start here",
       "href": "start.html",

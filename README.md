@@ -285,3 +285,8 @@ Baselines beating GoalOS under equal budget, unreplayable Evidence Dockets, game
 ### New in v53: ASI Proof Horizon Console
 
 Open `asi-proof-horizon-console.html` to run the browser-local HorizonProofDocket demo: loop state → RSI governance → ASI-horizon authority firewall → council review → Chronicle.
+
+
+## v54 · Superintelligence Proof Governance Console
+
+Route: `superintelligence-proof-governance-console.html`. This browser-local page demonstrates the corridor from Loop → RSI → ASI horizon governance with evidence, replay, baselines, Move-37, council review, human boundary, and `SuperintelligenceGovernanceDocket` export.
