@@ -24,7 +24,7 @@
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-loop-evidence-reactor-compatibility-failsafe"
   ],
-  "builtAt": "2026-07-01T15:43:50.556593Z",
+  "builtAt": "2026-07-01T16:22:59.005959Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -290,6 +290,16 @@
       "path": "assets/institutional-final-v42.js",
       "sha256": "bff547552f84dd9c29073d5d54baeac6e3256f3dbe1c706c82685ce7f8df0ffa",
       "bytes": 1066
+    },
+    {
+      "path": "assets/loop-contract-theatre.css",
+      "sha256": "08ffedaf9683ee7a1ffc3e7f5a525115946b5ae3a173ec0ac7196169ea7aa19e",
+      "bytes": 5014
+    },
+    {
+      "path": "assets/loop-contract-theatre.js",
+      "sha256": "61466ac5095c9e055cc6b635186b3066d5b01f4c66cb847a4830d95624b19a32",
+      "bytes": 6335
     },
     {
       "path": "assets/loop-evidence-reactor.css",
@@ -637,6 +647,11 @@
       "bytes": 28414
     },
     {
+      "path": "canonical-route-manifest.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
+    },
+    {
       "path": "capability-conformance.json",
       "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
       "bytes": 1756
@@ -752,6 +767,11 @@
       "bytes": 28414
     },
     {
+      "path": "data/canonical-route-manifest.json",
+      "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
+      "bytes": 24891
+    },
+    {
       "path": "data/capability-contract.json",
       "sha256": "d9d3fafb02dcdbd0e16b29ae4f7fd42ff20ed82eed7f56257aabe5b538a6b366",
       "bytes": 1756
@@ -798,7 +818,7 @@
     },
     {
       "path": "data/failsafe-bootstrap-v50.json",
-      "sha256": "31eaedf56c3fb5a1c0dbd0f8b3734f2cfb78ca4fa262ebd0dacde620557210ca",
+      "sha256": "0d636afd4cf91f70db5f28eeb9c2089311f5c9549fa3ce556f50683cde56541a",
       "bytes": 99
     },
     {
@@ -810,6 +830,11 @@
       "path": "data/legal-boundary-policy.json",
       "sha256": "e4cca4e74e41dd1c504e528e5495e5f9efe93542a88d82ba0fe02cc7687ed9db",
       "bytes": 5562
+    },
+    {
+      "path": "data/loop-contract-theatre-demo.json",
+      "sha256": "495779ce14f9b1708df0b0f277dc1f6949de8e6acd37f3d4546ff550ae4e0ba9",
+      "bytes": 1500
     },
     {
       "path": "data/loop-evidence-reactor-demo.json",
@@ -1205,6 +1230,11 @@
       "path": "docs/LEGAL_SHIELD_V13_TOKEN_MARKET_BOUNDARY_REPORT.md",
       "sha256": "199199c79269161e87ea3c8eb181e5c46404e76202978e4256940b79ddeae083",
       "bytes": 1366
+    },
+    {
+      "path": "docs/LOOP_CONTRACT_THEATRE_V47.md",
+      "sha256": "d2c45dc674aaa1b9b172258bcccf1a2d406239307f0302bf95545d86d7deec63",
+      "bytes": 1817
     },
     {
       "path": "docs/LOOP_EVIDENCE_REACTOR_V49.md",
@@ -1822,6 +1852,16 @@
       "bytes": 10027
     },
     {
+      "path": "docs/releases/README_V44_HOTFIX.md",
+      "sha256": "4b7968b62a5aa1b3fe93329464860f243f05fcc3c5a8d4773257f57f20ebebf7",
+      "bytes": 473
+    },
+    {
+      "path": "docs/releases/README_V45_HOTFIX.md",
+      "sha256": "296ebdf972baae430989764caacab3b07b8433cdfe6f5edfa49f08da989d4703",
+      "bytes": 250
+    },
+    {
       "path": "docs/releases/REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.md",
       "sha256": "c8f2f4f3799ab0a663f3e385b377e7fb2dcc673b428820139927a6290097ff5a",
       "bytes": 943
@@ -1872,19 +1912,14 @@
       "bytes": 958
     },
     {
-      "path": "docs/releases/V47_LOOP_OPERATING_ROOM.md",
-      "sha256": "e7162ec99ba594e71ae8271b73349d3dd74cd14e140138466a851d590c01c201",
-      "bytes": 611
+      "path": "docs/releases/V47_LOOP_CONTRACT_THEATRE.md",
+      "sha256": "1c6da2aadb14c20b5a454b5b964c72a52d8c66cbde02bf4c72714c58f28a1ae2",
+      "bytes": 880
     },
     {
-      "path": "docs/releases/V48_DAY_SCALE_LOOP_OBSERVATORY.md",
-      "sha256": "1a500529874bcea2515d462e0ce9c89fb65e39dd0d1a5b352df8d9ad1b8e45fe",
-      "bytes": 819
-    },
-    {
-      "path": "docs/releases/V49_LOOP_EVIDENCE_REACTOR.md",
-      "sha256": "3b2c4f2fc790269e0874dc055bd5d21b68c7087461407a2e5acb6395a15aeac4",
-      "bytes": 764
+      "path": "docs/releases/V47_REPOSITORY_EXCELLENCE_AND_TRUST_STABILIZATION.md",
+      "sha256": "123388e04a854160b26a819d933486ac8c2dba38aaa3de6508ffdd8412081f63",
+      "bytes": 3745
     },
     {
       "path": "docs/releases/V50_LOOP_TO_RSI.md",
@@ -2220,16 +2255,6 @@
       "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_INSTITUTIONAL_WEBSITE_FINALIZATION_V42_WEB_UI_GUIDE.md",
       "sha256": "7ccab910ebdcd0b8fcdcba568b3271c206a24476fe430bbe85e1dafe7d92c642",
       "bytes": 652
-    },
-    {
-      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_LOOP_TO_RSI_V50_REPORT.md",
-      "sha256": "f64a2be07ff06b7ac0482cf057b8dbd34acc76a6a98995aab411426f19dee3c6",
-      "bytes": 798
-    },
-    {
-      "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_LOOP_TO_RSI_V50_WEB_UI_GUIDE.md",
-      "sha256": "ea7b881be826952389e1ae5de6ca902bbacb08f97de009b80d4e771d36d9841d",
-      "bytes": 674
     },
     {
       "path": "docs/reports/historical-root/GOALOS_AGIJOBMANAGER_MANDATE_EPOCH_CLEARINGHOUSE_V26_WEB_UI_GUIDE.md",
@@ -2623,7 +2648,7 @@
     },
     {
       "path": "failsafe-bootstrap-v50.json",
-      "sha256": "31eaedf56c3fb5a1c0dbd0f8b3734f2cfb78ca4fa262ebd0dacde620557210ca",
+      "sha256": "0d636afd4cf91f70db5f28eeb9c2089311f5c9549fa3ce556f50683cde56541a",
       "bytes": 99
     },
     {
@@ -2645,6 +2670,16 @@
       "path": "legal.html",
       "sha256": "1923c8b1bf840cdc6dee4a7f5bc9b769e9a7d5385f0c9c4fa04dfe8025668db9",
       "bytes": 7058
+    },
+    {
+      "path": "loop-contract-theatre-demo.json",
+      "sha256": "495779ce14f9b1708df0b0f277dc1f6949de8e6acd37f3d4546ff550ae4e0ba9",
+      "bytes": 1500
+    },
+    {
+      "path": "loop-contract-theatre.html",
+      "sha256": "60664a763518939ff2a4728eca65c422e8177f5b4bd7294a3f86cca36bfbe276",
+      "bytes": 10609
     },
     {
       "path": "loop-evidence-reactor-demo.json",
@@ -2917,6 +2952,11 @@
       "bytes": 2242
     },
     {
+      "path": "schemas/loop-contract-theatre.schema.json",
+      "sha256": "6472e51783588c7f53964c074adc538ccd7ac6fcc56c2c4f41ea80b538e1156f",
+      "bytes": 1271
+    },
+    {
       "path": "schemas/loop-evidence-reactor.schema.json",
       "sha256": "a8e8df0e1a3ac12f06e89f3debf354089e989ca8f4713b757788f2b4f24c8d30",
       "bytes": 1011
@@ -3123,8 +3163,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "796623c9509f21ec461f1bf935d179158c299485319f9470b4c57581a19a7137",
-      "bytes": 13393
+      "sha256": "06947f762844a24ab13f384db17303250ed1a4de19aabd70a81aa49a9dbf6d15",
+      "bytes": 13734
     },
     {
       "path": "sovereign-experience-stream-demo.json",
