@@ -1,140 +1,43 @@
 {
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
+  "version": "v53",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "routeCount": 59,
+  "generatedFrom": "v53 ASI Proof Horizon Console overlay",
   "posture": {
     "browserLocal": true,
-    "noAccount": true,
-    "noForms": true,
-    "noWallet": true,
+    "publicSafe": true,
+    "noUserDataWanted": true,
     "noAnalytics": true,
     "noCookies": true,
-    "noUserDataWanted": true
+    "noPublicWallet": true
   },
-  "hero": {
-    "title": "Proof-settled machine work under human authority.",
-    "subtitle": "GoalOS AGIJobManager Ascension is a public proof institution: users start with a guided path, run browser-local demonstrations, inspect evidence, and reach expert-only boundaries without confusion.",
-    "routeCount": 59
-  },
-  "personas": [
-    {
-      "id": "new",
-      "title": "I am new here",
-      "summary": "Start with the five-minute proof path: what GoalOS is, why proof matters, and where to run a safe demo.",
-      "href": "experience-hub.html#path-new"
-    },
-    {
-      "id": "operator",
-      "title": "I operate or review work",
-      "summary": "Use Mission Control, Evidence Docket, settlement lifecycle, and Action Graph pages.",
-      "href": "experience-hub.html#path-operator"
-    },
-    {
-      "id": "builder",
-      "title": "I am technical",
-      "summary": "Inspect router, schemas, architecture, benchmark bridge, and proof-carrying artifact pages.",
-      "href": "experience-hub.html#path-builder"
-    },
-    {
-      "id": "risk",
-      "title": "I need legal / boundary clarity",
-      "summary": "Go straight to legal, privacy, AGIALPHA boundary, claim firewall, and replay gauntlet pages.",
-      "href": "experience-hub.html#path-risk"
-    }
-  ],
-  "paths": [
-    {
-      "id": "path-new",
-      "title": "Five-minute proof path",
-      "audience": "Non-technical users",
-      "summary": "The fastest way to understand GoalOS without touching a wallet.",
-      "steps": [
-        "start",
-        "ascension-flight-deck",
-        "trust-equation-simulator",
-        "proof-to-action-theatre",
-        "until-done-mission-control",
-        "loop-to-rsi-sovereign-governance",
-        "loop-to-rsi-control-room",
-        "loop-to-rsi-to-asi-superintelligence"
-      ]
-    },
-    {
-      "id": "path-operator",
-      "title": "Operator review path",
-      "audience": "Reviewers and operators",
-      "summary": "From mission contract to proof room, action graph, settlement rail, and Chronicle.",
-      "steps": [
-        "until-done-mission-control",
-        "evidence-docket-composer",
-        "action-graph-handoff",
-        "proof-settlement-lifecycle",
-        "chronicle-compounding-lab",
-        "loop-to-rsi-control-room",
-        "loop-to-rsi-to-asi-superintelligence"
-      ]
-    },
-    {
-      "id": "path-builder",
-      "title": "Builder / protocol path",
-      "audience": "Engineers and advanced users",
-      "summary": "Inspect routing, artifacts, real-task benchmark posture, schemas, and architecture.",
-      "steps": [
-        "proof-conditioned-router-observatory",
-        "proof-carrying-artifact-passport",
-        "real-task-benchmark-bridge",
-        "proof-constitution-simulator",
-        "architecture",
-        "day-scale-loop-observatory",
-        "loop-to-rsi-control-room",
-        "loop-to-rsi-to-asi-superintelligence"
-      ]
-    },
-    {
-      "id": "path-risk",
-      "title": "Boundary and assurance path",
-      "audience": "Risk, legal, governance",
-      "summary": "See the no-data, no-offer, no-wallet, no-audit-claim, and proof-challenge boundaries.",
-      "steps": [
-        "legal",
-        "privacy",
-        "agialpha-token-boundary",
-        "claim-boundary-firewall",
-        "replay-falsification-gauntlet",
-        "assurance"
-      ]
-    }
-  ],
-  "categories": [
-    {
-      "id": "start",
-      "title": "Start Here",
-      "summary": "Best first clicks for anyone landing on the website."
-    },
-    {
-      "id": "core",
-      "title": "Core GoalOS Idea",
-      "summary": "The shortest path from output to proof to governed decision state."
-    },
-    {
-      "id": "evidence",
-      "title": "Evidence & Claims",
-      "summary": "Claim boundaries, replay, falsification, dockets, and benchmarks."
-    },
-    {
-      "id": "coordination",
-      "title": "Coordination & Institutions",
-      "summary": "Multi-agent routing, institutions, inflows, and sovereign experience."
-    },
-    {
-      "id": "settlement",
-      "title": "Settlement & Capability",
-      "summary": "AGIJobManager settlement lifecycle, upgrade rights, artifact passports, and Chronicle."
-    },
-    {
-      "id": "assurance",
-      "title": "Assurance & Boundaries",
-      "summary": "Legal, privacy, token, verification, expert-only authority, and public-safe boundaries."
-    }
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
+  "releaseAliases": [
+    "v50-loop-to-rsi-sovereign-governance",
+    "v37-site-command-center",
+    "v37-site-experience-atlas",
+    "v37-website-command-center",
+    "v38-navigation-system-final",
+    "v39-experience-concierge-complete-navigation",
+    "v40-navigation-polish-failsafe",
+    "v41-navigation-source-polish-final",
+    "v42-institutional-website-finalization",
+    "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
+    "v42-v43-v44-v45-v46-v47-loop-operating-room-compatibility-failsafe",
+    "v43-repository-public-trust-finalization",
+    "v44-repository-public-trust-failsafe",
+    "v45-repository-public-trust-ultimate-failsafe",
+    "v45-repository-public-trust-zero-missing-test-failsafe",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v47-loop-operating-room",
+    "v48-day-scale-loop-observatory",
+    "v49-loop-evidence-reactor",
+    "v50-loop-to-rsi-sovereign-invention",
+    "v51-loop-to-rsi-control-room",
+    "v52-loop-to-rsi-to-asi-superintelligence",
+    "v52-loop-to-asi-governance-corridor",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
+    "v53-asi-proof-horizon-console"
   ],
   "pages": [
     {
@@ -727,7 +630,5 @@
       "boundary": "No external audit claim.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
-  ],
-  "routeCount": 59,
-  "version": "v53"
+  ]
 }

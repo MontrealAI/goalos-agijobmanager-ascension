@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ASI Proof Horizon Console Demo",
+  "type": "object",
+  "required": [
+    "release",
+    "route",
+    "outputArtifact",
+    "posture",
+    "pipeline",
+    "gates",
+    "claimBoundary"
+  ],
+  "properties": {
+    "release": {
+      "const": "v53"
+    },
+    "route": {
+      "const": "/asi-proof-horizon-console.html"
+    },
+    "outputArtifact": {
+      "const": "HorizonProofDocket"
+    },
+    "posture": {
+      "type": "object",
+      "required": [
+        "noWallet",
+        "zeroNetwork",
+        "noBrowserStorage",
+        "noUserDataWanted"
+      ]
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 12
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 8
+    },
+    "claimBoundary": {
+      "type": "string",
+      "minLength": 80
+    }
+  }
+}

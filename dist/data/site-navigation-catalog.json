@@ -1,6 +1,6 @@
 {
   "title": "GoalOS AGIJobManager Ascension Navigation Atlas",
-  "version": "v52",
+  "version": "v53",
   "posture": {
     "browserLocal": true,
     "zeroNetwork": true,
@@ -168,6 +168,16 @@
       "outputArtifact": "InflowReceipt",
       "boundary": "Local simulation.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ascension-inflow-control.html"
+    },
+    {
+      "route": "/asi-proof-horizon-console.html",
+      "href": "asi-proof-horizon-console.html",
+      "title": "ASI Proof Horizon Console",
+      "audience": "Executives / AI builders / governance reviewers",
+      "description": "A browser-local control room showing how a restartable loop becomes RSI governance, then enters an ASI-horizon proof firewall with evidence, baselines, containment, council review, rollback, and Chronicle gates.",
+      "outputArtifact": "HorizonProofDocket",
+      "boundary": "Governance demonstration only; ASI is treated as a future proof horizon, not an achievement claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/asi-proof-horizon-console.html"
     },
     {
       "route": "/assurance.html",
@@ -370,26 +380,6 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html"
     },
     {
-      "route": "/loop-to-rsi-control-room.html",
-      "href": "loop-to-rsi-control-room.html",
-      "title": "Loop \u2192 RSI Control Room",
-      "audience": "Advanced users / non-technical reviewers / governance operators",
-      "description": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
-      "outputArtifact": "RSIDossier",
-      "boundary": "Browser-local demonstration; no wallet, no network, no production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html"
-    },
-    {
-      "route": "/loop-to-rsi-to-asi-superintelligence.html",
-      "href": "loop-to-rsi-to-asi-superintelligence.html",
-      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
-      "audience": "Executives / operators / advanced reviewers",
-      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
-      "outputArtifact": "HorizonDossier",
-      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-to-asi-superintelligence.html"
-    },
-    {
       "route": "/loop-to-asi-governance-corridor.html",
       "href": "loop-to-asi-governance-corridor.html",
       "title": "Loop \u2192 RSI \u2192 ASI Governance Corridor",
@@ -400,6 +390,16 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-asi-governance-corridor.html"
     },
     {
+      "route": "/loop-to-rsi-control-room.html",
+      "href": "loop-to-rsi-control-room.html",
+      "title": "Loop \u2192 RSI Control Room",
+      "audience": "Advanced users / non-technical reviewers / governance operators",
+      "description": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local demonstration; no wallet, no network, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html"
+    },
+    {
       "route": "/loop-to-rsi-sovereign-governance.html",
       "href": "loop-to-rsi-sovereign-governance.html",
       "title": "From Loop to RSI",
@@ -408,6 +408,16 @@
       "outputArtifact": "RSIDossier",
       "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production autonomy.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
+    },
+    {
+      "route": "/loop-to-rsi-to-asi-superintelligence.html",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
+      "outputArtifact": "HorizonDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-to-asi-superintelligence.html"
     },
     {
       "route": "/loop-to-rsi.html",
@@ -680,6 +690,6 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
   ],
-  "routeCount": 58,
-  "release": "v52-loop-to-rsi-to-asi-superintelligence"
+  "routeCount": 59,
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe"
 }

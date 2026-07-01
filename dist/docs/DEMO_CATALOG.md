@@ -126,3 +126,7 @@ This browser-local demonstration shows the full governance horizon: a restartabl
 ## Loop → RSI → ASI Governance Corridor
 
 A browser-local control room that turns long-running loops into RSI governance and then shows the added proof, containment, council, and human-boundary gates required for future ASI-class authority. Exports a local CorridorDossier JSON.
+
+## ASI Proof Horizon Console
+
+Shows the full GoalOS proof horizon: a restartable loop becomes RSI governance, then enters a high-assurance authority firewall where evidence, replay, baselines, shock persistence, containment, council review, rollback, and human boundary decide whether anything can advance. Output artifact: `HorizonProofDocket`.

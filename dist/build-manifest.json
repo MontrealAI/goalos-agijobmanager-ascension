@@ -1,9 +1,10 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe",
-  "routeCount": 58,
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
+  "routeCount": 59,
   "releaseAliases": [
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe",
+    "v53-asi-proof-horizon-console",
     "v52-loop-to-rsi-to-asi-superintelligence",
     "v52-loop-to-asi-governance-corridor",
     "v51-loop-to-rsi-control-room",
@@ -22,9 +23,10 @@
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-loop-evidence-reactor-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe"
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe"
   ],
-  "builtAt": "2026-07-01T18:32:11.595733Z",
+  "builtAt": "2026-07-01T19:09:29.573169Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -83,8 +85,8 @@
     },
     {
       "path": "ascension-flight-deck.html",
-      "sha256": "dce31cced0b9a93ddb63f1878de2d16653e5da695e8ae39d4943168e819c5a2b",
-      "bytes": 8158
+      "sha256": "4d356be027c7716b2901c67b78379bb9f7d24342b85b64a9956ee70156dbc278",
+      "bytes": 9033
     },
     {
       "path": "ascension-inflow-control-demo.json",
@@ -95,6 +97,16 @@
       "path": "ascension-inflow-control.html",
       "sha256": "9d6b403ec58f4d5ee0cc6f671d3bc6f7bb44e1597921807c8a0f040e4ea58f25",
       "bytes": 9316
+    },
+    {
+      "path": "asi-proof-horizon-console-demo.json",
+      "sha256": "b37dff68a56cb0aa912aaa90c2164f33e9639d8df9c1c2deec472558c14d8c77",
+      "bytes": 1748
+    },
+    {
+      "path": "asi-proof-horizon-console.html",
+      "sha256": "3064bd7dc868da96ad88b9db397727cb4cef358816212fa0925e255c5971e294",
+      "bytes": 14846
     },
     {
       "path": "assets/action-graph-handoff.css",
@@ -125,6 +137,16 @@
       "path": "assets/ascension-flight-deck.js",
       "sha256": "b273e1f4ff411da18a99eee5f254f2a2834dface537c338947be708cf8a27f60",
       "bytes": 5333
+    },
+    {
+      "path": "assets/asi-proof-horizon-console.css",
+      "sha256": "a699d2be34fec961d50c4254628e9f4373de8442e26f3c4293afb824a60f53c9",
+      "bytes": 9445
+    },
+    {
+      "path": "assets/asi-proof-horizon-console.js",
+      "sha256": "b8e0fe718b5e0c55c250676f3fe69d92b1bcdd9ba44580cb5a43148d7cc331d6",
+      "bytes": 9725
     },
     {
       "path": "assets/atelier.css",
@@ -687,6 +709,11 @@
       "bytes": 30688
     },
     {
+      "path": "canonical-route-manifest-v53.json",
+      "sha256": "a4b4e47a502646e064d974568874b0bf2f1dc2bd7fe1bb2f288ccdd369cdd0fe",
+      "bytes": 31598
+    },
+    {
       "path": "canonical-route-manifest.json",
       "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
       "bytes": 24891
@@ -718,8 +745,8 @@
     },
     {
       "path": "command-center.html",
-      "sha256": "9b8657632022632220c7a258c20f22816e7ea2ffc0bb7fd2ad051f49585dedef",
-      "bytes": 19964
+      "sha256": "cec627285f6ea26f75e99430c98bd8f3cd2dd8d20cbb9b561b796b2457f9f6c7",
+      "bytes": 20307
     },
     {
       "path": "coordination-engine.html",
@@ -760,6 +787,11 @@
       "path": "data/ascension-inflow-control-demo.json",
       "sha256": "7ee3b667623680b6f3b7de08ed8e9a4eca1b620f8dd53407723bfdca29fe95ad",
       "bytes": 2925
+    },
+    {
+      "path": "data/asi-proof-horizon-console-demo.json",
+      "sha256": "b37dff68a56cb0aa912aaa90c2164f33e9639d8df9c1c2deec472558c14d8c77",
+      "bytes": 1748
     },
     {
       "path": "data/canonical-identities.json",
@@ -817,6 +849,11 @@
       "bytes": 30688
     },
     {
+      "path": "data/canonical-route-manifest-v53.json",
+      "sha256": "a4b4e47a502646e064d974568874b0bf2f1dc2bd7fe1bb2f288ccdd369cdd0fe",
+      "bytes": 31598
+    },
+    {
       "path": "data/canonical-route-manifest.json",
       "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
       "bytes": 24891
@@ -858,8 +895,8 @@
     },
     {
       "path": "data/experience-hub-catalog.json",
-      "sha256": "5e90d5c87356384a83dcc40f14db89495a37cf34f1bc46dd888a663db38f1829",
-      "bytes": 33877
+      "sha256": "201d50d4a68f954541a2c810b9c2dc2d84d64e45e19ac9863027f4d94e93f05c",
+      "bytes": 34696
     },
     {
       "path": "data/failsafe-bootstrap-v49.json",
@@ -868,7 +905,7 @@
     },
     {
       "path": "data/failsafe-bootstrap-v50.json",
-      "sha256": "e9237a63d7d998e2d08ece5e171c02226bd40de9c47abe0f7b9f38e1fd167430",
+      "sha256": "66aa3e3c349448d70f9817e9a0a2055d36260efd884865a701bede86946eb4ed",
       "bytes": 99
     },
     {
@@ -880,6 +917,11 @@
       "path": "data/failsafe-bootstrap-v52.json",
       "sha256": "127d432e5c03300fef97a24bd23b17f3313520dc309528066f1fd1f7f0f8f961",
       "bytes": 114
+    },
+    {
+      "path": "data/failsafe-bootstrap-v53.json",
+      "sha256": "6fb888b905f696cda99637ce51e39c0a97b248f0678b1d31534aeb2517be89c7",
+      "bytes": 87
     },
     {
       "path": "data/final-assurance-policy.json",
@@ -1008,13 +1050,13 @@
     },
     {
       "path": "data/site-navigation-catalog.json",
-      "sha256": "968b482fd6f5af37bc11910bd1beb8274afaedd47969287a4125e56c5cdc0030",
-      "bytes": 32046
+      "sha256": "968cb8540775bcf6eaaa41c64fceb26258b7f4cf7abb3cee641cf2884497ea1d",
+      "bytes": 32843
     },
     {
       "path": "data/site-navigation-map.json",
-      "sha256": "7159ad2cdf01315d6ba2a7ec64d4ef8d3610120330bcb8d8ad8ebcbe16a55608",
-      "bytes": 17389
+      "sha256": "552b273a9cc1a8000d365a952fa4930a618a7d4607a51912caa6a24aab98baef",
+      "bytes": 18315
     },
     {
       "path": "data/site-navigation-v37.json",
@@ -1060,6 +1102,11 @@
       "path": "data/site-navigation-v52.json",
       "sha256": "4087ed59764c7a9db8152ca9a10976ccf235f306a7cfc143ce3244c54388f288",
       "bytes": 29597
+    },
+    {
+      "path": "data/site-navigation-v53.json",
+      "sha256": "3d8e532e45ccb1475d2667edc0e23268dadb36dd6d4737de4fd70f4c45121a31",
+      "bytes": 31457
     },
     {
       "path": "data/site-rehydration-v39.json",
@@ -1177,6 +1224,11 @@
       "bytes": 1556
     },
     {
+      "path": "docs/ASI_PROOF_HORIZON_CONSOLE_V53.md",
+      "sha256": "6f2f9b11d11446d5071d223eaa84bf917d203960587cb9284d309ab1550bd567",
+      "bytes": 1400
+    },
+    {
       "path": "docs/AUTOMATED_ASSURANCE.md",
       "sha256": "7c0cd920ea8097966e8dc326708c5d9b6b70e03bd65da56eab937ee388f27b6c",
       "bytes": 818
@@ -1228,8 +1280,8 @@
     },
     {
       "path": "docs/DEMO_CATALOG.md",
-      "sha256": "34c2ba492804d72929e977197fbec87878fd06e6dc1b1b029cacc6232d0e95cd",
-      "bytes": 16012
+      "sha256": "5bba71b4fbb82b454f82ee326c3290f89a5828e817f20b1bb061ee25bce7a444",
+      "bytes": 16359
     },
     {
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
@@ -2047,6 +2099,11 @@
       "bytes": 470
     },
     {
+      "path": "docs/releases/V53_ASI_PROOF_HORIZON_CONSOLE.md",
+      "sha256": "bdefe8cd546f547fcfbcddc15aa695f613d197283410f0edcde6327f97c8761d",
+      "bytes": 825
+    },
+    {
       "path": "docs/reports/ASCENSION_FLIGHT_DECK_V31_REPORT.json",
       "sha256": "91de3a57c98917bb7697e790081f515506c01115ebc2f88e3358298fc67e7d35",
       "bytes": 204
@@ -2728,23 +2785,23 @@
     },
     {
       "path": "experience-atlas.html",
-      "sha256": "e4fe3d43bacfcbb57053d7d03bf23dbae3ed0a2d1bbc2f8076083eb234cfce5c",
-      "bytes": 6743
+      "sha256": "d0f1a5bd01bafd44907fc0fe7659010e9669455bda8d8e551bb108249bb26980",
+      "bytes": 7213
     },
     {
       "path": "experience-concierge.html",
-      "sha256": "3e7cb2c42b71ed369f3d2cf98bf8c5707b6a7a8afba5c1e6a7b7cf0110737959",
-      "bytes": 21044
+      "sha256": "c386b78a34b5891c17078d9543e58fbb7c77a29ec45aa07e9e901939e318c291",
+      "bytes": 21514
     },
     {
       "path": "experience-hub-catalog.json",
-      "sha256": "5e90d5c87356384a83dcc40f14db89495a37cf34f1bc46dd888a663db38f1829",
-      "bytes": 33877
+      "sha256": "201d50d4a68f954541a2c810b9c2dc2d84d64e45e19ac9863027f4d94e93f05c",
+      "bytes": 34696
     },
     {
       "path": "experience-hub.html",
-      "sha256": "853bf941d3fd415a37da8223c5c6b7de2d1aa13ee32194e3689b21417a04e18e",
-      "bytes": 19046
+      "sha256": "a519e034dfa0c302c58de652c48a22416d7c02dd912070e422ceaca82b41a6dc",
+      "bytes": 19516
     },
     {
       "path": "expert-console.html",
@@ -2763,7 +2820,7 @@
     },
     {
       "path": "failsafe-bootstrap-v50.json",
-      "sha256": "e9237a63d7d998e2d08ece5e171c02226bd40de9c47abe0f7b9f38e1fd167430",
+      "sha256": "66aa3e3c349448d70f9817e9a0a2055d36260efd884865a701bede86946eb4ed",
       "bytes": 99
     },
     {
@@ -2777,14 +2834,19 @@
       "bytes": 114
     },
     {
+      "path": "failsafe-bootstrap-v53.json",
+      "sha256": "6fb888b905f696cda99637ce51e39c0a97b248f0678b1d31534aeb2517be89c7",
+      "bytes": 87
+    },
+    {
       "path": "final-assurance-policy.json",
       "sha256": "1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e",
       "bytes": 2328
     },
     {
       "path": "index.html",
-      "sha256": "eb9cc36f679b2ac1770d472f45ca60a59ec5bc378e3749568359e7b6974b325d",
-      "bytes": 15576
+      "sha256": "d8407f76f54ba55e691495b72f54792dd7d3e4eacb052a0b1e0b8bfff8941329",
+      "bytes": 16187
     },
     {
       "path": "legal-boundary-policy.json",
@@ -2908,8 +2970,8 @@
     },
     {
       "path": "navigation-atlas.html",
-      "sha256": "aa61d0cfcdf424228ab0e08cb7a261d83a8f4f0742b6ee72f011c574a06f6f45",
-      "bytes": 16557
+      "sha256": "09476e2f76de92f441d2811d52704b599da3525c801a239b512f6403d7474428",
+      "bytes": 17027
     },
     {
       "path": "operator-console.html",
@@ -2928,8 +2990,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "ce5270bd6434542e678b420f97e1172439b49c2fe511b66c38216627c0909293",
-      "bytes": 3251
+      "sha256": "a4c79c40f6f7cc56b3146327947368339b6186f86a741da95002589ba2046aef",
+      "bytes": 3379
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -3060,6 +3122,11 @@
       "path": "schemas/ascension-inflow-control.schema.json",
       "sha256": "4efffea26069282ddf5343d7067d40b676a1fc628b5166012ed6a226e72e0924",
       "bytes": 1415
+    },
+    {
+      "path": "schemas/asi-proof-horizon-console.schema.json",
+      "sha256": "e6b75e40344690a9f346e9116f52a0fc6ff0088ba0a3fe7a05faa1faa273751c",
+      "bytes": 852
     },
     {
       "path": "schemas/chronicle-compounding-lab.schema.json",
@@ -3273,8 +3340,8 @@
     },
     {
       "path": "site-atlas.html",
-      "sha256": "c00c4a2ea8e3f2f5f3b62c476bf6c1b45a2ae411005407acefb1ade11f200daa",
-      "bytes": 16511
+      "sha256": "cc84fcdae45c81ac0f2c52ed3d26e76189b0d5d4a566eda0f8da30ed94096667",
+      "bytes": 16981
     },
     {
       "path": "site-experience-atlas.json",
@@ -3283,13 +3350,13 @@
     },
     {
       "path": "site-navigation-catalog.json",
-      "sha256": "968b482fd6f5af37bc11910bd1beb8274afaedd47969287a4125e56c5cdc0030",
-      "bytes": 32046
+      "sha256": "968cb8540775bcf6eaaa41c64fceb26258b7f4cf7abb3cee641cf2884497ea1d",
+      "bytes": 32843
     },
     {
       "path": "site-navigation-map.json",
-      "sha256": "7159ad2cdf01315d6ba2a7ec64d4ef8d3610120330bcb8d8ad8ebcbe16a55608",
-      "bytes": 17389
+      "sha256": "552b273a9cc1a8000d365a952fa4930a618a7d4607a51912caa6a24aab98baef",
+      "bytes": 18315
     },
     {
       "path": "site-navigation-v37.json",
@@ -3337,14 +3404,19 @@
       "bytes": 29597
     },
     {
+      "path": "site-navigation-v53.json",
+      "sha256": "3d8e532e45ccb1475d2667edc0e23268dadb36dd6d4737de4fd70f4c45121a31",
+      "bytes": 31457
+    },
+    {
       "path": "site-rehydration-v39.json",
       "sha256": "29aeff2b634b57fe444e51eecc00eb58a4b38d3dba09c6e9fbbffbec38aa6324",
       "bytes": 85
     },
     {
       "path": "sitemap.xml",
-      "sha256": "aaffb1ad84c29a80a8702a2faef22ff6c27415321755e8ef01952459943dfd11",
-      "bytes": 15149
+      "sha256": "1b6bf67dfa05b045953cc65e53df32eeecfaed78ece3daa41f3f83a2a8218047",
+      "bytes": 15723
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -3412,7 +3484,7 @@
       "bytes": 5583
     }
   ],
-  "version": "v52",
+  "version": "v53",
   "dayScaleLoopObservatory": "PASS",
   "repositoryPublicTrustDayScaleLoopV48": "PASS",
   "loopEvidenceReactor": "PASS",
@@ -3422,8 +3494,10 @@
   "repositoryPublicTrustLoopToRsiV50": "PASS",
   "repositoryPublicTrustLoopToRsiControlRoomV51": "PASS",
   "loopToRsiControlRoom": "PASS",
-  "publicHtmlRouteCount": 58,
+  "publicHtmlRouteCount": 59,
   "loopToAsiGovernanceCorridor": "PASS",
   "loopToRsiToAsiSuperintelligence": "PASS",
-  "repositoryPublicTrustLoopToAsiGovernanceCorridorV52": "PASS"
+  "repositoryPublicTrustLoopToAsiGovernanceCorridorV52": "PASS",
+  "asiProofHorizonConsole": "PASS",
+  "repositoryPublicTrustAsiProofHorizonV53": "PASS"
 }
