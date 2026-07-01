@@ -1,5 +1,5 @@
 {
-  "release": "v50-loop-to-rsi-sovereign-governance",
+  "release": "v51-loop-to-rsi-control-room",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "browserLocal": true,
@@ -52,7 +52,8 @@
         "trust-equation-simulator",
         "proof-to-action-theatre",
         "until-done-mission-control",
-        "loop-to-rsi-sovereign-governance"
+        "loop-to-rsi-sovereign-governance",
+        "loop-to-rsi-control-room"
       ]
     },
     {
@@ -65,7 +66,8 @@
         "evidence-docket-composer",
         "action-graph-handoff",
         "proof-settlement-lifecycle",
-        "chronicle-compounding-lab"
+        "chronicle-compounding-lab",
+        "loop-to-rsi-control-room"
       ]
     },
     {
@@ -79,7 +81,8 @@
         "real-task-benchmark-bridge",
         "proof-constitution-simulator",
         "architecture",
-        "day-scale-loop-observatory"
+        "day-scale-loop-observatory",
+        "loop-to-rsi-control-room"
       ]
     },
     {
@@ -539,6 +542,15 @@
       "summary": "Canonical identities, public verification posture, and assurance state."
     },
     {
+      "id": "loop-to-rsi-control-room",
+      "title": "Loop \u2192 RSI Control Room",
+      "href": "loop-to-rsi-control-room.html",
+      "category": "core",
+      "level": "Core",
+      "time": "6 min",
+      "summary": "A polished control room for the transition from long-running loops to proof-governed RSI: ECI, baselines, Move-37 gates, dossier, and Chronicle."
+    },
+    {
       "route": "/loop-to-rsi-sovereign-governance.html",
       "href": "loop-to-rsi-sovereign-governance.html",
       "title": "From Loop to RSI \u00b7 Sovereign Governance",
@@ -549,5 +561,5 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
     }
   ],
-  "routeCount": 46
+  "routeCount": 47
 }

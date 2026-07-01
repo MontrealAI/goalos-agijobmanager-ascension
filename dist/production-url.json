@@ -54,6 +54,8 @@
   "loopEvidenceReactor": "PASS",
   "loopToRsi": "PASS",
   "loopToRsiSovereignGovernance": "PASS",
+  "loopToRsiControlRoom": "PASS",
+  "repositoryPublicTrustLoopToRsiControlRoomV51": "PASS",
   "loopToRSISovereignGovernance": "PASS",
   "repositoryPublicTrustLoopOperatingRoomV47": "PASS",
   "repositoryPublicTrustDayScaleLoopV48": "PASS",
@@ -72,10 +74,10 @@
   "singleNativeHeader": "PASS",
   "exactRouteCount": "PASS",
   "vendoredDependencies": "PASS",
-  "publicHtmlRouteCount": 55,
-  "canonicalRouteManifest": "data/canonical-route-manifest-v50.json",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe",
-  "version": "v50",
+  "publicHtmlRouteCount": 56,
+  "canonicalRouteManifest": "data/canonical-route-manifest-v51.json",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
+  "version": "v51",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
     "v48-day-scale-loop-observatory",
@@ -88,7 +90,9 @@
     "v42-v43-v44-v45-v46-v47-v48-v49-loop-evidence-reactor-compatibility-failsafe",
     "v49-loop-evidence-reactor",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe",
-    "v50-loop-to-rsi-sovereign-governance"
+    "v50-loop-to-rsi-sovereign-governance",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
+    "v51-loop-to-rsi-control-room"
   ],
-  "routeCount": 55
+  "routeCount": 56
 }
