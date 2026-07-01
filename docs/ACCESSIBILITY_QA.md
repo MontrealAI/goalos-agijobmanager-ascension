@@ -4,7 +4,7 @@ The website is a public proof institution. It must be readable, navigable, and r
 
 ## Current public-trust standard
 
-- Canonical route count: **51 routes** from `data/canonical-route-manifest-v47.json`.
+- Canonical route count: **50 routes** from `data/canonical-route-manifest-v43.json`.
 - No shipped page should show `Loading…`, `0 routes`, `0 matching pages`, or dash-only route counts as its primary static content.
 - Every public route should have a title, description, canonical URL, OpenGraph metadata, Twitter Card metadata, and a visible user path.
 - Navigation should use one native header plus one floating Site Command, not stacked menus.
