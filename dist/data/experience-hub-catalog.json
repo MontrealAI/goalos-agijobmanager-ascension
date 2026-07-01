@@ -1,5 +1,5 @@
 {
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "browserLocal": true,
@@ -13,7 +13,7 @@
   "hero": {
     "title": "Proof-settled machine work under human authority.",
     "subtitle": "GoalOS AGIJobManager Ascension is a public proof institution: users start with a guided path, run browser-local demonstrations, inspect evidence, and reach expert-only boundaries without confusion.",
-    "routeCount": 59
+    "routeCount": 60
   },
   "personas": [
     {
@@ -48,6 +48,7 @@
       "audience": "Non-technical users",
       "summary": "The fastest way to understand GoalOS without touching a wallet.",
       "steps": [
+        "superintelligence-proof-governance-console",
         "start",
         "ascension-flight-deck",
         "trust-equation-simulator",
@@ -64,6 +65,7 @@
       "audience": "Reviewers and operators",
       "summary": "From mission contract to proof room, action graph, settlement rail, and Chronicle.",
       "steps": [
+        "superintelligence-proof-governance-console",
         "until-done-mission-control",
         "evidence-docket-composer",
         "action-graph-handoff",
@@ -79,6 +81,7 @@
       "audience": "Engineers and advanced users",
       "summary": "Inspect routing, artifacts, real-task benchmark posture, schemas, and architecture.",
       "steps": [
+        "superintelligence-proof-governance-console",
         "proof-conditioned-router-observatory",
         "proof-carrying-artifact-passport",
         "real-task-benchmark-bridge",
@@ -137,6 +140,15 @@
     }
   ],
   "pages": [
+    {
+      "id": "superintelligence-proof-governance-console",
+      "title": "Superintelligence Proof Governance Console",
+      "href": "superintelligence-proof-governance-console.html",
+      "category": "Core idea",
+      "level": "Core",
+      "time": "5 min",
+      "summary": "Run the clearest corridor from loop state to RSI gates to ASI-horizon authority: evidence, replay, baselines, council, human boundary, and GovernanceDocket export."
+    },
     {
       "route": "/action-graph-handoff.html",
       "href": "action-graph-handoff.html",
@@ -728,6 +740,6 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
   ],
-  "routeCount": 59,
-  "version": "v53"
+  "routeCount": 60,
+  "version": "v54"
 }

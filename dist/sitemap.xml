@@ -29,6 +29,7 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v51.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v52.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v53.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v54.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/capability-conformance.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab-demo.json</loc></url>
@@ -59,6 +60,7 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v51.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v52.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v53.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v54.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/final-assurance-policy.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/index.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/legal-boundary-policy.json</loc></url>
@@ -125,12 +127,15 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v51.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v52.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v53.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v54.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-rehydration-v39.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-experience-stream-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-experience-stream.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy-conformance.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/start.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/superintelligence-proof-governance-console-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/superintelligence-proof-governance-console.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/terms.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/third-party-responsibility.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/trust-equation-simulator-demo.json</loc></url>

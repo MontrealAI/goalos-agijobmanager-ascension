@@ -59,6 +59,8 @@
   "loopToRsiToAsiSuperintelligence": "PASS",
   "asiProofHorizonConsole": "PASS",
   "repositoryPublicTrustAsiProofHorizonV53": "PASS",
+  "superintelligenceProofGovernanceConsole": "PASS",
+  "repositoryPublicTrustSuperintelligenceProofGovernanceV54": "PASS",
   "repositoryPublicTrustLoopToAsiV52": "PASS",
   "repositoryPublicTrustLoopToRsiControlRoomV51": "PASS",
   "repositoryPublicTrustLoopToAsiGovernanceCorridorV52": "PASS",
@@ -83,10 +85,10 @@
   "singleNativeHeader": "PASS",
   "exactRouteCount": "PASS",
   "vendoredDependencies": "PASS",
-  "publicHtmlRouteCount": 59,
-  "canonicalRouteManifest": "data/canonical-route-manifest-v53.json",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
-  "version": "v53",
+  "publicHtmlRouteCount": 60,
+  "canonicalRouteManifest": "data/canonical-route-manifest-v54.json",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe",
+  "version": "v54",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
     "v48-day-scale-loop-observatory",
@@ -106,7 +108,9 @@
     "v52-loop-to-rsi-to-asi-superintelligence",
     "v52-loop-to-asi-governance-corridor",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
-    "v53-asi-proof-horizon-console"
+    "v53-asi-proof-horizon-console",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe",
+    "v54-superintelligence-proof-governance-console"
   ],
-  "routeCount": 59
+  "routeCount": 60
 }

@@ -130,3 +130,8 @@ A browser-local control room that turns long-running loops into RSI governance a
 ## ASI Proof Horizon Console
 
 Shows the full GoalOS proof horizon: a restartable loop becomes RSI governance, then enters a high-assurance authority firewall where evidence, replay, baselines, shock persistence, containment, council review, rollback, and human boundary decide whether anything can advance. Output artifact: `HorizonProofDocket`.
+
+
+## Superintelligence Proof Governance Console
+
+Route: `superintelligence-proof-governance-console.html`. Shows how a restartable loop becomes RSI governance and then enters an ASI-horizon authority firewall where evidence contact, baselines, red-team persistence, council review, rollback, and human boundary decide what can become Chronicle memory.

@@ -1,0 +1,55 @@
+{
+  "release": "v54",
+  "title": "Superintelligence Proof Governance Console",
+  "route": "superintelligence-proof-governance-console.html",
+  "publicSafe": true,
+  "posture": {
+    "noAccount": true,
+    "noForms": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "zeroNetwork": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "corridor": [
+    "PROMPT",
+    "LOOP",
+    "TRACE",
+    "RESTART",
+    "RSI",
+    "FILTER",
+    "ATLAS",
+    "EVAL",
+    "MOVE37",
+    "DOSSIER",
+    "ASI_FIREWALL",
+    "COUNCIL",
+    "CAPACITY",
+    "CHRONICLE"
+  ],
+  "hardGates": [
+    "mission_contract",
+    "loop_state_restart",
+    "executed_evidence_eci",
+    "baseline_advantage",
+    "red_team_persistence",
+    "containment",
+    "architect_validator_council",
+    "human_boundary",
+    "rollback_ready",
+    "chronicle_entry"
+  ],
+  "outputArtifact": "SuperintelligenceGovernanceDocket",
+  "claimBoundary": "ASI and superintelligence are treated as governance horizons, not achieved capability claims. Public demos do not certify external facts, authorize production, connect wallets, broadcast transactions, complete external audits, or grant autonomous authority.",
+  "sourceDoctrine": [
+    "Loop state must survive context.",
+    "RSI search control is not outcome authority.",
+    "High novelty raises skepticism.",
+    "No proof, no evolution. No eval, no propagation. No rollback, no release."
+  ]
+}

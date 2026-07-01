@@ -1,6 +1,6 @@
 {
   "title": "GoalOS AGIJobManager Ascension Navigation Atlas",
-  "version": "v53",
+  "version": "v54",
   "posture": {
     "browserLocal": true,
     "zeroNetwork": true,
@@ -30,6 +30,7 @@
       "time": "7 min",
       "href": "command-center.html#executive",
       "steps": [
+        "superintelligence-proof-governance-console.html",
         "ascension-flight-deck.html",
         "until-done-mission-control.html",
         "proof-settlement-lifecycle.html",
@@ -44,6 +45,7 @@
       "time": "12 min",
       "href": "command-center.html#builder",
       "steps": [
+        "superintelligence-proof-governance-console.html",
         "proof-conditioned-router-observatory.html",
         "action-graph-handoff.html",
         "proof-carrying-artifact-passport.html",
@@ -99,6 +101,16 @@
     }
   ],
   "pages": [
+    {
+      "route": "/superintelligence-proof-governance-console.html",
+      "href": "superintelligence-proof-governance-console.html",
+      "title": "Superintelligence Proof Governance Console",
+      "audience": "Executives / researchers / reviewers",
+      "description": "A browser-local GoalOS control room for the Loop \u2192 RSI \u2192 ASI horizon: evidence contact, baselines, replay, Move-37 stress, council review, capacity allocation, and human boundary gates.",
+      "outputArtifact": "SuperintelligenceGovernanceDocket",
+      "boundary": "Public-safe governance simulation only; no achieved ASI claim and no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/superintelligence-proof-governance-console.html"
+    },
     {
       "route": "/action-graph-handoff.html",
       "href": "action-graph-handoff.html",
@@ -690,6 +702,6 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
   ],
-  "routeCount": 59,
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe"
+  "routeCount": 60,
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe"
 }
