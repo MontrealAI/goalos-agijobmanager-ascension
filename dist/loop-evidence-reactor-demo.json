@@ -1,0 +1,55 @@
+{
+  "version": "v49-loop-evidence-reactor",
+  "title": "Loop Evidence Reactor",
+  "route": "/loop-evidence-reactor.html",
+  "posture": {
+    "browserLocal": true,
+    "publicSafe": true,
+    "noAccount": true,
+    "noForm": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetwork": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noUserDataWanted": true
+  },
+  "virtualDisk": [
+    "contract.json",
+    "progress.md",
+    "log.md",
+    "bottleneck.md"
+  ],
+  "roles": [
+    "planner",
+    "builder",
+    "evaluator",
+    "trace-reader"
+  ],
+  "loopRules": [
+    "write the loop, not the prompt",
+    "separate the roles",
+    "negotiate the contract first",
+    "write state to disk",
+    "let the loop restart",
+    "score the subjective",
+    "read the traces",
+    "delete the harness",
+    "the bottleneck always moves"
+  ],
+  "proofChain": [
+    "Objective",
+    "Mission Contract",
+    "Bounded Roles",
+    "Trace",
+    "Verifier",
+    "Evidence Docket",
+    "Governed Decision State",
+    "Chronicle",
+    "Reusable Capability"
+  ],
+  "docket": "LoopDocket",
+  "claimBoundary": "Browser-local public-safe demonstration only; not a benchmark, external audit, factual certification, wallet action, transaction, or production authority."
+}
