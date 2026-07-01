@@ -1,5 +1,5 @@
 {
-  "version": "v37-site-command-center",
+  "version": "v53",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "browserLocal": true,
@@ -11,6 +11,35 @@
     "noUserDataWanted": true
   },
   "routes": [
+    {
+      "id": "asi-proof-horizon-console",
+      "title": "ASI Proof Horizon Console",
+      "href": "asi-proof-horizon-console.html",
+      "group": "Core",
+      "audience": [
+        "executive",
+        "advanced",
+        "operator",
+        "reviewer",
+        "governance"
+      ],
+      "time": 9,
+      "summary": "Run the proof horizon from loop state to RSI governance to future-superintelligence authority firewall with HorizonProofDocket export."
+    },
+    {
+      "id": "loop-to-rsi-to-asi-superintelligence",
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "group": "Core",
+      "audience": [
+        "advanced",
+        "operator",
+        "reviewer",
+        "governance"
+      ],
+      "time": 9,
+      "summary": "Moves from restartable loop to deterministic RSI to ASI-grade proof, replay, risk, quorum, and human-authority gates."
+    },
     {
       "id": "loop-to-rsi-sovereign-governance",
       "title": "From Loop to RSI",

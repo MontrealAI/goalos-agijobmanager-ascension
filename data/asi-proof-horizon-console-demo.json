@@ -1,0 +1,65 @@
+{
+  "release": "v53",
+  "title": "ASI Proof Horizon Console",
+  "route": "/asi-proof-horizon-console.html",
+  "outputArtifact": "HorizonProofDocket",
+  "posture": {
+    "noAccount": true,
+    "noForm": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "zeroNetwork": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "pipeline": [
+    "LOOP",
+    "TRACE",
+    "RESTART",
+    "RSI",
+    "FILTER",
+    "ATLAS",
+    "EVAL",
+    "MOVE37",
+    "DOSSIER",
+    "ASI",
+    "COUNCIL",
+    "CHRONICLE"
+  ],
+  "governanceLaw": "Capability pressure narrows authority; search control never grants outcome authority.",
+  "gates": [
+    "contract",
+    "replay",
+    "evidence_contact",
+    "baseline_advantage",
+    "shock_persistence",
+    "containment",
+    "architect_validator_council",
+    "human_boundary"
+  ],
+  "evidenceContactIndex": [
+    "E0 simulated",
+    "E1 probed",
+    "E2 executed",
+    "E3 replayed",
+    "E4 stress-tested",
+    "E5 externally validated"
+  ],
+  "requiredDossierFields": [
+    "objective",
+    "stage",
+    "ECI",
+    "authority",
+    "containment",
+    "baselines",
+    "shock_tests",
+    "council_quorum",
+    "claim_boundary",
+    "trace"
+  ],
+  "claimBoundary": "No achieved AGI, achieved ASI, superintelligence, empirical SOTA, production certification, live invention authority, autonomous sovereignty, guaranteed return, external audit completion, or civilization-scale capability is claimed. Stronger claims require real tasks, baselines, executed evidence, replayable ProofBundles, safety/cost ledgers, validator reports, delayed outcomes, and independent review."
+}

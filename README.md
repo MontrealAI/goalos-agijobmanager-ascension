@@ -280,3 +280,8 @@ Baselines beating GoalOS under equal budget, unreplayable Evidence Dockets, game
 ## New v52 demonstration
 
 **Loop → RSI → ASI Governance Corridor** shows how a restartable loop becomes deterministic RSI governance and how future ASI-class authority requires evidence, containment, council review, and a human boundary before any stronger claim can advance. Public route: `loop-to-asi-governance-corridor.html`.
+
+
+### New in v53: ASI Proof Horizon Console
+
+Open `asi-proof-horizon-console.html` to run the browser-local HorizonProofDocket demo: loop state → RSI governance → ASI-horizon authority firewall → council review → Chronicle.
