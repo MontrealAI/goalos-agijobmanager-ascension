@@ -108,3 +108,10 @@ This browser-local demo shows how a long-running agent loop becomes deterministi
 | Route | Audience | Purpose | Input | Output | Safety posture |
 |---|---|---|---|---|---|
 | `/loop-to-rsi.html` | Advanced builders, reviewers, governance readers | Demonstrates how a restartable loop becomes deterministic RSI governance through ECI, baseline discipline, Move-37 dossier handling, and mechanical outcome authority. | Public-safe preset and local sliders | `RSIDossier` JSON | Browser-local only; no wallet, no network, no user data, no production authority. |
+
+
+## Loop → RSI Control Room
+
+Route: `/loop-to-rsi-control-room.html`
+
+A browser-local RSI console that demonstrates how a long-running loop becomes governed recursive improvement: mission contract, separated roles, virtual disk state, ECI, baselines, Move-37 stress gates, replay, dossier packaging, Chronicle, and human review. Output: `RSIDossier`. Boundary: no wallet, no network, no user data, no production authority.

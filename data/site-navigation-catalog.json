@@ -34,7 +34,8 @@
         "until-done-mission-control.html",
         "proof-settlement-lifecycle.html",
         "assurance.html",
-        "loop-to-rsi.html"
+        "loop-to-rsi.html",
+        "loop-to-rsi-control-room.html"
       ]
     },
     {
@@ -47,7 +48,8 @@
         "action-graph-handoff.html",
         "proof-carrying-artifact-passport.html",
         "expert-console.html",
-        "loop-to-rsi.html"
+        "loop-to-rsi.html",
+        "loop-to-rsi-control-room.html"
       ]
     },
     {
@@ -528,6 +530,18 @@
       "summary": "Production URL, canonical identities, QA, and verification posture."
     },
     {
+      "title": "Loop \u2192 RSI Control Room",
+      "href": "loop-to-rsi-control-room.html",
+      "section": "core",
+      "audience": [
+        "all",
+        "executive",
+        "builder"
+      ],
+      "time": "6 min",
+      "summary": "Enter a browser-local RSI console: contract, ECI, baselines, Move-37, replay, dossier, Chronicle, and human review boundary."
+    },
+    {
       "route": "/loop-to-rsi-sovereign-governance.html",
       "href": "loop-to-rsi-sovereign-governance.html",
       "title": "From Loop to RSI \u00b7 Sovereign Governance",
@@ -538,6 +552,6 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
     }
   ],
-  "routeCount": 41,
-  "release": "v50-loop-to-rsi-sovereign-governance"
+  "routeCount": 42,
+  "release": "v51-loop-to-rsi-control-room"
 }

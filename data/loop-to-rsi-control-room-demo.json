@@ -1,0 +1,86 @@
+{
+  "release": "v51-loop-to-rsi-control-room",
+  "route": "/loop-to-rsi-control-room.html",
+  "title": "Loop \u2192 RSI Control Room",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html",
+  "posture": {
+    "browserLocal": true,
+    "publicSafe": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noBrowserStorage": true,
+    "noForms": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noUserDataWanted": true,
+    "noProductionAuthority": true
+  },
+  "purpose": "Demonstrate how a restartable long-running agent loop becomes deterministic RSI governance only when evidence, replay, baselines, persistence, risk, dossier packaging, and human authority gates survive.",
+  "pipeline": [
+    "TARGET",
+    "EMIT",
+    "FILTER",
+    "ATLAS",
+    "TEST-PLAN",
+    "EVAL",
+    "INSERT",
+    "PROMOTE"
+  ],
+  "loopToRsiMap": [
+    {
+      "loopRule": "Write the loop, not the prompt",
+      "rsiControl": "TARGET/EMIT creates repeatable cycle contracts instead of one-off instructions"
+    },
+    {
+      "loopRule": "Separate roles",
+      "rsiControl": "Tool-bounded role contracts separate planner, generator, evaluator, trace-reader, and reviewer"
+    },
+    {
+      "loopRule": "Negotiate the contract first",
+      "rsiControl": "Mission Contract defines success criteria, risk, evidence, and done condition before execution"
+    },
+    {
+      "loopRule": "Write to disk, not context",
+      "rsiControl": "RSIState binds contract, progress, log, ECI ledger, proof bundle, and dossier"
+    },
+    {
+      "loopRule": "Let the loop restart",
+      "rsiControl": "Drift sentinel and cycle index preserve continuity without silent state reset"
+    },
+    {
+      "loopRule": "Score the subjective",
+      "rsiControl": "Rubrics become advisory while gates remain mandatory"
+    },
+    {
+      "loopRule": "Read the traces",
+      "rsiControl": "Trace, replay, and Chronicle convert debugging into institutional memory"
+    },
+    {
+      "loopRule": "Delete the harness",
+      "rsiControl": "Harness drag is measured and obsolete scaffolding is removed only after evidence"
+    },
+    {
+      "loopRule": "The bottleneck always moves",
+      "rsiControl": "Next-bottleneck exposure becomes the next TARGET allocation"
+    }
+  ],
+  "hardGates": [
+    "RiskGate",
+    "EvidenceGate",
+    "BaselineGate",
+    "PersistenceGate",
+    "ReplayGate",
+    "ValidatorGate",
+    "HumanReviewBoundary"
+  ],
+  "outputs": [
+    "RSIDossier",
+    "EvidenceContactIndexLedger",
+    "BaselineComparisonRecord",
+    "Move37Dossier",
+    "ChronicleEntry",
+    "ReviewBrief"
+  ],
+  "claimBoundary": "This is a public-safe demonstration. It is not a claim of achieved RSI, AGI, ASI, SOTA, external audit, or production authority."
+}

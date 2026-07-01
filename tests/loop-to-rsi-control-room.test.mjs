@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+function ok(c,m){if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)}
+const required=['site/loop-to-rsi-control-room.html','site/assets/loop-to-rsi-control-room.css','site/assets/loop-to-rsi-control-room.js','data/loop-to-rsi-control-room-demo.json','schemas/loop-to-rsi-control-room.schema.json','docs/LOOP_TO_RSI_CONTROL_ROOM_V51.md'];
+for(const f of required) ok(fs.existsSync(f),`required v51 file exists: ${f}`);
+const html=fs.readFileSync('site/loop-to-rsi-control-room.html','utf8');
+const js=fs.readFileSync('site/assets/loop-to-rsi-control-room.js','utf8');
+ok(/Loop → RSI Control Room/.test(html),'page names Loop → RSI Control Room');
+ok(/TARGET/.test(html)&&/PROMOTE/.test(html)&&/TEST-PLAN/.test(html),'page exposes deterministic RSI pipeline');
+ok(/Search control/.test(html)&&/Outcome authority/.test(html),'page separates search control from outcome authority');
+ok(/Move‑37|Move-37/i.test(html+js),'page exposes Move-37 handling');
+ok(/RSIDossier/.test(html+js),'page exports RSIDossier');
+ok(/virtual disk|contract\.json|rsi_state\.json/i.test(html),'page exposes virtual disk state');
+ok(/No account\. No form\. No wallet\. No token approval\. No network request/i.test(html),'page states public-safe posture');
+ok(!/localStorage|sessionStorage|document\.cookie|navigator\.sendBeacon|ethereum\.request|eth_sendTransaction|wallet_switchEthereumChain|<form\b|fetch\(|XMLHttpRequest/i.test(html+js),'forbidden public primitives absent');
+const data=JSON.parse(fs.readFileSync('data/loop-to-rsi-control-room-demo.json','utf8'));
+ok(data.posture.noWallet && data.posture.zeroNetwork && data.posture.noBrowserStorage && data.posture.noUserDataWanted,'data contract encodes public-safe posture');
+ok(data.pipeline.length===8 && data.pipeline[0]==='TARGET' && data.pipeline[7]==='PROMOTE','data contract encodes full RSI cycle');
+ok(data.loopToRsiMap.length>=9,'data contract maps loop rules to RSI controls');
+ok(data.hardGates.includes('HumanReviewBoundary'),'data contract preserves human boundary');
+console.log('Loop to RSI Control Room v51 test PASS');

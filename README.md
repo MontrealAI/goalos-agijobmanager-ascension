@@ -268,3 +268,8 @@ Baselines beating GoalOS under equal budget, unreplayable Evidence Dockets, game
 ### From Loop to RSI
 
 - `/loop-to-rsi.html` — browser-local demonstration of the transition from restartable long-running agent loops to deterministic RSI governance: TARGET → EMIT → FILTER → ATLAS → TEST-PLAN → EVAL → INSERT → PROMOTE, Evidence Contact Index, Move-37 dossier, and mechanical authority gates.
+
+
+### New in v51 — Loop → RSI Control Room
+
+`/loop-to-rsi-control-room.html` is a browser-local control room showing contract-first loops, ECI, baseline gates, Move-37 handling, replay, dossier packaging, Chronicle, and the human review boundary.

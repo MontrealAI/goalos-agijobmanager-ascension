@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Loop to RSI Control Room Demo Contract",
+  "type": "object",
+  "required": [
+    "release",
+    "route",
+    "posture",
+    "pipeline",
+    "hardGates",
+    "outputs",
+    "claimBoundary"
+  ],
+  "properties": {
+    "release": {
+      "const": "v51-loop-to-rsi-control-room"
+    },
+    "route": {
+      "const": "/loop-to-rsi-control-room.html"
+    },
+    "title": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object",
+      "required": [
+        "browserLocal",
+        "publicSafe",
+        "zeroNetwork",
+        "noWallet",
+        "noUserDataWanted"
+      ],
+      "properties": {
+        "browserLocal": {
+          "const": true
+        },
+        "publicSafe": {
+          "const": true
+        },
+        "zeroNetwork": {
+          "const": true
+        },
+        "noWallet": {
+          "const": true
+        },
+        "noTokenApproval": {
+          "const": true
+        },
+        "noBrowserStorage": {
+          "const": true
+        },
+        "noForms": {
+          "const": true
+        },
+        "noAnalytics": {
+          "const": true
+        },
+        "noCookies": {
+          "const": true
+        },
+        "noUserDataWanted": {
+          "const": true
+        },
+        "noProductionAuthority": {
+          "const": true
+        }
+      }
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      }
+    },
+    "loopToRsiMap": {
+      "type": "array",
+      "minItems": 9
+    },
+    "hardGates": {
+      "type": "array",
+      "minItems": 7
+    },
+    "outputs": {
+      "type": "array",
+      "minItems": 5
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}
