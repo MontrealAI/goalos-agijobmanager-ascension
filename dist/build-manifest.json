@@ -34,7 +34,7 @@
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-asi-proof-horizon-console-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe"
   ],
-  "builtAt": "2026-07-01T22:30:59.213879Z",
+  "builtAt": "2026-07-01T22:49:58.205057Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -2815,6 +2815,16 @@
       "path": "docs/reports/historical-root/PROOF_TO_ACTION_THEATRE_V18_REPORT.md",
       "sha256": "376a3605238286387d3704b7da3d57e366e00b04e517ff6dc521647b177271d0",
       "bytes": 2722
+    },
+    {
+      "path": "docs/reports/historical-root/README_V44_HOTFIX.md",
+      "sha256": "4b7968b62a5aa1b3fe93329464860f243f05fcc3c5a8d4773257f57f20ebebf7",
+      "bytes": 473
+    },
+    {
+      "path": "docs/reports/historical-root/README_V45_HOTFIX.md",
+      "sha256": "296ebdf972baae430989764caacab3b07b8433cdfe6f5edfa49f08da989d4703",
+      "bytes": 250
     },
     {
       "path": "docs/reports/historical-root/REAL_TASK_BENCHMARK_BRIDGE_V27_REPORT.json",
