@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **57 canonical public routes** from `data/canonical-route-manifest-v52.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **60 canonical public routes** from `data/canonical-route-manifest-v52.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 

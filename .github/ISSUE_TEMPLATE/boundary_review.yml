@@ -1,0 +1,20 @@
+name: Boundary review
+about: Report a claim, privacy, token, public-safe, or documentation boundary concern
+body:
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: Describe the boundary concern without submitting private data or secrets.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Claim boundary
+        - Privacy/data-zero
+        - Public wallet/no-network
+        - AGIALPHA/token boundary
+        - Documentation

@@ -1,22 +1,12 @@
 ## Summary
 
-- 
-
 ## Checklist
 
-- [ ] No user-data collection introduced.
-- [ ] No public wallet connection introduced.
-- [ ] No public token approval introduced.
-- [ ] No analytics, cookies, or forms introduced.
-- [ ] No browser storage introduced.
-- [ ] No unsupported claims introduced.
-- [ ] Documentation updated.
-- [ ] Tests updated or not applicable.
-- [ ] Build passes or limitation is documented.
-- [ ] Public/private proof boundary preserved.
-- [ ] AGIALPHA boundary preserved.
-- [ ] Expert-console separation preserved.
-- [ ] No menu stacking introduced.
-- [ ] Route catalog updated if needed.
-- [ ] No hard-coded missing test/kernel references.
-- [ ] No package registry dependencies added.
+- [ ] Route manifest updated or confirmed unchanged.
+- [ ] Docs updated or confirmed unchanged.
+- [ ] Tests run (`npm test`, `npm run build`).
+- [ ] No public wallet surface added.
+- [ ] No user data collection, analytics, cookies, or submitted forms added.
+- [ ] No unsupported AGI/ASI, audit, certification, ROI, legal, financial, tax, medical, or investment claims added.
+- [ ] No blank/loading primary state added.
+- [ ] Screenshot or text preview included for visual pages where practical.

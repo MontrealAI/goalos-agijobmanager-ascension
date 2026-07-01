@@ -1,14 +1,14 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "5.4.0-v54-superintelligence-proof-governance-console-v50-compatible",
+  "version": "5.6.0-v56-repository-website-institutional-excellence-v54-v50-compatible",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v49.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v54.mjs && node tools/superintelligence-proof-governance-console-v54-kernel.mjs",
-    "verify": "python3 tools/verify.py",
+    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer.mjs && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker.mjs",
+    "verify": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "npm run bootstrap && python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs && node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tools/run-documentation-tests.mjs && node tools/public-trust-checker-v54.mjs && node tools/run-all-tests.mjs",
+    "test": "npm run bootstrap && npm run verify && npm run check:docs && npm run check:public-safe && npm run check:metadata && node tools/run-all-tests.mjs",
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
@@ -86,7 +86,7 @@
     "failsafe:v44": "node tools/repository-public-trust-failsafe-v44-kernel.mjs",
     "repository-public-trust-failsafe": "node tools/root-cleanup-v46.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
     "test:repository-public-trust-failsafe": "node tools/run-documentation-tests.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
-    "bootstrap": "node tools/failsafe-bootstrap-v54.mjs && node tools/failsafe-bootstrap-v53.mjs && node tools/failsafe-bootstrap-v52.mjs && node tools/failsafe-bootstrap-v51.mjs && node tools/failsafe-bootstrap-v50.mjs && node tools/failsafe-bootstrap-v49.mjs && node tools/failsafe-bootstrap-v48.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup-v48.mjs && node tools/apply-public-trust-metadata-v48.mjs",
+    "bootstrap": "node tools/failsafe-bootstrap.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs",
     "failsafe:v45": "node tools/repository-public-trust-failsafe-v45-kernel.mjs",
     "kernels": "node tools/run-existing-kernels.mjs",
     "verify:public-trust": "node tools/failsafe-bootstrap-v53.mjs && node tools/run-documentation-tests.mjs && node tools/public-trust-checker-v53.mjs",
@@ -117,9 +117,13 @@
     "failsafe:v53": "node tools/asi-proof-horizon-console-v53-kernel.mjs",
     "superintelligence-proof-governance-console": "node tests/superintelligence-proof-governance-console.test.mjs && python3 tools/build.py && node tools/release-compatibility-harmonizer-v54.mjs && node tools/superintelligence-proof-governance-console-v54-kernel.mjs",
     "test:superintelligence-proof-governance-console": "npm run superintelligence-proof-governance-console",
-    "failsafe:v54": "node tools/superintelligence-proof-governance-console-v54-kernel.mjs"
+    "failsafe:v54": "node tools/superintelligence-proof-governance-console-v54-kernel.mjs",
+    "check:docs": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tools/run-documentation-tests.mjs",
+    "check:public-safe": "node tools/public-safe-static-checker.mjs",
+    "check:metadata": "node tools/metadata-integrity-checker.mjs && node tools/route-manifest-integrity.mjs && node tools/accessibility-static-checker.mjs",
+    "test:dynamic": "node tools/run-all-tests.mjs"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension public proof institution with v54 Superintelligence Proof Governance Console, loop-to-RSI-to-ASI horizon demos, public-safe browser-local receipts, guarded documentation tests, canonical route manifest, public-trust QA, and GitHub Pages publication.",
+  "description": "GoalOS AGIJobManager Ascension public proof institution with v56 repository and website institutional excellence, browser-local public-safe demos, canonical route manifest, dynamic test runners, and GitHub Pages publication.",
   "devDependencies": {}
 }

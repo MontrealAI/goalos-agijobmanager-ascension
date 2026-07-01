@@ -1,36 +1,19 @@
 name: Bug report
-description: Report a public-safe route, documentation, or verification issue.
-title: "Bug: "
-labels: [bug]
+about: Report a public-safe website, documentation, or workflow issue
 body:
-  - type: markdown
+  - type: textarea
+    id: summary
     attributes:
-      value: "Do not include secrets, private keys, seed phrases, personal data, customer data, or confidential data."
+      label: Summary
+      description: What happened? Do not include secrets, personal data, private keys, or confidential workpapers.
+    validations:
+      required: true
   - type: input
     id: route
-    attributes: { label: Route/page, description: "Example: /proof-settlement-lifecycle.html" }
-    validations: { required: true }
+    attributes:
+      label: Route or file
+      description: Which page, route, or file is affected?
   - type: textarea
     id: expected
-    attributes: { label: Expected behavior }
-    validations: { required: true }
-  - type: textarea
-    id: actual
-    attributes: { label: Actual behavior }
-    validations: { required: true }
-  - type: textarea
-    id: screenshot
-    attributes: { label: Screenshot optional }
-  - type: input
-    id: browser
-    attributes: { label: Browser }
-  - type: input
-    id: os
-    attributes: { label: OS/device }
-  - type: dropdown
-    id: sensitive
     attributes:
-      label: Does this involve sensitive data?
-      description: "If yes, do not paste it here. Ask for a safe reporting path."
-      options: ["No", "Yes - I will not include it"]
-    validations: { required: true }
+      label: Expected behavior

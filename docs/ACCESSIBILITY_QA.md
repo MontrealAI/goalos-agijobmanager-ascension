@@ -1,30 +1,27 @@
 # Accessibility and Public Trust QA
 
-The website is a public proof institution. It must be readable, navigable, and reviewable even before JavaScript enhances the page.
+The website must be readable, keyboard-navigable, route-discoverable, and useful before JavaScript enhancement.
 
 ## Current public-trust standard
 
-- Canonical route count: **50 routes** from `data/canonical-route-manifest-v43.json`.
-- No shipped page should show `Loading…`, `0 routes`, `0 matching pages`, or dash-only route counts as its primary static content.
-- Every public route should have a title, description, canonical URL, OpenGraph metadata, Twitter Card metadata, and a visible user path.
-- Navigation should use one native header plus one floating Site Command, not stacked menus.
+- Canonical route count comes from `data/canonical-route-manifest.json`.
+- No flagship page should show `Loading…`, `0 routes`, or an empty primary state as the main content.
+- Every flagship route should have title, description, canonical URL, OpenGraph metadata, Twitter Card metadata, and a visible next path.
+- Navigation uses one native header plus one floating Site Command, not stacked menus.
 
 ## Manual QA checklist
 
-- Keyboard can reach the primary call to action.
+- Keyboard can reach primary calls to action, route search, and copy/download buttons.
 - Focus state is visible.
-- Text remains legible at mobile widths.
+- Text remains legible at mobile widths without horizontal scroll.
 - Reduced-motion users can still use the page.
-- Page title and meta description explain the route.
 - Public/private proof boundary is clear.
 - No page asks for private keys, seed phrases, wallet signatures, personal data, customer data, confidential workpapers, or regulated information.
 
 ## Automated checks
 
-Run:
-
 ```bash
-node tools/public-trust-checker-v43.mjs
+node tools/accessibility-static-checker.mjs
+node tools/metadata-integrity-checker.mjs
+node tools/public-safe-static-checker.mjs
 ```
-
-The checker validates route metadata, exact homepage route count, canonical URLs, social preview tags, and the absence of blank/loading fallback states across the canonical public route manifest.
