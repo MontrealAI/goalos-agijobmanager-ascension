@@ -1,7 +1,7 @@
 {
-  "version": "v44-repository-public-trust-failsafe",
+  "version": "canonical-route-manifest-v44",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 50,
+  "routeCount": 51,
   "generatedFrom": "Repository Public Trust Failsafe v44",
   "posture": {
     "browserLocal": true,
@@ -503,6 +503,16 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/until-done-mission-control.html"
     },
     {
+      "route": "/loop-contract-theatre.html",
+      "href": "loop-contract-theatre.html",
+      "title": "Loop Contract Theatre",
+      "audience": "New users / operators / developers",
+      "description": "Shows how long-running agents become governable through contract-first loops, separated roles, virtual disk state, restart, traces, proof scoring, Chronicle, and bottleneck exposure.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local loop simulation; no user data, no storage, no wallet, no network, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html"
+    },
+    {
       "route": "/verification.html",
       "href": "verification.html",
       "title": "Verification",
@@ -512,5 +522,9 @@
       "boundary": "No external audit claim.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
     }
+  ],
+  "releaseAliases": [
+    "v47-loop-contract-theatre",
+    "v42-v43-v44-v45-v46-v47-loop-contract-theatre-public-trust-failsafe"
   ]
 }

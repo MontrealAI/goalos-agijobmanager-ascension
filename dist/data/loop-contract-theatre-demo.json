@@ -1,0 +1,59 @@
+{
+  "version": "v47-loop-contract-theatre",
+  "route": "/loop-contract-theatre.html",
+  "title": "Loop Contract Theatre",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html",
+  "posture": {
+    "browserLocal": true,
+    "noAccount": true,
+    "noForms": true,
+    "noCookies": true,
+    "noAnalytics": true,
+    "noWallet": true,
+    "noNetwork": true,
+    "noBrowserStorage": true,
+    "noUserDataWanted": true,
+    "noProductionAuthority": true
+  },
+  "coreThesis": "Days-long agents become governable when the loop is contract-bound, role-separated, trace-readable, restart-safe, and proof-gated.",
+  "loopRules": [
+    "loop before prompt",
+    "separate planner builder evaluator trace-reader roles",
+    "negotiate done first",
+    "write compact state to virtual disk",
+    "restart by design",
+    "score subjective quality explicitly",
+    "read traces",
+    "delete obsolete harness",
+    "make the moving bottleneck visible"
+  ],
+  "stateFiles": [
+    "contract.json",
+    "progress.md",
+    "log.md"
+  ],
+  "roles": [
+    "planner",
+    "builder",
+    "evaluator",
+    "trace-reader"
+  ],
+  "proofLifecycle": [
+    "objective",
+    "mission contract",
+    "role loop",
+    "trace",
+    "verifier decision",
+    "Evidence Docket",
+    "governed decision state",
+    "Chronicle",
+    "reusable capability"
+  ],
+  "presets": [
+    "proofPage",
+    "repoDoc",
+    "leanDocket",
+    "browserDemo"
+  ],
+  "outputArtifact": "LoopReceipt"
+}

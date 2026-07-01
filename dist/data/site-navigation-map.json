@@ -531,6 +531,21 @@
       ],
       "time": 6,
       "summary": "Full previous homepage preserved for continuity."
+    },
+    {
+      "id": "loop-contract-theatre",
+      "title": "Loop Contract Theatre",
+      "href": "loop-contract-theatre.html",
+      "group": "Core idea",
+      "audience": [
+        "new",
+        "builder",
+        "operator",
+        "reviewer",
+        "all"
+      ],
+      "time": "4 min",
+      "why": "Run a contract-first, restart-safe, trace-readable agent loop and export a LoopReceipt."
     }
   ],
   "journeys": [

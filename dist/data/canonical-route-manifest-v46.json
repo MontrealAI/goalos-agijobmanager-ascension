@@ -1,7 +1,7 @@
 {
   "version": "v46",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 50,
+  "routeCount": 51,
   "generatedFrom": "site/*.html",
   "posture": {
     "browserLocal": true,
@@ -501,6 +501,16 @@
       "outputArtifact": "MissionReceipt",
       "boundary": "Local state machine.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/until-done-mission-control.html"
+    },
+    {
+      "route": "/loop-contract-theatre.html",
+      "href": "loop-contract-theatre.html",
+      "title": "Loop Contract Theatre",
+      "audience": "New users / operators / developers",
+      "description": "Shows how long-running agents become governable through contract-first loops, separated roles, virtual disk state, restart, traces, proof scoring, Chronicle, and bottleneck exposure.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local loop simulation; no user data, no storage, no wallet, no network, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html"
     },
     {
       "route": "/verification.html",

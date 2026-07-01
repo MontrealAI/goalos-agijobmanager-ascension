@@ -1,7 +1,7 @@
 {
-  "version": "v46",
+  "version": "canonical-route-manifest-v45",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 50,
+  "routeCount": 51,
   "generatedFrom": "site/*.html",
   "posture": {
     "browserLocal": true,
@@ -503,6 +503,16 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/until-done-mission-control.html"
     },
     {
+      "route": "/loop-contract-theatre.html",
+      "href": "loop-contract-theatre.html",
+      "title": "Loop Contract Theatre",
+      "audience": "New users / operators / developers",
+      "description": "Shows how long-running agents become governable through contract-first loops, separated roles, virtual disk state, restart, traces, proof scoring, Chronicle, and bottleneck exposure.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local loop simulation; no user data, no storage, no wallet, no network, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html"
+    },
+    {
       "route": "/verification.html",
       "href": "verification.html",
       "title": "Verification",
@@ -515,19 +525,21 @@
   ],
   "release": "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
   "releaseAliases": [
+    "v40-navigation-polish-failsafe",
+    "v38-navigation-system-final",
+    "v39-experience-concierge-complete-navigation",
+    "v37-site-command-center",
+    "v44-repository-public-trust-failsafe",
     "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
+    "v45-repository-public-trust-zero-missing-test-failsafe",
+    "v42-institutional-website-finalization",
+    "v37-website-command-center",
+    "v42-v43-v44-v45-v46-v47-loop-contract-theatre-public-trust-failsafe",
     "v46-repository-public-trust-compatibility-failsafe",
     "v45-repository-public-trust-ultimate-failsafe",
-    "v45-repository-public-trust-zero-missing-test-failsafe",
-    "v44-repository-public-trust-failsafe",
-    "v43-repository-public-trust-finalization",
-    "v42-institutional-website-finalization",
     "v41-navigation-source-polish-final",
-    "v40-navigation-polish-failsafe",
-    "v39-experience-concierge-complete-navigation",
-    "v38-navigation-system-final",
-    "v37-site-command-center",
     "v37-site-experience-atlas",
-    "v37-website-command-center"
+    "v47-loop-contract-theatre",
+    "v43-repository-public-trust-finalization"
   ]
 }
