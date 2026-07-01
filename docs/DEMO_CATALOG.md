@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **50 canonical public routes** from `data/canonical-route-manifest-v43.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **51 canonical public routes** from `data/canonical-route-manifest-v47.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -57,6 +57,7 @@ Start with [Experience Concierge](../site/experience-concierge.html). It guides 
 | [`/start.html`](../site/start.html) | New visitors | Clean first-click path from objective to proof demos. | Route summary | Browser-local guidance. |
 | [`/terms.html`](../site/terms.html) | All users | Use boundaries and disclaimers for public demos. | Terms statement | No professional advice. |
 | [`/third-party-responsibility.html`](../site/third-party-responsibility.html) | Operators | Places third-party wallet, market, RPC, tax, sanctions, securities, privacy, and jurisdiction responsibility on users/operators. | Boundary statement | Third-party responsibility. |
+| [`/loop-contract-theatre.html`](../site/loop-contract-theatre.html) | New users / operators / developers | Turns the “loop, not prompt” principle into a public-safe control room: contract first, separated roles, virtual disk state, restart, traces, scoring, Chronicle, and bottleneck exposure. | LoopReceipt | Browser-local simulation; no user data, no storage, no wallet, no network. |
 | [`/trust-equation-simulator.html`](../site/trust-equation-simulator.html) | New users / reviewers | Shows why output becomes institutional work only after proof, validation, settlement, and reuse. | TrustReceipt | Local simulation; no factual certification. |
 | [`/until-done-mission-control.html`](../site/until-done-mission-control.html) | Operators | Demonstrates run-to-completion: GoalOS stops at proof, not at output. | MissionReceipt | Local state machine. |
 | [`/verification.html`](../site/verification.html) | Developers / reviewers | Explains verification scripts, build checks, and claim-boundary tests. | Verification summary | No external audit claim. |
