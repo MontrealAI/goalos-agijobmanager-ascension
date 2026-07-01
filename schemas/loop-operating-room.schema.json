@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Loop Operating Room Demo",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "release",
+    "productionRoute",
+    "publicSafe",
+    "browserLocal",
+    "noWallet",
+    "noNetwork",
+    "roles",
+    "gates",
+    "outputs",
+    "claimBoundary"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "productionRoute": {
+      "type": "string"
+    },
+    "publicSafe": {
+      "const": true
+    },
+    "browserLocal": {
+      "const": true
+    },
+    "noUserDataWanted": {
+      "const": true
+    },
+    "noWallet": {
+      "const": true
+    },
+    "noNetwork": {
+      "const": true
+    },
+    "doctrine": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "loopStages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "obligation"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "obligation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}

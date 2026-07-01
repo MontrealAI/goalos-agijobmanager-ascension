@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Loop Evidence Reactor Demo Contract",
+  "type": "object",
+  "required": [
+    "version",
+    "title",
+    "route",
+    "posture",
+    "virtualDisk",
+    "roles",
+    "loopRules",
+    "proofChain",
+    "docket",
+    "claimBoundary"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "virtualDisk": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "loopRules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proofChain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "docket": {
+      "type": "string"
+    },
+    "claimBoundary": {
+      "type": "string"
+    }
+  }
+}
