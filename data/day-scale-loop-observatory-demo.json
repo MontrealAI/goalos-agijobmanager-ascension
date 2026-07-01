@@ -1,0 +1,45 @@
+{
+  "schema": "GoalOSDayScaleLoopObservatory/v1",
+  "release": "v48-day-scale-loop-observatory",
+  "route": "day-scale-loop-observatory.html",
+  "publicSafe": true,
+  "browserLocal": true,
+  "noWallet": true,
+  "noNetwork": true,
+  "noExternalAction": true,
+  "noUserDataWanted": true,
+  "coreLaw": "Long-running agents need state outside context: contract, role separation, virtual disk, restart, trace, score, evidence, Chronicle, bottleneck.",
+  "virtualFiles": [
+    "loop_contract.md",
+    "progress.md",
+    "log.md",
+    "feature_list.json",
+    "evidence_docket.json",
+    "chronicle_entry.json"
+  ],
+  "gates": [
+    "contract",
+    "roles",
+    "disk state",
+    "restart",
+    "trace",
+    "score",
+    "docket",
+    "chronicle",
+    "human review"
+  ],
+  "roles": [
+    "Planner",
+    "Builder",
+    "Evaluator",
+    "Verifier",
+    "Archivist"
+  ],
+  "outputs": [
+    "LongLoopDocket",
+    "TraceRoot",
+    "ChronicleCandidate",
+    "BottleneckReport"
+  ],
+  "claimBoundary": "Local browser demonstration only; no factual certification, no external action, no settlement, no token operation, no production authority."
+}
