@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+function ok(c,m){ if(!c){ console.error('FAIL · '+m); process.exit(1); } console.log('PASS · '+m); }
+const page='site/day-scale-loop-observatory.html';
+const css='site/assets/day-scale-loop-observatory.css';
+const js='site/assets/day-scale-loop-observatory.js';
+const data='data/day-scale-loop-observatory-demo.json';
+const schema='schemas/day-scale-loop-observatory.schema.json';
+for(const f of [page,css,js,data,schema]) ok(fs.existsSync(f),`required v48 file exists: ${f}`);
+const h=fs.readFileSync(page,'utf8');
+const jsrc=fs.readFileSync(js,'utf8');
+ok(/GoalOS Day-Scale Loop Observatory/.test(h),'page has canonical title');
+ok(/LongLoopDocket/.test(h),'page exposes LongLoopDocket output');
+ok(/Virtual disk/.test(h) && /Readable trace/.test(h),'page exposes disk and trace surfaces');
+ok(/no wallet/i.test(h) && /no network request/i.test(h) && /no production authority/i.test(h),'page displays public-safe posture');
+ok(!/fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|connect\s+wallet|approve\s+token|eth_requestAccounts|wallet_switchEthereumChain|eth_sendTransaction|<form/i.test(h+jsrc),'page avoids forbidden public primitives');
+const d=JSON.parse(fs.readFileSync(data,'utf8'));
+ok(d.publicSafe===true && d.browserLocal===true && d.noWallet===true && d.noNetwork===true && d.noExternalAction===true,'data contract encodes public-safe posture');
+ok(d.virtualFiles.length>=6 && d.virtualFiles.includes('evidence_docket.json'),'data contract has virtual disk state files');
+ok(d.gates.includes('restart') && d.gates.includes('chronicle'),'data contract includes restart and Chronicle gates');
+ok(d.roles.length===5,'data contract has five separated roles');
+console.log('Day-Scale Loop Observatory v48 test PASS');

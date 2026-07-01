@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+function ok(c,m){if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)}
+const files=['site/loop-evidence-reactor.html','site/assets/loop-evidence-reactor.css','site/assets/loop-evidence-reactor.js','data/loop-evidence-reactor-demo.json','schemas/loop-evidence-reactor.schema.json','docs/LOOP_EVIDENCE_REACTOR_V49.md'];
+for(const f of files) ok(fs.existsSync(f),`required v49 file exists: ${f}`);
+const html=fs.readFileSync('site/loop-evidence-reactor.html','utf8');
+const js=fs.readFileSync('site/assets/loop-evidence-reactor.js','utf8');
+ok(/Loop Evidence Reactor/.test(html),'page names Loop Evidence Reactor');
+ok(/contract-first|Contract first|Contract-first/i.test(html),'page exposes contract-first operation');
+ok(/virtual disk/i.test(html),'page exposes virtual disk state');
+ok(/Crash runner|Restart from state|restart/i.test(html),'page exposes crash/restart loop');
+ok(/LoopDocket/.test(html+js),'page exports LoopDocket');
+ok(/delete obsolete harness|Delete obsolete harness/i.test(html),'page exposes harness deletion');
+ok(/bottleneck/i.test(html),'page exposes moving bottleneck');
+ok(/No account\. No form\. No wallet\. No token approval\. No network request/i.test(html),'page states public-safe posture');
+ok(!/localStorage|sessionStorage|document\.cookie|navigator\.sendBeacon|ethereum\.request|eth_sendTransaction|wallet_switchEthereumChain|<form\b|fetch\(|XMLHttpRequest/i.test(html+js),'forbidden public primitives absent');
+const data=JSON.parse(fs.readFileSync('data/loop-evidence-reactor-demo.json','utf8'));
+ok(data.posture.noWallet && data.posture.noNetwork && data.posture.noBrowserStorage && data.posture.noUserDataWanted,'data contract encodes public-safe posture');
+ok(data.loopRules.length>=9,'data contract encodes nine loop rules');
+ok(data.proofChain.includes('Evidence Docket') && data.proofChain.includes('Chronicle'),'data contract connects loop to GoalOS proof lifecycle');
+console.log('Loop Evidence Reactor v49 test PASS');
