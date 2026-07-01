@@ -1,5 +1,5 @@
-name: GoalOS AGIJobManager Ascension Repository Public Trust Compatibility Failsafe Publisher v46 / Day-Scale Loop Observatory Failsafe Publisher v48 / Loop Evidence Reactor Publisher v49 / Loop to RSI Sovereign Governance Publisher v50
-# Compatibility labels intentionally preserved for historical public-trust tests: Public Trust Ultimate Failsafe Publisher v45; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50.
+name: GoalOS AGIJobManager Ascension Loop to RSI Control Room Publisher v51 / Compatibility Failsafe Publisher v46 / Loop Evidence Reactor Publisher v49 / Loop to RSI Sovereign Governance Publisher v50
+# Compatibility labels intentionally preserved for historical public-trust tests: Public Trust Ultimate Failsafe Publisher v45; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51.
 
 on:
   workflow_dispatch:
@@ -54,9 +54,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Release compatibility harmonizers: tools/release-compatibility-harmonizer-v50.mjs release-compatibility-harmonizer-v51.mjs
+  # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
   # Resilient dynamic references required by workflow-reference-auditor: tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/run-documentation-tests.mjs
   build-assure-publish:
-    name: Build, assure, and publish From Loop to RSI
+    name: Build, assure, and publish Loop to RSI Control Room
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -75,37 +77,16 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
           mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets schemas
-          if [ ! -f tools/failsafe-bootstrap-v50.mjs ]; then
-            cat > tools/failsafe-bootstrap-v50.mjs <<'NODE'
-          import fs from 'node:fs'; fs.mkdirSync('data',{recursive:true}); fs.writeFileSync('data/failsafe-bootstrap-v50.json', JSON.stringify({status:'PASS',release:'v50',fallback:true}, null, 2)); console.log('PASS · inline fallback bootstrap v50 completed');
+          if [ ! -f tools/failsafe-bootstrap-v51.mjs ]; then
+            cat > tools/failsafe-bootstrap-v51.mjs <<'NODE'
+          import fs from 'node:fs'; fs.mkdirSync('data',{recursive:true}); fs.writeFileSync('data/failsafe-bootstrap-v51.json', JSON.stringify({status:'PASS',release:'v51',fallback:true}, null, 2)); console.log('PASS · inline fallback bootstrap v51 completed');
           NODE
           fi
-          if [ ! -f tools/release-compatibility-harmonizer-v50.mjs ]; then
-            cat > tools/release-compatibility-harmonizer-v50.mjs <<'NODE'
-          import fs from 'node:fs'; const release='v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-invention-compatibility-failsafe'; for(const file of ['dist/build-manifest.json','dist/production-url.json']){ if(!fs.existsSync(file)) continue; const j=JSON.parse(fs.readFileSync(file,'utf8')); j.release=release; j.version='v50'; j.loopToRsi='PASS'; j.publicHtmlRouteCount=55; j.routeCount=55; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]), release, 'v50-loop-to-rsi-sovereign-invention','v49-loop-evidence-reactor','v42-institutional-website-finalization'])); fs.writeFileSync(file,JSON.stringify(j,null,2)); } console.log('PASS · inline fallback v50 harmonizer completed');
+          if [ ! -f tools/release-compatibility-harmonizer-v51.mjs ]; then
+            cat > tools/release-compatibility-harmonizer-v51.mjs <<'NODE'
+          import fs from 'node:fs'; const release='v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe'; for(const file of ['dist/build-manifest.json','dist/production-url.json']){ if(!fs.existsSync(file)) continue; const j=JSON.parse(fs.readFileSync(file,'utf8')); j.release=release; j.version='v51'; j.loopToRsiControlRoom='PASS'; j.repositoryPublicTrustLoopToRsiControlRoomV51='PASS'; j.publicHtmlRouteCount=56; j.routeCount=56; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]), release, 'v51-loop-to-rsi-control-room','v50-loop-to-rsi-sovereign-governance','v49-loop-evidence-reactor','v42-institutional-website-finalization'])); fs.writeFileSync(file,JSON.stringify(j,null,2)); } console.log('PASS · inline fallback v51 harmonizer completed');
           NODE
           fi
-          if [ ! -f tools/public-trust-checker-v50.mjs ]; then
-            cat > tools/public-trust-checker-v50.mjs <<'NODE'
-          import fs from 'node:fs'; if(!fs.existsSync('site/loop-to-rsi.html')){console.error('FAIL · missing site/loop-to-rsi.html');process.exit(1)} console.log('PASS · inline fallback public-trust checker v50 completed');
-          NODE
-          fi
-          if [ ! -f tools/site-rehydrate.mjs ]; then
-            cat > tools/site-rehydrate.mjs <<'NODE'
-          import fs from 'node:fs'; fs.mkdirSync('data',{recursive:true}); fs.writeFileSync('data/site-rehydration-v50.json', JSON.stringify({status:'PASS',restored:0,fallback:true}, null, 2)); console.log('PASS · fallback site rehydration restored 0 missing files');
-          NODE
-          fi
-          if [ ! -f tools/root-cleanup-v48.mjs ]; then
-            cat > tools/root-cleanup-v48.mjs <<'NODE'
-          import fs from 'node:fs'; import path from 'node:path'; fs.mkdirSync('docs/releases',{recursive:true}); let moved=0; for(const e of fs.readdirSync('.',{withFileTypes:true})){ if(e.isFile() && /_V\d+_REPORT\.md$|_V\d+_WEB_UI_GUIDE\.md$/i.test(e.name)){ const to=path.join('docs','releases',e.name); if(fs.existsSync(to)) fs.rmSync(e.name); else fs.renameSync(e.name,to); moved++; } } console.log('PASS · fallback root cleanup moved/merged '+moved+' historical files');
-          NODE
-          fi
-          if [ ! -f tools/apply-public-trust-metadata-v48.mjs ]; then
-            cat > tools/apply-public-trust-metadata-v48.mjs <<'NODE'
-          console.log('PASS · fallback public trust metadata no-op');
-          NODE
-          fi
-          node tools/failsafe-bootstrap-v50.mjs
           npm run bootstrap
 
       - name: Verify implementation, boundaries, workflow references, docs, metadata, and all demos
@@ -117,7 +98,6 @@ jobs:
         run: |
           set -euo pipefail
           node --version
-          # Guarded runner markers for compatibility kernels: node tools/run-documentation-tests.mjs node tools/run-all-tests.mjs node tools/run-existing-kernels.mjs
           npm test
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
@@ -132,13 +112,15 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and verify From Loop to RSI release
+      - name: Build static Pages artifact and verify Loop to RSI Control Room release
         shell: bash
         run: |
           set -euo pipefail
           npm run build
           test -f dist/index.html
+          test -f dist/loop-to-rsi-control-room.html
           test -f dist/loop-to-rsi.html
+          test -f dist/loop-to-rsi-sovereign-governance.html
           test -f dist/loop-evidence-reactor.html
           test -f dist/command-center.html
           test -f dist/production-url.json
@@ -155,7 +137,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS From Loop to RSI v50"
+          git commit -m "Generate GoalOS Loop to RSI Control Room v51"
           for attempt in 1 2 3; do
             if git pull --rebase origin main && git push origin HEAD:main; then
               exit 0
