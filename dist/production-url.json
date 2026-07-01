@@ -55,7 +55,12 @@
   "loopToRsi": "PASS",
   "loopToRsiSovereignGovernance": "PASS",
   "loopToRsiControlRoom": "PASS",
+  "loopToAsiGovernanceCorridor": "PASS",
+  "loopToRsiToAsiSuperintelligence": "PASS",
+  "repositoryPublicTrustLoopToAsiV52": "PASS",
   "repositoryPublicTrustLoopToRsiControlRoomV51": "PASS",
+  "repositoryPublicTrustLoopToAsiGovernanceCorridorV52": "PASS",
+  "repositoryPublicTrustLoopToAsiSuperintelligenceV52": "PASS",
   "loopToRSISovereignGovernance": "PASS",
   "repositoryPublicTrustLoopOperatingRoomV47": "PASS",
   "repositoryPublicTrustDayScaleLoopV48": "PASS",
@@ -63,6 +68,7 @@
   "loopToRsiSovereignInventionV50": "PASS",
   "repositoryPublicTrustLoopToRsiV50": "PASS",
   "repositoryPublicTrustLoopToRSIV50": "PASS",
+  "canonicalRouteManifestV52": "PASS",
   "canonicalRouteManifestV43": "PASS",
   "canonicalRouteManifestV50": "PASS",
   "canonicalRouteManifestV46": "PASS",
@@ -74,10 +80,10 @@
   "singleNativeHeader": "PASS",
   "exactRouteCount": "PASS",
   "vendoredDependencies": "PASS",
-  "publicHtmlRouteCount": 56,
-  "canonicalRouteManifest": "data/canonical-route-manifest-v51.json",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
-  "version": "v51",
+  "publicHtmlRouteCount": 58,
+  "canonicalRouteManifest": "data/canonical-route-manifest-v52.json",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe",
+  "version": "v52",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
     "v48-day-scale-loop-observatory",
@@ -92,7 +98,10 @@
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe",
     "v50-loop-to-rsi-sovereign-governance",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
-    "v51-loop-to-rsi-control-room"
+    "v51-loop-to-rsi-control-room",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe",
+    "v52-loop-to-rsi-to-asi-superintelligence",
+    "v52-loop-to-asi-governance-corridor"
   ],
-  "routeCount": 56
+  "routeCount": 58
 }

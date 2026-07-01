@@ -1,0 +1,44 @@
+{
+  "id": "loop-to-rsi-to-asi-superintelligence",
+  "release": "v52-loop-to-rsi-to-asi-superintelligence",
+  "route": "/loop-to-rsi-to-asi-superintelligence.html",
+  "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
+  "thesis": "A loop can restart; RSI can govern improvement; ASI-grade systems require proof before power, replay before trust, and human authority before escalation.",
+  "pipeline": [
+    "LOOP",
+    "TRACE",
+    "RSI",
+    "FILTER",
+    "ATLAS",
+    "EVAL",
+    "ASI_GATE",
+    "DOSSIER"
+  ],
+  "horizonBoundary": "ASI is a governance horizon in this public demonstration, not an achievement claim.",
+  "posture": {
+    "browserLocal": true,
+    "zeroNetwork": true,
+    "noWallet": true,
+    "noForms": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noUserDataWanted": true,
+    "noProductionAuthority": true,
+    "noNetworkRequest": true,
+    "noTransactionBroadcast": true
+  },
+  "gates": [
+    "RiskGate",
+    "EvidenceGate",
+    "BaselineGate",
+    "ReplayGate",
+    "PersistenceGate",
+    "ValidatorQuorum",
+    "HumanAuthorityBoundary",
+    "RollbackReady",
+    "PublicPrivateProofBoundary"
+  ],
+  "outputArtifact": "HorizonDossier",
+  "claimBoundary": "No achieved AGI, ASI, superintelligence, empirical SOTA, external audit completion, production certification, autonomous sovereignty, live RSI authority, live invention authority, or civilization-scale capability claim. ASI is a governance horizon, not an achievement claim."
+}

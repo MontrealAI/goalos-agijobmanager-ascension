@@ -1,7 +1,7 @@
 {
-  "version": "site-navigation-v50",
+  "version": "v52",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 54,
+  "routeCount": 58,
   "posture": {
     "browserLocal": true,
     "publicSafe": true,
@@ -142,6 +142,16 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/coordination-lab.html"
     },
     {
+      "route": "/day-scale-loop-observatory.html",
+      "href": "day-scale-loop-observatory.html",
+      "title": "Day-Scale Loop Observatory",
+      "audience": "Operators / researchers / reviewers",
+      "description": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session.",
+      "outputArtifact": "LongLoopDocket",
+      "boundary": "Browser-local simulation; no external action, no wallet, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/day-scale-loop-observatory.html"
+    },
+    {
       "route": "/demo-lab.html",
       "href": "demo-lab.html",
       "title": "Demo Lab",
@@ -252,6 +262,16 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/legal.html"
     },
     {
+      "route": "/loop-evidence-reactor.html",
+      "href": "loop-evidence-reactor.html",
+      "title": "Loop Evidence Reactor",
+      "audience": "AI builders / operators",
+      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
+      "outputArtifact": "LoopDocket",
+      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
+    },
+    {
       "route": "/loop-operating-room.html",
       "href": "loop-operating-room.html",
       "title": "Loop Operating Room",
@@ -262,24 +282,54 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html"
     },
     {
-      "route": "/day-scale-loop-observatory.html",
-      "href": "day-scale-loop-observatory.html",
-      "title": "Day-Scale Loop Observatory",
-      "audience": "Operators / researchers / reviewers",
-      "description": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session.",
-      "outputArtifact": "LongLoopDocket",
-      "boundary": "Browser-local simulation; no external action, no wallet, no production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/day-scale-loop-observatory.html"
+      "route": "/loop-to-rsi-control-room.html",
+      "href": "loop-to-rsi-control-room.html",
+      "title": "Loop \u2192 RSI Control Room",
+      "audience": "Advanced users / non-technical reviewers / governance operators",
+      "description": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local demonstration; no wallet, no network, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html"
     },
     {
-      "route": "/loop-evidence-reactor.html",
-      "href": "loop-evidence-reactor.html",
-      "title": "Loop Evidence Reactor",
-      "audience": "AI builders / operators",
-      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
-      "outputArtifact": "LoopDocket",
-      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
+      "route": "/loop-to-rsi-to-asi-superintelligence.html",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
+      "outputArtifact": "HorizonDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-to-asi-superintelligence.html"
+    },
+    {
+      "route": "/loop-to-asi-governance-corridor.html",
+      "href": "loop-to-asi-governance-corridor.html",
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Corridor",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "Companion corridor view for capability pressure, proof gates, containment, council review, and human-boundary discipline.",
+      "outputArtifact": "CorridorDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-asi-governance-corridor.html"
+    },
+    {
+      "route": "/loop-to-rsi-sovereign-governance.html",
+      "href": "loop-to-rsi-sovereign-governance.html",
+      "title": "From Loop to RSI",
+      "audience": "Advanced builders / governance reviewers",
+      "description": "Shows how a long-running agent loop becomes AGI Alpha RSI: deterministic invention governance with target, emit, filter, atlas, test-plan, eval, insert, promote, replay integrity, ECI, Move-37 skepticism, and dossier export.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production autonomy.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
+    },
+    {
+      "route": "/loop-to-rsi.html",
+      "href": "loop-to-rsi.html",
+      "title": "From Loop to RSI",
+      "audience": "Advanced builders / reviewers",
+      "description": "Shows how long-running agent loops become deterministic RSI governance: target, emit, filter, atlas, test-plan, eval, insert, promote, Move-37 dossier, and outcome authority by evidence.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local control-plane simulation; no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi.html"
     },
     {
       "route": "/mandate-epoch-clearinghouse.html",
@@ -540,16 +590,6 @@
       "outputArtifact": "Verification summary",
       "boundary": "No external audit claim.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/verification.html"
-    },
-    {
-      "route": "/loop-to-rsi-sovereign-governance.html",
-      "href": "loop-to-rsi-sovereign-governance.html",
-      "title": "From Loop to RSI \u00b7 Sovereign Governance",
-      "audience": "Advanced users / governance reviewers",
-      "description": "Browser-local demonstration of the transition from long-running agent loops to deterministic RSI governance: ECI, baselines, Move-37, stress tests, dossiers, and mechanical outcome authority.",
-      "outputArtifact": "RSIDossier",
-      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production action.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
     }
   ]
 }

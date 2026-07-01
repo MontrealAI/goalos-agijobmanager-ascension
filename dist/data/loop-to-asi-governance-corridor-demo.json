@@ -1,0 +1,69 @@
+{
+  "release": "v52-loop-rsi-asi-governance-corridor",
+  "route": "loop-to-asi-governance-corridor.html",
+  "title": "Loop \u2192 RSI \u2192 ASI Governance Corridor",
+  "posture": {
+    "noAccount": true,
+    "noForm": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetworkRequest": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true,
+    "zeroNetwork": true
+  },
+  "corridor": [
+    "LOOP",
+    "TRACE",
+    "RESTART",
+    "RSI",
+    "ECI",
+    "BASELINE",
+    "MOVE37",
+    "DOSSIER",
+    "ASI",
+    "COUNCIL",
+    "CAPACITY",
+    "CHRONICLE"
+  ],
+  "loopRules": [
+    "contract-first",
+    "separated roles",
+    "write state outside context",
+    "restart from manifest",
+    "read traces",
+    "expose bottleneck"
+  ],
+  "rsiRules": [
+    "TARGET",
+    "EMIT",
+    "FILTER",
+    "ATLAS",
+    "TEST-PLAN",
+    "EVAL",
+    "INSERT",
+    "PROMOTE"
+  ],
+  "asiBoundaryRules": [
+    "capability pressure narrows authority",
+    "future ASI-class capability requires stronger evidence",
+    "search control is not outcome authority",
+    "council review cannot be bypassed",
+    "human or institutional authorization remains outside public demo"
+  ],
+  "hardGates": [
+    "ReplayIntegrity",
+    "ExecutedEvidence",
+    "BaselineAdvantage",
+    "StressPersistence",
+    "Containment",
+    "ArchitectValidatorCouncil",
+    "HumanBoundary"
+  ],
+  "outputArtifact": "CorridorDossier",
+  "claimBoundary": "Architecture and public-safe browser demonstration only; no achieved AGI, achieved ASI, superintelligence, empirical SOTA, external audit completion, production certification, autonomous sovereignty, live invention authority, or civilization-scale capability claim. ASI is a governance horizon, not an achievement claim."
+}

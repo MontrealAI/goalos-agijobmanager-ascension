@@ -1,7 +1,7 @@
 {
-  "version": "site-navigation-v51",
+  "version": "v52",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 56,
+  "routeCount": 58,
   "posture": {
     "browserLocal": true,
     "publicSafe": true,
@@ -290,6 +290,26 @@
       "outputArtifact": "RSIDossier",
       "boundary": "Browser-local demonstration; no wallet, no network, no production authority.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html"
+    },
+    {
+      "route": "/loop-to-rsi-to-asi-superintelligence.html",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
+      "outputArtifact": "HorizonDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-to-asi-superintelligence.html"
+    },
+    {
+      "route": "/loop-to-asi-governance-corridor.html",
+      "href": "loop-to-asi-governance-corridor.html",
+      "title": "Loop \u2192 RSI \u2192 ASI Governance Corridor",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "Companion corridor view for capability pressure, proof gates, containment, council review, and human-boundary discipline.",
+      "outputArtifact": "CorridorDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-asi-governance-corridor.html"
     },
     {
       "route": "/loop-to-rsi-sovereign-governance.html",

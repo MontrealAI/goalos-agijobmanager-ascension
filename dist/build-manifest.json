@@ -1,9 +1,11 @@
 {
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
-  "routeCount": 56,
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe",
+  "routeCount": 58,
   "releaseAliases": [
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe",
+    "v52-loop-to-rsi-to-asi-superintelligence",
+    "v52-loop-to-asi-governance-corridor",
     "v51-loop-to-rsi-control-room",
     "v50-loop-to-rsi-sovereign-governance",
     "v50-loop-to-rsi-sovereign-invention",
@@ -19,9 +21,10 @@
     "v40-navigation-polish-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-day-scale-loop-observatory-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-loop-evidence-reactor-compatibility-failsafe",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe"
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-loop-to-rsi-sovereign-governance-compatibility-failsafe",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-loop-to-rsi-control-room-compatibility-failsafe"
   ],
-  "builtAt": "2026-07-01T18:25:28.783955Z",
+  "builtAt": "2026-07-01T18:32:11.595733Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -319,6 +322,16 @@
       "bytes": 8845
     },
     {
+      "path": "assets/loop-to-asi-governance-corridor.css",
+      "sha256": "70efcb5dc38b174f2519105f940d922f2d7f5b0aed963b4494ca4d94dba8cf24",
+      "bytes": 9814
+    },
+    {
+      "path": "assets/loop-to-asi-governance-corridor.js",
+      "sha256": "a57f2e661fb9a69c4e04666925ce27115a20f81b203159849db8403b8fae28f2",
+      "bytes": 10020
+    },
+    {
       "path": "assets/loop-to-rsi-control-room.css",
       "sha256": "fa18ed9d6ac2f2d85a65b84da98467223f45de8f817d57655b268c5632a38656",
       "bytes": 9332
@@ -337,6 +350,16 @@
       "path": "assets/loop-to-rsi-sovereign-governance.js",
       "sha256": "227e84a7c50a18de2e21b8b1a288dc34b7d554402ad7a66cafd2599b51a753d7",
       "bytes": 8232
+    },
+    {
+      "path": "assets/loop-to-rsi-to-asi-superintelligence.css",
+      "sha256": "70efcb5dc38b174f2519105f940d922f2d7f5b0aed963b4494ca4d94dba8cf24",
+      "bytes": 9814
+    },
+    {
+      "path": "assets/loop-to-rsi-to-asi-superintelligence.js",
+      "sha256": "6e8c244341a671e15d911c9ed17e223199d9f1acabb6401d5bd69e6a331515d5",
+      "bytes": 10048
     },
     {
       "path": "assets/loop-to-rsi.css",
@@ -659,6 +682,11 @@
       "bytes": 29134
     },
     {
+      "path": "canonical-route-manifest-v52.json",
+      "sha256": "d34cb3b3eb82e85c532339bee1afc438f2366827ebad27cd892ead8f9a6317f5",
+      "bytes": 30688
+    },
+    {
       "path": "canonical-route-manifest.json",
       "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
       "bytes": 24891
@@ -690,8 +718,8 @@
     },
     {
       "path": "command-center.html",
-      "sha256": "032985d1c9c425197297cd919d43450f2cc68a2766ac0eead806c9b463bba4f7",
-      "bytes": 19175
+      "sha256": "9b8657632022632220c7a258c20f22816e7ea2ffc0bb7fd2ad051f49585dedef",
+      "bytes": 19964
     },
     {
       "path": "coordination-engine.html",
@@ -784,6 +812,11 @@
       "bytes": 29134
     },
     {
+      "path": "data/canonical-route-manifest-v52.json",
+      "sha256": "d34cb3b3eb82e85c532339bee1afc438f2366827ebad27cd892ead8f9a6317f5",
+      "bytes": 30688
+    },
+    {
       "path": "data/canonical-route-manifest.json",
       "sha256": "9a35edff9458c08def43e55d9f1ca12ca2d994a51d1d63297294f23ddfb36699",
       "bytes": 24891
@@ -825,8 +858,8 @@
     },
     {
       "path": "data/experience-hub-catalog.json",
-      "sha256": "9c894bc2245d53db036b102adbfff0b6406838e25be02ba3b166c7e508cb885b",
-      "bytes": 20558
+      "sha256": "5e90d5c87356384a83dcc40f14db89495a37cf34f1bc46dd888a663db38f1829",
+      "bytes": 33877
     },
     {
       "path": "data/failsafe-bootstrap-v49.json",
@@ -835,13 +868,18 @@
     },
     {
       "path": "data/failsafe-bootstrap-v50.json",
-      "sha256": "f1c67e8dc259ec4ca1ad276a61a74426f7991da7e185cd4937c299dd3d1b1700",
+      "sha256": "e9237a63d7d998e2d08ece5e171c02226bd40de9c47abe0f7b9f38e1fd167430",
       "bytes": 99
     },
     {
       "path": "data/failsafe-bootstrap-v51.json",
       "sha256": "ecc73ab1aeb77f08c3f4eae4e60a852bc3c7eca8bb9f38c16008a8715df8026d",
       "bytes": 107
+    },
+    {
+      "path": "data/failsafe-bootstrap-v52.json",
+      "sha256": "127d432e5c03300fef97a24bd23b17f3313520dc309528066f1fd1f7f0f8f961",
+      "bytes": 114
     },
     {
       "path": "data/final-assurance-policy.json",
@@ -869,6 +907,11 @@
       "bytes": 1670
     },
     {
+      "path": "data/loop-to-asi-governance-corridor-demo.json",
+      "sha256": "8948fe443792e410d9886eeb30cc662dbb9789082bb446166efe22eade8ba67e",
+      "bytes": 1873
+    },
+    {
       "path": "data/loop-to-rsi-control-room-demo.json",
       "sha256": "125ffdc2b3204f872cebfe80425a9636a58f09725e9b1eb79b88d746038d31ac",
       "bytes": 2815
@@ -882,6 +925,11 @@
       "path": "data/loop-to-rsi-sovereign-governance-demo.json",
       "sha256": "89294be67355549a3c74f10a406ffe9c10fadb0f12343da520421e6e6f9881aa",
       "bytes": 1332
+    },
+    {
+      "path": "data/loop-to-rsi-to-asi-superintelligence-demo.json",
+      "sha256": "c5288df4c21a840773123cd139cf1ca6b83798602a9effbef489c3dfc5574d7c",
+      "bytes": 1506
     },
     {
       "path": "data/mainnet-capability-contract.json",
@@ -960,8 +1008,8 @@
     },
     {
       "path": "data/site-navigation-catalog.json",
-      "sha256": "fbf727099ca263319c9050c8ffd79711f4f23f23c47081709d2f08106bcef854",
-      "bytes": 16668
+      "sha256": "968b482fd6f5af37bc11910bd1beb8274afaedd47969287a4125e56c5cdc0030",
+      "bytes": 32046
     },
     {
       "path": "data/site-navigation-map.json",
@@ -1000,13 +1048,18 @@
     },
     {
       "path": "data/site-navigation-v50.json",
-      "sha256": "2c0475a3689d78d23075e041954b64f428b327ed72cfb7a711ca1379d1191e35",
-      "bytes": 26764
+      "sha256": "bbaf2fb0f163fd72698afb66fa48274d12ef06af8093c68ab0e78649f49414e4",
+      "bytes": 29477
     },
     {
       "path": "data/site-navigation-v51.json",
-      "sha256": "9c620e23f4c70998ffac9158c8a0750d8550144d41101960932c59ec01fa31df",
-      "bytes": 28079
+      "sha256": "bbaf2fb0f163fd72698afb66fa48274d12ef06af8093c68ab0e78649f49414e4",
+      "bytes": 29477
+    },
+    {
+      "path": "data/site-navigation-v52.json",
+      "sha256": "4087ed59764c7a9db8152ca9a10976ccf235f306a7cfc143ce3244c54388f288",
+      "bytes": 29597
     },
     {
       "path": "data/site-rehydration-v39.json",
@@ -1175,8 +1228,8 @@
     },
     {
       "path": "docs/DEMO_CATALOG.md",
-      "sha256": "140dfa8818abd631ee11104543dce5a91673e0887efc12a703c3f2e3cb21d9d3",
-      "bytes": 15117
+      "sha256": "34c2ba492804d72929e977197fbec87878fd06e6dc1b1b029cacc6232d0e95cd",
+      "bytes": 16012
     },
     {
       "path": "docs/DEMO_PRIVACY_BOUNDARY.md",
@@ -1279,6 +1332,11 @@
       "bytes": 1896
     },
     {
+      "path": "docs/LOOP_TO_ASI_GOVERNANCE_CORRIDOR_V52.md",
+      "sha256": "30e388164878dbfdfec605de0173af887480c1ff86af60b4696e05f2b43fe97a",
+      "bytes": 1341
+    },
+    {
       "path": "docs/LOOP_TO_RSI_CONTROL_ROOM_V51.md",
       "sha256": "70037fb33c91433d01d3cd9920b7279dcfeba58f65e7f7c8d4d223e4c1745bd9",
       "bytes": 1293
@@ -1287,6 +1345,11 @@
       "path": "docs/LOOP_TO_RSI_SOVEREIGN_GOVERNANCE_V50.md",
       "sha256": "83012d361eac20b368587067c3ee892919063665c534ae2a1e9beb645ad561ab",
       "bytes": 873
+    },
+    {
+      "path": "docs/LOOP_TO_RSI_TO_ASI_SUPERINTELLIGENCE_V52.md",
+      "sha256": "c32f14624acecd47b86c30077159045dc797a24666ebb8d184455550bf1a9c59",
+      "bytes": 1096
     },
     {
       "path": "docs/LOOP_TO_RSI_V50.md",
@@ -1972,6 +2035,16 @@
       "path": "docs/releases/V51_LOOP_TO_RSI_CONTROL_ROOM.md",
       "sha256": "fab4df9bdf0bb9280be3e551dfcfe3a54089ed060e17df96dfad6c0f2c96f893",
       "bytes": 1101
+    },
+    {
+      "path": "docs/releases/V52_LOOP_TO_ASI_GOVERNANCE_CORRIDOR.md",
+      "sha256": "d5c9cec55babbf063459d242a18ea36a9974368f67992a12fbcbf2b4ab705127",
+      "bytes": 626
+    },
+    {
+      "path": "docs/releases/V52_LOOP_TO_RSI_TO_ASI_SUPERINTELLIGENCE.md",
+      "sha256": "02e471dd5f64f66d90c7c21f6fe55e68ae86361fa4042d5f614f09e4c794c3d0",
+      "bytes": 470
     },
     {
       "path": "docs/reports/ASCENSION_FLIGHT_DECK_V31_REPORT.json",
@@ -2660,18 +2733,18 @@
     },
     {
       "path": "experience-concierge.html",
-      "sha256": "c1535a194181b02ca6edd50a8a55865864fc2ae4871aacec4dc8d86c0483d12f",
-      "bytes": 20255
+      "sha256": "3e7cb2c42b71ed369f3d2cf98bf8c5707b6a7a8afba5c1e6a7b7cf0110737959",
+      "bytes": 21044
     },
     {
       "path": "experience-hub-catalog.json",
-      "sha256": "9c894bc2245d53db036b102adbfff0b6406838e25be02ba3b166c7e508cb885b",
-      "bytes": 20558
+      "sha256": "5e90d5c87356384a83dcc40f14db89495a37cf34f1bc46dd888a663db38f1829",
+      "bytes": 33877
     },
     {
       "path": "experience-hub.html",
-      "sha256": "a35157d1a24e5d3c08df3cdb3a1288e9703d2bf0160d569e9db5bcc46df69c81",
-      "bytes": 18257
+      "sha256": "853bf941d3fd415a37da8223c5c6b7de2d1aa13ee32194e3689b21417a04e18e",
+      "bytes": 19046
     },
     {
       "path": "expert-console.html",
@@ -2690,7 +2763,7 @@
     },
     {
       "path": "failsafe-bootstrap-v50.json",
-      "sha256": "f1c67e8dc259ec4ca1ad276a61a74426f7991da7e185cd4937c299dd3d1b1700",
+      "sha256": "e9237a63d7d998e2d08ece5e171c02226bd40de9c47abe0f7b9f38e1fd167430",
       "bytes": 99
     },
     {
@@ -2699,14 +2772,19 @@
       "bytes": 107
     },
     {
+      "path": "failsafe-bootstrap-v52.json",
+      "sha256": "127d432e5c03300fef97a24bd23b17f3313520dc309528066f1fd1f7f0f8f961",
+      "bytes": 114
+    },
+    {
       "path": "final-assurance-policy.json",
       "sha256": "1d448a987ef724c105b494d7e0ab59c6558683139f65b2a1585d75b469746d5e",
       "bytes": 2328
     },
     {
       "path": "index.html",
-      "sha256": "f18d298b78c0148f5d8f10ac9c915867f2f99f8c164daf9f2cd8ff879fd23423",
-      "bytes": 14541
+      "sha256": "eb9cc36f679b2ac1770d472f45ca60a59ec5bc378e3749568359e7b6974b325d",
+      "bytes": 15576
     },
     {
       "path": "legal-boundary-policy.json",
@@ -2749,6 +2827,16 @@
       "bytes": 11558
     },
     {
+      "path": "loop-to-asi-governance-corridor-demo.json",
+      "sha256": "8948fe443792e410d9886eeb30cc662dbb9789082bb446166efe22eade8ba67e",
+      "bytes": 1873
+    },
+    {
+      "path": "loop-to-asi-governance-corridor.html",
+      "sha256": "ee3060f7896ac07270abaa0f76c4b1225239bf414fda7685bd3dda5536959f9f",
+      "bytes": 14759
+    },
+    {
       "path": "loop-to-rsi-control-room-demo.json",
       "sha256": "125ffdc2b3204f872cebfe80425a9636a58f09725e9b1eb79b88d746038d31ac",
       "bytes": 2815
@@ -2772,6 +2860,16 @@
       "path": "loop-to-rsi-sovereign-governance.html",
       "sha256": "30ee2cfbe06c8ec4da14e60f6878a68666e0382c540ce92a0a43d16acb28fbed",
       "bytes": 12850
+    },
+    {
+      "path": "loop-to-rsi-to-asi-superintelligence-demo.json",
+      "sha256": "c5288df4c21a840773123cd139cf1ca6b83798602a9effbef489c3dfc5574d7c",
+      "bytes": 1506
+    },
+    {
+      "path": "loop-to-rsi-to-asi-superintelligence.html",
+      "sha256": "3e1eac5ec4ab3af9f579c888ab45937723c6eb1eb74ea6c54689c34bd6c763da",
+      "bytes": 14979
     },
     {
       "path": "loop-to-rsi.html",
@@ -2830,8 +2928,8 @@
     },
     {
       "path": "production-url.json",
-      "sha256": "a52eade2415d463b7430842f6138f9c9ff8b56d723cf525236062e370200b9ca",
-      "bytes": 2950
+      "sha256": "ce5270bd6434542e678b420f97e1172439b49c2fe511b66c38216627c0909293",
+      "bytes": 3251
     },
     {
       "path": "proof-backed-upgrade-foundry-demo.json",
@@ -3024,6 +3122,11 @@
       "bytes": 1570
     },
     {
+      "path": "schemas/loop-to-asi-governance-corridor.schema.json",
+      "sha256": "bf82a1278635a9a56d2f5f6928b24ec7c6e2770b7f26dbf3be2b2cee9609b10b",
+      "bytes": 705
+    },
+    {
       "path": "schemas/loop-to-rsi-control-room.schema.json",
       "sha256": "781803a48c376e065b58f96468a39f5f1484eb3e36382fc2d096b12b5ccf4fbc",
       "bytes": 1752
@@ -3032,6 +3135,11 @@
       "path": "schemas/loop-to-rsi-sovereign-governance.schema.json",
       "sha256": "81a31fa006b6f3118bffe51f9fdd2ca1ae1cd4a52a0f279cef1eebe84bbd84d5",
       "bytes": 877
+    },
+    {
+      "path": "schemas/loop-to-rsi-to-asi-superintelligence.schema.json",
+      "sha256": "00b5dfc21256df7638df9cc8cf63873193abcd93edaa795c1c6bb837c14983b2",
+      "bytes": 1074
     },
     {
       "path": "schemas/loop-to-rsi.schema.json",
@@ -3175,8 +3283,8 @@
     },
     {
       "path": "site-navigation-catalog.json",
-      "sha256": "fbf727099ca263319c9050c8ffd79711f4f23f23c47081709d2f08106bcef854",
-      "bytes": 16668
+      "sha256": "968b482fd6f5af37bc11910bd1beb8274afaedd47969287a4125e56c5cdc0030",
+      "bytes": 32046
     },
     {
       "path": "site-navigation-map.json",
@@ -3215,13 +3323,18 @@
     },
     {
       "path": "site-navigation-v50.json",
-      "sha256": "2c0475a3689d78d23075e041954b64f428b327ed72cfb7a711ca1379d1191e35",
-      "bytes": 26764
+      "sha256": "bbaf2fb0f163fd72698afb66fa48274d12ef06af8093c68ab0e78649f49414e4",
+      "bytes": 29477
     },
     {
       "path": "site-navigation-v51.json",
-      "sha256": "9c620e23f4c70998ffac9158c8a0750d8550144d41101960932c59ec01fa31df",
-      "bytes": 28079
+      "sha256": "bbaf2fb0f163fd72698afb66fa48274d12ef06af8093c68ab0e78649f49414e4",
+      "bytes": 29477
+    },
+    {
+      "path": "site-navigation-v52.json",
+      "sha256": "4087ed59764c7a9db8152ca9a10976ccf235f306a7cfc143ce3244c54388f288",
+      "bytes": 29597
     },
     {
       "path": "site-rehydration-v39.json",
@@ -3230,8 +3343,8 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "5e26b7e6de877e8f1552367e90430833226eaa663993842d62a978899faf9fff",
-      "bytes": 14306
+      "sha256": "aaffb1ad84c29a80a8702a2faef22ff6c27415321755e8ef01952459943dfd11",
+      "bytes": 15149
     },
     {
       "path": "sovereign-experience-stream-demo.json",
@@ -3299,7 +3412,7 @@
       "bytes": 5583
     }
   ],
-  "version": "v51",
+  "version": "v52",
   "dayScaleLoopObservatory": "PASS",
   "repositoryPublicTrustDayScaleLoopV48": "PASS",
   "loopEvidenceReactor": "PASS",
@@ -3309,5 +3422,8 @@
   "repositoryPublicTrustLoopToRsiV50": "PASS",
   "repositoryPublicTrustLoopToRsiControlRoomV51": "PASS",
   "loopToRsiControlRoom": "PASS",
-  "publicHtmlRouteCount": 56
+  "publicHtmlRouteCount": 58,
+  "loopToAsiGovernanceCorridor": "PASS",
+  "loopToRsiToAsiSuperintelligence": "PASS",
+  "repositoryPublicTrustLoopToAsiGovernanceCorridorV52": "PASS"
 }
