@@ -1,657 +1,1232 @@
 {
-  "version": "v53",
+  "title": "GoalOS AGIJobManager Ascension Complete Route Catalog",
+  "version": "v57",
+  "release": "v57-complete-route-recovery-and-institutional-experience-command",
+  "routeCount": 63,
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "browserLocal": true,
-    "zeroNetwork": true,
+    "publicSafe": true,
     "noWallet": true,
-    "noForms": true,
-    "noAnalytics": true,
-    "noCookies": true,
-    "noUserDataWanted": true
+    "noUserDataWanted": true,
+    "noBlankFallbacks": true
   },
-  "routes": [
+  "primaryPaths": [
     {
-      "id": "asi-proof-horizon-console",
-      "title": "ASI Proof Horizon Console",
-      "href": "asi-proof-horizon-console.html",
-      "group": "Core",
-      "audience": [
-        "executive",
-        "advanced",
-        "operator",
-        "reviewer",
-        "governance"
-      ],
-      "time": 9,
-      "summary": "Run the proof horizon from loop state to RSI governance to future-superintelligence authority firewall with HorizonProofDocket export."
+      "id": "first-time",
+      "title": "First-time visitor",
+      "time": "3 min",
+      "href": "command-center.html#first-time",
+      "steps": [
+        "start.html",
+        "trust-equation-simulator.html",
+        "proof-to-action-theatre.html",
+        "evidence-docket-composer.html"
+      ]
     },
     {
-      "id": "loop-to-rsi-to-asi-superintelligence",
-      "title": "Loop \u2192 RSI \u2192 ASI Governance Console",
-      "href": "loop-to-rsi-to-asi-superintelligence.html",
-      "group": "Core",
-      "audience": [
-        "advanced",
-        "operator",
-        "reviewer",
-        "governance"
-      ],
-      "time": 9,
-      "summary": "Moves from restartable loop to deterministic RSI to ASI-grade proof, replay, risk, quorum, and human-authority gates."
+      "id": "reviewer",
+      "title": "Reviewer / auditor",
+      "time": "5 min",
+      "href": "complete-route-index.html#reviewer",
+      "steps": [
+        "complete-route-index.html",
+        "evidence/index.html",
+        "claim-boundary-firewall.html",
+        "verification.html"
+      ]
     },
     {
-      "id": "loop-to-rsi-sovereign-governance",
-      "title": "From Loop to RSI",
-      "href": "loop-to-rsi-sovereign-governance.html",
-      "group": "Core",
-      "audience": [
-        "advanced",
-        "operator",
-        "reviewer"
-      ],
-      "time": 8,
-      "summary": "Turns long-running loops into deterministic RSI governance: ECI, baselines, Move-37 stress, dossier, Chronicle."
+      "id": "loop-rsi",
+      "title": "Loop → RSI path",
+      "time": "8 min",
+      "href": "loop-to-rsi-control-room.html",
+      "steps": [
+        "loop-contract-theatre.html",
+        "loop-operating-room.html",
+        "loop-evidence-reactor.html",
+        "loop-to-rsi-control-room.html"
+      ]
     },
     {
-      "id": "command-center",
-      "title": "Command Center",
+      "id": "horizon",
+      "title": "ASI horizon governance",
+      "time": "10 min",
+      "href": "superintelligence-proof-governance-console.html",
+      "steps": [
+        "loop-to-rsi-to-asi-superintelligence.html",
+        "asi-proof-horizon-console.html",
+        "superintelligence-proof-governance-console.html"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "start-here",
+      "title": "Start here",
+      "count": 11
+    },
+    {
+      "id": "loop-rsi",
+      "title": "Loop & RSI",
+      "count": 11
+    },
+    {
+      "id": "protocol-gates",
+      "title": "Protocol & gates",
+      "count": 9
+    },
+    {
+      "id": "evidence-claims",
+      "title": "Evidence & claims",
+      "count": 5
+    },
+    {
+      "id": "work-economy",
+      "title": "Work economy",
+      "count": 5
+    },
+    {
+      "id": "capability-reuse",
+      "title": "Capability reuse",
+      "count": 3
+    },
+    {
+      "id": "assurance-boundaries",
+      "title": "Assurance & boundaries",
+      "count": 6
+    },
+    {
+      "id": "reference",
+      "title": "Reference",
+      "count": 4
+    },
+    {
+      "id": "archive",
+      "title": "Archive",
+      "count": 2
+    },
+    {
+      "id": "coordination-routing",
+      "title": "Coordination & routing",
+      "count": 3
+    },
+    {
+      "id": "guide",
+      "title": "Guide",
+      "count": 1
+    },
+    {
+      "id": "consoles",
+      "title": "Consoles",
+      "count": 3
+    }
+  ],
+  "groups": [
+    "Start here",
+    "Loop & RSI",
+    "Protocol & gates",
+    "Evidence & claims",
+    "Work economy",
+    "Capability reuse",
+    "Assurance & boundaries",
+    "Reference",
+    "Archive",
+    "Coordination & routing",
+    "Guide",
+    "Consoles"
+  ],
+  "pages": [
+    {
+      "id": "index-html",
       "href": "index.html",
-      "group": "Start",
+      "route": "/index.html",
+      "title": "Home",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "The public front door for GoalOS AGIJobManager Ascension: identity, posture, proof-settlement institution, and guided paths.",
+      "description": "The public front door for GoalOS AGIJobManager Ascension: identity, posture, proof-settlement institution, and guided paths.",
       "audience": [
-        "new",
-        "executive",
-        "advanced"
+        "Everyone"
       ],
-      "time": 2,
-      "summary": "The clean front door for every proof surface, journey, boundary, and console."
+      "time": "5 min",
+      "outputArtifact": "Public front door",
+      "boundary": "Public-safe, read-only."
     },
     {
-      "id": "site-atlas",
-      "title": "Complete Site Atlas",
-      "href": "site-atlas.html",
-      "group": "Start",
+      "id": "complete-route-index-html",
+      "href": "complete-route-index.html",
+      "route": "/complete-route-index.html",
+      "title": "Complete Route Index",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Single public-safe route recovery index for every preserved page, demo, proof room, legal boundary, console, atlas, and archive route.",
+      "description": "Single public-safe route recovery index for every preserved page, demo, proof room, legal boundary, console, atlas, and archive route.",
       "audience": [
-        "new",
-        "advanced",
-        "operator",
-        "risk",
-        "legal"
+        "Everyone"
       ],
-      "time": 3,
-      "summary": "Searchable map of every public route, demo, proof room, console, and boundary page."
+      "time": "5 min",
+      "outputArtifact": "RouteRecoveryReceipt",
+      "boundary": "Navigation-only; no account, no wallet, no user data."
     },
     {
-      "id": "start",
-      "title": "Start Here",
+      "id": "experience-concierge-html",
+      "href": "experience-concierge.html",
+      "route": "/experience-concierge.html",
+      "title": "Experience Concierge",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Guides each visitor to the right proof path by intent.",
+      "description": "Guides each visitor to the right proof path by intent.",
+      "audience": [
+        "New visitors"
+      ],
+      "time": "5 min",
+      "outputArtifact": "JourneyReceipt",
+      "boundary": "Browser-local route guidance."
+    },
+    {
+      "id": "experience-hub-html",
+      "href": "experience-hub.html",
+      "route": "/experience-hub.html",
+      "title": "Experience Hub",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Role-based journeys for proof, settlement, architecture, and boundaries.",
+      "description": "Role-based journeys for proof, settlement, architecture, and boundaries.",
+      "audience": [
+        "All users"
+      ],
+      "time": "5 min",
+      "outputArtifact": "JourneyReceipt",
+      "boundary": "Browser-local route guidance."
+    },
+    {
+      "id": "command-center-html",
+      "href": "command-center.html",
+      "route": "/command-center.html",
+      "title": "Command Center",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Complete searchable catalog of public routes and proof surfaces.",
+      "description": "Complete searchable catalog of public routes and proof surfaces.",
+      "audience": [
+        "Reviewers",
+        "operators"
+      ],
+      "time": "5 min",
+      "outputArtifact": "NavigationReceipt",
+      "boundary": "Browser-local catalog."
+    },
+    {
+      "id": "start-html",
       "href": "start.html",
-      "group": "Start",
+      "route": "/start.html",
+      "title": "Guided Start",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Clean first-click path from objective to proof demos.",
+      "description": "Clean first-click path from objective to proof demos.",
       "audience": [
-        "new",
-        "executive"
+        "New visitors"
       ],
-      "time": 2,
-      "summary": "Friendly first-run path for normal users."
+      "time": "5 min",
+      "outputArtifact": "Route summary",
+      "boundary": "Browser-local guidance."
     },
     {
-      "id": "flight-deck",
-      "title": "Ascension Flight Deck",
+      "id": "ascension-flight-deck-html",
       "href": "ascension-flight-deck.html",
-      "group": "Start",
+      "route": "/ascension-flight-deck.html",
+      "title": "Ascension Flight Deck",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Guided launcher for the strongest proof paths, with audience filters and same-origin preview.",
+      "description": "Guided launcher for the strongest proof paths, with audience filters and same-origin preview.",
       "audience": [
-        "new",
-        "advanced"
+        "All users"
       ],
-      "time": 5,
-      "summary": "Guided journeys, same-origin preview, and public-safe JourneyReceipt export."
+      "time": "5 min",
+      "outputArtifact": "JourneyReceipt",
+      "boundary": "Browser-local route launcher."
     },
     {
-      "id": "demo-lab",
-      "title": "Demo Lab",
-      "href": "demo-lab.html",
-      "group": "Start",
+      "id": "superintelligence-proof-governance-console-html",
+      "href": "superintelligence-proof-governance-console.html",
+      "route": "/superintelligence-proof-governance-console.html",
+      "title": "Superintelligence Proof Governance Console",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "A browser-local GoalOS control room for the Loop → RSI → ASI horizon: evidence contact, baselines, replay, Move-37 stress, council review, capacity allocation, and human boundary gates.",
+      "description": "A browser-local GoalOS control room for the Loop → RSI → ASI horizon: evidence contact, baselines, replay, Move-37 stress, council review, capacity allocation, and human boundary gates.",
       "audience": [
-        "new"
+        "Executives",
+        "researchers",
+        "reviewers"
       ],
-      "time": 4,
-      "summary": "Autonomous browser-local demo missions with public-safe dockets."
+      "time": "5 min",
+      "outputArtifact": "SuperintelligenceGovernanceDocket",
+      "boundary": "Public-safe governance simulation only; no achieved ASI claim and no production authority."
     },
     {
-      "id": "mission-studio",
-      "title": "Mission Studio",
-      "href": "mission-studio.html",
-      "group": "Start",
+      "id": "asi-proof-horizon-console-html",
+      "href": "asi-proof-horizon-console.html",
+      "route": "/asi-proof-horizon-console.html",
+      "title": "ASI Proof Horizon Console",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "A browser-local control room showing how a restartable loop becomes RSI governance, then enters an ASI-horizon proof firewall with evidence, baselines, containment, council review, rollback, and Chronicle gates.",
+      "description": "A browser-local control room showing how a restartable loop becomes RSI governance, then enters an ASI-horizon proof firewall with evidence, baselines, containment, council review, rollback, and Chronicle gates.",
       "audience": [
-        "new",
-        "operator"
+        "Executives",
+        "AI builders",
+        "governance reviewers"
       ],
-      "time": 4,
-      "summary": "Compose a local proof pack from a plain-language objective."
+      "time": "5 min",
+      "outputArtifact": "HorizonProofDocket",
+      "boundary": "Governance demonstration only; ASI is treated as a future proof horizon, not an achievement claim."
     },
     {
-      "id": "proof-cards",
-      "title": "Proof Cards",
-      "href": "proof-cards.html",
-      "group": "Start",
+      "id": "loop-to-rsi-to-asi-superintelligence-html",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "route": "/loop-to-rsi-to-asi-superintelligence.html",
+      "title": "Loop → RSI → ASI Governance Console",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
+      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
       "audience": [
-        "new",
-        "executive"
+        "Executives",
+        "operators",
+        "advanced reviewers"
       ],
-      "time": 3,
-      "summary": "Copyable public-safe explanations for sharing GoalOS."
+      "time": "5 min",
+      "outputArtifact": "HorizonDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim."
     },
     {
-      "id": "until-done",
-      "title": "Until-DONE Mission Control",
-      "href": "until-done-mission-control.html",
-      "group": "Core Proof Loop",
+      "id": "loop-to-asi-governance-corridor-html",
+      "href": "loop-to-asi-governance-corridor.html",
+      "route": "/loop-to-asi-governance-corridor.html",
+      "title": "Loop → RSI → ASI Governance Corridor",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Companion corridor view for capability pressure, proof gates, containment, council review, and human-boundary discipline.",
+      "description": "Companion corridor view for capability pressure, proof gates, containment, council review, and human-boundary discipline.",
       "audience": [
-        "new",
-        "advanced"
+        "Executives",
+        "operators",
+        "advanced reviewers"
       ],
-      "time": 5,
-      "summary": "Objective \u2192 mission contract \u2192 evidence \u2192 governed decision state \u2192 DONE."
+      "time": "reference",
+      "outputArtifact": "CorridorDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim."
     },
     {
-      "id": "evidence-docket-composer",
-      "title": "Evidence Docket Composer",
-      "href": "evidence-docket-composer.html",
-      "group": "Core Proof Loop",
+      "id": "loop-to-rsi-control-room-html",
+      "href": "loop-to-rsi-control-room.html",
+      "route": "/loop-to-rsi-control-room.html",
+      "title": "Loop → RSI Control Room",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
+      "description": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
       "audience": [
-        "new",
-        "risk"
+        "Advanced users",
+        "non-technical reviewers",
+        "governance operators"
       ],
-      "time": 5,
-      "summary": "Build a claim-bound evidence room before a public claim."
+      "time": "reference",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local demonstration; no wallet, no network, no production authority."
     },
     {
-      "id": "trust-equation",
-      "title": "Trust Equation Simulator",
-      "href": "trust-equation-simulator.html",
-      "group": "Core Proof Loop",
+      "id": "loop-to-rsi-sovereign-governance-html",
+      "href": "loop-to-rsi-sovereign-governance.html",
+      "route": "/loop-to-rsi-sovereign-governance.html",
+      "title": "From Loop to RSI",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Shows how a long-running agent loop becomes AGI Alpha RSI: deterministic invention governance with target, emit, filter, atlas, test-plan, eval, insert, promote, replay integrity, ECI, Move-37 skepticism, and dossier export.",
+      "description": "Shows how a long-running agent loop becomes AGI Alpha RSI: deterministic invention governance with target, emit, filter, atlas, test-plan, eval, insert, promote, replay integrity, ECI, Move-37 skepticism, and dossier export.",
       "audience": [
-        "new",
-        "executive"
+        "Advanced builders",
+        "governance reviewers"
       ],
-      "time": 4,
-      "summary": "Show why zero proof collapses trusted institutional work to zero."
+      "time": "reference",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production autonomy."
     },
     {
-      "id": "proof-settlement",
-      "title": "Proof-Settlement Lifecycle",
-      "href": "proof-settlement-lifecycle.html",
-      "group": "Core Proof Loop",
+      "id": "loop-to-rsi-html",
+      "href": "loop-to-rsi.html",
+      "route": "/loop-to-rsi.html",
+      "title": "From Loop to RSI",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Shows how long-running agent loops become deterministic RSI governance: target, emit, filter, atlas, test-plan, eval, insert, promote, Move-37 dossier, and outcome authority by evidence.",
+      "description": "Shows how long-running agent loops become deterministic RSI governance: target, emit, filter, atlas, test-plan, eval, insert, promote, Move-37 dossier, and outcome authority by evidence.",
       "audience": [
-        "operator",
-        "advanced"
+        "Advanced builders",
+        "reviewers"
       ],
-      "time": 5,
-      "summary": "Request \u2192 Escrow \u2192 Execute \u2192 Proof \u2192 Validate \u2192 Settle \u2192 Chronicle."
+      "time": "reference",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local control-plane simulation; no production authority."
     },
     {
-      "id": "proof-theatre",
-      "title": "Proof-to-Action Theatre",
-      "href": "proof-to-action-theatre.html",
-      "group": "Core Proof Loop",
+      "id": "loop-evidence-reactor-html",
+      "href": "loop-evidence-reactor.html",
+      "route": "/loop-evidence-reactor.html",
+      "title": "Loop Evidence Reactor",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
+      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
       "audience": [
-        "new"
+        "AI builders",
+        "operators"
       ],
-      "time": 4,
-      "summary": "AI creates output; GoalOS creates proof and decision state."
+      "time": "reference",
+      "outputArtifact": "LoopDocket",
+      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority."
     },
     {
-      "id": "proof-gradient",
-      "title": "Proof Gradient Arena",
-      "href": "proof-gradient-arena.html",
-      "group": "Selection & Evolution",
+      "id": "day-scale-loop-observatory-html",
+      "href": "day-scale-loop-observatory.html",
+      "route": "/day-scale-loop-observatory.html",
+      "title": "Day-Scale Loop Observatory",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session.",
+      "description": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session.",
       "audience": [
-        "advanced",
-        "operator"
+        "Operators",
+        "researchers",
+        "reviewers"
       ],
-      "time": 5,
-      "summary": "Score is advisory; hard gates decide propagation."
+      "time": "reference",
+      "outputArtifact": "LongLoopDocket",
+      "boundary": "Browser-local simulation; no external action, no wallet, no production authority."
     },
     {
-      "id": "constitution",
-      "title": "Proof Constitution Simulator",
-      "href": "proof-constitution-simulator.html",
-      "group": "Selection & Evolution",
-      "audience": [
-        "advanced",
-        "risk"
-      ],
-      "time": 5,
-      "summary": "Aim \u2192 Act \u2192 Prove \u2192 Evolve through typed proof objects and conformance levels."
-    },
-    {
-      "id": "chronicle",
-      "title": "Chronicle Compounding Lab",
-      "href": "chronicle-compounding-lab.html",
-      "group": "Selection & Evolution",
-      "audience": [
-        "new",
-        "advanced"
-      ],
-      "time": 4,
-      "summary": "Accepted proof becomes Chronicle memory and reusable capability."
-    },
-    {
-      "id": "upgrade",
-      "title": "Proof-Backed Upgrade Foundry",
-      "href": "proof-backed-upgrade-foundry.html",
-      "group": "Selection & Evolution",
-      "audience": [
-        "advanced",
-        "operator"
-      ],
-      "time": 5,
-      "summary": "Canary, challenge, rollback, and human-review gates for upgrade rights."
-    },
-    {
-      "id": "artifact",
-      "title": "Proof-Carrying Artifact Passport",
-      "href": "proof-carrying-artifact-passport.html",
-      "group": "Selection & Evolution",
-      "audience": [
-        "advanced",
-        "operator"
-      ],
-      "time": 5,
-      "summary": "Capability may travel only when proof travels with it."
-    },
-    {
-      "id": "multi-agent",
-      "title": "Multi-Agent Institution",
-      "href": "multi-agent-institution.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "new",
-        "advanced"
-      ],
-      "time": 5,
-      "summary": "Large systems coordinate when proof decides what survives."
-    },
-    {
-      "id": "coordination-lab",
-      "title": "Coordination Lab",
-      "href": "coordination-lab.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "advanced"
-      ],
-      "time": 5,
-      "summary": "Compare swarm activity, fixed crews, and proof-governed institutions."
-    },
-    {
-      "id": "coordination-engine",
-      "title": "Advanced Coordination Engine",
-      "href": "coordination-engine.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "advanced"
-      ],
-      "time": 7,
-      "summary": "Technical engine for proof-governed coordination."
-    },
-    {
-      "id": "router",
-      "title": "Router Observatory",
-      "href": "proof-conditioned-router-observatory.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "advanced",
-        "operator"
-      ],
-      "time": 5,
-      "summary": "Route the smallest sufficient validator-bound constellation."
-    },
-    {
-      "id": "inflow",
-      "title": "Ascension Inflow Control",
-      "href": "ascension-inflow-control.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "advanced"
-      ],
-      "time": 5,
-      "summary": "Regulated inflow sustains proof-producing institutional work."
-    },
-    {
-      "id": "economy",
-      "title": "Sovereign Machine Economy",
-      "href": "sovereign-machine-economy.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "advanced",
-        "operator"
-      ],
-      "time": 6,
-      "summary": "The local sovereign machine economy route and proof-first execution posture."
-    },
-    {
-      "id": "mandate",
-      "title": "MandateEpoch Clearinghouse",
-      "href": "mandate-epoch-clearinghouse.html",
-      "group": "Coordination & Economy",
-      "audience": [
-        "advanced",
-        "operator"
-      ],
-      "time": 5,
-      "summary": "Many proof receipts clear into roots, challenge windows, and Chronicle handoff."
-    },
-    {
-      "id": "benchmark",
-      "title": "Real-Task Benchmark Bridge",
-      "href": "real-task-benchmark-bridge.html",
-      "group": "Evidence & Claims",
-      "audience": [
-        "advanced",
-        "research"
-      ],
-      "time": 5,
-      "summary": "Public claims meet real tasks, baselines, cost/risk ledgers, and bounded status."
-    },
-    {
-      "id": "claim-firewall",
-      "title": "Claim Boundary Firewall",
-      "href": "claim-boundary-firewall.html",
-      "group": "Evidence & Claims",
-      "audience": [
-        "risk",
-        "new"
-      ],
-      "time": 4,
-      "summary": "Claims advance only if evidence survives the firewall."
-    },
-    {
-      "id": "replay",
-      "title": "Replay & Falsification Gauntlet",
-      "href": "replay-falsification-gauntlet.html",
-      "group": "Evidence & Claims",
-      "audience": [
-        "risk",
-        "advanced"
-      ],
-      "time": 5,
-      "summary": "Replay the proof package and attack it before stronger claims advance."
-    },
-    {
-      "id": "experience",
-      "title": "Sovereign Experience Stream",
-      "href": "sovereign-experience-stream.html",
-      "group": "Evidence & Claims",
-      "audience": [
-        "advanced"
-      ],
-      "time": 5,
-      "summary": "Validated experience becomes governed learning, not unbounded policy update."
-    },
-    {
-      "id": "action-graph",
-      "title": "Action Graph Handoff",
-      "href": "action-graph-handoff.html",
-      "group": "Action & Review",
-      "audience": [
-        "operator",
-        "advanced"
-      ],
-      "time": 5,
-      "summary": "Decision state becomes scoped, rollback-ready action state."
-    },
-    {
-      "id": "operator",
-      "title": "Read-Only Operator Console",
-      "href": "operator-console.html",
-      "group": "Action & Review",
-      "audience": [
-        "operator"
-      ],
-      "time": 4,
-      "summary": "Read-only public chamber for inspection without wallet authority."
-    },
-    {
-      "id": "expert",
-      "title": "Separated Expert Console",
-      "href": "expert-console.html",
-      "group": "Action & Review",
-      "audience": [
-        "expert"
-      ],
-      "time": 4,
-      "summary": "Separated expert surface for informed review."
-    },
-    {
-      "id": "expert-mainnet",
-      "title": "Expert Mainnet Console",
-      "href": "expert-mainnet-console.html",
-      "group": "Action & Review",
-      "audience": [
-        "expert"
-      ],
-      "time": 8,
-      "summary": "Human-signed expert-only Mainnet surface; not used by public demos."
-    },
-    {
-      "id": "evidence",
-      "title": "Evidence Hub",
-      "href": "evidence/",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "advanced"
-      ],
-      "time": 4,
-      "summary": "Public evidence room, reports, manifests, and verification surfaces."
-    },
-    {
-      "id": "architecture",
-      "title": "Architecture",
-      "href": "architecture.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "advanced",
-        "executive"
-      ],
-      "time": 5,
-      "summary": "Separated proof, presentation, execution, and authority layers."
-    },
-    {
-      "id": "verification",
-      "title": "Verification",
-      "href": "verification.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "advanced"
-      ],
-      "time": 4,
-      "summary": "Verification status and implementation boundaries."
-    },
-    {
-      "id": "assurance",
-      "title": "Assurance",
-      "href": "assurance.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "advanced"
-      ],
-      "time": 4,
-      "summary": "Final assurance and generated-site status."
-    },
-    {
-      "id": "legal",
-      "title": "Legal Boundary",
-      "href": "legal.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "legal"
-      ],
-      "time": 4,
-      "summary": "Data-Zero, no-advice, no-custody, no-investment, no-audit-completion boundary."
-    },
-    {
-      "id": "privacy",
-      "title": "Privacy",
-      "href": "privacy.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "legal"
-      ],
-      "time": 3,
-      "summary": "No accounts, no analytics, no cookies, no forms, no intentional user-data collection."
-    },
-    {
-      "id": "terms",
-      "title": "Terms",
-      "href": "terms.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "legal"
-      ],
-      "time": 3,
-      "summary": "Terms of use for public-safe browser-local demonstrations."
-    },
-    {
-      "id": "regulatory",
-      "title": "Regulatory Boundary",
-      "href": "regulatory-boundary.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "legal"
-      ],
-      "time": 3,
-      "summary": "Boundary for investment, legal, tax, compliance, audit, and production claims."
-    },
-    {
-      "id": "third-party",
-      "title": "Third-Party Responsibility",
-      "href": "third-party-responsibility.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "legal"
-      ],
-      "time": 3,
-      "summary": "Users, operators, wallets, RPCs, chains, browsers, and platforms remain responsible for their own surfaces."
-    },
-    {
-      "id": "agialpha-boundary",
-      "title": "AGIALPHA Token Boundary",
-      "href": "agialpha-token-boundary.html",
-      "group": "Assurance & Boundaries",
-      "audience": [
-        "risk",
-        "legal"
-      ],
-      "time": 3,
-      "summary": "AGIALPHA is pre-existing, decentralized, public-market only, and not available from this site."
-    },
-    {
-      "id": "docs",
-      "title": "Docs",
-      "href": "docs.html",
-      "group": "Archive",
-      "audience": [
-        "advanced"
-      ],
-      "time": 4,
-      "summary": "Documentation and institutional materials."
-    },
-    {
-      "id": "archive-v36",
-      "title": "Archive: v36 Ascension Chamber",
-      "href": "archive-v36-ascension-chamber.html",
-      "group": "Archive",
-      "audience": [
-        "advanced"
-      ],
-      "time": 6,
-      "summary": "Full previous homepage preserved for continuity."
-    },
-    {
-      "title": "Loop Operating Room",
+      "id": "loop-operating-room-html",
       "href": "loop-operating-room.html",
       "route": "/loop-operating-room.html",
-      "group": "Core",
-      "audience": "All users",
-      "description": "Run a browser-local proof loop: contract, roles, traces, restarts, scores, Evidence Docket, Chronicle, and bottleneck visibility.",
-      "outputArtifact": "LoopReceipt",
-      "boundary": "Browser-local; no wallet, no network, no user data."
-    },
-    {
-      "id": "day-scale-loop-observatory",
-      "title": "Day-Scale Loop Observatory",
-      "href": "day-scale-loop-observatory.html",
-      "group": "Proof Loops",
+      "title": "Loop Operating Room",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Turns long-running agent work into a proof-governed loop: contract, roles, traces, restarts, evaluator scores, Evidence Docket, Chronicle, and bottleneck visibility.",
+      "description": "Turns long-running agent work into a proof-governed loop: contract, roles, traces, restarts, evaluator scores, Evidence Docket, Chronicle, and bottleneck visibility.",
       "audience": [
-        "advanced",
-        "operator",
-        "reviewer"
+        "All users",
+        "operators",
+        "developers"
       ],
-      "time": 5,
-      "summary": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session."
+      "time": "reference",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local simulation; no wallet, no network, no user data, no external action."
     },
     {
-      "route": "/loop-evidence-reactor.html",
-      "href": "loop-evidence-reactor.html",
-      "title": "Loop Evidence Reactor",
-      "audience": "AI builders / operators",
-      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
-      "outputArtifact": "LoopDocket",
-      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
+      "id": "loop-contract-theatre-html",
+      "href": "loop-contract-theatre.html",
+      "route": "/loop-contract-theatre.html",
+      "title": "Loop Contract Theatre",
+      "group": "Loop & RSI",
+      "section": "Loop & RSI",
+      "why": "Contract-first long-running loop demonstration: separated roles, virtual disk state, restart, trace reading, proof scoring, harness reduction, and LoopReceipt export.",
+      "description": "Contract-first long-running loop demonstration: separated roles, virtual disk state, restart, trace reading, proof scoring, harness reduction, and LoopReceipt export.",
+      "audience": [
+        "Builders",
+        "reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local demonstration; no external action."
+    },
+    {
+      "id": "proof-to-action-theatre-html",
+      "href": "proof-to-action-theatre.html",
+      "route": "/proof-to-action-theatre.html",
+      "title": "Proof-to-Action Theatre",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "The cleanest objective -> proof -> governed decision state walkthrough.",
+      "description": "The cleanest objective -> proof -> governed decision state walkthrough.",
+      "audience": [
+        "New users"
+      ],
+      "time": "reference",
+      "outputArtifact": "Proof-to-action receipt",
+      "boundary": "Local demonstration."
+    },
+    {
+      "id": "evidence-docket-composer-html",
+      "href": "evidence-docket-composer.html",
+      "route": "/evidence-docket-composer.html",
+      "title": "Evidence Docket Composer",
+      "group": "Evidence & claims",
+      "section": "Evidence & claims",
+      "why": "Turns a claim into a public/private evidence room with replay and risk gates.",
+      "description": "Turns a claim into a public/private evidence room with replay and risk gates.",
+      "audience": [
+        "Reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Evidence Docket receipt",
+      "boundary": "Public-safe sample claim only."
+    },
+    {
+      "id": "trust-equation-simulator-html",
+      "href": "trust-equation-simulator.html",
+      "route": "/trust-equation-simulator.html",
+      "title": "Trust Equation Simulator",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Shows why output becomes institutional work only after proof, validation, settlement, and reuse.",
+      "description": "Shows why output becomes institutional work only after proof, validation, settlement, and reuse.",
+      "audience": [
+        "New users",
+        "reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "TrustReceipt",
+      "boundary": "Local simulation; no factual certification."
+    },
+    {
+      "id": "proof-settlement-lifecycle-html",
+      "href": "proof-settlement-lifecycle.html",
+      "route": "/proof-settlement-lifecycle.html",
+      "title": "Proof-Settlement Lifecycle",
+      "group": "Work economy",
+      "section": "Work economy",
+      "why": "Walks through Request -> Escrow -> Execute -> Proof -> Validate -> Settle -> Chronicle.",
+      "description": "Walks through Request -> Escrow -> Execute -> Proof -> Validate -> Settle -> Chronicle.",
+      "audience": [
+        "Operators",
+        "reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "SettlementReceipt",
+      "boundary": "Simulated settlement only; no funds."
+    },
+    {
+      "id": "proof-gradient-arena-html",
+      "href": "proof-gradient-arena.html",
+      "route": "/proof-gradient-arena.html",
+      "title": "Proof Gradient Arena",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Shows proof, eval, risk, canary, rollback, scope, and challenge gates selecting what may propagate.",
+      "description": "Shows proof, eval, risk, canary, rollback, scope, and challenge gates selecting what may propagate.",
+      "audience": [
+        "Governance reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "SelectionReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "chronicle-compounding-lab-html",
+      "href": "chronicle-compounding-lab.html",
+      "route": "/chronicle-compounding-lab.html",
+      "title": "Chronicle Lab",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Demonstrates accepted proof entering Chronicle and becoming reusable capability.",
+      "description": "Demonstrates accepted proof entering Chronicle and becoming reusable capability.",
+      "audience": [
+        "Capability builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "ChronicleReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "proof-constitution-simulator-html",
+      "href": "proof-constitution-simulator.html",
+      "route": "/proof-constitution-simulator.html",
+      "title": "Proof Constitution Simulator",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Makes Aim -> Act -> Prove -> Evolve visible through protocol objects and gates.",
+      "description": "Makes Aim -> Act -> Prove -> Evolve visible through protocol objects and gates.",
+      "audience": [
+        "Reviewers",
+        "governance"
+      ],
+      "time": "reference",
+      "outputArtifact": "ConstitutionReceipt",
+      "boundary": "Local simulation; no authority."
+    },
+    {
+      "id": "until-done-mission-control-html",
+      "href": "until-done-mission-control.html",
+      "route": "/until-done-mission-control.html",
+      "title": "Until-DONE Mission Control",
+      "group": "Capability reuse",
+      "section": "Capability reuse",
+      "why": "Demonstrates run-to-completion: GoalOS stops at proof, not at output.",
+      "description": "Demonstrates run-to-completion: GoalOS stops at proof, not at output.",
+      "audience": [
+        "Operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "MissionReceipt",
+      "boundary": "Local state machine."
+    },
+    {
+      "id": "claim-boundary-firewall-html",
+      "href": "claim-boundary-firewall.html",
+      "route": "/claim-boundary-firewall.html",
+      "title": "Claim Firewall",
+      "group": "Evidence & claims",
+      "section": "Evidence & claims",
+      "why": "Blocks overclaims and separates architecture claims from empirical claims.",
+      "description": "Blocks overclaims and separates architecture claims from empirical claims.",
+      "audience": [
+        "Legal",
+        "comms reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "BoundaryReceipt",
+      "boundary": "Claim-boundary review only."
+    },
+    {
+      "id": "replay-falsification-gauntlet-html",
+      "href": "replay-falsification-gauntlet.html",
+      "route": "/replay-falsification-gauntlet.html",
+      "title": "Replay Gauntlet",
+      "group": "Evidence & claims",
+      "section": "Evidence & claims",
+      "why": "Stress-tests proof claims against replay, contradiction, risk, and rollback defects.",
+      "description": "Stress-tests proof claims against replay, contradiction, risk, and rollback defects.",
+      "audience": [
+        "Reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "FalsificationReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "evidence-index-html",
+      "href": "evidence/index.html",
+      "route": "/evidence/index.html",
+      "title": "Evidence Room",
+      "group": "Evidence & claims",
+      "section": "Evidence & claims",
+      "why": "Persistent evidence entrypoint and public-safe proof context for Evidence Dockets, proof rooms, claim boundaries, and review paths.",
+      "description": "Persistent evidence entrypoint and public-safe proof context for Evidence Dockets, proof rooms, claim boundaries, and review paths.",
+      "audience": [
+        "Reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "EvidenceRoomReceipt",
+      "boundary": "Public proof context; no private evidence submission."
+    },
+    {
+      "id": "action-graph-handoff-html",
+      "href": "action-graph-handoff.html",
+      "route": "/action-graph-handoff.html",
+      "title": "Action Graph Handoff",
+      "group": "Capability reuse",
+      "section": "Capability reuse",
+      "why": "Turns governed decisions into scoped action graphs with handoff and rollback boundaries.",
+      "description": "Turns governed decisions into scoped action graphs with handoff and rollback boundaries.",
+      "audience": [
+        "Operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "ActionGraphReceipt",
+      "boundary": "Review-only; no external action."
+    },
+    {
+      "id": "agialpha-token-boundary-html",
+      "href": "agialpha-token-boundary.html",
+      "route": "/agialpha-token-boundary.html",
+      "title": "AGIALPHA Boundary",
+      "group": "Assurance & boundaries",
+      "section": "Assurance & boundaries",
+      "why": "States AGIALPHA is not available from the site and is not sold, offered, custodied, brokered, routed, redeemed, market-made, or recommended.",
+      "description": "States AGIALPHA is not available from the site and is not sold, offered, custodied, brokered, routed, redeemed, market-made, or recommended.",
+      "audience": [
+        "Token",
+        "market reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Token boundary statement",
+      "boundary": "No token offer."
+    },
+    {
+      "id": "architecture-html",
+      "href": "architecture.html",
+      "route": "/architecture.html",
+      "title": "Architecture",
+      "group": "Reference",
+      "section": "Reference",
+      "why": "Explains separation of proof, presentation, execution, public pages, schemas, and expert surfaces.",
+      "description": "Explains separation of proof, presentation, execution, public pages, schemas, and expert surfaces.",
+      "audience": [
+        "Developers",
+        "reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Architecture map",
+      "boundary": "Static reference."
+    },
+    {
+      "id": "archive-v36-ascension-chamber-html",
+      "href": "archive-v36-ascension-chamber.html",
+      "route": "/archive-v36-ascension-chamber.html",
+      "title": "Archive v36 Ascension Chamber",
+      "group": "Archive",
+      "section": "Archive",
+      "why": "Preserved historical chamber view for release continuity.",
+      "description": "Preserved historical chamber view for release continuity.",
+      "audience": [
+        "Archivists"
+      ],
+      "time": "reference",
+      "outputArtifact": "Archive page",
+      "boundary": "Archived reference."
+    },
+    {
+      "id": "archive-v37-pre-navigation-final-html",
+      "href": "archive-v37-pre-navigation-final.html",
+      "route": "/archive-v37-pre-navigation-final.html",
+      "title": "Archive v37 Pre-Navigation Final",
+      "group": "Archive",
+      "section": "Archive",
+      "why": "Preserved pre-navigation public site state for release continuity.",
+      "description": "Preserved pre-navigation public site state for release continuity.",
+      "audience": [
+        "Archivists"
+      ],
+      "time": "reference",
+      "outputArtifact": "Archive page",
+      "boundary": "Archived reference."
+    },
+    {
+      "id": "ascension-inflow-control-html",
+      "href": "ascension-inflow-control.html",
+      "route": "/ascension-inflow-control.html",
+      "title": "Inflow Control",
+      "group": "Work economy",
+      "section": "Work economy",
+      "why": "Shows why compute, tasks, data, incentives, feedback, governance, and tools need regulated inflow.",
+      "description": "Shows why compute, tasks, data, incentives, feedback, governance, and tools need regulated inflow.",
+      "audience": [
+        "System designers"
+      ],
+      "time": "reference",
+      "outputArtifact": "InflowReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "assurance-html",
+      "href": "assurance.html",
+      "route": "/assurance.html",
+      "title": "Assurance",
+      "group": "Reference",
+      "section": "Reference",
+      "why": "Assurance posture, automation checks, and public-safe invariants.",
+      "description": "Assurance posture, automation checks, and public-safe invariants.",
+      "audience": [
+        "Risk reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Assurance summary",
+      "boundary": "Internal assurance only."
+    },
+    {
+      "id": "coordination-engine-html",
+      "href": "coordination-engine.html",
+      "route": "/coordination-engine.html",
+      "title": "Coordination Engine",
+      "group": "Coordination & routing",
+      "section": "Coordination & routing",
+      "why": "Explains the proof-gated coordination engine behind multi-agent institutional work.",
+      "description": "Explains the proof-gated coordination engine behind multi-agent institutional work.",
+      "audience": [
+        "Advanced builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "Architecture brief",
+      "boundary": "Static reference."
+    },
+    {
+      "id": "coordination-lab-html",
+      "href": "coordination-lab.html",
+      "route": "/coordination-lab.html",
+      "title": "Coordination Lab",
+      "group": "Coordination & routing",
+      "section": "Coordination & routing",
+      "why": "Compares swarm, fixed crew, and institution coordination under proof gates.",
+      "description": "Compares swarm, fixed crew, and institution coordination under proof gates.",
+      "audience": [
+        "AI system builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "Evidence Docket JSON",
+      "boundary": "Browser-local simulation."
+    },
+    {
+      "id": "demo-lab-html",
+      "href": "demo-lab.html",
+      "route": "/demo-lab.html",
+      "title": "Demo Lab",
+      "group": "Reference",
+      "section": "Reference",
+      "why": "Legacy demo entry surface retained for preservation.",
+      "description": "Legacy demo entry surface retained for preservation.",
+      "audience": [
+        "Explorers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Route summary",
+      "boundary": "Public-safe legacy surface."
+    },
+    {
+      "id": "docs-html",
+      "href": "docs.html",
+      "route": "/docs.html",
+      "title": "Documentation",
+      "group": "Guide",
+      "section": "Guide",
+      "why": "Documentation entrypoint for users who want the public repo, proof doctrine, route map, and implementation guidance.",
+      "description": "Documentation entrypoint for users who want the public repo, proof doctrine, route map, and implementation guidance.",
+      "audience": [
+        "Developers",
+        "reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Documentation index",
+      "boundary": "Repository docs only; no user data."
+    },
+    {
+      "id": "evidence-docket-court-html",
+      "href": "evidence-docket-court.html",
+      "route": "/evidence-docket-court.html",
+      "title": "Evidence Docket Court",
+      "group": "Evidence & claims",
+      "section": "Evidence & claims",
+      "why": "Courtroom metaphor for evaluating claims against evidence, risk, and replay.",
+      "description": "Courtroom metaphor for evaluating claims against evidence, risk, and replay.",
+      "audience": [
+        "Reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Docket review",
+      "boundary": "Public-safe review surface."
+    },
+    {
+      "id": "experience-atlas-html",
+      "href": "experience-atlas.html",
+      "route": "/experience-atlas.html",
+      "title": "Experience Atlas",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Advanced journey map for demos, proof rooms, and boundary pages.",
+      "description": "Advanced journey map for demos, proof rooms, and boundary pages.",
+      "audience": [
+        "Reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "JourneyReceipt",
+      "boundary": "Browser-local catalog."
+    },
+    {
+      "id": "expert-console-html",
+      "href": "expert-console.html",
+      "route": "/expert-console.html",
+      "title": "Expert Console",
+      "group": "Consoles",
+      "section": "Consoles",
+      "why": "Separated expert surface with explicit human authority boundaries.",
+      "description": "Separated expert surface with explicit human authority boundaries.",
+      "audience": [
+        "Expert operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "Expert console state",
+      "boundary": "Expert-only; no public-safe guarantee."
+    },
+    {
+      "id": "expert-mainnet-console-html",
+      "href": "expert-mainnet-console.html",
+      "route": "/expert-mainnet-console.html",
+      "title": "Expert Mainnet Console",
+      "group": "Consoles",
+      "section": "Consoles",
+      "why": "Separated Mainnet operations chamber requiring deliberate human wallet authority if used.",
+      "description": "Separated Mainnet operations chamber requiring deliberate human wallet authority if used.",
+      "audience": [
+        "Expert operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "Expert Mainnet state",
+      "boundary": "Expert-only; human authority required."
+    },
+    {
+      "id": "legal-html",
+      "href": "legal.html",
+      "route": "/legal.html",
+      "title": "Legal Boundary",
+      "group": "Assurance & boundaries",
+      "section": "Assurance & boundaries",
+      "why": "Plain-language legal and data-zero boundary.",
+      "description": "Plain-language legal and data-zero boundary.",
+      "audience": [
+        "Legal",
+        "risk reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Boundary statement",
+      "boundary": "No legal advice."
+    },
+    {
+      "id": "mandate-epoch-clearinghouse-html",
+      "href": "mandate-epoch-clearinghouse.html",
+      "route": "/mandate-epoch-clearinghouse.html",
+      "title": "MandateEpoch Clearinghouse",
+      "group": "Work economy",
+      "section": "Work economy",
+      "why": "Shows how high-volume proof receipts can be batched, quarantined, and cleared without exposing private work.",
+      "description": "Shows how high-volume proof receipts can be batched, quarantined, and cleared without exposing private work.",
+      "audience": [
+        "Advanced operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "MandateEpochReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "mission-studio-html",
+      "href": "mission-studio.html",
+      "route": "/mission-studio.html",
+      "title": "Mission Studio",
+      "group": "Capability reuse",
+      "section": "Capability reuse",
+      "why": "Plain-language mission drafting surface for public-safe mission packages.",
+      "description": "Plain-language mission drafting surface for public-safe mission packages.",
+      "audience": [
+        "Operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "Mission draft",
+      "boundary": "No submission; local only."
+    },
+    {
+      "id": "multi-agent-institution-html",
+      "href": "multi-agent-institution.html",
+      "route": "/multi-agent-institution.html",
+      "title": "Multi-Agent Institution",
+      "group": "Coordination & routing",
+      "section": "Coordination & routing",
+      "why": "Shows why large systems coordinate best as proof-governed institutions, not swarms.",
+      "description": "Shows why large systems coordinate best as proof-governed institutions, not swarms.",
+      "audience": [
+        "AI system builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "Institution receipt",
+      "boundary": "Local demonstration."
+    },
+    {
+      "id": "navigation-atlas-html",
+      "href": "navigation-atlas.html",
+      "route": "/navigation-atlas.html",
+      "title": "Navigation Atlas",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Navigation topology and recommended route paths.",
+      "description": "Navigation topology and recommended route paths.",
+      "audience": [
+        "Advanced reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "NavigationReceipt",
+      "boundary": "Browser-local catalog."
+    },
+    {
+      "id": "operator-console-html",
+      "href": "operator-console.html",
+      "route": "/operator-console.html",
+      "title": "Operator Console",
+      "group": "Consoles",
+      "section": "Consoles",
+      "why": "Read-only operator posture for reviewing proof-state surfaces.",
+      "description": "Read-only operator posture for reviewing proof-state surfaces.",
+      "audience": [
+        "Operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "Operator summary",
+      "boundary": "Read-only public-safe."
+    },
+    {
+      "id": "privacy-html",
+      "href": "privacy.html",
+      "route": "/privacy.html",
+      "title": "Privacy",
+      "group": "Assurance & boundaries",
+      "section": "Assurance & boundaries",
+      "why": "States no user data wanted, no analytics, no cookies, no forms, and no browser storage.",
+      "description": "States no user data wanted, no analytics, no cookies, no forms, and no browser storage.",
+      "audience": [
+        "All users"
+      ],
+      "time": "reference",
+      "outputArtifact": "Privacy statement",
+      "boundary": "Data-zero posture."
+    },
+    {
+      "id": "proof-backed-upgrade-foundry-html",
+      "href": "proof-backed-upgrade-foundry.html",
+      "route": "/proof-backed-upgrade-foundry.html",
+      "title": "Upgrade Foundry",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Demonstrates proof-backed upgrade rights: no propagation without proof, eval, rollback, and scope.",
+      "description": "Demonstrates proof-backed upgrade rights: no propagation without proof, eval, rollback, and scope.",
+      "audience": [
+        "Builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "UpgradeReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "proof-cards-html",
+      "href": "proof-cards.html",
+      "route": "/proof-cards.html",
+      "title": "Proof Cards",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Compact cards for proof doctrine, boundaries, and public-safe claims.",
+      "description": "Compact cards for proof doctrine, boundaries, and public-safe claims.",
+      "audience": [
+        "Reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Proof card set",
+      "boundary": "Static reference."
+    },
+    {
+      "id": "proof-carrying-artifact-passport-html",
+      "href": "proof-carrying-artifact-passport.html",
+      "route": "/proof-carrying-artifact-passport.html",
+      "title": "Artifact Passport",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Shows how accepted proof becomes portable, reusable capability with lineage and rollback metadata.",
+      "description": "Shows how accepted proof becomes portable, reusable capability with lineage and rollback metadata.",
+      "audience": [
+        "Capability builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "ArtifactPassport",
+      "boundary": "Local public-safe passport."
+    },
+    {
+      "id": "proof-conditioned-router-observatory-html",
+      "href": "proof-conditioned-router-observatory.html",
+      "route": "/proof-conditioned-router-observatory.html",
+      "title": "Router Observatory",
+      "group": "Protocol & gates",
+      "section": "Protocol & gates",
+      "why": "Shows proof-conditioned routing: choose the smallest sufficient constellation under cost/risk/proof constraints.",
+      "description": "Shows proof-conditioned routing: choose the smallest sufficient constellation under cost/risk/proof constraints.",
+      "audience": [
+        "Advanced builders"
+      ],
+      "time": "reference",
+      "outputArtifact": "RoutingReceipt",
+      "boundary": "Local routing simulation."
+    },
+    {
+      "id": "real-task-benchmark-bridge-html",
+      "href": "real-task-benchmark-bridge.html",
+      "route": "/real-task-benchmark-bridge.html",
+      "title": "Benchmark Bridge",
+      "group": "Work economy",
+      "section": "Work economy",
+      "why": "Maps public-safe demos to real-task benchmark requirements and falsification.",
+      "description": "Maps public-safe demos to real-task benchmark requirements and falsification.",
+      "audience": [
+        "Researchers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Benchmark Docket",
+      "boundary": "Architecture / benchmark mapping."
+    },
+    {
+      "id": "regulatory-boundary-html",
+      "href": "regulatory-boundary.html",
+      "route": "/regulatory-boundary.html",
+      "title": "Regulatory Boundary",
+      "group": "Assurance & boundaries",
+      "section": "Assurance & boundaries",
+      "why": "Clarifies no investment, financial, legal, or regulated-service posture.",
+      "description": "Clarifies no investment, financial, legal, or regulated-service posture.",
+      "audience": [
+        "Legal",
+        "risk reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Boundary statement",
+      "boundary": "No regulated-service claim."
+    },
+    {
+      "id": "site-atlas-html",
+      "href": "site-atlas.html",
+      "route": "/site-atlas.html",
+      "title": "Site Atlas",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Static map of every public route and status group.",
+      "description": "Static map of every public route and status group.",
+      "audience": [
+        "Advanced reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Route index",
+      "boundary": "Browser-local catalog."
+    },
+    {
+      "id": "sovereign-experience-stream-html",
+      "href": "sovereign-experience-stream.html",
+      "route": "/sovereign-experience-stream.html",
+      "title": "Experience Stream",
+      "group": "Start here",
+      "section": "Start here",
+      "why": "Shows how validated work becomes governed experience for future routing and memory.",
+      "description": "Shows how validated work becomes governed experience for future routing and memory.",
+      "audience": [
+        "Researchers"
+      ],
+      "time": "reference",
+      "outputArtifact": "ExperienceReceipt",
+      "boundary": "Local simulation."
+    },
+    {
+      "id": "sovereign-machine-economy-html",
+      "href": "sovereign-machine-economy.html",
+      "route": "/sovereign-machine-economy.html",
+      "title": "Sovereign Machine Economy",
+      "group": "Work economy",
+      "section": "Work economy",
+      "why": "Shows integrated Meta-Agentic cognition, Alpha Node runtime, AGI Jobs work OS, and settlement route.",
+      "description": "Shows integrated Meta-Agentic cognition, Alpha Node runtime, AGI Jobs work OS, and settlement route.",
+      "audience": [
+        "Advanced reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Economy route summary",
+      "boundary": "Public-safe route plus separated expert handoff."
+    },
+    {
+      "id": "terms-html",
+      "href": "terms.html",
+      "route": "/terms.html",
+      "title": "Terms",
+      "group": "Assurance & boundaries",
+      "section": "Assurance & boundaries",
+      "why": "Use boundaries and disclaimers for public demos.",
+      "description": "Use boundaries and disclaimers for public demos.",
+      "audience": [
+        "All users"
+      ],
+      "time": "reference",
+      "outputArtifact": "Terms statement",
+      "boundary": "No professional advice."
+    },
+    {
+      "id": "third-party-responsibility-html",
+      "href": "third-party-responsibility.html",
+      "route": "/third-party-responsibility.html",
+      "title": "Third-Party Responsibility",
+      "group": "Assurance & boundaries",
+      "section": "Assurance & boundaries",
+      "why": "Places third-party wallet, market, RPC, tax, sanctions, securities, privacy, and jurisdiction responsibility on users/operators.",
+      "description": "Places third-party wallet, market, RPC, tax, sanctions, securities, privacy, and jurisdiction responsibility on users/operators.",
+      "audience": [
+        "Operators"
+      ],
+      "time": "reference",
+      "outputArtifact": "Boundary statement",
+      "boundary": "Third-party responsibility."
+    },
+    {
+      "id": "verification-html",
+      "href": "verification.html",
+      "route": "/verification.html",
+      "title": "Verification",
+      "group": "Reference",
+      "section": "Reference",
+      "why": "Explains verification scripts, build checks, and claim-boundary tests.",
+      "description": "Explains verification scripts, build checks, and claim-boundary tests.",
+      "audience": [
+        "Developers",
+        "reviewers"
+      ],
+      "time": "reference",
+      "outputArtifact": "Verification summary",
+      "boundary": "No external audit claim."
     }
   ],
   "journeys": [
     {
       "id": "first-visit",
-      "title": "First visit: understand GoalOS in 8 minutes",
+      "title": "First visit",
       "steps": [
         "start",
-        "site-atlas",
-        "flight-deck",
-        "trust-equation",
-        "until-done",
+        "trust-equation-simulator",
         "evidence-docket-composer",
-        "day-scale-loop-observatory"
+        "proof-settlement-lifecycle"
       ]
     },
     {
-      "id": "proof-loop",
-      "title": "Core proof loop",
+      "id": "loop-rsi-asi",
+      "title": "Loop → RSI → ASI horizon",
       "steps": [
-        "proof-theatre",
-        "proof-gradient",
-        "chronicle",
-        "proof-settlement"
+        "loop-operating-room",
+        "loop-evidence-reactor",
+        "loop-to-rsi-control-room",
+        "asi-proof-horizon-console",
+        "superintelligence-proof-governance-console"
       ]
     },
     {
-      "id": "institution",
-      "title": "Build the institution mental model",
+      "id": "reviewer",
+      "title": "Reviewer path",
       "steps": [
-        "multi-agent",
-        "router",
-        "inflow",
-        "action-graph",
-        "artifact"
+        "complete-route-index",
+        "command-center",
+        "evidence-docket-composer",
+        "claim-boundary-firewall",
+        "verification",
+        "legal"
       ]
     },
     {
-      "id": "assurance",
-      "title": "Safety, claims, and boundaries",
+      "id": "operator",
+      "title": "Operator path",
       "steps": [
-        "claim-firewall",
-        "replay",
-        "benchmark",
+        "proof-settlement-lifecycle",
+        "mandate-epoch-clearinghouse",
+        "operator-console",
+        "expert-console"
+      ]
+    },
+    {
+      "id": "legal",
+      "title": "Legal / boundary path",
+      "steps": [
         "legal",
-        "agialpha-boundary"
+        "privacy",
+        "terms",
+        "agialpha-token-boundary"
       ]
     }
   ]
