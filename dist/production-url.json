@@ -88,9 +88,11 @@
   "singleNativeHeader": "PASS",
   "exactRouteCount": "PASS",
   "vendoredDependencies": "PASS",
-  "publicHtmlRouteCount": 65,
+  "askGoalOSConcierge": "PASS",
+  "canonicalRouteManifestV60": "PASS",
+  "publicHtmlRouteCount": 66,
   "canonicalRouteManifest": "data/canonical-route-manifest-v46.json",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-v59-canonical-proof-institution-finalization",
+  "release": "v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
     "v46-repository-public-trust-compatibility-failsafe",
@@ -126,9 +128,10 @@
     "v56-repository-website-institutional-excellence",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
     "v58-complete-experience-restoration-command",
-    "v59-canonical-proof-institution-finalization"
+    "v59-canonical-proof-institution-finalization",
+    "v60-ask-goalos-autonomous-question-router"
   ],
-  "version": "v59",
-  "routeCount": 65,
+  "version": "v60",
+  "routeCount": 66,
   "canonicalProofInstitution": "PASS"
 }

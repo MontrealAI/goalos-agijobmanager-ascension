@@ -20,8 +20,8 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
 A model can answer. An agent can act. An institution must prove. GoalOS AGIJobManager Ascension is a static GitHub Pages website and repository scaffold showing how autonomous work can be bounded by Mission Contracts, verification, Evidence Dockets, ProofBundles, governed decision states, settlement receipts, Chronicle entries, and human authority.
 
-The canonical route manifest currently contains **65 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
-Compatibility lineage: historical v43-compatible tests preserve **65 canonical public routes** while the current v57 canonical manifest lists **65 canonical public routes**. No public wallet connection.
+The canonical route manifest currently contains **66 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
+Compatibility lineage: historical v43-compatible tests preserve **65 canonical public routes** while the current v60 canonical manifest lists **66 canonical public routes**. No public wallet connection.
 
 Start with [Canonical Proof Institution](site/canonical-proof-institution.html), [Experience Command](site/experience-command.html), or [Experience Concierge](site/experience-concierge.html) if you are new, [Command Center](site/command-center.html) for the searchable catalog, or [Evidence Docket Composer](site/evidence-docket-composer.html) to inspect proof.
 
@@ -180,4 +180,9 @@ The public website includes [Experience Command](site/experience-command.html), 
 
 ## v59 canonical proof institution finalization
 
-The public website now includes [Canonical Proof Institution](site/canonical-proof-institution.html): one final command room for route integrity, proof doctrine, public-safe boundaries, and best user paths. The canonical route manifest now contains **65 canonical public routes** and every source HTML page is represented.
+The public website now includes [Canonical Proof Institution](site/canonical-proof-institution.html): one final command room for route integrity, proof doctrine, public-safe boundaries, and best user paths. The canonical route manifest now contains **66 canonical public routes** and every source HTML page is represented.
+
+
+## Ask GoalOS Concierge v60
+
+A browser-local question router is available at [`ask-goalos.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html). It answers public-site questions from static route/doctrine data and routes users to the correct proof page without account, wallet, analytics, cookies, browser storage, or network request.

@@ -2,6 +2,7 @@
   "version": "v60",
   "release": "v60-ask-goalos-autonomous-question-router",
   "routeCount": 66,
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "pages": [
     {
       "route": "/index.html",
@@ -1458,38 +1459,14 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "title": "GoalOS AGIJobManager Ascension Navigation Catalog",
   "primaryPaths": [
     {
       "title": "Ask GoalOS Concierge",
       "href": "ask-goalos.html",
       "description": "Ask a public-site question and get routed to the right page."
-    },
-    {
-      "id": "canonical-proof-institution",
-      "title": "Canonical Proof Institution",
-      "time": "1 min",
-      "href": "canonical-proof-institution.html",
-      "steps": [
-        "canonical-proof-institution.html",
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
-    },
-    {
-      "id": "experience-command",
-      "title": "Experience Command",
-      "time": "1 min",
-      "href": "experience-command.html",
-      "steps": [
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
     }
   ],
-  "title": "GoalOS AGIJobManager Ascension Navigation Catalog",
   "publicHtmlRouteCount": 66,
   "releaseAliases": [
     "v60-ask-goalos-autonomous-question-router",

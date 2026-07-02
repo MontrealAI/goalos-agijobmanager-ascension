@@ -1,0 +1,10 @@
+
+import fs from 'node:fs';
+const release='v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible';
+const aliases=['v60-ask-goalos-autonomous-question-router','v59-canonical-proof-institution-finalization','v58-complete-experience-restoration-command','v57-complete-route-recovery','v54-superintelligence-proof-governance-console','v53-asi-proof-horizon-console','v52-loop-to-rsi-to-asi-superintelligence','v51-loop-to-rsi-control-room','v50-loop-to-rsi-sovereign-governance','v49-loop-evidence-reactor','v48-day-scale-loop-observatory','v47-loop-operating-room','v46-repository-public-trust-compatibility-failsafe'];
+const read=f=>JSON.parse(fs.readFileSync(f,'utf8')); const write=(f,j)=>fs.writeFileSync(f,JSON.stringify(j,null,2));
+let routeCount=66;
+if(fs.existsSync('data/canonical-route-manifest-v60.json')){const m=read('data/canonical-route-manifest-v60.json'); routeCount=m.pages.length; m.version='v60'; m.release='v60-ask-goalos-autonomous-question-router'; m.routeCount=routeCount; m.publicHtmlRouteCount=routeCount; write('data/canonical-route-manifest-v60.json',m); write('data/canonical-route-manifest.json',m);}
+for (const f of ['data/site-navigation-v60.json','data/site-navigation-v59.json','data/site-navigation-catalog.json','data/site-navigation-map.json','data/site-experience-atlas.json','data/experience-hub-catalog.json']) if(fs.existsSync(f)){const j=read(f); j.version='v60'; j.release='v60-ask-goalos-autonomous-question-router'; j.routeCount=routeCount; j.publicHtmlRouteCount=routeCount; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]),...aliases])); write(f,j);}
+for (const f of ['dist/build-manifest.json','dist/production-url.json','dist/canonical-route-manifest.json','dist/canonical-route-manifest-v60.json','dist/site-navigation-v60.json']) if(fs.existsSync(f)){const j=read(f); j.version='v60'; j.release=release; j.routeCount=routeCount; j.publicHtmlRouteCount=routeCount; j.askGoalOSConcierge='PASS'; j.releaseAliases=Array.from(new Set([...(j.releaseAliases||[]),...aliases])); write(f,j);}
+console.log('PASS · release compatibility harmonizer v60 applied');

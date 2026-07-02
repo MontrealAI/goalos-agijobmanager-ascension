@@ -1,10 +1,10 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "5.9.0-v59-canonical-proof-institution-finalization-v58-v57-v50-compatible",
+  "version": "6.0.0-v60-ask-goalos-autonomous-question-router-v50-v46-compatible",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer.mjs && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/release-compatibility-harmonizer-v57.mjs && node tools/release-compatibility-harmonizer-v58.mjs && node tools/release-compatibility-harmonizer-v59.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v59.mjs",
+    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer.mjs && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/release-compatibility-harmonizer-v57.mjs && node tools/release-compatibility-harmonizer-v58.mjs && node tools/release-compatibility-harmonizer-v59.mjs && node tools/release-compatibility-harmonizer-v60.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v60.mjs",
     "verify": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
@@ -86,7 +86,7 @@
     "failsafe:v44": "node tools/repository-public-trust-failsafe-v44-kernel.mjs",
     "repository-public-trust-failsafe": "node tools/root-cleanup-v46.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
     "test:repository-public-trust-failsafe": "node tools/run-documentation-tests.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
-    "bootstrap": "node tools/failsafe-bootstrap-v59.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs && node tools/route-recovery-v59.mjs",
+    "bootstrap": "node tools/failsafe-bootstrap-v60.mjs && node tools/failsafe-bootstrap-v59.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs && node tools/route-recovery-v60.mjs",
     "failsafe:v45": "node tools/repository-public-trust-failsafe-v45-kernel.mjs",
     "kernels": "node tools/run-existing-kernels.mjs",
     "verify:public-trust": "node tools/failsafe-bootstrap-v53.mjs && node tools/run-documentation-tests.mjs && node tools/public-trust-checker-v53.mjs",
@@ -125,9 +125,11 @@
     "experience-command": "node tests/experience-command-v58.test.mjs && python3 tools/build.py && node tools/experience-command-v58-kernel.mjs",
     "test:experience-command": "npm run experience-command",
     "canonical-proof-institution": "node tests/canonical-proof-institution-v59.test.mjs && python3 tools/build.py && node tools/release-compatibility-harmonizer-v59.mjs && node tools/canonical-proof-institution-v59-kernel.mjs",
-    "test:canonical-proof-institution": "npm run canonical-proof-institution"
+    "test:canonical-proof-institution": "npm run canonical-proof-institution",
+    "ask-goalos": "node tests/ask-goalos-concierge-v60.test.mjs && python3 tools/build.py && node tools/release-compatibility-harmonizer-v60.mjs && node tools/ask-goalos-concierge-v60-kernel.mjs",
+    "test:ask-goalos": "npm run ask-goalos"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension public proof institution with v59 canonical proof institution finalization, complete route recovery, browser-local public-safe demos, dynamic route manifest, and GitHub Pages publication.",
+  "description": "GoalOS AGIJobManager Ascension public proof institution with v60 Ask GoalOS browser-local autonomous question routing, v59 canonical proof institution, complete route recovery, browser-local public-safe demos, dynamic route manifest, and GitHub Pages publication.",
   "devDependencies": {}
 }

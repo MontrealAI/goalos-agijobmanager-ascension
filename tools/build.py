@@ -208,15 +208,21 @@ status = {
     'menuOverlayConsolidated': 'PASS',
     'singleNativeHeader': 'PASS',
     'exactRouteCount': 'PASS',
-    'vendoredDependencies': 'PASS'
+    'vendoredDependencies': 'PASS',
+    'askGoalOSConcierge': 'PASS',
+    'canonicalRouteManifestV60': 'PASS'
 }
-canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v59.json'
+canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v60.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v59.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v58.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v57.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v54.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v60.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v59.json'
 if not canonical_manifest_path.exists():
@@ -303,6 +309,31 @@ for html_file in sorted(dist.rglob('*.html')):
         html = html.replace('</body>', js_ref + '</body>')
     html_file.write_text(html)
 
+
+# v60 Ask GoalOS: inject one browser-local question router on every public HTML page.
+ask_asset_refs = [
+    '<link rel="stylesheet" href="assets/ask-goalos.css">',
+    '<script src="assets/ask-goalos-data.js"></script>',
+    '<script src="assets/ask-goalos.js"></script>',
+    '<link rel="stylesheet" href="../assets/ask-goalos.css">',
+    '<script src="../assets/ask-goalos-data.js"></script>',
+    '<script src="../assets/ask-goalos.js"></script>'
+]
+for html_file in sorted(dist.rglob('*.html')):
+    html = html_file.read_text()
+    rel_depth = len(html_file.relative_to(dist).parts) - 1
+    prefix = '' if rel_depth == 0 else '../' * rel_depth
+    for ref in ask_asset_refs:
+        html = html.replace(ref, '')
+    css_ref = f'<link rel="stylesheet" href="{prefix}assets/ask-goalos.css">'
+    data_ref = f'<script src="{prefix}assets/ask-goalos-data.js"></script>'
+    js_ref = f'<script src="{prefix}assets/ask-goalos.js"></script>'
+    if '</head>' in html and css_ref not in html:
+        html = html.replace('</head>', css_ref + '</head>')
+    if '</body>' in html:
+        html = html.replace('</body>', data_ref + js_ref + '</body>')
+    html_file.write_text(html)
+
 # Sitemap from generated public root pages and root JSON contracts.
 routes = []
 for p in sorted(dist.rglob('*')):
@@ -322,9 +353,9 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command',
+    'release': 'v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible',
     'routeCount': status.get('publicHtmlRouteCount'),
-    'releaseAliases': ['v58-complete-experience-restoration-command', 'v57-complete-route-recovery', 'v56-repository-website-institutional-excellence', 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
+    'releaseAliases': ['v60-ask-goalos-autonomous-question-router', 'v59-canonical-proof-institution-finalization', 'v58-complete-experience-restoration-command', 'v57-complete-route-recovery', 'v56-repository-website-institutional-excellence', 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

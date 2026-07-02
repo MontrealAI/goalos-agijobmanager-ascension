@@ -1,6 +1,6 @@
 {
   "title": "GoalOS AGIJobManager Ascension Experience Atlas",
-  "version": "v59",
+  "version": "v60",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "publicSafe": true,
@@ -53,6 +53,17 @@
       "outputArtifact": "CanonicalInstitutionReceipt",
       "boundary": "Browser-local institution map; no account, no form, no wallet, no network request from the demo, no user data, no production authority.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-proof-institution.html"
+    },
+    {
+      "route": "/ask-goalos.html",
+      "href": "ask-goalos.html",
+      "title": "Ask GoalOS Concierge",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Browser-local question router that answers public-site questions instantly and routes visitors to the right proof page, console, evidence room, legal boundary, or route index without sending data anywhere.",
+      "outputArtifact": "QuestionRoutingReceipt",
+      "boundary": "Browser-local guidance only; no account, no form submission, no wallet, no network request, no analytics, no cookies, no browser storage, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html"
     },
     {
       "route": "/experience-command.html",
@@ -788,8 +799,8 @@
       ]
     }
   ],
-  "release": "v59-canonical-proof-institution-finalization",
-  "routeCount": 65,
+  "release": "v60-ask-goalos-autonomous-question-router",
+  "routeCount": 66,
   "pages": [
     {
       "route": "/index.html",
@@ -812,6 +823,17 @@
       "outputArtifact": "CanonicalInstitutionReceipt",
       "boundary": "Browser-local institution map; no account, no form, no wallet, no network request from the demo, no user data, no production authority.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-proof-institution.html"
+    },
+    {
+      "route": "/ask-goalos.html",
+      "href": "ask-goalos.html",
+      "title": "Ask GoalOS Concierge",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Browser-local question router that answers public-site questions instantly and routes visitors to the right proof page, console, evidence room, legal boundary, or route index without sending data anywhere.",
+      "outputArtifact": "QuestionRoutingReceipt",
+      "boundary": "Browser-local guidance only; no account, no form submission, no wallet, no network request, no analytics, no cookies, no browser storage, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html"
     },
     {
       "route": "/experience-command.html",
@@ -1509,6 +1531,11 @@
   ],
   "primaryPaths": [
     {
+      "title": "Ask GoalOS Concierge",
+      "href": "ask-goalos.html",
+      "description": "Ask a public-site question and get routed to the right page."
+    },
+    {
       "id": "canonical-proof-institution",
       "title": "Canonical Proof Institution",
       "time": "1 min",
@@ -1531,5 +1558,21 @@
         "evidence-docket-composer.html"
       ]
     }
+  ],
+  "publicHtmlRouteCount": 66,
+  "releaseAliases": [
+    "v60-ask-goalos-autonomous-question-router",
+    "v59-canonical-proof-institution-finalization",
+    "v58-complete-experience-restoration-command",
+    "v57-complete-route-recovery",
+    "v54-superintelligence-proof-governance-console",
+    "v53-asi-proof-horizon-console",
+    "v52-loop-to-rsi-to-asi-superintelligence",
+    "v51-loop-to-rsi-control-room",
+    "v50-loop-to-rsi-sovereign-governance",
+    "v49-loop-evidence-reactor",
+    "v48-day-scale-loop-observatory",
+    "v47-loop-operating-room",
+    "v46-repository-public-trust-compatibility-failsafe"
   ]
 }

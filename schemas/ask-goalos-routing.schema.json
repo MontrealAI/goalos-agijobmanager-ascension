@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Ask Concierge Routing Contract",
+  "type": "object",
+  "required": [
+    "version",
+    "routeCount",
+    "intents",
+    "routes",
+    "posture"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "routeCount": {
+      "type": "integer"
+    },
+    "productionUrl": {
+      "type": "string"
+    },
+    "posture": {
+      "type": "object"
+    },
+    "intents": {
+      "type": "array"
+    },
+    "routes": {
+      "type": "array"
+    }
+  }
+}
