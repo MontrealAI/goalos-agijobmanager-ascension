@@ -16,12 +16,17 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 ![Evidence Docket discipline](https://img.shields.io/badge/Evidence%20Docket-discipline-1e40af)
 ![License notice](https://img.shields.io/badge/license-see%20LICENSE-475569)
 
+
+## GoalOS Care Command v66
+
+The primary front door is now `goalos-care-command.html`: a public-safe, browser-local console where a visitor types one plain-language objective and GoalOS prepares the proof path, answers route questions, and emits a local receipt. All existing pages remain available through the Complete Route Index and command layers.
+
 ## 30-second explanation
 
 A model can answer. An agent can act. An institution must prove. GoalOS AGIJobManager Ascension is a static GitHub Pages website and repository scaffold showing how autonomous work can be bounded by Mission Contracts, verification, Evidence Dockets, ProofBundles, governed decision states, settlement receipts, Chronicle entries, and human authority.
 
-The canonical route manifest currently contains **69 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
-Compatibility lineage: historical v43-compatible tests preserve **69 canonical public routes** while the current v62/v61 canonical manifest lists **69 canonical public routes**. No public wallet connection.
+The canonical route manifest currently contains **70 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
+Compatibility lineage: historical v43-compatible tests preserve **70 canonical public routes** while the current v62/v61 canonical manifest lists **70 canonical public routes**. No public wallet connection.
 
 Start with [Canonical Proof Institution](site/canonical-proof-institution.html), [Experience Command](site/experience-command.html), or [Experience Concierge](site/experience-concierge.html) if you are new, [Command Center](site/command-center.html) for the searchable catalog, or [Evidence Docket Composer](site/evidence-docket-composer.html) to inspect proof.
 
@@ -180,7 +185,7 @@ The public website includes [Experience Command](site/experience-command.html), 
 
 ## v59 canonical proof institution finalization
 
-The public website now includes [Canonical Proof Institution](site/canonical-proof-institution.html): one final command room for route integrity, proof doctrine, public-safe boundaries, and best user paths. The canonical route manifest now contains **69 canonical public routes** and every source HTML page is represented.
+The public website now includes [Canonical Proof Institution](site/canonical-proof-institution.html): one final command room for route integrity, proof doctrine, public-safe boundaries, and best user paths. The canonical route manifest now contains **70 canonical public routes** and every source HTML page is represented.
 
 
 ## Ask GoalOS Sovereign Router v62
@@ -200,4 +205,4 @@ The public front door now includes `goalos-command-console.html`: a browser-loca
 
 ## v65 GoalOS Take-Care Console
 
-Start here for the simplest user experience: [`goalos-take-care.html`](site/goalos-take-care.html). Type what you want; GoalOS locally prepares a mission, proof plan, route handoff, and `GoalOSTakeCareReceipt`. Canonical route count: **69** public routes.
+Start here for the simplest user experience: [`goalos-take-care.html`](site/goalos-take-care.html). Type what you want; GoalOS locally prepares a mission, proof plan, route handoff, and `GoalOSTakeCareReceipt`. Canonical route count: **70** public routes.

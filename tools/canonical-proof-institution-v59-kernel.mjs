@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 const ok=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
 const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
-ok(['v65-take-care-console','v65-command-console','v65','v59','v60','v61','v62-command','v62','v63-command','v63','v64-command-console','v64'].includes(manifest.version),'canonical manifest is v59+ compatible');
+ok(['v66-goalos-care-command','v65-take-care-console','v65-command-console','v65','v59','v60','v61','v62-command','v62','v63-command','v63','v64-command-console','v64'].includes(manifest.version),'canonical manifest is v59+ compatible');
 ok(manifest.routeCount===manifest.pages.length,'route count equals pages length');
 ok(manifest.pages.some(p=>p.href==='canonical-proof-institution.html'),'manifest includes Canonical Proof Institution');
 for (const href of manifest.pages.map(p=>p.href)) ok(fs.existsSync('site/'+href),`source route exists ${href}`);

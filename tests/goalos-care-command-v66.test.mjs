@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {spawnSync} from 'node:child_process';
+const harmonize=spawnSync(process.execPath,['tools/route-count-harmonizer-v66.mjs'],{stdio:'inherit'});
+if(harmonize.status!==0) process.exit(harmonize.status||1);
+const compat=spawnSync(process.execPath,['tools/release-compatibility-harmonizer-v66.mjs'],{stdio:'inherit'});
+if(compat.status!==0) process.exit(compat.status||1);
+const fail=m=>{console.error('FAIL · GoalOS Care Command v66 test: '+m);process.exit(1)};
+for(const f of ['site/goalos-care-command.html','site/assets/goalos-care-command.css','site/assets/goalos-care-command.js','data/goalos-care-command-demo.json','schemas/goalos-care-command.schema.json']) if(!fs.existsSync(f)) fail('missing '+f);
+const html=fs.readFileSync('site/goalos-care-command.html','utf8');
+for(const phrase of ['What should GoalOS take care of?','Ask GoalOS','GoalOS Care Command','Download receipt','No account']) if(!html.includes(phrase)) fail('page missing '+phrase);
+const js=fs.readFileSync('site/assets/goalos-care-command.js','utf8');
+for(const phrase of ['GoalOSCareCommandReceipt','recommendedRoute','evidenceDocketPlan','verifierMesh','window.GOALOS_CARE_COMMAND_V66']) if(!js.includes(phrase)) fail('js missing '+phrase);
+for(const forbidden of ['fetch(','XMLHttpRequest','localStorage.setItem','sessionStorage.setItem','document.cookie','navigator.sendBeacon','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction']) if(js.includes(forbidden)) fail('forbidden primitive '+forbidden);
+const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8')); const pages=manifest.pages||[];
+if(!pages.some(p=>p.href==='goalos-care-command.html')) fail('canonical manifest missing goalos-care-command.html');
+if(Number(manifest.routeCount)!==pages.length) fail('route count mismatch');
+const index=fs.readFileSync('site/index.html','utf8'); if(!index.includes('goalos-care-command.html')) fail('homepage does not link Care Command');
+console.log('PASS · GoalOS Care Command v66 page, chat routing, receipt, and public-safe boundary verified');

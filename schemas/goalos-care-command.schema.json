@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSCareCommandReceipt",
+  "type": "object",
+  "required": [
+    "receiptType",
+    "version",
+    "objective",
+    "recommendedRoute",
+    "missionContract",
+    "evidenceDocketPlan",
+    "verifierMesh",
+    "publicSafeBoundary"
+  ],
+  "properties": {
+    "receiptType": {
+      "const": "GoalOSCareCommandReceipt"
+    },
+    "version": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "recommendedRoute": {
+      "type": "object",
+      "required": [
+        "title",
+        "href",
+        "why",
+        "confidence"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "why": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number"
+        }
+      }
+    },
+    "alternatives": {
+      "type": "array"
+    },
+    "missionContract": {
+      "type": "object"
+    },
+    "evidenceDocketPlan": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verifierMesh": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "governedDecisionState": {
+      "type": "object"
+    },
+    "publicSafeBoundary": {
+      "type": "object"
+    }
+  }
+}

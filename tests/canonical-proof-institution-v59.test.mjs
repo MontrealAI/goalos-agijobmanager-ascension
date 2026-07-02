@@ -11,7 +11,7 @@ const data=JSON.parse(fs.readFileSync('data/canonical-proof-institution-demo.jso
 ok(data.receiptType==='GoalOSCanonicalInstitutionReceipt','data contract names receipt');
 ok(data.publicSafe.noWallet && data.publicSafe.noUserDataWanted && data.publicSafe.noNetworkRequestFromDemo,'data contract encodes public-safe posture');
 const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
-ok(['v65-take-care-console','v65-command-console','v65','v59','v60','v61','v62-command','v62','v63-command','v63','v64-command-console','v64'].includes(manifest.version),'canonical manifest is v59+ compatible');
+ok(['v66-goalos-care-command','v65-take-care-console','v65-command-console','v65','v59','v60','v61','v62-command','v62','v63-command','v63','v64-command-console','v64'].includes(manifest.version),'canonical manifest is v59+ compatible');
 ok(manifest.pages.some(p=>p.href==='canonical-proof-institution.html'),'canonical manifest includes canonical proof institution');
 ok(manifest.routeCount===manifest.pages.length,'route count equals pages length');
 const htmlFiles=[]; function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=d+'/'+e.name;if(e.isDirectory())walk(p);else if(e.isFile()&&p.endsWith('.html'))htmlFiles.push(p.replace(/^site\//,''));}} walk('site');

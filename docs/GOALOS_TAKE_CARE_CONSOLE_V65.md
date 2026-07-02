@@ -12,7 +12,7 @@ No account. No form submission. No wallet connection. No token approval. No anal
 
 ## Canonical route count
 
-69 public routes.
+70 public routes.
 
 ## Relationship to existing pages
 

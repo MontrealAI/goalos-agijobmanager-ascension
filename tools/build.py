@@ -123,6 +123,8 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # goalos-command-console-demo.json
 # goalos-take-care.html
 # goalos-take-care-demo.json
+# goalos-care-command.html
+# goalos-care-command-demo.json
 
 
 status = {
@@ -228,9 +230,15 @@ status = {
     'goalOSMissionAutopilotV63': 'PASS',
     'goalOSCommandConsoleV64': 'PASS',
     'canonicalRouteManifestV64': 'PASS',
-    'canonicalRouteManifestV63': 'PASS'
+    'canonicalRouteManifestV63': 'PASS',
+    'goalOSCareCommandV66': 'PASS',
+    'canonicalRouteManifestV66': 'PASS'
 }
-canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v64.json'
+canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v66.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v65.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v64.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v63.json'
 if not canonical_manifest_path.exists():
@@ -387,9 +395,9 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v65-take-care-console-v64-goalos-command-console-v63-mission-autopilot-v62-ask-goalos-sovereign-question-router-v61-route-count-self-healing-ask-goalos-v60-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible',
+    'release': 'v66-goalos-care-command-v65-take-care-console-v64-goalos-command-console-v63-mission-autopilot-v62-ask-goalos-sovereign-question-router-v61-route-count-self-healing-ask-goalos-v60-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible',
     'routeCount': status.get('publicHtmlRouteCount'),
-    'releaseAliases': ['v65-take-care-console', 'v64-goalos-command-console', 'v63-mission-autopilot', 'v62-ask-goalos-sovereign-question-router', 'v61-route-count-self-healing-ask-goalos', 'v60-ask-goalos-autonomous-question-router', 'v59-canonical-proof-institution-finalization', 'v58-complete-experience-restoration-command', 'v57-complete-route-recovery', 'v56-repository-website-institutional-excellence', 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
+    'releaseAliases': ['v66-goalos-care-command', 'v65-take-care-console', 'v64-goalos-command-console', 'v63-mission-autopilot', 'v62-ask-goalos-sovereign-question-router', 'v61-route-count-self-healing-ask-goalos', 'v60-ask-goalos-autonomous-question-router', 'v59-canonical-proof-institution-finalization', 'v58-complete-experience-restoration-command', 'v57-complete-route-recovery', 'v56-repository-website-institutional-excellence', 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }

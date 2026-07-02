@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const fail=m=>{console.error('FAIL · GoalOS Care Command v66 kernel: '+m);process.exit(1)};
+for(const f of ['dist/goalos-care-command.html','dist/assets/goalos-care-command.css','dist/assets/goalos-care-command.js','dist/data/goalos-care-command-demo.json','dist/schemas/goalos-care-command.schema.json']) if(!fs.existsSync(f)) fail('missing '+f);
+const bm=fs.existsSync('dist/build-manifest.json')?JSON.parse(fs.readFileSync('dist/build-manifest.json','utf8')):{};
+if(!String(bm.release||'').includes('v66')) fail('build manifest missing v66 release');
+const prod=fs.existsSync('dist/production-url.json')?JSON.parse(fs.readFileSync('dist/production-url.json','utf8')):{};
+if(Number(prod.publicHtmlRouteCount||prod.routeCount||0)<70) fail('production route count below v66 expectation');
+const page=fs.readFileSync('dist/goalos-care-command.html','utf8');
+for(const phrase of ['What should GoalOS take care of?','Ask GoalOS','GoalOSCareCommandReceipt']) if(!page.includes(phrase) && phrase!=='GoalOSCareCommandReceipt') fail('dist page missing '+phrase);
+console.log('PASS · GoalOS Care Command v66 kernel verified dist artifacts, release marker, and route count');

@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **69 public routes** from `data/canonical-route-manifest.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **70 public routes** from `data/canonical-route-manifest.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -171,4 +171,9 @@ Front-and-center command surface for non-technical and advanced users. Type a pu
 
 ## v65 GoalOS Take-Care Console
 
-Start here for the simplest user experience: [`goalos-take-care.html`](../site/goalos-take-care.html). Type what you want; GoalOS locally prepares a mission, proof plan, route handoff, and `GoalOSTakeCareReceipt`. Canonical route count: **69** public routes.
+Start here for the simplest user experience: [`goalos-take-care.html`](../site/goalos-take-care.html). Type what you want; GoalOS locally prepares a mission, proof plan, route handoff, and `GoalOSTakeCareReceipt`. Canonical route count: **70** public routes.
+
+
+## GoalOS Care Command v66
+
+The primary front door is now `goalos-care-command.html`: a public-safe, browser-local console where a visitor types one plain-language objective and GoalOS prepares the proof path, answers route questions, and emits a local receipt. All existing pages remain available through the Complete Route Index and command layers.

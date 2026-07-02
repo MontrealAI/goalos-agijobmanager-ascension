@@ -1,14 +1,14 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "6.5.0-v65-take-care-console-v64-v63-v62-v61-v60-v59-v46-compatible",
+  "version": "6.6.0-v66-goalos-care-command-v65-v64-v63-v62-v61-v60-v59-v46-compatible",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/release-compatibility-harmonizer-v57.mjs && node tools/release-compatibility-harmonizer-v58.mjs && node tools/release-compatibility-harmonizer-v59.mjs && node tools/release-compatibility-harmonizer-v60.mjs && node tools/release-compatibility-harmonizer-v61.mjs && node tools/release-compatibility-harmonizer-v62.mjs && node tools/release-compatibility-harmonizer-v63.mjs && node tools/release-compatibility-harmonizer-v64.mjs && node tools/release-compatibility-harmonizer-v65.mjs && node tools/route-count-harmonizer-v65.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v65.mjs",
+    "build": "npm run bootstrap && python3 tools/build.py && node tools/route-count-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/release-compatibility-harmonizer-v57.mjs && node tools/release-compatibility-harmonizer-v58.mjs && node tools/release-compatibility-harmonizer-v59.mjs && node tools/release-compatibility-harmonizer-v60.mjs && node tools/release-compatibility-harmonizer-v61.mjs && node tools/release-compatibility-harmonizer-v62.mjs && node tools/release-compatibility-harmonizer-v63.mjs && node tools/release-compatibility-harmonizer-v64.mjs && node tools/release-compatibility-harmonizer-v65.mjs && node tools/release-compatibility-harmonizer-v66.mjs && node tools/route-count-harmonizer-v66.mjs && node tools/run-existing-kernels.mjs && node tools/goalos-care-command-v66-kernel.mjs && CHECK_DIST=true node tools/public-trust-checker-v66.mjs",
     "verify": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
-    "test": "npm run bootstrap && npm run verify && npm run check:docs && npm run check:public-safe && npm run check:metadata && node tools/route-count-harmonizer-v65.mjs && node tools/run-all-tests.mjs",
+    "test": "npm run bootstrap && npm run verify && npm run check:docs && npm run check:public-safe && npm run check:metadata && node tools/route-count-harmonizer-v66.mjs && node tools/run-all-tests.mjs",
     "test:strict": "npm test && npm run assurance && npm run factual && npm run build && npm run legal && npm run token-boundary",
     "assurance:final": "node tools/final-assurance-kernel.mjs",
     "factual:mainnet": "node tools/mainnet-factual-check.mjs",
@@ -86,7 +86,7 @@
     "failsafe:v44": "node tools/repository-public-trust-failsafe-v44-kernel.mjs",
     "repository-public-trust-failsafe": "node tools/root-cleanup-v46.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
     "test:repository-public-trust-failsafe": "node tools/run-documentation-tests.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
-    "bootstrap": "node tools/failsafe-bootstrap-v65.mjs && node tools/failsafe-bootstrap-v64.mjs && node tools/failsafe-bootstrap-v63.mjs && node tools/failsafe-bootstrap-v62.mjs && node tools/failsafe-bootstrap-v61.mjs && node tools/failsafe-bootstrap-v60.mjs && node tools/failsafe-bootstrap-v59.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs && node tools/route-recovery-v61.mjs && node tools/route-count-harmonizer-v61.mjs && node tools/route-recovery-v64.mjs && node tools/route-count-harmonizer-v64.mjs && node tools/route-recovery-v65.mjs && node tools/route-count-harmonizer-v65.mjs",
+    "bootstrap": "node tools/failsafe-bootstrap-v66.mjs && node tools/route-count-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v66.mjs && node tools/failsafe-bootstrap-v65.mjs && node tools/failsafe-bootstrap-v64.mjs && node tools/failsafe-bootstrap-v63.mjs && node tools/failsafe-bootstrap-v62.mjs && node tools/failsafe-bootstrap-v61.mjs && node tools/failsafe-bootstrap-v60.mjs && node tools/failsafe-bootstrap-v59.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs && node tools/route-recovery-v61.mjs && node tools/route-count-harmonizer-v61.mjs && node tools/route-recovery-v64.mjs && node tools/route-count-harmonizer-v64.mjs && node tools/route-recovery-v65.mjs && node tools/route-count-harmonizer-v65.mjs && node tools/route-count-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v66.mjs",
     "failsafe:v45": "node tools/repository-public-trust-failsafe-v45-kernel.mjs",
     "kernels": "node tools/run-existing-kernels.mjs",
     "verify:public-trust": "node tools/failsafe-bootstrap-v53.mjs && node tools/run-documentation-tests.mjs && node tools/public-trust-checker-v53.mjs",
@@ -120,7 +120,7 @@
     "failsafe:v54": "node tools/superintelligence-proof-governance-console-v54-kernel.mjs",
     "check:docs": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tools/run-documentation-tests.mjs",
     "check:public-safe": "node tools/public-safe-static-checker.mjs",
-    "check:metadata": "node tools/route-count-harmonizer-v65.mjs && node tools/release-compatibility-harmonizer-v65.mjs && node tools/metadata-integrity-checker.mjs && node tools/route-manifest-integrity.mjs && node tools/accessibility-static-checker.mjs",
+    "check:metadata": "node tools/route-count-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v66.mjs && node tools/metadata-integrity-checker.mjs && node tools/route-manifest-integrity.mjs && node tools/accessibility-static-checker.mjs",
     "test:dynamic": "node tools/run-all-tests.mjs",
     "experience-command": "node tests/experience-command-v58.test.mjs && python3 tools/build.py && node tools/experience-command-v58-kernel.mjs",
     "test:experience-command": "npm run experience-command",
@@ -128,7 +128,7 @@
     "test:canonical-proof-institution": "npm run canonical-proof-institution",
     "ask-goalos": "node tests/ask-goalos-concierge-v60.test.mjs && python3 tools/build.py && node tools/release-compatibility-harmonizer-v60.mjs && node tools/ask-goalos-concierge-v60-kernel.mjs",
     "test:ask-goalos": "npm run ask-goalos",
-    "route-count:failsafe": "node tools/route-count-harmonizer-v65.mjs && node tools/route-manifest-integrity.mjs",
+    "route-count:failsafe": "node tools/route-count-harmonizer-v66.mjs && node tools/route-manifest-integrity.mjs",
     "test:ask-goalos-route-count-v61": "node tests/ask-goalos-route-count-v61.test.mjs && node tools/route-count-harmonizer-v61.mjs && node tools/route-manifest-integrity.mjs",
     "ask-goalos-v62": "node tests/ask-goalos-sovereign-router-v62.test.mjs && python3 tools/build.py && node tools/release-compatibility-harmonizer-v62.mjs && node tools/ask-goalos-sovereign-router-v62-kernel.mjs",
     "test:ask-goalos-v62": "npm run ask-goalos-v62",
@@ -137,14 +137,17 @@
     "goalos-command-console": "node tests/goalos-command-console-v64.test.mjs && python3 tools/build.py && node tools/release-compatibility-harmonizer-v64.mjs && node tools/goalos-command-console-v64-kernel.mjs",
     "test:goalos-command-console": "npm run goalos-command-console",
     "take-care": "node tests/goalos-take-care-v65.test.mjs && python3 tools/build.py && node tools/goalos-take-care-v65-kernel.mjs",
-    "test:take-care": "npm run take-care"
+    "test:take-care": "npm run take-care",
+    "care-command": "node tests/goalos-care-command-v66.test.mjs && python3 tools/build.py && node tools/route-count-harmonizer-v66.mjs && node tools/goalos-care-command-v66-kernel.mjs",
+    "test:care-command": "npm run care-command"
   },
   "dependencies": {},
-  "description": "GoalOS AGIJobManager Ascension public proof institution with v65 GoalOS Take-Care Console, v63 Mission Autopilot, v62 Ask GoalOS sovereign routing, canonical route recovery, public-safe demos, and GitHub Pages publication.",
+  "description": "GoalOS AGIJobManager Ascension public proof institution with v64 GoalOS Command Console, v63 Mission Autopilot, v62 Ask GoalOS sovereign routing, canonical route recovery, public-safe demos, and GitHub Pages publication.",
   "devDependencies": {},
-  "release": "v65-goalos-take-care v65-take-care-console v64-goalos-command-console v63-mission-autopilot v62-ask-goalos-sovereign-router v61-route-count-self-healing v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v58-complete-experience-restoration v57-complete-route-recovery v54-superintelligence-proof-governance v53-asi-proof-horizon v52-loop-to-asi v51-loop-to-rsi-control-room v50-loop-to-rsi v49-loop-evidence-reactor v48-day-scale-loop v47-loop-operating-room v46-repository-public-trust-compatibility-failsafe v45-compatible v44-compatible v43-compatible v42-compatible",
+  "release": "v64-goalos-command-console v63-mission-autopilot v62-ask-goalos-sovereign-router v61-route-count-self-healing v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v58-complete-experience-restoration v57-complete-route-recovery v54-superintelligence-proof-governance v53-asi-proof-horizon v52-loop-to-asi v51-loop-to-rsi-control-room v50-loop-to-rsi v49-loop-evidence-reactor v48-day-scale-loop v47-loop-operating-room v46-repository-public-trust-compatibility-failsafe v45-compatible v44-compatible v43-compatible v42-compatible v66-goalos-care-command v65-goalos-take-care v65-take-care-console v66-goalos-care-command v65-take-care-console v64-goalos-command-console v63-mission-autopilot v62-ask-goalos-sovereign-router v61-route-count-self-healing v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v46-repository-public-trust-compatibility-failsafe",
   "releaseLineage": [
     "v62-ask-goalos-sovereign-question-router",
+    "v66-goalos-care-command",
     "v63-mission-autopilot",
     "v61-route-count-self-healing-ask-goalos-public-proof-institution",
     "v60-ask-goalos-autonomous-question-router",
@@ -174,6 +177,7 @@
   "askGoalOSSovereignRouterV62": "PASS",
   "goalOSMissionAutopilotV63": "PASS",
   "releaseAliases": [
+    "v66-goalos-care-command",
     "v63-mission-autopilot",
     "v62-ask-goalos-sovereign-router",
     "v61-route-count-self-healing",
@@ -198,8 +202,9 @@
     "v65-goalos-take-care",
     "v65-take-care-console"
   ],
-  "publicHtmlRouteCount": 69,
-  "canonicalRouteCount": 69,
+  "publicHtmlRouteCount": 70,
+  "canonicalRouteCount": 70,
   "goalOSCommandConsoleV64": "PASS",
-  "goalOSTakeCareConsoleV65": "PASS"
+  "goalOSTakeCareConsoleV65": "PASS",
+  "goalOSCareCommandV66": "PASS"
 }
