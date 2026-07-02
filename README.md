@@ -20,8 +20,8 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
 A model can answer. An agent can act. An institution must prove. GoalOS AGIJobManager Ascension is a static GitHub Pages website and repository scaffold showing how autonomous work can be bounded by Mission Contracts, verification, Evidence Dockets, ProofBundles, governed decision states, settlement receipts, Chronicle entries, and human authority.
 
-The canonical route manifest currently contains **60 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
-Compatibility lineage: historical v43-compatible tests preserve **55 canonical public routes** while the current v56 canonical manifest lists **60 canonical public routes**. No public wallet connection.
+The canonical route manifest currently contains **63 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
+Compatibility lineage: historical v43-compatible tests preserve **63 canonical public routes** while the current v57 canonical manifest lists **63 canonical public routes**. No public wallet connection.
 
 Start with [Experience Concierge](site/experience-concierge.html) if you are new, [Command Center](site/command-center.html) for the searchable catalog, or [Evidence Docket Composer](site/evidence-docket-composer.html) to inspect proof.
 
@@ -166,3 +166,8 @@ Read [Legal](site/legal.html), [Privacy](site/privacy.html), [Terms](site/terms.
 ## Claim boundary and release notes
 
 No Evidence Docket, no strong public claim. Architecture claims are not empirical claims. Empirical claims require real tasks, baselines, ProofBundles, replay logs, validator reports, cost/safety ledgers, delayed outcomes, and independent review. See [Claim Boundary](docs/CLAIM_BOUNDARY.md) and [v56 release notes](docs/releases/V56_REPOSITORY_WEBSITE_INSTITUTIONAL_EXCELLENCE.md).
+
+
+## v57 complete route recovery
+
+The public website now includes a static-first [Complete Route Index](site/complete-route-index.html) generated from the actual site HTML and the canonical route manifest. It includes preserved archives, nested evidence pages, loop theatres, expert surfaces, legal boundaries, and every current Loop → RSI → ASI horizon console.
