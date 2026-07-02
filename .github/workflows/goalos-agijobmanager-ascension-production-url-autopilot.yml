@@ -1,5 +1,5 @@
-name: GoalOS AGIJobManager Ascension Ask GoalOS Question Router v60 Publisher / Canonical Proof Institution v59 Publisher / Compatibility Failsafe Publisher v46
-# Ask GoalOS Autonomous Question Router v60. Canonical Proof Institution Finalization v59. Historical compatibility labels intentionally preserved for public-trust tests: Complete Experience Restoration v58; Complete Route Recovery v57; Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
+name: GoalOS AGIJobManager Ascension Ask GoalOS Route Count Self-Healing v61 Publisher / Ask GoalOS v60 Publisher / Canonical Proof Institution v59 Publisher / Compatibility Failsafe Publisher v46
+# Ask GoalOS Route Count Self-Healing v61. Ask GoalOS Autonomous Question Router v60. Canonical Proof Institution Finalization v59. Historical compatibility labels intentionally preserved for public-trust tests: Complete Experience Restoration v58; Complete Route Recovery v57; Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
 
 on:
   workflow_dispatch:
@@ -58,7 +58,7 @@ jobs:
   # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v59.mjs tools/failsafe-bootstrap-v58.mjs tools/failsafe-bootstrap-v54.mjs tools/failsafe-bootstrap-v53.mjs tools/failsafe-bootstrap-v52.mjs tools/failsafe-bootstrap-v51.mjs tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
   # Dynamic guarded runners: tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py
   build-assure-publish:
-    name: Build, assure, and publish v60 Ask GoalOS public proof institution
+    name: Build, assure, and publish v61 Ask GoalOS public proof institution
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -77,13 +77,14 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
           mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets schemas
-          for file in tools/failsafe-bootstrap-v60.mjs tools/failsafe-bootstrap-v59.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v60.mjs tools/release-compatibility-harmonizer-v60.mjs tools/route-recovery-v59.mjs tools/release-compatibility-harmonizer-v59.mjs tools/route-recovery-v58.mjs tools/release-compatibility-harmonizer-v58.mjs tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
+          for file in tools/failsafe-bootstrap-v61.mjs tools/route-count-harmonizer-v61.mjs tools/route-recovery-v61.mjs tools/release-compatibility-harmonizer-v61.mjs tools/public-trust-checker-v61.mjs tools/failsafe-bootstrap-v60.mjs tools/failsafe-bootstrap-v59.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v60.mjs tools/release-compatibility-harmonizer-v60.mjs tools/route-recovery-v59.mjs tools/release-compatibility-harmonizer-v59.mjs tools/route-recovery-v58.mjs tools/release-compatibility-harmonizer-v58.mjs tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
             if [ ! -f "$file" ]; then
-              echo "Missing required helper: $file. Upload the complete v59 overlay contents, not the ZIP file itself." >&2
+              echo "Missing required helper: $file. Upload the complete v61 overlay contents, not the ZIP file itself." >&2
               exit 1
             fi
           done
           npm run bootstrap
+          node tools/route-count-harmonizer-v61.mjs
 
       - name: Verify implementation, docs, metadata, routes, accessibility, public-safe boundary, and dynamic tests
         shell: bash
@@ -94,6 +95,7 @@ jobs:
         run: |
           set -euo pipefail
           node --version
+          npm run route-count:failsafe
           npm test
           if [ "${RUN_LIVE_FACTUAL_CHECK}" = "true" ]; then
             if [ -n "${ETHEREUM_RPC_URL:-}" ]; then
@@ -113,9 +115,11 @@ jobs:
         run: |
           set -euo pipefail
           npm run build
+          node tools/route-count-harmonizer-v61.mjs
           node tools/route-manifest-integrity.mjs
           node tools/canonical-proof-institution-v59-kernel.mjs
           node tools/ask-goalos-concierge-v60-kernel.mjs
+          node tools/public-trust-checker-v61.mjs
           test -f dist/index.html
           test -f dist/canonical-proof-institution.html
           test -f dist/ask-goalos.html
@@ -134,7 +138,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate Ask GoalOS Question Router v60 artifacts"
+          git commit -m "Generate Ask GoalOS Route Count Self-Healing v61 artifacts"
           for attempt in 1 2 3; do
             git fetch origin main
             if git pull --rebase origin main && git push origin HEAD:main; then
