@@ -1,0 +1,29 @@
+{
+  "receiptType": "GoalOSCareCommandDemo",
+  "version": "v66-goalos-care-command",
+  "title": "GoalOS Care Command",
+  "route": "goalos-care-command.html",
+  "routeCountAfterRelease": 70,
+  "purpose": "Front-and-center local command interface: one plain-language objective box plus Ask GoalOS chat routing and proof-mission receipt.",
+  "userFlow": [
+    "Type objective",
+    "GoalOS prepares mission contract",
+    "Inspect proof plan",
+    "Ask follow-up questions",
+    "Open recommended route",
+    "Download local receipt"
+  ],
+  "publicSafeBoundary": {
+    "noAccount": true,
+    "noFormSubmission": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetworkRequestFromConsole": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataRetained": true
+  }
+}

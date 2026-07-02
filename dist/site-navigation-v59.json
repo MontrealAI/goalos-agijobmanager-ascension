@@ -1,7 +1,7 @@
 {
-  "version": "v65-take-care-console",
-  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v65-take-care-console v65-take-care-console v65-take-care-console",
-  "routeCount": 69,
+  "version": "v66-goalos-care-command",
+  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command",
+  "routeCount": 70,
   "pages": [
     {
       "route": "/index.html",
@@ -13,6 +13,17 @@
       "outputArtifact": "Public front door",
       "boundary": "Public-safe, read-only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    {
+      "route": "/goalos-care-command.html",
+      "href": "goalos-care-command.html",
+      "title": "GoalOS Care Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center local GoalOS command experience: one plain-language objective box, clear guidance, Ask GoalOS chat routing, Mission Contract, Evidence Docket plan, Verifier Mesh, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCareCommandReceipt",
+      "boundary": "Browser-local guidance and mission packaging only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-care-command.html"
     },
     {
       "route": "/canonical-proof-institution.html",
@@ -774,6 +785,17 @@
       "outputArtifact": "Public front door",
       "boundary": "Public-safe, read-only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    {
+      "route": "/goalos-care-command.html",
+      "href": "goalos-care-command.html",
+      "title": "GoalOS Care Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center local GoalOS command experience: one plain-language objective box, clear guidance, Ask GoalOS chat routing, Mission Contract, Evidence Docket plan, Verifier Mesh, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCareCommandReceipt",
+      "boundary": "Browser-local guidance and mission packaging only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-care-command.html"
     },
     {
       "route": "/canonical-proof-institution.html",
@@ -1556,7 +1578,7 @@
     }
   ],
   "title": "GoalOS AGIJobManager Ascension Navigation Catalog",
-  "publicHtmlRouteCount": 69,
+  "publicHtmlRouteCount": 70,
   "releaseAliases": [
     "v60-ask-goalos-autonomous-question-router",
     "v59-canonical-proof-institution-finalization",
@@ -1578,6 +1600,7 @@
     "v63-mission-autopilot",
     "v62-ask-goalos-sovereign-router",
     "v64-goalos-command-console",
-    "v65-take-care-console"
+    "v65-take-care-console",
+    "v66-goalos-care-command"
   ]
 }
