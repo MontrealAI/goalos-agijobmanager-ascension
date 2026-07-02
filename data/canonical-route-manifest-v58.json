@@ -1,7 +1,7 @@
 {
-  "version": "v61",
+  "version": "v65-take-care-console",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 66,
+  "routeCount": 69,
   "generatedFrom": "v59 Canonical Proof Institution Finalization",
   "posture": {
     "browserLocal": true,
@@ -11,31 +11,23 @@
     "noCookies": true,
     "noPublicWallet": true
   },
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command v65-take-care-console",
   "releaseAliases": [
-    "v57-complete-route-recovery-and-institutional-experience-command",
-    "v57-route-recovery",
-    "v56-repository-website-institutional-excellence",
-    "v54-superintelligence-proof-governance-console",
-    "v53-asi-proof-horizon-console",
-    "v52-loop-to-rsi-to-asi-superintelligence",
-    "v51-loop-to-rsi-control-room",
-    "v50-loop-to-rsi-sovereign-governance",
-    "v49-loop-evidence-reactor",
-    "v48-day-scale-loop-observatory",
-    "v47-loop-operating-room",
-    "v46-repository-public-trust-compatibility-failsafe",
-    "v43-repository-public-trust-finalization",
-    "v58-complete-experience-restoration-command",
-    "v58-complete-experience-command",
-    "v57-complete-route-recovery",
-    "v59-canonical-proof-institution-finalization",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
+    "v63-mission-autopilot",
+    "v62-ask-goalos-sovereign-router",
     "v61-route-count-self-healing",
     "v60-ask-goalos-autonomous-question-router",
     "v59-canonical-proof-institution",
     "v58-complete-experience-restoration",
-    "v46-compatibility-failsafe"
+    "v57-complete-route-recovery",
+    "v46-compatibility-failsafe",
+    "v59-canonical-proof-institution-finalization",
+    "v58-complete-experience-restoration-command",
+    "v54-superintelligence-proof-governance-console",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
+    "v50-loop-to-rsi-sovereign-governance",
+    "v64-goalos-command-console",
+    "v65-take-care-console"
   ],
   "pages": [
     {
@@ -61,6 +53,28 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-proof-institution.html"
     },
     {
+      "route": "/goalos-take-care.html",
+      "href": "goalos-take-care.html",
+      "title": "GoalOS Take-Care Console",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center browser-local GoalOS command console: type what you want and receive a Mission Contract, Evidence Docket plan, Verifier Mesh, governed decision state, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCommandReceipt",
+      "boundary": "Browser-local command planning only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-take-care.html"
+    },
+    {
+      "route": "/goalos-command-console.html",
+      "href": "goalos-command-console.html",
+      "title": "GoalOS Command Console",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center browser-local GoalOS command console: type what you want and receive a Mission Contract, Evidence Docket plan, Verifier Mesh, governed decision state, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCommandReceipt",
+      "boundary": "Browser-local command planning only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-command-console.html"
+    },
+    {
       "route": "/ask-goalos.html",
       "href": "ask-goalos.html",
       "title": "Ask GoalOS Concierge",
@@ -70,6 +84,17 @@
       "outputArtifact": "QuestionRoutingReceipt",
       "boundary": "Browser-local guidance only; no account, no form submission, no wallet, no network request, no analytics, no cookies, no browser storage, no user data retained, no production authority.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html"
+    },
+    {
+      "route": "/goalos-mission-autopilot.html",
+      "href": "goalos-mission-autopilot.html",
+      "title": "GoalOS Mission Autopilot",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Separate high-level public-safe console: type one plain-language objective and GoalOS assembles a Mission Contract, proof plan, Evidence Docket outline, governed decision state, Action Graph, Chronicle entry, and local MissionAutopilotReceipt.",
+      "outputArtifact": "MissionAutopilotReceipt",
+      "boundary": "Browser-local mission planning only; no account, no form submission, no wallet, no token approval, no network request from the console, no analytics, no cookies, no browser storage, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-mission-autopilot.html"
     },
     {
       "route": "/experience-command.html",
@@ -789,6 +814,28 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-proof-institution.html"
     },
     {
+      "route": "/goalos-take-care.html",
+      "href": "goalos-take-care.html",
+      "title": "GoalOS Take-Care Console",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center browser-local GoalOS command console: type what you want and receive a Mission Contract, Evidence Docket plan, Verifier Mesh, governed decision state, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCommandReceipt",
+      "boundary": "Browser-local command planning only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-take-care.html"
+    },
+    {
+      "route": "/goalos-command-console.html",
+      "href": "goalos-command-console.html",
+      "title": "GoalOS Command Console",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center browser-local GoalOS command console: type what you want and receive a Mission Contract, Evidence Docket plan, Verifier Mesh, governed decision state, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCommandReceipt",
+      "boundary": "Browser-local command planning only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-command-console.html"
+    },
+    {
       "route": "/ask-goalos.html",
       "href": "ask-goalos.html",
       "title": "Ask GoalOS Concierge",
@@ -798,6 +845,17 @@
       "outputArtifact": "QuestionRoutingReceipt",
       "boundary": "Browser-local guidance only; no account, no form submission, no wallet, no network request, no analytics, no cookies, no browser storage, no user data retained, no production authority.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html"
+    },
+    {
+      "route": "/goalos-mission-autopilot.html",
+      "href": "goalos-mission-autopilot.html",
+      "title": "GoalOS Mission Autopilot",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Separate high-level public-safe console: type one plain-language objective and GoalOS assembles a Mission Contract, proof plan, Evidence Docket outline, governed decision state, Action Graph, Chronicle entry, and local MissionAutopilotReceipt.",
+      "outputArtifact": "MissionAutopilotReceipt",
+      "boundary": "Browser-local mission planning only; no account, no form submission, no wallet, no token approval, no network request from the console, no analytics, no cookies, no browser storage, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-mission-autopilot.html"
     },
     {
       "route": "/experience-command.html",
@@ -1493,5 +1551,5 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "publicHtmlRouteCount": 66
+  "publicHtmlRouteCount": 69
 }

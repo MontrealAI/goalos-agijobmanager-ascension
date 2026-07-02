@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSTakeCareReceipt",
+  "type": "object",
+  "required": [
+    "receiptType",
+    "version",
+    "objective",
+    "mode",
+    "recommendedRoute",
+    "missionContract",
+    "proofPlan",
+    "decisionState",
+    "boundary"
+  ],
+  "properties": {
+    "receiptType": {
+      "const": "GoalOSTakeCareReceipt"
+    },
+    "version": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "recommendedRoute": {
+      "type": "object"
+    },
+    "alternativeRoutes": {
+      "type": "array"
+    },
+    "missionContract": {
+      "type": "object"
+    },
+    "proofPlan": {
+      "type": "array"
+    },
+    "verifierMesh": {
+      "type": "array"
+    },
+    "decisionState": {
+      "type": "object"
+    },
+    "boundary": {
+      "type": "object"
+    }
+  }
+}

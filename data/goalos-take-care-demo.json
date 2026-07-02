@@ -1,0 +1,38 @@
+{
+  "version": "v65-take-care-console",
+  "route": "goalos-take-care.html",
+  "routeCount": 69,
+  "title": "GoalOS Take-Care Console",
+  "userPromise": "Write what you want. GoalOS turns it into a local proof mission, chooses the right route, and gives you a receipt.",
+  "publicSafeBoundary": {
+    "noAccount": true,
+    "noFormSubmission": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetworkRequestFromConsole": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataRetained": true
+  },
+  "pipeline": [
+    "plain_language_objective",
+    "intent_reading",
+    "mission_contract",
+    "proof_plan",
+    "verifier_mesh",
+    "route_handoff",
+    "decision_state",
+    "receipt"
+  ],
+  "recommendedDefaultRoutes": [
+    "goalos-take-care.html",
+    "goalos-command-console.html",
+    "goalos-mission-autopilot.html",
+    "ask-goalos.html",
+    "complete-route-index.html"
+  ],
+  "publicHtmlRouteCount": 69
+}

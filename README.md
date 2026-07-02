@@ -20,8 +20,8 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
 A model can answer. An agent can act. An institution must prove. GoalOS AGIJobManager Ascension is a static GitHub Pages website and repository scaffold showing how autonomous work can be bounded by Mission Contracts, verification, Evidence Dockets, ProofBundles, governed decision states, settlement receipts, Chronicle entries, and human authority.
 
-The canonical route manifest currently contains **66 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
-Compatibility lineage: historical v43-compatible tests preserve **66 canonical public routes** while the current v61 canonical manifest lists **66 canonical public routes**. No public wallet connection.
+The canonical route manifest currently contains **69 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
+Compatibility lineage: historical v43-compatible tests preserve **69 canonical public routes** while the current v62/v61 canonical manifest lists **69 canonical public routes**. No public wallet connection.
 
 Start with [Canonical Proof Institution](site/canonical-proof-institution.html), [Experience Command](site/experience-command.html), or [Experience Concierge](site/experience-concierge.html) if you are new, [Command Center](site/command-center.html) for the searchable catalog, or [Evidence Docket Composer](site/evidence-docket-composer.html) to inspect proof.
 
@@ -180,9 +180,24 @@ The public website includes [Experience Command](site/experience-command.html), 
 
 ## v59 canonical proof institution finalization
 
-The public website now includes [Canonical Proof Institution](site/canonical-proof-institution.html): one final command room for route integrity, proof doctrine, public-safe boundaries, and best user paths. The canonical route manifest now contains **66 canonical public routes** and every source HTML page is represented.
+The public website now includes [Canonical Proof Institution](site/canonical-proof-institution.html): one final command room for route integrity, proof doctrine, public-safe boundaries, and best user paths. The canonical route manifest now contains **69 canonical public routes** and every source HTML page is represented.
 
 
-## Ask GoalOS Concierge v60
+## Ask GoalOS Sovereign Router v62
 
-A browser-local question router is available at [`ask-goalos.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html). It answers public-site questions from static route/doctrine data and routes users to the correct proof page without account, wallet, analytics, cookies, browser storage, or network request.
+A browser-local question router is available at [`ask-goalos.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html). It answers public-site questions from the canonical route manifest, local doctrine cards, and public-safe page descriptions; it explains the best route, shows alternatives, exports a local routing receipt, and opens a page only when the visitor explicitly asks it to. It uses no account, wallet, analytics, cookies, browser storage, form submission, or network request.
+
+
+## GoalOS Mission Autopilot v63
+
+`goalos-mission-autopilot.html` is the separate high-level console for users who want to type one objective and let GoalOS assemble the proof mission: Mission Contract, Evidence Docket outline, governed decision state, Action Graph, Chronicle entry, and local receipt.
+
+
+## GoalOS Command Console v64
+
+The public front door now includes `goalos-command-console.html`: a browser-local command console where visitors type one public-safe objective and receive a Mission Contract, Evidence Docket plan, route handoff, governed decision state, and downloadable receipt.
+
+
+## v65 GoalOS Take-Care Console
+
+Start here for the simplest user experience: [`goalos-take-care.html`](site/goalos-take-care.html). Type what you want; GoalOS locally prepares a mission, proof plan, route handoff, and `GoalOSTakeCareReceipt`. Canonical route count: **69** public routes.
