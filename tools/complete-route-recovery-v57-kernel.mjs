@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 const ok=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
 const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
-ok(['v57','v58','v59','v60','v61'].includes(manifest.version),'canonical manifest is v57/v58/v59/v60/v61');
+ok(['v65-take-care-console','v65-command-console','v65','v57','v58','v59','v60','v61','v62-command','v62','v63-command','v63','v64-command-console','v64'].includes(manifest.version),'canonical manifest is v57+ compatible');
 ok(manifest.routeCount===manifest.pages.length,'route count equals pages length');
 ok(manifest.routeCount>=63,'all current and recovered pages are indexed');
 for(const href of ['complete-route-index.html','loop-contract-theatre.html','evidence/index.html','superintelligence-proof-governance-console.html']) ok(manifest.pages.some(p=>p.href===href),`manifest includes ${href}`);

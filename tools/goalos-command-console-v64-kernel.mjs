@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const fail=m=>{console.error('FAIL · GoalOS Command Console v64 kernel: '+m);process.exit(1)};
+for(const f of ['dist/goalos-command-console.html','dist/assets/goalos-command-console.js','dist/data/goalos-command-console-demo.json','dist/schemas/goalos-command-console.schema.json','dist/index.html','dist/production-url.json']) if(!fs.existsSync(f)) fail('missing built file '+f);
+const html=fs.readFileSync('dist/goalos-command-console.html','utf8');
+for(const phrase of ['Tell GoalOS what you want','GoalOSCommandReceipt','Open recommended route','No network request from the console']) if(!html.includes(phrase)) fail('dist page missing '+phrase);
+const prod=JSON.parse(fs.readFileSync('dist/production-url.json','utf8'));
+if(Number(prod.publicHtmlRouteCount)<68) fail('production-url route count below 68');
+const bm=JSON.parse(fs.readFileSync('dist/build-manifest.json','utf8'));
+if(!String(bm.release||'').includes('v64')) fail('build manifest missing v64 release');
+console.log('PASS · GoalOS Command Console v64 kernel verified built route, assets, metadata, and command interface');

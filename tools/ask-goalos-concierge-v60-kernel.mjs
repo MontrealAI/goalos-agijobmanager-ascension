@@ -11,5 +11,5 @@ for (const dir of ['site','dist']) {
 const manifest=JSON.parse(fs.readFileSync('dist/build-manifest.json','utf8'));
 if(!String(manifest.release||'').includes('v60')) fail('build manifest missing v60 release identity');
 const prod=JSON.parse(fs.readFileSync('dist/production-url.json','utf8'));
-if(Number(prod.publicHtmlRouteCount)!==66) fail('production-url route count not 66');
+if(Number(prod.publicHtmlRouteCount)<66) fail('production-url route count below v60 baseline');
 console.log('PASS · Ask GoalOS Concierge v60 kernel verified build output and route contract');
