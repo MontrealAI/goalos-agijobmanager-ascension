@@ -1,8 +1,8 @@
 {
-  "version": "v57",
+  "version": "v58",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 63,
-  "generatedFrom": "v57 Complete Route Recovery and Institutional Experience Command",
+  "routeCount": 64,
+  "generatedFrom": "v58 Complete Experience Restoration Command",
   "posture": {
     "browserLocal": true,
     "publicSafe": true,
@@ -11,7 +11,7 @@
     "noCookies": true,
     "noPublicWallet": true
   },
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
   "releaseAliases": [
     "v57-complete-route-recovery-and-institutional-experience-command",
     "v57-route-recovery",
@@ -26,9 +26,12 @@
     "v47-loop-operating-room",
     "v46-repository-public-trust-compatibility-failsafe",
     "v43-repository-public-trust-finalization",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
+    "v58-complete-experience-restoration-command",
+    "v58-complete-experience-command",
     "v57-complete-route-recovery",
-    "v42-institutional-website-finalization"
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
+    "v42-institutional-website-finalization",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command"
   ],
   "pages": [
     {
@@ -41,6 +44,17 @@
       "outputArtifact": "Public front door",
       "boundary": "Public-safe, read-only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    {
+      "route": "/experience-command.html",
+      "href": "experience-command.html",
+      "title": "Experience Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "The single command-grade route for every preserved demo, proof room, loop theatre, RSI console, ASI-horizon boundary, legal page, archive, and evidence surface.",
+      "outputArtifact": "ExperienceCommandReceipt",
+      "boundary": "Navigation and route-discovery only; no account, no form, no wallet, no network request, no user data.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/experience-command.html"
     },
     {
       "route": "/complete-route-index.html",
@@ -109,248 +123,6 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ascension-flight-deck.html"
     },
     {
-      "route": "/superintelligence-proof-governance-console.html",
-      "href": "superintelligence-proof-governance-console.html",
-      "title": "Superintelligence Proof Governance Console",
-      "group": "Loop & RSI",
-      "audience": "Executives / researchers / reviewers",
-      "description": "A browser-local GoalOS control room for the Loop → RSI → ASI horizon: evidence contact, baselines, replay, Move-37 stress, council review, capacity allocation, and human boundary gates.",
-      "outputArtifact": "SuperintelligenceGovernanceDocket",
-      "boundary": "Public-safe governance simulation only; no achieved ASI claim and no production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/superintelligence-proof-governance-console.html"
-    },
-    {
-      "route": "/asi-proof-horizon-console.html",
-      "href": "asi-proof-horizon-console.html",
-      "title": "ASI Proof Horizon Console",
-      "group": "Loop & RSI",
-      "audience": "Executives / AI builders / governance reviewers",
-      "description": "A browser-local control room showing how a restartable loop becomes RSI governance, then enters an ASI-horizon proof firewall with evidence, baselines, containment, council review, rollback, and Chronicle gates.",
-      "outputArtifact": "HorizonProofDocket",
-      "boundary": "Governance demonstration only; ASI is treated as a future proof horizon, not an achievement claim.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/asi-proof-horizon-console.html"
-    },
-    {
-      "route": "/loop-to-rsi-to-asi-superintelligence.html",
-      "href": "loop-to-rsi-to-asi-superintelligence.html",
-      "title": "Loop → RSI → ASI Governance Console",
-      "group": "Loop & RSI",
-      "audience": "Executives / operators / advanced reviewers",
-      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
-      "outputArtifact": "HorizonDossier",
-      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-to-asi-superintelligence.html"
-    },
-    {
-      "route": "/loop-to-asi-governance-corridor.html",
-      "href": "loop-to-asi-governance-corridor.html",
-      "title": "Loop → RSI → ASI Governance Corridor",
-      "group": "Loop & RSI",
-      "audience": "Executives / operators / advanced reviewers",
-      "description": "Companion corridor view for capability pressure, proof gates, containment, council review, and human-boundary discipline.",
-      "outputArtifact": "CorridorDossier",
-      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-asi-governance-corridor.html"
-    },
-    {
-      "route": "/loop-to-rsi-control-room.html",
-      "href": "loop-to-rsi-control-room.html",
-      "title": "Loop → RSI Control Room",
-      "group": "Loop & RSI",
-      "audience": "Advanced users / non-technical reviewers / governance operators",
-      "description": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
-      "outputArtifact": "RSIDossier",
-      "boundary": "Browser-local demonstration; no wallet, no network, no production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html"
-    },
-    {
-      "route": "/loop-to-rsi-sovereign-governance.html",
-      "href": "loop-to-rsi-sovereign-governance.html",
-      "title": "From Loop to RSI",
-      "group": "Loop & RSI",
-      "audience": "Advanced builders / governance reviewers",
-      "description": "Shows how a long-running agent loop becomes AGI Alpha RSI: deterministic invention governance with target, emit, filter, atlas, test-plan, eval, insert, promote, replay integrity, ECI, Move-37 skepticism, and dossier export.",
-      "outputArtifact": "RSIDossier",
-      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production autonomy.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
-    },
-    {
-      "route": "/loop-to-rsi.html",
-      "href": "loop-to-rsi.html",
-      "title": "From Loop to RSI",
-      "group": "Loop & RSI",
-      "audience": "Advanced builders / reviewers",
-      "description": "Shows how long-running agent loops become deterministic RSI governance: target, emit, filter, atlas, test-plan, eval, insert, promote, Move-37 dossier, and outcome authority by evidence.",
-      "outputArtifact": "RSIDossier",
-      "boundary": "Browser-local control-plane simulation; no production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi.html"
-    },
-    {
-      "route": "/loop-evidence-reactor.html",
-      "href": "loop-evidence-reactor.html",
-      "title": "Loop Evidence Reactor",
-      "group": "Loop & RSI",
-      "audience": "AI builders / operators",
-      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
-      "outputArtifact": "LoopDocket",
-      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
-    },
-    {
-      "route": "/day-scale-loop-observatory.html",
-      "href": "day-scale-loop-observatory.html",
-      "title": "Day-Scale Loop Observatory",
-      "group": "Loop & RSI",
-      "audience": "Operators / researchers / reviewers",
-      "description": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session.",
-      "outputArtifact": "LongLoopDocket",
-      "boundary": "Browser-local simulation; no external action, no wallet, no production authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/day-scale-loop-observatory.html"
-    },
-    {
-      "route": "/loop-operating-room.html",
-      "href": "loop-operating-room.html",
-      "title": "Loop Operating Room",
-      "group": "Loop & RSI",
-      "audience": "All users / operators / developers",
-      "description": "Turns long-running agent work into a proof-governed loop: contract, roles, traces, restarts, evaluator scores, Evidence Docket, Chronicle, and bottleneck visibility.",
-      "outputArtifact": "LoopReceipt",
-      "boundary": "Browser-local simulation; no wallet, no network, no user data, no external action.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html"
-    },
-    {
-      "route": "/loop-contract-theatre.html",
-      "href": "loop-contract-theatre.html",
-      "title": "Loop Contract Theatre",
-      "group": "Loop & RSI",
-      "audience": "Builders / reviewers",
-      "description": "Contract-first long-running loop demonstration: separated roles, virtual disk state, restart, trace reading, proof scoring, harness reduction, and LoopReceipt export.",
-      "outputArtifact": "LoopReceipt",
-      "boundary": "Browser-local demonstration; no external action.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html"
-    },
-    {
-      "route": "/proof-to-action-theatre.html",
-      "href": "proof-to-action-theatre.html",
-      "title": "Proof-to-Action Theatre",
-      "group": "Protocol & gates",
-      "audience": "New users",
-      "description": "The cleanest objective -> proof -> governed decision state walkthrough.",
-      "outputArtifact": "Proof-to-action receipt",
-      "boundary": "Local demonstration.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-to-action-theatre.html"
-    },
-    {
-      "route": "/evidence-docket-composer.html",
-      "href": "evidence-docket-composer.html",
-      "title": "Evidence Docket Composer",
-      "group": "Evidence & claims",
-      "audience": "Reviewers",
-      "description": "Turns a claim into a public/private evidence room with replay and risk gates.",
-      "outputArtifact": "Evidence Docket receipt",
-      "boundary": "Public-safe sample claim only.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/evidence-docket-composer.html"
-    },
-    {
-      "route": "/trust-equation-simulator.html",
-      "href": "trust-equation-simulator.html",
-      "title": "Trust Equation Simulator",
-      "group": "Protocol & gates",
-      "audience": "New users / reviewers",
-      "description": "Shows why output becomes institutional work only after proof, validation, settlement, and reuse.",
-      "outputArtifact": "TrustReceipt",
-      "boundary": "Local simulation; no factual certification.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/trust-equation-simulator.html"
-    },
-    {
-      "route": "/proof-settlement-lifecycle.html",
-      "href": "proof-settlement-lifecycle.html",
-      "title": "Proof-Settlement Lifecycle",
-      "group": "Work economy",
-      "audience": "Operators / reviewers",
-      "description": "Walks through Request -> Escrow -> Execute -> Proof -> Validate -> Settle -> Chronicle.",
-      "outputArtifact": "SettlementReceipt",
-      "boundary": "Simulated settlement only; no funds.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-settlement-lifecycle.html"
-    },
-    {
-      "route": "/proof-gradient-arena.html",
-      "href": "proof-gradient-arena.html",
-      "title": "Proof Gradient Arena",
-      "group": "Protocol & gates",
-      "audience": "Governance reviewers",
-      "description": "Shows proof, eval, risk, canary, rollback, scope, and challenge gates selecting what may propagate.",
-      "outputArtifact": "SelectionReceipt",
-      "boundary": "Local simulation.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-gradient-arena.html"
-    },
-    {
-      "route": "/chronicle-compounding-lab.html",
-      "href": "chronicle-compounding-lab.html",
-      "title": "Chronicle Lab",
-      "group": "Protocol & gates",
-      "audience": "Capability builders",
-      "description": "Demonstrates accepted proof entering Chronicle and becoming reusable capability.",
-      "outputArtifact": "ChronicleReceipt",
-      "boundary": "Local simulation.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab.html"
-    },
-    {
-      "route": "/proof-constitution-simulator.html",
-      "href": "proof-constitution-simulator.html",
-      "title": "Proof Constitution Simulator",
-      "group": "Protocol & gates",
-      "audience": "Reviewers / governance",
-      "description": "Makes Aim -> Act -> Prove -> Evolve visible through protocol objects and gates.",
-      "outputArtifact": "ConstitutionReceipt",
-      "boundary": "Local simulation; no authority.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-constitution-simulator.html"
-    },
-    {
-      "route": "/until-done-mission-control.html",
-      "href": "until-done-mission-control.html",
-      "title": "Until-DONE Mission Control",
-      "group": "Capability reuse",
-      "audience": "Operators",
-      "description": "Demonstrates run-to-completion: GoalOS stops at proof, not at output.",
-      "outputArtifact": "MissionReceipt",
-      "boundary": "Local state machine.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/until-done-mission-control.html"
-    },
-    {
-      "route": "/claim-boundary-firewall.html",
-      "href": "claim-boundary-firewall.html",
-      "title": "Claim Firewall",
-      "group": "Evidence & claims",
-      "audience": "Legal / comms reviewers",
-      "description": "Blocks overclaims and separates architecture claims from empirical claims.",
-      "outputArtifact": "BoundaryReceipt",
-      "boundary": "Claim-boundary review only.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/claim-boundary-firewall.html"
-    },
-    {
-      "route": "/replay-falsification-gauntlet.html",
-      "href": "replay-falsification-gauntlet.html",
-      "title": "Replay Gauntlet",
-      "group": "Evidence & claims",
-      "audience": "Reviewers",
-      "description": "Stress-tests proof claims against replay, contradiction, risk, and rollback defects.",
-      "outputArtifact": "FalsificationReceipt",
-      "boundary": "Local simulation.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/replay-falsification-gauntlet.html"
-    },
-    {
-      "route": "/evidence/index.html",
-      "href": "evidence/index.html",
-      "title": "Evidence Room",
-      "group": "Evidence & claims",
-      "audience": "Reviewers",
-      "description": "Persistent evidence entrypoint and public-safe proof context for Evidence Dockets, proof rooms, claim boundaries, and review paths.",
-      "outputArtifact": "EvidenceRoomReceipt",
-      "boundary": "Public proof context; no private evidence submission.",
-      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/evidence/index.html"
-    },
-    {
       "route": "/action-graph-handoff.html",
       "href": "action-graph-handoff.html",
       "title": "Action Graph Handoff",
@@ -417,6 +189,17 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/ascension-inflow-control.html"
     },
     {
+      "route": "/asi-proof-horizon-console.html",
+      "href": "asi-proof-horizon-console.html",
+      "title": "ASI Proof Horizon Console",
+      "group": "Loop & RSI",
+      "audience": "Executives / AI builders / governance reviewers",
+      "description": "A browser-local control room showing how a restartable loop becomes RSI governance, then enters an ASI-horizon proof firewall with evidence, baselines, containment, council review, rollback, and Chronicle gates.",
+      "outputArtifact": "HorizonProofDocket",
+      "boundary": "Governance demonstration only; ASI is treated as a future proof horizon, not an achievement claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/asi-proof-horizon-console.html"
+    },
+    {
       "route": "/assurance.html",
       "href": "assurance.html",
       "title": "Assurance",
@@ -426,6 +209,28 @@
       "outputArtifact": "Assurance summary",
       "boundary": "Internal assurance only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/assurance.html"
+    },
+    {
+      "route": "/chronicle-compounding-lab.html",
+      "href": "chronicle-compounding-lab.html",
+      "title": "Chronicle Lab",
+      "group": "Protocol & gates",
+      "audience": "Capability builders",
+      "description": "Demonstrates accepted proof entering Chronicle and becoming reusable capability.",
+      "outputArtifact": "ChronicleReceipt",
+      "boundary": "Local simulation.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab.html"
+    },
+    {
+      "route": "/claim-boundary-firewall.html",
+      "href": "claim-boundary-firewall.html",
+      "title": "Claim Firewall",
+      "group": "Evidence & claims",
+      "audience": "Legal / comms reviewers",
+      "description": "Blocks overclaims and separates architecture claims from empirical claims.",
+      "outputArtifact": "BoundaryReceipt",
+      "boundary": "Claim-boundary review only.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/claim-boundary-firewall.html"
     },
     {
       "route": "/coordination-engine.html",
@@ -450,6 +255,17 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/coordination-lab.html"
     },
     {
+      "route": "/day-scale-loop-observatory.html",
+      "href": "day-scale-loop-observatory.html",
+      "title": "Day-Scale Loop Observatory",
+      "group": "Loop & RSI",
+      "audience": "Operators / researchers / reviewers",
+      "description": "Shows how a long-running agent loop becomes a restartable, trace-readable, proof-gated institution instead of a fragile prompt session.",
+      "outputArtifact": "LongLoopDocket",
+      "boundary": "Browser-local simulation; no external action, no wallet, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/day-scale-loop-observatory.html"
+    },
+    {
       "route": "/demo-lab.html",
       "href": "demo-lab.html",
       "title": "Demo Lab",
@@ -472,6 +288,17 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/docs.html"
     },
     {
+      "route": "/evidence-docket-composer.html",
+      "href": "evidence-docket-composer.html",
+      "title": "Evidence Docket Composer",
+      "group": "Evidence & claims",
+      "audience": "Reviewers",
+      "description": "Turns a claim into a public/private evidence room with replay and risk gates.",
+      "outputArtifact": "Evidence Docket receipt",
+      "boundary": "Public-safe sample claim only.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/evidence-docket-composer.html"
+    },
+    {
       "route": "/evidence-docket-court.html",
       "href": "evidence-docket-court.html",
       "title": "Evidence Docket Court",
@@ -481,6 +308,17 @@
       "outputArtifact": "Docket review",
       "boundary": "Public-safe review surface.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/evidence-docket-court.html"
+    },
+    {
+      "route": "/evidence/index.html",
+      "href": "evidence/index.html",
+      "title": "Evidence Room",
+      "group": "Evidence & claims",
+      "audience": "Reviewers",
+      "description": "Persistent evidence entrypoint and public-safe proof context for Evidence Dockets, proof rooms, claim boundaries, and review paths.",
+      "outputArtifact": "EvidenceRoomReceipt",
+      "boundary": "Public proof context; no private evidence submission.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/evidence/index.html"
     },
     {
       "route": "/experience-atlas.html",
@@ -525,6 +363,94 @@
       "outputArtifact": "Boundary statement",
       "boundary": "No legal advice.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/legal.html"
+    },
+    {
+      "route": "/loop-contract-theatre.html",
+      "href": "loop-contract-theatre.html",
+      "title": "Loop Contract Theatre",
+      "group": "Loop & RSI",
+      "audience": "Builders / reviewers",
+      "description": "Contract-first long-running loop demonstration: separated roles, virtual disk state, restart, trace reading, proof scoring, harness reduction, and LoopReceipt export.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local demonstration; no external action.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-contract-theatre.html"
+    },
+    {
+      "route": "/loop-evidence-reactor.html",
+      "href": "loop-evidence-reactor.html",
+      "title": "Loop Evidence Reactor",
+      "group": "Loop & RSI",
+      "audience": "AI builders / operators",
+      "description": "Shows long-running agent loops as proof-gated state machines: contract, virtual disk, crash/restart, trace reading, harness deletion, bottleneck exposure, and LoopDocket export.",
+      "outputArtifact": "LoopDocket",
+      "boundary": "Browser-local simulation; no user data, wallet, network, or production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-evidence-reactor.html"
+    },
+    {
+      "route": "/loop-operating-room.html",
+      "href": "loop-operating-room.html",
+      "title": "Loop Operating Room",
+      "group": "Loop & RSI",
+      "audience": "All users / operators / developers",
+      "description": "Turns long-running agent work into a proof-governed loop: contract, roles, traces, restarts, evaluator scores, Evidence Docket, Chronicle, and bottleneck visibility.",
+      "outputArtifact": "LoopReceipt",
+      "boundary": "Browser-local simulation; no wallet, no network, no user data, no external action.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-operating-room.html"
+    },
+    {
+      "route": "/loop-to-asi-governance-corridor.html",
+      "href": "loop-to-asi-governance-corridor.html",
+      "title": "Loop → RSI → ASI Governance Corridor",
+      "group": "Loop & RSI",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "Companion corridor view for capability pressure, proof gates, containment, council review, and human-boundary discipline.",
+      "outputArtifact": "CorridorDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-asi-governance-corridor.html"
+    },
+    {
+      "route": "/loop-to-rsi-control-room.html",
+      "href": "loop-to-rsi-control-room.html",
+      "title": "Loop → RSI Control Room",
+      "group": "Loop & RSI",
+      "audience": "Advanced users / non-technical reviewers / governance operators",
+      "description": "Browser-local control room showing how long-running loops become deterministic RSI governance: contract, separated roles, ECI, baselines, Move-37 gates, replay, dossier, and Chronicle.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local demonstration; no wallet, no network, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-control-room.html"
+    },
+    {
+      "route": "/loop-to-rsi-sovereign-governance.html",
+      "href": "loop-to-rsi-sovereign-governance.html",
+      "title": "From Loop to RSI",
+      "group": "Loop & RSI",
+      "audience": "Advanced builders / governance reviewers",
+      "description": "Shows how a long-running agent loop becomes AGI Alpha RSI: deterministic invention governance with target, emit, filter, atlas, test-plan, eval, insert, promote, replay integrity, ECI, Move-37 skepticism, and dossier export.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local simulation; no outcome authority, no wallet, no network, no production autonomy.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-sovereign-governance.html"
+    },
+    {
+      "route": "/loop-to-rsi-to-asi-superintelligence.html",
+      "href": "loop-to-rsi-to-asi-superintelligence.html",
+      "title": "Loop → RSI → ASI Governance Console",
+      "group": "Loop & RSI",
+      "audience": "Executives / operators / advanced reviewers",
+      "description": "A public-safe console showing how restartable loops become RSI governance and how future ASI-class capability remains inside proof, replay, baseline, persistence, risk, council, and human authority gates.",
+      "outputArtifact": "HorizonDossier",
+      "boundary": "Public-safe browser-local governance demonstration; no achieved ASI claim.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi-to-asi-superintelligence.html"
+    },
+    {
+      "route": "/loop-to-rsi.html",
+      "href": "loop-to-rsi.html",
+      "title": "From Loop to RSI",
+      "group": "Loop & RSI",
+      "audience": "Advanced builders / reviewers",
+      "description": "Shows how long-running agent loops become deterministic RSI governance: target, emit, filter, atlas, test-plan, eval, insert, promote, Move-37 dossier, and outcome authority by evidence.",
+      "outputArtifact": "RSIDossier",
+      "boundary": "Browser-local control-plane simulation; no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/loop-to-rsi.html"
     },
     {
       "route": "/mandate-epoch-clearinghouse.html",
@@ -637,6 +563,50 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-conditioned-router-observatory.html"
     },
     {
+      "route": "/proof-constitution-simulator.html",
+      "href": "proof-constitution-simulator.html",
+      "title": "Proof Constitution Simulator",
+      "group": "Protocol & gates",
+      "audience": "Reviewers / governance",
+      "description": "Makes Aim -> Act -> Prove -> Evolve visible through protocol objects and gates.",
+      "outputArtifact": "ConstitutionReceipt",
+      "boundary": "Local simulation; no authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-constitution-simulator.html"
+    },
+    {
+      "route": "/proof-gradient-arena.html",
+      "href": "proof-gradient-arena.html",
+      "title": "Proof Gradient Arena",
+      "group": "Protocol & gates",
+      "audience": "Governance reviewers",
+      "description": "Shows proof, eval, risk, canary, rollback, scope, and challenge gates selecting what may propagate.",
+      "outputArtifact": "SelectionReceipt",
+      "boundary": "Local simulation.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-gradient-arena.html"
+    },
+    {
+      "route": "/proof-settlement-lifecycle.html",
+      "href": "proof-settlement-lifecycle.html",
+      "title": "Proof-Settlement Lifecycle",
+      "group": "Work economy",
+      "audience": "Operators / reviewers",
+      "description": "Walks through Request -> Escrow -> Execute -> Proof -> Validate -> Settle -> Chronicle.",
+      "outputArtifact": "SettlementReceipt",
+      "boundary": "Simulated settlement only; no funds.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-settlement-lifecycle.html"
+    },
+    {
+      "route": "/proof-to-action-theatre.html",
+      "href": "proof-to-action-theatre.html",
+      "title": "Proof-to-Action Theatre",
+      "group": "Protocol & gates",
+      "audience": "New users",
+      "description": "The cleanest objective -> proof -> governed decision state walkthrough.",
+      "outputArtifact": "Proof-to-action receipt",
+      "boundary": "Local demonstration.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/proof-to-action-theatre.html"
+    },
+    {
       "route": "/real-task-benchmark-bridge.html",
       "href": "real-task-benchmark-bridge.html",
       "title": "Benchmark Bridge",
@@ -657,6 +627,17 @@
       "outputArtifact": "Boundary statement",
       "boundary": "No regulated-service claim.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/regulatory-boundary.html"
+    },
+    {
+      "route": "/replay-falsification-gauntlet.html",
+      "href": "replay-falsification-gauntlet.html",
+      "title": "Replay Gauntlet",
+      "group": "Evidence & claims",
+      "audience": "Reviewers",
+      "description": "Stress-tests proof claims against replay, contradiction, risk, and rollback defects.",
+      "outputArtifact": "FalsificationReceipt",
+      "boundary": "Local simulation.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/replay-falsification-gauntlet.html"
     },
     {
       "route": "/site-atlas.html",
@@ -692,6 +673,17 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     },
     {
+      "route": "/superintelligence-proof-governance-console.html",
+      "href": "superintelligence-proof-governance-console.html",
+      "title": "Superintelligence Proof Governance Console",
+      "group": "Loop & RSI",
+      "audience": "Executives / researchers / reviewers",
+      "description": "A browser-local GoalOS control room for the Loop → RSI → ASI horizon: evidence contact, baselines, replay, Move-37 stress, council review, capacity allocation, and human boundary gates.",
+      "outputArtifact": "SuperintelligenceGovernanceDocket",
+      "boundary": "Public-safe governance simulation only; no achieved ASI claim and no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/superintelligence-proof-governance-console.html"
+    },
+    {
       "route": "/terms.html",
       "href": "terms.html",
       "title": "Terms",
@@ -714,6 +706,28 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/third-party-responsibility.html"
     },
     {
+      "route": "/trust-equation-simulator.html",
+      "href": "trust-equation-simulator.html",
+      "title": "Trust Equation Simulator",
+      "group": "Protocol & gates",
+      "audience": "New users / reviewers",
+      "description": "Shows why output becomes institutional work only after proof, validation, settlement, and reuse.",
+      "outputArtifact": "TrustReceipt",
+      "boundary": "Local simulation; no factual certification.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/trust-equation-simulator.html"
+    },
+    {
+      "route": "/until-done-mission-control.html",
+      "href": "until-done-mission-control.html",
+      "title": "Until-DONE Mission Control",
+      "group": "Capability reuse",
+      "audience": "Operators",
+      "description": "Demonstrates run-to-completion: GoalOS stops at proof, not at output.",
+      "outputArtifact": "MissionReceipt",
+      "boundary": "Local state machine.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/until-done-mission-control.html"
+    },
+    {
       "route": "/verification.html",
       "href": "verification.html",
       "title": "Verification",
@@ -727,5 +741,6 @@
   ],
   "completeRouteRecovery": "PASS",
   "institutionalExperienceCommand": "PASS",
-  "publicHtmlRouteCount": 63
+  "publicHtmlRouteCount": 64,
+  "completeExperienceRestoration": "PASS"
 }

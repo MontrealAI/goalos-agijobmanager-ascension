@@ -1,0 +1,27 @@
+{
+  "receiptType": "GoalOSExperienceCommandReceipt",
+  "version": "v58",
+  "route": "/experience-command.html",
+  "purpose": "One command-grade route for every preserved public proof institution surface.",
+  "publicSafe": {
+    "noAccount": true,
+    "noForm": true,
+    "noWallet": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noNetworkRequestFromDemo": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "journeys": [
+    "first-time",
+    "reviewer",
+    "loop",
+    "rsi",
+    "asi-horizon",
+    "legal-boundary"
+  ],
+  "outputArtifact": "ExperienceCommandReceipt"
+}

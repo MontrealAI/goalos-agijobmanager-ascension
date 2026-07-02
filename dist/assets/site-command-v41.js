@@ -42,6 +42,7 @@
     ['Documentation','docs.html','Guide','Documentation entrypoint for users who want the public repo, proof doctrine, route map, and implementation guidance.'],
     ['Evidence Docket Court','evidence-docket-court.html','Evidence & claims','Courtroom metaphor for evaluating claims against evidence, risk, and replay.'],
     ['Experience Atlas','experience-atlas.html','Start here','Advanced journey map for demos, proof rooms, and boundary pages.'],
+    ['Experience Command','experience-command.html','Start here','The single command-grade route for every preserved demo, proof room, loop theatre, RSI console, ASI-horizon boundary, legal page, archive, and evidence surface.'],
     ['Expert Console','expert-console.html','Consoles','Separated expert surface with explicit human authority boundaries.'],
     ['Expert Mainnet Console','expert-mainnet-console.html','Consoles','Separated Mainnet operations chamber requiring deliberate human wallet authority if used.'],
     ['Legal Boundary','legal.html','Assurance & boundaries','Plain-language legal and data-zero boundary.'],

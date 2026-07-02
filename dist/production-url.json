@@ -60,6 +60,9 @@
   "asiProofHorizonConsole": "PASS",
   "repositoryPublicTrustAsiProofHorizonV53": "PASS",
   "superintelligenceProofGovernanceConsole": "PASS",
+  "completeRouteRecovery": "PASS",
+  "institutionalExperienceCommand": "PASS",
+  "completeExperienceRestoration": "PASS",
   "repositoryPublicTrustSuperintelligenceProofGovernanceV54": "PASS",
   "repositoryPublicTrustLoopToAsiV52": "PASS",
   "repositoryPublicTrustLoopToRsiControlRoomV51": "PASS",
@@ -85,9 +88,9 @@
   "singleNativeHeader": "PASS",
   "exactRouteCount": "PASS",
   "vendoredDependencies": "PASS",
-  "publicHtmlRouteCount": 63,
+  "publicHtmlRouteCount": 64,
   "canonicalRouteManifest": "data/canonical-route-manifest-v46.json",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
     "v46-repository-public-trust-compatibility-failsafe",
@@ -120,10 +123,10 @@
     "v54-superintelligence-proof-governance-console",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
     "v57-complete-route-recovery",
-    "v56-repository-website-institutional-excellence"
+    "v56-repository-website-institutional-excellence",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
+    "v58-complete-experience-restoration-command"
   ],
-  "version": "v57",
-  "routeCount": 63,
-  "completeRouteRecovery": "PASS",
-  "institutionalExperienceCommand": "PASS"
+  "version": "v58",
+  "routeCount": 64
 }

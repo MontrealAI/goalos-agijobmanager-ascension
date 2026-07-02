@@ -33,6 +33,7 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v55.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v56.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v57.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v58.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/capability-conformance.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab-demo.json</loc></url>
@@ -54,6 +55,8 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/evidence-docket-composer.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/evidence-docket-court.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-atlas.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-command-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-command.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-concierge.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-hub-catalog.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/experience-hub.html</loc></url>
@@ -133,6 +136,7 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v53.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v54.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v57.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-v58.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-rehydration-v39.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-experience-stream-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-experience-stream.html</loc></url>

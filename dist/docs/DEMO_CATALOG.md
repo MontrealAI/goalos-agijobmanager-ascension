@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **63 canonical public routes** from `data/canonical-route-manifest-v57.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **64 canonical public routes** from `data/canonical-route-manifest-v58.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -140,3 +140,8 @@ Route: `superintelligence-proof-governance-console.html`. Shows how a restartabl
 ## v57 complete route recovery
 
 The public website now includes a static-first [Complete Route Index](../site/complete-route-index.html) generated from the actual site HTML and the canonical route manifest. It includes preserved archives, nested evidence pages, loop theatres, expert surfaces, legal boundaries, and every current Loop → RSI → ASI horizon console.
+
+
+## v58 complete experience command
+
+The public website includes [Experience Command](../site/experience-command.html), a single command-grade route for every preserved public demo, proof room, loop/RSI console, ASI-horizon boundary, archive, legal boundary, and evidence surface.
