@@ -1,6 +1,6 @@
 # Canonical Proof Institution Finalization v59
 
-GoalOS AGIJobManager Ascension now exposes **66 canonical public routes** through one manifest, one complete index, one command layer, and one proof-institution route.
+GoalOS AGIJobManager Ascension now exposes **69 canonical public routes** through one manifest, one complete index, one command layer, and one proof-institution route.
 
 ## Route
 

@@ -1,6 +1,6 @@
 {
   "version": "v65-take-care-console",
-  "release": "v60-ask-goalos-autonomous-question-router v65-take-care-console",
+  "release": "v60-ask-goalos-autonomous-question-router v65-take-care-console v65-take-care-console",
   "routeCount": 69,
   "pages": [
     {

@@ -11,7 +11,7 @@
     "noCookies": true,
     "noPublicWallet": true
   },
-  "release": "v60-ask-goalos-autonomous-question-router v65-take-care-console",
+  "release": "v60-ask-goalos-autonomous-question-router v65-take-care-console v65-take-care-console",
   "releaseAliases": [
     "v63-mission-autopilot",
     "v62-ask-goalos-sovereign-router",

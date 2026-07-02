@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **66 public routes** from `data/canonical-route-manifest.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **69 public routes** from `data/canonical-route-manifest.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -154,6 +154,21 @@ The public website now includes a static-first [Complete Route Index](../site/co
 The public website includes [Experience Command](../site/experience-command.html), a single command-grade route for every preserved public demo, proof room, loop/RSI console, ASI-horizon boundary, archive, legal boundary, and evidence surface.
 
 
-## Ask GoalOS Concierge v60
+## Ask GoalOS Sovereign Router v62
 
-A browser-local question router is available at [`ask-goalos.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html). It answers public-site questions from static route/doctrine data and routes users to the correct proof page without account, wallet, analytics, cookies, browser storage, or network request.
+A browser-local question router is available at [`ask-goalos.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html). It answers from local route/doctrine data, explains the best route, shows alternatives, provides confidence, emits a `GoalOSQuestionRoutingReceipt`, and navigates only on explicit user request. No account, form submission, wallet, analytics, cookies, browser storage, or network request.
+
+
+## GoalOS Mission Autopilot v63
+
+`goalos-mission-autopilot.html` is the separate high-level console for users who want to type one objective and let GoalOS assemble the proof mission: Mission Contract, Evidence Docket outline, governed decision state, Action Graph, Chronicle entry, and local receipt.
+
+
+## GoalOS Command Console
+
+Front-and-center command surface for non-technical and advanced users. Type a public-safe objective; GoalOS drafts the proof mission, selects the right route, and emits a local command receipt.
+
+
+## v65 GoalOS Take-Care Console
+
+Start here for the simplest user experience: [`goalos-take-care.html`](../site/goalos-take-care.html). Type what you want; GoalOS locally prepares a mission, proof plan, route handoff, and `GoalOSTakeCareReceipt`. Canonical route count: **69** public routes.

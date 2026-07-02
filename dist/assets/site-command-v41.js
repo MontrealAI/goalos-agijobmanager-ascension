@@ -1,8 +1,10 @@
 (()=>{
   const ROUTES=[
     ["Home", "index.html", "Start here", "The public front door for GoalOS AGIJobManager Ascension: identity, posture, proof-settlement institution, and guided paths."],
+    ["GoalOS Take-Care Console", "goalos-take-care.html", "Start here", "The simplest front door: type what you want; GoalOS locally prepares the mission, proof plan, verifier mesh, route handoff, and TakeCareReceipt."],
     ["Canonical Proof Institution", "canonical-proof-institution.html", "Start here", "Final public proof-institution command room: route integrity, proof doctrine, public-safe boundary, documentation spine, and next best user paths in one place."],
     ["Ask GoalOS Concierge", "ask-goalos.html", "Start here", "Browser-local question router that answers public-site questions instantly and routes visitors to the right proof page, console, evidence room, legal boundary, or route index without sending data anywhere."],
+    ["GoalOS Mission Autopilot", "goalos-mission-autopilot.html", "Start here", "Type one public-safe objective and let GoalOS assemble the Mission Contract, proof plan, Evidence Docket outline, governed decision state, Action Graph, Chronicle entry, and local MissionAutopilotReceipt."],
     ["Experience Command", "experience-command.html", "Start here", "The single command-grade route for every preserved demo, proof room, loop theatre, RSI console, ASI-horizon boundary, legal page, archive, and evidence surface."],
     ["Complete Route Index", "complete-route-index.html", "Start here", "Single public-safe route recovery index for every preserved page, demo, proof room, legal boundary, console, atlas, and archive route."],
     ["Experience Concierge", "experience-concierge.html", "Start here", "Guides each visitor to the right proof path by intent."],
@@ -80,3 +82,5 @@
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install); else install();
 })();
+
+/* v65 route: GoalOS Take-Care Console -> goalos-take-care.html */

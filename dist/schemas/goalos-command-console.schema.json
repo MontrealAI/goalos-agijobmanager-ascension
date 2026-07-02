@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOSCommandReceipt",
+  "type": "object",
+  "required": [
+    "receiptType",
+    "version",
+    "objective",
+    "recommendedRoute",
+    "missionContract",
+    "evidenceDocket",
+    "decisionState",
+    "boundary"
+  ],
+  "properties": {
+    "receiptType": {
+      "const": "GoalOSCommandReceipt"
+    },
+    "version": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "recommendedRoute": {
+      "type": "object"
+    },
+    "alternativeRoutes": {
+      "type": "array"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "missionContract": {
+      "type": "object"
+    },
+    "evidenceDocket": {
+      "type": "array"
+    },
+    "verifierMesh": {
+      "type": "array"
+    },
+    "decisionState": {
+      "type": "object"
+    },
+    "boundary": {
+      "type": "object"
+    }
+  }
+}
