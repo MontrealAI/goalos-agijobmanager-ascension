@@ -1,4 +1,4 @@
-name: GoalOS AGIJobManager Ascension Take-Care Console v65 Publisher / GoalOS Command Console v64 Publisher / Mission Autopilot v63 Publisher / Compatibility Failsafe v46
+name: GoalOS AGIJobManager Ascension Care Command v66 Publisher / Take-Care v65 Publisher / Ask GoalOS v62 / Compatibility Failsafe v46
 # GoalOS Command Console v64. Mission Autopilot v63. Ask GoalOS Sovereign Router v62. Ask GoalOS Route Count Self-Healing v61. Ask GoalOS Autonomous Question Router v60. Canonical Proof Institution Finalization v59. Historical compatibility labels intentionally preserved for public-trust tests: Complete Experience Restoration v58; Complete Route Recovery v57; Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
 
 on:
@@ -58,7 +58,7 @@ jobs:
   # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v59.mjs tools/failsafe-bootstrap-v58.mjs tools/failsafe-bootstrap-v54.mjs tools/failsafe-bootstrap-v53.mjs tools/failsafe-bootstrap-v52.mjs tools/failsafe-bootstrap-v51.mjs tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
   # Dynamic guarded runners: tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py
   build-assure-publish:
-    name: Build, assure, and publish v65 Take-Care Console public proof institution
+    name: Build, assure, and publish v66 Care Command public proof institution
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -77,15 +77,15 @@ jobs:
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
           mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets schemas
-          for file in tools/failsafe-bootstrap-v65.mjs tools/goalos-take-care-v65-kernel.mjs tools/public-trust-checker-v65.mjs tools/release-compatibility-harmonizer-v65.mjs tests/goalos-take-care-v65.test.mjs tools/route-count-harmonizer-v65.mjs tools/route-recovery-v65.mjs tools/failsafe-bootstrap-v64.mjs tools/goalos-command-console-v64-kernel.mjs tools/public-trust-checker-v64.mjs tools/release-compatibility-harmonizer-v64.mjs tests/goalos-command-console-v64.test.mjs tools/route-count-harmonizer-v64.mjs tools/route-recovery-v64.mjs tools/failsafe-bootstrap-v63.mjs tools/mission-autopilot-v63-kernel.mjs tools/public-trust-checker-v63.mjs tools/release-compatibility-harmonizer-v63.mjs tests/mission-autopilot-v63.test.mjs tools/route-count-harmonizer-v63.mjs tools/failsafe-bootstrap-v62.mjs tools/ask-goalos-sovereign-router-v62-kernel.mjs tools/public-trust-checker-v62.mjs tools/release-compatibility-harmonizer-v62.mjs tests/ask-goalos-sovereign-router-v62.test.mjs tools/failsafe-bootstrap-v61.mjs tools/route-count-harmonizer-v61.mjs tools/route-recovery-v61.mjs tools/release-compatibility-harmonizer-v61.mjs tools/public-trust-checker-v61.mjs tools/failsafe-bootstrap-v60.mjs tools/failsafe-bootstrap-v59.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v60.mjs tools/release-compatibility-harmonizer-v60.mjs tools/route-recovery-v59.mjs tools/release-compatibility-harmonizer-v59.mjs tools/route-recovery-v58.mjs tools/release-compatibility-harmonizer-v58.mjs tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
+          for file in tools/failsafe-bootstrap-v66.mjs tools/goalos-care-command-v66-kernel.mjs tools/public-trust-checker-v66.mjs tools/release-compatibility-harmonizer-v66.mjs tests/goalos-care-command-v66.test.mjs tools/route-count-harmonizer-v66.mjs tools/failsafe-bootstrap-v65.mjs tools/goalos-take-care-v65-kernel.mjs tools/public-trust-checker-v65.mjs tools/release-compatibility-harmonizer-v65.mjs tests/goalos-take-care-v65.test.mjs tools/route-count-harmonizer-v65.mjs tools/route-recovery-v65.mjs tools/failsafe-bootstrap-v64.mjs tools/goalos-command-console-v64-kernel.mjs tools/public-trust-checker-v64.mjs tools/release-compatibility-harmonizer-v64.mjs tests/goalos-command-console-v64.test.mjs tools/route-count-harmonizer-v64.mjs tools/route-recovery-v64.mjs tools/failsafe-bootstrap-v63.mjs tools/mission-autopilot-v63-kernel.mjs tools/public-trust-checker-v63.mjs tools/release-compatibility-harmonizer-v63.mjs tests/mission-autopilot-v63.test.mjs tools/route-count-harmonizer-v63.mjs tools/failsafe-bootstrap-v62.mjs tools/ask-goalos-sovereign-router-v62-kernel.mjs tools/public-trust-checker-v62.mjs tools/release-compatibility-harmonizer-v62.mjs tests/ask-goalos-sovereign-router-v62.test.mjs tools/failsafe-bootstrap-v61.mjs tools/route-count-harmonizer-v61.mjs tools/route-recovery-v61.mjs tools/release-compatibility-harmonizer-v61.mjs tools/public-trust-checker-v61.mjs tools/failsafe-bootstrap-v60.mjs tools/failsafe-bootstrap-v59.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v60.mjs tools/release-compatibility-harmonizer-v60.mjs tools/route-recovery-v59.mjs tools/release-compatibility-harmonizer-v59.mjs tools/route-recovery-v58.mjs tools/release-compatibility-harmonizer-v58.mjs tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
             if [ ! -f "$file" ]; then
               echo "Missing required helper: $file. Upload the complete v63 overlay contents, not the ZIP file itself." >&2
               exit 1
             fi
           done
           npm run bootstrap
-          node tools/route-count-harmonizer-v65.mjs
-          node tools/release-compatibility-harmonizer-v65.mjs
+          node tools/route-count-harmonizer-v66.mjs
+          node tools/release-compatibility-harmonizer-v66.mjs
 
       - name: Verify implementation, docs, metadata, routes, accessibility, public-safe boundary, and dynamic tests
         shell: bash
@@ -116,7 +116,7 @@ jobs:
         run: |
           set -euo pipefail
           npm run build
-          node tools/route-count-harmonizer-v65.mjs
+          node tools/route-count-harmonizer-v66.mjs
           node tools/route-manifest-integrity.mjs
           node tools/canonical-proof-institution-v59-kernel.mjs
           node tools/ask-goalos-concierge-v60-kernel.mjs
@@ -124,13 +124,15 @@ jobs:
           node tools/mission-autopilot-v63-kernel.mjs
           node tools/goalos-command-console-v64-kernel.mjs
           node tools/goalos-take-care-v65-kernel.mjs
-          node tools/public-trust-checker-v65.mjs
+          node tools/goalos-care-command-v66-kernel.mjs
+          node tools/public-trust-checker-v66.mjs
           test -f dist/index.html
           test -f dist/canonical-proof-institution.html
           test -f dist/ask-goalos.html
           test -f dist/goalos-mission-autopilot.html
           test -f dist/goalos-command-console.html
           test -f dist/goalos-take-care.html
+          test -f dist/goalos-care-command.html
           test -f dist/command-center.html
           test -f dist/production-url.json
 
@@ -146,7 +148,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate GoalOS Take-Care Console v65 artifacts"
+          git commit -m "Generate GoalOS Care Command v66 artifacts"
           for attempt in 1 2 3; do
             git fetch origin main
             if git pull --rebase origin main && git push origin HEAD:main; then
