@@ -2,7 +2,7 @@
 
 This release restores complete route visibility across the public website. It preserves all previously built pages and adds a static-first Complete Route Index.
 
-Canonical route count: 64.
+Canonical route count: 65.
 
 ## Reinstated into navigation
 

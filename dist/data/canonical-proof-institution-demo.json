@@ -1,0 +1,41 @@
+{
+  "receiptType": "GoalOSCanonicalInstitutionReceipt",
+  "version": "v59",
+  "routeCount": 65,
+  "publicSafe": {
+    "noAccount": true,
+    "noForm": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetworkRequestFromDemo": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataWanted": true
+  },
+  "doctrine": [
+    "Objective",
+    "Mission Contract",
+    "Autonomous Work",
+    "Verification",
+    "Evidence Docket",
+    "Governed Decision State",
+    "Action Graph",
+    "Chronicle",
+    "Reusable Capability"
+  ],
+  "institutionChecks": [
+    "Every source HTML page is represented in the canonical route manifest",
+    "Route counts are manifest-derived",
+    "Primary navigation points to canonical proof institution",
+    "Command layer searches all public routes",
+    "All public demos remain public-safe and claim-bounded"
+  ],
+  "canonicalIdentities": {
+    "agijobmanager": "0xB3AAeb69b630f0299791679c063d68d6687481d1",
+    "agialpha": "0xA61a3B3a130a9c20768EEBF97E21515A6046a1fA",
+    "chainId": 1
+  }
+}

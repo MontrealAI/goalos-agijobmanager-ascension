@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **64 canonical public routes** from `data/canonical-route-manifest-v58.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **65 public routes** from `data/canonical-route-manifest-v58.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -60,6 +60,13 @@ Start with [Experience Concierge](../site/experience-concierge.html). It guides 
 | [`/trust-equation-simulator.html`](../site/trust-equation-simulator.html) | New users / reviewers | Shows why output becomes institutional work only after proof, validation, settlement, and reuse. | TrustReceipt | Local simulation; no factual certification. |
 | [`/until-done-mission-control.html`](../site/until-done-mission-control.html) | Operators | Demonstrates run-to-completion: GoalOS stops at proof, not at output. | MissionReceipt | Local state machine. |
 | [`/verification.html`](../site/verification.html) | Developers / reviewers | Explains verification scripts, build checks, and claim-boundary tests. | Verification summary | No external audit claim. |
+
+## Canonical Proof Institution
+
+| Route | User type | Purpose | Output artifact | Safety posture |
+|---|---|---|---|---|
+| `/canonical-proof-institution.html` | Everyone, reviewers, operators | Final command room for route integrity, proof doctrine, public-safe boundaries, and next-best paths across the full public institution. | `CanonicalInstitutionReceipt` | Browser-local; no account, no form, no wallet, no analytics, no cookies, no browser storage, no user data, no production authority. |
+
 
 ## What a good public demo must show
 

@@ -38,10 +38,9 @@
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-superintelligence-proof-governance-console-compatibility-failsafe",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
-    "v59-canonical-proof-institution-finalization",
-    "v57-complete-route-recovery-and-institutional-experience-command"
+    "v59-canonical-proof-institution-finalization"
   ],
-  "builtAt": "2026-07-02T04:59:05.425373Z",
+  "builtAt": "2026-07-02T14:11:02.888406Z",
   "files": [
     {
       "path": ".nojekyll",
@@ -1060,7 +1059,7 @@
     },
     {
       "path": "data/failsafe-bootstrap-v54.json",
-      "sha256": "bb28c29d10c6f41ce6d7f48b6026ea20e3f2bfed575ad279d37d3f73d945d38d",
+      "sha256": "1b0963810bd4816288d83ea72f2eeb4aace4140e25dd5156322458f9e2e73b67",
       "bytes": 107
     },
     {
@@ -2495,7 +2494,7 @@
     },
     {
       "path": "docs/reports/REPOSITORY_PUBLIC_TRUST_V43_REPORT.json",
-      "sha256": "4882af0857c8e898e893eb77ff41d7a9451a3f6955e16afde5ec4141b630b3e8",
+      "sha256": "14fc385112def44c3f417fa5108ce7b6351ecb3798837f73b57c71804e6ccf18",
       "bytes": 115
     },
     {
@@ -3140,7 +3139,7 @@
     },
     {
       "path": "failsafe-bootstrap-v54.json",
-      "sha256": "bb28c29d10c6f41ce6d7f48b6026ea20e3f2bfed575ad279d37d3f73d945d38d",
+      "sha256": "1b0963810bd4816288d83ea72f2eeb4aace4140e25dd5156322458f9e2e73b67",
       "bytes": 107
     },
     {

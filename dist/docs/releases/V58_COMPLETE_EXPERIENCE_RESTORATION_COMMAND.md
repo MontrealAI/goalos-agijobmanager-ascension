@@ -2,7 +2,7 @@
 
 This release adds `/experience-command.html` and restores every public route into one clear user journey system.
 
-Canonical public route count: 64.
+Canonical public route count: 65.
 
 ## Assurance
 

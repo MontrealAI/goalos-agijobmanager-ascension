@@ -29,7 +29,10 @@
     "v58-complete-experience-restoration-command",
     "v58-complete-experience-command",
     "v57-complete-route-recovery",
-    "v59-canonical-proof-institution-finalization"
+    "v59-canonical-proof-institution-finalization",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
+    "v42-institutional-website-finalization",
+    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command"
   ],
   "pages": [
     {
@@ -747,5 +750,10 @@
       "boundary": "Public-safe route plus separated expert handoff.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
-  ]
+  ],
+  "completeRouteRecovery": "PASS",
+  "institutionalExperienceCommand": "PASS",
+  "publicHtmlRouteCount": 65,
+  "completeExperienceRestoration": "PASS",
+  "canonicalProofInstitution": "PASS"
 }
