@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "routeCount": 66,
+  "routeCount": 70,
   "checks": 12,
   "release": "v43-repository-public-trust-finalization"
 }
