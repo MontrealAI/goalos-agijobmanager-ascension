@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const fail=m=>{console.error('FAIL · ask-goalos v62: '+m);process.exit(1)};
+const files=['site/ask-goalos.html','site/assets/ask-goalos.css','site/assets/ask-goalos.js','site/assets/ask-goalos-data.js','site/assets/ask-goalos-page.js','site/assets/ask-goalos-page.css','data/ask-goalos-routing.json','docs/ASK_GOALOS_SOVEREIGN_ROUTER_V62.md','docs/releases/V62_ASK_GOALOS_SOVEREIGN_ROUTER.md'];
+for(const f of files) if(!fs.existsSync(f)) fail('missing '+f);
+const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
+if(Number(manifest.routeCount)<66) fail('expected at least 66 routes, got '+manifest.routeCount);
+if(!manifest.pages.some(p=>p.href==='ask-goalos.html')) fail('ask-goalos route missing from canonical manifest');
+const routing=JSON.parse(fs.readFileSync('data/ask-goalos-routing.json','utf8'));
+if(!String(routing.version||'').includes('v62') && !String(routing.version||'').includes('v64') && !String(routing.version||'').includes('v65')) fail('routing data version not v62-compatible');
+if(Number(routing.routeCount)<66 || Number(routing.routeCount)!==routing.routes.length) fail('routing data route count mismatch');
+for(const id of ['start','proof','settlement','loop','rsi','asi','legal','agialpha','all']) if(!routing.intents.some(i=>i.id===id)) fail('missing intent '+id);
+const page=fs.readFileSync('site/ask-goalos.html','utf8');
+for(const phrase of ['Sovereign question router · v62','QuestionRoutingReceipt','No network request','No browser storage','No user data retained','opens a page only when']) if(!page.includes(phrase)) fail('ask page missing '+phrase);
+const js=fs.readFileSync('site/assets/ask-goalos.js','utf8')+'\n'+fs.readFileSync('site/assets/ask-goalos-page.js','utf8');
+for(const phrase of ['GOALOS_ASK_ROUTER_V62','GoalOSQuestionRoutingReceipt','confidence','topRoutes','intentScores']) if(!js.includes(phrase)) fail('router missing '+phrase);
+for(const forbidden of ['fetch(','XMLHttpRequest','localStorage.setItem','sessionStorage.setItem','document.cookie','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','navigator.sendBeacon']) if(js.includes(forbidden)) fail('forbidden primitive '+forbidden);
+console.log('PASS · Ask GoalOS Sovereign Router v62 is local, richer, route-aware, and public-safe');

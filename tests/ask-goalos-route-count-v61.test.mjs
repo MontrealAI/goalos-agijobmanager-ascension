@@ -3,7 +3,7 @@ import { execFileSync } from 'node:child_process';
 const fail = m => { console.error('FAIL · Ask GoalOS route-count v61: ' + m); process.exit(1); };
 const manifest = JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
 const count = (manifest.pages || []).length;
-if (count !== 66) fail(`expected 66 canonical routes, found ${count}`);
+if (count < 66) fail(`expected at least 66 canonical routes, found ${count}`);
 execFileSync(process.execPath, ['tools/route-count-harmonizer-v61.mjs'], {stdio:'inherit'});
 for (const file of ['README.md', 'docs/DEMO_CATALOG.md']) {
   const text = fs.readFileSync(file, 'utf8');

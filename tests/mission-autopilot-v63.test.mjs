@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const fail=m=>{console.error('FAIL · Mission Autopilot v63 test: '+m);process.exit(1)};
+for(const f of ['site/goalos-mission-autopilot.html','site/assets/mission-autopilot.css','site/assets/mission-autopilot.js','data/mission-autopilot-demo.json','schemas/mission-autopilot.schema.json','docs/MISSION_AUTOPILOT_V63.md']) if(!fs.existsSync(f)) fail('missing '+f);
+const html=fs.readFileSync('site/goalos-mission-autopilot.html','utf8');
+for(const phrase of ['GoalOS Mission Autopilot','Describe what you want','MissionAutopilotReceipt','Let GoalOS take care of it','No network request','No user data retained','No production authority']) if(!html.includes(phrase)) fail('page missing '+phrase);
+for(const ref of ['assets/mission-autopilot.css','assets/mission-autopilot.js','assets/ask-goalos.js','assets/site-command-v39.js']) if(!html.includes(ref)) fail('page missing asset '+ref);
+const js=fs.readFileSync('site/assets/mission-autopilot.js','utf8');
+for(const phrase of ['GoalOSMissionAutopilotReceipt','GOALOS_MISSION_AUTOPILOT_V63','Mission Contract','Evidence Docket','Chronicle']) if(!js.includes(phrase)) fail('js missing '+phrase);
+for(const forbidden of ['fetch(','XMLHttpRequest','localStorage.setItem','sessionStorage.setItem','document.cookie','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','navigator.sendBeacon']) if(js.includes(forbidden)) fail('forbidden primitive '+forbidden);
+const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
+if(!manifest.pages.some(p=>p.href==='goalos-mission-autopilot.html')) fail('manifest missing mission autopilot route');
+if(Number(manifest.routeCount)!==(manifest.pages||[]).length) fail('manifest routeCount mismatch');
+if(Number(manifest.routeCount)<67) fail('manifest route count below v63 expectation');
+console.log('PASS · Mission Autopilot v63 page, assets, schema, manifest, and public-safe boundary verified');

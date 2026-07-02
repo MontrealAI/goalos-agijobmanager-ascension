@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const fail=m=>{console.error('FAIL · GoalOS Command Console v64 test: '+m);process.exit(1)};
+for(const f of ['site/goalos-command-console.html','site/assets/goalos-command-console.css','site/assets/goalos-command-console.js','data/goalos-command-console-demo.json','schemas/goalos-command-console.schema.json','docs/GOALOS_COMMAND_CONSOLE_V64.md','docs/releases/V64_GOALOS_COMMAND_CONSOLE.md']) if(!fs.existsSync(f)) fail('missing '+f);
+const html=fs.readFileSync('site/goalos-command-console.html','utf8');
+for(const phrase of ['What do you want GoalOS to take care of?','GoalOSCommandReceipt','Let GoalOS take care of it','No browser storage','No user data retained','No production authority']) if(!html.includes(phrase)) fail('page missing '+phrase);
+const js=fs.readFileSync('site/assets/goalos-command-console.js','utf8');
+for(const forbidden of ['fetch(','XMLHttpRequest','localStorage.setItem','sessionStorage.setItem','document.cookie','navigator.sendBeacon','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','<form']) if(js.includes(forbidden)) fail('forbidden primitive '+forbidden);
+const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
+if(!manifest.pages.some(p=>p.href==='goalos-command-console.html')) fail('canonical manifest missing route');
+if(manifest.routeCount!==manifest.pages.length) fail('route count mismatch');
+if(manifest.routeCount<68) fail('route count below v64 expectation');
+const index=fs.readFileSync('site/index.html','utf8');
+if(!index.includes('data-home-console')) fail('homepage missing front-and-center command box');
+console.log('PASS · GoalOS Command Console v64 page, homepage command box, data, schema, and public-safe guard verified');
