@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montrealai.github.io/goalos-agijobmanager-ascension/schemas/mission-autopilot.schema.json",
+  "title": "GoalOS Mission Autopilot Receipt",
+  "type": "object",
+  "required": [
+    "receiptType",
+    "version",
+    "contract",
+    "docket",
+    "decisionState",
+    "actionGraph",
+    "boundary"
+  ],
+  "properties": {
+    "receiptType": {
+      "const": "GoalOSMissionAutopilotReceipt"
+    },
+    "version": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "contract": {
+      "type": "object"
+    },
+    "docket": {
+      "type": "array"
+    },
+    "decisionState": {
+      "type": "object"
+    },
+    "actionGraph": {
+      "type": "array"
+    },
+    "chronicleEntry": {
+      "type": "object"
+    },
+    "boundary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
