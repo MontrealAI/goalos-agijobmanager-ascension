@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const manifest = JSON.parse(fs.readFileSync('data/canonical-route-manifest.json', 'utf8'));
+const count = (manifest.pages || manifest.routes || []).length;
+assert.equal(manifest.routeCount, count, 'manifest routeCount should equal current page count');
+const catalog = fs.readFileSync('docs/DEMO_CATALOG.md', 'utf8');
+assert.match(catalog, new RegExp(`\\*\\*${count} public routes\\*\\*`), 'demo catalog should advertise current route count');
+assert.doesNotMatch(catalog, /65 public routes/, 'demo catalog should not advertise stale v59 route count after Ask GoalOS route was added');
+assert.match(catalog, /ask-goalos\.html/, 'demo catalog should include Ask GoalOS route');
+const readme = fs.readFileSync('README.md', 'utf8');
+assert.match(readme, new RegExp(`${count} canonical public routes|${count} public routes`), 'README should include current route count');
+console.log(`PASS · Ask GoalOS route-count failsafe v61 protects ${count} canonical routes`);

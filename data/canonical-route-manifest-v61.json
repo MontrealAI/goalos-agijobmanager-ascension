@@ -1,168 +1,27 @@
 {
-  "title": "GoalOS AGIJobManager Ascension Complete Route Catalog",
   "version": "v61",
-  "release": "v60-ask-goalos-autonomous-question-router",
-  "routeCount": 66,
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "routeCount": 66,
+  "generatedFrom": "v60-ask-goalos-autonomous-question-router",
   "posture": {
     "browserLocal": true,
     "publicSafe": true,
-    "noWallet": true,
     "noUserDataWanted": true,
-    "noBlankFallbacks": true
+    "noAnalytics": true,
+    "noCookies": true,
+    "noPublicWallet": true
   },
-  "primaryPaths": [
-    {
-      "title": "Ask GoalOS Concierge",
-      "href": "ask-goalos.html",
-      "description": "Ask a public-site question and get routed to the right page."
-    },
-    {
-      "id": "canonical-proof-institution",
-      "title": "Canonical Proof Institution",
-      "time": "1 min",
-      "href": "canonical-proof-institution.html",
-      "steps": [
-        "canonical-proof-institution.html",
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
-    },
-    {
-      "id": "experience-command",
-      "title": "Experience Command",
-      "time": "1 min",
-      "href": "experience-command.html",
-      "steps": [
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
-    },
-    {
-      "id": "first-time",
-      "title": "First-time visitor",
-      "time": "3 min",
-      "href": "command-center.html#first-time",
-      "steps": [
-        "start.html",
-        "trust-equation-simulator.html",
-        "proof-to-action-theatre.html",
-        "evidence-docket-composer.html"
-      ]
-    },
-    {
-      "id": "reviewer",
-      "title": "Reviewer / auditor",
-      "time": "5 min",
-      "href": "complete-route-index.html#reviewer",
-      "steps": [
-        "complete-route-index.html",
-        "evidence/index.html",
-        "claim-boundary-firewall.html",
-        "verification.html"
-      ]
-    },
-    {
-      "id": "loop-rsi",
-      "title": "Loop → RSI path",
-      "time": "8 min",
-      "href": "loop-to-rsi-control-room.html",
-      "steps": [
-        "loop-contract-theatre.html",
-        "loop-operating-room.html",
-        "loop-evidence-reactor.html",
-        "loop-to-rsi-control-room.html"
-      ]
-    },
-    {
-      "id": "horizon",
-      "title": "ASI horizon governance",
-      "time": "10 min",
-      "href": "superintelligence-proof-governance-console.html",
-      "steps": [
-        "loop-to-rsi-to-asi-superintelligence.html",
-        "asi-proof-horizon-console.html",
-        "superintelligence-proof-governance-console.html"
-      ]
-    }
-  ],
-  "sections": [
-    {
-      "id": "start-here",
-      "title": "Start here",
-      "count": 13
-    },
-    {
-      "id": "loop-rsi",
-      "title": "Loop & RSI",
-      "count": 11
-    },
-    {
-      "id": "protocol-gates",
-      "title": "Protocol & gates",
-      "count": 9
-    },
-    {
-      "id": "evidence-claims",
-      "title": "Evidence & claims",
-      "count": 5
-    },
-    {
-      "id": "work-economy",
-      "title": "Work economy",
-      "count": 5
-    },
-    {
-      "id": "capability-reuse",
-      "title": "Capability reuse",
-      "count": 3
-    },
-    {
-      "id": "assurance-boundaries",
-      "title": "Assurance & boundaries",
-      "count": 6
-    },
-    {
-      "id": "reference",
-      "title": "Reference",
-      "count": 4
-    },
-    {
-      "id": "archive",
-      "title": "Archive",
-      "count": 2
-    },
-    {
-      "id": "coordination-routing",
-      "title": "Coordination & routing",
-      "count": 3
-    },
-    {
-      "id": "guide",
-      "title": "Guide",
-      "count": 1
-    },
-    {
-      "id": "consoles",
-      "title": "Consoles",
-      "count": 3
-    }
-  ],
-  "groups": [
-    "Start here",
-    "Loop & RSI",
-    "Protocol & gates",
-    "Evidence & claims",
-    "Work economy",
-    "Capability reuse",
-    "Assurance & boundaries",
-    "Reference",
-    "Archive",
-    "Coordination & routing",
-    "Guide",
-    "Consoles"
+  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution",
+  "releaseAliases": [
+    "v60-ask-goalos-autonomous-question-router",
+    "v59-canonical-proof-institution-finalization",
+    "v58-complete-experience-restoration-command",
+    "v57-complete-route-recovery",
+    "v54-superintelligence-proof-governance-console",
+    "v46-compatibility-failsafe",
+    "v61-route-count-self-healing",
+    "v59-canonical-proof-institution",
+    "v58-complete-experience-restoration"
   ],
   "pages": [
     {
@@ -892,61 +751,8 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "journeys": [
-    {
-      "id": "first-visit",
-      "title": "First visit",
-      "steps": [
-        "start",
-        "trust-equation-simulator",
-        "evidence-docket-composer",
-        "proof-settlement-lifecycle"
-      ]
-    },
-    {
-      "id": "loop-rsi-asi",
-      "title": "Loop → RSI → ASI horizon",
-      "steps": [
-        "loop-operating-room",
-        "loop-evidence-reactor",
-        "loop-to-rsi-control-room",
-        "asi-proof-horizon-console",
-        "superintelligence-proof-governance-console"
-      ]
-    },
-    {
-      "id": "reviewer",
-      "title": "Reviewer path",
-      "steps": [
-        "complete-route-index",
-        "command-center",
-        "evidence-docket-composer",
-        "claim-boundary-firewall",
-        "verification",
-        "legal"
-      ]
-    },
-    {
-      "id": "operator",
-      "title": "Operator path",
-      "steps": [
-        "proof-settlement-lifecycle",
-        "mandate-epoch-clearinghouse",
-        "operator-console",
-        "expert-console"
-      ]
-    },
-    {
-      "id": "legal",
-      "title": "Legal / boundary path",
-      "steps": [
-        "legal",
-        "privacy",
-        "terms",
-        "agialpha-token-boundary"
-      ]
-    }
-  ],
+  "publicHtmlRouteCount": 66,
+  "description": "Canonical route manifest for v61 Route Count Self-Healing Ask GoalOS public proof institution.",
   "routes": [
     {
       "route": "/index.html",
@@ -1674,25 +1480,5 @@
       "boundary": "Public-safe route plus separated expert handoff.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
-  ],
-  "publicHtmlRouteCount": 66,
-  "releaseAliases": [
-    "v60-ask-goalos-autonomous-question-router",
-    "v59-canonical-proof-institution-finalization",
-    "v58-complete-experience-restoration-command",
-    "v57-complete-route-recovery",
-    "v54-superintelligence-proof-governance-console",
-    "v53-asi-proof-horizon-console",
-    "v52-loop-to-rsi-to-asi-superintelligence",
-    "v51-loop-to-rsi-control-room",
-    "v50-loop-to-rsi-sovereign-governance",
-    "v49-loop-evidence-reactor",
-    "v48-day-scale-loop-observatory",
-    "v47-loop-operating-room",
-    "v46-repository-public-trust-compatibility-failsafe",
-    "v61-route-count-self-healing",
-    "v59-canonical-proof-institution",
-    "v58-complete-experience-restoration",
-    "v46-compatibility-failsafe"
   ]
 }

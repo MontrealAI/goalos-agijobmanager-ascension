@@ -1,5 +1,5 @@
 {
-  "version": "v60",
+  "version": "v61",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "routeCount": 66,
   "generatedFrom": "v60-ask-goalos-autonomous-question-router",
@@ -18,7 +18,10 @@
     "v58-complete-experience-restoration-command",
     "v57-complete-route-recovery",
     "v54-superintelligence-proof-governance-console",
-    "v46-compatibility-failsafe"
+    "v46-compatibility-failsafe",
+    "v59-canonical-proof-institution",
+    "v61-route-count-self-healing",
+    "v58-complete-experience-restoration"
   ],
   "pages": [
     {

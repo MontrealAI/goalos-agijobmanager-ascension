@@ -1,6 +1,6 @@
 {
   "title": "GoalOS AGIJobManager Ascension Experience Atlas",
-  "version": "v60",
+  "version": "v61",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "publicSafe": true,
@@ -1573,6 +1573,10 @@
     "v49-loop-evidence-reactor",
     "v48-day-scale-loop-observatory",
     "v47-loop-operating-room",
-    "v46-repository-public-trust-compatibility-failsafe"
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v61-route-count-self-healing",
+    "v59-canonical-proof-institution",
+    "v58-complete-experience-restoration",
+    "v46-compatibility-failsafe"
   ]
 }

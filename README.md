@@ -21,7 +21,7 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 A model can answer. An agent can act. An institution must prove. GoalOS AGIJobManager Ascension is a static GitHub Pages website and repository scaffold showing how autonomous work can be bounded by Mission Contracts, verification, Evidence Dockets, ProofBundles, governed decision states, settlement receipts, Chronicle entries, and human authority.
 
 The canonical route manifest currently contains **66 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
-Compatibility lineage: historical v43-compatible tests preserve **65 canonical public routes** while the current v60 canonical manifest lists **66 canonical public routes**. No public wallet connection.
+Compatibility lineage: historical v43-compatible tests preserve **66 canonical public routes** while the current v61 canonical manifest lists **66 canonical public routes**. No public wallet connection.
 
 Start with [Canonical Proof Institution](site/canonical-proof-institution.html), [Experience Command](site/experience-command.html), or [Experience Concierge](site/experience-concierge.html) if you are new, [Command Center](site/command-center.html) for the searchable catalog, or [Evidence Docket Composer](site/evidence-docket-composer.html) to inspect proof.
 

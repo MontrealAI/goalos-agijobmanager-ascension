@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **65 public routes** from `data/canonical-route-manifest-v58.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **66 public routes** from `data/canonical-route-manifest.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -152,3 +152,8 @@ The public website now includes a static-first [Complete Route Index](../site/co
 ## v58 complete experience command
 
 The public website includes [Experience Command](../site/experience-command.html), a single command-grade route for every preserved public demo, proof room, loop/RSI console, ASI-horizon boundary, archive, legal boundary, and evidence surface.
+
+
+## Ask GoalOS Concierge v60
+
+A browser-local question router is available at [`ask-goalos.html`](https://montrealai.github.io/goalos-agijobmanager-ascension/ask-goalos.html). It answers public-site questions from static route/doctrine data and routes users to the correct proof page without account, wallet, analytics, cookies, browser storage, or network request.
