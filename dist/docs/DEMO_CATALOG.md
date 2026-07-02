@@ -1,6 +1,6 @@
 # Demo Catalog
 
-GoalOS AGIJobManager Ascension now publishes **60 canonical public routes** from `data/canonical-route-manifest-v52.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
+GoalOS AGIJobManager Ascension now publishes **63 canonical public routes** from `data/canonical-route-manifest-v57.json`. Each route should help a visitor understand one part of the proof institution without asking for private information or public-wallet authority.
 
 ## Best first route
 
@@ -135,3 +135,8 @@ Shows the full GoalOS proof horizon: a restartable loop becomes RSI governance, 
 ## Superintelligence Proof Governance Console
 
 Route: `superintelligence-proof-governance-console.html`. Shows how a restartable loop becomes RSI governance and then enters an ASI-horizon authority firewall where evidence contact, baselines, red-team persistence, council review, rollback, and human boundary decide what can become Chronicle memory.
+
+
+## v57 complete route recovery
+
+The public website now includes a static-first [Complete Route Index](../site/complete-route-index.html) generated from the actual site HTML and the canonical route manifest. It includes preserved archives, nested evidence pages, loop theatres, expert surfaces, legal boundaries, and every current Loop → RSI → ASI horizon console.
