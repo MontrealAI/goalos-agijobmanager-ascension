@@ -1,6 +1,6 @@
 # Complete Experience Restoration Command v58
 
-GoalOS AGIJobManager Ascension now exposes 65 public routes through one complete command-grade experience.
+GoalOS AGIJobManager Ascension now exposes 66 public routes through one complete command-grade experience.
 
 ## What changed
 
@@ -12,4 +12,4 @@ GoalOS AGIJobManager Ascension now exposes 65 public routes through one complete
 
 ## v59 canonical proof institution finalization
 
-The public website includes [Canonical Proof Institution](../site/canonical-proof-institution.html), a final command room for route integrity, proof doctrine, public-safe boundaries, and next-best paths across 65 canonical public routes.
+The public website includes [Canonical Proof Institution](../site/canonical-proof-institution.html), a final command room for route integrity, proof doctrine, public-safe boundaries, and next-best paths across 66 canonical public routes.
