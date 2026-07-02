@@ -1,5 +1,5 @@
-name: GoalOS AGIJobManager Ascension Repository + Website Institutional Excellence v56 Publisher / Superintelligence Proof Governance Publisher v54 / ASI Proof Horizon Console Publisher v53 / Loop to RSI to ASI Superintelligence Publisher v52 / Compatibility Failsafe Publisher v46
-# Compatibility labels intentionally preserved for historical public-trust tests: Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
+name: GoalOS AGIJobManager Ascension Complete Route Recovery v57 Publisher / Repository + Website Institutional Excellence v56 / Superintelligence Proof Governance Publisher v54 / Compatibility Failsafe Publisher v46
+# Compatibility labels intentionally preserved for historical public-trust tests: Complete Route Recovery v57; Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
 
 on:
   workflow_dispatch:
@@ -59,7 +59,7 @@ jobs:
   # Dynamic guarded runners: tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py
   # Required v56 checkers: tools/route-manifest-integrity.mjs tools/metadata-integrity-checker.mjs tools/public-safe-static-checker.mjs tools/accessibility-static-checker.mjs
   build-assure-publish:
-    name: Build, assure, and publish v56 public proof institution
+    name: Build, assure, and publish v57 complete public proof institution
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -77,7 +77,7 @@ jobs:
           set -euo pipefail
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
-          for file in tools/failsafe-bootstrap.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py; do
+          for file in tools/failsafe-bootstrap.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
             if [ ! -f "$file" ]; then
               echo "Missing required helper: $file. Upload or restore the committed v56 helper file before rerunning this workflow." >&2
               exit 1
@@ -109,7 +109,7 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact and run post-build kernels
+      - name: Build static Pages artifact, restore all routes, and run post-build kernels
         shell: bash
         run: |
           set -euo pipefail
@@ -118,6 +118,7 @@ jobs:
           test -f dist/index.html
           test -f dist/command-center.html
           test -f dist/production-url.json
+          node tools/complete-route-recovery-v57-kernel.mjs
 
       - name: Commit generated source with safe rebase retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source != false }}
@@ -131,7 +132,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate Repository and Website Institutional Excellence v56 artifacts"
+          git commit -m "Generate Complete Route Recovery v57 artifacts"
           for attempt in 1 2 3; do
             git fetch origin main
             if git pull --rebase origin main && git push origin HEAD:main; then
