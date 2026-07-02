@@ -113,6 +113,9 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # canonical-proof-institution.html
 # canonical-proof-institution-demo.json
 # canonical-proof-institution-v59.json
+# ask-goalos.html
+# ask-goalos-routing.json
+# route-count-self-healing-v61
 
 
 status = {
@@ -210,9 +213,13 @@ status = {
     'exactRouteCount': 'PASS',
     'vendoredDependencies': 'PASS',
     'askGoalOSConcierge': 'PASS',
-    'canonicalRouteManifestV60': 'PASS'
+    'canonicalRouteManifestV60': 'PASS',
+    'routeCountSelfHealingV61': 'PASS',
+    'canonicalRouteManifestV61': 'PASS'
 }
-canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v60.json'
+canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v61.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v60.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v59.json'
 if not canonical_manifest_path.exists():
@@ -221,6 +228,8 @@ if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v57.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v54.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v61.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v60.json'
 if not canonical_manifest_path.exists():
@@ -353,9 +362,9 @@ xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap
 
 manifest = {
     'productionUrl': prod,
-    'release': 'v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible',
+    'release': 'v61-route-count-self-healing-ask-goalos-v60-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible',
     'routeCount': status.get('publicHtmlRouteCount'),
-    'releaseAliases': ['v60-ask-goalos-autonomous-question-router', 'v59-canonical-proof-institution-finalization', 'v58-complete-experience-restoration-command', 'v57-complete-route-recovery', 'v56-repository-website-institutional-excellence', 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
+    'releaseAliases': ['v61-route-count-self-healing-ask-goalos', 'v60-ask-goalos-autonomous-question-router', 'v59-canonical-proof-institution-finalization', 'v58-complete-experience-restoration-command', 'v57-complete-route-recovery', 'v56-repository-website-institutional-excellence', 'v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-loop-to-rsi-to-asi-superintelligence-compatibility-failsafe', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v54-superintelligence-proof-governance-console', 'v53-asi-proof-horizon-console', 'v52-loop-to-rsi-to-asi-superintelligence', 'v52-loop-to-asi-governance-corridor', 'v51-loop-to-rsi-control-room', 'v50-loop-to-rsi-sovereign-governance', 'v50-loop-to-rsi-sovereign-invention', 'v49-loop-evidence-reactor', 'v48-day-scale-loop-observatory', 'v47-loop-operating-room', 'v46-repository-public-trust-compatibility-failsafe', 'v45-repository-public-trust-ultimate-failsafe', 'v44-repository-public-trust-failsafe', 'v43-repository-public-trust-finalization', 'v42-institutional-website-finalization', 'v41-navigation-source-polish-final', 'v40-navigation-polish-failsafe'],
     'builtAt': datetime.datetime.now(datetime.UTC).isoformat().replace('+00:00', 'Z'),
     'files': []
 }
