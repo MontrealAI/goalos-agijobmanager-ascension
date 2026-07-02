@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const ok=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)} console.log('PASS · '+m)};
+for (const f of ['site/experience-command.html','site/assets/experience-command.css','site/assets/experience-command.js','data/experience-command-demo.json','schemas/experience-command.schema.json','docs/EXPERIENCE_COMMAND_V58.md']) ok(fs.existsSync(f),`required v58 file exists: ${f}`);
+const html=fs.readFileSync('site/experience-command.html','utf8');
+ok(html.includes('Experience Command'),'page names Experience Command');
+ok(html.includes('Every proof path'),'page exposes command-grade route');
+ok(html.includes('GoalOSExperienceCommandReceipt'),'page exports ExperienceCommandReceipt');
+ok(html.includes('No account') && html.includes('No wallet') && html.includes('No user data wanted'),'page states public-safe posture');
+for (const x of ['<form','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','navigator.sendBeacon','document.cookie','localStorage.setItem','sessionStorage.setItem']) ok(!html.includes(x),`forbidden primitive absent in page: ${x}`);
+const data=JSON.parse(fs.readFileSync('data/experience-command-demo.json','utf8'));
+ok(data.receiptType==='GoalOSExperienceCommandReceipt','data contract names receipt');
+ok(data.publicSafe.noWallet && data.publicSafe.noUserDataWanted && data.publicSafe.noNetworkRequestFromDemo,'data contract encodes public-safe posture');
+ok(data.journeys.includes('rsi') && data.journeys.includes('asi-horizon'),'data contract includes advanced journeys');
+const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
+ok(manifest.pages.some(p=>p.href==='experience-command.html'),'canonical manifest includes experience-command.html');
+ok(manifest.routeCount>=64,'canonical route count includes v58 route');
+console.log('Experience Command v58 test PASS');

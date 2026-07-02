@@ -1,10 +1,10 @@
 {
   "name": "goalos-agijobmanager-ascension",
-  "version": "5.7.0-v57-complete-route-recovery-v50-compatible",
+  "version": "5.8.0-v58-complete-experience-restoration-v57-v50-compatible",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer.mjs && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/release-compatibility-harmonizer-v57.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker.mjs",
+    "build": "npm run bootstrap && python3 tools/build.py && node tools/release-compatibility-harmonizer.mjs && node tools/release-compatibility-harmonizer-v48.mjs && node tools/release-compatibility-harmonizer-v50.mjs && node tools/release-compatibility-harmonizer-v51.mjs && node tools/release-compatibility-harmonizer-v52.mjs && node tools/release-compatibility-harmonizer-v53.mjs && node tools/release-compatibility-harmonizer-v54.mjs && node tools/release-compatibility-harmonizer-v57.mjs && node tools/release-compatibility-harmonizer-v58.mjs && node tools/run-existing-kernels.mjs && CHECK_DIST=true node tools/public-trust-checker-v58.mjs",
     "verify": "python3 tools/verify.py && node tools/no-registry-preflight.mjs && node tools/pathspec-proof-kernel.mjs && node tools/workflow-reference-auditor.mjs",
     "assurance": "node tools/automated-assurance.mjs",
     "factual": "node tools/factual-correctness.mjs",
@@ -75,7 +75,7 @@
     "docs:check": "node tools/docs-link-checker.mjs",
     "test:docs": "node tools/run-documentation-tests.mjs",
     "verify:docs": "node tools/docs-link-checker.mjs && node tools/run-documentation-tests.mjs",
-    "public-trust": "node tools/apply-public-trust-metadata-v48.mjs && node tools/public-trust-checker-v52.mjs",
+    "public-trust": "node tools/apply-public-trust-metadata-v48.mjs && node tools/public-trust-checker-v58.mjs",
     "clean:root": "node tools/root-cleanup-v48.mjs",
     "test:chronicle-lab": "node tests/chronicle-compounding-lab.test.mjs && node tools/chronicle-compounding-lab-kernel.mjs",
     "chronicle-compounding": "node tests/chronicle-compounding-lab.test.mjs && node tools/chronicle-compounding-lab-kernel.mjs",
@@ -86,7 +86,7 @@
     "failsafe:v44": "node tools/repository-public-trust-failsafe-v44-kernel.mjs",
     "repository-public-trust-failsafe": "node tools/root-cleanup-v46.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
     "test:repository-public-trust-failsafe": "node tools/run-documentation-tests.mjs && node tools/repository-public-trust-compatibility-failsafe-v46-kernel.mjs",
-    "bootstrap": "node tools/failsafe-bootstrap.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs && node tools/route-recovery-v57.mjs",
+    "bootstrap": "node tools/failsafe-bootstrap-v58.mjs && node tools/site-rehydrate.mjs && node tools/root-cleanup.mjs && node tools/apply-public-trust-metadata.mjs && node tools/route-recovery-v58.mjs",
     "failsafe:v45": "node tools/repository-public-trust-failsafe-v45-kernel.mjs",
     "kernels": "node tools/run-existing-kernels.mjs",
     "verify:public-trust": "node tools/failsafe-bootstrap-v53.mjs && node tools/run-documentation-tests.mjs && node tools/public-trust-checker-v53.mjs",
@@ -121,7 +121,9 @@
     "check:docs": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tools/run-documentation-tests.mjs",
     "check:public-safe": "node tools/public-safe-static-checker.mjs",
     "check:metadata": "node tools/metadata-integrity-checker.mjs && node tools/route-manifest-integrity.mjs && node tools/accessibility-static-checker.mjs",
-    "test:dynamic": "node tools/run-all-tests.mjs"
+    "test:dynamic": "node tools/run-all-tests.mjs",
+    "experience-command": "node tests/experience-command-v58.test.mjs && python3 tools/build.py && node tools/experience-command-v58-kernel.mjs",
+    "test:experience-command": "npm run experience-command"
   },
   "dependencies": {},
   "description": "GoalOS AGIJobManager Ascension public proof institution with v56 repository and website institutional excellence, browser-local public-safe demos, canonical route manifest, dynamic test runners, and GitHub Pages publication.",

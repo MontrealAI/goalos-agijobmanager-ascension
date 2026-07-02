@@ -20,8 +20,8 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 
 A model can answer. An agent can act. An institution must prove. GoalOS AGIJobManager Ascension is a static GitHub Pages website and repository scaffold showing how autonomous work can be bounded by Mission Contracts, verification, Evidence Dockets, ProofBundles, governed decision states, settlement receipts, Chronicle entries, and human authority.
 
-The canonical route manifest currently contains **63 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
-Compatibility lineage: historical v43-compatible tests preserve **63 canonical public routes** while the current v57 canonical manifest lists **63 canonical public routes**. No public wallet connection.
+The canonical route manifest currently contains **64 canonical public routes**, generated from `data/canonical-route-manifest.json`. 
+Compatibility lineage: historical v43-compatible tests preserve **64 canonical public routes** while the current v57 canonical manifest lists **64 canonical public routes**. No public wallet connection.
 
 Start with [Experience Concierge](site/experience-concierge.html) if you are new, [Command Center](site/command-center.html) for the searchable catalog, or [Evidence Docket Composer](site/evidence-docket-composer.html) to inspect proof.
 
@@ -171,3 +171,8 @@ No Evidence Docket, no strong public claim. Architecture claims are not empirica
 ## v57 complete route recovery
 
 The public website now includes a static-first [Complete Route Index](site/complete-route-index.html) generated from the actual site HTML and the canonical route manifest. It includes preserved archives, nested evidence pages, loop theatres, expert surfaces, legal boundaries, and every current Loop → RSI → ASI horizon console.
+
+
+## v58 complete experience command
+
+The public website includes [Experience Command](site/experience-command.html), a single command-grade route for every preserved public demo, proof room, loop/RSI console, ASI-horizon boundary, archive, legal boundary, and evidence surface.

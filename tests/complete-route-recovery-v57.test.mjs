@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 const ok=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
 const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
-ok(manifest.version==='v57','v57 manifest active');
+ok(['v57','v58'].includes(manifest.version),'v57/v58 manifest active');
 ok(manifest.routeCount===manifest.pages.length,'route count matches page array');
 ok(manifest.routeCount>=63,'route recovery exposes every current page');
 const siteHtml=[];
