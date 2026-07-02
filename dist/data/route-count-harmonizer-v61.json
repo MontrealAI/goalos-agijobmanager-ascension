@@ -1,0 +1,21 @@
+{
+  "receiptType": "GoalOSRouteCountHarmonizerReceipt",
+  "version": "v61",
+  "routeCount": 66,
+  "canonicalManifest": "data/canonical-route-manifest.json",
+  "jsonTargets": 110,
+  "docsChanged": 0,
+  "publicSafeBoundary": {
+    "noAccount": true,
+    "noForms": true,
+    "noWallet": true,
+    "noTokenApproval": true,
+    "noNetworkRequest": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noBrowserStorage": true,
+    "noTransactionBroadcast": true,
+    "noProductionAuthority": true,
+    "noUserDataRetained": true
+  }
+}

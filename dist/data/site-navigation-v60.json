@@ -1,42 +1,8 @@
 {
   "version": "v61",
-  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution",
   "routeCount": 66,
-  "generatedFrom": "v59 Canonical Proof Institution Finalization",
-  "posture": {
-    "browserLocal": true,
-    "publicSafe": true,
-    "noUserDataWanted": true,
-    "noAnalytics": true,
-    "noCookies": true,
-    "noPublicWallet": true
-  },
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
-  "releaseAliases": [
-    "v57-complete-route-recovery-and-institutional-experience-command",
-    "v57-route-recovery",
-    "v56-repository-website-institutional-excellence",
-    "v54-superintelligence-proof-governance-console",
-    "v53-asi-proof-horizon-console",
-    "v52-loop-to-rsi-to-asi-superintelligence",
-    "v51-loop-to-rsi-control-room",
-    "v50-loop-to-rsi-sovereign-governance",
-    "v49-loop-evidence-reactor",
-    "v48-day-scale-loop-observatory",
-    "v47-loop-operating-room",
-    "v46-repository-public-trust-compatibility-failsafe",
-    "v43-repository-public-trust-finalization",
-    "v58-complete-experience-restoration-command",
-    "v58-complete-experience-command",
-    "v57-complete-route-recovery",
-    "v59-canonical-proof-institution-finalization",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
-    "v61-route-count-self-healing",
-    "v60-ask-goalos-autonomous-question-router",
-    "v59-canonical-proof-institution",
-    "v58-complete-experience-restoration",
-    "v46-compatibility-failsafe"
-  ],
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "pages": [
     {
       "route": "/index.html",
@@ -1493,5 +1459,32 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "publicHtmlRouteCount": 66
+  "title": "GoalOS AGIJobManager Ascension Navigation Catalog",
+  "primaryPaths": [
+    {
+      "title": "Ask GoalOS Concierge",
+      "href": "ask-goalos.html",
+      "description": "Ask a public-site question and get routed to the right page."
+    }
+  ],
+  "publicHtmlRouteCount": 66,
+  "releaseAliases": [
+    "v60-ask-goalos-autonomous-question-router",
+    "v59-canonical-proof-institution-finalization",
+    "v58-complete-experience-restoration-command",
+    "v57-complete-route-recovery",
+    "v54-superintelligence-proof-governance-console",
+    "v53-asi-proof-horizon-console",
+    "v52-loop-to-rsi-to-asi-superintelligence",
+    "v51-loop-to-rsi-control-room",
+    "v50-loop-to-rsi-sovereign-governance",
+    "v49-loop-evidence-reactor",
+    "v48-day-scale-loop-observatory",
+    "v47-loop-operating-room",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v61-route-count-self-healing",
+    "v59-canonical-proof-institution",
+    "v58-complete-experience-restoration",
+    "v46-compatibility-failsafe"
+  ]
 }
