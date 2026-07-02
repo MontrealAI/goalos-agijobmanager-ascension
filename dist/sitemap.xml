@@ -41,6 +41,9 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v59.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v60.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v61.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v63.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v64.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest-v65.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/canonical-route-manifest.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/capability-conformance.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/chronicle-compounding-lab-demo.json</loc></url>
@@ -76,6 +79,11 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v53.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/failsafe-bootstrap-v54.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/final-assurance-policy.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-command-console-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-command-console.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-mission-autopilot.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-take-care-demo.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-take-care.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/index.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/legal-boundary-policy.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/legal.html</loc></url>
@@ -98,6 +106,7 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mainnet-capability-contract.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mandate-epoch-clearinghouse-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mandate-epoch-clearinghouse.html</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mission-autopilot-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/mission-studio.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/multi-agent-coordination-law.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/multi-agent-institution.html</loc></url>
@@ -128,6 +137,9 @@
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/replay-falsification-gauntlet-demo.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/replay-falsification-gauntlet.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/route-count-harmonizer-v61.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/route-count-harmonizer-v63.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/route-count-harmonizer-v64.json</loc></url>
+  <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/route-count-harmonizer-v65.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-atlas.html</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-experience-atlas.json</loc></url>
   <url><loc>https://montrealai.github.io/goalos-agijobmanager-ascension/site-navigation-catalog.json</loc></url>
