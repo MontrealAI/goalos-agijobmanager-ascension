@@ -22,18 +22,14 @@
     "v59-canonical-proof-institution",
     "v61-route-count-self-healing",
     "v58-complete-experience-restoration",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-complete-route-recovery-institutional-experience-command",
-    "v56-repository-website-institutional-excellence",
-    "v50-loop-to-rsi-sovereign-governance",
-    "v46-repository-public-trust-compatibility-failsafe",
-    "v42-institutional-website-finalization",
-    "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
     "v53-asi-proof-horizon-console",
     "v52-loop-to-rsi-to-asi-superintelligence",
     "v51-loop-to-rsi-control-room",
+    "v50-loop-to-rsi-sovereign-governance",
     "v49-loop-evidence-reactor",
     "v48-day-scale-loop-observatory",
-    "v47-loop-operating-room"
+    "v47-loop-operating-room",
+    "v46-repository-public-trust-compatibility-failsafe"
   ],
   "pages": [
     {
@@ -1492,9 +1488,5 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "completeRouteRecovery": "PASS",
-  "institutionalExperienceCommand": "PASS",
-  "completeExperienceRestoration": "PASS",
-  "canonicalProofInstitution": "PASS",
   "askGoalOSConcierge": "PASS"
 }
