@@ -1,7 +1,8 @@
 {
   "version": "v61",
-  "release": "v59-canonical-proof-institution-finalization",
+  "release": "v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible",
   "routeCount": 66,
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "pages": [
     {
       "route": "/index.html",
@@ -1458,39 +1459,33 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "title": "GoalOS AGIJobManager Ascension Navigation Catalog",
   "primaryPaths": [
     {
-      "id": "canonical-proof-institution",
-      "title": "Canonical Proof Institution",
-      "time": "1 min",
-      "href": "canonical-proof-institution.html",
-      "steps": [
-        "canonical-proof-institution.html",
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
-    },
-    {
-      "id": "experience-command",
-      "title": "Experience Command",
-      "time": "1 min",
-      "href": "experience-command.html",
-      "steps": [
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
+      "title": "Ask GoalOS Concierge",
+      "href": "ask-goalos.html",
+      "description": "Ask a public-site question and get routed to the right page."
     }
   ],
   "publicHtmlRouteCount": 66,
   "releaseAliases": [
-    "v61-route-count-self-healing",
     "v60-ask-goalos-autonomous-question-router",
+    "v59-canonical-proof-institution-finalization",
+    "v58-complete-experience-restoration-command",
+    "v57-complete-route-recovery",
+    "v54-superintelligence-proof-governance-console",
+    "v53-asi-proof-horizon-console",
+    "v52-loop-to-rsi-to-asi-superintelligence",
+    "v51-loop-to-rsi-control-room",
+    "v50-loop-to-rsi-sovereign-governance",
+    "v49-loop-evidence-reactor",
+    "v48-day-scale-loop-observatory",
+    "v47-loop-operating-room",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v61-route-count-self-healing",
     "v59-canonical-proof-institution",
     "v58-complete-experience-restoration",
-    "v57-complete-route-recovery",
     "v46-compatibility-failsafe"
-  ]
+  ],
+  "askGoalOSConcierge": "PASS"
 }
