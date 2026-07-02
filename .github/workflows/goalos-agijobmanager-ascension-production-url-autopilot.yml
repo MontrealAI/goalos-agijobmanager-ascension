@@ -1,5 +1,5 @@
-name: GoalOS AGIJobManager Ascension Complete Experience Restoration v58 Publisher / Complete Route Recovery v57 Publisher / Repository + Website Institutional Excellence v56 / Superintelligence Proof Governance Publisher v54 / Compatibility Failsafe Publisher v46
-# Complete Experience Restoration v58; Compatibility labels intentionally preserved for historical public-trust tests: Complete Route Recovery v57; Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
+name: GoalOS AGIJobManager Ascension Canonical Proof Institution Finalization v59 Publisher / Complete Experience Restoration v58 Publisher / Complete Route Recovery v57 Publisher / Compatibility Failsafe Publisher v46
+# Canonical Proof Institution Finalization v59. Historical compatibility labels intentionally preserved for public-trust tests: Complete Experience Restoration v58; Complete Route Recovery v57; Superintelligence Proof Governance Publisher v54; Compatibility Failsafe Publisher v46; Day-Scale Loop Observatory Failsafe Publisher v48; Loop Evidence Reactor Publisher v49; Loop to RSI Sovereign Governance Publisher v50; Loop to RSI Control Room Publisher v51; Loop to RSI to ASI Superintelligence Publisher v52; ASI Proof Horizon Console Publisher v53.
 
 on:
   workflow_dispatch:
@@ -54,12 +54,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Release compatibility harmonizers: tools/release-compatibility-harmonizer.mjs tools/release-compatibility-harmonizer-v54.mjs tools/release-compatibility-harmonizer-v53.mjs tools/release-compatibility-harmonizer-v52.mjs tools/release-compatibility-harmonizer-v50.mjs
-  # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v54.mjs tools/failsafe-bootstrap-v53.mjs tools/failsafe-bootstrap-v52.mjs tools/failsafe-bootstrap-v51.mjs tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
+  # Release compatibility harmonizers: tools/release-compatibility-harmonizer.mjs tools/release-compatibility-harmonizer-v59.mjs tools/release-compatibility-harmonizer-v58.mjs tools/release-compatibility-harmonizer-v57.mjs tools/release-compatibility-harmonizer-v54.mjs tools/release-compatibility-harmonizer-v53.mjs tools/release-compatibility-harmonizer-v52.mjs tools/release-compatibility-harmonizer-v50.mjs
+  # Public-trust bootstrap compatibility path: tools/failsafe-bootstrap-v59.mjs tools/failsafe-bootstrap-v58.mjs tools/failsafe-bootstrap-v54.mjs tools/failsafe-bootstrap-v53.mjs tools/failsafe-bootstrap-v52.mjs tools/failsafe-bootstrap-v51.mjs tools/failsafe-bootstrap-v49.mjs tools/failsafe-bootstrap-v48.mjs tools/root-cleanup-v48.mjs
   # Dynamic guarded runners: tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py
-  # Required v56 checkers: tools/route-manifest-integrity.mjs tools/metadata-integrity-checker.mjs tools/public-safe-static-checker.mjs tools/accessibility-static-checker.mjs
   build-assure-publish:
-    name: Build, assure, and publish v58 complete public proof institution
+    name: Build, assure, and publish v59 canonical public proof institution
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -77,13 +76,13 @@ jobs:
           set -euo pipefail
           rm -f package-lock.json npm-shrinkwrap.json yarn.lock pnpm-lock.yaml
           test -f site/vendor/ethers.umd.min.js
-          for file in tools/failsafe-bootstrap.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v58.mjs tools/release-compatibility-harmonizer-v58.mjs tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
+          mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets schemas
+          for file in tools/failsafe-bootstrap-v59.mjs tools/run-documentation-tests.mjs tools/run-all-tests.mjs tools/run-existing-kernels.mjs tools/workflow-reference-auditor.mjs tools/build.py tools/route-recovery-v59.mjs tools/release-compatibility-harmonizer-v59.mjs tools/route-recovery-v58.mjs tools/release-compatibility-harmonizer-v58.mjs tools/route-recovery-v57.mjs tools/release-compatibility-harmonizer-v57.mjs; do
             if [ ! -f "$file" ]; then
-              echo "Missing required helper: $file. Upload or restore the committed v56 helper file before rerunning this workflow." >&2
+              echo "Missing required helper: $file. Upload the complete v59 overlay contents, not the ZIP file itself." >&2
               exit 1
             fi
           done
-          mkdir -p tools tests docs/releases docs/reports/historical-root data site site/assets schemas
           npm run bootstrap
 
       - name: Verify implementation, docs, metadata, routes, accessibility, public-safe boundary, and dynamic tests
@@ -109,16 +108,17 @@ jobs:
             echo '{"status":"SKIPPED","reason":"Live factual check disabled for deterministic Pages deployment"}' > FACTUAL_CORRECTNESS_REPORT.json
           fi
 
-      - name: Build static Pages artifact, restore all routes, and run post-build kernels
+      - name: Build static Pages artifact and verify canonical institution
         shell: bash
         run: |
           set -euo pipefail
           npm run build
           node tools/route-manifest-integrity.mjs
+          node tools/canonical-proof-institution-v59-kernel.mjs
           test -f dist/index.html
+          test -f dist/canonical-proof-institution.html
           test -f dist/command-center.html
           test -f dist/production-url.json
-          node tools/complete-route-recovery-v57-kernel.mjs
 
       - name: Commit generated source with safe rebase retry
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.commit_generated_source != false }}
@@ -132,7 +132,7 @@ jobs:
             echo "No generated changes to commit."
             exit 0
           fi
-          git commit -m "Generate Complete Route Recovery v57 artifacts"
+          git commit -m "Generate Canonical Proof Institution v59 artifacts"
           for attempt in 1 2 3; do
             git fetch origin main
             if git pull --rebase origin main && git push origin HEAD:main; then
