@@ -1,6 +1,6 @@
 # Complete Route Recovery v57
 
-GoalOS AGIJobManager Ascension now treats the route catalog as a public proof surface. The route manifest is generated from the actual static site and exposes 66 public routes.
+GoalOS AGIJobManager Ascension now treats the route catalog as a public proof surface. The route manifest is generated from the actual static site and exposes 69 public routes.
 
 ## What changed
 

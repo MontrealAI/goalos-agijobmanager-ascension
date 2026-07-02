@@ -11,7 +11,7 @@ v61 corrects the public-site publication failure class where a living front-door
 
 ## Current canonical route count
 
-66 public routes.
+67 public routes.
 
 ## Boundary
 
