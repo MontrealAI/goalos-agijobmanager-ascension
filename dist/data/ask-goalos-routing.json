@@ -1,7 +1,7 @@
 {
-  "version": "v65-take-care-console",
-  "release": "v62-ask-goalos-sovereign-question-router v65-take-care-console-v64-goalos-command-console-v63-v62-v61-v60-v59-v46-compatible v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v61-route-count-self-healing-ask-goalos v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v58-complete-experience-restoration v65-take-care-console v65-take-care-console",
-  "routeCount": 69,
+  "version": "v66-goalos-care-command",
+  "release": "v62-ask-goalos-sovereign-question-router v65-take-care-console-v64-goalos-command-console-v63-v62-v61-v60-v59-v46-compatible v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v65-take-care-console v66-goalos-care-command v65-take-care-console v64-goalos-command-console v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v64-goalos-command-console v65-goalos-take-care v65-take-care-console v66-goalos-care-command v66-goalos-care-command v61-route-count-self-healing-ask-goalos v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v58-complete-experience-restoration v66-goalos-care-command",
+  "routeCount": 70,
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "posture": {
     "browserLocal": true,
@@ -15,6 +15,28 @@
     "productionAuthority": false
   },
   "intents": [
+    {
+      "id": "care-command",
+      "label": "GoalOS Care Command",
+      "keywords": [
+        "care command",
+        "take care",
+        "what i want",
+        "goalos do it",
+        "front and center",
+        "chatgpt",
+        "one box",
+        "mission",
+        "proof path"
+      ],
+      "answer": "Use GoalOS Care Command when you want to type a plain-language objective and let GoalOS prepare the proof path, answer follow-up questions locally, and route you to the right page.",
+      "routes": [
+        "goalos-care-command.html",
+        "goalos-take-care.html",
+        "ask-goalos.html",
+        "complete-route-index.html"
+      ]
+    },
     {
       "id": "command",
       "label": "GoalOS Command Console",
@@ -268,6 +290,17 @@
       "outputArtifact": "Public front door",
       "boundary": "Public-safe, read-only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    {
+      "route": "/goalos-care-command.html",
+      "href": "goalos-care-command.html",
+      "title": "GoalOS Care Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center local GoalOS command experience: one plain-language objective box, clear guidance, Ask GoalOS chat routing, Mission Contract, Evidence Docket plan, Verifier Mesh, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCareCommandReceipt",
+      "boundary": "Browser-local guidance and mission packaging only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-care-command.html"
     },
     {
       "route": "/canonical-proof-institution.html",
@@ -1045,6 +1078,17 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
     },
     {
+      "route": "/goalos-care-command.html",
+      "href": "goalos-care-command.html",
+      "title": "GoalOS Care Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center local GoalOS command experience: one plain-language objective box, clear guidance, Ask GoalOS chat routing, Mission Contract, Evidence Docket plan, Verifier Mesh, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCareCommandReceipt",
+      "boundary": "Browser-local guidance and mission packaging only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-care-command.html"
+    },
+    {
       "route": "/canonical-proof-institution.html",
       "href": "canonical-proof-institution.html",
       "title": "Canonical Proof Institution",
@@ -1793,7 +1837,7 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "publicHtmlRouteCount": 69,
+  "publicHtmlRouteCount": 70,
   "releaseAliases": [
     "v64-goalos-command-console",
     "v63-mission-autopilot",
@@ -1802,7 +1846,8 @@
     "v60-ask-goalos-autonomous-question-router",
     "v59-canonical-proof-institution",
     "v46-compatibility-failsafe",
-    "v65-take-care-console"
+    "v65-take-care-console",
+    "v66-goalos-care-command"
   ],
   "askGoalOSSovereignRouterV62": "PASS",
   "releaseLineage": [

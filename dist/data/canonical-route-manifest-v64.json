@@ -1,7 +1,7 @@
 {
-  "version": "v65-take-care-console",
+  "version": "v66-goalos-care-command",
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "routeCount": 69,
+  "routeCount": 70,
   "generatedFrom": "v60-ask-goalos-autonomous-question-router",
   "posture": {
     "browserLocal": true,
@@ -11,7 +11,7 @@
     "noCookies": true,
     "noPublicWallet": true
   },
-  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v64-goalos-command-console v65-take-care-console v65-take-care-console v65-take-care-console",
+  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v64-goalos-command-console v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command",
   "releaseAliases": [
     "v63-mission-autopilot",
     "v62-ask-goalos-sovereign-router",
@@ -26,6 +26,7 @@
     "v54-superintelligence-proof-governance-console",
     "v64-goalos-command-console",
     "v65-take-care-console",
+    "v66-goalos-care-command",
     "v54-superintelligence-proof-governance",
     "v53-asi-proof-horizon",
     "v52-loop-to-asi",
@@ -52,6 +53,17 @@
       "outputArtifact": "Public front door",
       "boundary": "Public-safe, read-only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    {
+      "route": "/goalos-care-command.html",
+      "href": "goalos-care-command.html",
+      "title": "GoalOS Care Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center local GoalOS command experience: one plain-language objective box, clear guidance, Ask GoalOS chat routing, Mission Contract, Evidence Docket plan, Verifier Mesh, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCareCommandReceipt",
+      "boundary": "Browser-local guidance and mission packaging only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-care-command.html"
     },
     {
       "route": "/canonical-proof-institution.html",
@@ -802,7 +814,7 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "publicHtmlRouteCount": 69,
+  "publicHtmlRouteCount": 70,
   "routes": [
     {
       "route": "/index.html",
@@ -814,6 +826,17 @@
       "outputArtifact": "Public front door",
       "boundary": "Public-safe, read-only.",
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/"
+    },
+    {
+      "route": "/goalos-care-command.html",
+      "href": "goalos-care-command.html",
+      "title": "GoalOS Care Command",
+      "group": "Start here",
+      "audience": "Everyone",
+      "description": "Front-and-center local GoalOS command experience: one plain-language objective box, clear guidance, Ask GoalOS chat routing, Mission Contract, Evidence Docket plan, Verifier Mesh, route handoff, and downloadable receipt.",
+      "outputArtifact": "GoalOSCareCommandReceipt",
+      "boundary": "Browser-local guidance and mission packaging only; no account, no form submission, no wallet, no token approval, no analytics, no cookies, no browser storage, no network request from the console, no user data retained, no production authority.",
+      "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/goalos-care-command.html"
     },
     {
       "route": "/canonical-proof-institution.html",
@@ -1586,10 +1609,12 @@
     "v44-compatible",
     "v43-compatible",
     "v42-compatible",
+    "v66-goalos-care-command",
     "v65-goalos-take-care",
     "v65-take-care-console"
   ],
   "goalOSCommandConsoleV64": "PASS",
   "goalOSMissionAutopilotV63": "PASS",
-  "canonicalRouteCount": 69
+  "canonicalRouteCount": 70,
+  "goalOSCareCommandV66": "PASS"
 }
