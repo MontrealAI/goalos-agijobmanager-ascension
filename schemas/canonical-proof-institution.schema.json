@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoalOS Canonical Institution Receipt",
+  "type": "object",
+  "required": [
+    "receiptType",
+    "version",
+    "routeCount",
+    "publicSafe",
+    "doctrine",
+    "institutionChecks"
+  ],
+  "properties": {
+    "receiptType": {
+      "const": "GoalOSCanonicalInstitutionReceipt"
+    },
+    "version": {
+      "type": "string"
+    },
+    "routeCount": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "publicSafe": {
+      "type": "object"
+    },
+    "doctrine": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "institutionChecks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "canonicalIdentities": {
+      "type": "object"
+    }
+  }
+}

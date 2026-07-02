@@ -110,6 +110,9 @@ prod = 'https://montrealai.github.io/goalos-agijobmanager-ascension/'
 # experience-command.html
 # experience-command-demo.json
 # complete-experience-restoration-v58.json
+# canonical-proof-institution.html
+# canonical-proof-institution-demo.json
+# canonical-proof-institution-v59.json
 
 
 status = {
@@ -207,11 +210,15 @@ status = {
     'exactRouteCount': 'PASS',
     'vendoredDependencies': 'PASS'
 }
-canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v58.json'
+canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v59.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v58.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v57.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v54.json'
+if not canonical_manifest_path.exists():
+    canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v59.json'
 if not canonical_manifest_path.exists():
     canonical_manifest_path = root / 'data' / 'canonical-route-manifest-v58.json'
 if not canonical_manifest_path.exists():

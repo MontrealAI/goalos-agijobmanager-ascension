@@ -36,6 +36,7 @@
     ['Archive v37 Pre-Navigation Final','archive-v37-pre-navigation-final.html','Archive','Preserved pre-navigation public site state for release continuity.'],
     ['Inflow Control','ascension-inflow-control.html','Work economy','Shows why compute, tasks, data, incentives, feedback, governance, and tools need regulated inflow.'],
     ['Assurance','assurance.html','Reference','Assurance posture, automation checks, and public-safe invariants.'],
+    ['Canonical Proof Institution','canonical-proof-institution.html','Start here','Final public proof-institution command room: route integrity, proof doctrine, public-safe boundary, documentation spine, and next best user paths in one place.'],
     ['Coordination Engine','coordination-engine.html','Coordination & routing','Explains the proof-gated coordination engine behind multi-agent institutional work.'],
     ['Coordination Lab','coordination-lab.html','Coordination & routing','Compares swarm, fixed crew, and institution coordination under proof gates.'],
     ['Demo Lab','demo-lab.html','Reference','Legacy demo entry surface retained for preservation.'],

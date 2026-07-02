@@ -88,9 +88,9 @@
   "singleNativeHeader": "PASS",
   "exactRouteCount": "PASS",
   "vendoredDependencies": "PASS",
-  "publicHtmlRouteCount": 64,
+  "publicHtmlRouteCount": 65,
   "canonicalRouteManifest": "data/canonical-route-manifest-v46.json",
-  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
+  "release": "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-v59-canonical-proof-institution-finalization",
   "releaseAliases": [
     "v42-v43-v44-v45-v46-repository-public-trust-compatibility-failsafe",
     "v46-repository-public-trust-compatibility-failsafe",
@@ -125,8 +125,11 @@
     "v57-complete-route-recovery",
     "v56-repository-website-institutional-excellence",
     "v42-v43-v44-v45-v46-v47-v48-v49-v50-v51-v52-v53-v54-v55-v56-v57-v58-complete-experience-restoration-command",
-    "v58-complete-experience-restoration-command"
+    "v58-complete-experience-restoration-command",
+    "v59-canonical-proof-institution-finalization",
+    "v57-complete-route-recovery-and-institutional-experience-command"
   ],
-  "version": "v58",
-  "routeCount": 64
+  "version": "v59",
+  "routeCount": 65,
+  "canonicalProofInstitution": "PASS"
 }

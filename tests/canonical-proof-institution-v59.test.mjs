@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+const ok=(c,m)=>{if(!c){console.error('FAIL · '+m);process.exit(1)}console.log('PASS · '+m)};
+for (const f of ['site/canonical-proof-institution.html','site/assets/canonical-proof-institution.css','site/assets/canonical-proof-institution.js','data/canonical-proof-institution-demo.json','schemas/canonical-proof-institution.schema.json','docs/CANONICAL_PROOF_INSTITUTION_V59.md','docs/releases/V59_CANONICAL_PROOF_INSTITUTION_FINALIZATION.md']) ok(fs.existsSync(f),`required v59 file exists: ${f}`);
+const html=fs.readFileSync('site/canonical-proof-institution.html','utf8');
+ok(html.includes('Canonical Proof Institution'),'page names Canonical Proof Institution');
+ok(html.includes('Every page present') && html.includes('Every claim bounded'),'page communicates finalization promise');
+ok(html.includes('GoalOSCanonicalInstitutionReceipt') || html.includes('CanonicalInstitutionReceipt'),'page exports CanonicalInstitutionReceipt');
+ok(html.includes('No account') && html.includes('No wallet') && html.includes('No user data wanted'),'page states public-safe posture');
+for (const x of ['<form','ethereum.request','eth_requestAccounts','wallet_switchEthereumChain','eth_sendTransaction','navigator.sendBeacon','document.cookie','localStorage.setItem','sessionStorage.setItem','fetch(','XMLHttpRequest']) ok(!html.includes(x),`forbidden primitive absent in page: ${x}`);
+const data=JSON.parse(fs.readFileSync('data/canonical-proof-institution-demo.json','utf8'));
+ok(data.receiptType==='GoalOSCanonicalInstitutionReceipt','data contract names receipt');
+ok(data.publicSafe.noWallet && data.publicSafe.noUserDataWanted && data.publicSafe.noNetworkRequestFromDemo,'data contract encodes public-safe posture');
+const manifest=JSON.parse(fs.readFileSync('data/canonical-route-manifest.json','utf8'));
+ok(manifest.version==='v59','canonical manifest is v59');
+ok(manifest.pages.some(p=>p.href==='canonical-proof-institution.html'),'canonical manifest includes canonical proof institution');
+ok(manifest.routeCount===manifest.pages.length,'route count equals pages length');
+const htmlFiles=[]; function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=d+'/'+e.name;if(e.isDirectory())walk(p);else if(e.isFile()&&p.endsWith('.html'))htmlFiles.push(p.replace(/^site\//,''));}} walk('site');
+for (const href of htmlFiles) ok(manifest.pages.some(p=>p.href===href),`source HTML represented in manifest: ${href}`);
+for (const href of ['index.html','experience-command.html','command-center.html','experience-hub.html','complete-route-index.html']) { const page=fs.readFileSync('site/'+href,'utf8'); ok(page.includes('canonical-proof-institution.html'),`${href} links Canonical Proof Institution`); ok(page.includes(String(manifest.routeCount)),`${href} advertises canonical route count`); }
+const cmd=fs.readFileSync('site/assets/site-command-v41.js','utf8'); ok(cmd.includes('canonical-proof-institution.html'),'Site Command includes Canonical Proof Institution');
+console.log('Canonical Proof Institution v59 test PASS');
