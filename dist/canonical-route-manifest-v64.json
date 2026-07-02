@@ -1,7 +1,46 @@
 {
   "version": "v65-take-care-console",
-  "release": "v65-take-care-console-v64-goalos-command-console-v63-v62-v61-v60-v59-v46-compatible v65-take-care-console v64-goalos-command-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console v65-take-care-console v64-goalos-command-console v65-take-care-console v65-take-care-console",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "routeCount": 69,
+  "generatedFrom": "v60-ask-goalos-autonomous-question-router",
+  "posture": {
+    "browserLocal": true,
+    "publicSafe": true,
+    "noUserDataWanted": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noPublicWallet": true
+  },
+  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v64-goalos-command-console v65-take-care-console v65-take-care-console",
+  "releaseAliases": [
+    "v63-mission-autopilot",
+    "v62-ask-goalos-sovereign-router",
+    "v61-route-count-self-healing",
+    "v60-ask-goalos-autonomous-question-router",
+    "v59-canonical-proof-institution",
+    "v58-complete-experience-restoration",
+    "v57-complete-route-recovery",
+    "v46-compatibility-failsafe",
+    "v59-canonical-proof-institution-finalization",
+    "v58-complete-experience-restoration-command",
+    "v54-superintelligence-proof-governance-console",
+    "v64-goalos-command-console",
+    "v65-take-care-console",
+    "v54-superintelligence-proof-governance",
+    "v53-asi-proof-horizon",
+    "v52-loop-to-asi",
+    "v51-loop-to-rsi-control-room",
+    "v50-loop-to-rsi",
+    "v49-loop-evidence-reactor",
+    "v48-day-scale-loop",
+    "v47-loop-operating-room",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v45-compatible",
+    "v44-compatible",
+    "v43-compatible",
+    "v42-compatible",
+    "v65-goalos-take-care"
+  ],
   "pages": [
     {
       "route": "/index.html",
@@ -763,6 +802,7 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
+  "publicHtmlRouteCount": 69,
   "routes": [
     {
       "route": "/index.html",
@@ -1524,43 +1564,32 @@
       "canonicalUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/sovereign-machine-economy.html"
     }
   ],
-  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
-  "primaryPaths": [
-    {
-      "id": "canonical-proof-institution",
-      "title": "Canonical Proof Institution",
-      "time": "1 min",
-      "href": "canonical-proof-institution.html",
-      "steps": [
-        "canonical-proof-institution.html",
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
-    },
-    {
-      "id": "experience-command",
-      "title": "Experience Command",
-      "time": "1 min",
-      "href": "experience-command.html",
-      "steps": [
-        "experience-command.html",
-        "complete-route-index.html",
-        "evidence-docket-composer.html"
-      ]
-    }
-  ],
-  "publicHtmlRouteCount": 69,
-  "releaseAliases": [
+  "releaseLineage": [
+    "v64-goalos-command-console",
+    "v63-mission-autopilot",
+    "v62-ask-goalos-sovereign-router",
     "v61-route-count-self-healing",
     "v60-ask-goalos-autonomous-question-router",
     "v59-canonical-proof-institution",
     "v58-complete-experience-restoration",
     "v57-complete-route-recovery",
-    "v46-compatibility-failsafe",
-    "v63-mission-autopilot",
-    "v62-ask-goalos-sovereign-router",
-    "v64-goalos-command-console",
+    "v54-superintelligence-proof-governance",
+    "v53-asi-proof-horizon",
+    "v52-loop-to-asi",
+    "v51-loop-to-rsi-control-room",
+    "v50-loop-to-rsi",
+    "v49-loop-evidence-reactor",
+    "v48-day-scale-loop",
+    "v47-loop-operating-room",
+    "v46-repository-public-trust-compatibility-failsafe",
+    "v45-compatible",
+    "v44-compatible",
+    "v43-compatible",
+    "v42-compatible",
+    "v65-goalos-take-care",
     "v65-take-care-console"
-  ]
+  ],
+  "goalOSCommandConsoleV64": "PASS",
+  "goalOSMissionAutopilotV63": "PASS",
+  "canonicalRouteCount": 69
 }
