@@ -151,6 +151,7 @@ Open **Actions → GoalOS AGIJobManager Ascension Repository + Website Instituti
 
 ## Route and demo catalog links
 
+- [Institutional excellence checklist](docs/INSTITUTIONAL_EXCELLENCE.md)
 - [Canonical route manifest](data/canonical-route-manifest.json)
 - [Demo catalog](docs/DEMO_CATALOG.md)
 - [Route manifest policy](docs/ROUTE_MANIFEST_POLICY.md)
