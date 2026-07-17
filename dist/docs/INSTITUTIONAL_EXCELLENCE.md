@@ -31,3 +31,7 @@ Every public change should preserve these properties:
 ## Communication standard
 
 Public language should be understandable to non-technical visitors and rigorous for reviewers. Prefer concrete nouns: Mission Contract, Evidence Docket, ProofBundle, governed decision state, Action Graph, Chronicle entry, route manifest, and settlement receipt. Avoid implying investment advice, token availability, production certification, external audit, achieved AGI, or achieved ASI.
+
+## Final docket
+
+For release-level public readiness, use the [Final Institutional Excellence Docket](FINAL_INSTITUTIONAL_EXCELLENCE_DOCKET.md) as the consolidated reviewer assurance matrix and communication standard.
