@@ -37,6 +37,31 @@ Use precise institutional language: Mission Contract, Evidence Docket, ProofBund
 
 Avoid language that implies achieved AGI, achieved ASI, guaranteed performance, investment return, token availability, production certification, external audit completion, legal advice, tax advice, financial advice, medical advice, custody, brokerage, exchange access, liquidity support, price support, or autonomous authority without human governance.
 
+
+## Final publication gate
+
+A release candidate should be treated as publishable only when the following institutional gates are simultaneously true:
+
+| Gate | Required evidence | Blocking condition |
+|---|---|---|
+| Public comprehension | Homepage, Care Command, Concierge, Command Center, Complete Route Index, and README all point to the same first-user journey. | Visitors must infer route history before they can start. |
+| Developer reproducibility | `npm test` and `npm run build` run without registry dependencies and regenerate `dist/` deterministically enough for review. | A release depends on unpinned external packages, missing historical scripts, or manual dist edits. |
+| Route preservation | Every public HTML route remains represented in the canonical manifest or has an explicitly documented archive/deprecation path. | A page disappears without a safety, security, correctness, or build-integrity reason. |
+| Safety/privacy default | Public pages stay browser-local, data-zero, wallet-free, analytics-free, cookie-free, and authority-free unless explicitly separated as expert-only. | A public page collects user data, initiates wallet flow, broadcasts transactions, or implies production authority. |
+| Claim boundary | Strong claims cite Evidence Docket discipline, replay/falsification posture, public/private proof separation, and human authority. | Marketing language implies achieved AGI/ASI, investment upside, external audit completion, or regulated advice. |
+| Accessibility/preview hygiene | Flagship pages keep meaningful titles, descriptions, canonical URLs, social metadata, headings, keyboard-readable controls, and non-blank states. | A public page is visually present but inaccessible, preview-poor, or context-free to reviewers. |
+
+## Reviewer packet map
+
+Use this map to review the public proof institution without reading route history first:
+
+1. **Public story:** `README.md`, `site/index.html`, `site/start.html`, `site/goalos-care-command.html`.
+2. **Route integrity:** `data/canonical-route-manifest.json`, `site/complete-route-index.html`, `docs/ROUTE_MANIFEST_POLICY.md`.
+3. **Safety and privacy:** `docs/PUBLIC_SAFE_BOUNDARY.md`, `docs/DATA_ZERO_PRIVACY_POLICY.md`, `site/privacy.html`, `site/legal.html`.
+4. **Claim discipline:** `docs/CLAIM_BOUNDARY.md`, `docs/CLAIM_BOUNDARY_FIREWALL_V22.md`, `site/claim-boundary-firewall.html`.
+5. **Developer/release path:** `docs/DEVELOPER_GUIDE.md`, `docs/RELEASE_PROCESS.md`, `package.json`, `.github/workflows/`.
+6. **Accessibility and public-web polish:** `docs/ACCESSIBILITY_AND_SEO.md`, `docs/ACCESSIBILITY_QA.md`, `tools/metadata-integrity-checker.mjs`, `tools/accessibility-static-checker.mjs`.
+
 ## Final release statement
 
 A release is institutionally ready only when visitors can understand the system quickly, reviewers can verify the proof boundaries, developers can reproduce the checks, GitHub Actions can build without registry dependency drift, and public pages remain safe by default.
