@@ -120,7 +120,7 @@
     "failsafe:v54": "node tools/superintelligence-proof-governance-console-v54-kernel.mjs",
     "check:docs": "node tools/docs-link-checker.mjs && node tools/claim-boundary-checker.mjs && node tools/run-documentation-tests.mjs",
     "check:public-safe": "node tools/public-safe-static-checker.mjs",
-    "check:metadata": "node tools/route-count-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v66.mjs && node tools/metadata-integrity-checker.mjs && node tools/route-manifest-integrity.mjs && node tools/accessibility-static-checker.mjs",
+    "check:metadata": "node tools/route-count-harmonizer-v66.mjs && node tools/release-compatibility-harmonizer-v66.mjs && node tools/metadata-integrity-checker.mjs && node tools/route-manifest-integrity.mjs && node tools/accessibility-static-checker.mjs && node tools/public-proof-readiness-checker.mjs",
     "test:dynamic": "node tools/run-all-tests.mjs",
     "experience-command": "node tests/experience-command-v58.test.mjs && python3 tools/build.py && node tools/experience-command-v58-kernel.mjs",
     "test:experience-command": "npm run experience-command",

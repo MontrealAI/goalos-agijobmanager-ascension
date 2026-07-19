@@ -18,6 +18,10 @@ GoalOS AGIJobManager Ascension is a static, public-safe proof institution. Its p
 | Accessibility and previews | Public pages should carry titles, descriptions, canonical/social metadata, keyboard-readable structure, and visible boundary language. | `docs/ACCESSIBILITY_AND_SEO.md`, `tools/accessibility-static-checker.mjs`, `tools/metadata-integrity-checker.mjs` |
 | Release repeatability | Dependency-zero tests and generated Pages output should be reproducible locally and in GitHub Actions. | `package.json`, `.github/workflows/`, `tools/build.py`, `docs/RELEASE_PROCESS.md` |
 
+## Public review packet
+
+Use [Public Review Packet](PUBLIC_REVIEW_PACKET.md) for the one-minute reviewer path and `data/public-proof-institution-readiness.json` for the machine-readable readiness matrix. The packet is checked by `node tools/public-proof-readiness-checker.mjs` so release reviewers can verify route count, evidence-file existence, and default-deny public posture before publication.
+
 ## Institutional release checklist
 
 Before a public release or route addition, confirm:

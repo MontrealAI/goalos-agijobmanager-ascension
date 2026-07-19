@@ -1,6 +1,6 @@
 {
   "version": "v66-goalos-care-command",
-  "release": "v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command",
+  "release": "v60-ask-goalos-autonomous-question-router v66-goalos-care-command",
   "routeCount": 70,
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "pages": [

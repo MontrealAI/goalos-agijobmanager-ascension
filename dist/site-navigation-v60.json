@@ -1,6 +1,6 @@
 {
   "version": "v66-goalos-care-command",
-  "release": "v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible v66-goalos-care-command v66-goalos-care-command v64-goalos-command-console v65-take-care-console v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command v66-goalos-care-command",
+  "release": "v60-ask-goalos-autonomous-question-router-v59-v58-v57-v54-v53-v52-v51-v50-v49-v48-v47-v46-compatible v66-goalos-care-command",
   "routeCount": 70,
   "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
   "pages": [

@@ -153,6 +153,8 @@ Open **Actions → GoalOS AGIJobManager Ascension Repository + Website Instituti
 
 - [Institutional excellence checklist](docs/INSTITUTIONAL_EXCELLENCE.md)
 - [Final institutional excellence docket](docs/FINAL_INSTITUTIONAL_EXCELLENCE_DOCKET.md)
+- [Public review packet](docs/PUBLIC_REVIEW_PACKET.md)
+- [Machine-readable readiness packet](data/public-proof-institution-readiness.json)
 - [Canonical route manifest](data/canonical-route-manifest.json)
 - [Demo catalog](docs/DEMO_CATALOG.md)
 - [Route manifest policy](docs/ROUTE_MANIFEST_POLICY.md)
@@ -160,7 +162,7 @@ Open **Actions → GoalOS AGIJobManager Ascension Repository + Website Instituti
 
 ## Verification and tests
 
-Primary checks are `npm test` and `npm run build`. The scripts use dynamic runners so the workflow does not hard-call missing historical helpers or version-specific test files.
+Primary checks are `node tools/public-proof-readiness-checker.mjs`, `npm test`, and `npm run build`. The scripts use dynamic runners so the workflow does not hard-call missing historical helpers or version-specific test files.
 
 ## Contributing
 

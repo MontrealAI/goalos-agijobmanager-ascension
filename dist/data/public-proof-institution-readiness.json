@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "name": "GoalOS AGIJobManager Ascension public proof institution readiness packet",
+  "productionUrl": "https://montrealai.github.io/goalos-agijobmanager-ascension/",
+  "canonicalRouteManifest": "data/canonical-route-manifest.json",
+  "canonicalRouteCount": 70,
+  "defaultPublicPosture": {
+    "browserLocal": true,
+    "noAccounts": true,
+    "noForms": true,
+    "noAnalytics": true,
+    "noCookies": true,
+    "noPublicWalletConnection": true,
+    "noTransactionBroadcast": true,
+    "noTokenSaleOrOffer": true,
+    "noInvestmentAdvice": true,
+    "noProductionAuthority": true
+  },
+  "reviewDomains": [
+    {
+      "domain": "visitor_clarity",
+      "promise": "A non-technical visitor can start from one clear front door and still reach the complete route history.",
+      "primaryEvidence": [
+        "site/index.html",
+        "site/goalos-care-command.html",
+        "site/start.html",
+        "site/complete-route-index.html"
+      ]
+    },
+    {
+      "domain": "route_continuity",
+      "promise": "Existing public pages, demos, archives, evidence rooms, legal boundaries, and expert surfaces remain cataloged unless a documented safety or build reason requires deprecation.",
+      "primaryEvidence": [
+        "data/canonical-route-manifest.json",
+        "docs/ROUTE_MANIFEST_POLICY.md",
+        "site/complete-route-index.html"
+      ]
+    },
+    {
+      "domain": "public_safe_boundary",
+      "promise": "Public demos are default-deny browser-local surfaces with no user-data collection, wallet connection, transaction broadcast, token approval, analytics, cookies, or production authority.",
+      "primaryEvidence": [
+        "docs/PUBLIC_SAFE_BOUNDARY.md",
+        "docs/DATA_ZERO_PRIVACY_POLICY.md",
+        "tools/public-safe-static-checker.mjs"
+      ]
+    },
+    {
+      "domain": "claim_discipline",
+      "promise": "Architecture and horizon language are bounded; strong empirical claims require Evidence Dockets, replay/falsification paths, baselines, validator posture, and human review.",
+      "primaryEvidence": [
+        "docs/CLAIM_BOUNDARY.md",
+        "docs/CLAIM_BOUNDARY_FIREWALL_V22.md",
+        "site/evidence-docket-composer.html"
+      ]
+    },
+    {
+      "domain": "legal_privacy_token_boundary",
+      "promise": "AGIALPHA and Mainnet references are identity/protocol references only; this repository and site are not a sale, exchange, broker, custody service, advice surface, market surface, or third-party audit.",
+      "primaryEvidence": [
+        "site/legal.html",
+        "site/privacy.html",
+        "site/agialpha-token-boundary.html",
+        "docs/AGIALPHA_BOUNDARY.md"
+      ]
+    },
+    {
+      "domain": "release_repeatability",
+      "promise": "Local and GitHub Actions publication use dependency-zero checks, pathspec-safe commits, generated Pages output, and route/metadata/accessibility assurance.",
+      "primaryEvidence": [
+        "package.json",
+        ".github/workflows/goalos-agijobmanager-ascension-production-url-autopilot.yml",
+        "tools/build.py",
+        "tools/route-manifest-integrity.mjs"
+      ]
+    }
+  ],
+  "requiredChecks": [
+    "node tools/public-proof-readiness-checker.mjs",
+    "npm test",
+    "npm run build"
+  ]
+}
