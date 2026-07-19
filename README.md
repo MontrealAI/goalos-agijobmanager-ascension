@@ -17,6 +17,11 @@ Production URL: https://montrealai.github.io/goalos-agijobmanager-ascension/
 ![License notice](https://img.shields.io/badge/license-see%20LICENSE-475569)
 
 
+
+## Final institutional excellence pass
+
+The repository now uses a single public-readiness spine for release review: the [Institutional Excellence Checklist](docs/INSTITUTIONAL_EXCELLENCE.md), [Final Institutional Excellence Docket](docs/FINAL_INSTITUTIONAL_EXCELLENCE_DOCKET.md), [Release Process](docs/RELEASE_PROCESS.md), [Route Manifest Policy](docs/ROUTE_MANIFEST_POLICY.md), [Claim Boundary](docs/CLAIM_BOUNDARY.md), and [Accessibility/SEO Standard](docs/ACCESSIBILITY_AND_SEO.md). Treat these documents as the reviewer packet before publishing changes to GitHub Pages.
+
 ## GoalOS Care Command v66
 
 The primary front door is now `goalos-care-command.html`: a public-safe, browser-local console where a visitor types one plain-language objective and GoalOS prepares the proof path, answers route questions, and emits a local receipt. All existing pages remain available through the Complete Route Index and command layers.
