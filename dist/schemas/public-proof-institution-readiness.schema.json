@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Proof Institution Readiness Packet",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "name",
+    "productionUrl",
+    "canonicalRouteManifest",
+    "canonicalRouteCount",
+    "defaultPublicPosture",
+    "reviewDomains",
+    "requiredChecks"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "name": { "type": "string" },
+    "productionUrl": { "type": "string", "pattern": "^https://montrealai\\.github\\.io/goalos-agijobmanager-ascension/" },
+    "canonicalRouteManifest": { "type": "string" },
+    "canonicalRouteCount": { "type": "integer", "minimum": 1 },
+    "defaultPublicPosture": {
+      "type": "object",
+      "additionalProperties": { "const": true }
+    },
+    "reviewDomains": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["domain", "promise", "primaryEvidence"],
+        "properties": {
+          "domain": { "type": "string" },
+          "promise": { "type": "string" },
+          "primaryEvidence": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "requiredChecks": {
+      "type": "array",
+      "minItems": 3,
+      "items": { "type": "string" }
+    }
+  }
+}

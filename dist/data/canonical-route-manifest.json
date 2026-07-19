@@ -11,7 +11,7 @@
     "noCookies": true,
     "noPublicWallet": true
   },
-  "release": "v66-goalos-care-command v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v65-goalos-take-care v65-take-care-console v63-mission-autopilot v62-ask-goalos-sovereign-router v61-route-count-self-healing v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v46-repository-public-trust-compatibility-failsafe",
+  "release": "v66-goalos-care-command v61-route-count-self-healing-ask-goalos-public-proof-institution v64-goalos-command-console v65-goalos-take-care v65-take-care-console v63-mission-autopilot v62-ask-goalos-sovereign-router v61-route-count-self-healing v60-ask-goalos-autonomous-question-router v59-canonical-proof-institution v46-repository-public-trust-compatibility-failsafe v66-goalos-care-command",
   "releaseAliases": [
     "v63-mission-autopilot",
     "v62-ask-goalos-sovereign-router",
